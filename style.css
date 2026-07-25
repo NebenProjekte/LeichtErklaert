@@ -1,0 +1,281 @@
+:root {
+  --navy: #1e3a5f;
+  --navy-dark: #142942;
+  --accent: #f2994a;
+  --accent-2: #2fa88a;
+  --bg: #fbf9f4;
+  --card: #ffffff;
+  --text: #23303f;
+  --text-muted: #5b6b7c;
+  --border: #e6e0d2;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a { color: var(--navy); }
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header.site-header {
+  background: var(--navy);
+  color: #fff;
+  padding: 22px 0;
+}
+
+header.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.brand-sub {
+  font-size: 0.85rem;
+  color: #cfe0ee;
+  font-weight: 400;
+}
+
+nav.site-nav a {
+  color: #dce8f2;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+nav.site-nav a:hover { color: #fff; }
+
+main { padding: 40px 0 60px; }
+
+.hero {
+  text-align: center;
+  padding: 30px 0 10px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+  color: var(--navy);
+}
+
+.hero p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.category-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 28px 0 8px;
+  flex-wrap: wrap;
+}
+
+.category-tabs a {
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--navy);
+}
+
+.category-tabs a.math { border-color: var(--navy); }
+.category-tabs a.physics { border-color: var(--accent-2); }
+
+h2.section-title {
+  margin-top: 44px;
+  margin-bottom: 16px;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tag-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.tag-dot.math { background: var(--navy); }
+.tag-dot.physics { background: var(--accent-2); }
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.topic-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 20px;
+  text-decoration: none;
+  color: var(--text);
+  display: block;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(30, 58, 95, 0.1);
+}
+
+.topic-card .k {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.topic-card h3 {
+  margin: 6px 0 0;
+  font-size: 1.05rem;
+  color: var(--navy);
+}
+
+.topic-card.coming-soon {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.topic-card.coming-soon:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.breadcrumbs {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.breadcrumbs a { color: var(--text-muted); }
+
+article.topic h1 {
+  font-size: 2rem;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.subject-pill {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 12px;
+  border-radius: 999px;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.subject-pill.math { background: var(--navy); }
+.subject-pill.physics { background: var(--accent-2); }
+
+.formula-box {
+  background: var(--navy-dark);
+  color: #fff;
+  border-radius: 14px;
+  padding: 22px 26px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 24px 0;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.formula-box small {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #b9c9da;
+  margin-top: 8px;
+}
+
+.example-box {
+  background: #fff9ec;
+  border: 1px solid #f1e0b8;
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin: 20px 0;
+}
+
+.example-box .label {
+  font-weight: 800;
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+
+.diagram {
+  text-align: center;
+  margin: 26px 0;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  border-left: 3px solid var(--border);
+  padding-left: 14px;
+  margin: 22px 0;
+}
+
+.ad-slot {
+  margin: 30px 0;
+  text-align: center;
+  min-height: 90px;
+}
+
+footer.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 30px;
+  font-weight: 700;
+  text-decoration: none;
+}
