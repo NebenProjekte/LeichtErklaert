@@ -180,6 +180,7 @@ h2.section-title {
   box-shadow: none;
 }
 
+/* Topic page */
 .breadcrumbs {
   font-size: 0.9rem;
   color: var(--text-muted);
@@ -278,4 +279,65 @@ footer.site-footer {
   margin-top: 30px;
   font-weight: 700;
   text-decoration: none;
+}
+
+/* Comic dialogue */
+.dialog-intro {
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: 30px 0 14px;
+}
+
+.dialog {
+  margin: 0 0 28px;
+}
+
+.dialog-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.dialog-line.right {
+  flex-direction: row-reverse;
+}
+
+.dialog-avatar {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+}
+
+.dialog-bubble {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px 18px 18px 18px;
+  padding: 12px 16px;
+  max-width: 76%;
+}
+
+.dialog-line.right .dialog-bubble {
+  background: var(--primary);
+  border-color: var(--primary);
+  border-radius: 18px 4px 18px 18px;
+  color: #fff;
+}
+
+.dialog-name {
+  font-weight: 800;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-2);
+  margin-bottom: 4px;
+}
+
+.dialog-line.right .dialog-name {
+  color: #f6e4d2;
+}
+
+.dialog-bubble p {
+  margin: 0;
 }
