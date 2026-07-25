@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LeichtErklärt (Mathe & Physik) - einfache Erklärungen für die Schule</title>
+<title>LeichtErklärt (Mathe &amp; Physik) - einfache Erklärungen für die Schule</title>
 <meta name="description" content="Mathe und Physik leicht erklärt: Sätze, Formeln und Beispiele einfach verständlich für die 6. bis 12. Klasse.">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css">
@@ -13,8 +13,12 @@
 <div class="container">
 <a class="brand" href="index.html">
 <span class="brand-name">LeichtErklärt</span>
-<span class="brand-sub">Mathe & Physik</span>
+<span class="brand-sub">Mathe &amp; Physik</span>
 </a>
+<div class="site-search">
+<input type="text" id="le-search-input" placeholder="Thema suchen (z. B. Gravitation) ..." autocomplete="off">
+<div class="site-search-results" id="le-search-results"></div>
+</div>
 <nav class="site-nav">
 <a href="#mathematik">Mathematik</a>
 <a href="#physik">Physik</a>
@@ -24,7 +28,7 @@
 
 <main class="container">
 <section class="hero">
-<h1>Mathe & Physik, leicht erklärt.</h1>
+<h1>Mathe &amp; Physik, leicht erklärt.</h1>
 <p>Kurze, einfache Erklärungen mit Beispielen - für die 6. bis 12. Klasse. Keine Fachchinesisch, sondern verständlich auf den Punkt.</p>
 <div class="category-tabs">
 <a class="math" href="#mathematik">Mathematik</a>
@@ -45,6 +49,10 @@
 <a class="topic-card" href="mathematik/primzahlen.html">
 <div class="k">Zahlentheorie</div>
 <h3>Primzahlen leicht erklärt</h3>
+</a>
+<a class="topic-card" href="mathematik/drei-tueren-problem.html">
+<div class="k">Stochastik</div>
+<h3>Das Drei-Türen-Problem (Monty Hall) leicht erklärt</h3>
 </a>
 <div class="topic-card coming-soon">
 <div class="k">Bald</div>
@@ -70,6 +78,22 @@
 <div class="k">Astronomie</div>
 <h3>Warum die Erde eine Kugel ist und keine Scheibe</h3>
 </a>
+<a class="topic-card" href="physik/volt-ampere-watt.html">
+<div class="k">Elektrizität</div>
+<h3>Unterschied zwischen Volt, Ampere und Watt</h3>
+</a>
+<a class="topic-card" href="physik/masse-und-dichte.html">
+<div class="k">Mechanik</div>
+<h3>Masse und Dichte leicht erklärt</h3>
+</a>
+<a class="topic-card" href="physik/hebelwirkung.html">
+<div class="k">Mechanik</div>
+<h3>Hebelwirkung (Hebelgesetz) leicht erklärt</h3>
+</a>
+<a class="topic-card" href="physik/zentripetalkraft-zentrifugalkraft.html">
+<div class="k">Mechanik</div>
+<h3>Zentripetalkraft und Zentrifugalkraft leicht erklärt</h3>
+</a>
 <div class="topic-card coming-soon">
 <div class="k">Bald</div>
 <h3>Weitere Themen folgen ...</h3>
@@ -83,7 +107,9 @@
 </main>
 
 <footer class="site-footer">
-<div class="container">LeichtErklärt - Mathe & Physik einfach erklärt</div>
+<div class="container">LeichtErklärt - Mathe &amp; Physik einfach erklärt</div>
 </footer>
+<script src="search-data.js"></script>
+<script src="search.js"></script>
 </body>
 </html>
