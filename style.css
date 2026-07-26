@@ -456,4 +456,27 @@ footer.site-footer {
   margin: 0;
 }
 
+.lang-switch {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-left: 14px;
+}
 
+.lang-switch a, .lang-switch span {
+  color: #f6e4d2;
+  text-decoration: none;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.lang-switch span.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.lang-switch a:hover {
+  color: #fff;
+}
