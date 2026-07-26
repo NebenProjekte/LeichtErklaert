@@ -11,5 +11,6 @@ var LE_TOPICS = [
   { title: "Unterschied zwischen Volt, Ampere und Watt", cat: "Physik", path: "physik/volt-ampere-watt.html", keywords: "volt ampere watt strom elektrizitaet spannung stromstaerke leistung elektro" },
   { title: "Masse und Dichte leicht erklaert", cat: "Physik", path: "physik/masse-und-dichte.html", keywords: "masse dichte gewicht volumen schwimmen sinken" },
   { title: "Hebelwirkung (Hebelgesetz) leicht erklaert", cat: "Physik", path: "physik/hebelwirkung.html", keywords: "hebel hebelgesetz wippe kraftarm lastarm" },
-  { title: "Zentripetalkraft und Zentrifugalkraft leicht erklaert", cat: "Physik", path: "physik/zentripetalkraft-zentrifugalkraft.html", keywords: "zentripetalkraft zentrifugalkraft kreisbewegung scheinkraft kurve" }
+  { title: "Zentripetalkraft und Zentrifugalkraft leicht erklaert", cat: "Physik", path: "physik/zentripetalkraft-zentrifugalkraft.html", keywords: "zentripetalkraft zentrifugalkraft kreisbewegung scheinkraft kurve" },
+  { title: "Schroedingers Katze leicht erklaert", cat: "Physik", path: "physik/schroedingers-katze.html", keywords: "schroedinger katze quantenmechanik superposition ueberlagerung quantenphysik" }
 ];
