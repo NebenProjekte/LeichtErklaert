@@ -262,6 +262,9 @@ h2.section-title {
   color: var(--primary);
 }
 
+.topic-card.physics h3 { color: var(--accent-2); }
+.topic-card.bio h3 { color: var(--bio-dark); }
+
 .topic-card.coming-soon {
   opacity: 0.55;
   cursor: default;
