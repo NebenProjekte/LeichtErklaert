@@ -362,6 +362,12 @@ article.topic.cat-chem .back-link { color: var(--chem-dark); }
   margin: 26px 0;
 }
 
+.diagram svg {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+}
+
 .note {
   font-size: 0.9rem;
   color: var(--text-muted);
