@@ -20,6 +20,7 @@ var LE_TOPICS = [
   { title: "Bacteria Explained Simply", cat: "Biology", path: "biologie/bakterien.html", keywords: "bacteria microbiology prokaryotes cell division antibiotics" },
   { title: "Stem Cells Explained Simply", cat: "Biology", path: "biologie/stammzellen.html", keywords: "stem cells cell biology embryonic adult bone marrow" },
   { title: "Chloroplasts Explained Simply", cat: "Biology", path: "biologie/chloroplasten.html", keywords: "chloroplasts photosynthesis chlorophyll plant cell oxygen" },
+  { title: "Photosynthesis Explained Simply", cat: "Biology", path: "biologie/fotosynthese.html", keywords: "photosynthesis light reactions calvin cycle atp limiting factors" },
   { title: "Mitochondria Explained Simply", cat: "Biology", path: "biologie/mitochondrien.html", keywords: "mitochondria powerhouse cell atp energy cell biology" },
   { title: "Cellular Respiration Explained Simply", cat: "Biology", path: "biologie/zellatmung.html", keywords: "cellular respiration atp energy mitochondria oxygen photosynthesis" },
   { title: "Ecosystems Explained Simply", cat: "Biology", path: "biologie/oekosystem.html", keywords: "ecosystem ecology food chain producers consumers decomposers" },

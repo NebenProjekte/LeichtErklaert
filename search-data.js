@@ -20,6 +20,7 @@ var LE_TOPICS = [
   { title: "Bakterien leicht erklaert", cat: "Biologie", path: "biologie/bakterien.html", keywords: "bakterien mikrobiologie prokaryoten zellteilung antibiotika" },
   { title: "Stammzellen leicht erklaert", cat: "Biologie", path: "biologie/stammzellen.html", keywords: "stammzellen zellbiologie embryonal adult knochenmark" },
   { title: "Chloroplasten leicht erklaert", cat: "Biologie", path: "biologie/chloroplasten.html", keywords: "chloroplasten fotosynthese chlorophyll pflanzenzelle sauerstoff" },
+  { title: "Fotosynthese leicht erklaert", cat: "Biologie", path: "biologie/fotosynthese.html", keywords: "fotosynthese lichtreaktion calvin-zyklus atp begrenzende faktoren" },
   { title: "Mitochondrien leicht erklaert", cat: "Biologie", path: "biologie/mitochondrien.html", keywords: "mitochondrien kraftwerk zelle atp energie zellbiologie" },
   { title: "Zellatmung leicht erklaert", cat: "Biologie", path: "biologie/zellatmung.html", keywords: "zellatmung atp energie mitochondrien sauerstoff fotosynthese" },
   { title: "Oekosystem leicht erklaert", cat: "Biologie", path: "biologie/oekosystem.html", keywords: "oekosystem oekologie nahrungskette produzenten konsumenten destruenten" },
