@@ -26,5 +26,7 @@ var LE_TOPICS = [
   { title: "Forest Ecosystems Explained Simply", cat: "Biology", path: "biologie/waldoekosystem.html", keywords: "forest ecosystem canopy ground layer ecology" },
   { title: "Rivers as Ecosystems Explained Simply", cat: "Biology", path: "biologie/fluss.html", keywords: "river ecosystem source mouth ecology waterway" },
   { title: "Chromosomes Explained Simply", cat: "Biology", path: "biologie/chromosomen.html", keywords: "chromosomes genetics dna genes karyotype down syndrome" },
-  { title: "Why There Are Biologically Two Sexes", cat: "Biology", path: "biologie/warum-zwei-geschlechter.html", keywords: "sex gametes egg cell sperm anisogamy evolutionary biology" }
+  { title: "Why There Are Biologically Two Sexes", cat: "Biology", path: "biologie/warum-zwei-geschlechter.html", keywords: "sex gametes egg cell sperm anisogamy evolutionary biology" },
+  { title: "Radioactivity Explained Simply", cat: "Chemistry", path: "chemie/radioaktivitaet.html", keywords: "radioactivity alpha beta gamma radiation half-life nuclear chemistry" },
+  { title: "The Anomaly of Water Explained Simply", cat: "Chemistry", path: "chemie/anomalie-des-wassers.html", keywords: "anomaly water density ice float freeze" }
 ];

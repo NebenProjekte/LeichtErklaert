@@ -5,6 +5,8 @@
   --accent-2: #d9822e;
   --bio: #6b7a5e;
   --bio-dark: #46523c;
+  --chem: #3d6f8f;
+  --chem-dark: #284a5f;
   --bg: #fbf6ee;
   --card: #ffffff;
   --text: #3a2a22;
@@ -201,10 +203,12 @@ main { padding: 40px 0 60px; }
 .category-tabs a.math { border-color: var(--primary); }
 .category-tabs a.physics { border-color: var(--accent-2); }
 .category-tabs a.bio { border-color: var(--bio); }
+.category-tabs a.chem { border-color: var(--chem); }
 
 .category-tabs a.active-tab.math { background: var(--primary); color: #fff; }
 .category-tabs a.active-tab.physics { background: var(--accent-2); color: #fff; }
 .category-tabs a.active-tab.bio { background: var(--bio); color: #fff; }
+.category-tabs a.active-tab.chem { background: var(--chem); color: #fff; }
 
 h2.section-title {
   margin-top: 44px;
@@ -225,6 +229,7 @@ h2.section-title {
 .tag-dot.math { background: var(--primary); }
 .tag-dot.physics { background: var(--accent-2); }
 .tag-dot.bio { background: var(--bio); }
+.tag-dot.chem { background: var(--chem); }
 
 .topic-grid {
   display: grid;
@@ -264,6 +269,7 @@ h2.section-title {
 
 .topic-card.physics h3 { color: var(--accent-2); }
 .topic-card.bio h3 { color: var(--bio-dark); }
+.topic-card.chem h3 { color: var(--chem); }
 
 .topic-card.coming-soon {
   opacity: 0.55;
@@ -305,11 +311,14 @@ article.topic h1 {
 .subject-pill.math { background: var(--primary); }
 .subject-pill.physics { background: var(--accent-2); }
 .subject-pill.bio { background: var(--bio); }
+.subject-pill.chem { background: var(--chem); }
 
 article.topic.cat-bio h1 { color: var(--bio-dark); }
 article.topic.cat-bio .back-link { color: var(--bio-dark); }
 article.topic.cat-physics h1 { color: var(--accent-2); }
 article.topic.cat-physics .back-link { color: var(--accent-2); }
+article.topic.cat-chem h1 { color: var(--chem-dark); }
+article.topic.cat-chem .back-link { color: var(--chem-dark); }
 
 .formula-box {
   background: var(--primary-dark);
