@@ -12,5 +12,6 @@ var LE_TOPICS = [
   { title: "La Masa y la Densidad explicadas de forma sencilla", cat: "Física", path: "physik/masse-und-dichte.html", keywords: "masa densidad peso volumen flotar hundir" },
   { title: "La Palanca (Ley de la Palanca) explicada de forma sencilla", cat: "Física", path: "physik/hebelwirkung.html", keywords: "palanca ley de la palanca balancin brazo de fuerza" },
   { title: "La Fuerza Centrípeta y Centrífuga explicadas de forma sencilla", cat: "Física", path: "physik/zentripetalkraft-zentrifugalkraft.html", keywords: "fuerza centripeta fuerza centrifuga movimiento circular curva" },
-  { title: "El Gato de Schrödinger explicado de forma sencilla", cat: "Física", path: "physik/schroedingers-katze.html", keywords: "schrodinger gato mecanica cuantica superposicion fisica cuantica" }
+  { title: "El Gato de Schrödinger explicado de forma sencilla", cat: "Física", path: "physik/schroedingers-katze.html", keywords: "schrodinger gato mecanica cuantica superposicion fisica cuantica" },
+  { title: "El Desplazamiento de Agua explicado de forma sencilla", cat: "Física", path: "physik/wasserverdraengung.html", keywords: "desplazamiento de agua arquimedes flotabilidad flotar hundir densidad" }
 ];

@@ -3,6 +3,8 @@
   --primary-dark: #7a3b22;
   --accent: #e8974a;
   --accent-2: #b8483a;
+  --bio: #6b7a5e;
+  --bio-dark: #46523c;
   --bg: #fbf6ee;
   --card: #ffffff;
   --text: #3a2a22;
@@ -195,6 +197,7 @@ main { padding: 40px 0 60px; }
 
 .category-tabs a.math { border-color: var(--primary); }
 .category-tabs a.physics { border-color: var(--accent-2); }
+.category-tabs a.bio { border-color: var(--bio); }
 
 h2.section-title {
   margin-top: 44px;
@@ -214,6 +217,7 @@ h2.section-title {
 
 .tag-dot.math { background: var(--primary); }
 .tag-dot.physics { background: var(--accent-2); }
+.tag-dot.bio { background: var(--bio); }
 
 .topic-grid {
   display: grid;
@@ -290,6 +294,10 @@ article.topic h1 {
 
 .subject-pill.math { background: var(--primary); }
 .subject-pill.physics { background: var(--accent-2); }
+.subject-pill.bio { background: var(--bio); }
+
+article.topic.cat-bio h1 { color: var(--bio-dark); }
+article.topic.cat-bio .back-link { color: var(--bio-dark); }
 
 .formula-box {
   background: var(--primary-dark);

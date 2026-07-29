@@ -12,5 +12,6 @@ var LE_TOPICS = [
   { title: "Mass and Density Explained Simply", cat: "Physics", path: "physik/masse-und-dichte.html", keywords: "mass density weight volume float sink" },
   { title: "Leverage (The Law of the Lever) Explained Simply", cat: "Physics", path: "physik/hebelwirkung.html", keywords: "lever law of the lever seesaw force arm" },
   { title: "Centripetal and Centrifugal Force Explained Simply", cat: "Physics", path: "physik/zentripetalkraft-zentrifugalkraft.html", keywords: "centripetal force centrifugal force circular motion curve" },
-  { title: "Schrödinger's Cat Explained Simply", cat: "Physics", path: "physik/schroedingers-katze.html", keywords: "schrodinger cat quantum mechanics superposition quantum physics" }
+  { title: "Schrödinger's Cat Explained Simply", cat: "Physics", path: "physik/schroedingers-katze.html", keywords: "schrodinger cat quantum mechanics superposition quantum physics" },
+  { title: "Water Displacement Explained Simply", cat: "Physics", path: "physik/wasserverdraengung.html", keywords: "water displacement archimedes buoyancy float sink density" }
 ];

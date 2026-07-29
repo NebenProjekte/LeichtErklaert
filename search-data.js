@@ -12,5 +12,6 @@ var LE_TOPICS = [
   { title: "Masse und Dichte leicht erklaert", cat: "Physik", path: "physik/masse-und-dichte.html", keywords: "masse dichte gewicht volumen schwimmen sinken" },
   { title: "Hebelwirkung (Hebelgesetz) leicht erklaert", cat: "Physik", path: "physik/hebelwirkung.html", keywords: "hebel hebelgesetz wippe kraftarm lastarm" },
   { title: "Zentripetalkraft und Zentrifugalkraft leicht erklaert", cat: "Physik", path: "physik/zentripetalkraft-zentrifugalkraft.html", keywords: "zentripetalkraft zentrifugalkraft kreisbewegung scheinkraft kurve" },
-  { title: "Schroedingers Katze leicht erklaert", cat: "Physik", path: "physik/schroedingers-katze.html", keywords: "schroedinger katze quantenmechanik superposition ueberlagerung quantenphysik" }
+  { title: "Schroedingers Katze leicht erklaert", cat: "Physik", path: "physik/schroedingers-katze.html", keywords: "schroedinger katze quantenmechanik superposition ueberlagerung quantenphysik" },
+  { title: "Wasserverdraengung leicht erklaert", cat: "Physik", path: "physik/wasserverdraengung.html", keywords: "wasserverdraengung archimedes auftrieb schwimmen sinken dichte" }
 ];
