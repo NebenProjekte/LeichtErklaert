@@ -10,22 +10,71 @@
     biologie: "bio", biology: "bio", biologia: "bio"
   };
 
+  var currentFilter = null;
+
   function applyTheme(id) {
     var themeVar = THEME_MAP[id];
-    if (!themeVar) return;
-    document.documentElement.style.setProperty("--theme", themeVar);
+    document.documentElement.style.setProperty("--theme", themeVar || "var(--primary)");
     var cat = CATEGORY_CLASS[id];
     document.querySelectorAll(".category-tabs a").forEach(function (a) {
       a.classList.remove("active-tab");
     });
-    document.querySelectorAll(".category-tabs a." + cat).forEach(function (a) {
-      a.classList.add("active-tab");
+    if (cat) {
+      document.querySelectorAll(".category-tabs a." + cat).forEach(function (a) {
+        a.classList.add("active-tab");
+      });
+    }
+  }
+
+  function showAllSections() {
+    document.querySelectorAll("h2.section-title").forEach(function (h) {
+      h.style.display = "";
+      var grid = h.nextElementSibling;
+      if (grid && grid.classList.contains("topic-grid")) {
+        grid.style.display = "";
+      }
     });
   }
 
+  function filterSection(id) {
+    var targetHeading = document.getElementById(id);
+    if (!targetHeading) return;
+    document.querySelectorAll("h2.section-title").forEach(function (h) {
+      var show = h.id === id;
+      h.style.display = show ? "" : "none";
+      var grid = h.nextElementSibling;
+      if (grid && grid.classList.contains("topic-grid")) {
+        grid.style.display = show ? "" : "none";
+      }
+    });
+  }
+
+  function selectCategory(id) {
+    if (currentFilter === id) {
+      currentFilter = null;
+      showAllSections();
+      applyTheme(null);
+      history.replaceState(null, "", location.pathname + location.search);
+    } else {
+      currentFilter = id;
+      filterSection(id);
+      applyTheme(id);
+      history.replaceState(null, "", "#" + id);
+    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   document.querySelectorAll('.category-tabs a[href^="#"], nav.site-nav a[href^="#"]').forEach(function (link) {
-    link.addEventListener("click", function () {
-      applyTheme(link.getAttribute("href").slice(1));
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      selectCategory(link.getAttribute("href").slice(1));
     });
   });
+
+  var initialId = location.hash ? location.hash.slice(1) : null;
+  if (initialId && THEME_MAP[initialId]) {
+    currentFilter = initialId;
+    filterSection(initialId);
+    applyTheme(initialId);
+  }
 })();
