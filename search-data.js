@@ -18,5 +18,8 @@ var LE_TOPICS = [
   { title: "DNA leicht erklaert", cat: "Biologie", path: "biologie/dna.html", keywords: "dna erbgut doppelhelix gene basenpaare genetik" },
   { title: "Viren leicht erklaert", cat: "Biologie", path: "biologie/viren.html", keywords: "viren virus mikrobiologie wirtszelle impfung erbgut" },
   { title: "Bakterien leicht erklaert", cat: "Biologie", path: "biologie/bakterien.html", keywords: "bakterien mikrobiologie prokaryoten zellteilung antibiotika" },
-  { title: "Stammzellen leicht erklaert", cat: "Biologie", path: "biologie/stammzellen.html", keywords: "stammzellen zellbiologie embryonal adult knochenmark" }
+  { title: "Stammzellen leicht erklaert", cat: "Biologie", path: "biologie/stammzellen.html", keywords: "stammzellen zellbiologie embryonal adult knochenmark" },
+  { title: "Chloroplasten leicht erklaert", cat: "Biologie", path: "biologie/chloroplasten.html", keywords: "chloroplasten fotosynthese chlorophyll pflanzenzelle sauerstoff" },
+  { title: "Mitochondrien leicht erklaert", cat: "Biologie", path: "biologie/mitochondrien.html", keywords: "mitochondrien kraftwerk zelle atp energie zellbiologie" },
+  { title: "Zellatmung leicht erklaert", cat: "Biologie", path: "biologie/zellatmung.html", keywords: "zellatmung atp energie mitochondrien sauerstoff fotosynthese" }
 ];

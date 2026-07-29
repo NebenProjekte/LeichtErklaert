@@ -18,5 +18,8 @@ var LE_TOPICS = [
   { title: "El ADN explicado de forma sencilla", cat: "Biología", path: "biologie/dna.html", keywords: "adn genoma doble helice genes pares de bases genetica" },
   { title: "Los Virus explicados de forma sencilla", cat: "Biología", path: "biologie/viren.html", keywords: "virus microbiologia celula huesped vacuna material genetico" },
   { title: "Las Bacterias explicadas de forma sencilla", cat: "Biología", path: "biologie/bakterien.html", keywords: "bacterias microbiologia procariotas division celular antibioticos" },
-  { title: "Las Células Madre explicadas de forma sencilla", cat: "Biología", path: "biologie/stammzellen.html", keywords: "celulas madre biologia celular embrionarias adultas medula osea" }
+  { title: "Las Células Madre explicadas de forma sencilla", cat: "Biología", path: "biologie/stammzellen.html", keywords: "celulas madre biologia celular embrionarias adultas medula osea" },
+  { title: "Los Cloroplastos explicados de forma sencilla", cat: "Biología", path: "biologie/chloroplasten.html", keywords: "cloroplastos fotosintesis clorofila celula vegetal oxigeno" },
+  { title: "Las Mitocondrias explicadas de forma sencilla", cat: "Biología", path: "biologie/mitochondrien.html", keywords: "mitocondrias central energetica celula atp energia biologia celular" },
+  { title: "La Respiración Celular explicada de forma sencilla", cat: "Biología", path: "biologie/zellatmung.html", keywords: "respiracion celular atp energia mitocondrias oxigeno fotosintesis" }
 ];

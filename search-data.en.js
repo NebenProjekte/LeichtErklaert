@@ -18,5 +18,8 @@ var LE_TOPICS = [
   { title: "DNA Explained Simply", cat: "Biology", path: "biologie/dna.html", keywords: "dna genome double helix genes base pairs genetics" },
   { title: "Viruses Explained Simply", cat: "Biology", path: "biologie/viren.html", keywords: "viruses virus microbiology host cell vaccine genetic material" },
   { title: "Bacteria Explained Simply", cat: "Biology", path: "biologie/bakterien.html", keywords: "bacteria microbiology prokaryotes cell division antibiotics" },
-  { title: "Stem Cells Explained Simply", cat: "Biology", path: "biologie/stammzellen.html", keywords: "stem cells cell biology embryonic adult bone marrow" }
+  { title: "Stem Cells Explained Simply", cat: "Biology", path: "biologie/stammzellen.html", keywords: "stem cells cell biology embryonic adult bone marrow" },
+  { title: "Chloroplasts Explained Simply", cat: "Biology", path: "biologie/chloroplasten.html", keywords: "chloroplasts photosynthesis chlorophyll plant cell oxygen" },
+  { title: "Mitochondria Explained Simply", cat: "Biology", path: "biologie/mitochondrien.html", keywords: "mitochondria powerhouse cell atp energy cell biology" },
+  { title: "Cellular Respiration Explained Simply", cat: "Biology", path: "biologie/zellatmung.html", keywords: "cellular respiration atp energy mitochondria oxygen photosynthesis" }
 ];
