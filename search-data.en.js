@@ -14,5 +14,6 @@ var LE_TOPICS = [
   { title: "Centripetal and Centrifugal Force Explained Simply", cat: "Physics", path: "physik/zentripetalkraft-zentrifugalkraft.html", keywords: "centripetal force centrifugal force circular motion curve" },
   { title: "Schrödinger's Cat Explained Simply", cat: "Physics", path: "physik/schroedingers-katze.html", keywords: "schrodinger cat quantum mechanics superposition quantum physics" },
   { title: "Water Displacement Explained Simply", cat: "Physics", path: "physik/wasserverdraengung.html", keywords: "water displacement archimedes buoyancy float sink density" },
-  { title: "Darwin and the Theory of Evolution Explained Simply", cat: "Biology", path: "biologie/evolutionstheorie.html", keywords: "darwin evolution natural selection mutation species" }
+  { title: "Darwin and the Theory of Evolution Explained Simply", cat: "Biology", path: "biologie/evolutionstheorie.html", keywords: "darwin evolution natural selection mutation species" },
+  { title: "DNA Explained Simply", cat: "Biology", path: "biologie/dna.html", keywords: "dna genome double helix genes base pairs genetics" }
 ];

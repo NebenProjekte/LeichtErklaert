@@ -14,5 +14,6 @@ var LE_TOPICS = [
   { title: "La Fuerza Centrípeta y Centrífuga explicadas de forma sencilla", cat: "Física", path: "physik/zentripetalkraft-zentrifugalkraft.html", keywords: "fuerza centripeta fuerza centrifuga movimiento circular curva" },
   { title: "El Gato de Schrödinger explicado de forma sencilla", cat: "Física", path: "physik/schroedingers-katze.html", keywords: "schrodinger gato mecanica cuantica superposicion fisica cuantica" },
   { title: "El Desplazamiento de Agua explicado de forma sencilla", cat: "Física", path: "physik/wasserverdraengung.html", keywords: "desplazamiento de agua arquimedes flotabilidad flotar hundir densidad" },
-  { title: "Darwin y la Teoría de la Evolución explicada de forma sencilla", cat: "Biología", path: "biologie/evolutionstheorie.html", keywords: "darwin evolucion seleccion natural mutacion especie" }
+  { title: "Darwin y la Teoría de la Evolución explicada de forma sencilla", cat: "Biología", path: "biologie/evolutionstheorie.html", keywords: "darwin evolucion seleccion natural mutacion especie" },
+  { title: "El ADN explicado de forma sencilla", cat: "Biología", path: "biologie/dna.html", keywords: "adn genoma doble helice genes pares de bases genetica" }
 ];
