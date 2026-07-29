@@ -16,5 +16,7 @@ var LE_TOPICS = [
   { title: "Water Displacement Explained Simply", cat: "Physics", path: "physik/wasserverdraengung.html", keywords: "water displacement archimedes buoyancy float sink density" },
   { title: "Darwin and the Theory of Evolution Explained Simply", cat: "Biology", path: "biologie/evolutionstheorie.html", keywords: "darwin evolution natural selection mutation species" },
   { title: "DNA Explained Simply", cat: "Biology", path: "biologie/dna.html", keywords: "dna genome double helix genes base pairs genetics" },
-  { title: "Viruses Explained Simply", cat: "Biology", path: "biologie/viren.html", keywords: "viruses virus microbiology host cell vaccine genetic material" }
+  { title: "Viruses Explained Simply", cat: "Biology", path: "biologie/viren.html", keywords: "viruses virus microbiology host cell vaccine genetic material" },
+  { title: "Bacteria Explained Simply", cat: "Biology", path: "biologie/bakterien.html", keywords: "bacteria microbiology prokaryotes cell division antibiotics" },
+  { title: "Stem Cells Explained Simply", cat: "Biology", path: "biologie/stammzellen.html", keywords: "stem cells cell biology embryonic adult bone marrow" }
 ];
