@@ -28,6 +28,7 @@ var LE_TOPICS = [
   { title: "Rivers as Ecosystems Explained Simply", cat: "Biology", path: "biologie/fluss.html", keywords: "river ecosystem source mouth ecology waterway" },
   { title: "Chromosomes Explained Simply", cat: "Biology", path: "biologie/chromosomen.html", keywords: "chromosomes genetics dna genes karyotype down syndrome" },
   { title: "Why There Are Biologically Two Sexes", cat: "Biology", path: "biologie/warum-zwei-geschlechter.html", keywords: "sex gametes egg cell sperm anisogamy evolutionary biology" },
+  { title: "Neurons and the All-or-None Principle Explained Simply", cat: "Biology", path: "biologie/nervenzelle.html", keywords: "neuron nerve cell axon dendrites synapse action potential all or none principle muscle" },
   { title: "Radioactivity Explained Simply", cat: "Chemistry", path: "chemie/radioaktivitaet.html", keywords: "radioactivity alpha beta gamma radiation half-life nuclear chemistry" },
   { title: "The Anomaly of Water Explained Simply", cat: "Chemistry", path: "chemie/anomalie-des-wassers.html", keywords: "anomaly water density ice float freeze" }
 ];

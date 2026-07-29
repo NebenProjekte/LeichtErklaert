@@ -28,6 +28,7 @@ var LE_TOPICS = [
   { title: "Der Fluss als Oekosystem leicht erklaert", cat: "Biologie", path: "biologie/fluss.html", keywords: "fluss oekosystem quelle muendung oekologie gewaesser" },
   { title: "Chromosomen leicht erklaert", cat: "Biologie", path: "biologie/chromosomen.html", keywords: "chromosomen genetik dna gene karyogramm down-syndrom" },
   { title: "Warum es biologisch zwei Geschlechter gibt", cat: "Biologie", path: "biologie/warum-zwei-geschlechter.html", keywords: "geschlecht gameten eizelle spermium anisogamie evolutionsbiologie" },
+  { title: "Die Nervenzelle und das Alles-oder-Nichts-Prinzip leicht erklaert", cat: "Biologie", path: "biologie/nervenzelle.html", keywords: "nervenzelle neuron axon dendriten synapse aktionspotenzial alles oder nichts prinzip nerv muskel" },
   { title: "Radioaktivitaet leicht erklaert", cat: "Chemie", path: "chemie/radioaktivitaet.html", keywords: "radioaktivitaet alpha beta gamma strahlung halbwertszeit kernchemie" },
   { title: "Die Anomalie des Wassers leicht erklaert", cat: "Chemie", path: "chemie/anomalie-des-wassers.html", keywords: "anomalie wasser dichte eis schwimmen gefrieren" }
 ];
