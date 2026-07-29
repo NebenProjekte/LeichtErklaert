@@ -21,5 +21,8 @@ var LE_TOPICS = [
   { title: "Stammzellen leicht erklaert", cat: "Biologie", path: "biologie/stammzellen.html", keywords: "stammzellen zellbiologie embryonal adult knochenmark" },
   { title: "Chloroplasten leicht erklaert", cat: "Biologie", path: "biologie/chloroplasten.html", keywords: "chloroplasten fotosynthese chlorophyll pflanzenzelle sauerstoff" },
   { title: "Mitochondrien leicht erklaert", cat: "Biologie", path: "biologie/mitochondrien.html", keywords: "mitochondrien kraftwerk zelle atp energie zellbiologie" },
-  { title: "Zellatmung leicht erklaert", cat: "Biologie", path: "biologie/zellatmung.html", keywords: "zellatmung atp energie mitochondrien sauerstoff fotosynthese" }
+  { title: "Zellatmung leicht erklaert", cat: "Biologie", path: "biologie/zellatmung.html", keywords: "zellatmung atp energie mitochondrien sauerstoff fotosynthese" },
+  { title: "Oekosystem leicht erklaert", cat: "Biologie", path: "biologie/oekosystem.html", keywords: "oekosystem oekologie nahrungskette produzenten konsumenten destruenten" },
+  { title: "Waldoekosystem leicht erklaert", cat: "Biologie", path: "biologie/waldoekosystem.html", keywords: "wald waldoekosystem baumkronen bodenschicht oekologie" },
+  { title: "Der Fluss als Oekosystem leicht erklaert", cat: "Biologie", path: "biologie/fluss.html", keywords: "fluss oekosystem quelle muendung oekologie gewaesser" }
 ];

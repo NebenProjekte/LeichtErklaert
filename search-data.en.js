@@ -21,5 +21,8 @@ var LE_TOPICS = [
   { title: "Stem Cells Explained Simply", cat: "Biology", path: "biologie/stammzellen.html", keywords: "stem cells cell biology embryonic adult bone marrow" },
   { title: "Chloroplasts Explained Simply", cat: "Biology", path: "biologie/chloroplasten.html", keywords: "chloroplasts photosynthesis chlorophyll plant cell oxygen" },
   { title: "Mitochondria Explained Simply", cat: "Biology", path: "biologie/mitochondrien.html", keywords: "mitochondria powerhouse cell atp energy cell biology" },
-  { title: "Cellular Respiration Explained Simply", cat: "Biology", path: "biologie/zellatmung.html", keywords: "cellular respiration atp energy mitochondria oxygen photosynthesis" }
+  { title: "Cellular Respiration Explained Simply", cat: "Biology", path: "biologie/zellatmung.html", keywords: "cellular respiration atp energy mitochondria oxygen photosynthesis" },
+  { title: "Ecosystems Explained Simply", cat: "Biology", path: "biologie/oekosystem.html", keywords: "ecosystem ecology food chain producers consumers decomposers" },
+  { title: "Forest Ecosystems Explained Simply", cat: "Biology", path: "biologie/waldoekosystem.html", keywords: "forest ecosystem canopy ground layer ecology" },
+  { title: "Rivers as Ecosystems Explained Simply", cat: "Biology", path: "biologie/fluss.html", keywords: "river ecosystem source mouth ecology waterway" }
 ];

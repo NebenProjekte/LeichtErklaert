@@ -21,5 +21,8 @@ var LE_TOPICS = [
   { title: "Las Células Madre explicadas de forma sencilla", cat: "Biología", path: "biologie/stammzellen.html", keywords: "celulas madre biologia celular embrionarias adultas medula osea" },
   { title: "Los Cloroplastos explicados de forma sencilla", cat: "Biología", path: "biologie/chloroplasten.html", keywords: "cloroplastos fotosintesis clorofila celula vegetal oxigeno" },
   { title: "Las Mitocondrias explicadas de forma sencilla", cat: "Biología", path: "biologie/mitochondrien.html", keywords: "mitocondrias central energetica celula atp energia biologia celular" },
-  { title: "La Respiración Celular explicada de forma sencilla", cat: "Biología", path: "biologie/zellatmung.html", keywords: "respiracion celular atp energia mitocondrias oxigeno fotosintesis" }
+  { title: "La Respiración Celular explicada de forma sencilla", cat: "Biología", path: "biologie/zellatmung.html", keywords: "respiracion celular atp energia mitocondrias oxigeno fotosintesis" },
+  { title: "El Ecosistema explicado de forma sencilla", cat: "Biología", path: "biologie/oekosystem.html", keywords: "ecosistema ecologia cadena alimentaria productores consumidores descomponedores" },
+  { title: "El Ecosistema Forestal explicado de forma sencilla", cat: "Biología", path: "biologie/waldoekosystem.html", keywords: "bosque ecosistema forestal dosel suelo ecologia" },
+  { title: "El Río como Ecosistema explicado de forma sencilla", cat: "Biología", path: "biologie/fluss.html", keywords: "rio ecosistema nacimiento desembocadura ecologia curso de agua" }
 ];
