@@ -15,5 +15,6 @@ var LE_TOPICS = [
   { title: "El Gato de Schrödinger explicado de forma sencilla", cat: "Física", path: "physik/schroedingers-katze.html", keywords: "schrodinger gato mecanica cuantica superposicion fisica cuantica" },
   { title: "El Desplazamiento de Agua explicado de forma sencilla", cat: "Física", path: "physik/wasserverdraengung.html", keywords: "desplazamiento de agua arquimedes flotabilidad flotar hundir densidad" },
   { title: "Darwin y la Teoría de la Evolución explicada de forma sencilla", cat: "Biología", path: "biologie/evolutionstheorie.html", keywords: "darwin evolucion seleccion natural mutacion especie" },
-  { title: "El ADN explicado de forma sencilla", cat: "Biología", path: "biologie/dna.html", keywords: "adn genoma doble helice genes pares de bases genetica" }
+  { title: "El ADN explicado de forma sencilla", cat: "Biología", path: "biologie/dna.html", keywords: "adn genoma doble helice genes pares de bases genetica" },
+  { title: "Los Virus explicados de forma sencilla", cat: "Biología", path: "biologie/viren.html", keywords: "virus microbiologia celula huesped vacuna material genetico" }
 ];

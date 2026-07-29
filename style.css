@@ -2,7 +2,7 @@
   --primary: #c1613b;
   --primary-dark: #7a3b22;
   --accent: #e8974a;
-  --accent-2: #b8483a;
+  --accent-2: #d9822e;
   --bio: #6b7a5e;
   --bio-dark: #46523c;
   --bg: #fbf6ee;
@@ -305,6 +305,8 @@ article.topic h1 {
 
 article.topic.cat-bio h1 { color: var(--bio-dark); }
 article.topic.cat-bio .back-link { color: var(--bio-dark); }
+article.topic.cat-physics h1 { color: var(--accent-2); }
+article.topic.cat-physics .back-link { color: var(--accent-2); }
 
 .formula-box {
   background: var(--primary-dark);

@@ -15,5 +15,6 @@ var LE_TOPICS = [
   { title: "Schroedingers Katze leicht erklaert", cat: "Physik", path: "physik/schroedingers-katze.html", keywords: "schroedinger katze quantenmechanik superposition ueberlagerung quantenphysik" },
   { title: "Wasserverdraengung leicht erklaert", cat: "Physik", path: "physik/wasserverdraengung.html", keywords: "wasserverdraengung archimedes auftrieb schwimmen sinken dichte" },
   { title: "Darwin und die Evolutionstheorie leicht erklaert", cat: "Biologie", path: "biologie/evolutionstheorie.html", keywords: "darwin evolution evolutionstheorie natuerliche selektion mutation art" },
-  { title: "DNA leicht erklaert", cat: "Biologie", path: "biologie/dna.html", keywords: "dna erbgut doppelhelix gene basenpaare genetik" }
+  { title: "DNA leicht erklaert", cat: "Biologie", path: "biologie/dna.html", keywords: "dna erbgut doppelhelix gene basenpaare genetik" },
+  { title: "Viren leicht erklaert", cat: "Biologie", path: "biologie/viren.html", keywords: "viren virus mikrobiologie wirtszelle impfung erbgut" }
 ];

@@ -15,5 +15,6 @@ var LE_TOPICS = [
   { title: "Schrödinger's Cat Explained Simply", cat: "Physics", path: "physik/schroedingers-katze.html", keywords: "schrodinger cat quantum mechanics superposition quantum physics" },
   { title: "Water Displacement Explained Simply", cat: "Physics", path: "physik/wasserverdraengung.html", keywords: "water displacement archimedes buoyancy float sink density" },
   { title: "Darwin and the Theory of Evolution Explained Simply", cat: "Biology", path: "biologie/evolutionstheorie.html", keywords: "darwin evolution natural selection mutation species" },
-  { title: "DNA Explained Simply", cat: "Biology", path: "biologie/dna.html", keywords: "dna genome double helix genes base pairs genetics" }
+  { title: "DNA Explained Simply", cat: "Biology", path: "biologie/dna.html", keywords: "dna genome double helix genes base pairs genetics" },
+  { title: "Viruses Explained Simply", cat: "Biology", path: "biologie/viren.html", keywords: "viruses virus microbiology host cell vaccine genetic material" }
 ];
