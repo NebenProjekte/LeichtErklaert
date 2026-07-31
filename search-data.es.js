@@ -32,4 +32,11 @@ var LE_TOPICS = [
   { title: "La Radiactividad explicada de forma sencilla", cat: "Química", path: "chemie/radioaktivitaet.html", keywords: "radiactividad alfa beta gamma radiacion vida media quimica nuclear" },
   { title: "La Anomalía del Agua explicada de forma sencilla", cat: "Química", path: "chemie/anomalie-des-wassers.html", keywords: "anomalia agua densidad hielo flotar congelar" },
   { title: "Los Tres Estados de la Materia explicados de forma sencilla", cat: "Química", path: "chemie/aggregatzustaende.html", keywords: "estados de la materia solido liquido gaseoso punto de fusion punto de ebullicion agua hierro oro plata vidrio modelo de particulas" }
+,
+  { title: "Los Porcentajes explicados de forma sencilla", cat: "Matematicas", path: "mathematik/prozentrechnung.html", keywords: "porcentaje descuento interes calculo porcentual tanto por ciento" },
+  { title: "Seno, Coseno y Tangente explicados de forma sencilla", cat: "Matematicas", path: "mathematik/trigonometrie.html", keywords: "seno coseno tangente trigonometria cateto opuesto adyacente hipotenusa angulo triangulo" },
+  { title: "Las Formulas de los Binomios explicadas de forma sencilla", cat: "Matematicas", path: "mathematik/binomische-formeln.html", keywords: "formula binomio algebra desarrollar cuadrado productos notables" },
+  { title: "El Crecimiento Exponencial explicado de forma sencilla", cat: "Matematicas", path: "mathematik/exponentielles-wachstum.html", keywords: "crecimiento exponencial interes compuesto bacterias tasa de crecimiento duplicacion" },
+  { title: "La Paradoja del Cumpleanos explicada de forma sencilla", cat: "Matematicas", path: "mathematik/geburtstagsparadoxon.html", keywords: "paradoja del cumpleanos probabilidad estadistica cumpleanos coincidencia" },
+  { title: "Formulas de Area y Volumen explicadas de forma sencilla", cat: "Matematicas", path: "mathematik/flaechen-und-volumenformeln.html", keywords: "area circulo volumen esfera volumen cilindro radio pi volumen area geometria solidos" }
 ];

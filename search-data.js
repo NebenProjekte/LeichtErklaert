@@ -32,4 +32,11 @@ var LE_TOPICS = [
   { title: "Radioaktivitaet leicht erklaert", cat: "Chemie", path: "chemie/radioaktivitaet.html", keywords: "radioaktivitaet alpha beta gamma strahlung halbwertszeit kernchemie" },
   { title: "Die Anomalie des Wassers leicht erklaert", cat: "Chemie", path: "chemie/anomalie-des-wassers.html", keywords: "anomalie wasser dichte eis schwimmen gefrieren" },
   { title: "Die drei Aggregatzustaende leicht erklaert", cat: "Chemie", path: "chemie/aggregatzustaende.html", keywords: "aggregatzustaende fest fluessig gasfoermig schmelzpunkt siedepunkt wasser eisen gold silber glas teilchenmodell" }
+,
+  { title: "Prozentrechnung leicht erklärt", cat: "Mathematik", path: "mathematik/prozentrechnung.html", keywords: "prozent prozentrechnung rabatt zinsen prozentsatz grundwert prozentwert" },
+  { title: "Sinus, Cosinus und Tangens leicht erklärt", cat: "Mathematik", path: "mathematik/trigonometrie.html", keywords: "sinus cosinus tangens trigonometrie gegenkathete ankathete hypotenuse winkel dreieck" },
+  { title: "Binomische Formeln leicht erklärt", cat: "Mathematik", path: "mathematik/binomische-formeln.html", keywords: "binomische formel binomialformel algebra ausmultiplizieren quadrat quadratische ergaenzung" },
+  { title: "Exponentielles Wachstum leicht erklärt", cat: "Mathematik", path: "mathematik/exponentielles-wachstum.html", keywords: "exponentielles wachstum zinseszins bakterien wachstumsrate verdopplung exponentialfunktion" },
+  { title: "Das Geburtstagsparadoxon leicht erklärt", cat: "Mathematik", path: "mathematik/geburtstagsparadoxon.html", keywords: "geburtstagsparadoxon wahrscheinlichkeit stochastik geburtstag paradox" },
+  { title: "Flächen- und Volumenformeln leicht erklärt", cat: "Mathematik", path: "mathematik/flaechen-und-volumenformeln.html", keywords: "kreisflaeche kugelvolumen zylindervolumen radius pi volumen flaeche geometrie koerper" }
 ];

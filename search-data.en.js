@@ -32,4 +32,11 @@ var LE_TOPICS = [
   { title: "Radioactivity Explained Simply", cat: "Chemistry", path: "chemie/radioaktivitaet.html", keywords: "radioactivity alpha beta gamma radiation half-life nuclear chemistry" },
   { title: "The Anomaly of Water Explained Simply", cat: "Chemistry", path: "chemie/anomalie-des-wassers.html", keywords: "anomaly water density ice float freeze" },
   { title: "The Three States of Matter Explained Simply", cat: "Chemistry", path: "chemie/aggregatzustaende.html", keywords: "states of matter solid liquid gas melting point boiling point water iron gold silver glass particle model" }
+,
+  { title: "Percentages Explained Simply", cat: "Math", path: "mathematik/prozentrechnung.html", keywords: "percent percentage discount interest percentage calculation" },
+  { title: "Sine, Cosine and Tangent Explained Simply", cat: "Math", path: "mathematik/trigonometrie.html", keywords: "sine cosine tangent trigonometry opposite adjacent hypotenuse angle triangle" },
+  { title: "Binomial Formulas Explained Simply", cat: "Math", path: "mathematik/binomische-formeln.html", keywords: "binomial formula algebra expand square special products" },
+  { title: "Exponential Growth Explained Simply", cat: "Math", path: "mathematik/exponentielles-wachstum.html", keywords: "exponential growth compound interest bacteria growth rate doubling exponential function" },
+  { title: "The Birthday Paradox Explained Simply", cat: "Math", path: "mathematik/geburtstagsparadoxon.html", keywords: "birthday paradox probability statistics birthday problem" },
+  { title: "Area and Volume Formulas Explained Simply", cat: "Math", path: "mathematik/flaechen-und-volumenformeln.html", keywords: "circle area sphere volume cylinder volume radius pi volume area geometry solids" }
 ];
