@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Area and Volume Formulas Explained Simply</title>
-<meta name="description" content="Circle area, sphere volume and cylinder volume explained simply - with formulas, colorful diagrams and worked examples.">
+<meta name="description" content="Circle circumference, area, sphere and cylinder volume (plus surface area) explained simply - with formulas, colorful diagrams, worked examples and the most common mistakes.">
 <link rel="alternate" hreflang="de" href="https://nebenprojekte.github.io/LeichtErklaert/mathematik/flaechen-und-volumenformeln.html">
 <link rel="alternate" hreflang="en" href="https://nebenprojekte.github.io/LeichtErklaert/en/mathematik/flaechen-und-volumenformeln.html">
 <link rel="alternate" hreflang="es" href="https://nebenprojekte.github.io/LeichtErklaert/es/mathematik/flaechen-und-volumenformeln.html">
@@ -43,7 +43,12 @@
 <article class="topic">
 <span class="subject-pill math">Math &middot; Geometry</span>
 <h1>Area and Volume Formulas Explained Simply</h1>
-<p>Whether it's a circle, sphere or cylinder - the formulas for area and volume are more closely related than you might think. All three only need the radius <strong>r</strong> (and for the cylinder, also the height <strong>h</strong>).</p>
+<p>Whether it's a circle, sphere or cylinder - the formulas for circumference, area, volume and surface area are more closely related than you might think. All of them only need the radius <strong>r</strong> (and for the cylinder, also the height <strong>h</strong>). Here's everything you need for a math exam on the topic - including the mistakes that happen most often.</p>
+
+<div class="formula-box">
+Circle circumference: U = 2 &times; &pi; &times; r
+<small>r is the radius - half of the diameter d!</small>
+</div>
 
 <div class="formula-box">
 Circle area: A = &pi; &times; r&sup2;
@@ -54,11 +59,20 @@ Sphere volume: V = 4&frasl;3 &times; &pi; &times; r&sup3;
 </div>
 
 <div class="formula-box">
+Sphere surface area: O = 4 &times; &pi; &times; r&sup2;
+</div>
+
+<div class="formula-box">
 Cylinder volume: V = &pi; &times; r&sup2; &times; h
 </div>
 
+<div class="formula-box">
+Cylinder surface area: O = 2 &times; &pi; &times; r &times; (r + h)
+<small>base + top + lateral surface</small>
+</div>
+
 <div class="diagram">
-<svg viewBox="0 0 460 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Circle, Sphere und Cylinder mit Radius und Hoehe markiert">
+<svg viewBox="0 0 460 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Circle, Sphere und Cylinder mit Radius und H&ouml;he markiert">
 <circle cx="60" cy="100" r="55" fill="#e2583f"/>
 <line x1="60" y1="100" x2="115" y2="100" stroke="#fff" stroke-width="2" stroke-dasharray="4 3"/>
 <text x="75" y="95" font-size="14" fill="#fff" font-weight="800">r</text>
@@ -179,7 +193,7 @@ Cylinder volume: V = &pi; &times; r&sup2; &times; h
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Show me a worked example!</p>
+<p>What's the most common mistake people make with these problems?</p>
 </div>
 </div>
 
@@ -198,15 +212,101 @@ Cylinder volume: V = &pi; &times; r&sup2; &times; h
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>A soccer ball has a radius of about 11cm. Its volume is then 4&frasl;3 &times; &pi; &times; 11&sup3; &asymp; 5575 cm&sup3; - that's over 5.5 liters of air!</p>
+<p>Mixing up radius and diameter! If the problem gives you the diameter (e.g. d=10cm), you first have to divide by 2 to get the radius (r=5cm). If you accidentally calculate with the diameter instead, the area comes out 4 times too big, and the volume a whopping 8 times too big!</p>
+</div>
+</div>
+
+<div class="dialog-line">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
+<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
+<circle cx="24" cy="36" r="6" fill="#fff"/>
+<circle cx="40" cy="36" r="6" fill="#fff"/>
+<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Mia</div>
+<p>How do you even get the cylinder's surface area formula? It looks complicated.</p>
+</div>
+</div>
+
+<div class="dialog-line right">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
+<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
+<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
+<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
+<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
+<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Grandpa Theo</div>
+<p>Not as hard as it looks: imagine peeling the label off a can and laying it flat - that's a rectangle! Its width is the circle's circumference (2&times;&pi;&times;r) and its height is h. Add the two round lids on top and bottom (2&times;&pi;&times;r&sup2;) and you get exactly that formula.</p>
+</div>
+</div>
+
+<div class="dialog-line">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
+<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
+<circle cx="24" cy="36" r="6" fill="#fff"/>
+<circle cx="40" cy="36" r="6" fill="#fff"/>
+<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Mia</div>
+<p>Show me one full worked example with everything together!</p>
+</div>
+</div>
+
+<div class="dialog-line right">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
+<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
+<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
+<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
+<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
+<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Grandpa Theo</div>
+<p>Take a bicycle wheel with diameter d=60cm, so r=30cm. Circumference U = 2&times;&pi;&times;30 &asymp; 188.5cm - that's how far the wheel travels in exactly one turn! Its area would be A = &pi;&times;30&sup2; &asymp; 2827 cm&sup2;.</p>
 </div>
 </div>
 
 </div>
 
 <div class="example-box">
-<div class="label">Try it yourself</div>
-<p>A can has r = 3.5cm and h = 12cm. How much fits inside? <br><small>Answer: V = &pi; &times; 3.5&sup2; &times; 12 &asymp; 462 cm&sup3;</small></p>
+<div class="label">Example 1: Full cylinder (a can, r=3.5cm, h=12cm)</div>
+<p>Volume: V = &pi; &times; 3.5&sup2; &times; 12 &asymp; <strong>462 cm&sup3;</strong><br>Surface area: O = 2 &times; &pi; &times; 3.5 &times; (3.5+12) &asymp; 2 &times; &pi; &times; 3.5 &times; 15.5 &asymp; <strong>340.8 cm&sup2;</strong></p>
+</div>
+
+<div class="example-box">
+<div class="label">Example 2: Full sphere (a soccer ball, r&asymp;11cm)</div>
+<p>Volume: V = 4&frasl;3 &times; &pi; &times; 11&sup3; &asymp; <strong>5575 cm&sup3;</strong> (over 5.5 liters of air!)<br>Surface area: O = 4 &times; &pi; &times; 11&sup2; &asymp; <strong>1521 cm&sup2;</strong> - roughly the leather area the ball is stitched from.</p>
+</div>
+
+<div class="example-box">
+<div class="label">Example 3: Your turn</div>
+<p>A pizza has a diameter of 32cm. What's its area? <br><small>Watch the trap: first divide d=32cm by 2! r=16cm, then A = &pi; &times; 16&sup2; &asymp; 804 cm&sup2;</small></p>
 </div>
 
 <div class="ad-slot">
@@ -214,7 +314,7 @@ Cylinder volume: V = &pi; &times; r&sup2; &times; h
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
-<p class="note">&pi; (Pi) is approximately 3.14159 - the formulas are exact only for perfect circles, spheres and cylinders; real objects are always just approximations of them.</p>
+<p class="note">&pi; (Pi) is approximately 3.14159 - the formulas are exact only for perfect circles, spheres and cylinders; real objects are always just approximations of them. Always watch your units in exams: areas are given in cm&sup2;/m&sup2;, volumes in cm&sup3;/m&sup3;.</p>
 
 <a class="back-link" href="../index.html">&larr; Back to overview</a>
 </article>

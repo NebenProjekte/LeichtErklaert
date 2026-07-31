@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>F&oacute;rmulas de &Aacute;rea y Volumen explicadas de forma sencilla</title>
-<meta name="description" content="Area del circulo, volumen de la esfera y volumen del cilindro explicados de forma sencilla - con formulas, diagramas coloridos y ejemplos.">
+<meta name="description" content="Perimetro del circulo, area, volumen de la esfera y del cilindro (y sus superficies) explicados de forma sencilla - con formulas, diagramas coloridos, ejemplos y los errores mas comunes.">
 <link rel="alternate" hreflang="de" href="https://nebenprojekte.github.io/LeichtErklaert/mathematik/flaechen-und-volumenformeln.html">
 <link rel="alternate" hreflang="en" href="https://nebenprojekte.github.io/LeichtErklaert/en/mathematik/flaechen-und-volumenformeln.html">
 <link rel="alternate" hreflang="es" href="https://nebenprojekte.github.io/LeichtErklaert/es/mathematik/flaechen-und-volumenformeln.html">
@@ -43,7 +43,12 @@
 <article class="topic">
 <span class="subject-pill math">Matem&aacute;ticas &middot; Geometr&iacute;a</span>
 <h1>F&oacute;rmulas de &Aacute;rea y Volumen explicadas de forma sencilla</h1>
-<p>Ya sea un c&iacute;rculo, una esfera o un cilindro - las f&oacute;rmulas de &aacute;rea y volumen est&aacute;n m&aacute;s relacionadas de lo que crees. Los tres solo necesitan el radio <strong>r</strong> (y en el cilindro, tambi&eacute;n la altura <strong>h</strong>).</p>
+<p>Ya sea un c&iacute;rculo, una esfera o un cilindro - las f&oacute;rmulas de per&iacute;metro, &aacute;rea, volumen y superficie est&aacute;n m&aacute;s relacionadas de lo que crees. Todas solo necesitan el radio <strong>r</strong> (y en el cilindro, tambi&eacute;n la altura <strong>h</strong>). Aqu&iacute; tienes todo lo que necesitas para un examen de matem&aacute;ticas sobre el tema - incluidos los errores m&aacute;s frecuentes.</p>
+
+<div class="formula-box">
+Per&iacute;metro del c&iacute;rculo: L = 2 &times; &pi; &times; r
+<small>r es el radio - &iexcl;la mitad del di&aacute;metro d!</small>
+</div>
 
 <div class="formula-box">
 &Aacute;rea del c&iacute;rculo: A = &pi; &times; r&sup2;
@@ -54,11 +59,20 @@ Volumen de la esfera: V = 4&frasl;3 &times; &pi; &times; r&sup3;
 </div>
 
 <div class="formula-box">
+Superficie de la esfera: S = 4 &times; &pi; &times; r&sup2;
+</div>
+
+<div class="formula-box">
 Volumen del cilindro: V = &pi; &times; r&sup2; &times; h
 </div>
 
+<div class="formula-box">
+Superficie del cilindro: S = 2 &times; &pi; &times; r &times; (r + h)
+<small>base + tapa + superficie lateral</small>
+</div>
+
 <div class="diagram">
-<svg viewBox="0 0 460 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Circulo, Esfera und Cilindro mit Radius und Hoehe markiert">
+<svg viewBox="0 0 460 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Circulo, Esfera und Cilindro mit Radius und H&ouml;he markiert">
 <circle cx="60" cy="100" r="55" fill="#e2583f"/>
 <line x1="60" y1="100" x2="115" y2="100" stroke="#fff" stroke-width="2" stroke-dasharray="4 3"/>
 <text x="75" y="95" font-size="14" fill="#fff" font-weight="800">r</text>
@@ -179,7 +193,7 @@ Volumen del cilindro: V = &pi; &times; r&sup2; &times; h
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>&iexcl;Mu&eacute;strame un ejemplo!</p>
+<p>&iquest;Cu&aacute;l es el error m&aacute;s com&uacute;n en estos ejercicios?</p>
 </div>
 </div>
 
@@ -198,15 +212,101 @@ Volumen del cilindro: V = &pi; &times; r&sup2; &times; h
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Abuelo Theo</div>
-<p>Un bal&oacute;n de f&uacute;tbol tiene un radio de unos 11cm. Su volumen es entonces 4&frasl;3 &times; &pi; &times; 11&sup3; &asymp; 5575 cm&sup3; - &iexcl;m&aacute;s de 5,5 litros de aire!</p>
+<p>&iexcl;Confundir radio y di&aacute;metro! Si el ejercicio te da el di&aacute;metro (p. ej. d=10cm), primero tienes que dividir entre 2 para obtener el radio (r=5cm). Si calculas por error con el di&aacute;metro en vez del radio, el &aacute;rea sale 4 veces mayor, &iexcl;y el volumen nada menos que 8 veces mayor!</p>
+</div>
+</div>
+
+<div class="dialog-line">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
+<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
+<circle cx="24" cy="36" r="6" fill="#fff"/>
+<circle cx="40" cy="36" r="6" fill="#fff"/>
+<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Mia</div>
+<p>&iquest;C&oacute;mo se llega a la f&oacute;rmula de la superficie del cilindro? Parece complicada.</p>
+</div>
+</div>
+
+<div class="dialog-line right">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
+<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
+<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
+<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
+<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
+<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Abuelo Theo</div>
+<p>No es tan dif&iacute;cil: imagina que despegas la etiqueta de una lata y la extiendes plana - &iexcl;es un rect&aacute;ngulo! Su ancho es el per&iacute;metro del c&iacute;rculo (2&times;&pi;&times;r) y su altura es h. A&ntilde;ade las dos tapas redondas arriba y abajo (2&times;&pi;&times;r&sup2;) y obtienes exactamente esa f&oacute;rmula.</p>
+</div>
+</div>
+
+<div class="dialog-line">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
+<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
+<circle cx="24" cy="36" r="6" fill="#fff"/>
+<circle cx="40" cy="36" r="6" fill="#fff"/>
+<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Mia</div>
+<p>&iexcl;Mu&eacute;strame un ejemplo completo con todo junto!</p>
+</div>
+</div>
+
+<div class="dialog-line right">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
+<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
+<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
+<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
+<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
+<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Abuelo Theo</div>
+<p>Toma la rueda de una bicicleta con di&aacute;metro d=60cm, o sea r=30cm. Per&iacute;metro L = 2&times;&pi;&times;30 &asymp; 188,5cm - &iexcl;eso es lo que avanza la rueda en una vuelta completa! Su &aacute;rea ser&iacute;a A = &pi;&times;30&sup2; &asymp; 2827 cm&sup2;.</p>
 </div>
 </div>
 
 </div>
 
 <div class="example-box">
-<div class="label">Practica t&uacute;</div>
-<p>Una lata tiene r = 3,5cm y h = 12cm. &iquest;Cu&aacute;nto cabe dentro? <br><small>Soluci&oacute;n: V = &pi; &times; 3,5&sup2; &times; 12 &asymp; 462 cm&sup3;</small></p>
+<div class="label">Ejemplo 1: Cilindro completo (una lata, r=3,5cm, h=12cm)</div>
+<p>Volumen: V = &pi; &times; 3,5&sup2; &times; 12 &asymp; <strong>462 cm&sup3;</strong><br>Superficie: S = 2 &times; &pi; &times; 3,5 &times; (3,5+12) &asymp; 2 &times; &pi; &times; 3,5 &times; 15,5 &asymp; <strong>340,8 cm&sup2;</strong></p>
+</div>
+
+<div class="example-box">
+<div class="label">Ejemplo 2: Esfera completa (bal&oacute;n de f&uacute;tbol, r&asymp;11cm)</div>
+<p>Volumen: V = 4&frasl;3 &times; &pi; &times; 11&sup3; &asymp; <strong>5575 cm&sup3;</strong> (&iexcl;m&aacute;s de 5,5 litros de aire!)<br>Superficie: S = 4 &times; &pi; &times; 11&sup2; &asymp; <strong>1521 cm&sup2;</strong> - aproximadamente el &aacute;rea de cuero con la que est&aacute; cosido el bal&oacute;n.</p>
+</div>
+
+<div class="example-box">
+<div class="label">Ejemplo 3: Practica t&uacute;</div>
+<p>Una pizza tiene un di&aacute;metro de 32cm. &iquest;Cu&aacute;l es su &aacute;rea? <br><small>Cuidado con la trampa: primero divide d=32cm entre 2. r=16cm, luego A = &pi; &times; 16&sup2; &asymp; 804 cm&sup2;</small></p>
 </div>
 
 <div class="ad-slot">
@@ -214,7 +314,7 @@ Volumen del cilindro: V = &pi; &times; r&sup2; &times; h
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
-<p class="note">&pi; (Pi) es aproximadamente 3,14159 - las f&oacute;rmulas son exactas solo para c&iacute;rculos, esferas y cilindros perfectos; los objetos reales son siempre solo aproximaciones.</p>
+<p class="note">&pi; (Pi) es aproximadamente 3,14159 - las f&oacute;rmulas son exactas solo para c&iacute;rculos, esferas y cilindros perfectos; los objetos reales son siempre solo aproximaciones. En los ex&aacute;menes, presta siempre atenci&oacute;n a las unidades: las &aacute;reas se dan en cm&sup2;/m&sup2;, los vol&uacute;menes en cm&sup3;/m&sup3;.</p>
 
 <a class="back-link" href="../index.html">&larr; Volver al resumen</a>
 </article>
