@@ -39,4 +39,13 @@ var LE_TOPICS = [
   { title: "Exponentielles Wachstum leicht erklärt", cat: "Mathematik", path: "mathematik/exponentielles-wachstum.html", keywords: "exponentielles wachstum zinseszins bakterien wachstumsrate verdopplung exponentialfunktion" },
   { title: "Das Geburtstagsparadoxon leicht erklärt", cat: "Mathematik", path: "mathematik/geburtstagsparadoxon.html", keywords: "geburtstagsparadoxon wahrscheinlichkeit stochastik geburtstag paradox" },
   { title: "Flächen- und Volumenformeln leicht erklärt", cat: "Mathematik", path: "mathematik/flaechen-und-volumenformeln.html", keywords: "kreisflaeche kugelvolumen zylindervolumen radius pi volumen flaeche geometrie koerper" }
+,
+  { title: "Die Steinzeit leicht erklärt", cat: "Geschichte", path: "geschichte/steinzeit.html", keywords: "steinzeit altsteinzeit jungsteinzeit neandertaler homo sapiens neolithische revolution hoehlenmalerei lascaux altamira" },
+  { title: "Alexander der Große leicht erklärt", cat: "Geschichte", path: "geschichte/alexander-der-grosse.html", keywords: "alexander der grosse makedonien perserreich issos gaugamela hellenismus diadochen alexandria" },
+  { title: "Rom gegen Karthago - die Punischen Kriege leicht erklärt", cat: "Geschichte", path: "geschichte/rom-gegen-karthago.html", keywords: "punische kriege rom karthago hannibal cannae zama alpenueberquerung scipio" },
+  { title: "Das Römische Reich leicht erklärt", cat: "Geschichte", path: "geschichte/roemisches-reich.html", keywords: "roemisches reich rom antike augustus caesar pax romana untergang voelkerwanderung" },
+  { title: "Spanischer Kolonialismus in Amerika leicht erklärt", cat: "Geschichte", path: "geschichte/spanischer-kolonialismus.html", keywords: "kolonialismus spanien kolumbus azteken inka cortes pizarro requerimiento las casas encomienda potosi" },
+  { title: "Die Französische Revolution leicht erklärt", cat: "Geschichte", path: "geschichte/franzoesische-revolution.html", keywords: "franzoesische revolution bastille ballhausschwur menschenrechte robespierre terrorherrschaft ludwig guillotine" },
+  { title: "Der Erste Weltkrieg leicht erklärt", cat: "Geschichte", path: "geschichte/erster-weltkrieg.html", keywords: "erster weltkrieg 1914 1918 julikrise sarajevo attentat franz ferdinand buendnissysteme dreibund triple entente nationalismus wettruesten stellungskrieg versailler vertrag" },
+  { title: "Der Zweite Weltkrieg leicht erklärt", cat: "Geschichte", path: "geschichte/zweiter-weltkrieg.html", keywords: "zweiter weltkrieg 1939 1945 hitler machtuebernahme nationalsozialismus holocaust shoah ueberfall auf polen blitzkrieg stalingrad pearl harbor normandie hiroshima nagasaki wannseekonferenz" }
 ];

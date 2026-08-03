@@ -39,4 +39,13 @@ var LE_TOPICS = [
   { title: "El Crecimiento Exponencial explicado de forma sencilla", cat: "Matematicas", path: "mathematik/exponentielles-wachstum.html", keywords: "crecimiento exponencial interes compuesto bacterias tasa de crecimiento duplicacion" },
   { title: "La Paradoja del Cumpleanos explicada de forma sencilla", cat: "Matematicas", path: "mathematik/geburtstagsparadoxon.html", keywords: "paradoja del cumpleanos probabilidad estadistica cumpleanos coincidencia" },
   { title: "Formulas de Area y Volumen explicadas de forma sencilla", cat: "Matematicas", path: "mathematik/flaechen-und-volumenformeln.html", keywords: "area circulo volumen esfera volumen cilindro radio pi volumen area geometria solidos" }
+,
+  { title: "La Edad de Piedra explicada de forma sencilla", cat: "Historia", path: "geschichte/steinzeit.html", keywords: "edad de piedra paleolitico neolitico neandertal homo sapiens revolucion neolitica pintura rupestre lascaux altamira" },
+  { title: "Alejandro Magno explicado de forma sencilla", cat: "Historia", path: "geschichte/alexander-der-grosse.html", keywords: "alejandro magno macedonia imperio persa issos gaugamela helenismo diadocos alejandria" },
+  { title: "Roma contra Cartago - Las Guerras Punicas explicadas de forma sencilla", cat: "Historia", path: "geschichte/rom-gegen-karthago.html", keywords: "guerras punicas roma cartago anibal canas zama alpes escipion" },
+  { title: "El Imperio Romano explicado de forma sencilla", cat: "Historia", path: "geschichte/roemisches-reich.html", keywords: "imperio romano roma antiguedad augusto cesar pax romana caida invasiones barbaras" },
+  { title: "El Colonialismo Espanol en America explicado de forma sencilla", cat: "Historia", path: "geschichte/spanischer-kolonialismus.html", keywords: "colonialismo espanol colon aztecas incas cortes pizarro requerimiento las casas encomienda potosi" },
+  { title: "La Revolucion Francesa explicada de forma sencilla", cat: "Historia", path: "geschichte/franzoesische-revolution.html", keywords: "revolucion francesa bastilla juramento juego de pelota derechos del hombre robespierre terror luis guillotina" },
+  { title: "La Primera Guerra Mundial explicada de forma sencilla", cat: "Historia", path: "geschichte/erster-weltkrieg.html", keywords: "primera guerra mundial 1914 1918 crisis de julio sarajevo atentado francisco fernando alianzas nacionalismo carrera armamentistica tratado de versalles" },
+  { title: "La Segunda Guerra Mundial explicada de forma sencilla", cat: "Historia", path: "geschichte/zweiter-weltkrieg.html", keywords: "segunda guerra mundial 1939 1945 hitler nazismo holocausto invasion de polonia blitzkrieg stalingrado pearl harbor normandia hiroshima nagasaki conferencia de wannsee" }
 ];

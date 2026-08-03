@@ -39,4 +39,13 @@ var LE_TOPICS = [
   { title: "Exponential Growth Explained Simply", cat: "Math", path: "mathematik/exponentielles-wachstum.html", keywords: "exponential growth compound interest bacteria growth rate doubling exponential function" },
   { title: "The Birthday Paradox Explained Simply", cat: "Math", path: "mathematik/geburtstagsparadoxon.html", keywords: "birthday paradox probability statistics birthday problem" },
   { title: "Area and Volume Formulas Explained Simply", cat: "Math", path: "mathematik/flaechen-und-volumenformeln.html", keywords: "circle area sphere volume cylinder volume radius pi volume area geometry solids" }
+,
+  { title: "The Stone Age Explained Simply", cat: "History", path: "geschichte/steinzeit.html", keywords: "stone age paleolithic neolithic neanderthal homo sapiens neolithic revolution cave painting lascaux altamira" },
+  { title: "Alexander the Great Explained Simply", cat: "History", path: "geschichte/alexander-der-grosse.html", keywords: "alexander the great macedonia persian empire issus gaugamela hellenism diadochi alexandria" },
+  { title: "Rome vs. Carthage - The Punic Wars Explained Simply", cat: "History", path: "geschichte/rom-gegen-karthago.html", keywords: "punic wars rome carthage hannibal cannae zama alps crossing scipio" },
+  { title: "The Roman Empire Explained Simply", cat: "History", path: "geschichte/roemisches-reich.html", keywords: "roman empire rome ancient history augustus caesar pax romana fall migration period" },
+  { title: "Spanish Colonialism in the Americas Explained Simply", cat: "History", path: "geschichte/spanischer-kolonialismus.html", keywords: "spanish colonialism columbus aztec inca cortes pizarro requerimiento las casas encomienda potosi" },
+  { title: "The French Revolution Explained Simply", cat: "History", path: "geschichte/franzoesische-revolution.html", keywords: "french revolution bastille tennis court oath rights of man robespierre reign of terror louis guillotine" },
+  { title: "World War I Explained Simply", cat: "History", path: "geschichte/erster-weltkrieg.html", keywords: "world war 1 wwi first world war 1914 1918 july crisis sarajevo assassination franz ferdinand alliance system triple entente arms race trench warfare treaty of versailles" },
+  { title: "World War II Explained Simply", cat: "History", path: "geschichte/zweiter-weltkrieg.html", keywords: "world war 2 wwii second world war 1939 1945 hitler nazi germany holocaust invasion of poland blitzkrieg stalingrad pearl harbor normandy hiroshima nagasaki wannsee conference" }
 ];
