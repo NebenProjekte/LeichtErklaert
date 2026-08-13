@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Explosivkraft leicht erklärt - LeichtErkl&auml;rt</title>
-<meta name="description" content="Explosivkraft einfach erklärt: Warum nicht zählt, wie viel Kraft du hast, sondern wie schnell du sie aufbaust - und warum der Stärkste selten am höchsten springt.">
+<title>Explosivkraft und Schnellkraft leicht erklärt - LeichtErkl&auml;rt</title>
+<meta name="description" content="Schnellkraft für die Oberstufe: Kraftstoß, Kraft-Zeit-Kurve mit Startkraft und Explosivkraft, Dehnungs-Verkürzungs-Zyklus, Trainingsmethoden und Abituraufgabe.">
 <link rel="alternate" hreflang="de" href="https://nebenprojekte.github.io/LeichtErklaert/sporttheorie/explosivkraft.html">
 <link rel="alternate" hreflang="en" href="https://nebenprojekte.github.io/LeichtErklaert/en/sporttheorie/explosivkraft.html">
 <link rel="alternate" hreflang="es" href="https://nebenprojekte.github.io/LeichtErklaert/es/sporttheorie/explosivkraft.html">
@@ -17,7 +17,7 @@
 <div class="container">
 <a class="brand" href="../index.html">
 <span class="brand-name">LeichtErkl&auml;rt</span>
-<span class="brand-sub">Alles leicht erklärt</span>
+<span class="brand-sub">Alles leicht erkl&auml;rt</span>
 </a>
 <div class="site-search">
 <input type="text" id="le-search-input" placeholder="Thema suchen (z. B. Gravitation) ..." autocomplete="off">
@@ -32,7 +32,9 @@
 <a href="../index.html#sporttheorie">Sporttheorie</a>
 </nav>
 <div class="lang-switch">
-<span class="active">DE</span><a href="../en/sporttheorie/explosivkraft.html">EN</a><a href="../es/sporttheorie/explosivkraft.html">ES</a>
+<span class="active">DE</span>
+<a href="../en/sporttheorie/explosivkraft.html">EN</a>
+<a href="../es/sporttheorie/explosivkraft.html">ES</a>
 </div>
 </div>
 </header>
@@ -41,82 +43,181 @@
 <div class="breadcrumbs"><a href="../index.html">Start</a> &rsaquo; <a href="../index.html#sporttheorie">Sporttheorie</a> &rsaquo; Explosivkraft</div>
 
 <article class="topic cat-sport">
-<span class="subject-pill sport">Sporttheorie - Training &amp; Muskulatur</span>
-<h1>Explosivkraft leicht erklärt</h1>
+<span class="subject-pill sport">Sporttheorie - Oberstufe</span>
+<h1>Explosivkraft und Schnellkraft leicht erklärt</h1>
 
-<p>Explosivkraft ist nicht die Frage, <em>wie viel</em> Kraft du aufbringen kannst, sondern <strong>wie schnell</strong> du sie aufbaust. Bei einem Sprung berührst du den Boden nur etwa zwei Zehntelsekunden. Deine volle Maximalkraft bräuchte aber drei bis vier Zehntel, um überhaupt anzukommen. Was in dieser kurzen Zeit fertig ist, zählt - der Rest kommt zu spät.</p>
+<p>Schnellkraft ist die Fähigkeit, <strong>in verfügbarer Zeit einen möglichst großen Kraftstoß</strong> zu erzeugen. Der entscheidende Unterschied zur Maximalkraft steckt im Wort „verfügbar": In vielen Sportarten steht die Zeit gar nicht zur Verfügung, die zum Aufbau der vollen Maximalkraft nötig wäre.</p>
+
+<p>Der Aufbau der Maximalkraft dauert je nach Muskel <strong>300 bis 400 Millisekunden</strong>. Der Bodenkontakt beim Absprung dauert etwa <strong>200 Millisekunden</strong>, beim Sprintschritt sogar nur 80 bis 100. Was bis dahin nicht aufgebaut ist, geht in die Bewegung nicht ein.</p>
 
 <div class="formula-box">
-Explosivkraft = Kraft &divide; Zeit
-<small>Nicht der Endwert entscheidet, sondern der Anstieg</small>
+Kraftstoß = &int; F dt
+<small>Das Integral der Kraft über die Zeit – die Fläche unter der Kraft-Zeit-Kurve</small>
 </div>
 
 <div class="diagram">
-<svg viewBox="0 0 320 160" width="300" height="150" xmlns="http://www.w3.org/2000/svg"><line x1="40" y1="130" x2="300" y2="130" stroke="#d8d2c4" stroke-width="2"/><line x1="40" y1="20" x2="40" y2="130" stroke="#d8d2c4" stroke-width="2"/><path d="M40,130 C70,40 90,30 300,26" stroke="#4f7a4a" stroke-width="4" fill="none"/><path d="M40,130 C150,120 220,60 300,30" stroke="#c1613b" stroke-width="4" fill="none" stroke-dasharray="6 4"/><line x1="95" y1="20" x2="95" y2="140" stroke="#33512f" stroke-width="2" stroke-dasharray="3 3"/><text x="95" y="155" font-size="11" text-anchor="middle" fill="#33512f" font-weight="bold">0,2 s</text><text x="300" y="150" font-size="11" text-anchor="end" fill="#8a7264">0,4 s</text></svg></div>
-<p class="note">Der Abstand zwischen deiner echten Maximalkraft und dem, was du in zwei Zehntelsekunden davon abrufst, heißt <strong>Kraftdefizit</strong>. Genau daran arbeitet Sprungtraining.</p>
+<svg viewBox="0 0 640 340" width="640" height="340" xmlns="http://www.w3.org/2000/svg">
+<text x="20" y="22" font-size="15" font-weight="bold" fill="#33512f">Kraft-Zeit-Kurve</text>
+<line x1="70" y1="290" x2="600" y2="290" stroke="#8a7264" stroke-width="2"/>
+<line x1="70" y1="290" x2="70" y2="40" stroke="#8a7264" stroke-width="2"/>
+<text x="600" y="315" font-size="12" fill="#786c63" text-anchor="end">Zeit</text>
+<text x="60" y="48" font-size="12" fill="#786c63" text-anchor="end">Kraft</text>
+<path d="M70,290 C120,285 150,150 210,95 C280,60 420,50 590,48" fill="none" stroke="#33512f" stroke-width="4"/>
+<line x1="70" y1="48" x2="590" y2="48" stroke="#b8483a" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="586" y="40" font-size="12" fill="#b8483a" text-anchor="end" font-weight="bold">F(max)</text>
+<circle cx="96" cy="268" r="5" fill="#c1613b"/>
+<line x1="102" y1="268" x2="250" y2="252" stroke="#c1613b" stroke-width="1"/><text x="256" y="256" font-size="12" fill="#c1613b" font-weight="bold">Startkraft (30 ms)</text>
+<line x1="150" y1="230" x2="235" y2="88" stroke="#c1613b" stroke-width="2.5" stroke-dasharray="5 3"/>
+<text x="243" y="112" font-size="12" fill="#c1613b" font-weight="bold">steilster Anstieg = Explosivkraft</text>
+<text x="243" y="128" font-size="11" fill="#786c63">Kraftanstiegsrate dF/dt</text>
+<line x1="215" y1="40" x2="215" y2="300" stroke="#4f7a4a" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="215" y="316" font-size="12" fill="#4f7a4a" text-anchor="middle" font-weight="bold">200 ms</text>
+<text x="150" y="332" font-size="11" fill="#786c63" text-anchor="middle">Bodenkontakt Sprung</text>
+<path d="M70,290 L70,95 L215,95 L215,290 Z" fill="#4f7a4a" opacity=".12"/>
+<text x="120" y="200" font-size="12" fill="#33512f" font-weight="bold">Kraftstoß</text>
+<text x="120" y="216" font-size="11" fill="#786c63">∫F dt</text>
+<line x1="480" y1="48" x2="480" y2="95" stroke="#b8483a" stroke-width="2"/>
+<text x="490" y="76" font-size="11" fill="#b8483a">nicht abrufbar</text>
+</svg></div>
+<p class="note">Die Fläche unter der Kurve ist der Kraftstoß. Was rechts der 200-Millisekunden-Linie liegt, kommt beim Absprung zu spät – deshalb entscheidet der Anstieg, nicht der Endwert.</p>
 
-<p class="dialog-intro">&#128172; Mia &amp; Opa Theo</p>
-<div class="dialog">
+<h2>Die drei Kennwerte der Kraft-Zeit-Kurve</h2>
 
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="32" r="28" fill="#fbf6ee"/><circle cx="32" cy="34" r="24" fill="#f6d9b8"/><path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/><circle cx="24" cy="36" r="6" fill="#fff"/><circle cx="40" cy="36" r="6" fill="#fff"/><circle cx="24" cy="37" r="3" fill="#3a2a22"/><circle cx="40" cy="37" r="3" fill="#3a2a22"/><circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/><circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/><path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>Warum springt der Stärkste in meiner Klasse nicht am höchsten?</p>
+<table class="datatable">
+<caption>Kennwerte und ihre Bedeutung</caption>
+<thead><tr><th>Kennwert</th><th>Definition</th><th>Zeitfenster</th><th>Relevant für</th></tr></thead>
+<tbody>
+<tr><td><strong>Startkraft</strong></td><td>Kraft nach den ersten 30 ms</td><td>0–30 ms</td><td>Fechten, Boxen, Reaktionsbewegungen</td></tr>
+<tr><td><strong>Explosivkraft</strong></td><td>Steilster Anstieg der Kurve, Kraftanstiegsrate dF/dt</td><td>30–150 ms</td><td>Sprung, Wurf, Sprintstart</td></tr>
+<tr><td><strong>Maximalkraft</strong></td><td>Höchster erreichter Wert</td><td>ab ca. 300 ms</td><td>Gewichtheben, Kraftdreikampf</td></tr>
+</tbody>
+</table>
+
+<p>Ein Athlet kann eine hohe Maximalkraft und trotzdem eine flache Anstiegskurve haben. Genau das erklärt, warum der Stärkste einer Gruppe selten der beste Springer ist.</p>
+
+<h2>Reaktivkraft und der Dehnungs-Verkürzungs-Zyklus</h2>
+
+<p>Die <strong>Reaktivkraft</strong> ist eine Sonderform der Schnellkraft: Sie nutzt eine unmittelbar vorausgehende Dehnung, um die anschließende Verkürzung zu verstärken. Drei Mechanismen wirken zusammen:</p>
+<ul>
+<li><strong>Elastische Energiespeicherung</strong> in Sehne und Titin, vergleichbar mit einem gespannten Gummiband</li>
+<li><strong>Dehnungsreflex</strong> über die Muskelspindel, der zusätzliche motorische Einheiten zuschaltet</li>
+<li><strong>Vorspannung</strong> – der Muskel ist bei Beginn der Verkürzung bereits aktiviert und muss die Kraft nicht erst aufbauen</li>
+</ul>
+
+<div class="diagram">
+<svg viewBox="0 0 640 250" width="640" height="250" xmlns="http://www.w3.org/2000/svg">
+<text x="20" y="22" font-size="15" font-weight="bold" fill="#33512f">Dehnungs-Verkürzungs-Zyklus</text>
+<g font-size="13" font-weight="bold" text-anchor="middle">
+<text x="130" y="60" fill="#c1613b">1. exzentrisch</text>
+<text x="320" y="60" fill="#b8483a">2. Amortisation</text>
+<text x="510" y="60" fill="#4f7a4a">3. konzentrisch</text>
+</g>
+<rect x="40" y="75" width="180" height="90" rx="12" fill="#c1613b" opacity=".12"/>
+<rect x="235" y="75" width="170" height="90" rx="12" fill="#b8483a" opacity=".12"/>
+<rect x="420" y="75" width="180" height="90" rx="12" fill="#4f7a4a" opacity=".14"/>
+<g font-size="12" fill="#3a2a22">
+<text x="130" y="100" text-anchor="middle">Muskel wird gedehnt</text>
+<text x="130" y="120" text-anchor="middle">elastische Energie</text>
+<text x="130" y="138" text-anchor="middle">wird in der Sehne</text>
+<text x="130" y="156" text-anchor="middle">gespeichert</text>
+<text x="320" y="100" text-anchor="middle">Umkehrphase</text>
+<text x="320" y="120" text-anchor="middle">je kürzer,</text>
+<text x="320" y="138" text-anchor="middle">desto mehr Energie</text>
+<text x="320" y="156" text-anchor="middle">bleibt erhalten</text>
+<text x="510" y="100" text-anchor="middle">Verkürzung</text>
+<text x="510" y="120" text-anchor="middle">Muskelkraft plus</text>
+<text x="510" y="138" text-anchor="middle">Sehnenenergie plus</text>
+<text x="510" y="156" text-anchor="middle">Dehnungsreflex</text>
+</g>
+<path d="M220,120 L233,120" stroke="#8a7264" stroke-width="2"/><polygon points="238,120 229,115 229,125" fill="#8a7264"/>
+<path d="M405,120 L418,120" stroke="#8a7264" stroke-width="2"/><polygon points="423,120 414,115 414,125" fill="#8a7264"/>
+<text x="320" y="200" font-size="12" text-anchor="middle" fill="#33512f" font-weight="bold">kurzer DVZ &lt; 200 ms (Sprint, Niedersprung) &#160;·&#160; langer DVZ &gt; 200 ms (Standhochsprung)</text>
+<text x="320" y="226" font-size="11" text-anchor="middle" fill="#786c63">Verlängert sich die Amortisation, geht die gespeicherte Energie als Wärme verloren.</text>
+</svg></div>
+
+<h2>Trainingsmethoden</h2>
+
+<table class="datatable">
+<caption>Belastungsnormative im Schnellkrafttraining</caption>
+<thead><tr><th>Methode</th><th>Intensität</th><th>Wdh.</th><th>Ausführung</th><th>Pause</th></tr></thead>
+<tbody>
+<tr><td>Explosivkraftmethode</td><td>50–70 %</td><td>3–6</td><td>maximal schnell, keine Ermüdung zulassen</td><td>3–5 min</td></tr>
+<tr><td>Plyometrie (Niedersprünge)</td><td>Körpergewicht</td><td>6–10</td><td>Fallhöhe 30–60 cm, kürzest möglicher Bodenkontakt</td><td>2–3 min</td></tr>
+<tr><td>Kontrastmethode</td><td>90 % dann 30 %</td><td>3 + 6</td><td>schwerer Satz, dann explosiv – nutzt die Postaktivierungspotenzierung</td><td>4–6 min</td></tr>
+</tbody>
+</table>
+
+<p class="note">Alle drei Methoden haben eines gemeinsam: Sie werden <strong>vor</strong> Ermüdung abgebrochen. Wer im Schnellkrafttraining bis zum Muskelversagen geht, trainiert etwas anderes – die Bewegungsgeschwindigkeit ist das Trainingsziel, nicht die Wiederholungszahl.</p>
+
+<h2>Rechenbeispiel: Kraftanstiegsrate</h2>
+<div class="calc">
+Athlet A erreicht 1800 N nach 300 ms.<br>
+Athlet B erreicht 1500 N nach 150 ms.<br>
+<br>
+Kraftanstiegsrate = &Delta;F &divide; &Delta;t<br>
+A: 1800 N &divide; 0,30 s = <strong>6000 N/s</strong><br>
+B: 1500 N &divide; 0,15 s = <strong>10 000 N/s</strong><br>
+<br>
+Verfügbare Zeit beim Absprung: 200 ms<br>
+A hat dann etwa 1200 N aufgebaut<br>
+B hat bereits die vollen 1500 N
 </div>
+<p>A ist maximal kräftiger, springt aber schlechter. Das ist der Kern der Schnellkraft und ein dankbares Prüfungsbeispiel.</p>
+
+<div class="example-box glossary">
+<div class="label">Fachbegriffe</div>
+<dl>
+<dt>Schnellkraft</dt><dd>Fähigkeit, in verfügbarer Zeit einen möglichst großen Kraftstoß zu erzeugen.</dd>
+<dt>Kraftstoß</dt><dd>Integral der Kraft über die Zeit; entspricht der Impulsänderung.</dd>
+<dt>Startkraft</dt><dd>Kraftwert nach den ersten 30 Millisekunden.</dd>
+<dt>Explosivkraft</dt><dd>Maximale Kraftanstiegsrate dF/dt im steilsten Kurvenabschnitt.</dd>
+<dt>Reaktivkraft</dt><dd>Schnellkraft unter Nutzung eines Dehnungs-Verkürzungs-Zyklus.</dd>
+<dt>Amortisationsphase</dt><dd>Umkehrphase zwischen Dehnung und Verkürzung; je kürzer, desto weniger Energieverlust.</dd>
+<dt>Postaktivierungspotenzierung</dt><dd>Kurzfristig erhöhte Schnellkraftleistung nach einem schweren Vorbelastungsreiz.</dd>
+</dl>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="32" r="28" fill="#fbf6ee"/><circle cx="32" cy="34" r="24" fill="#e7bd93"/><path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/><path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/><circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/><circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/><line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/><circle cx="24" cy="36" r="2.5" fill="#3a2a22"/><circle cx="40" cy="36" r="2.5" fill="#3a2a22"/><path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/></svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Opa Theo</div>
-<p>Weil er seine Kraft zu langsam abruft. Stell dir zwei Menschen vor, die eine Tür aufdrücken: Der eine lehnt sich langsam dagegen, der andere wirft sich dagegen. Beide sind gleich stark - nur einer ist rechtzeitig fertig.</p>
-</div>
+<div class="example-box warn">
+<div class="label">Häufiger Prüfungsfehler</div>
+<p><strong>Schnellkraft mit Schnelligkeit gleichsetzen.</strong> Schnelligkeit ist eine eigenständige Fähigkeit und beschreibt die Bewegungsfrequenz; Schnellkraft beschreibt den Kraftverlauf gegen einen Widerstand.</p>
+<p><strong>Den Kraftstoß als Kraft bezeichnen.</strong> Der Kraftstoß ist ein Produkt aus Kraft <em>und</em> Zeit und hat die Einheit Newtonsekunde. Wer nur „viel Kraft" schreibt, verliert den entscheidenden Punkt.</p>
 </div>
 
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="32" r="28" fill="#fbf6ee"/><circle cx="32" cy="34" r="24" fill="#f6d9b8"/><path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/><circle cx="24" cy="36" r="6" fill="#fff"/><circle cx="40" cy="36" r="6" fill="#fff"/><circle cx="24" cy="37" r="3" fill="#3a2a22"/><circle cx="40" cy="37" r="3" fill="#3a2a22"/><circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/><circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/><path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>Kann man das denn trainieren?</p>
-</div>
+<div class="example-box phrase">
+<div class="label">So formulierst du es im Abi</div>
+<p>„Da der Bodenkontakt beim Absprung nur etwa 200 ms beträgt, die vollständige Entwicklung der Maximalkraft jedoch 300 bis 400 ms benötigt, ist nicht der Maximalwert, sondern die Kraftanstiegsrate leistungsbestimmend. Der realisierte Kraftstoß entspricht der Fläche unter der Kraft-Zeit-Kurve innerhalb der verfügbaren Zeit."</p>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="32" r="28" fill="#fbf6ee"/><circle cx="32" cy="34" r="24" fill="#e7bd93"/><path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/><path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/><circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/><circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/><line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/><circle cx="24" cy="36" r="2.5" fill="#3a2a22"/><circle cx="40" cy="36" r="2.5" fill="#3a2a22"/><path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/></svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Opa Theo</div>
-<p>Ja, aber anders als Maximalkraft. Nicht schwer und langsam, sondern leicht und richtig schnell: Sprünge, Würfe, Antritte. Du bringst dem Nervensystem bei, den Befehl in einem einzigen scharfen Schub zu schicken statt gemütlich anzuschwellen.</p>
-</div>
+<div class="example-box task">
+<div class="label">Abituraufgabe</div>
+<p>Zwei Volleyballspieler haben dieselbe Maximalkraft, unterscheiden sich in der Sprunghöhe aber deutlich. <strong>Analysieren</strong> Sie mögliche Ursachen anhand der Kraft-Zeit-Kurve und <strong>leiten</strong> Sie eine geeignete Trainingsmethode <strong>ab</strong>.</p>
+<details class="solution">
+<summary>Erwartungshorizont anzeigen</summary>
+<p>Erwartet wird die Erkenntnis, dass gleiche Maximalkraft bei unterschiedlicher <em>Kraftanstiegsrate</em> zu unterschiedlichen Kraftstößen innerhalb der rund 200 ms Bodenkontakt führt. Der schwächere Springer erreicht in der verfügbaren Zeit nur einen Teil seiner Maximalkraft, sein Kraftdefizit im relevanten Zeitfenster ist größer. Als Ursachen sind zu nennen: geringere Rekrutierungsgeschwindigkeit, niedrigere Impulsfrequenz zu Bewegungsbeginn, ungünstigere Fasertypverteilung sowie eine zu lange Amortisationsphase im Dehnungs-Verkürzungs-Zyklus. Als Trainingsmethode ist die Explosivkraftmethode mit 50–70 % Intensität bei maximaler Bewegungsgeschwindigkeit abzuleiten, ergänzt um plyometrische Übungen mit kurzem Bodenkontakt; alternativ die Kontrastmethode unter Nutzung der Postaktivierungspotenzierung. Wichtig für die volle Punktzahl: Begründung, warum die Belastung <em>vor</em> Ermüdung beendet wird.</p>
+</details>
 </div>
 
+<div class="example-box">
+<div class="label">Passt dazu</div>
+<ul>
+<li><a href="maximalkraft.html">Maximalkraft</a></li>
+<li><a href="beweglichkeit.html">Beweglichkeit und Dehnungsreflex</a></li>
+<li><a href="../biologie/nervenzelle.html">Nervenzelle und das Alles-oder-Nichts-Prinzip</a></li>
+<li><a href="../physik/hebelwirkung.html">Hebelwirkung (Hebelgesetz)</a></li>
+</ul>
 </div>
 
 <div class="ad-slot">
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1079255057051806" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
-
-<p class="note">Deshalb trainieren Sprinter und Volleyballer Sprünge, obwohl sie damit kein Gramm mehr heben können. Sie üben das Tempo des Befehls, nicht seine Größe.</p>
-
-<div class="example-box">
-<div class="label">Fun Fact</div>
-<p>Die schnellen Muskelfasern ziehen sich rund <strong>zehnmal schneller</strong> zusammen als die ausdauernden - und sie ermüden genauso schnell wieder. Deshalb ist ein Sprint nach wenigen Sekunden vorbei, während du stundenlang gehen kannst.</p>
-</div>
-
-<div class="example-box">
-<div class="label">Passt dazu</div>
-<ul><li><a href="../biologie/nervenzelle.html">Nervenzelle und das Alles-oder-Nichts-Prinzip</a></li><li><a href="../physik/hebelwirkung.html">Hebelwirkung (Hebelgesetz)</a></li></ul>
-</div>
-
-<p class="note"><em>Dieser Text erklärt Trainingsgrundlagen und ersetzt keine individuelle Trainings- oder Gesundheitsberatung.</em></p>
-
-<a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
+<p class="note"><em>Dieser Text erkl&auml;rt trainingswissenschaftliche Grundlagen f&uuml;r den Unterricht und ersetzt keine individuelle Trainings- oder Gesundheitsberatung.</em></p>
+<a class="back-link" href="../index.html">&larr; Zur&uuml;ck zur &Uuml;bersicht</a>
 </article>
 </main>
 
 <footer class="site-footer">
-<div class="container">LeichtErkl&auml;rt - Alles leicht erklärt<br><a href="/impressum.html">Impressum</a> &middot; <a href="/datenschutz.html">Datenschutz</a></div>
+<div class="container">LeichtErkl&auml;rt - Alles leicht erkl&auml;rt<br><a href="/impressum.html">Impressum</a> &middot; <a href="/datenschutz.html">Datenschutz</a></div>
 </footer>
 <script src="../search-data.js"></script>
 <script src="../search.js"></script>

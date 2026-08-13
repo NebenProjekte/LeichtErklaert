@@ -734,3 +734,95 @@ h2.section-title::after {
   .topic-grid { grid-template-columns: 1fr; }
   .topic-card { min-height: 136px; }
 }
+
+
+/* Oberstufen-Bausteine (Sporttheorie) */
+article.topic h2 {
+  margin: 42px 0 12px;
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+  color: var(--sport-dark);
+}
+article.topic h3 {
+  margin: 26px 0 8px;
+  font-size: 1.08rem;
+  color: var(--text);
+}
+article.topic h2 + p, article.topic h3 + p { margin-top: 0; }
+
+.datatable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 22px 0;
+  font-size: 0.94rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(82, 53, 34, .055);
+}
+.datatable caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 0 0 8px;
+}
+.datatable th, .datatable td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.datatable thead th {
+  background: color-mix(in srgb, var(--sport) 14%, transparent);
+  color: var(--sport-dark);
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.datatable tbody tr:last-child td { border-bottom: none; }
+.datatable tbody tr:nth-child(even) { background: rgba(125, 91, 67, .035); }
+
+.example-box.warn { background: #fff4ef; border-color: #f0cdbb; }
+.example-box.warn .label { color: #b8483a; }
+.example-box.phrase { background: #f2f7f0; border-color: #cfe0c8; }
+.example-box.phrase .label { color: var(--sport-dark); }
+.example-box.glossary { background: #fbfaf6; border-color: var(--border); }
+.example-box.glossary .label { color: var(--text-muted); }
+.example-box.task { background: #f4f6fb; border-color: #cdd6e8; }
+.example-box.task .label { color: #3d5a8f; }
+
+.example-box dl { margin: 0; }
+.example-box dt { font-weight: 800; margin-top: 10px; color: var(--sport-dark); }
+.example-box dt:first-child { margin-top: 0; }
+.example-box dd { margin: 2px 0 0; }
+
+details.solution {
+  margin-top: 14px;
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+}
+details.solution summary {
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #3d5a8f;
+}
+details.solution[open] summary { margin-bottom: 10px; }
+
+.calc {
+  font-family: "Consolas", "SFMono-Regular", ui-monospace, monospace;
+  background: rgba(125, 91, 67, .07);
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin: 14px 0;
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
