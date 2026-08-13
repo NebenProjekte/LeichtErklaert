@@ -3,13 +3,15 @@
     mathematik: "var(--primary)", math: "var(--primary)", matematicas: "var(--primary)",
     physik: "var(--accent-2)", physics: "var(--accent-2)", fisica: "var(--accent-2)",
     biologie: "var(--bio)", biology: "var(--bio)", biologia: "var(--bio)",
-    chemie: "var(--chem)", chemistry: "var(--chem)", quimica: "var(--chem)"
+    chemie: "var(--chem)", chemistry: "var(--chem)", quimica: "var(--chem)",
+    geschichte: "var(--history)", history: "var(--history)", historia: "var(--history)"
   };
   var CATEGORY_CLASS = {
     mathematik: "math", math: "math", matematicas: "math",
     physik: "physics", physics: "physics", fisica: "physics",
     biologie: "bio", biology: "bio", biologia: "bio",
-    chemie: "chem", chemistry: "chem", quimica: "chem"
+    chemie: "chem", chemistry: "chem", quimica: "chem",
+    geschichte: "history", history: "history", historia: "history"
   };
 
   var currentFilter = null;
