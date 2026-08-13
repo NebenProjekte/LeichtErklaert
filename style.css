@@ -9,6 +9,8 @@
   --chem-dark: #284a5f;
   --history: #6b4a8a;
   --history-dark: #45305c;
+  --sport: #4f7a4a;
+  --sport-dark: #33512f;
   --bg: #fbf6ee;
   --card: #ffffff;
   --text: #3a2a22;
@@ -207,12 +209,14 @@ main { padding: 40px 0 60px; }
 .category-tabs a.bio { border-color: var(--bio); }
 .category-tabs a.chem { border-color: var(--chem); }
 .category-tabs a.history { border-color: var(--history); }
+.category-tabs a.sport { border-color: var(--sport); }
 
 .category-tabs a.active-tab.math { background: var(--primary); color: #fff; }
 .category-tabs a.active-tab.physics { background: var(--accent-2); color: #fff; }
 .category-tabs a.active-tab.bio { background: var(--bio); color: #fff; }
 .category-tabs a.active-tab.chem { background: var(--chem); color: #fff; }
 .category-tabs a.active-tab.history { background: var(--history); color: #fff; }
+.category-tabs a.active-tab.sport { background: var(--sport); color: #fff; }
 
 h2.section-title {
   margin-top: 44px;
@@ -235,6 +239,7 @@ h2.section-title {
 .tag-dot.bio { background: var(--bio); }
 .tag-dot.chem { background: var(--chem); }
 .tag-dot.history { background: var(--history); }
+.tag-dot.sport { background: var(--sport); }
 
 .topic-grid {
   display: grid;
@@ -276,6 +281,7 @@ h2.section-title {
 .topic-card.bio h3 { color: var(--bio-dark); }
 .topic-card.chem h3 { color: var(--chem); }
 .topic-card.history h3 { color: var(--history-dark); }
+.topic-card.sport h3 { color: var(--sport-dark); }
 
 .topic-card.coming-soon {
   opacity: 0.55;
@@ -319,6 +325,7 @@ article.topic h1 {
 .subject-pill.bio { background: var(--bio); }
 .subject-pill.chem { background: var(--chem); }
 .subject-pill.history { background: var(--history); }
+.subject-pill.sport { background: var(--sport); }
 
 article.topic.cat-bio h1 { color: var(--bio-dark); }
 article.topic.cat-bio .back-link { color: var(--bio-dark); }
@@ -328,6 +335,8 @@ article.topic.cat-chem h1 { color: var(--chem-dark); }
 article.topic.cat-chem .back-link { color: var(--chem-dark); }
 article.topic.cat-history h1 { color: var(--history-dark); }
 article.topic.cat-history .back-link { color: var(--history-dark); }
+article.topic.cat-sport h1 { color: var(--sport-dark); }
+article.topic.cat-sport .back-link { color: var(--sport-dark); }
 
 .formula-box {
   background: var(--primary-dark);
@@ -675,6 +684,7 @@ h2.section-title::after {
 .topic-card.bio::before { content: "DNA"; background: linear-gradient(145deg, #879875, #596c4e); font-size: .65rem; letter-spacing: .04em; }
 .topic-card.chem::before { content: "⚗"; background: linear-gradient(145deg, #5f96b7, #315f7a); }
 .topic-card.history::before { content: "✦"; background: linear-gradient(145deg, #8d6aa9, #5c3f77); }
+.topic-card.sport::before { content: "ATP"; background: linear-gradient(145deg, #6d9a63, #3f6a3a); font-size: .65rem; letter-spacing: .04em; }
 
 .topic-card::after {
   content: "";

@@ -48,5 +48,10 @@ var LE_TOPICS = [
   { title: "Spanish Colonialism in the Americas Explained Simply", cat: "History", path: "geschichte/spanischer-kolonialismus.html", keywords: "spanish colonialism columbus aztec inca cortes pizarro requerimiento las casas encomienda potosi" },
   { title: "The French Revolution Explained Simply", cat: "History", path: "geschichte/franzoesische-revolution.html", keywords: "french revolution bastille tennis court oath rights of man robespierre reign of terror louis guillotine" },
   { title: "World War I Explained Simply", cat: "History", path: "geschichte/erster-weltkrieg.html", keywords: "world war 1 wwi first world war 1914 1918 july crisis sarajevo assassination franz ferdinand alliance system triple entente arms race trench warfare treaty of versailles" },
-  { title: "World War II Explained Simply", cat: "History", path: "geschichte/zweiter-weltkrieg.html", keywords: "world war 2 wwii second world war 1939 1945 hitler nazi germany holocaust invasion of poland blitzkrieg stalingrad pearl harbor normandy hiroshima nagasaki wannsee conference" }
+  { title: "World War II Explained Simply", cat: "History", path: "geschichte/zweiter-weltkrieg.html", keywords: "world war 2 wwii second world war 1939 1945 hitler nazi germany holocaust invasion of poland blitzkrieg stalingrad pearl harbor normandy hiroshima nagasaki wannsee conference" },
+  { title: "Maximal strength explained simply", cat: "Sports Theory", path: "sporttheorie/maximalkraft.html", keywords: "maximal strength force muscle nervous system recruitment training one rep max" },
+  { title: "Explosive strength explained simply", cat: "Sports Theory", path: "sporttheorie/explosivkraft.html", keywords: "explosive strength power rate of force development jump sprint plyometrics training" },
+  { title: "Strength endurance explained simply", cat: "Sports Theory", path: "sporttheorie/kraftausdauer.html", keywords: "strength endurance repetitions lactate mitochondria energy fatigue training" },
+  { title: "Hypertrophy explained simply", cat: "Sports Theory", path: "sporttheorie/hypertrophie.html", keywords: "hypertrophy muscle growth recovery cell nuclei muscle memory training" },
+  { title: "Flexibility explained simply", cat: "Sports Theory", path: "sporttheorie/beweglichkeit.html", keywords: "flexibility stretching mobility joint range of motion warm up" },
 ];

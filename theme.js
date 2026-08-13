@@ -4,14 +4,16 @@
     physik: "var(--accent-2)", physics: "var(--accent-2)", fisica: "var(--accent-2)",
     biologie: "var(--bio)", biology: "var(--bio)", biologia: "var(--bio)",
     chemie: "var(--chem)", chemistry: "var(--chem)", quimica: "var(--chem)",
-    geschichte: "var(--history)", history: "var(--history)", historia: "var(--history)"
+    geschichte: "var(--history)", history: "var(--history)", historia: "var(--history)",
+    sporttheorie: "var(--sport)", "sports-theory": "var(--sport)", "teoria-del-deporte": "var(--sport)"
   };
   var CATEGORY_CLASS = {
     mathematik: "math", math: "math", matematicas: "math",
     physik: "physics", physics: "physics", fisica: "physics",
     biologie: "bio", biology: "bio", biologia: "bio",
     chemie: "chem", chemistry: "chem", quimica: "chem",
-    geschichte: "history", history: "history", historia: "history"
+    geschichte: "history", history: "history", historia: "history",
+    sporttheorie: "sport", "sports-theory": "sport", "teoria-del-deporte": "sport"
   };
 
   var currentFilter = null;
