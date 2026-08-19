@@ -45,34 +45,56 @@
 <span class="subject-pill bio">Biologie - Mikrobiologie</span>
 <h1>Bakterien leicht erklärt</h1>
 
-<p>Bakterien sind winzige, einzellige Lebewesen - im Gegensatz zu Viren sind sie eindeutig lebendig: Sie haben einen eigenen Stoffwechsel und können sich ganz allein vermehren.</p>
+<p>Bakterien sind <strong>Einzeller ohne Zellkern</strong>. Ihre Erbinformation
+schwimmt frei im Zellinneren, nicht in einer eigenen Hülle. Genau dieser eine
+Unterschied trennt sie von allen Tieren, Pflanzen und Pilzen — und er ist der Grund,
+warum Antibiotika Bakterien treffen können, ohne unsere eigenen Zellen zu zerstören.</p>
 
 <div class="formula-box">
-1 Zelle &rarr; 2 Zellen &rarr; 4 Zellen &rarr; 8 Zellen ...
-<small>Bakterien vermehren sich durch einfache Zellteilung - unter guten Bedingungen kann sich die Anzahl alle 20 Minuten verdoppeln</small>
+Prokaryot = Zelle ohne Zellkern
+<small>Bakterien und Archaeen &middot; alle anderen Lebewesen sind Eukaryoten</small>
 </div>
 
-<div class="diagram">
-<svg viewBox="0 0 260 140" width="240" height="129" xmlns="http://www.w3.org/2000/svg">
-<rect x="10" y="55" width="50" height="30" rx="15" fill="#6b7a5e"/>
-<rect x="90" y="55" width="35" height="30" rx="15" fill="#6b7a5e"/>
-<rect x="130" y="55" width="35" height="30" rx="15" fill="#8a9a7c"/>
-<rect x="195" y="55" width="25" height="30" rx="15" fill="#6b7a5e"/>
-<rect x="223" y="55" width="25" height="30" rx="15" fill="#8a9a7c"/>
-<path d="M65,70 L85,70" stroke="#8a7264" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
-<path d="M170,70 L190,70" stroke="#8a7264" stroke-width="2" stroke-dasharray="4 4"/>
-<defs>
-<marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-<path d="M0,0 L8,4 L0,8 Z" fill="#8a7264"/>
-</marker>
-</defs>
-</svg>
+<div class="example-box glossary">
+<div class="label">Fachbegriffe</div>
+<p><strong>Prokaryot</strong> — Zelle ohne echten Zellkern und ohne Membranorganellen.<br>
+<strong>Nucleoid</strong> — der Bereich, in dem das ringförmige Bakterienchromosom liegt.<br>
+<strong>Plasmid</strong> — kleiner zusätzlicher DNA-Ring, oft mit Resistenzgenen. Wird zwischen Bakterien weitergegeben.<br>
+<strong>Zellwand</strong> — Hülle aus Murein, Angriffspunkt vieler Antibiotika.<br>
+<strong>Binäre Spaltung</strong> — Vermehrung durch Teilung in zwei identische Zellen.<br>
+<strong>Gram-Färbung</strong> — Färbetest, der Bakterien nach dem Bau ihrer Zellwand in grampositiv und gramnegativ trennt.</p>
 </div>
-<p class="note">So einfach die Teilung aussieht - genau deshalb können sich Bakterien in kurzer Zeit rasant vermehren.</p>
+
+<h2>Wie schnell sie sich vermehren</h2>
+
+<div class="calc">
+Escherichia coli teilt sich unter guten Bedingungen alle 20 Minuten.<br>
+<br>
+nach 1 Stunde: 2³ = 8<br>
+nach 5 Stunden: 2<sup>15</sup> = 32.768<br>
+nach 10 Stunden: 2<sup>30</sup> &asymp; 1,07 Milliarden
+</div>
+
+<p>Diese Zahlen erklären, warum verdorbenes Essen so plötzlich kippt und warum eine
+Wundinfektion binnen Stunden bedrohlich werden kann. In der Praxis bremsen
+Platzmangel, Nährstoffmangel und die eigenen Abfallstoffe das Wachstum — sonst wäre
+die Erde in wenigen Tagen von einer Bakterienschicht bedeckt.</p>
+
+<table class="datatable">
+<caption>Bakterienzelle und Tierzelle im Vergleich</caption>
+<thead><tr><th>Merkmal</th><th>Bakterium</th><th>Tierzelle</th></tr></thead>
+<tbody>
+<tr><td>Zellkern</td><td>nein</td><td>ja</td></tr>
+<tr><td>Größe</td><td>1–5 µm</td><td>10–100 µm</td></tr>
+<tr><td>Erbgut</td><td>ringförmig, frei</td><td>lineare Chromosomen im Kern</td></tr>
+<tr><td>Mitochondrien</td><td>nein</td><td>ja</td></tr>
+<tr><td>Zellwand</td><td>ja, aus Murein</td><td>nein</td></tr>
+<tr><td>Vermehrung</td><td>Zweiteilung</td><td>Mitose</td></tr>
+</tbody>
+</table>
 
 <p class="dialog-intro">💬 Mia fragt Opa Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -88,10 +110,9 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Sind Bakterien nicht einfach nur Krankheitserreger?</p>
+<p>Sind Bakterien nicht alle gefährlich?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -107,10 +128,9 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Opa Theo</div>
-<p>Ganz im Gegenteil! Nur ein kleiner Teil der Bakterien macht krank. Die meisten sind harmlos oder sogar richtig nützlich - allein in deinem Darm leben Billionen von Bakterien, die dir bei der Verdauung helfen.</p>
+<p>Im Gegenteil. In deinem Darm leben Billionen, die dir beim Verdauen helfen und Vitamin K herstellen. Krankheitserreger sind die Minderheit.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -126,10 +146,9 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Was ist eigentlich der Unterschied zu unseren eigenen Zellen?</p>
+<p>Und warum wirken Antibiotika manchmal nicht mehr?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -145,58 +164,52 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Opa Theo</div>
-<p>Unsere Zellen haben einen Zellkern, der das Erbgut umschließt - Bakterienzellen nicht. Bei ihnen schwimmt das Erbgut frei in der Zelle herum. Man nennt Bakterien deshalb "Prokaryoten", also "vor dem Kern".</p>
+<p>Weil einzelne Bakterien zufällig resistent sind. Die überleben, vermehren sich — und geben ihre Plasmide sogar an andere Arten weiter.</p>
 </div>
-</div>
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>Und warum wirken Antibiotika irgendwann nicht mehr richtig?</p>
 </div>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Opa Theo</div>
-<p>Weil sich Bakterien so schnell vermehren, entstehen dabei auch schnell zufällige Mutationen. Wenn eine davon zufällig gegen ein Antibiotikum schützt, überlebt genau diese Bakterie die Behandlung und vermehrt sich weiter - ein direktes Beispiel für natürliche Selektion.</p>
-</div>
+<h2>Warum Antibiotika uns nicht schaden</h2>
+
+<p>Viele Antibiotika greifen die <strong>Zellwand aus Murein</strong> an oder die
+bakterieneigenen Ribosomen, die sich von unseren unterscheiden. Menschliche Zellen
+haben keine Mureinwand — der Wirkstoff findet dort schlicht kein Ziel. Deshalb wirken
+Antibiotika auch nicht gegen Viren: Viren haben weder Zellwand noch eigene
+Ribosomen.</p>
+
+<div class="example-box warn">
+<div class="label">Typische Fehler</div>
+<p><strong>Bakterien mit Viren verwechselt.</strong> Viren sind keine Zellen und vermehren sich nur in fremden Zellen.<br>
+<strong>„Bakterien haben keine DNA."</strong> Sie haben DNA, nur keinen Zellkern darum.<br>
+<strong>Antibiotika gegen Erkältung.</strong> Erkältungen sind meist viral — die Einnahme nützt nichts und fördert Resistenzen.<br>
+<strong>Resistenz als Gewöhnung des Menschen gedeutet.</strong> Nicht der Mensch wird resistent, sondern das Bakterium.</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Übungsaufgabe</div>
+<p>Erkläre, warum ein Antibiotikum, das die Zellwandsynthese hemmt, menschliche
+Zellen nicht angreift. Erläutere außerdem, warum das Absetzen der Packung nach drei
+statt sieben Tagen Resistenzen fördert.</p>
+<details class="solution">
+<summary>Lösung anzeigen</summary>
+<p>Menschliche Zellen besitzen keine Zellwand aus Murein, sondern nur eine
+Zellmembran. Der Wirkstoff blockiert ein Enzym, das im menschlichen Körper gar nicht
+vorkommt — es fehlt schlicht der Angriffspunkt.<br><br>
+Beim vorzeitigen Absetzen sind die empfindlichsten Bakterien bereits abgetötet, die
+widerstandsfähigeren aber noch vorhanden. Sie vermehren sich ungestört weiter, und
+die nächste Generation stammt vollständig von den robusteren Zellen ab. Damit ist
+genau die Auswahl getroffen, die man vermeiden wollte.</p>
+</details>
 </div>
 
-<div class="example-box">
-<div class="label">Nicht nur im Körper</div>
-<p>Bakterien stecken auch in Joghurt, Käse und Sauerkraut - dort verwandeln sie gezielt Milchzucker oder Kohl in Milchsäure, was Geschmack und Haltbarkeit verändert.</p>
+<div class="ad-slot">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1079255057051806" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
-
-<p class="note">Deshalb ist es wichtig, eine Antibiotika-Behandlung immer bis zum Ende durchzuziehen: Wer zu früh aufhört, lässt genau die widerstandsfähigsten Bakterien überleben.</p>
-
+<p class="note">Im menschlichen Körper leben etwa so viele Bakterienzellen wie
+Körperzellen. Zusammen wiegen sie rund 200 Gramm — ein eigenes Organ, das man nicht
+sieht.</p>
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>
