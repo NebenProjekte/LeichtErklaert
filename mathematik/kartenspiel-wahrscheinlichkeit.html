@@ -168,6 +168,73 @@
 
 <p class="note">Deshalb gilt: Wenn du das nächste Mal ein Kartenspiel gut mischst, hält die entstehende Reihenfolge mit an Sicherheit grenzender Wahrscheinlichkeit den Rekord, noch nie zuvor in der Geschichte der Menschheit existiert zu haben - und wird wohl auch nie wieder auftauchen.</p>
 
+
+<div class="example-box glossary">
+<div class="label">Fachbegriffe</div>
+<p><strong>Fakultät (n!)</strong> — das Produkt aller Zahlen von 1 bis n.<br>
+<strong>Permutation</strong> — eine mögliche Reihenfolge.<br>
+<strong>Kombination</strong> — eine Auswahl ohne Beachtung der Reihenfolge.<br>
+<strong>Laplace-Wahrscheinlichkeit</strong> — günstige durch mögliche Fälle.</p>
+</div>
+
+<h2>Wie viele Reihenfolgen es gibt</h2>
+
+<div class="calc">
+52 Karten lassen sich auf 52! Arten anordnen.<br>
+<br>
+52! &asymp; 8,07 &middot; 10<sup>67</sup><br>
+<br>
+zum Vergleich:<br>
+Atome auf der Erde &asymp; 10<sup>50</sup><br>
+Sekunden seit dem Urknall &asymp; 4 &middot; 10<sup>17</sup>
+</div>
+
+<p>Die Zahl ist so groß, dass jede gut gemischte Reihenfolge mit an Sicherheit
+grenzender Wahrscheinlichkeit noch nie zuvor existiert hat — in der ganzen Geschichte
+des Kartenspiels nicht. Das ist keine Redensart, sondern eine schlichte Folge der
+Größenordnung.</p>
+
+<table class="datatable">
+<caption>Wie schnell die Fakultät wächst</caption>
+<thead><tr><th>n</th><th>n!</th></tr></thead>
+<tbody>
+<tr><td>5</td><td>120</td></tr>
+<tr><td>10</td><td>3.628.800</td></tr>
+<tr><td>20</td><td>2,4 &middot; 10<sup>18</sup></td></tr>
+<tr><td>52</td><td>8,07 &middot; 10<sup>67</sup></td></tr>
+</tbody>
+</table>
+
+<div class="example-box warn">
+<div class="label">Typische Fehler</div>
+<p><strong>Reihenfolge mitgezählt, wo sie egal ist.</strong> Beim Ziehen einer Hand zählt die Reihenfolge meist nicht — dann durch die Fakultät der Handgröße teilen.<br>
+<strong>Mit und ohne Zurücklegen verwechselt.</strong> Bei Karten wird nicht zurückgelegt, der Nenner sinkt in jedem Schritt.<br>
+<strong>Wahrscheinlichkeiten addiert statt multipliziert.</strong> Bei aufeinanderfolgenden Bedingungen wird multipliziert.<br>
+<strong>„Sehr unwahrscheinlich heißt unmöglich."</strong> Irgendeine Reihenfolge kommt immer heraus.</p>
+</div>
+
+<div class="example-box task">
+<div class="label">Übungsaufgabe</div>
+<p>Wie wahrscheinlich ist es, aus einem 52er-Blatt zwei Asse hintereinander zu ziehen,
+ohne zurückzulegen?</p>
+<details class="solution">
+<summary>Lösung anzeigen</summary>
+<p>Erstes Ass: 4 von 52 = 1/13.<br>
+Zweites Ass: nur noch 3 Asse bei 51 Karten = 3/51 = 1/17.<br>
+<br>
+P = 1/13 &middot; 1/17 = <strong>1/221 &asymp; 0,45 %</strong><br><br>
+Mit Zurücklegen wären es 4/52 &middot; 4/52 = 1/169 &asymp; 0,59 % — spürbar mehr.
+Der Unterschied entsteht, weil die erste gezogene Karte die Ausgangslage für die
+zweite verändert. Genau das macht Kartenspiele mathematisch interessanter als
+Würfelspiele.</p>
+</details>
+</div>
+
+<div class="ad-slot">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1079255057051806" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>
