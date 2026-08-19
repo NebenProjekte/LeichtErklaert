@@ -44,31 +44,68 @@
 <article class="topic">
 <span class="subject-pill math">Mathematik - Geometrie</span>
 <h1>Satz des Pythagoras leicht erklärt</h1>
-<p>Der Satz des Pythagoras beschreibt einen Zusammenhang zwischen den drei Seiten eines <strong>rechtwinkligen Dreiecks</strong> (ein Dreieck mit einem 90°-Winkel).</p>
+
+<p>Der Satz des Pythagoras gilt in <strong>jedem rechtwinkligen Dreieck</strong> — und
+nur dort. Er verbindet die drei Seitenlängen so fest miteinander, dass zwei davon
+immer die dritte festlegen. Deshalb steckt er überall drin, wo Entfernungen
+ausgerechnet werden: im Bauwesen, in der Navigation, im Koordinatensystem.</p>
 
 <div class="formula-box">
-a&sup2; + b&sup2; = c&sup2;
-<small>a und b sind die Katheten (die beiden kurzen Seiten am rechten Winkel), c ist die Hypotenuse (die längste Seite, gegenüber dem rechten Winkel)</small>
+a² + b² = c²
+<small>a und b sind die Katheten, c ist die Hypotenuse — die Seite gegenüber dem rechten Winkel und immer die längste</small>
 </div>
 
-<div class="diagram">
-<svg viewBox="0 0 320 220" width="280" height="192" xmlns="http://www.w3.org/2000/svg">
-<polygon points="30,190 30,40 240,190" fill="#fbeee1" stroke="#c1613b" stroke-width="3"/>
-<rect x="30" y="170" width="20" height="20" fill="none" stroke="#c1613b" stroke-width="2"/>
-<text x="10" y="120" font-size="16" fill="#c1613b" font-weight="bold">a</text>
-<text x="130" y="210" font-size="16" fill="#c1613b" font-weight="bold">b</text>
-<text x="145" y="105" font-size="16" fill="#b8483a" font-weight="bold">c</text>
-</svg>
+<div class="example-box glossary">
+<div class="label">Fachbegriffe</div>
+<p><strong>Kathete</strong> — eine der beiden Seiten, die den rechten Winkel bilden.<br>
+<strong>Hypotenuse</strong> — die Seite gegenüber dem rechten Winkel, stets die längste.<br>
+<strong>Rechtwinkliges Dreieck</strong> — ein Dreieck mit einem 90°-Winkel.<br>
+<strong>Pythagoreisches Tripel</strong> — drei ganze Zahlen, die den Satz erfüllen, etwa 3-4-5 oder 5-12-13.<br>
+<strong>Umkehrung</strong> — gilt a² + b² = c², dann ist das Dreieck rechtwinklig. Damit lässt sich ein rechter Winkel <em>nachweisen</em>.</p>
 </div>
 
-<p>Wenn du zwei der drei Seiten kennst, kannst du die dritte berechnen. Am häufigsten willst du die Hypotenuse <strong>c</strong> ausrechnen:</p>
-<div class="formula-box">
-c = &radic;(a&sup2; + b&sup2;)
+<h2>Warum das stimmt</h2>
+
+<p>Der Satz redet nicht über Längen, sondern über <strong>Flächen</strong>. Zeichne
+über jede Seite ein Quadrat. Dann ist der Flächeninhalt des großen Quadrats über der
+Hypotenuse genau so groß wie die beiden kleinen zusammen. Beim 3-4-5-Dreieck heißt
+das: 9 Kästchen plus 16 Kästchen ergeben 25 Kästchen. Man kann die kleinen Quadrate
+zerschneiden und lückenlos in das große legen — das ist der klassische
+Zerlegungsbeweis, und er kommt ohne eine einzige Formel aus.</p>
+
+<div class="calc">
+Beispiel: a = 3 cm, b = 4 cm<br>
+<br>
+c² = 3² + 4² = 9 + 16 = 25<br>
+c = &radic;25 = <strong>5 cm</strong><br>
+<br>
+Gesucht eine Kathete: c = 13 cm, a = 5 cm<br>
+b² = c² &minus; a² = 169 &minus; 25 = 144<br>
+b = &radic;144 = <strong>12 cm</strong>
 </div>
+
+<p class="note">Die zweite Zeile ist der Fall, an dem die meisten scheitern: Wird
+eine <em>Kathete</em> gesucht, wird subtrahiert, nicht addiert. Wer stur addiert,
+bekommt eine Kathete, die länger ist als die Hypotenuse — geometrisch unmöglich.</p>
+
+<table class="datatable">
+<caption>Häufige pythagoreische Tripel</caption>
+<thead><tr><th>a</th><th>b</th><th>c</th><th>Probe</th></tr></thead>
+<tbody>
+<tr><td>3</td><td>4</td><td>5</td><td>9 + 16 = 25</td></tr>
+<tr><td>5</td><td>12</td><td>13</td><td>25 + 144 = 169</td></tr>
+<tr><td>8</td><td>15</td><td>17</td><td>64 + 225 = 289</td></tr>
+<tr><td>7</td><td>24</td><td>25</td><td>49 + 576 = 625</td></tr>
+</tbody>
+</table>
+
+<p>Vielfache funktionieren ebenfalls: 6-8-10 oder 9-12-15 sind nur vergrößerte
+3-4-5-Dreiecke. Bauhandwerker nutzen das seit der Antike, um ohne Winkelmesser einen
+sauberen rechten Winkel abzustecken — Schnur mit zwölf gleichen Abschnitten,
+Dreieck aus 3, 4 und 5 Abschnitten legen, fertig.</p>
 
 <p class="dialog-intro">💬 Mia fragt Opa Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -84,10 +121,9 @@ c = &radic;(a&sup2; + b&sup2;)
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Wozu braucht man den Satz des Pythagoras eigentlich im echten Leben?</p>
+<p>Woher weiß ich denn, welche Seite die Hypotenuse ist?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -103,10 +139,9 @@ c = &radic;(a&sup2; + b&sup2;)
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Opa Theo</div>
-<p>Zum Beispiel, wenn du wissen willst, wie lang eine Leiter sein muss, um schräg genau bis zu einem Fenster zu reichen! Handwerker nutzen das ständig.</p>
+<p>Such den rechten Winkel und schau, welche Seite ihm <strong>gegenüber</strong> liegt. Die ist es — und sie ist immer die längste im Dreieck.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -122,10 +157,9 @@ c = &radic;(a&sup2; + b&sup2;)
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Zeigst du mir mal ein Beispiel zum Nachrechnen?</p>
+<p>Und wenn gar kein rechter Winkel da ist?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -141,53 +175,37 @@ c = &radic;(a&sup2; + b&sup2;)
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Opa Theo</div>
-<p>Klar! Nimm a = 3 und b = 4. Dann ist c&sup2; = 3&sup2; + 4&sup2; = 9 + 16 = 25, also c = 5. Das "3-4-5-Dreieck" kennt fast jeder Handwerker auswendig!</p>
+<p>Dann gilt der Satz nicht. Dafür gibt es später den Kosinussatz — der Pythagoras ist nur dessen Spezialfall für 90°.</p>
 </div>
-</div>
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>Und das klappt bei jedem Dreieck?</p>
 </div>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Opa Theo</div>
-<p>Nein, nur bei einem <strong>rechtwinkligen</strong> Dreieck - also einem mit einem echten 90°-Winkel. Ohne den funktioniert die Formel nicht!</p>
-</div>
+<div class="example-box warn">
+<div class="label">Typische Fehler</div>
+<p><strong>Am Ende die Wurzel vergessen.</strong> c² = 25 heißt c = 5, nicht 25.<br>
+<strong>Bei gesuchter Kathete addiert.</strong> Dann subtrahieren: b² = c² − a².<br>
+<strong>Auf ein schiefes Dreieck angewendet.</strong> Ohne rechten Winkel ist die
+Formel schlicht falsch.<br>
+<strong>Einheiten gemischt.</strong> Erst alles in dieselbe Einheit umrechnen, dann
+quadrieren — sonst potenziert sich der Fehler.</p>
 </div>
 
-</div>
-
-<div class="video-callout">
-<p>🎥 Willst du es dir noch genauer erklären lassen? Auf unserem YouTube-Kanal gibt es ein ganzes Video dazu.</p>
-<a class="video-btn" href="https://youtu.be/H-FUVYM6aPE" target="_blank" rel="noopener">Video ansehen</a>
+<div class="example-box task">
+<div class="label">Übungsaufgabe</div>
+<p>Eine Leiter ist 5,00 m lang und steht 1,40 m von der Hauswand entfernt. In welcher
+Höhe berührt sie die Wand? Runde auf Zentimeter und beurteile kurz, ob die Leiter
+sicher steht.</p>
+<details class="solution">
+<summary>Lösung anzeigen</summary>
+<p>Die Leiter ist die Hypotenuse, der Wandabstand eine Kathete, die gesuchte Höhe die
+andere.<br>
+h² = 5,00² − 1,40² = 25,00 − 1,96 = 23,04<br>
+h = &radic;23,04 = <strong>4,80 m</strong><br>
+Zur Sicherheit: Der Anstellwinkel folgt aus cos&nbsp;α = 1,40 / 5,00 = 0,28, also
+α ≈ 73,7°. Für Anlegeleitern werden 65° bis 75° empfohlen — die Leiter steht damit
+im zulässigen Bereich, aber am oberen Rand. Ein etwas größerer Wandabstand wäre
+bequemer zu besteigen.</p>
+</details>
 </div>
 
 <div class="ad-slot">
@@ -195,6 +213,9 @@ c = &radic;(a&sup2; + b&sup2;)
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
+<p class="note">Im Koordinatensystem ist der Satz die Abstandsformel: Der Abstand
+zweier Punkte ist &radic;((x₂−x₁)² + (y₂−y₁)²). Jedes Navigationsgerät rechnet damit,
+nur eben in drei Dimensionen.</p>
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>

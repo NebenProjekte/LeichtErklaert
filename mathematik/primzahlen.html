@@ -45,97 +45,107 @@
 <span class="subject-pill math">Mathematik - Zahlentheorie</span>
 <h1>Primzahlen leicht erklärt</h1>
 
-<p>Eine <strong>Primzahl</strong> ist eine Zahl größer als 1, die sich nur durch <strong>1</strong> und durch <strong>sich selbst</strong> ohne Rest teilen lässt.</p>
+<p>Eine <strong>Primzahl</strong> ist eine natürliche Zahl größer als 1, die genau
+zwei Teiler hat: 1 und sich selbst. 7 ist prim, weil nur 1 und 7 aufgehen. 8 ist es
+nicht, weil auch 2 und 4 passen. Primzahlen sind die Bausteine, aus denen sich jede
+andere Zahl zusammensetzt — deshalb tauchen sie in fast jedem mathematischen Gebiet
+wieder auf.</p>
 
 <div class="formula-box">
-2, 3, 5, 7, 11, 13, 17, 19, 23, ...
-<small>die ersten Primzahlen</small>
+2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47 …
+<small>die 1 ist keine Primzahl — sie hat nur einen Teiler, nicht zwei</small>
 </div>
 
-<p class="dialog-intro">💬 Mia fragt Opa Theo</p>
-<div class="dialog">
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>Warum ist 1 eigentlich keine Primzahl? Die lässt sich doch auch nur durch 1 teilen!</p>
-</div>
+<div class="example-box glossary">
+<div class="label">Fachbegriffe</div>
+<p><strong>Teiler</strong> — eine Zahl, die ohne Rest aufgeht.<br>
+<strong>Primzahl</strong> — genau zwei Teiler.<br>
+<strong>Zusammengesetzte Zahl</strong> — mehr als zwei Teiler, z. B. 12.<br>
+<strong>Primfaktorzerlegung</strong> — die Darstellung einer Zahl als Produkt von Primzahlen.<br>
+<strong>Sieb des Eratosthenes</strong> — Verfahren, um alle Primzahlen bis zu einer Grenze zu finden.<br>
+<strong>Primzahlzwilling</strong> — zwei Primzahlen mit Abstand 2, etwa 11 und 13.</p>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Opa Theo</div>
-<p>Gute Frage! Mathematiker haben sich bewusst entschieden, die 1 auszuschließen - sonst würden viele wichtige Rechenregeln nicht mehr sauber funktionieren.</p>
-</div>
+<h2>Warum die 1 nicht dazugehört</h2>
+
+<p>Das wirkt willkürlich, hat aber einen handfesten Grund. Der Hauptsatz der
+Arithmetik sagt: Jede Zahl über 1 lässt sich <em>eindeutig</em> in Primfaktoren
+zerlegen. Wäre die 1 eine Primzahl, gäbe es unendlich viele Zerlegungen —
+12 = 2 · 2 · 3 = 1 · 2 · 2 · 3 = 1 · 1 · 2 · 2 · 3 und so weiter. Die Eindeutigkeit
+wäre dahin. Man schließt die 1 also aus, damit der wichtigste Satz über Zahlen
+sauber bleibt.</p>
+
+<h2>Primfaktorzerlegung</h2>
+
+<div class="calc">
+360 &divide; 2 = 180<br>
+180 &divide; 2 = 90<br>
+90 &divide; 2 = 45<br>
+45 &divide; 3 = 15<br>
+15 &divide; 3 = 5<br>
+5 &divide; 5 = 1<br>
+<br>
+360 = 2<sup>3</sup> &middot; 3<sup>2</sup> &middot; 5
 </div>
 
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>Und wie finde ich raus, ob z. B. 17 eine Primzahl ist?</p>
-</div>
+<p>Das Verfahren ist stumpf und funktioniert immer: durch die kleinste Primzahl
+teilen, die aufgeht, und mit dem Ergebnis weitermachen, bis 1 übrig bleibt. Aus der
+Zerlegung liest man anschließend Dinge ab, für die man sonst raten müsste — etwa das
+kleinste gemeinsame Vielfache oder den größten gemeinsamen Teiler zweier Zahlen.</p>
+
+<h2>Das Sieb des Eratosthenes</h2>
+
+<table class="datatable">
+<caption>Alle Primzahlen bis 30 finden</caption>
+<thead><tr><th>Schritt</th><th>Was passiert</th><th>Gestrichen</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>2 bleibt, alle Vielfachen streichen</td><td>4, 6, 8, 10 …</td></tr>
+<tr><td>2</td><td>3 bleibt, alle Vielfachen streichen</td><td>9, 15, 21, 27</td></tr>
+<tr><td>3</td><td>5 bleibt, alle Vielfachen streichen</td><td>25</td></tr>
+<tr><td>4</td><td>fertig, denn 7 &middot; 7 = 49 &gt; 30</td><td>—</td></tr>
+</tbody>
+</table>
+
+<p>Übrig bleiben 2, 3, 5, 7, 11, 13, 17, 19, 23, 29. Der letzte Schritt ist der
+nützlichste: Man muss nur bis zur <strong>Wurzel der Obergrenze</strong> sieben.
+Wer prüfen will, ob 97 prim ist, testet die Teiler 2, 3, 5 und 7 — mehr nicht, denn
+11 · 11 = 121 liegt schon über 97.</p>
+
+<div class="example-box warn">
+<div class="label">Typische Fehler</div>
+<p><strong>1 als Primzahl gezählt.</strong> Sie ist keine.<br>
+<strong>2 vergessen.</strong> 2 ist die einzige gerade Primzahl und wird beim
+schnellen Aufzählen oft übersprungen.<br>
+<strong>Alle Zahlen als Teiler getestet.</strong> Es genügt, bis zur Wurzel zu
+prüfen — das spart bei dreistelligen Zahlen fast die gesamte Arbeit.<br>
+<strong>„Alle ungeraden Zahlen sind prim."</strong> 9, 15, 21 und 25 sagen etwas
+anderes.</p>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Opa Theo</div>
-<p>Du probierst einfach der Reihe nach, ob 2, 3, 5, 7 ... hineinpassen. Bei 17 klappt keine dieser Zahlen - also ist 17 eine Primzahl!</p>
-</div>
-</div>
+<h2>Es gibt unendlich viele</h2>
 
-</div>
+<p>Euklid hat das vor über zweitausend Jahren bewiesen, und der Beweis passt in
+vier Zeilen. Angenommen, es gäbe nur endlich viele Primzahlen. Dann multipliziert
+man sie alle miteinander und addiert 1. Die neue Zahl lässt bei der Division durch
+jede der angenommenen Primzahlen den Rest 1 — keine von ihnen geht auf. Also ist die
+neue Zahl entweder selbst prim oder hat einen Primfaktor, der nicht in der Liste
+stand. Beides widerspricht der Annahme. Damit kann die Liste nie vollständig sein.</p>
 
-<div class="example-box">
-<div class="label">Gegenbeispiel</div>
-<p>Ist 15 eine Primzahl? Nein: 15 = 3 &times; 5, also lässt sie sich auch durch 3 und durch 5 teilen - nicht nur durch 1 und sich selbst.</p>
+<div class="example-box task">
+<div class="label">Übungsaufgabe</div>
+<p>Prüfe, ob 143 eine Primzahl ist. Begründe, welche Teiler du testen musst und
+warum du nicht weiter suchen brauchst.</p>
+<details class="solution">
+<summary>Lösung anzeigen</summary>
+<p>Die Wurzel aus 143 liegt zwischen 11 und 12, denn 11 · 11 = 121 und
+12 · 12 = 144. Zu testen sind also nur die Primzahlen bis 11: 2, 3, 5, 7 und 11.<br>
+2 scheidet aus (143 ist ungerade), 3 ebenfalls (Quersumme 8), 5 auch (letzte Ziffer
+ist keine 0 oder 5), 7 geht nicht auf (7 · 20 = 140, Rest 3). Aber
+<strong>11 · 13 = 143</strong>.<br>
+143 ist also <strong>keine</strong> Primzahl. Hätte auch die 11 nicht gepasst, wäre
+143 prim gewesen — ein größerer Teiler bräuchte einen kleineren Partner, und alle
+kleineren wurden geprüft.</p>
+</details>
 </div>
 
 <div class="ad-slot">
@@ -143,8 +153,9 @@
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
-<p class="note">Primzahlen sind quasi die "Bausteine" aller Zahlen: Jede natürliche Zahl größer als 1 lässt sich eindeutig als Produkt von Primzahlen schreiben (z. B. 12 = 2 &times; 2 &times; 3). Deshalb sind sie in der Mathematik - und sogar in der Verschlüsselung von Daten im Internet - so wichtig.</p>
-
+<p class="note">Primzahlen sind nicht nur Schulstoff. Die Verschlüsselung, mit der
+dein Browser Bankdaten überträgt, beruht darauf, dass sich zwei sehr große Primzahlen
+mühelos multiplizieren, das Produkt aber praktisch nicht wieder zerlegen lässt.</p>
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>
