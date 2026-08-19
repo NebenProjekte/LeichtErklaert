@@ -44,39 +44,59 @@
 <article class="topic">
 <span class="subject-pill math">Mathematik &middot; Geometrie</span>
 <h1>Sinus, Cosinus und Tangens leicht erklärt</h1>
-<p>In einem <strong>rechtwinkligen Dreieck</strong> beschreiben Sinus, Cosinus und Tangens, wie die Seiten im Verh&auml;ltnis zu einem Winkel &alpha; stehen. Damit kannst du Seiten und Winkel berechnen, ohne sie direkt zu messen.</p>
+
+<p>Trigonometrie verbindet <strong>Winkel mit Längen</strong>. Sobald ein Dreieck
+einen rechten Winkel hat, genügen ein Winkel und eine Seite, um alles Übrige
+auszurechnen. Genau davon leben Vermessung, Navigation und jede Kraftzerlegung in
+der Physik.</p>
 
 <div class="formula-box">
-sin(&alpha;) = Gegenkathete &divide; Hypotenuse
+sin &alpha; = Gegenkathete / Hypotenuse<br>
+cos &alpha; = Ankathete / Hypotenuse<br>
+tan &alpha; = Gegenkathete / Ankathete
 </div>
 
-<div class="formula-box">
-cos(&alpha;) = Ankathete &divide; Hypotenuse
+<div class="example-box glossary">
+<div class="label">Fachbegriffe</div>
+<p><strong>Hypotenuse</strong> — die Seite gegenüber dem rechten Winkel, immer die längste.<br>
+<strong>Gegenkathete</strong> — liegt dem betrachteten Winkel gegenüber.<br>
+<strong>Ankathete</strong> — liegt am betrachteten Winkel an.<br>
+<strong>Sinus, Kosinus, Tangens</strong> — Seitenverhältnisse, keine Längen. Deshalb einheitenlos.<br>
+<strong>Arkusfunktionen</strong> — die Umkehrung, auf dem Taschenrechner sin⁻¹, cos⁻¹, tan⁻¹. Aus dem Verhältnis wird der Winkel.</p>
 </div>
 
-<div class="formula-box">
-tan(&alpha;) = Gegenkathete &divide; Ankathete
-<small>Am einfachsten: erst den Winkel im Dreieck anschauen, dann die Seiten zuordnen!</small>
-</div>
+<h2>Warum die Verhältnisse fest sind</h2>
 
-<div class="diagram">
-<svg viewBox="0 0 360 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rechtwinkliges Dreieck mit Gegenkathete, Ankathete und Hypotenuse">
-<polygon points="40,220 40,60 300,220" fill="#fbeee1" stroke="#3a2a22" stroke-width="2"/>
-<line x1="40" y1="60" x2="40" y2="220" stroke="#3d8f7f" stroke-width="6"/>
-<line x1="40" y1="220" x2="300" y2="220" stroke="#2f8fce" stroke-width="6"/>
-<line x1="40" y1="60" x2="300" y2="220" stroke="#e2583f" stroke-width="6"/>
-<rect x="40" y="200" width="20" height="20" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<path d="M 90,220 A 50,50 0 0 0 76,182" fill="none" stroke="#f2b134" stroke-width="3"/>
-<text x="98" y="205" font-size="17" fill="#f2b134" font-weight="800">&#945;</text>
-<text x="10" y="145" font-size="16" fill="#3d8f7f" font-weight="800">Gegenkathete</text>
-<text x="140" y="245" font-size="16" fill="#2f8fce" font-weight="800">Ankathete</text>
-<text x="185" y="130" font-size="16" fill="#e2583f" font-weight="800">Hypotenuse</text>
-</svg>
+<p>Zwei rechtwinklige Dreiecke mit demselben Winkel sind zueinander ähnlich — das
+eine ist nur eine vergrößerte Ausgabe des anderen. Bei einer Vergrößerung wachsen alle
+Seiten um denselben Faktor, also bleibt jedes Seiten<em>verhältnis</em> unverändert.
+Deshalb hängt der Sinus nur vom Winkel ab und nicht von der Größe des Dreiecks.</p>
+
+<table class="datatable">
+<caption>Werte, die man kennen sollte</caption>
+<thead><tr><th>Winkel</th><th>sin</th><th>cos</th><th>tan</th></tr></thead>
+<tbody>
+<tr><td>0°</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>30°</td><td>0,5</td><td>0,866</td><td>0,577</td></tr>
+<tr><td>45°</td><td>0,707</td><td>0,707</td><td>1</td></tr>
+<tr><td>60°</td><td>0,866</td><td>0,5</td><td>1,732</td></tr>
+<tr><td>90°</td><td>1</td><td>0</td><td>nicht definiert</td></tr>
+</tbody>
+</table>
+
+<p>Bei 45° sind Sinus und Kosinus gleich — das Dreieck ist symmetrisch. Bei 90° hat
+der Tangens keinen Wert, weil die Ankathete auf null schrumpft und man nicht durch
+null teilen darf.</p>
+
+<div class="calc">
+Ein Baum wirft 12 m Schatten, die Sonne steht 34° über dem Horizont.<br>
+<br>
+tan 34° = Höhe &divide; 12<br>
+Höhe = 12 &middot; tan 34° = 12 &middot; 0,6745 = <strong>8,09 m</strong>
 </div>
 
 <p class="dialog-intro">💬 Mia fragt Opa Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -92,10 +112,9 @@ tan(&alpha;) = Gegenkathete &divide; Ankathete
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Wie merke ich mir, welche Seite Gegenkathete und welche Ankathete ist?</p>
+<p>Woher weiß ich, ob ich Sinus oder Kosinus nehmen muss?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -111,10 +130,9 @@ tan(&alpha;) = Gegenkathete &divide; Ankathete
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Opa Theo</div>
-<p>Schau dir den Winkel &alpha; an, den du gerade betrachtest: Die gr&uuml;ne Seite genau gegen&uuml;ber ist die Gegenkathete. Die blaue Seite direkt daneben, die nicht die Hypotenuse ist, ist die Ankathete. Die rote Hypotenuse ist immer die l&auml;ngste Seite, gegen&uuml;ber dem rechten Winkel.</p>
+<p>Schau, welche Seiten vorkommen. Gegenkathete und Hypotenuse heißt Sinus, Ankathete und Hypotenuse heißt Kosinus, die beiden Katheten heißen Tangens.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -130,10 +148,9 @@ tan(&alpha;) = Gegenkathete &divide; Ankathete
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Und wozu braucht man das im echten Leben?</p>
+<p>Und wenn ich den Winkel suche?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -149,58 +166,46 @@ tan(&alpha;) = Gegenkathete &divide; Ankathete
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Opa Theo</div>
-<p>Zum Beispiel um H&ouml;hen zu berechnen, die du nicht direkt messen kannst - wie die H&ouml;he eines Baumes, wenn du nur den Winkel zur Spitze und deinen Abstand kennst!</p>
+<p>Dann rechnest du das Verhältnis aus und drückst sin⁻¹ oder tan⁻¹. Achte nur darauf, dass der Rechner auf DEG steht und nicht auf RAD.</p>
 </div>
-</div>
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>Zeig mir ein Beispiel!</p>
 </div>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Opa Theo</div>
-<p>Ein Baum wirft bei einem Sonnenwinkel von 30&deg; einen 20m langen Schatten. Die H&ouml;he ist dann Ankathete &times; tan(30&deg;) = 20 &times; 0,577 &asymp; 11,5 Meter.</p>
-</div>
+<div class="example-box warn">
+<div class="label">Typische Fehler</div>
+<p><strong>Taschenrechner im Bogenmaß.</strong> Steht RAD statt DEG im Display, sind alle Ergebnisse falsch. Probe: sin 30° muss 0,5 ergeben.<br>
+<strong>Kathetten verwechselt.</strong> „Gegen" und „an" beziehen sich immer auf den <em>betrachteten</em> Winkel, nicht auf den rechten.<br>
+<strong>sin⁻¹ als 1/sin gelesen.</strong> Es ist die Umkehrfunktion, nicht der Kehrwert.<br>
+<strong>Auf schiefe Dreiecke angewendet.</strong> Ohne rechten Winkel braucht es Sinus- oder Kosinussatz.</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Übungsaufgabe</div>
+<p>Eine Rampe überwindet 0,75 m Höhe auf 9,00 m Länge (gemessen entlang der Rampe).
+Berechne den Steigungswinkel. Für Rollstühle sind höchstens 6 % Steigung zulässig —
+ist die Rampe zulässig?</p>
+<details class="solution">
+<summary>Lösung anzeigen</summary>
+<p>Höhe ist Gegenkathete, Rampenlänge ist Hypotenuse &rarr; Sinus.<br>
+sin &alpha; = 0,75 &divide; 9,00 = 0,0833<br>
+&alpha; = sin⁻¹(0,0833) = <strong>4,78°</strong><br><br>
+Die Steigung in Prozent ist der Tangens: waagerechte Strecke =
+&radic;(9,00² &minus; 0,75²) = 8,969 m, also tan &alpha; = 0,75 &divide; 8,969 =
+0,0836 &rarr; <strong>8,4 %</strong>.<br>
+Damit liegt die Rampe <strong>über</strong> der Grenze von 6 % und ist nicht
+zulässig. Für 6 % dürfte sie bei 0,75 m Höhe höchstens 0,045 m pro Meter steigen —
+nötig wären rund 12,5 m Länge.</p>
+</details>
 </div>
 
-<div class="example-box">
-<div class="label">Rechne selbst</div>
-<p>Eine Leiter (Hypotenuse) ist 5m lang und steht im Winkel von 60&deg; zum Boden. Wie hoch reicht sie? <br><small>L&ouml;sung: Gegenkathete = 5 &times; sin(60&deg;) = 5 &times; 0,866 &asymp; 4,33m</small></p>
+<div class="ad-slot">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1079255057051806" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
-
-<p class="note">Die Werte f&uuml;r sin, cos und tan findest du im Taschenrechner (Tasten SIN/COS/TAN) - auswendig lernen musst du nur ein paar Standardwinkel wie 30&deg;, 45&deg; und 60&deg;.</p>
-
+<p class="note">Dieselben Funktionen beschreiben auch Schwingungen: Schall, Licht und
+Wechselstrom werden als Sinuskurven dargestellt. Der Umweg über das Dreieck ist nur
+der Einstieg.</p>
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>
