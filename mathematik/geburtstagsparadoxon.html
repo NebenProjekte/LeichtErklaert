@@ -44,32 +44,57 @@
 <article class="topic">
 <span class="subject-pill math">Mathematik &middot; Stochastik</span>
 <h1>Das Geburtstagsparadoxon leicht erklärt</h1>
-<p>Ein Jahr hat 365 Tage - trotzdem reichen schon <strong>23 Personen</strong> in einem Raum, damit die Wahrscheinlichkeit f&uuml;r zwei gemeinsame Geburtstage bei &uuml;ber <strong>50%</strong> liegt. Klingt unm&ouml;glich, ist aber Mathematik.</p>
+
+<p>In einer Klasse mit 23 Schülern liegt die Wahrscheinlichkeit, dass zwei am selben
+Tag Geburtstag haben, bei über <strong>50 Prozent</strong>. Das klingt falsch — bei
+365 Tagen im Jahr. Der Denkfehler steckt in der Frage, die man sich unbewusst stellt.</p>
 
 <div class="formula-box">
-Bei 23 Personen: &uuml;ber 50% Wahrscheinlichkeit
-<small>Bei 50 Personen sind es schon 97%!</small>
+P(mindestens ein Paar) = 1 &minus; (365/365 &middot; 364/365 &middot; 363/365 &middot; … )
+<small>bequemer über das Gegenereignis: erst „alle verschieden" ausrechnen, dann von 1 abziehen</small>
 </div>
 
-<div class="diagram">
-<svg viewBox="0 0 400 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kurve: Wahrscheinlichkeit eines gemeinsamen Geburtstags steigt mit der Gruppengr&ouml;&szlig;e schnell an">
-<line x1="10" y1="200" x2="395" y2="200" stroke="#8a7264" stroke-width="1.5"/>
-<line x1="10" y1="10" x2="10" y2="200" stroke="#8a7264" stroke-width="1.5"/>
-<text x="0" y="205" font-size="11" fill="#8a7264">0%</text>
-<text x="380" y="205" font-size="11" fill="#8a7264">70</text>
-<text x="0" y="106" font-size="11" fill="#8a7264">50%</text>
-<line x1="10" y1="105" x2="395" y2="105" stroke="#ede0cd" stroke-width="1" stroke-dasharray="3 3"/>
-<polygon points="10,200 64,178 119,122 135,104 173,66 227,31 282,16 336,11 390,10 390,200" fill="#7a5fb0" opacity="0.18"/>
-<polyline points="10,200 64,178 119,122 135,104 173,66 227,31 282,16 336,11 390,10" fill="none" stroke="#7a5fb0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="135" cy="104" r="7" fill="#e2583f"/>
-<line x1="135" y1="104" x2="135" y2="200" stroke="#e2583f" stroke-width="2" stroke-dasharray="4 3"/>
-<text x="100" y="230" font-size="13" fill="#e2583f" font-weight="800">23 Personen &rarr; &uuml;ber 50%</text>
-</svg>
+<div class="example-box glossary">
+<div class="label">Fachbegriffe</div>
+<p><strong>Gegenereignis</strong> — das Gegenteil des gesuchten Ereignisses. P(A) = 1 &minus; P(nicht A).<br>
+<strong>Laplace-Wahrscheinlichkeit</strong> — günstige durch mögliche Fälle, wenn alle gleich wahrscheinlich sind.<br>
+<strong>Unabhängige Ereignisse</strong> — Wahrscheinlichkeiten werden multipliziert.<br>
+<strong>Paarbildung</strong> — bei n Personen gibt es n(n&minus;1)/2 mögliche Paare.</p>
 </div>
+
+<h2>Der eigentliche Grund: es geht um Paare</h2>
+
+<p>Die meisten denken: „Wie wahrscheinlich ist es, dass jemand an <em>meinem</em>
+Geburtstag Geburtstag hat?" Das ist tatsächlich selten. Gefragt ist aber, ob
+<strong>irgendein Paar</strong> zusammenpasst — und Paare gibt es viel mehr, als man
+vermutet.</p>
+
+<div class="calc">
+Anzahl möglicher Paare bei n Personen: n &middot; (n &minus; 1) &divide; 2<br>
+<br>
+bei 10 Personen: 45 Paare<br>
+bei 23 Personen: <strong>253 Paare</strong><br>
+bei 40 Personen: 780 Paare
+</div>
+
+<p>253 Gelegenheiten für einen Treffer — so gesehen sind 50 Prozent nicht mehr
+überraschend, sondern plausibel.</p>
+
+<table class="datatable">
+<caption>Wahrscheinlichkeit für mindestens einen gemeinsamen Geburtstag</caption>
+<thead><tr><th>Personen</th><th>Wahrscheinlichkeit</th></tr></thead>
+<tbody>
+<tr><td>10</td><td>11,7 %</td></tr>
+<tr><td>20</td><td>41,1 %</td></tr>
+<tr><td>23</td><td><strong>50,7 %</strong></td></tr>
+<tr><td>30</td><td>70,6 %</td></tr>
+<tr><td>50</td><td>97,0 %</td></tr>
+<tr><td>70</td><td>99,9 %</td></tr>
+</tbody>
+</table>
 
 <p class="dialog-intro">💬 Mia fragt Opa Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -85,10 +110,9 @@ Bei 23 Personen: &uuml;ber 50% Wahrscheinlichkeit
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>In unserer Klasse sind wir genau 23 Leute. Du sagst, da haben wahrscheinlich schon zwei am gleichen Tag Geburtstag?</p>
+<p>Aber ein Jahr hat doch 365 Tage! Da müssten es mindestens 183 Leute sein.</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -104,10 +128,9 @@ Bei 23 Personen: &uuml;ber 50% Wahrscheinlichkeit
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Opa Theo</div>
-<p>Genau! Bei 23 Personen liegt die Wahrscheinlichkeit schon bei &uuml;ber 50% - h&ouml;her als bei einer M&uuml;nze, die Kopf zeigt!</p>
+<p>Das wäre die Antwort auf eine andere Frage — nämlich ob jemand an <strong>deinem</strong> Geburtstag Geburtstag hat. Dafür bräuchte man tatsächlich rund 253 Personen für 50 Prozent.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -123,10 +146,9 @@ Bei 23 Personen: &uuml;ber 50% Wahrscheinlichkeit
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Das kann doch nicht sein, ein Jahr hat 365 Tage!</p>
+<p>Und hier zählt jedes Paar?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -142,58 +164,52 @@ Bei 23 Personen: &uuml;ber 50% Wahrscheinlichkeit
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Opa Theo</div>
-<p>Der Trick: Wir vergleichen nicht DICH mit allen anderen, sondern ALLE m&ouml;glichen Paare miteinander. Bei 23 Personen gibt es schon 253 verschiedene Paare - und jedes einzelne Paar hat eine kleine Chance auf einen Treffer.</p>
+<p>Genau. Bei 23 Leuten sind das 253 Paare — jedes davon ist eine Chance auf einen Treffer.</p>
 </div>
-</div>
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>Und wie schnell steigt das weiter an?</p>
 </div>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Opa Theo</div>
-<p>Schau dir die Kurve an: bei 30 Personen liegt die Chance schon bei &uuml;ber 70%, bei 50 Personen bei 97%. Es geht viel schneller nach oben, als man aus dem Bauch heraus denkt!</p>
-</div>
+<h2>So wird gerechnet</h2>
+
+<div class="calc">
+Wahrscheinlichkeit, dass <em>alle</em> verschieden sind:<br>
+365/365 &middot; 364/365 &middot; 363/365 &middot; … &middot; 343/365 &asymp; 0,4927<br>
+<br>
+Gesucht ist das Gegenteil:<br>
+1 &minus; 0,4927 = <strong>0,5073</strong>, also 50,7 %
 </div>
 
+<div class="example-box warn">
+<div class="label">Typische Fehler</div>
+<p><strong>Die falsche Frage beantwortet.</strong> „Jemand hat an meinem Geburtstag Geburtstag" ist etwas völlig anderes.<br>
+<strong>Wahrscheinlichkeiten addiert.</strong> Bei unabhängigen Ereignissen wird multipliziert.<br>
+<strong>Direkt statt über das Gegenereignis gerechnet.</strong> Der direkte Weg erfordert das Aufsummieren sehr vieler Fälle und ist praktisch nicht machbar.<br>
+<strong>Den 29. Februar zum Problem erklärt.</strong> Er verschiebt das Ergebnis um weniger als ein Zehntel Prozentpunkt.</p>
 </div>
 
-<div class="example-box">
-<div class="label">Probier's aus</div>
-<p>Frag bei deiner n&auml;chsten gr&ouml;&szlig;eren Gruppe (Klasse, Familienfeier, Team) einfach mal nach den Geburtstagen - die Chance steht gut, dass du einen Treffer findest!</p>
+<div class="example-box task">
+<div class="label">Übungsaufgabe</div>
+<p>Berechne die Wahrscheinlichkeit für mindestens einen gemeinsamen Geburtstag in
+einer Gruppe von 5 Personen. Erkläre, warum die Zahl so viel kleiner ist als bei 23.</p>
+<details class="solution">
+<summary>Lösung anzeigen</summary>
+<p>Alle verschieden: 365/365 &middot; 364/365 &middot; 363/365 &middot; 362/365 &middot; 361/365 &asymp; 0,9729<br>
+Mindestens ein Paar: 1 &minus; 0,9729 = <strong>2,7 %</strong><br><br>
+Bei 5 Personen gibt es nur 5 &middot; 4 &divide; 2 = 10 mögliche Paare, bei 23
+Personen dagegen 253. Die Zahl der Paare wächst quadratisch mit der Gruppengröße,
+nicht linear — deshalb steigt die Wahrscheinlichkeit so schnell an.</p>
+</details>
 </div>
 
+<div class="ad-slot">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1079255057051806" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
 
-<p class="note">Das &bdquo;Paradox&ldquo; heisst nur so, weil das Ergebnis unserer Intuition widerspricht - mathematisch ist daran &uuml;berhaupt nichts widerspr&uuml;chlich.</p>
-
+<p class="note">Dasselbe Prinzip heißt in der Informatik Geburtstagsangriff: Es ist
+viel leichter, <em>irgendzwei</em> Dateien mit gleichem Hashwert zu finden als eine
+zu einem vorgegebenen. Deshalb müssen Hashfunktionen doppelt so viele Bits haben,
+wie man naiv annehmen würde.</p>
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>

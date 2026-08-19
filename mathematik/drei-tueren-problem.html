@@ -45,16 +45,53 @@
 <span class="subject-pill math">Mathematik - Stochastik</span>
 <h1>Das Drei-Türen-Problem (Monty Hall) leicht erklärt</h1>
 
-<p>Hinter drei Türen steht ein Auto und zwei Ziegen. Du wählst eine Tür. Der Moderator, der weiß, wo das Auto steht, öffnet danach eine <strong>andere</strong> Tür mit einer Ziege dahinter. Jetzt darfst du bei deiner Tür bleiben - oder zur letzten verbliebenen Tür wechseln.</p>
+<p>Drei Türen, hinter einer ein Auto, hinter den anderen je eine Ziege. Du wählst
+eine Tür. Der Moderator — der weiß, wo das Auto steht — öffnet eine <em>andere</em>
+Tür mit einer Ziege und fragt, ob du wechseln willst. Solltest du?
+<strong>Ja. Immer.</strong></p>
 
 <div class="formula-box">
-Bleiben: 33 % Gewinnchance &nbsp;|&nbsp; Wechseln: 66 % Gewinnchance
-<small>Wechseln verdoppelt deine Chance auf das Auto!</small>
+bleiben: 1/3 &nbsp;&middot;&nbsp; wechseln: 2/3
+<small>Wechseln verdoppelt die Gewinnchance</small>
 </div>
+
+<div class="example-box glossary">
+<div class="label">Fachbegriffe</div>
+<p><strong>Bedingte Wahrscheinlichkeit</strong> — die Wahrscheinlichkeit unter einer Zusatzinformation.<br>
+<strong>Zusatzinformation</strong> — hier: der Moderator weiß, wo das Auto steht, und handelt danach.<br>
+<strong>Gegenereignis</strong> — „falsch gewählt" hat die Wahrscheinlichkeit 2/3.<br>
+<strong>Monty-Hall-Problem</strong> — der englische Name, nach dem Showmaster Monty Hall.</p>
+</div>
+
+<h2>Warum die Chance nicht 50:50 ist</h2>
+
+<p>Der entscheidende Punkt: Der Moderator öffnet keine zufällige Tür. Er weiß, wo das
+Auto steht, und öffnet <strong>immer</strong> eine Ziegentür. Damit steckt in seiner
+Handlung Information — und die verteilt sich nicht gleichmäßig auf beide
+verbleibenden Türen.</p>
+
+<table class="datatable">
+<caption>Alle drei Fälle durchgespielt (Auto hinter Tür 1)</caption>
+<thead><tr><th>Du wählst</th><th>Moderator öffnet</th><th>bleiben</th><th>wechseln</th></tr></thead>
+<tbody>
+<tr><td>Tür 1 (Auto)</td><td>Tür 2 oder 3</td><td>gewinnt</td><td>verliert</td></tr>
+<tr><td>Tür 2 (Ziege)</td><td>Tür 3</td><td>verliert</td><td><strong>gewinnt</strong></td></tr>
+<tr><td>Tür 3 (Ziege)</td><td>Tür 2</td><td>verliert</td><td><strong>gewinnt</strong></td></tr>
+</tbody>
+</table>
+
+<p>In zwei von drei Fällen gewinnt das Wechseln. Mehr Beweis braucht es nicht — man
+muss nur alle Fälle vollständig aufschreiben.</p>
+
+<h2>Der Trick mit den hundert Türen</h2>
+
+<p>Stell dir hundert Türen vor. Du wählst eine — die Chance liegt bei 1 %. Der
+Moderator öffnet anschließend 98 Ziegentüren und lässt genau eine andere zu. Würdest
+du jetzt bei deiner ersten Wahl bleiben? Kaum jemand würde das. Bei drei Türen ist
+es exakt dieselbe Situation, nur weniger deutlich.</p>
 
 <p class="dialog-intro">💬 Mia fragt Opa Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -70,10 +107,9 @@ Bleiben: 33 % Gewinnchance &nbsp;|&nbsp; Wechseln: 66 % Gewinnchance
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Aber es sind doch nur noch zwei Türen übrig! Ist es dann nicht einfach 50 zu 50, egal ob ich wechsle oder nicht?</p>
+<p>Es sind doch am Ende nur noch zwei Türen. Also 50:50!</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -89,10 +125,9 @@ Bleiben: 33 % Gewinnchance &nbsp;|&nbsp; Wechseln: 66 % Gewinnchance
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Opa Theo</div>
-<p>Das denken fast alle zuerst! Aber der Moderator öffnet die Tür ja nicht zufällig - er weiß immer, wo das Auto ist, und öffnet garantiert eine Ziegentür. Das verändert die Wahrscheinlichkeiten.</p>
+<p>Zwei Möglichkeiten heißt nicht gleich wahrscheinlich. Deine erste Wahl war zu 1/3 richtig — daran ändert das Öffnen nichts.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -108,10 +143,9 @@ Bleiben: 33 % Gewinnchance &nbsp;|&nbsp; Wechseln: 66 % Gewinnchance
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Erklär mir das mal ganz genau!</p>
+<p>Und die anderen 2/3?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -127,33 +161,43 @@ Bleiben: 33 % Gewinnchance &nbsp;|&nbsp; Wechseln: 66 % Gewinnchance
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Opa Theo</div>
-<p>Bei deiner ersten Wahl stehst du zu 1/3 auf dem Auto und zu 2/3 auf einer Ziege. Diese 2/3-Chance "auf einer Ziege zu stehen" verschwindet nicht - sie wandert komplett zur letzten verbliebenen Tür, weil der Moderator ja die andere Ziegentür schon rausgenommen hat!</p>
+<p>Die stecken jetzt vollständig in der einen übrigen Tür. Der Moderator hat die schlechte Möglichkeit für dich aussortiert.</p>
 </div>
 </div>
-
 </div>
 
-<div class="diagram">
-<svg viewBox="0 0 340 160" width="320" height="150" xmlns="http://www.w3.org/2000/svg">
-<rect x="20" y="20" width="80" height="100" rx="8" fill="#fbeee1" stroke="#c1613b" stroke-width="3"/>
-<text x="60" y="75" font-size="14" text-anchor="middle" fill="#c1613b" font-weight="bold">Deine Wahl</text>
-<text x="60" y="95" font-size="14" text-anchor="middle" fill="#c1613b" font-weight="bold">1/3</text>
-<rect x="240" y="20" width="80" height="100" rx="8" fill="#b8483a" stroke="#b8483a" stroke-width="3"/>
-<text x="280" y="75" font-size="14" text-anchor="middle" fill="#fff" font-weight="bold">Wechsel-Tür</text>
-<text x="280" y="95" font-size="14" text-anchor="middle" fill="#fff" font-weight="bold">2/3</text>
-<line x1="105" y1="70" x2="235" y2="70" stroke="#8a7264" stroke-width="2" stroke-dasharray="5 4"/>
-</svg>
-</div>
-<p class="note">Die "verschwundene" Ziegentür-Wahrscheinlichkeit landet komplett bei der Wechsel-Tür - deshalb 2/3 statt 1/2.</p>
-
-<div class="example-box">
-<div class="label">Zum Ausprobieren</div>
-<p>Wenn du es nicht glaubst: Spiel es 20-mal mit einem Freund und drei Bechern durch (unter einem ein Bonbon). Bleib zehnmal, wechsle zehnmal - beim Wechseln gewinnst du deutlich öfter!</p>
+<div class="example-box warn">
+<div class="label">Typische Fehler</div>
+<p><strong>„Zwei Türen, also 50:50."</strong> Gleiche Anzahl bedeutet nicht gleiche Wahrscheinlichkeit.<br>
+<strong>Das Wissen des Moderators übersehen.</strong> Öffnet er zufällig und erwischt zufällig eine Ziege, ist es tatsächlich 50:50 — die Regel ist entscheidend.<br>
+<strong>Nur einen Fall betrachtet.</strong> Erst die vollständige Fallunterscheidung zeigt das Ergebnis.<br>
+<strong>Der Intuition vertraut.</strong> Selbst Mathematiker haben sich hier öffentlich geirrt.</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Übungsaufgabe</div>
+<p>Wie ändert sich das Ergebnis, wenn der Moderator die zweite Tür rein zufällig
+öffnet und dabei zufällig eine Ziege erwischt? Begründe.</p>
+<details class="solution">
+<summary>Lösung anzeigen</summary>
+<p>Dann liegt die Gewinnchance bei <strong>50:50</strong>, Wechseln bringt nichts.<br><br>
+Der Grund: In diesem Fall hätte der Moderator auch das Auto aufdecken können. Dass er
+eine Ziege zeigt, ist nun selbst ein Zufallsergebnis und liefert keine
+zusätzliche Information über die restlichen Türen. Im ursprünglichen Problem folgt er
+dagegen einer festen Regel — und genau diese Regel überträgt die 2/3 auf die eine
+verbliebene Tür. Nicht die Anzahl der Türen entscheidet, sondern das Verhalten des
+Moderators.</p>
+</details>
+</div>
 
-<p class="note">Das Problem ist nach dem US-Showmaster Monty Hall benannt, in dessen Show "Let's Make a Deal" genau dieses Spiel vorkam. In Deutschland ist es auch als "Ziegenproblem" bekannt.</p>
+<div class="ad-slot">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1079255057051806" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
 
+<p class="note">1990 veröffentlichte Marilyn vos Savant die richtige Lösung in einer
+Zeitungskolumne. Es folgten rund 10.000 Leserbriefe, viele von Universitäten, die
+ihr Rechenfehler vorwarfen. Sie hatte recht.</p>
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>
