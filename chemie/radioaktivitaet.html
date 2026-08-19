@@ -45,36 +45,53 @@
 <span class="subject-pill chem">Chemie - Kernchemie</span>
 <h1>Radioaktivität leicht erklärt</h1>
 
-<p>Manche Atomkerne sind instabil. Um stabiler zu werden, senden sie irgendwann von selbst Strahlung aus - man nennt das radioaktiven Zerfall. Das passiert komplett zufällig und lässt sich für einen einzelnen Kern nicht vorhersagen.</p>
+<p>Radioaktivität heißt: Ein Atomkern ist instabil und wandelt sich um. Dabei sendet
+er Strahlung aus. Das passiert von selbst, ohne Auslöser — man kann es weder
+anschalten noch abschalten.</p>
 
 <div class="formula-box">
-Alpha &middot; Beta &middot; Gamma
-<small>die drei wichtigsten Strahlungsarten - sie unterscheiden sich stark darin, was sie aussenden und wie gut man sich vor ihnen schützen kann</small>
+N(t) = N₀ &middot; (1/2)<sup>t / T</sup>
+<small>N₀ Anfangsmenge &middot; T Halbwertszeit &middot; nach jeder Halbwertszeit bleibt die Hälfte</small>
 </div>
 
-<div class="diagram">
-<svg viewBox="0 0 260 130" width="240" height="120" xmlns="http://www.w3.org/2000/svg">
-<rect x="10" y="20" width="6" height="90" fill="#8a7264"/>
-<rect x="90" y="20" width="6" height="90" fill="#c9c2b6"/>
-<rect x="90" y="20" width="30" height="90" fill="#8a7264"/>
-<rect x="180" y="20" width="6" height="90" fill="#c9c2b6"/>
-<rect x="180" y="20" width="60" height="90" fill="#5c5449"/>
-<text x="13" y="122" font-size="10" text-anchor="middle" fill="#3a2a22">Papier</text>
-<text x="105" y="122" font-size="10" text-anchor="middle" fill="#3a2a22">Aluminium</text>
-<text x="210" y="122" font-size="10" text-anchor="middle" fill="#3a2a22">Blei/Beton</text>
-<line x1="0" y1="35" x2="8" y2="35" stroke="#3d6f8f" stroke-width="3"/>
-<line x1="0" y1="60" x2="85" y2="60" stroke="#d9822e" stroke-width="3"/>
-<line x1="0" y1="85" x2="235" y2="85" stroke="#c1613b" stroke-width="3"/>
-<text x="20" y="30" font-size="9" fill="#3d6f8f">Alpha</text>
-<text x="20" y="55" font-size="9" fill="#d9822e">Beta</text>
-<text x="20" y="80" font-size="9" fill="#c1613b">Gamma</text>
-</svg>
+<div class="example-box glossary">
+<div class="label">Fachbegriffe</div>
+<p><strong>Alphastrahlung</strong> — Heliumkerne. Stark ionisierend, aber schon von Papier gestoppt.<br>
+<strong>Betastrahlung</strong> — Elektronen oder Positronen. Wird von wenigen Millimetern Aluminium aufgehalten.<br>
+<strong>Gammastrahlung</strong> — energiereiche elektromagnetische Wellen. Braucht Blei oder Beton.<br>
+<strong>Halbwertszeit</strong> — die Zeit, nach der die Hälfte der Kerne zerfallen ist.<br>
+<strong>Becquerel (Bq)</strong> — Zerfälle pro Sekunde, die Aktivität.<br>
+<strong>Sievert (Sv)</strong> — die biologische Wirkung auf den Körper.</p>
 </div>
-<p class="note">Alphastrahlung schafft es kaum durch ein Blatt Papier, Betastrahlung braucht schon Aluminium, und Gammastrahlung durchdringt sogar dünneres Metall - erst dicker Beton oder Blei stoppt sie zuverlässig.</p>
+
+<h2>Die drei Strahlungsarten</h2>
+
+<table class="datatable">
+<caption>Was wovon aufgehalten wird</caption>
+<thead><tr><th>Art</th><th>Teilchen</th><th>Abschirmung</th><th>Gefahr</th></tr></thead>
+<tbody>
+<tr><td>Alpha (&alpha;)</td><td>2 Protonen + 2 Neutronen</td><td>Blatt Papier, Haut</td><td>gering von außen, hoch beim Einatmen</td></tr>
+<tr><td>Beta (&beta;)</td><td>Elektron</td><td>einige mm Aluminium</td><td>mittel</td></tr>
+<tr><td>Gamma (&gamma;)</td><td>Photon</td><td>dickes Blei, Beton</td><td>durchdringt den ganzen Körper</td></tr>
+</tbody>
+</table>
+
+<p>Der scheinbare Widerspruch bei Alpha löst sich so auf: Von außen kommt die
+Strahlung nicht durch die Haut. Wird das Material aber eingeatmet oder verschluckt,
+gibt es keine Schutzschicht mehr — und dann ist gerade Alpha besonders schädlich,
+weil es seine Energie auf kurzer Strecke abgibt.</p>
+
+<div class="calc">
+Jod-131 hat eine Halbwertszeit von 8 Tagen. Start: 800 MBq<br>
+<br>
+nach 8 Tagen: 400 MBq<br>
+nach 16 Tagen: 200 MBq<br>
+nach 24 Tagen: 100 MBq<br>
+nach 40 Tagen: <strong>25 MBq</strong>
+</div>
 
 <p class="dialog-intro">💬 Mia fragt Opa Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -90,10 +107,9 @@ Alpha &middot; Beta &middot; Gamma
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Warum ist ein Atomkern überhaupt instabil? Woher kommt diese Strahlung?</p>
+<p>Wird das denn irgendwann ganz null?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -109,10 +125,9 @@ Alpha &middot; Beta &middot; Gamma
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Opa Theo</div>
-<p>Im Atomkern stecken Protonen und Neutronen dicht gedrängt zusammen. Bei manchen Kombinationen - meist wenn der Kern sehr groß ist oder das Verhältnis von Protonen zu Neutronen nicht passt - hält die Kernkraft das Ganze nicht dauerhaft stabil zusammen. Der Kern "löst" das Problem, indem er Teilchen oder Energie abgibt.</p>
+<p>Rechnerisch nie — es bleibt immer die Hälfte der Hälfte. Praktisch ist nach zehn Halbwertszeiten weniger als ein Tausendstel übrig.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -128,10 +143,9 @@ Alpha &middot; Beta &middot; Gamma
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Was bedeutet eigentlich Halbwertszeit? Das hört man ja oft im Zusammenhang mit Radioaktivität.</p>
+<p>Und warum ist eine kurze Halbwertszeit gefährlicher?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -147,58 +161,43 @@ Alpha &middot; Beta &middot; Gamma
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Opa Theo</div>
-<p>Die Halbwertszeit ist die Zeit, nach der die Hälfte einer radioaktiven Probe zerfallen ist. Bei Jod-131 sind das nur etwa 8 Tage, bei Uran-238 dagegen über 4 Milliarden Jahre. Jedes radioaktive Element hat seine eigene, feste Halbwertszeit.</p>
+<p>Weil in derselben Zeit viel mehr Kerne zerfallen. Etwas mit Millionen Jahren Halbwertszeit strahlt kaum — es hat es nicht eilig.</p>
 </div>
-</div>
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>Ist Radioaktivität dann immer gefährlich?</p>
 </div>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Opa Theo</div>
-<p>Es kommt auf Strahlungsart, Dosis und Dauer an. Zu viel Strahlung kann Zellen schädigen, deshalb schützt man sich mit Abstand, Abschirmung und kurzer Aufenthaltsdauer. Aber in kontrollierten, kleinen Dosen wird Radioaktivität auch gezielt genutzt, zum Beispiel um Tumore in der Strahlentherapie zu behandeln.</p>
-</div>
+<div class="example-box warn">
+<div class="label">Typische Fehler</div>
+<p><strong>„Nach zwei Halbwertszeiten ist alles weg."</strong> Es ist ein Viertel übrig, nicht null.<br>
+<strong>Lange Halbwertszeit für gefährlicher gehalten.</strong> Umgekehrt: kurze Halbwertszeit bedeutet hohe Aktivität.<br>
+<strong>Becquerel und Sievert verwechselt.</strong> Bq zählt Zerfälle, Sv beschreibt die Wirkung im Gewebe.<br>
+<strong>Bestrahlte Lebensmittel für radioaktiv gehalten.</strong> Bestrahlung tötet Keime, hinterlässt aber keine Strahlung.</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Übungsaufgabe</div>
+<p>Eine Probe Cäsium-137 (Halbwertszeit 30 Jahre) hat heute 640 Bq. Wie hoch war die
+Aktivität vor 90 Jahren, und wie hoch ist sie in 60 Jahren?</p>
+<details class="solution">
+<summary>Lösung anzeigen</summary>
+<p>90 Jahre sind drei Halbwertszeiten <em>rückwärts</em>, also dreimal verdoppeln:<br>
+640 &middot; 2³ = <strong>5120 Bq</strong><br><br>
+60 Jahre sind zwei Halbwertszeiten vorwärts:<br>
+640 &divide; 2² = <strong>160 Bq</strong><br><br>
+Cäsium-137 ist genau deshalb nach Reaktorunfällen so problematisch: Die 30 Jahre sind
+lang genug, dass es über Jahrzehnte im Boden bleibt, und kurz genug, dass es dabei
+kräftig strahlt.</p>
+</details>
 </div>
 
-<div class="example-box">
-<div class="label">Überall ein bisschen</div>
-<p>Du bist ständig einer kleinen, natürlichen Hintergrundstrahlung ausgesetzt - aus dem Erdboden, dem Weltall und sogar aus Bananen, die von Natur aus etwas radioaktives Kalium-40 enthalten. Diese Mengen sind für den Körper unbedenklich.</p>
+<div class="ad-slot">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1079255057051806" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
-
-<p class="note">Radioaktivität ist also weder grundsätzlich "böse" noch harmlos - wie bei vielem in der Chemie und Physik kommt es auf die Menge und den richtigen Umgang damit an.</p>
-
+<p class="note">Natürliche Strahlung ist überall — aus Boden, Baustoffen, Nahrung und
+dem Weltall. In Deutschland liegt die durchschnittliche Belastung bei etwa
+2,1 Millisievert im Jahr, in einigen Alpentälern beim Doppelten.</p>
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>
