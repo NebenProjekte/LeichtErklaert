@@ -45,28 +45,59 @@
 <span class="subject-pill physics">Physik - Mechanik</span>
 <h1>Hebelwirkung (Hebelgesetz) leicht erklärt</h1>
 
-<p>Ein Hebel ist eine Stange, die sich um einen festen Punkt (den <strong>Drehpunkt</strong>) dreht. Mit einem Hebel kannst du mit wenig Kraft eine schwere Last bewegen - wenn du auf der richtigen Seite weit genug vom Drehpunkt entfernt drückst.</p>
+<p>Ein Hebel schenkt nichts. Er verteilt nur um — was man an Kraft spart, bezahlt man
+an Weg. Dieser eine Satz ist der Kern des ganzen Themas und heißt
+<strong>Goldene Regel der Mechanik</strong>.</p>
 
 <div class="formula-box">
-F&#8321; &middot; l&#8321; = F&#8322; &middot; l&#8322;
-<small>Kraft mal Kraftarm = Last mal Lastarm</small>
+F₁ &middot; l₁ = F₂ &middot; l₂
+<small>Kraft mal Kraftarm = Last mal Lastarm &middot; das Produkt heißt Drehmoment</small>
 </div>
 
-<div class="diagram">
-<svg viewBox="0 0 320 160" width="300" height="150" xmlns="http://www.w3.org/2000/svg">
-<line x1="20" y1="90" x2="300" y2="90" stroke="#c1613b" stroke-width="6" stroke-linecap="round"/>
-<polygon points="160,90 145,120 175,120" fill="#7a3b22"/>
-<circle cx="40" cy="80" r="14" fill="#b8483a"/>
-<text x="40" y="60" font-size="12" text-anchor="middle" fill="#b8483a" font-weight="bold">Last</text>
-<circle cx="280" cy="80" r="8" fill="#c1613b"/>
-<text x="280" y="60" font-size="12" text-anchor="middle" fill="#c1613b" font-weight="bold">Kraft</text>
-<text x="160" y="140" font-size="12" text-anchor="middle" fill="#8a7264">Drehpunkt</text>
-</svg></div>
-<p class="note">Kurzer Arm zur schweren Last, langer Arm zur Kraft - so reicht wenig Kraft, um viel Last zu bewegen.</p>
+<div class="example-box glossary">
+<div class="label">Fachbegriffe</div>
+<p><strong>Drehpunkt</strong> — der feste Punkt, um den sich der Hebel dreht.<br>
+<strong>Kraftarm</strong> — Abstand vom Drehpunkt zu der Stelle, an der du drückst.<br>
+<strong>Lastarm</strong> — Abstand vom Drehpunkt zur Last.<br>
+<strong>Drehmoment</strong> — Kraft mal Hebelarm, Einheit Newtonmeter (Nm).<br>
+<strong>Zweiseitiger Hebel</strong> — Drehpunkt zwischen Kraft und Last, etwa eine Wippe.<br>
+<strong>Einseitiger Hebel</strong> — Kraft und Last auf derselben Seite, etwa eine Schubkarre.</p>
+</div>
+
+<h2>Warum die Länge so viel ausmacht</h2>
+
+<div class="calc">
+Ein Stein mit 300 kg wiegt rund 2943 N.<br>
+Lastarm 0,5 m, Kraftarm 2,5 m.<br>
+<br>
+F = (2943 N &middot; 0,5 m) &divide; 2,5 m = <strong>589 N</strong><br>
+<br>
+Das entspricht etwa 60 kg Körperkraft — ein Mensch schafft das.
+</div>
+
+<p>Der Preis steht in der Goldenen Regel: Um den Stein einen Zentimeter zu heben,
+muss das lange Ende fünf Zentimeter weit bewegt werden. Die verrichtete Arbeit —
+Kraft mal Weg — bleibt in beiden Fällen gleich.</p>
+
+<table class="datatable">
+<caption>Hebel im Alltag</caption>
+<thead><tr><th>Werkzeug</th><th>Bauart</th><th>Wozu</th></tr></thead>
+<tbody>
+<tr><td>Brecheisen</td><td>einseitig</td><td>große Kraftverstärkung</td></tr>
+<tr><td>Nussknacker</td><td>einseitig</td><td>Kraftverstärkung</td></tr>
+<tr><td>Schubkarre</td><td>einseitig</td><td>Last nah am Rad = wenig Kraft</td></tr>
+<tr><td>Wippe</td><td>zweiseitig</td><td>Gleichgewicht</td></tr>
+<tr><td>Schere</td><td>zweiseitig</td><td>Kraft am Griff, Schnitt nah am Gelenk</td></tr>
+<tr><td>Pinzette</td><td>einseitig</td><td>bewusst <em>weniger</em> Kraft, dafür feine Bewegung</td></tr>
+</tbody>
+</table>
+
+<p>Die Pinzette ist der lehrreichste Fall: Hier wird die Kraft absichtlich
+verkleinert, weil Feingefühl wichtiger ist als Stärke. Ein Hebel kann in beide
+Richtungen wirken.</p>
 
 <p class="dialog-intro">💬 Mia fragt Opa Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -82,10 +113,9 @@ F&#8321; &middot; l&#8321; = F&#8322; &middot; l&#8322;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Warum kann ich auf einer Wippe einen viel schwereren Papa hochheben, wenn ich weit außen sitze?</p>
+<p>Archimedes soll gesagt haben, er könne die Erde bewegen. Geht das wirklich?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -101,10 +131,9 @@ F&#8321; &middot; l&#8321; = F&#8322; &middot; l&#8322;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Opa Theo</div>
-<p>Weil dein Abstand zum Drehpunkt größer ist! Deine Kraft wird mit deinem langen Hebelarm multipliziert - je weiter außen du sitzt, desto mehr "Wucht" hat dein Gewicht.</p>
+<p>Rechnerisch ja. Praktisch bräuchtest du einen Hebel, dessen langes Ende etwa 100.000 Lichtjahre misst — so breit wie die Milchstraße.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -120,10 +149,9 @@ F&#8321; &middot; l&#8321; = F&#8322; &middot; l&#8322;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Kannst du mir das mal vorrechnen?</p>
+<p>Und wie lange müsste ich drücken?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -139,20 +167,44 @@ F&#8321; &middot; l&#8321; = F&#8322; &middot; l&#8322;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Opa Theo</div>
-<p>Klar! Eine Last von 600 Newton sitzt 1 Meter vom Drehpunkt entfernt. Du sitzt 3 Meter weit weg. Wie viel Kraft brauchst du? 600 &middot; 1 = F &middot; 3, also F = 200 Newton - ein Drittel der Last!</p>
+<p>Für einen Zentimeter Hub bei einem Meter pro Sekunde: rund 30 Billionen Jahre. Die Formel stimmt, die Welt spielt nur nicht mit.</p>
 </div>
 </div>
-
 </div>
 
-
-<p class="note">Das Prinzip steckt auch in Nagelknipsern, Scheren, Nussknackern und Brecheisen - überall, wo wenig Kraft eine große Wirkung erzielen soll.</p>
-
-<div class="example-box">
-<div class="label">Fun Fact</div>
-<p>Der griechische Gelehrte <strong>Archimedes</strong> soll über den Hebel gesagt haben: &bdquo;Gib mir einen festen Punkt, und ich bewege die Erde aus den Angeln.&ldquo; Genau dieses Prinzip meinte er damit - mit einem langen genug Hebel und einem festen Drehpunkt ließe sich theoretisch sogar die ganze Erde bewegen.</p>
+<div class="example-box warn">
+<div class="label">Typische Fehler</div>
+<p><strong>Hebelarm ab der Last gemessen.</strong> Beide Arme werden immer vom <em>Drehpunkt</em> aus gemessen.<br>
+<strong>Masse statt Kraft eingesetzt.</strong> Erst mit 9,81 m/s² in Newton umrechnen, sonst stimmen die Einheiten nicht.<br>
+<strong>Schrägen Hebel wie einen geraden gerechnet.</strong> Zählt nur der senkrechte Abstand zur Kraftlinie.<br>
+<strong>Geglaubt, der Hebel spare Arbeit.</strong> Er spart Kraft, nie Arbeit.</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Übungsaufgabe</div>
+<p>Auf einer Wippe sitzt links ein Kind mit 30 kg in 2,0 m Abstand vom Drehpunkt.
+Rechts sitzt ein Kind mit 40 kg. In welchem Abstand muss es sitzen? Wie weit muss
+sich das rechte Kind bewegen, wenn das linke 40 cm sinkt?</p>
+<details class="solution">
+<summary>Lösung anzeigen</summary>
+<p>Gleichgewicht: 30 kg &middot; 2,0 m = 40 kg &middot; l₂<br>
+l₂ = 60 &divide; 40 = <strong>1,5 m</strong><br>
+(Die Umrechnung in Newton kann man sich sparen, weil 9,81 auf beiden Seiten steht
+und sich herauskürzt.)<br><br>
+Die Wege verhalten sich wie die Hebelarme: 40 cm &middot; (1,5 &divide; 2,0) =
+<strong>30 cm</strong>. Das schwerere Kind bewegt sich weniger weit — genau das ist
+die Goldene Regel.</p>
+</details>
+</div>
+
+<div class="ad-slot">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1079255057051806" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<p class="note">Auch der eigene Körper ist voller Hebel. Der Bizeps setzt sehr nah am
+Ellenbogen an und muss deshalb ein Vielfaches der gehaltenen Last aufbringen — dafür
+bewegt sich die Hand über eine große Strecke, und das schnell.</p>
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>

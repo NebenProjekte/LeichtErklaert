@@ -45,23 +45,58 @@
 <span class="subject-pill physics">Physik - Elektrizität</span>
 <h1>Unterschied zwischen Volt, Ampere und Watt leicht erklärt</h1>
 
-<p>Alle drei beschreiben Strom, aber jeweils etwas anderes. Am einfachsten stellt man sich Strom wie <strong>Wasser in einem Schlauch</strong> vor.</p>
-
-<div class="example-box">
-<div class="label">Der Wasser-Vergleich</div>
-<p><strong>Volt (Spannung, U):</strong> der Wasserdruck im Schlauch - wie stark "drückt" der Strom?</p>
-<p><strong>Ampere (Stromstärke, I):</strong> die Wassermenge, die tatsächlich fließt - wie viel Strom kommt an?</p>
-<p><strong>Watt (Leistung, P):</strong> wie viel "Arbeit" das Wasser insgesamt leisten kann - Druck und Menge zusammen.</p>
-</div>
+<p>Volt, Ampere und Watt beschreiben drei verschiedene Dinge, werden aber ständig
+durcheinandergeworfen. Am schnellsten versteht man sie über den Vergleich mit einer
+Wasserleitung.</p>
 
 <div class="formula-box">
 P = U &middot; I
 <small>Leistung (Watt) = Spannung (Volt) &middot; Stromstärke (Ampere)</small>
 </div>
 
+<div class="example-box glossary">
+<div class="label">Fachbegriffe</div>
+<p><strong>Spannung U</strong> in Volt (V) — der Druck, der die Ladungen antreibt. Im Wasserbild: der Wasserdruck.<br>
+<strong>Stromstärke I</strong> in Ampere (A) — wie viele Ladungen pro Sekunde fließen. Im Wasserbild: die Durchflussmenge.<br>
+<strong>Widerstand R</strong> in Ohm (&Omega;) — wie stark der Leiter bremst. Im Wasserbild: die Enge des Rohrs.<br>
+<strong>Leistung P</strong> in Watt (W) — die pro Sekunde umgesetzte Energie.<br>
+<strong>Arbeit W</strong> in Wattstunden (Wh) oder Kilowattstunden — Leistung mal Zeit, das steht auf der Stromrechnung.</p>
+</div>
+
+<h2>Das Wasserbild</h2>
+
+<p>Ein enges Rohr bei hohem Druck kann dieselbe Wassermenge liefern wie ein weites
+Rohr bei niedrigem Druck. Genauso beim Strom: 230 V bei 0,5 A ergeben dieselbe
+Leistung wie 12 V bei knapp 10 A — nämlich rund 115 Watt. Deshalb sagt allein die
+Voltzahl noch nichts darüber, wie viel ein Gerät leistet.</p>
+
+<table class="datatable">
+<caption>Typische Werte im Haushalt</caption>
+<thead><tr><th>Gerät</th><th>Spannung</th><th>Leistung</th><th>Stromstärke</th></tr></thead>
+<tbody>
+<tr><td>LED-Lampe</td><td>230 V</td><td>9 W</td><td>0,04 A</td></tr>
+<tr><td>Laptop-Netzteil</td><td>230 V</td><td>65 W</td><td>0,28 A</td></tr>
+<tr><td>Kühlschrank</td><td>230 V</td><td>100 W</td><td>0,43 A</td></tr>
+<tr><td>Wasserkocher</td><td>230 V</td><td>2000 W</td><td>8,7 A</td></tr>
+<tr><td>Autobatterie beim Anlassen</td><td>12 V</td><td>2400 W</td><td>200 A</td></tr>
+</tbody>
+</table>
+
+<p>Die letzte Zeile erklärt, warum Starterkabel so dick sind: Nicht die Spannung
+verlangt den Querschnitt, sondern die <strong>Stromstärke</strong>.</p>
+
+<h2>Das ohmsche Gesetz</h2>
+
+<div class="calc">
+U = R &middot; I &nbsp;|&nbsp; I = U &divide; R &nbsp;|&nbsp; R = U &divide; I<br>
+<br>
+Beispiel Wasserkocher an 230 V mit 2000 W:<br>
+I = P &divide; U = 2000 &divide; 230 = <strong>8,7 A</strong><br>
+R = U &divide; I = 230 &divide; 8,7 = <strong>26,4 &Omega;</strong>
+</div>
+
 <p class="dialog-intro">💬 Mia fragt Opa Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -77,10 +112,9 @@ P = U &middot; I
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Warum ist eine 230-Volt-Steckdose gefährlicher als eine 9-Volt-Batterie, obwohl beide "nur" Strom sind?</p>
+<p>Warum ist eine Steckdose gefährlich, eine Autobatterie mit 12 Volt aber nicht?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -96,10 +130,9 @@ P = U &middot; I
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Opa Theo</div>
-<p>Weil höhere Spannung (Volt) mehr "Druck" hat, um Strom durch deinen Körper zu drücken. Mehr Druck heißt: mehr Ampere fließen durch dich - und die Ampere sind es, die dem Körper schaden.</p>
+<p>Weil erst der <strong>Strom durch den Körper</strong> gefährlich wird. 12 Volt schaffen es nicht durch die trockene Haut, 230 Volt schon.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -115,10 +148,9 @@ P = U &middot; I
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Und was bedeutet dann "60 Watt" bei einer Glühbirne?</p>
+<p>Und die Batterie hat doch 200 Ampere!</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -134,21 +166,43 @@ P = U &middot; I
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Opa Theo</div>
-<p>Das ist die Leistung - wie viel Energie pro Sekunde verbraucht wird. Bei 230 Volt braucht so eine Birne dafür nur etwa 0,26 Ampere: 230 &middot; 0,26 &asymp; 60 Watt.</p>
+<p>Die kann sie liefern — fließen tut nur, was Spannung und Widerstand zulassen. Angebot ist nicht dasselbe wie Verbrauch.</p>
 </div>
 </div>
-
 </div>
 
-<div class="example-box">
-<div class="label">Beispiel</div>
-<p>Ein Gerät läuft an 230 Volt und zieht 2 Ampere. Wie viel Watt sind das?</p>
-<p>P = 230 &middot; 2 = <strong>460 Watt</strong></p>
+<div class="example-box warn">
+<div class="label">Typische Fehler</div>
+<p><strong>Volt mit Watt gleichgesetzt.</strong> Volt ist der Druck, Watt die Leistung.<br>
+<strong>Ampere als Eigenschaft des Geräts gesehen.</strong> Die Stromstärke ergibt sich aus Spannung und Widerstand, sie ist nichts Festes.<br>
+<strong>Watt und Wattstunde verwechselt.</strong> Watt ist die Leistung <em>jetzt</em>, Wattstunde die Energie über Zeit. Abgerechnet werden Kilowattstunden.<br>
+<strong>Rechnungen mit gemischten Einheiten.</strong> Erst mA in A umrechnen, sonst wird das Ergebnis um Faktor 1000 falsch.</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Übungsaufgabe</div>
+<p>Ein Heizlüfter mit 2000 W läuft täglich 3 Stunden. Die Kilowattstunde kostet
+0,30 €. Berechne die Stromstärke bei 230 V und die Kosten für 30 Tage.</p>
+<details class="solution">
+<summary>Lösung anzeigen</summary>
+<p>Stromstärke: I = P &divide; U = 2000 &divide; 230 = <strong>8,7 A</strong><br>
+Energie pro Tag: 2000 W &middot; 3 h = 6000 Wh = 6 kWh<br>
+Energie in 30 Tagen: 6 &middot; 30 = 180 kWh<br>
+Kosten: 180 &middot; 0,30 € = <strong>54 €</strong><br>
+Zum Vergleich: Eine 9-W-LED, die genauso lange brennt, käme im Monat auf
+0,81 kWh und rund 24 Cent. Heizen mit Strom ist deshalb so teuer — nicht wegen der
+Spannung, sondern wegen der Leistung.</p>
+</details>
+</div>
 
-<p class="note">In Europa liegt die Netzspannung aus der Steckdose bei 230 Volt. In den USA sind es nur etwa 120 Volt - deshalb brauchen amerikanische Geräte bei gleicher Leistung etwa doppelt so viele Ampere.</p>
+<div class="ad-slot">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1079255057051806" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
 
+<p class="note">Faustregel für die Sicherung: Eine Haushaltssicherung mit 16 A hält
+bei 230 V etwa 3680 Watt aus. Zwei Wasserkocher an einem Stromkreis sind deshalb
+schon zu viel.</p>
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>

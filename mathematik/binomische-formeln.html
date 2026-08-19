@@ -44,56 +44,63 @@
 <article class="topic">
 <span class="subject-pill math">Mathematik &middot; Algebra</span>
 <h1>Binomische Formeln leicht erklärt</h1>
-<p>Die erste binomische Formel zeigt, wie man <strong>(a + b)&sup2;</strong> ausrechnet, ohne stur auszumultiplizieren. Das bunte Quadrat unten zeigt dir, warum sie so aussieht, wie sie aussieht.</p>
+
+<p>Die binomischen Formeln sind keine neuen Regeln, sondern nur das ausmultiplizierte
+Ergebnis von drei Klammerausdrücken, die ständig vorkommen. Wer sie kennt, spart in
+der Klausur jedes Mal drei Rechenschritte.</p>
 
 <div class="formula-box">
-(a + b)&sup2; = a&sup2; + 2ab + b&sup2;
-<small>1. binomische Formel</small>
+(a + b)² = a² + 2ab + b²<br>
+(a &minus; b)² = a² &minus; 2ab + b²<br>
+(a + b)(a &minus; b) = a² &minus; b²
 </div>
 
-<div class="formula-box">
-(a - b)&sup2; = a&sup2; - 2ab + b&sup2;
-<small>2. binomische Formel</small>
+<div class="example-box glossary">
+<div class="label">Fachbegriffe</div>
+<p><strong>Binom</strong> — ein Term aus genau zwei Gliedern, etwa a + b.<br>
+<strong>Ausmultiplizieren</strong> — Klammern auflösen, aus (a+b)² wird a²+2ab+b².<br>
+<strong>Faktorisieren</strong> — der Rückweg, aus x²&minus;9 wird (x+3)(x&minus;3).<br>
+<strong>Gemischtes Glied</strong> — das mittlere 2ab, genau das wird am häufigsten vergessen.<br>
+<strong>Dritte Formel</strong> — auch „Plus-Minus-Formel", das mittlere Glied fällt weg.</p>
 </div>
 
-<div class="formula-box">
-(a + b)(a - b) = a&sup2; - b&sup2;
-<small>3. binomische Formel</small>
+<h2>Warum das mittlere Glied da ist</h2>
+
+<p>(a+b)² heißt (a+b)·(a+b). Jedes Glied der ersten Klammer wird mit jedem Glied der
+zweiten multipliziert — das ergibt vier Produkte, von denen zwei gleich sind.</p>
+
+<div class="calc">
+(a + b)(a + b)<br>
+= a&middot;a + a&middot;b + b&middot;a + b&middot;b<br>
+= a² + ab + ab + b²<br>
+= <strong>a² + 2ab + b²</strong>
 </div>
 
-<div class="diagram">
-<svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Quadrat der Seitenl&auml;nge a+b, aufgeteilt in vier farbige Fl&auml;chen: a hoch 2, ab, ab und b hoch 2">
-<line x1="55" y1="30" x2="205" y2="30" stroke="#3a2a22" stroke-width="2"/>
-<line x1="55" y1="24" x2="55" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<line x1="205" y1="24" x2="205" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<text x="130" y="20" font-size="16" fill="#3a2a22" text-anchor="middle" font-weight="700">a</text>
-<line x1="205" y1="30" x2="285" y2="30" stroke="#3a2a22" stroke-width="2"/>
-<line x1="285" y1="24" x2="285" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<text x="245" y="20" font-size="16" fill="#3a2a22" text-anchor="middle" font-weight="700">b</text>
-<line x1="30" y1="55" x2="30" y2="205" stroke="#3a2a22" stroke-width="2"/>
-<line x1="24" y1="55" x2="36" y2="55" stroke="#3a2a22" stroke-width="2"/>
-<line x1="24" y1="205" x2="36" y2="205" stroke="#3a2a22" stroke-width="2"/>
-<text x="14" y="135" font-size="16" fill="#3a2a22" text-anchor="middle" font-weight="700" transform="rotate(-90 14 135)">a</text>
-<line x1="30" y1="205" x2="30" y2="285" stroke="#3a2a22" stroke-width="2"/>
-<line x1="24" y1="285" x2="36" y2="285" stroke="#3a2a22" stroke-width="2"/>
-<text x="14" y="250" font-size="16" fill="#3a2a22" text-anchor="middle" font-weight="700" transform="rotate(-90 14 250)">b</text>
-<rect x="55" y="55" width="150" height="150" fill="#e2583f"/>
-<rect x="205" y="55" width="80" height="150" fill="#f2b134"/>
-<rect x="55" y="205" width="150" height="80" fill="#f2b134"/>
-<rect x="205" y="205" width="80" height="80" fill="#3d8f7f"/>
-<line x1="205" y1="55" x2="205" y2="285" stroke="#fbf6ee" stroke-width="4"/>
-<line x1="55" y1="205" x2="285" y2="205" stroke="#fbf6ee" stroke-width="4"/>
-<rect x="55" y="55" width="230" height="230" fill="none" stroke="#3a2a22" stroke-width="2.5"/>
-<text x="130" y="140" font-size="26" fill="#fff" text-anchor="middle" font-weight="800">a&sup2;</text>
-<text x="245" y="135" font-size="20" fill="#3a2a22" text-anchor="middle" font-weight="800">ab</text>
-<text x="130" y="250" font-size="20" fill="#3a2a22" text-anchor="middle" font-weight="800">ab</text>
-<text x="245" y="250" font-size="22" fill="#fff" text-anchor="middle" font-weight="800">b&sup2;</text>
-</svg>
+<p>Geometrisch ist es ein Quadrat mit der Seitenlänge a+b: Es zerfällt in ein großes
+Quadrat a², ein kleines b² und <em>zwei</em> gleiche Rechtecke ab. Deshalb die Zwei.</p>
+
+<table class="datatable">
+<caption>Anwendung in beide Richtungen</caption>
+<thead><tr><th>Ausgangsterm</th><th>Formel</th><th>Ergebnis</th></tr></thead>
+<tbody>
+<tr><td>(x + 5)²</td><td>1.</td><td>x² + 10x + 25</td></tr>
+<tr><td>(3y &minus; 4)²</td><td>2.</td><td>9y² &minus; 24y + 16</td></tr>
+<tr><td>(x + 7)(x &minus; 7)</td><td>3.</td><td>x² &minus; 49</td></tr>
+<tr><td>x² + 6x + 9</td><td>1., rückwärts</td><td>(x + 3)²</td></tr>
+<tr><td>4a² &minus; 25</td><td>3., rückwärts</td><td>(2a + 5)(2a &minus; 5)</td></tr>
+</tbody>
+</table>
+
+<h2>Der Kopfrechentrick</h2>
+
+<div class="calc">
+99² = (100 &minus; 1)² = 10000 &minus; 200 + 1 = <strong>9801</strong><br>
+<br>
+102 &middot; 98 = (100+2)(100&minus;2) = 10000 &minus; 4 = <strong>9996</strong>
 </div>
 
 <p class="dialog-intro">💬 Mia fragt Opa Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -109,10 +116,9 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Wieso ist (a+b)&sup2; nicht einfach a&sup2;+b&sup2;? Das w&auml;re doch viel einfacher!</p>
+<p>Warum ist (a+b)² nicht einfach a² + b²?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -128,10 +134,9 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Opa Theo</div>
-<p>Ein sehr h&auml;ufiger Fehler! Schau dir das bunte Quadrat an: Neben dem roten a&sup2;-Feld und dem tealfarbenen b&sup2;-Feld gibt es noch zwei goldene ab-Rechtecke - die darfst du nicht vergessen!</p>
+<p>Probier es mit Zahlen: (2+3)² ist 25. a²+b² wäre 4+9 = 13. Es fehlen genau die 12 — und das sind die 2ab.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -147,10 +152,9 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Und die zweite Formel, (a-b)&sup2;?</p>
+<p>Also immer erst mit Zahlen prüfen?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -166,58 +170,40 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Opa Theo</div>
-<p>Fast identisch, nur mit einem Minus vor dem 2ab: (a-b)&sup2; = a&sup2; - 2ab + b&sup2;. Das b&sup2; bleibt aber immer positiv, weil ein Quadrat nie negativ sein kann.</p>
+<p>Genau. Eine Formel, die bei zwei einfachen Zahlen scheitert, stimmt nie.</p>
 </div>
-</div>
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>Und die dritte Formel?</p>
 </div>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Opa Theo</div>
-<p>Die dritte ist ein Sonderfall: (a+b)(a-b) = a&sup2; - b&sup2;. Die gemischten ab-Glieder heben sich dabei gegenseitig auf - schau: +ab und -ab ergeben zusammen null!</p>
-</div>
+<div class="example-box warn">
+<div class="label">Typische Fehler</div>
+<p><strong>Mittleres Glied vergessen.</strong> Der mit Abstand häufigste Fehler.<br>
+<strong>Vorzeichen bei der zweiten Formel.</strong> Nur das mittlere Glied wird negativ, b² bleibt positiv.<br>
+<strong>Faktoren nicht mitquadriert.</strong> (3y)² ist 9y², nicht 3y².<br>
+<strong>Dritte Formel bei gleichem Vorzeichen angewendet.</strong> Sie gilt nur für (a+b)(a&minus;b).</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Übungsaufgabe</div>
+<p>Zerlege 9x² &minus; 30x + 25 in ein Produkt und prüfe dein Ergebnis für x = 2.</p>
+<details class="solution">
+<summary>Lösung anzeigen</summary>
+<p>9x² ist (3x)², 25 ist 5², und 2 &middot; 3x &middot; 5 = 30x — das mittlere Glied
+passt mit negativem Vorzeichen. Also die zweite Formel:<br>
+9x² &minus; 30x + 25 = <strong>(3x &minus; 5)²</strong><br><br>
+Probe mit x = 2: links 9&middot;4 &minus; 60 + 25 = 36 &minus; 60 + 25 = 1.
+Rechts (6 &minus; 5)² = 1 ✓</p>
+</details>
 </div>
 
-<div class="example-box">
-<div class="label">Rechne selbst</div>
-<p>Multipliziere aus: (x + 3)&sup2; <br><small>L&ouml;sung: x&sup2; + 6x + 9</small><br><br>Profi-Trick f&uuml;r Kopfrechnen: 102&sup2; = (100+2)&sup2; = 10000 + 400 + 4 = 10404 - ganz ohne Taschenrechner!</p>
+<div class="ad-slot">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1079255057051806" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
-
-<p class="note">Die binomischen Formeln tauchen in fast jeder Algebra-Aufgabe ab der 8. Klasse auf - sie lohnen sich, wirklich auswendig zu k&ouml;nnen.</p>
-
+<p class="note">Die dritte Formel ist der Schlüssel zum Rationalmachen von Nennern:
+Ein Bruch mit &radic;2 + 1 im Nenner wird mit &radic;2 &minus; 1 erweitert, und die
+Wurzel verschwindet.</p>
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>
