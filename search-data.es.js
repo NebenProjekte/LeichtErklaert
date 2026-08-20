@@ -57,4 +57,5 @@ var LE_TOPICS = [
   { title: "La estructura del átomo y la tabla periódica explicadas de forma sencilla", cat: "Química", path: "chemie/atombau-und-periodensystem.html", keywords: "atomo nucleo proton neutron electron capa electrones de valencia numero atomico numero masico isotopo regla del octeto gas noble grupo periodo tabla periodica" },
   { title: "Ácidos, bases y el pH explicados de forma sencilla", cat: "Química", path: "chemie/saeuren-und-basen.html", keywords: "acido base ph oxonio hidroxido bronsted indicador tornasol lombarda neutralizacion sal esmalte dental logaritmo" },
   { title: "El enlace químico explicado de forma sencilla", cat: "Química", path: "chemie/chemische-bindung.html", keywords: "enlace quimico ionico covalente metalico electronegatividad dipolo enlace de hidrogeno red ionica mar de electrones polar apolar" },
+  { title: "Las reacciones redox explicadas de forma sencilla", cat: "Química", path: "chemie/redoxreaktionen.html", keywords: "redox oxidacion reduccion transferencia de electrones numero de oxidacion agente reductor agente oxidante serie de reactividad noble oxido pila daniell anodo de sacrificio" },
 ];
