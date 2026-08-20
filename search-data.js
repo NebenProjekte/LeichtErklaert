@@ -56,4 +56,5 @@ var LE_TOPICS = [
   { title: "Beweglichkeit leicht erklaert", cat: "Sporttheorie", path: "sporttheorie/beweglichkeit.html", keywords: "beweglichkeit gelenkigkeit dehnfaehigkeit muskelspindel golgi sehnenorgan autogene hemmung pnf dehnungstoleranz abitur" },
   { title: "Atombau und Periodensystem leicht erklaert", cat: "Chemie", path: "chemie/atombau-und-periodensystem.html", keywords: "atom atombau periodensystem proton neutron elektron schale valenzelektronen ordnungszahl massenzahl isotope oktettregel edelgas hauptgruppe periode" },
   { title: "Saeuren, Basen und der pH-Wert leicht erklaert", cat: "Chemie", path: "chemie/saeuren-und-basen.html", keywords: "saeure base ph wert oxonium hydroxid broensted indikator lackmus rotkohl neutralisation salz zahnschmelz logarithmus" },
+  { title: "Chemische Bindung leicht erklaert", cat: "Chemie", path: "chemie/chemische-bindung.html", keywords: "chemische bindung ionenbindung elektronenpaarbindung atombindung metallbindung elektronegativitaet dipol wasserstoffbruecke ionengitter elektronengas polar unpolar" },
 ];
