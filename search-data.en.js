@@ -54,4 +54,6 @@ var LE_TOPICS = [
   { title: "Strength endurance explained simply", cat: "Sports Theory", path: "sporttheorie/kraftausdauer.html", keywords: "strength endurance repetitions lactate mitochondria energy fatigue training" },
   { title: "Hypertrophy explained simply", cat: "Sports Theory", path: "sporttheorie/hypertrophie.html", keywords: "hypertrophy muscle growth recovery cell nuclei muscle memory training" },
   { title: "Flexibility explained simply", cat: "Sports Theory", path: "sporttheorie/beweglichkeit.html", keywords: "flexibility stretching mobility joint range of motion warm up" },
+  { title: "Atomic Structure and the Periodic Table Explained Simply", cat: "Chemistry", path: "chemie/atombau-und-periodensystem.html", keywords: "atom nucleus proton neutron electron shell valence electrons atomic number mass number isotope octet rule noble gas group period periodic table" },
+  { title: "Acids, Bases and the pH Scale Explained Simply", cat: "Chemistry", path: "chemie/saeuren-und-basen.html", keywords: "acid base ph scale hydronium hydroxide bronsted indicator litmus red cabbage neutralisation salt tooth enamel logarithm" },
 ];
