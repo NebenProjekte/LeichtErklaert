@@ -201,6 +201,19 @@ nicht linear — deshalb steigt die Wahrscheinlichkeit so schnell an.</p>
 </details>
 </div>
 
+<h2>Die Rechnung Schritt für Schritt</h2>
+
+<p>Warum genau 23 Personen reichen, lässt sich in wenigen Zeilen nachrechnen - vorausgesetzt, man rechnet über das Gegenereignis. Die Frage lautet also nicht "Wie wahrscheinlich ist ein Treffer?", sondern "Wie wahrscheinlich ist es, dass alle verschiedene Geburtstage haben?"</p>
+
+<p>Die erste Person darf sich einen beliebigen Tag aussuchen, das passt immer: 365 von 365. Für die zweite bleiben 364 freie Tage, für die dritte 363, und so weiter. Für n Personen ergibt das das Produkt (365 &divide; 365) &middot; (364 &divide; 365) &middot; ... &middot; ((366 &minus; n) &divide; 365). Bei n = 23 kommt dabei rund 0,4927 heraus. Die gesuchte Wahrscheinlichkeit ist das Gegenteil davon, also 1 &minus; 0,4927 = <strong>0,5073</strong>, gut 50,7 Prozent. Bei 22 Personen liegt der Wert noch bei 47,6 Prozent - deshalb ist 23 die kleinste Zahl, die über die Hälfte kommt.</p>
+
+<div class="example-box">
+<div class="label">Wie es weitergeht</div>
+<p>Die Kurve steigt danach überraschend schnell. Bei 30 Personen liegt die Wahrscheinlichkeit schon bei 70,6 Prozent, bei 41 bei über 90 Prozent, bei 57 bei 99 Prozent und bei 70 Personen bei 99,9 Prozent. Erst bei 366 Personen erreicht sie sichere 100 Prozent, denn dann muss nach dem Schubfachprinzip mindestens ein Tag doppelt belegt sein. Zwischen "so gut wie sicher" und "wirklich sicher" liegen also fast 300 Personen - und dieser lange, flache Ausläufer ist der Grund, warum die Intuition hier so danebenliegt: Wir denken an die 366, obwohl das Interessante längst bei 23 passiert. Nebenbei sind echte Geburtstage nicht ganz gleichmäßig über das Jahr verteilt; im Spätsommer werden mehr Kinder geboren als im Winter. Diese Ungleichverteilung macht Übereinstimmungen sogar noch etwas wahrscheinlicher, verschiebt die Schwelle aber nur um Bruchteile.</p>
+</div>
+
+<p>Für die Klassenarbeit ist vor allem der Rechenweg wichtig: <strong>Erst das Gegenereignis, dann abziehen.</strong> Direkt zu rechnen, wie viele Paare treffen könnten, führt in ein Gestrüpp aus Doppelzählungen, weil sich auch drei oder mehr Personen einen Tag teilen können. Der Umweg über "alle verschieden" umgeht das vollständig.</p>
+
 <div class="ad-slot">
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1079255057051806" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>

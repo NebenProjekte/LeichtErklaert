@@ -193,6 +193,19 @@ die nächsten 256.000 nur zwanzig Minuten.</p>
 </details>
 </div>
 
+<h2>Warum exponentielles Wachstum immer endet</h2>
+
+<p>Rechnet man exponentielles Wachstum lange genug weiter, kommen absurde Zahlen heraus. Eine Bakterienkultur, die sich alle 20 Minuten verdoppelt, hätte nach zwei Tagen mehr Masse als die Erde. Das passiert offensichtlich nicht - und der Grund dafür gehört genauso zum Thema wie die Formel selbst.</p>
+
+<p>In der Wirklichkeit stößt jedes Wachstum irgendwann an eine Grenze: Der Nährboden ist aufgebraucht, der Platz ist voll, die Abfallstoffe vergiften die Kultur. Der Wachstumsfaktor bleibt dann nicht konstant, sondern nähert sich der 1 an. Aus der steilen Exponentialkurve wird eine <strong>S-Kurve</strong>, in der Mathematik logistisches Wachstum genannt. Sie beginnt exponentiell, hat in der Mitte ihren steilsten Punkt und flacht danach gegen einen Höchstwert ab, die sogenannte <strong>Kapazitätsgrenze</strong>. Genau dieselbe Form beschreibt, wie sich eine Krankheit in einer Bevölkerung ausbreitet, wie sich ein neues Produkt verkauft oder wie eine Population in einem begrenzten Lebensraum wächst.</p>
+
+<div class="example-box">
+<div class="label">Der Rechenweg beim Zinseszins</div>
+<p>Das bekannteste Beispiel für exponentielles Wachstum im Alltag ist der Zinseszins, und daran sieht man die Formel gut in Aktion. Wer 2000 Euro zu 4 Prozent pro Jahr anlegt, hat nach n Jahren nicht 2000 + n &middot; 80 Euro, sondern 2000 &middot; 1,04<sup>n</sup>. Nach 10 Jahren sind das 2960 Euro, nach 20 Jahren 4382 Euro und nach 40 Jahren 9602 Euro. Linear gerechnet wären es nach 40 Jahren nur 5200 Euro gewesen - die Differenz von über 4400 Euro ist reiner Zinseszinseffekt. Mit der Siebzigerregel lässt sich das im Kopf abschätzen: 70 geteilt durch 4 ergibt rund 17,5 Jahre Verdopplungszeit, und 40 Jahre sind gut zwei Verdopplungen, also etwa das Vierfache. Die genaue Rechnung bestätigt das. Genau deshalb wirkt dieselbe Formel in beide Richtungen so mächtig - beim Sparen zugunsten des Anlegers, bei Schulden und Krediten gegen ihn.</p>
+</div>
+
+<p>Für Klassenarbeiten lohnt es sich, beide Fälle sauber zu trennen: Solange nichts bremst, gilt N(t) = N<sub>0</sub> &middot; q<sup>t</sup>. Sobald eine Grenze im Spiel ist, ist die Exponentialfunktion nur noch eine Näherung für die Anfangsphase - und wer sie darüber hinaus verwendet, bekommt genau die Bakterien so schwer wie die Erde.</p>
+
 <div class="ad-slot">
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1079255057051806" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
