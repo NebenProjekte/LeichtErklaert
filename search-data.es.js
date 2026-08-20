@@ -58,4 +58,5 @@ var LE_TOPICS = [
   { title: "Ácidos, bases y el pH explicados de forma sencilla", cat: "Química", path: "chemie/saeuren-und-basen.html", keywords: "acido base ph oxonio hidroxido bronsted indicador tornasol lombarda neutralizacion sal esmalte dental logaritmo" },
   { title: "El enlace químico explicado de forma sencilla", cat: "Química", path: "chemie/chemische-bindung.html", keywords: "enlace quimico ionico covalente metalico electronegatividad dipolo enlace de hidrogeno red ionica mar de electrones polar apolar" },
   { title: "Las reacciones redox explicadas de forma sencilla", cat: "Química", path: "chemie/redoxreaktionen.html", keywords: "redox oxidacion reduccion transferencia de electrones numero de oxidacion agente reductor agente oxidante serie de reactividad noble oxido pila daniell anodo de sacrificio" },
+  { title: "Las sales y los iones explicados de forma sencilla", cat: "Química", path: "chemie/salze-und-ionen.html", keywords: "sal ion cation anion red ionica formula cargas sulfato nitrato carbonato hidroxido amonio capa de hidratacion electrolito sal de deshielo punto de congelacion" },
 ];

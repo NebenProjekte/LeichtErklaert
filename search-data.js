@@ -58,4 +58,5 @@ var LE_TOPICS = [
   { title: "Saeuren, Basen und der pH-Wert leicht erklaert", cat: "Chemie", path: "chemie/saeuren-und-basen.html", keywords: "saeure base ph wert oxonium hydroxid broensted indikator lackmus rotkohl neutralisation salz zahnschmelz logarithmus" },
   { title: "Chemische Bindung leicht erklaert", cat: "Chemie", path: "chemie/chemische-bindung.html", keywords: "chemische bindung ionenbindung elektronenpaarbindung atombindung metallbindung elektronegativitaet dipol wasserstoffbruecke ionengitter elektronengas polar unpolar" },
   { title: "Redoxreaktionen leicht erklaert", cat: "Chemie", path: "chemie/redoxreaktionen.html", keywords: "redox oxidation reduktion elektronenuebergang oxidationszahl reduktionsmittel oxidationsmittel redoxreihe spannungsreihe edel unedel rosten batterie daniell opferanode" },
+  { title: "Salze und Ionen leicht erklaert", cat: "Chemie", path: "chemie/salze-und-ionen.html", keywords: "salz ion kation anion ionengitter verhaeltnisformel ladungsausgleich sulfat nitrat carbonat hydroxid ammonium hydrathuelle elektrolyt streusalz gefrierpunkt" },
 ];

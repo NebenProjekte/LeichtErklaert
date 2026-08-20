@@ -58,4 +58,5 @@ var LE_TOPICS = [
   { title: "Acids, Bases and the pH Scale Explained Simply", cat: "Chemistry", path: "chemie/saeuren-und-basen.html", keywords: "acid base ph scale hydronium hydroxide bronsted indicator litmus red cabbage neutralisation salt tooth enamel logarithm" },
   { title: "Chemical Bonding Explained Simply", cat: "Chemistry", path: "chemie/chemische-bindung.html", keywords: "chemical bond ionic covalent metallic bonding electronegativity dipole hydrogen bond ionic lattice electron sea polar non-polar" },
   { title: "Redox Reactions Explained Simply", cat: "Chemistry", path: "chemie/redoxreaktionen.html", keywords: "redox oxidation reduction electron transfer oxidation number reducing agent oxidising agent reactivity series noble rusting battery daniell cell sacrificial anode" },
+  { title: "Salts and Ions Explained Simply", cat: "Chemistry", path: "chemie/salze-und-ionen.html", keywords: "salt ion cation anion ionic lattice formula charge balance sulfate nitrate carbonate hydroxide ammonium hydration shell electrolyte road salt freezing point" },
 ];
