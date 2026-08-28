@@ -59,4 +59,6 @@ var LE_TOPICS = [
   { title: "Chemical Bonding Explained Simply", cat: "Chemistry", path: "chemie/chemische-bindung.html", keywords: "chemical bond ionic covalent metallic bonding electronegativity dipole hydrogen bond ionic lattice electron sea polar non-polar" },
   { title: "Redox Reactions Explained Simply", cat: "Chemistry", path: "chemie/redoxreaktionen.html", keywords: "redox oxidation reduction electron transfer oxidation number reducing agent oxidising agent reactivity series noble rusting battery daniell cell sacrificial anode" },
   { title: "Salts and Ions Explained Simply", cat: "Chemistry", path: "chemie/salze-und-ionen.html", keywords: "salt ion cation anion ionic lattice formula charge balance sulfate nitrate carbonate hydroxide ammonium hydration shell electrolyte road salt freezing point" },
+  { title: "The Mole and Amount of Substance Explained Simply", cat: "Chemistry", path: "chemie/mol-und-stoffmenge.html", keywords: "mole amount of substance molar mass avogadro constant particle number molar volume stoichiometry grams periodic table" },
+  { title: "Endurance and VO2max explained simply", cat: "Sports Theory", path: "sporttheorie/ausdauer.html", keywords: "endurance vo2max maximal oxygen uptake fick principle cardiac output stroke volume anaerobic threshold lactate karvonen interval method athletes heart" },
 ];
