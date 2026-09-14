@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Las derivadas explicadas de forma sencilla - LeichtErklärt</title>
+<meta name="description" content="Las derivadas explicadas de forma sencilla: pendiente, límite, regla de la potencia y regla de la cadena con ejemplos resueltos.">
+<link rel="canonical" href="https://nebenprojekte.github.io/LeichtErklaert/es/mathematik/ableitungen.html">
+<link rel="alternate" hreflang="de" href="https://nebenprojekte.github.io/LeichtErklaert/mathematik/ableitungen.html">
+<link rel="alternate" hreflang="en" href="https://nebenprojekte.github.io/LeichtErklaert/en/mathematik/ableitungen.html">
+<link rel="alternate" hreflang="es" href="https://nebenprojekte.github.io/LeichtErklaert/es/mathematik/ableitungen.html">
+<link rel="alternate" hreflang="x-default" href="https://nebenprojekte.github.io/LeichtErklaert/mathematik/ableitungen.html">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<a class="brand" href="../index.html">
+<span class="brand-name">LeichtErklärt</span>
+<span class="brand-sub">Todo explicado de forma sencilla</span>
+</a>
+<div class="site-search">
+<input type="text" id="le-search-input" placeholder="Buscar un tema (p. ej. gravedad) ..." autocomplete="off">
+<div class="site-search-results" id="le-search-results"></div>
+</div>
+<nav class="site-nav">
+<a href="../index.html#matematicas">Matemáticas</a>
+<a href="../index.html#fisica">Física</a>
+<a href="../index.html#biologia">Biología</a>
+<a href="../index.html#quimica">Química</a>
+</nav>
+<div class="lang-switch">
+<a href="../../mathematik/ableitungen.html">DE</a>
+<a href="../../en/mathematik/ableitungen.html">EN</a>
+<span class="active">ES</span>
+</div>
+</div>
+</header>
+
+<main class="container">
+<div class="breadcrumbs"><a href="../index.html">Inicio</a> &rsaquo; <a href="../index.html#matematicas">Matemáticas</a> &rsaquo; Derivadas</div>
+
+<article class="topic">
+<span class="subject-pill math">Matemáticas - Análisis</span>
+<h1>Las derivadas explicadas de forma sencilla</h1>
+
+<p>Una derivada responde a una sola pregunta: <strong>¿con qué rapidez
+cambia algo en este preciso instante?</strong> No en promedio durante una hora, sino
+en un único momento. En una gráfica significa: ¿qué pendiente tiene la curva
+exactamente en este punto?</p>
+
+<div class="formula-box">
+f&prime;(x) = lím<sub>h&rarr;0</sub> [ f(x+h) &minus; f(x) ] / h
+<small>La derivada en x es la pendiente de la recta tangente — el límite de las pendientes de las secantes cuando el segundo punto se acerca</small>
+</div>
+
+<h2>De la secante a la tangente</h2>
+
+<p>Calcular la pendiente de una recta es sencillo: altura dividida entre distancia
+horizontal. Una curva tiene una pendiente distinta en cada punto, así que empezamos
+con una aproximación. Tomamos el punto P que nos interesa y un segundo punto Q algo
+más a la derecha. La recta que pasa por ambos se llama secante, y su pendiente es
+fácil de calcular, pero solo describe el comportamiento <em>medio</em> entre P y Q.</p>
+
+<p>Ahora acercamos Q a P. La distancia, que solemos llamar h, se hace cada vez más
+pequeña y la secante bascula hasta una posición concreta: la tangente en P. Su
+pendiente es la variación instantánea que buscábamos. No podemos poner h igual a cero
+sin más, porque entonces habría un cero en el denominador — de ahí el rodeo por el
+límite.</p>
+
+<div class="diagram">
+<svg viewBox="0 0 340 240" width="300" height="212" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Parábola con secante y tangente">
+<line x1="30" y1="210" x2="320" y2="210" stroke="#b9ad9c" stroke-width="2"/>
+<line x1="40" y1="20" x2="40" y2="222" stroke="#b9ad9c" stroke-width="2"/>
+<text x="312" y="228" font-size="11" fill="#7d7263">x</text>
+<text x="24" y="26" font-size="11" fill="#7d7263">y</text>
+<path d="M55,200 Q160,-40 300,120" fill="none" stroke="#c1613b" stroke-width="3"/>
+<line x1="95" y1="115" x2="215" y2="34" stroke="#8aa06a" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="65" y1="160" x2="190" y2="7" stroke="#3a6ea5" stroke-width="2.5"/>
+<circle cx="110" cy="105" r="5" fill="#c1613b"/>
+<circle cx="181" cy="57" r="5" fill="#8aa06a"/>
+<text x="114" y="128" font-size="11" fill="#3a2a22">P</text>
+<text x="186" y="48" font-size="11" fill="#3a2a22">Q</text>
+<text x="196" y="96" font-size="11" fill="#8aa06a">secante</text>
+<text x="52" y="18" font-size="11" fill="#3a6ea5">tangente en P</text>
+</svg>
+<p class="caption">Cuando Q se desliza hacia P, la secante bascula hasta la tangente. Su pendiente es la derivada en P.</p>
+</div>
+
+<div class="calc">
+Regla de la potencia: f(x) = x<sup>n</sup> &rarr; f&prime;(x) = n &middot; x<sup>n&minus;1</sup><br>
+<br>
+f(x) = x&sup3; &rarr; f&prime;(x) = 3x&sup2;<br>
+f(x) = 5x&sup2; &rarr; f&prime;(x) = 10x<br>
+f(x) = 7 &rarr; f&prime;(x) = 0<br>
+<br>
+f(x) = x&sup3; &minus; 3x + 4 &rarr; f&prime;(x) = 3x&sup2; &minus; 3<br>
+Pendiente en x = 2: f&prime;(2) = 12 &minus; 3 = <strong>9</strong>
+</div>
+
+<table class="datatable">
+<caption>Las reglas de derivación</caption>
+<thead><tr><th>Regla</th><th>Fórmula</th><th>Ejemplo</th></tr></thead>
+<tbody>
+<tr><td>Potencia</td><td>x<sup>n</sup> &rarr; n&middot;x<sup>n&minus;1</sup></td><td>x&#8308; &rarr; 4x&sup3;</td></tr>
+<tr><td>Factor constante</td><td>c&middot;f &rarr; c&middot;f&prime;</td><td>6x&sup2; &rarr; 12x</td></tr>
+<tr><td>Suma</td><td>f + g &rarr; f&prime; + g&prime;</td><td>x&sup2; + x &rarr; 2x + 1</td></tr>
+<tr><td>Producto</td><td>f&middot;g &rarr; f&prime;g + fg&prime;</td><td>x&middot;sen x &rarr; sen x + x&middot;cos x</td></tr>
+<tr><td>Cadena</td><td>f(g(x)) &rarr; f&prime;(g(x))&middot;g&prime;(x)</td><td>(2x+1)&sup3; &rarr; 3(2x+1)&sup2;&middot;2</td></tr>
+</tbody>
+</table>
+
+<h2>Para qué sirve</h2>
+
+<p>Donde f&prime;(x) = 0 la tangente es horizontal, lo que señala un posible máximo o
+mínimo. La segunda derivada indica cuál de los dos: si es negativa la curva se comba
+hacia abajo y hay un máximo; si es positiva, un mínimo. Ese es el núcleo de cualquier
+problema de optimización.</p>
+
+<p>La lectura física es igual de importante. Al derivar la distancia respecto al
+tiempo se obtiene la velocidad, y al derivar la velocidad, la aceleración. El
+velocímetro de un coche no muestra otra cosa que la primera derivada de su función de
+posición.</p>
+
+<div class="example-box warn">
+<div class="label">Errores frecuentes</div>
+<p><strong>Olvidar la derivada interna en la regla de la cadena.</strong>
+(2x+1)&sup3; pasa a 3(2x+1)&sup2; <em>por 2</em>.<br>
+<strong>Dar por hecho que f&prime;(x) = 0 es un extremo.</strong> En f(x) = x&sup3; la
+derivada se anula en 0, pero ahí hay un punto de silla.<br>
+<strong>Arrastrar la constante.</strong> x&sup2; + 5 se deriva como 2x, no 2x + 5.</p>
+</div>
+
+<div class="example-box task">
+<div class="label">Ejercicio</div>
+<p>Para f(x) = x&sup3; &minus; 6x&sup2; + 9x, halla todos los extremos e indica si son
+máximos o mínimos.</p>
+<details class="solution">
+<summary>Ver solución</summary>
+<p>f&prime;(x) = 3x&sup2; &minus; 12x + 9 = 0 &rarr; x&sup2; &minus; 4x + 3 = 0 &rarr;
+x = 1 y x = 3.<br>
+f&Prime;(x) = 6x &minus; 12. f&Prime;(1) = &minus;6 &rarr; <strong>máximo en x = 1</strong>,
+f(1) = 4. f&Prime;(3) = 6 &rarr; <strong>mínimo en x = 3</strong>, f(3) = 0.</p>
+</details>
+</div>
+
+<div class="example-box">
+<div class="label">Temas relacionados</div>
+<p><a href="exponentielles-wachstum.html">Crecimiento exponencial</a> &middot;
+<a href="trigonometrie.html">Seno, coseno y tangente</a> &middot;
+<a href="../physik/fallgeschwindigkeit.html">Velocidad de caída</a></p>
+</div>
+
+<a class="back-link" href="../index.html">&larr; Volver al índice</a>
+</article>
+</main>
+
+<footer class="site-footer">
+<div class="container">LeichtErklärt - Todo explicado de forma sencilla<br><a href="/sobre-nosotros.html">Sobre nosotros</a> &middot; <a href="/aviso-legal.html">Aviso legal y contacto</a> &middot; <a href="/privacidad.html">Privacidad</a></div>
+</footer>
+<script src="../../search-data.es.js"></script>
+<script src="../../search.js"></script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

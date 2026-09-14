@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Derivatives Explained Simply - LeichtErklärt</title>
+<meta name="description" content="Derivatives explained simply: slope, limits, the power rule and the chain rule with worked examples - for grades 10 to 13.">
+<link rel="canonical" href="https://nebenprojekte.github.io/LeichtErklaert/en/mathematik/ableitungen.html">
+<link rel="alternate" hreflang="de" href="https://nebenprojekte.github.io/LeichtErklaert/mathematik/ableitungen.html">
+<link rel="alternate" hreflang="en" href="https://nebenprojekte.github.io/LeichtErklaert/en/mathematik/ableitungen.html">
+<link rel="alternate" hreflang="es" href="https://nebenprojekte.github.io/LeichtErklaert/es/mathematik/ableitungen.html">
+<link rel="alternate" hreflang="x-default" href="https://nebenprojekte.github.io/LeichtErklaert/mathematik/ableitungen.html">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<a class="brand" href="../index.html">
+<span class="brand-name">LeichtErklärt</span>
+<span class="brand-sub">Everything Explained Simply</span>
+</a>
+<div class="site-search">
+<input type="text" id="le-search-input" placeholder="Search a topic (e.g. gravity) ..." autocomplete="off">
+<div class="site-search-results" id="le-search-results"></div>
+</div>
+<nav class="site-nav">
+<a href="../index.html#math">Math</a>
+<a href="../index.html#physics">Physics</a>
+<a href="../index.html#biology">Biology</a>
+<a href="../index.html#chemistry">Chemistry</a>
+</nav>
+<div class="lang-switch">
+<a href="../../mathematik/ableitungen.html">DE</a>
+<span class="active">EN</span>
+<a href="../../es/mathematik/ableitungen.html">ES</a>
+</div>
+</div>
+</header>
+
+<main class="container">
+<div class="breadcrumbs"><a href="../index.html">Home</a> &rsaquo; <a href="../index.html#math">Math</a> &rsaquo; Derivatives</div>
+
+<article class="topic">
+<span class="subject-pill math">Math - Calculus</span>
+<h1>Derivatives Explained Simply</h1>
+
+<p>A derivative answers one question: <strong>how fast is something changing
+right now?</strong> Not on average over an hour, but at a single instant. On a graph
+that means: how steep is the curve at exactly this point?</p>
+
+<div class="formula-box">
+f&prime;(x) = lim<sub>h&rarr;0</sub> [ f(x+h) &minus; f(x) ] / h
+<small>The derivative at x is the slope of the tangent line — the limit of the secant slopes as the second point moves closer</small>
+</div>
+
+<h2>From secant to tangent</h2>
+
+<p>Finding the slope of a straight line is easy: rise over run. A curve has a
+different slope at every point, so we start with an approximation. Take the point P
+you care about and a second point Q a little to the right. The straight line through
+both is called a secant, and its slope is easy to compute — but it only describes the
+<em>average</em> behaviour between P and Q.</p>
+
+<p>Now slide Q towards P. The gap, usually called h, gets smaller and smaller, and the
+secant tips over into a particular position: the tangent at P. Its slope is the
+instantaneous rate of change we were looking for. We cannot simply set h to zero,
+because that would put a zero in the denominator — hence the detour through a limit.</p>
+
+<div class="diagram">
+<svg viewBox="0 0 340 240" width="300" height="212" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Parabola with secant and tangent">
+<line x1="30" y1="210" x2="320" y2="210" stroke="#b9ad9c" stroke-width="2"/>
+<line x1="40" y1="20" x2="40" y2="222" stroke="#b9ad9c" stroke-width="2"/>
+<text x="312" y="228" font-size="11" fill="#7d7263">x</text>
+<text x="24" y="26" font-size="11" fill="#7d7263">y</text>
+<path d="M55,200 Q160,-40 300,120" fill="none" stroke="#c1613b" stroke-width="3"/>
+<line x1="95" y1="115" x2="215" y2="34" stroke="#8aa06a" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="65" y1="160" x2="190" y2="7" stroke="#3a6ea5" stroke-width="2.5"/>
+<circle cx="110" cy="105" r="5" fill="#c1613b"/>
+<circle cx="181" cy="57" r="5" fill="#8aa06a"/>
+<text x="114" y="128" font-size="11" fill="#3a2a22">P</text>
+<text x="186" y="48" font-size="11" fill="#3a2a22">Q</text>
+<text x="196" y="96" font-size="11" fill="#8aa06a">secant</text>
+<text x="52" y="18" font-size="11" fill="#3a6ea5">tangent at P</text>
+</svg>
+<p class="caption">As Q slides towards P, the secant tips into the tangent. Its slope is the derivative at P.</p>
+</div>
+
+<div class="calc">
+Power rule: f(x) = x<sup>n</sup> &rarr; f&prime;(x) = n &middot; x<sup>n&minus;1</sup><br>
+<br>
+f(x) = x&sup3; &rarr; f&prime;(x) = 3x&sup2;<br>
+f(x) = 5x&sup2; &rarr; f&prime;(x) = 10x<br>
+f(x) = 7 &rarr; f&prime;(x) = 0<br>
+<br>
+f(x) = x&sup3; &minus; 3x + 4 &rarr; f&prime;(x) = 3x&sup2; &minus; 3<br>
+Slope at x = 2: f&prime;(2) = 12 &minus; 3 = <strong>9</strong>
+</div>
+
+<table class="datatable">
+<caption>The differentiation rules</caption>
+<thead><tr><th>Rule</th><th>Formula</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>Power rule</td><td>x<sup>n</sup> &rarr; n&middot;x<sup>n&minus;1</sup></td><td>x&#8308; &rarr; 4x&sup3;</td></tr>
+<tr><td>Constant factor</td><td>c&middot;f &rarr; c&middot;f&prime;</td><td>6x&sup2; &rarr; 12x</td></tr>
+<tr><td>Sum rule</td><td>f + g &rarr; f&prime; + g&prime;</td><td>x&sup2; + x &rarr; 2x + 1</td></tr>
+<tr><td>Product rule</td><td>f&middot;g &rarr; f&prime;g + fg&prime;</td><td>x&middot;sin x &rarr; sin x + x&middot;cos x</td></tr>
+<tr><td>Chain rule</td><td>f(g(x)) &rarr; f&prime;(g(x))&middot;g&prime;(x)</td><td>(2x+1)&sup3; &rarr; 3(2x+1)&sup2;&middot;2</td></tr>
+</tbody>
+</table>
+
+<h2>What it is used for</h2>
+
+<p>Where f&prime;(x) = 0 the tangent is horizontal, which marks a possible maximum or
+minimum. The second derivative tells you which: negative means the curve bends
+downwards, so it is a maximum; positive means a minimum. That is the core of every
+optimisation problem — the largest area for a given fence, the least material for a
+given volume.</p>
+
+<p>The physical reading matters just as much. Differentiate distance with respect to
+time and you get speed. Differentiate speed again and you get acceleration. A car's
+speedometer displays nothing but the first derivative of its distance function.</p>
+
+<div class="example-box warn">
+<div class="label">Common mistakes</div>
+<p><strong>Forgetting the inner derivative in the chain rule.</strong> (2x+1)&sup3;
+becomes 3(2x+1)&sup2; <em>times 2</em>.<br>
+<strong>Treating every f&prime;(x) = 0 as an extremum.</strong> For f(x) = x&sup3; the
+derivative vanishes at 0, but that point is a saddle.<br>
+<strong>Carrying the constant along.</strong> x&sup2; + 5 differentiates to 2x, not 2x + 5.</p>
+</div>
+
+<div class="example-box task">
+<div class="label">Practice problem</div>
+<p>For f(x) = x&sup3; &minus; 6x&sup2; + 9x, find every extremum and state whether it
+is a maximum or a minimum.</p>
+<details class="solution">
+<summary>Show solution</summary>
+<p>f&prime;(x) = 3x&sup2; &minus; 12x + 9 = 0 &rarr; x&sup2; &minus; 4x + 3 = 0 &rarr;
+x = 1 and x = 3.<br>
+f&Prime;(x) = 6x &minus; 12. f&Prime;(1) = &minus;6 &rarr; <strong>maximum at x = 1</strong>,
+f(1) = 4. f&Prime;(3) = 6 &rarr; <strong>minimum at x = 3</strong>, f(3) = 0.</p>
+</details>
+</div>
+
+<div class="example-box">
+<div class="label">Related topics</div>
+<p><a href="exponentielles-wachstum.html">Exponential growth</a> &middot;
+<a href="trigonometrie.html">Sine, cosine and tangent</a> &middot;
+<a href="../physik/fallgeschwindigkeit.html">Falling speed</a></p>
+</div>
+
+<a class="back-link" href="../index.html">&larr; Back to overview</a>
+</article>
+</main>
+
+<footer class="site-footer">
+<div class="container">LeichtErklärt - Everything explained simply<br><a href="/about.html">About us</a> &middot; <a href="/imprint.html">Imprint &amp; contact</a> &middot; <a href="/privacy.html">Privacy</a></div>
+</footer>
+<script src="../../search-data.en.js"></script>
+<script src="../../search.js"></script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

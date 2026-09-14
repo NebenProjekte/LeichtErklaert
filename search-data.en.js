@@ -61,4 +61,8 @@ var LE_TOPICS = [
   { title: "Salts and Ions Explained Simply", cat: "Chemistry", path: "chemie/salze-und-ionen.html", keywords: "salt ion cation anion ionic lattice formula charge balance sulfate nitrate carbonate hydroxide ammonium hydration shell electrolyte road salt freezing point" },
   { title: "The Mole and Amount of Substance Explained Simply", cat: "Chemistry", path: "chemie/mol-und-stoffmenge.html", keywords: "mole amount of substance molar mass avogadro constant particle number molar volume stoichiometry grams periodic table" },
   { title: "Endurance and VO2max explained simply", cat: "Sports Theory", path: "sporttheorie/ausdauer.html", keywords: "endurance vo2max maximal oxygen uptake fick principle cardiac output stroke volume anaerobic threshold lactate karvonen interval method athletes heart" },
+  { title: "Derivatives Explained Simply", cat: "Math", path: "mathematik/ableitungen.html", keywords: "derivative differentiation calculus slope tangent secant limit power rule chain rule product rule maximum minimum" },
+  { title: "Quadratic Equations Explained Simply", cat: "Math", path: "mathematik/quadratische-gleichungen.html", keywords: "quadratic equation formula discriminant roots parabola vertex vieta algebra" },
+  { title: "Intercept Theorem Explained Simply", cat: "Math", path: "mathematik/strahlensatz.html", keywords: "intercept theorem thales ratio similarity scale factor shadow tree height geometry parallel" },
+  { title: "The Circulatory System Explained Simply", cat: "Biology", path: "biologie/blutkreislauf.html", keywords: "circulatory system heart artery vein capillary pulmonary systemic cardiac output stroke volume pulse blood oxygen" },
 ];

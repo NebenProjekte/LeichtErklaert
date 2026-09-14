@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ecuaciones de segundo grado explicadas de forma sencilla - LeichtErklärt</title>
+<meta name="description" content="Ecuaciones de segundo grado explicadas de forma sencilla: fórmula general, discriminante y ejemplos resueltos.">
+<link rel="canonical" href="https://nebenprojekte.github.io/LeichtErklaert/es/mathematik/quadratische-gleichungen.html">
+<link rel="alternate" hreflang="de" href="https://nebenprojekte.github.io/LeichtErklaert/mathematik/quadratische-gleichungen.html">
+<link rel="alternate" hreflang="en" href="https://nebenprojekte.github.io/LeichtErklaert/en/mathematik/quadratische-gleichungen.html">
+<link rel="alternate" hreflang="es" href="https://nebenprojekte.github.io/LeichtErklaert/es/mathematik/quadratische-gleichungen.html">
+<link rel="alternate" hreflang="x-default" href="https://nebenprojekte.github.io/LeichtErklaert/mathematik/quadratische-gleichungen.html">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<a class="brand" href="../index.html">
+<span class="brand-name">LeichtErklärt</span>
+<span class="brand-sub">Todo explicado de forma sencilla</span>
+</a>
+<div class="site-search">
+<input type="text" id="le-search-input" placeholder="Buscar un tema (p. ej. gravedad) ..." autocomplete="off">
+<div class="site-search-results" id="le-search-results"></div>
+</div>
+<nav class="site-nav">
+<a href="../index.html#matematicas">Matemáticas</a>
+<a href="../index.html#fisica">Física</a>
+<a href="../index.html#biologia">Biología</a>
+<a href="../index.html#quimica">Química</a>
+</nav>
+<div class="lang-switch">
+<a href="../../mathematik/quadratische-gleichungen.html">DE</a>
+<a href="../../en/mathematik/quadratische-gleichungen.html">EN</a>
+<span class="active">ES</span>
+</div>
+</div>
+</header>
+
+<main class="container">
+<div class="breadcrumbs"><a href="../index.html">Inicio</a> &rsaquo; <a href="../index.html#matematicas">Matemáticas</a> &rsaquo; Ecuaciones de segundo grado</div>
+
+<article class="topic">
+<span class="subject-pill math">Matemáticas - Álgebra</span>
+<h1>Ecuaciones de segundo grado explicadas de forma sencilla</h1>
+
+<p>Una ecuación de segundo grado se reconoce porque la incógnita aparece
+<strong>al cuadrado</strong> y en ninguna potencia mayor. Su gráfica es siempre una
+parábola, y preguntar por las soluciones equivale a preguntar dónde corta esa parábola
+al eje x. Puede ocurrir dos veces, una sola o ninguna.</p>
+
+<div class="formula-box">
+ax² + bx + c = 0 &nbsp;&rarr;&nbsp; x = ( &minus;b &plusmn; &radic;(b² &minus; 4ac) ) / (2a)
+<small>La fórmula general. Funciona siempre que a no sea cero</small>
+</div>
+
+<h2>Dos fórmulas, la misma idea</h2>
+
+<p>Mucha gente cree que la fórmula general y la fórmula reducida son métodos
+distintos. No lo son: la reducida es la general para el caso a = 1. Si divides
+2x² + 6x &minus; 8 = 0 entre 2 obtienes x² + 3x &minus; 4 = 0 y puedes usar la versión
+corta.</p>
+
+<p>Lo decisivo en ambas es la expresión bajo la raíz, llamada discriminante. Si es
+positiva hay dos soluciones distintas. Si vale exactamente cero, ambas coinciden y la
+parábola toca el eje en lugar de atravesarlo. Si es negativa no hay solución real,
+porque ningún número real elevado al cuadrado da un valor negativo.</p>
+
+<div class="diagram">
+<svg viewBox="0 0 340 276" width="300" height="244" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tres parábolas con dos, una y ninguna raíz">
+<line x1="20" y1="170" x2="320" y2="170" stroke="#b9ad9c" stroke-width="2"/>
+<line x1="170" y1="20" x2="170" y2="210" stroke="#b9ad9c" stroke-width="2"/>
+<path d="M60,40 Q170,360 280,40" fill="none" stroke="#8aa06a" stroke-width="3"/>
+<path d="M75,25 Q170,315 265,25" fill="none" stroke="#3a6ea5" stroke-width="3"/>
+<path d="M85,20 Q170,260 255,20" fill="none" stroke="#c1613b" stroke-width="3"/>
+<circle cx="122" cy="170" r="5" fill="#8aa06a"/>
+<circle cx="218" cy="170" r="5" fill="#8aa06a"/>
+<circle cx="170" cy="170" r="5" fill="#3a6ea5"/>
+<line x1="24" y1="228" x2="46" y2="228" stroke="#8aa06a" stroke-width="3"/>
+<text x="54" y="232" font-size="11" fill="#3a2a22">D &gt; 0: dos soluciones</text>
+<line x1="24" y1="246" x2="46" y2="246" stroke="#3a6ea5" stroke-width="3"/>
+<text x="54" y="250" font-size="11" fill="#3a2a22">D = 0: una solución</text>
+<line x1="24" y1="264" x2="46" y2="264" stroke="#c1613b" stroke-width="3"/>
+<text x="54" y="268" font-size="11" fill="#3a2a22">D &lt; 0: sin solución real</text>
+</svg>
+<p class="caption">Tres parábolas con dos, una y ninguna raíz</p>
+</div>
+
+<div class="calc">
+2x² &minus; 8x + 6 = 0<br>
+D = 64 &minus; 48 = 16<br>
+x = ( 8 &plusmn; 4 ) / 4 &rarr; x₁ = <strong>3</strong>, x₂ = <strong>1</strong><br>
+<br>
+x² &minus; 6x + 9 = 0 &rarr; D = 0 &rarr; x = <strong>3</strong> (raíz doble)<br>
+x² + 2x + 5 = 0 &rarr; D = &minus;16 &rarr; <strong>sin solución real</strong>
+</div>
+
+<table class="datatable">
+<caption>Lo que indica el discriminante</caption>
+<thead><tr><th>D = b² &minus; 4ac</th><th>Soluciones</th><th>La parábola …</th></tr></thead>
+<tbody>
+<tr><td>D &gt; 0</td><td>dos distintas</td><td>corta el eje x dos veces</td></tr>
+<tr><td>D = 0</td><td>una doble</td><td>toca el eje en el vértice</td></tr>
+<tr><td>D &lt; 0</td><td>ninguna real</td><td>no llega al eje</td></tr>
+</tbody>
+</table>
+
+<h2>Cuando no hace falta ninguna fórmula</h2>
+
+<p>Si falta el término independiente, saca x factor común: x(ax + b) = 0 da x = 0 o
+x = &minus;b/a. Si falta el término lineal, como en x² &minus; 49 = 0, extrae la raíz
+directamente y no olvides los dos signos: x = ±7. Las fórmulas de Vieta también
+ayudan — en x² + px + q las raíces suman &minus;p y multiplican q.</p>
+
+<div class="example-box warn">
+<div class="label">Errores frecuentes</div>
+<p><strong>Usar la fórmula reducida cuando el coeficiente principal no es 1.</strong><br>
+<strong>Perder el signo de b.</strong> Si b = &minus;8, en la fórmula aparece +8.<br>
+<strong>Dar solo la raíz positiva.</strong> x² = 49 tiene dos soluciones.<br>
+<strong>No igualar a cero antes de empezar.</strong></p>
+</div>
+
+<div class="example-box task">
+<div class="label">Ejercicio</div>
+<p>Un bancal rectangular es 3 m más largo que ancho y tiene 40 m² de superficie.
+¿Cuánto mide de ancho?</p>
+<details class="solution">
+<summary>Ver solución</summary>
+<p>x(x + 3) = 40 &rarr; x² + 3x &minus; 40 = 0 &rarr; x = &minus;1,5 ± 6,5 &rarr;
+x₁ = <strong>5</strong>, x₂ = &minus;8. Un ancho no puede ser negativo, así que el
+bancal mide <strong>5 m de ancho</strong> y 8 m de largo.</p>
+</details>
+</div>
+
+<div class="example-box">
+<div class="label">Temas relacionados</div>
+<p><a href="binomische-formeln.html">Productos notables</a> &middot;
+<a href="ableitungen.html">Las derivadas</a> &middot;
+<a href="exponentielles-wachstum.html">Crecimiento exponencial</a></p>
+</div>
+
+<a class="back-link" href="../index.html">&larr; Volver al índice</a>
+</article>
+</main>
+
+<footer class="site-footer">
+<div class="container">LeichtErklärt - Todo explicado de forma sencilla<br><a href="/sobre-nosotros.html">Sobre nosotros</a> &middot; <a href="/aviso-legal.html">Aviso legal y contacto</a> &middot; <a href="/privacidad.html">Privacidad</a></div>
+</footer>
+<script src="../../search-data.es.js"></script>
+<script src="../../search.js"></script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
