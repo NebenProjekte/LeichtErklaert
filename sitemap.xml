@@ -2,7 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://leichterklaert.com/</loc><priority>1.0</priority></url>
   <url><loc>https://leichterklaert.com/about.html</loc><priority>0.8</priority></url>
-  <url><loc>https://leichterklaert.com/aviso-legal.html</loc><priority>0.8</priority></url>
   <url><loc>https://leichterklaert.com/biologie/bakterien.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/biologie/blutkreislauf.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/biologie/chloroplasten.html</loc><priority>0.7</priority></url>
@@ -28,7 +27,6 @@
   <url><loc>https://leichterklaert.com/chemie/redoxreaktionen.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/chemie/saeuren-und-basen.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/chemie/salze-und-ionen.html</loc><priority>0.7</priority></url>
-  <url><loc>https://leichterklaert.com/datenschutz.html</loc><priority>0.8</priority></url>
   <url><loc>https://leichterklaert.com/en/biologie/bakterien.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/biologie/blutkreislauf.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/biologie/chloroplasten.html</loc><priority>0.7</priority></url>
@@ -167,8 +165,6 @@
   <url><loc>https://leichterklaert.com/geschichte/spanischer-kolonialismus.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/geschichte/steinzeit.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/geschichte/zweiter-weltkrieg.html</loc><priority>0.7</priority></url>
-  <url><loc>https://leichterklaert.com/impressum.html</loc><priority>0.8</priority></url>
-  <url><loc>https://leichterklaert.com/imprint.html</loc><priority>0.8</priority></url>
   <url><loc>https://leichterklaert.com/mathematik/ableitungen.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/mathematik/binomische-formeln.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/mathematik/brueche.html</loc><priority>0.7</priority></url>
@@ -194,8 +190,6 @@
   <url><loc>https://leichterklaert.com/physik/volt-ampere-watt.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/physik/wasserverdraengung.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/physik/zentripetalkraft-zentrifugalkraft.html</loc><priority>0.7</priority></url>
-  <url><loc>https://leichterklaert.com/privacidad.html</loc><priority>0.8</priority></url>
-  <url><loc>https://leichterklaert.com/privacy.html</loc><priority>0.8</priority></url>
   <url><loc>https://leichterklaert.com/sobre-nosotros.html</loc><priority>0.8</priority></url>
   <url><loc>https://leichterklaert.com/sporttheorie/ausdauer.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/sporttheorie/beweglichkeit.html</loc><priority>0.7</priority></url>
