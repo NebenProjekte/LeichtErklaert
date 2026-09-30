@@ -200,10 +200,99 @@ Kraft.</p>
 </div>
 
 
+<h2>Warum Straßenkurven schräg gebaut werden</h2>
+
+<p>Haftreibung ist eine unzuverlässige Kraftquelle, denn auf nasser oder vereister Fahrbahn wird sie schwach. Deshalb neigt man Kurven nach innen. Bei der richtigen Neigung zeigt ein Teil der Normalkraft der Fahrbahn zum Kreismittelpunkt und liefert die Zentripetalkraft von allein. Für den Neigungswinkel &alpha; gilt: <strong>tan &alpha; = v² &divide; (g &middot; r)</strong>.</p>
+
+<div class="calc">
+Landstraßenkurve: r = 400 m, v = 72 km/h = 20 m/s<br>
+<br>
+tan &alpha; = 20² &divide; (9,81 &middot; 400) = 400 &divide; 3924 = 0,102<br>
+&alpha; = <strong>rund 5,8°</strong> Neigung
+</div>
+
+<p>Bei genau dieser Geschwindigkeit bräuchte das Auto keine Reibung. Ist es langsamer, rutscht es nach innen, ist es schneller, nach außen — dann ist die Reibung wieder gefragt.</p>
+
+<h2>Der Schleudergang der Waschmaschine</h2>
+
+<p>Die Trommel presst die Wäsche mit der Zentripetalkraft nach innen zum Kreismittelpunkt. Das Wasser dagegen kann durch die Löcher der Trommelwand entweichen und fliegt geradeaus weiter — genau wie der Hammer beim Wurf. Nicht die Zentrifugalkraft „schleudert" es hinaus, sondern die Trägheit.</p>
+
+<div class="calc">
+Trommelradius 0,25 m, 1200 Umdrehungen pro Minute<br>
+<br>
+&omega; = 2 &middot; &pi; &middot; 1200 &divide; 60 = 125,7 rad/s<br>
+a = &omega;² &middot; r = 125,7² &middot; 0,25 = <strong>3948 m/s²</strong><br>
+Das sind 3948 &divide; 9,81 &asymp; <strong>402 g</strong> — rund 400-mal die Erdbeschleunigung.
+</div>
+
 <p class="note">In der Raumfahrt soll künstliche Schwerkraft genau darüber erzeugt
 werden: Ein rotierender Ring drückt die Besatzung nach innen, was sich wie Gewicht
 anfühlt. Für 1 g bei angenehmen zwei Umdrehungen pro Minute bräuchte der Ring rund
 220 Meter Radius.</p>
+<h2>Kurvenfahrt mit Reibung: die Grenzgeschwindigkeit</h2>
+
+<p>Bei einer flachen Kurve liefert allein die Haftreibung die Zentripetalkraft. Sie kann höchstens F<sub>R</sub> = &micro; &middot; m &middot; g betragen, wobei &micro; die Haftreibungszahl ist. Setzt man beides gleich, kürzt sich die Masse heraus: <strong>v<sub>max</sub> = &radic;(&micro; &middot; g &middot; r)</strong>. Ein schwerer Lastwagen und ein leichter Kleinwagen haben in derselben Kurve also dieselbe Grenzgeschwindigkeit, sofern die Reibungszahl gleich ist.</p>
+
+<div class="calc">
+Kurvenradius r = 50 m. Die &micro;-Werte sind typische grobe Größenordnungen, sie schwanken je nach Reifen und Belag.<br>
+<br>
+Trocken (&micro; = 0,7): v = &radic;(0,7 &middot; 9,81 &middot; 50) = &radic;343 = 18,5 m/s &asymp; <strong>67 km/h</strong><br>
+Nass (&micro; = 0,4): v = &radic;(0,4 &middot; 9,81 &middot; 50) = &radic;196 = 14,0 m/s &asymp; <strong>50 km/h</strong><br>
+Eis (&micro; = 0,1): v = &radic;(0,1 &middot; 9,81 &middot; 50) = &radic;49 = 7,0 m/s &asymp; <strong>25 km/h</strong>
+</div>
+
+<p>Wird die Grenze überschritten, reicht die Reibung nicht mehr aus. Das Auto rutscht dann nicht „nach außen geschleudert", sondern bewegt sich nach dem Trägheitsgesetz geradeaus weiter, tangential zur Kurve.</p>
+
+<h2>Der Looping: Mindestgeschwindigkeit im Scheitelpunkt</h2>
+
+<p>Am höchsten Punkt eines Loopings muss die Zentripetalkraft zum Kreismittelpunkt hin, also nach unten, zeigen. Dort wirken die Gewichtskraft und die Kraft der Bahn, die von oben auf den Wagen drückt. Im Grenzfall verliert der Wagen gerade den Kontakt zur Bahn, und die Gewichtskraft allein liefert die Zentripetalkraft: m &middot; g = m &middot; v² &divide; r. Daraus folgt <strong>v<sub>min</sub> = &radic;(g &middot; r)</strong>.</p>
+
+<div class="calc">
+Looping mit r = 5 m<br>
+<br>
+Scheitelpunkt: v = &radic;(9,81 &middot; 5) = <strong>7,0 m/s</strong> (rund 25 km/h)<br>
+Energieerhaltung: v<sub>unten</sub>² = v<sub>oben</sub>² + 2 &middot; g &middot; 2r = 49,05 + 196,2 = 245,25<br>
+v<sub>unten</sub> = <strong>15,7 m/s</strong> (rund 56 km/h)
+</div>
+
+<p>Das gilt für einen reibungsfrei gleitenden Wagen als Punktmasse. Man kann die Startgeschwindigkeit auch als Starthöhe ausdrücken: Ohne Reibung genügt ein Gefälle von 2,5 &middot; r über dem tiefsten Punkt, hier also 12,5 m.</p>
+
+
+<h2>Wie schnell darf man in die Kurve?</h2>
+
+<p>Auf ebener Straße liefert allein die Reibung zwischen Reifen und Fahrbahn die
+Zentripetalkraft. Daraus folgt eine harte Obergrenze für die Kurvengeschwindigkeit,
+und bemerkenswerterweise fällt die Masse des Fahrzeugs dabei heraus.</p>
+
+<div class="calc">
+m &middot; v² &divide; r = &mu; &middot; m &middot; g &nbsp;&rarr;&nbsp; v = &radic;(&mu; &middot; g &middot; r)<br>
+<br>
+Kurve mit r = 80 m, trockener Asphalt &mu; = 0,8:<br>
+v = &radic;(0,8 &middot; 9,81 &middot; 80) = &radic;628 = <strong>25,1 m/s</strong>, also rund 90 km/h<br>
+<br>
+Dieselbe Kurve bei Nässe, &mu; = 0,4:<br>
+v = &radic;(0,4 &middot; 9,81 &middot; 80) = <strong>17,7 m/s</strong>, also rund 64 km/h
+</div>
+
+<p>Ein Lastwagen und ein Kleinwagen dürfen rechnerisch also gleich schnell durch die
+Kurve. Dass es in der Praxis anders aussieht, liegt am höheren Schwerpunkt: Der
+Lastwagen kippt, bevor er rutscht. Und die Nässe halbiert nicht die zulässige
+Geschwindigkeit, sondern senkt sie nur um rund 30 Prozent — weil die Wurzel den
+Unterschied abmildert.</p>
+
+<div class="example-box">
+<div class="label">Der Looping</div>
+<p>Im höchsten Punkt einer Achterbahnschleife zeigt die Gewichtskraft nach unten, also
+genau in Richtung Kreismittelpunkt. Sie kann damit die gesamte Zentripetalkraft
+liefern — vorausgesetzt, der Wagen ist schnell genug. Die Grenze liegt bei
+v = &radic;(g &middot; r). Bei einem Radius von 6 Metern sind das
+&radic;(9,81 &middot; 6) = 7,7 m/s, rund 28 km/h. Langsamer, und die Schwerkraft ist
+größer als nötig: Der Wagen verlässt die Bahn. Genau deshalb sind reale Loopings keine
+Kreise, sondern oben enger gebaut — der kleinere Radius senkt die nötige
+Mindestgeschwindigkeit, während unten der größere Radius die Belastung für die
+Fahrgäste begrenzt.</p>
+</div>
+
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>

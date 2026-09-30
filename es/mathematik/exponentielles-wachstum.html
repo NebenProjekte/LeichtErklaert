@@ -45,28 +45,51 @@
 <div class="breadcrumbs"><a href="../index.html">Inicio</a> &rsaquo; <a href="../index.html#matematicas">Matemáticas</a> &rsaquo; Crecimiento Exponencial</div>
 
 <article class="topic">
-<span class="subject-pill math">Matem&aacute;ticas &middot; Funciones</span>
-<h1>El Crecimiento Exponencial explicado de forma sencilla</h1>
-<p>En el crecimiento <strong>lineal</strong>, se suma la misma cantidad cada vez. En el crecimiento <strong>exponencial</strong>, la cantidad se <strong>multiplica</strong> por el mismo factor cada vez - y eso se vuelve enorme sorprendentemente r&aacute;pido.</p>
+<span class="subject-pill math">Matemáticas &middot; Funciones</span>
+<h1>El crecimiento exponencial explicado de forma sencilla</h1>
+
+<p>En el crecimiento <strong>lineal</strong>, en cada paso se suma la misma cantidad. En
+el crecimiento <strong>exponencial</strong>, en cada paso se multiplica por el mismo
+factor. La diferencia parece minúscula al principio y es enorme después de pocos pasos.</p>
 
 <div class="formula-box">
-K(n) = K&#8320; &times; (1 + p&divide;100)&#8319;
-<small>K&#8320; = valor inicial, p = tasa de crecimiento en %, n = numero de pasos</small>
+N(t) = N₀ &middot; q<sup>t</sup>
+<small>N₀ valor inicial &middot; q factor de crecimiento &middot; t número de pasos</small>
 </div>
 
+<div class="example-box glossary">
+<div class="label">Términos clave</div>
+<p><strong>Factor de crecimiento q</strong> — 1,05 con un aumento del 5 %, 0,95 con una disminución del 5 %.<br>
+<strong>Tiempo de duplicación</strong> — cuánto tarda en alcanzarse el doble del valor.<br>
+<strong>Semivida (periodo de semidesintegración)</strong> — lo mismo para la desintegración.<br>
+<strong>Crecimiento lineal</strong> — aumento constante, la gráfica es una recta.<br>
+<strong>Crecimiento exponencial</strong> — factor constante, la gráfica es cada vez más empinada.</p>
+</div>
+
+<table class="datatable">
+<caption>Diez pasos comparados</caption>
+<thead><tr><th>Paso</th><th>lineal (+5 por paso)</th><th>exponencial (&middot;2)</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>5</td><td>5</td></tr>
+<tr><td>3</td><td>20</td><td>40</td></tr>
+<tr><td>5</td><td>30</td><td>160</td></tr>
+<tr><td>10</td><td>55</td><td><strong>5.120</strong></td></tr>
+</tbody>
+</table>
+
 <div class="diagram">
-<svg viewBox="0 0 580 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Verdopplung von Bakterien alle 20 Minuten, von 1 auf 16">
-<text x="0" y="35" font-size="13" fill="#3a2a22" font-weight="700">Minute 0: 1</text>
+<svg viewBox="0 0 580 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bacterias que se duplican cada 20 minutos, de 1 a 16">
+<text x="0" y="35" font-size="13" fill="#3a2a22" font-weight="700">Minuto 0: 1</text>
 <circle cx="145" cy="31" r="9" fill="#3d8f7f"/>
-<text x="0" y="69" font-size="13" fill="#3a2a22" font-weight="700">Minute 20: 2</text>
+<text x="0" y="69" font-size="13" fill="#3a2a22" font-weight="700">Minuto 20: 2</text>
 <circle cx="145" cy="65" r="9" fill="#f2b134"/>
 <circle cx="167" cy="65" r="9" fill="#f2b134"/>
-<text x="0" y="103" font-size="13" fill="#3a2a22" font-weight="700">Minute 40: 4</text>
+<text x="0" y="103" font-size="13" fill="#3a2a22" font-weight="700">Minuto 40: 4</text>
 <circle cx="145" cy="99" r="9" fill="#e2583f"/>
 <circle cx="167" cy="99" r="9" fill="#e2583f"/>
 <circle cx="189" cy="99" r="9" fill="#e2583f"/>
 <circle cx="211" cy="99" r="9" fill="#e2583f"/>
-<text x="0" y="137" font-size="13" fill="#3a2a22" font-weight="700">Minute 60: 8</text>
+<text x="0" y="137" font-size="13" fill="#3a2a22" font-weight="700">Minuto 60: 8</text>
 <circle cx="145" cy="133" r="9" fill="#7a5fb0"/>
 <circle cx="167" cy="133" r="9" fill="#7a5fb0"/>
 <circle cx="189" cy="133" r="9" fill="#7a5fb0"/>
@@ -75,7 +98,7 @@ K(n) = K&#8320; &times; (1 + p&divide;100)&#8319;
 <circle cx="255" cy="133" r="9" fill="#7a5fb0"/>
 <circle cx="277" cy="133" r="9" fill="#7a5fb0"/>
 <circle cx="299" cy="133" r="9" fill="#7a5fb0"/>
-<text x="0" y="171" font-size="13" fill="#3a2a22" font-weight="700">Minute 80: 16</text>
+<text x="0" y="171" font-size="13" fill="#3a2a22" font-weight="700">Minuto 80: 16</text>
 <circle cx="145" cy="167" r="9" fill="#2f8fce"/>
 <circle cx="167" cy="167" r="9" fill="#2f8fce"/>
 <circle cx="189" cy="167" r="9" fill="#2f8fce"/>
@@ -95,9 +118,28 @@ K(n) = K&#8320; &times; (1 + p&divide;100)&#8319;
 </svg>
 </div>
 
-<p class="dialog-intro">💬 Mia le pregunta al Abuelo Theo</p>
+<h2>El problema de los granos de arroz</h2>
+
+<div class="calc">
+Casilla 1: 1 grano &middot; Casilla 2: 2 &middot; Casilla 3: 4 &middot; Casilla 4: 8 …<br>
+<br>
+Solo la casilla 64: 2<sup>63</sup> &asymp; 9,2 &middot; 10<sup>18</sup> granos<br>
+El tablero de ajedrez entero: 2<sup>64</sup> &minus; 1 &asymp; 1,8 &middot; 10<sup>19</sup><br>
+<br>
+A 0,03 g por grano son unos <strong>550.000 millones de toneladas</strong> —
+unas mil veces la cosecha mundial de arroz de un año.
+</div>
+
+<h2>Estimar el tiempo de duplicación</h2>
+
+<p>La regla del 70 da una aproximación útil en segundos: tiempo de duplicación
+&asymp; 70 dividido entre la tasa de crecimiento en porcentaje. Con un interés del 7 %,
+el capital se duplica en unos diez años; con un 2 %, en unos 35.</p>
+
+<p>La misma idea vale para la desintegración. Una sustancia con una semivida de 5 días ha perdido la mitad de su cantidad tras 5 días, tres cuartas partes tras 10 días y tras 15 días solo queda un octavo. Partiendo de 100 g, son 100 &middot; 0,5<sup>3</sup> = 12,5 g. Aquí el factor es q = 0,5 por cada semivida.</p>
+
+<p class="dialog-intro">💬 Mia le pregunta al abuelo Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -113,10 +155,9 @@ K(n) = K&#8320; &times; (1 + p&divide;100)&#8319;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>&iquest;Qu&eacute; tan r&aacute;pido es en realidad el crecimiento exponencial?</p>
+<p>Un dos por ciento al año suena a casi nada.</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -132,10 +173,9 @@ K(n) = K&#8320; &times; (1 + p&divide;100)&#8319;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Abuelo Theo</div>
-<p>Mira las bacterias de arriba: se duplican cada 20 minutos. Empezando con 1, tras solo 4 duplicaciones (80 minutos) ya hay 16 - &iexcl;y despu&eacute;s de 24 horas ser&iacute;an miles de millones!</p>
+<p>Para un año, sí. Después de 35 años es el doble, después de 70 años, cuatro veces más. El crecimiento exponencial es paciente.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -151,10 +191,9 @@ K(n) = K&#8320; &times; (1 + p&divide;100)&#8319;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Vaya. &iquest;Eso tambi&eacute;n aplica al dinero?</p>
+<p>¿Y con la desintegración?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -170,59 +209,84 @@ K(n) = K&#8320; &times; (1 + p&divide;100)&#8319;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Abuelo Theo</div>
-<p>Exacto, eso se llama inter&eacute;s compuesto: si inviertes 1000&euro; al 5% de inter&eacute;s, el primer a&ntilde;o recibes 50&euro;. Pero el segundo a&ntilde;o recibes el 5% sobre 1050&euro;, o sea un poco m&aacute;s que el primer a&ntilde;o.</p>
+<p>Lo mismo hacia atrás. El factor es entonces menor que 1: tras cada semivida queda la mitad, nunca cero.</p>
 </div>
-</div>
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>&iquest;De verdad se acumula tanto?</p>
 </div>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Abuelo Theo</div>
-<p>&iexcl;S&iacute;! Despu&eacute;s de 10 a&ntilde;os, tus 1000&euro; se habr&iacute;an convertido en unos 1629&euro; - solo porque los intereses generan intereses sobre s&iacute; mismos.</p>
-</div>
+<div class="example-box warn">
+<div class="label">Errores habituales</div>
+<p><strong>Sumar porcentajes en lugar de multiplicar factores.</strong> Dos aumentos del 10 % hacen un 21 %, no un 20 %.<br>
+<strong>Formar mal el factor.</strong> Un aumento del 5 % significa q = 1,05, no 0,05.<br>
+<strong>Estimar de forma lineal.</strong> &laquo;Doble a los 10 años, triple a los 20&raquo; es falso: es cuatro veces más.<br>
+<strong>Ignorar los límites.</strong> En la naturaleza el crecimiento exponencial siempre termina, porque se acaba el espacio o el alimento.</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Ejercicio</div>
+<p>Un cultivo de bacterias empieza con 500 células y se duplica cada 20 minutos.
+¿Cuántas células hay después de 3 horas? ¿Cuánto tiempo hace falta para llegar a un
+millón?</p>
+<details class="solution">
+<summary>Ver solución</summary>
+<p>3 horas son 180 minutos, es decir, 180 &divide; 20 = 9 duplicaciones.<br>
+N = 500 &middot; 2<sup>9</sup> = 500 &middot; 512 = <strong>256.000 células</strong><br><br>
+Para un millón: 1.000.000 &divide; 500 = 2.000, y 2<sup>11</sup> = 2.048 queda justo
+por encima. Por tanto 11 duplicaciones &rarr; 11 &middot; 20 min =
+<strong>220 minutos</strong>, es decir, 3 horas y 40 minutos.<br>
+Llamativo: el cultivo necesitó tres horas para sus primeras 256.000 células, pero solo
+veinte minutos para las 256.000 siguientes.</p>
+</details>
 </div>
+
+<h2>Por qué el crecimiento exponencial siempre termina</h2>
+
+<p>Si se sigue calculando el crecimiento exponencial durante bastante tiempo, salen cifras
+absurdas. Un cultivo de bacterias que se duplica cada 20 minutos tendría a los dos días
+más masa que la Tierra. Evidentemente eso no ocurre, y la razón forma parte del tema
+tanto como la propia fórmula.</p>
+
+<p>En la realidad, todo crecimiento acaba chocando tarde o temprano con un límite: se
+agota el medio de cultivo, se llena el espacio, los residuos envenenan el cultivo. El
+factor de crecimiento entonces no se mantiene constante, sino que se acerca a 1. La
+curva exponencial empinada se convierte en una <strong>curva en S</strong>, que en
+matemáticas se llama crecimiento logístico. Empieza de forma exponencial, es más
+empinada en el centro y después se aplana hacia un valor máximo, la llamada
+<strong>capacidad de carga</strong>. Exactamente la misma forma describe cómo se propaga
+una enfermedad en una población, cómo se vende un producto nuevo o cómo crece una
+población en un hábitat limitado.</p>
 
 <div class="example-box">
-<div class="label">Practica t&uacute;</div>
-<p>1000&euro; al 5% de inter&eacute;s, despu&eacute;s de 10 a&ntilde;os: K(10) = 1000 &times; 1,05&sup1;&#8304; &asymp; 1628,89&euro; <br><small>&iexcl;Compru&eacute;balo con tu calculadora!</small></p>
+<div class="label">El cálculo del interés compuesto</div>
+<p>El ejemplo cotidiano más conocido de crecimiento exponencial es el interés
+compuesto, y en él se ve bien la fórmula en acción. Quien invierte 2.000 euros al 4 por
+ciento anual no tiene después de n años 2.000 + n &middot; 80 euros, sino
+2.000 &middot; 1,04<sup>n</sup>. Después de 10 años son 2.960 euros, después de 20 años
+4.382 euros y después de 40 años 9.602 euros. Calculado de forma lineal, después de 40
+años solo habrían sido 5.200 euros: la diferencia de más de 4.400 euros es puro efecto
+del interés compuesto. Con la regla del 70 se puede estimar de cabeza: 70 dividido entre
+4 da unos 17,5 años de tiempo de duplicación, y 40 años son algo más de dos
+duplicaciones, es decir, entre cuatro y cinco veces la cantidad inicial. El cálculo
+exacto lo confirma: 1,04<sup>40</sup> es aproximadamente 4,8. Precisamente por eso la
+misma fórmula es tan poderosa en ambos sentidos: al ahorrar juega a favor del inversor;
+con deudas y créditos, en su contra.</p>
+</div>
+
+<p>Para los exámenes conviene separar bien los dos casos: mientras nada frene el
+crecimiento, vale N(t) = N<sub>0</sub> &middot; q<sup>t</sup>. En cuanto entra en juego un
+límite, la función exponencial es solo una aproximación para la fase inicial, y quien la
+usa más allá obtiene justamente bacterias tan pesadas como la Tierra.</p>
+
+<div class="video-callout">
+<p>🎥 Explicado en menos de dos minutos, como Short en nuestro canal de YouTube: dobla una hoja de papel 42 veces y llegas a la Luna.</p>
+<a class="video-btn" href="https://youtube.com/shorts/FMOXuKvI4MU" target="_blank" rel="noopener">Ver el Short</a>
 </div>
 
 
-<p class="note">El mismo principio - solo que al reves, como disminucion en vez de aumento - explica tambien por que las sustancias radiactivas disminuyen cada vez mas despacio (ver <a href="../../chemie/radioaktivitaet.html">Radiactividad</a>).</p>
-
-<a class="back-link" href="../index.html">&larr; Volver al resumen</a>
+<p class="note">Las mismas matemáticas están detrás del interés compuesto, la propagación
+de virus, las reacciones en cadena y la densidad de almacenamiento de los chips de
+ordenador. Quien las entiende una vez las reconoce en todas partes.</p>
+<a class="back-link" href="../index.html">&larr; Volver al índice</a>
 </article>
 </main>
 

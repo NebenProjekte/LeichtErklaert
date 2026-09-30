@@ -45,24 +45,31 @@
 <div class="breadcrumbs"><a href="../index.html">Inicio</a> &rsaquo; <a href="../index.html#matematicas">Matemáticas</a> &rsaquo; Trigonometr&iacute;a</div>
 
 <article class="topic">
-<span class="subject-pill math">Matem&aacute;ticas &middot; Geometr&iacute;a</span>
-<h1>Seno, Coseno y Tangente explicados de forma sencilla</h1>
-<p>En un <strong>tri&aacute;ngulo rect&aacute;ngulo</strong>, el seno, coseno y tangente describen c&oacute;mo se relacionan los lados con un &aacute;ngulo &alpha;. Con ellos puedes calcular lados y &aacute;ngulos sin medirlos directamente.</p>
+<span class="subject-pill math">Matemáticas &middot; Geometría</span>
+<h1>Seno, coseno y tangente explicados de forma sencilla</h1>
+
+<p>La trigonometría conecta los <strong>ángulos con las longitudes</strong>. En cuanto un
+triángulo tiene un ángulo recto, bastan un ángulo y un lado para calcular todo lo demás.
+De esto viven la topografía, la navegación y cualquier descomposición de fuerzas en
+física.</p>
 
 <div class="formula-box">
-sen(&alpha;) = Cateto opuesto &divide; Hipotenusa
+sen &alpha; = cateto opuesto / hipotenusa<br>
+cos &alpha; = cateto adyacente / hipotenusa<br>
+tan &alpha; = cateto opuesto / cateto adyacente
 </div>
 
-<div class="formula-box">
-cos(&alpha;) = Cateto adyacente &divide; Hipotenusa
-</div>
-
-<div class="formula-box">
-tan(&alpha;) = Cateto opuesto &divide; Cateto adyacente
+<div class="example-box glossary">
+<div class="label">Términos clave</div>
+<p><strong>Hipotenusa</strong> — el lado opuesto al ángulo recto, siempre el más largo.<br>
+<strong>Cateto opuesto</strong> — está enfrente del ángulo que se considera.<br>
+<strong>Cateto adyacente</strong> — está junto al ángulo que se considera.<br>
+<strong>Seno, coseno, tangente</strong> — razones entre lados, no longitudes. Por eso no tienen unidades.<br>
+<strong>Funciones trigonométricas inversas</strong> — la operación contraria, en la calculadora sin⁻¹, cos⁻¹, tan⁻¹. De la razón se obtiene el ángulo.</p>
 </div>
 
 <div class="diagram">
-<svg viewBox="0 0 360 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rechtwinkliges Dreieck mit Cateto opuesto, Cateto adyacente und Hipotenusa">
+<svg viewBox="0 0 360 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Triángulo rectángulo con cateto opuesto, cateto adyacente e hipotenusa">
 <polygon points="40,220 40,60 300,220" fill="#fbeee1" stroke="#3a2a22" stroke-width="2"/>
 <line x1="40" y1="60" x2="40" y2="220" stroke="#3d8f7f" stroke-width="6"/>
 <line x1="40" y1="220" x2="300" y2="220" stroke="#2f8fce" stroke-width="6"/>
@@ -76,9 +83,38 @@ tan(&alpha;) = Cateto opuesto &divide; Cateto adyacente
 </svg>
 </div>
 
-<p class="dialog-intro">💬 Mia le pregunta al Abuelo Theo</p>
+<h2>Por qué las razones son fijas</h2>
+
+<p>Dos triángulos rectángulos con el mismo ángulo son semejantes entre sí: uno es
+simplemente una versión ampliada del otro. En una ampliación todos los lados crecen por
+el mismo factor, así que cada <em>razón</em> entre lados permanece igual. Por eso el seno
+depende solo del ángulo y no del tamaño del triángulo.</p>
+
+<table class="datatable">
+<caption>Valores que conviene conocer</caption>
+<thead><tr><th>Ángulo</th><th>sen</th><th>cos</th><th>tan</th></tr></thead>
+<tbody>
+<tr><td>0°</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>30°</td><td>0,5</td><td>0,866</td><td>0,577</td></tr>
+<tr><td>45°</td><td>0,707</td><td>0,707</td><td>1</td></tr>
+<tr><td>60°</td><td>0,866</td><td>0,5</td><td>1,732</td></tr>
+<tr><td>90°</td><td>1</td><td>0</td><td>no definida</td></tr>
+</tbody>
+</table>
+
+<p>A 45° el seno y el coseno son iguales: el triángulo es simétrico. A 90° la tangente
+no tiene valor, porque el cateto adyacente se reduce a cero y no se puede dividir entre
+cero.</p>
+
+<div class="calc">
+Un árbol proyecta una sombra de 12 m y el sol está a 34° sobre el horizonte.<br>
+<br>
+tan 34° = altura &divide; 12<br>
+altura = 12 &middot; tan 34° = 12 &middot; 0,6745 = <strong>8,09 m</strong>
+</div>
+
+<p class="dialog-intro">💬 Mia le pregunta al abuelo Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -94,10 +130,9 @@ tan(&alpha;) = Cateto opuesto &divide; Cateto adyacente
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>&iquest;C&oacute;mo recuerdo cu&aacute;l es el cateto opuesto y cu&aacute;l el adyacente?</p>
+<p>¿Cómo sé si tengo que usar el seno o el coseno?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -113,10 +148,9 @@ tan(&alpha;) = Cateto opuesto &divide; Cateto adyacente
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Abuelo Theo</div>
-<p>Mira el &aacute;ngulo &alpha; que est&aacute;s observando: el lado verde justo enfrente es el opuesto. El lado azul justo al lado, que no es la hipotenusa, es el adyacente. La hipotenusa roja es siempre el lado m&aacute;s largo, frente al &aacute;ngulo recto.</p>
+<p>Mira qué lados intervienen. Cateto opuesto e hipotenusa significa seno, cateto adyacente e hipotenusa significa coseno, y los dos catetos significan tangente.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -132,10 +166,9 @@ tan(&alpha;) = Cateto opuesto &divide; Cateto adyacente
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>&iquest;Para qu&eacute; sirve esto en la vida real?</p>
+<p>¿Y si busco el ángulo?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -151,59 +184,80 @@ tan(&alpha;) = Cateto opuesto &divide; Cateto adyacente
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Abuelo Theo</div>
-<p>Por ejemplo, para calcular alturas que no puedes medir directamente - &iexcl;como la altura de un &aacute;rbol, si solo conoces el &aacute;ngulo hacia su copa y tu distancia!</p>
+<p>Entonces calculas la razón y pulsas sin⁻¹ o tan⁻¹. Solo asegúrate de que la calculadora esté en DEG y no en RAD.</p>
 </div>
-</div>
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>&iexcl;Mu&eacute;strame un ejemplo!</p>
 </div>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Abuelo Theo</div>
-<p>Un &aacute;rbol proyecta una sombra de 20m cuando el sol forma un &aacute;ngulo de 30&deg;. La altura es entonces Adyacente &times; tan(30&deg;) = 20 &times; 0,577 &asymp; 11,5 metros.</p>
-</div>
+<div class="example-box warn">
+<div class="label">Errores habituales</div>
+<p><strong>Calculadora en radianes.</strong> Si en la pantalla aparece RAD en lugar de DEG, todos los resultados son falsos. Comprobación: sen 30° tiene que dar 0,5.<br>
+<strong>Confundir los catetos.</strong> &laquo;Opuesto&raquo; y &laquo;adyacente&raquo; se refieren siempre al ángulo <em>que se considera</em>, no al ángulo recto.<br>
+<strong>Leer sin⁻¹ como 1/sen.</strong> Es la función inversa, no el inverso multiplicativo.<br>
+<strong>Aplicarlo a triángulos oblicuos.</strong> Sin ángulo recto hacen falta el teorema del seno o el del coseno.</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Ejercicio</div>
+<p>Una rampa salva una altura de 0,75 m en una longitud de 9,00 m (medida a lo largo de
+la rampa). Calcula el ángulo de inclinación. Para sillas de ruedas se permite como máximo
+una pendiente del 6 %. ¿Es admisible la rampa?</p>
+<details class="solution">
+<summary>Ver solución</summary>
+<p>La altura es el cateto opuesto y la longitud de la rampa es la hipotenusa &rarr; seno.<br>
+sen &alpha; = 0,75 &divide; 9,00 = 0,0833<br>
+&alpha; = sin⁻¹(0,0833) = <strong>4,78°</strong><br><br>
+La pendiente en porcentaje es la tangente: distancia horizontal =
+&radic;(9,00² &minus; 0,75²) = 8,969 m, así que tan &alpha; = 0,75 &divide; 8,969 =
+0,0836 &rarr; <strong>8,4 %</strong>.<br>
+Por tanto, la rampa está <strong>por encima</strong> del límite del 6 % y no es
+admisible. Con un 6 % solo podría subir como máximo 0,06 m por cada metro de distancia
+horizontal; para una altura de 0,75 m harían falta unos 12,5 m de distancia
+horizontal.</p>
+</details>
 </div>
+
+<h2>El círculo unitario</h2>
+
+<p>En el triángulo rectángulo, el seno y el coseno solo están definidos para ángulos entre
+0 y 90 grados; los mayores simplemente no caben. El <strong>círculo unitario</strong>
+resuelve este problema y por eso es el siguiente paso después de las razones entre
+lados.</p>
+
+<p>Se dibuja una circunferencia de radio 1 alrededor del origen de coordenadas. Después se
+mide el ángulo desde el eje x positivo, en sentido contrario a las agujas del reloj, y se
+mira dónde corta el lado del ángulo a la circunferencia. Ese punto tiene las coordenadas
+(cos &alpha; | sen &alpha;). No es una definición nueva, sino la misma de antes: como aquí
+la hipotenusa mide exactamente 1, los catetos opuesto y adyacente son directamente iguales
+al seno y al coseno. Solo que ahora esta forma de verlo funciona para <em>cualquier</em>
+ángulo, también para 150 grados, para 270 grados o para valores negativos.</p>
 
 <div class="example-box">
-<div class="label">Practica t&uacute;</div>
-<p>Una escalera (hipotenusa) mide 5m y forma un &aacute;ngulo de 60&deg; con el suelo. &iquest;Hasta d&oacute;nde llega? <br><small>Soluci&oacute;n: Opuesto = 5 &times; sen(60&deg;) = 5 &times; 0,866 &asymp; 4,33m</small></p>
+<div class="label">Lo que se lee de inmediato</div>
+<p>El círculo unitario explica varias cosas de un vistazo. Primero, los
+<strong>signos</strong>: en el segundo cuadrante la coordenada x es negativa, así que el
+coseno es negativo allí, mientras que el seno sigue siendo positivo. Segundo, los
+<strong>valores en los ejes</strong>: a 0 grados el punto está en (1 | 0), a 90 grados en
+(0 | 1), a 180 grados en (&minus;1 | 0). De ahí se sigue enseguida que sen 0&deg; = 0,
+cos 90&deg; = 0 y por qué la tangente no está definida a 90 grados: habría que dividir
+entre cero. Tercero, la <strong>periodicidad</strong>: tras una vuelta completa se vuelve
+al punto de partida, por lo que todos los valores se repiten cada 360 grados. Y cuarto,
+la relación más conocida de la trigonometría sale sin más: el punto está en una
+circunferencia de radio 1, así que, por el teorema de Pitágoras,
+sen²&alpha; + cos²&alpha; = 1. Esta ecuación se suele aprender de memoria, pero no es otra
+cosa que la propia circunferencia.</p>
 </div>
 
+<p>Si se deja que el punto recorra mentalmente y despacio la circunferencia una vez,
+anotando solo su altura, se obtiene exactamente la curva del seno. Con eso se da el paso
+a las oscilaciones: el sonido, la luz y la corriente alterna se describen todos con la
+misma función.</p>
 
-<p class="note">Los valores de seno, coseno y tangente los encuentras en una calculadora (teclas SIN/COS/TAN) - solo necesitas memorizar algunos &aacute;ngulos est&aacute;ndar como 30&deg;, 45&deg; y 60&deg;.</p>
 
-<a class="back-link" href="../index.html">&larr; Volver al resumen</a>
+<p class="note">Las mismas funciones describen también oscilaciones: el sonido, la luz y la
+corriente alterna se representan como curvas senoidales. El rodeo por el triángulo es solo
+el punto de partida.</p>
+<a class="back-link" href="../index.html">&larr; Volver al índice</a>
 </article>
 </main>
 

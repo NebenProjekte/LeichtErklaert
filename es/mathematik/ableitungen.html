@@ -48,29 +48,47 @@
 <span class="subject-pill math">Matemáticas - Análisis</span>
 <h1>Las derivadas explicadas de forma sencilla</h1>
 
-<p>Una derivada responde a una sola pregunta: <strong>¿con qué rapidez
-cambia algo en este preciso instante?</strong> No en promedio durante una hora, sino
-en un único momento. En una gráfica significa: ¿qué pendiente tiene la curva
-exactamente en este punto?</p>
+<p>Una derivada responde a una sola pregunta: <strong>¿con qué rapidez cambia algo
+ahora mismo?</strong> No en promedio durante una hora, ni a lo largo de un kilómetro,
+sino en un único instante. En una gráfica significa: ¿qué pendiente tiene la curva
+exactamente en este punto? Para eso se inventó el cálculo diferencial, y hoy está
+presente en cada control de crucero, en cada predicción meteorológica y en cada estudio
+de funciones del bachillerato.</p>
 
 <div class="formula-box">
 f&prime;(x) = lím<sub>h&rarr;0</sub> [ f(x+h) &minus; f(x) ] / h
-<small>La derivada en x es la pendiente de la recta tangente — el límite de las pendientes de las secantes cuando el segundo punto se acerca</small>
+<small>La derivada en x es la pendiente de la tangente — el límite de las pendientes de las secantes cuando el segundo punto se acerca cada vez más</small>
+</div>
+
+<div class="example-box glossary">
+<div class="label">Términos clave</div>
+<p><strong>Cociente incremental</strong> — la variación media entre dos puntos, es
+decir, la pendiente de la secante.<br>
+<strong>Derivada</strong> — el límite de ese cociente, la variación instantánea.<br>
+<strong>Secante</strong> — una recta que corta la gráfica en dos puntos.<br>
+<strong>Tangente</strong> — una recta que toca la gráfica en un punto y allí tiene la
+misma pendiente que ella.<br>
+<strong>Extremo</strong> — un punto con tangente horizontal, es decir,
+f&prime;(x) = 0. Máximo o mínimo.<br>
+<strong>Punto de inflexión</strong> — allí cambia la curvatura, lo que se reconoce por
+f&Prime;(x) = 0.</p>
 </div>
 
 <h2>De la secante a la tangente</h2>
 
-<p>Calcular la pendiente de una recta es sencillo: altura dividida entre distancia
-horizontal. Una curva tiene una pendiente distinta en cada punto, así que empezamos
-con una aproximación. Tomamos el punto P que nos interesa y un segundo punto Q algo
-más a la derecha. La recta que pasa por ambos se llama secante, y su pendiente es
-fácil de calcular, pero solo describe el comportamiento <em>medio</em> entre P y Q.</p>
+<p>Calcular la pendiente de una recta es fácil: la diferencia de altura dividida entre
+la distancia horizontal. Con una curva no funciona directamente, porque la pendiente es
+distinta en cada punto. El truco consiste en conformarse primero con una aproximación.
+Se toma el punto P que se quiere estudiar y un segundo punto Q un poco más a la
+derecha. Por ambos se traza una recta, la secante. Su pendiente es fácil de calcular,
+pero solo describe el comportamiento <em>medio</em> entre P y Q.</p>
 
-<p>Ahora acercamos Q a P. La distancia, que solemos llamar h, se hace cada vez más
-pequeña y la secante bascula hasta una posición concreta: la tangente en P. Su
-pendiente es la variación instantánea que buscábamos. No podemos poner h igual a cero
-sin más, porque entonces habría un cero en el denominador — de ahí el rodeo por el
-límite.</p>
+<p>Ahora se acerca Q cada vez más a P. La distancia, que normalmente se llama h, se
+hace más y más pequeña. Al hacerlo, la secante bascula y se aproxima a una posición
+concreta: la tangente en P. Su pendiente es la variación instantánea de la curva que
+buscábamos. El límite cuando h tiende a cero es la forma matemática precisa de decir
+&laquo;acercar cada vez más&raquo;. No se puede poner h igual a cero sin más, porque
+entonces quedaría un cero en el denominador; de ahí el rodeo por el límite.</p>
 
 <div class="diagram">
 <svg viewBox="0 0 340 240" width="300" height="212" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Parábola con secante y tangente">
@@ -91,6 +109,11 @@ límite.</p>
 <p class="caption">Cuando Q se desliza hacia P, la secante bascula hasta la tangente. Su pendiente es la derivada en P.</p>
 </div>
 
+<p>En la práctica nadie calcula este límite cada vez. Se calculó una sola vez para las
+funciones básicas y de ahí salieron reglas que se pueden aprender de memoria. La más
+importante es la regla de la potencia: el exponente pasa delante como factor y luego
+disminuye en una unidad.</p>
+
 <div class="calc">
 Regla de la potencia: f(x) = x<sup>n</sup> &rarr; f&prime;(x) = n &middot; x<sup>n&minus;1</sup><br>
 <br>
@@ -98,55 +121,163 @@ f(x) = x&sup3; &rarr; f&prime;(x) = 3x&sup2;<br>
 f(x) = 5x&sup2; &rarr; f&prime;(x) = 10x<br>
 f(x) = 7 &rarr; f&prime;(x) = 0<br>
 <br>
-f(x) = x&sup3; &minus; 3x + 4 &rarr; f&prime;(x) = 3x&sup2; &minus; 3<br>
-Pendiente en x = 2: f&prime;(2) = 12 &minus; 3 = <strong>9</strong>
+Combinadas: f(x) = x&sup3; &minus; 3x + 4<br>
+f&prime;(x) = 3x&sup2; &minus; 3<br>
+<br>
+Pendiente en x = 2:<br>
+f&prime;(2) = 3 &middot; 4 &minus; 3 = <strong>9</strong><br>
+Así que la curva sube allí nueve veces más inclinada que la recta y = x.
 </div>
 
+<p class="note">Una constante tiene derivada cero. No es una trampa, se ve fácilmente:
+la gráfica de f(x) = 7 es una recta horizontal, y una recta horizontal no sube en
+ningún punto.</p>
+
 <table class="datatable">
-<caption>Las reglas de derivación</caption>
+<caption>Las reglas de derivación de un vistazo</caption>
 <thead><tr><th>Regla</th><th>Fórmula</th><th>Ejemplo</th></tr></thead>
 <tbody>
-<tr><td>Potencia</td><td>x<sup>n</sup> &rarr; n&middot;x<sup>n&minus;1</sup></td><td>x&#8308; &rarr; 4x&sup3;</td></tr>
-<tr><td>Factor constante</td><td>c&middot;f &rarr; c&middot;f&prime;</td><td>6x&sup2; &rarr; 12x</td></tr>
-<tr><td>Suma</td><td>f + g &rarr; f&prime; + g&prime;</td><td>x&sup2; + x &rarr; 2x + 1</td></tr>
-<tr><td>Producto</td><td>f&middot;g &rarr; f&prime;g + fg&prime;</td><td>x&middot;sen x &rarr; sen x + x&middot;cos x</td></tr>
-<tr><td>Cadena</td><td>f(g(x)) &rarr; f&prime;(g(x))&middot;g&prime;(x)</td><td>(2x+1)&sup3; &rarr; 3(2x+1)&sup2;&middot;2</td></tr>
+<tr><td>Regla de la potencia</td><td>x<sup>n</sup> &rarr; n&middot;x<sup>n&minus;1</sup></td><td>x&#8308; &rarr; 4x&sup3;</td></tr>
+<tr><td>Regla del factor constante</td><td>c&middot;f(x) &rarr; c&middot;f&prime;(x)</td><td>6x&sup2; &rarr; 12x</td></tr>
+<tr><td>Regla de la suma</td><td>f + g &rarr; f&prime; + g&prime;</td><td>x&sup2; + x &rarr; 2x + 1</td></tr>
+<tr><td>Regla del producto</td><td>f&middot;g &rarr; f&prime;g + fg&prime;</td><td>x&middot;sen x &rarr; sen x + x&middot;cos x</td></tr>
+<tr><td>Regla de la cadena</td><td>f(g(x)) &rarr; f&prime;(g(x))&middot;g&prime;(x)</td><td>(2x+1)&sup3; &rarr; 3(2x+1)&sup2;&middot;2</td></tr>
 </tbody>
 </table>
 
+<p>Con estas cinco reglas se puede derivar casi todo lo que aparece en el colegio y en
+el instituto. La regla de la cadena es la única que realmente hay que practicar: se
+deriva la función exterior, se deja la función interior sin cambiar y al final se
+multiplica por la derivada de la función interior. Esa última multiplicación es lo que
+más se olvida.</p>
+
 <h2>Para qué sirve</h2>
 
-<p>Donde f&prime;(x) = 0 la tangente es horizontal, lo que señala un posible máximo o
-mínimo. La segunda derivada indica cuál de los dos: si es negativa la curva se comba
-hacia abajo y hay un máximo; si es positiva, un mínimo. Ese es el núcleo de cualquier
-problema de optimización.</p>
+<p>El uso más evidente es el estudio de funciones: donde f&prime;(x) = 0 hay una
+tangente horizontal, y por tanto un posible máximo o mínimo. Si realmente lo es, y de
+qué tipo, lo revela la segunda derivada: si f&Prime; es negativa allí, la curva se
+curva hacia abajo y hay un máximo; si es positiva, hay un mínimo. Este es el núcleo de
+todo problema de optimización: el área mayor para una longitud de valla dada, el menor
+gasto de material para un volumen dado.</p>
 
-<p>La lectura física es igual de importante. Al derivar la distancia respecto al
-tiempo se obtiene la velocidad, y al derivar la velocidad, la aceleración. El
-velocímetro de un coche no muestra otra cosa que la primera derivada de su función de
-posición.</p>
+<p>La lectura física es igual de importante. Si se deriva el espacio recorrido respecto
+al tiempo, se obtiene la velocidad. Si se deriva la velocidad una vez más, se obtiene la
+aceleración. El velocímetro de un coche no muestra otra cosa que la primera derivada de
+la función del espacio recorrido, y la sensación de quedar pegado al asiento es la
+segunda.</p>
+
+<p class="dialog-intro">💬 Mia le pregunta al abuelo Theo</p>
+<div class="dialog">
+<div class="dialog-line">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
+<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
+<circle cx="24" cy="36" r="6" fill="#fff"/>
+<circle cx="40" cy="36" r="6" fill="#fff"/>
+<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Mia</div>
+<p>¿Por qué no se puede poner simplemente h igual a cero? El cálculo sería mucho más corto.</p>
+</div>
+</div>
+<div class="dialog-line right">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
+<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
+<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
+<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
+<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
+<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Abuelo Theo</div>
+<p>Porque entonces tendrías cero dividido entre cero, y eso no está definido. El límite es el rodeo que evita justo ese problema: miras hacia dónde se dirige la fracción sin llegar nunca.</p>
+</div>
+</div>
+<div class="dialog-line">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
+<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
+<circle cx="24" cy="36" r="6" fill="#fff"/>
+<circle cx="40" cy="36" r="6" fill="#fff"/>
+<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Mia</div>
+<p>¿Y la segunda derivada? ¿Es la pendiente de la pendiente?</p>
+</div>
+</div>
+<div class="dialog-line right">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
+<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
+<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
+<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
+<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
+<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Abuelo Theo</div>
+<p>Exactamente. La primera dice con qué rapidez cambia algo. La segunda dice con qué rapidez cambia <strong>ese cambio</strong>. Al conducir: la velocidad y el acelerador.</p>
+</div>
+</div>
+</div>
 
 <div class="example-box warn">
-<div class="label">Errores frecuentes</div>
-<p><strong>Olvidar la derivada interna en la regla de la cadena.</strong>
-(2x+1)&sup3; pasa a 3(2x+1)&sup2; <em>por 2</em>.<br>
-<strong>Dar por hecho que f&prime;(x) = 0 es un extremo.</strong> En f(x) = x&sup3; la
-derivada se anula en 0, pero ahí hay un punto de silla.<br>
-<strong>Arrastrar la constante.</strong> x&sup2; + 5 se deriva como 2x, no 2x + 5.</p>
+<div class="label">Errores habituales</div>
+<p><strong>Olvidar la derivada interior en la regla de la cadena.</strong> (2x+1)&sup3;
+pasa a ser 3(2x+1)&sup2; <em>por 2</em>, no solo 3(2x+1)&sup2;.<br>
+<strong>Declarar extremo cualquier punto con f&prime;(x) = 0.</strong> En
+f(x) = x&sup3; se cumple f&prime;(0) = 0, pero en 0 hay un punto de silla y no un
+extremo.<br>
+<strong>Arrastrar la constante.</strong> x&sup2; + 5 se deriva como 2x, no como
+2x + 5.<br>
+<strong>Confundir la derivada con el valor de la función.</strong> f&prime;(2) es la
+<em>pendiente</em> en x = 2, no la altura de la gráfica en ese punto.</p>
 </div>
 
 <div class="example-box task">
 <div class="label">Ejercicio</div>
-<p>Para f(x) = x&sup3; &minus; 6x&sup2; + 9x, halla todos los extremos e indica si son
-máximos o mínimos.</p>
+<p>Sea f(x) = x&sup3; &minus; 6x&sup2; + 9x. Halla todos los extremos e indica si cada
+uno es un máximo o un mínimo.</p>
 <details class="solution">
 <summary>Ver solución</summary>
-<p>f&prime;(x) = 3x&sup2; &minus; 12x + 9 = 0 &rarr; x&sup2; &minus; 4x + 3 = 0 &rarr;
-x = 1 y x = 3.<br>
-f&Prime;(x) = 6x &minus; 12. f&Prime;(1) = &minus;6 &rarr; <strong>máximo en x = 1</strong>,
-f(1) = 4. f&Prime;(3) = 6 &rarr; <strong>mínimo en x = 3</strong>, f(3) = 0.</p>
+<p>Primera derivada: f&prime;(x) = 3x&sup2; &minus; 12x + 9<br>
+Igualamos a cero: 3x&sup2; &minus; 12x + 9 = 0, y dividiendo entre 3 queda x&sup2; &minus; 4x + 3 = 0<br>
+Con la fórmula general: x = (4 &plusmn; &radic;(16 &minus; 12)) / 2 = (4 &plusmn; 2) / 2<br>
+Por tanto <strong>x&#8321; = 1</strong> y <strong>x&#8322; = 3</strong>.<br>
+<br>
+Segunda derivada: f&Prime;(x) = 6x &minus; 12<br>
+f&Prime;(1) = &minus;6, negativa &rarr; <strong>máximo en x = 1</strong>, valor de la función f(1) = 4<br>
+f&Prime;(3) = 6, positiva &rarr; <strong>mínimo en x = 3</strong>, valor de la función f(3) = 0<br>
+<br>
+Así que la curva sube hasta x = 1, baja hasta x = 3 y después vuelve a subir.</p>
 </details>
 </div>
+
+<p class="note">Quien ha entendido la derivada entiende también su operación inversa: la
+integral recoge de nuevo lo que la derivada ha descompuesto. Juntas forman el teorema
+fundamental del cálculo, y por eso se puede volver de una velocidad al espacio
+recorrido.</p>
 
 <div class="example-box">
 <div class="label">Temas relacionados</div>

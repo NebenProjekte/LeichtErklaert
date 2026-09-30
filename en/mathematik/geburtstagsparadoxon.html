@@ -47,32 +47,56 @@
 <article class="topic">
 <span class="subject-pill math">Math &middot; Probability</span>
 <h1>The Birthday Paradox Explained Simply</h1>
-<p>A year has 365 days - yet just <strong>23 people</strong> in a room are enough for the probability of two shared birthdays to be over <strong>50%</strong>. Sounds impossible, but it's just math.</p>
+
+<p>In a class of 23 pupils the probability that two of them share a birthday is over
+<strong>50 per cent</strong>. That sounds wrong — a year has 365 days. The error of
+reasoning lies in the question people ask themselves without noticing.</p>
 
 <div class="formula-box">
-With 23 people: over 50% probability
-<small>With 50 people, it's already 97%!</small>
+P(at least one pair) = 1 &minus; (365/365 &middot; 364/365 &middot; 363/365 &middot; … )
+<small>easier via the complement: work out "all different" first, then subtract from 1</small>
 </div>
 
-<div class="diagram">
-<svg viewBox="0 0 400 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Curve: probability of a shared birthday rises quickly with group size">
-<line x1="10" y1="200" x2="395" y2="200" stroke="#8a7264" stroke-width="1.5"/>
-<line x1="10" y1="10" x2="10" y2="200" stroke="#8a7264" stroke-width="1.5"/>
-<text x="0" y="205" font-size="11" fill="#8a7264">0%</text>
-<text x="380" y="205" font-size="11" fill="#8a7264">70</text>
-<text x="0" y="106" font-size="11" fill="#8a7264">50%</text>
-<line x1="10" y1="105" x2="395" y2="105" stroke="#ede0cd" stroke-width="1" stroke-dasharray="3 3"/>
-<polygon points="10,200 64,178 119,122 135,104 173,66 227,31 282,16 336,11 390,10 390,200" fill="#7a5fb0" opacity="0.18"/>
-<polyline points="10,200 64,178 119,122 135,104 173,66 227,31 282,16 336,11 390,10" fill="none" stroke="#7a5fb0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="135" cy="104" r="7" fill="#e2583f"/>
-<line x1="135" y1="104" x2="135" y2="200" stroke="#e2583f" stroke-width="2" stroke-dasharray="4 3"/>
-<text x="100" y="230" font-size="13" fill="#e2583f" font-weight="800">23 people &rarr; over 50%</text>
-</svg>
+<div class="example-box glossary">
+<div class="label">Key terms</div>
+<p><strong>Complement</strong> — the opposite of the event you want. P(A) = 1 &minus; P(not A).<br>
+<strong>Laplace probability</strong> — favourable over possible cases, when all are equally likely.<br>
+<strong>Independent events</strong> — their probabilities are multiplied.<br>
+<strong>Pairing</strong> — with n people there are n(n&minus;1)/2 possible pairs.</p>
 </div>
+
+<h2>The real reason: it is about pairs</h2>
+
+<p>Most people think: "How likely is it that someone shares <em>my</em> birthday?"
+That really is rare. But the question asked is whether <strong>any pair at all</strong>
+matches — and there are far more pairs than you would guess.</p>
+
+<div class="calc">
+Number of possible pairs among n people: n &middot; (n &minus; 1) &divide; 2<br>
+<br>
+with 10 people: 45 pairs<br>
+with 23 people: <strong>253 pairs</strong><br>
+with 40 people: 780 pairs
+</div>
+
+<p>253 opportunities for a match — put that way, 50 per cent is no longer surprising
+but plausible.</p>
+
+<table class="datatable">
+<caption>Probability of at least one shared birthday</caption>
+<thead><tr><th>People</th><th>Probability</th></tr></thead>
+<tbody>
+<tr><td>10</td><td>11.7 %</td></tr>
+<tr><td>20</td><td>41.1 %</td></tr>
+<tr><td>23</td><td><strong>50.7 %</strong></td></tr>
+<tr><td>30</td><td>70.6 %</td></tr>
+<tr><td>50</td><td>97.0 %</td></tr>
+<tr><td>70</td><td>99.9 %</td></tr>
+</tbody>
+</table>
 
 <p class="dialog-intro">💬 Mia asks Grandpa Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -88,10 +112,9 @@ With 23 people: over 50% probability
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>There are exactly 23 people in our class. You're saying two of us probably already share a birthday?</p>
+<p>But a year has 365 days! Surely you would need at least 183 people.</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -107,10 +130,9 @@ With 23 people: over 50% probability
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>Exactly! With 23 people, the probability is already over 50% - higher than a coin landing heads!</p>
+<p>That would answer a different question — whether someone shares <strong>your</strong> birthday. For that you really would need about 253 people to reach 50 per cent.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -126,10 +148,9 @@ With 23 people: over 50% probability
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>That can't be right, a year has 365 days!</p>
+<p>And here every pair counts?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -145,57 +166,99 @@ With 23 people: over 50% probability
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>Here's the trick: we're not comparing YOU against everyone else, we're comparing ALL possible pairs against each other. With 23 people there are already 253 different pairs - and each pair has a small chance of a match.</p>
+<p>Exactly. With 23 people that is 253 pairs — and each one is a chance of a match.</p>
 </div>
-</div>
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>How fast does it keep rising?</p>
 </div>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Grandpa Theo</div>
-<p>Look at the curve: with 30 people the chance is already over 70%, with 50 people it's 97%. It climbs much faster than gut instinct suggests!</p>
-</div>
+<h2>How the calculation works</h2>
+
+<div class="calc">
+Probability that <em>all</em> are different:<br>
+365/365 &middot; 364/365 &middot; 363/365 &middot; … &middot; 343/365 &asymp; 0.4927<br>
+<br>
+We want the opposite:<br>
+1 &minus; 0.4927 = <strong>0.5073</strong>, so 50.7 %
 </div>
 
+<p>Step by step: the first person may pick any day at all, which always works, 365 out
+of 365. That leaves 364 free days for the second, 363 for the third, and so on. For n
+people this gives the product (365 &divide; 365) &middot; (364 &divide; 365) &middot;
+… &middot; ((366 &minus; n) &divide; 365). At n = 23 that comes to about 0.4927. With
+22 people the result is still 47.6 per cent — which is why 23 is the smallest number
+that passes one half.</p>
+
+<div class="example-box warn">
+<div class="label">Common mistakes</div>
+<p><strong>Answering the wrong question.</strong> "Someone shares my birthday" is something else entirely.<br>
+<strong>Adding probabilities.</strong> For independent events you multiply.<br>
+<strong>Calculating directly instead of via the complement.</strong> The direct route means summing a huge number of cases and is not practical.<br>
+<strong>Treating 29 February as a problem.</strong> It shifts the result by less than a tenth of a percentage point.</p>
+</div>
+
+<div class="example-box task">
+<div class="label">Practice question</div>
+<p>Work out the probability of at least one shared birthday in a group of 5 people.
+Explain why the number is so much smaller than for 23.</p>
+<details class="solution">
+<summary>Show solution</summary>
+<p>All different: 365/365 &middot; 364/365 &middot; 363/365 &middot; 362/365 &middot; 361/365 &asymp; 0.9729<br>
+At least one pair: 1 &minus; 0.9729 = <strong>2.7 %</strong><br><br>
+With 5 people there are only 5 &middot; 4 &divide; 2 = 10 possible pairs, while 23
+people give 253. The number of pairs grows quadratically with group size, not
+linearly — which is why the probability climbs so fast.</p>
+</details>
 </div>
 
 <div class="example-box">
-<div class="label">Try it yourself</div>
-<p>Ask in your next larger group (class, family gathering, team) about birthdays - chances are good you'll find a match!</p>
+<div class="label">What happens after 23</div>
+<p>The curve rises surprisingly quickly from there. At 30 people the probability is
+already 70.6 per cent, at 41 over 90 per cent, at 57 it reaches 99 per cent and at 70
+people 99.9 per cent. Only at 366 people does it hit a certain 100 per cent, because
+by the pigeonhole principle at least one day must then be taken twice. So between
+"as good as certain" and "actually certain" lie almost 300 people — and that long flat
+tail is exactly why intuition fails here: we think about the 366 while the interesting
+part happened long ago at 23. Incidentally, real birthdays are not spread evenly across
+the year; more children are born in late summer than in winter. That unevenness makes
+matches slightly more likely still, but it moves the threshold only by fractions.</p>
 </div>
 
+<p>For a test the method matters most: <strong>complement first, then subtract</strong>.
+Counting directly how many pairs might match leads into a thicket of double counting,
+because three or more people can share a day as well. The detour through "all different"
+avoids that completely.</p>
 
-<p class="note">The &ldquo;paradox&rdquo; is only called that because the result contradicts our intuition - mathematically, there's nothing contradictory about it at all.</p>
+<div class="video-callout">
+<p>🎥 Explained in under two minutes — as a Short on our YouTube channel.</p>
+<a class="video-btn" href="https://youtube.com/shorts/XYMZSSrXJig" target="_blank" rel="noopener">Watch the Short</a>
+</div>
+
+<p class="note">The same principle is called a birthday attack in computer science: it
+is far easier to find <em>any two</em> files with the same hash value than one matching
+a given hash. That is why hash functions need twice as many bits as you would naively
+assume.</p>
+
+<h2>What "50 per cent" means in practice</h2>
+
+<p>A probability of 50.7 per cent says nothing about one particular class. It
+describes what happens in the long run. Check a thousand school classes of 23 children
+each and you would find at least one shared birthday in roughly 507 of them and none
+in about 493. Which group your own class falls into is decided purely by chance.</p>
+
+<p>That is exactly why the experiment works so well as a bet. Offer it in a class of
+30 and you win seven times out of ten — and the losers still put the result down to
+luck, because the number 365 looms so large in the mind.</p>
+
+<div class="example-box">
+<div class="label">Check it yourself</div>
+<p>You do not need a computer for this. Collect the birthdays of several classes or
+sports groups and note only whether there was a pair each time. After twenty groups
+the trend is already clear: around a group size of 23 the ratio sits close to one to
+one, and at 30 and above it tips firmly towards hits. Frequency experiments like this
+are the most vivid way to understand probability — they show that a number such as
+50.7 per cent is a statement about many repetitions, not about the next single
+case.</p>
+</div>
 
 <a class="back-link" href="../index.html">&larr; Back to overview</a>
 </article>

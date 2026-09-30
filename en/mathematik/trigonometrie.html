@@ -47,23 +47,28 @@
 <article class="topic">
 <span class="subject-pill math">Math &middot; Geometry</span>
 <h1>Sine, Cosine and Tangent Explained Simply</h1>
-<p>In a <strong>right triangle</strong>, sine, cosine and tangent describe how the sides relate to an angle &alpha;. With them you can calculate sides and angles without measuring them directly.</p>
+
+<p>Trigonometry connects <strong>angles with lengths</strong>. As soon as a triangle has
+a right angle, one angle and one side are enough to work out everything else. Surveying,
+navigation and every resolution of forces in physics live off exactly this.</p>
 
 <div class="formula-box">
-sin(&alpha;) = Opposite &divide; Hypotenuse
+sin &alpha; = opposite / hypotenuse<br>
+cos &alpha; = adjacent / hypotenuse<br>
+tan &alpha; = opposite / adjacent
 </div>
 
-<div class="formula-box">
-cos(&alpha;) = Adjacent &divide; Hypotenuse
-</div>
-
-<div class="formula-box">
-tan(&alpha;) = Opposite &divide; Adjacent
-<small>Classic mnemonic: SOH-CAH-TOA</small>
+<div class="example-box glossary">
+<div class="label">Key terms</div>
+<p><strong>Hypotenuse</strong> — the side opposite the right angle, always the longest.<br>
+<strong>Opposite side</strong> — lies across from the angle under consideration.<br>
+<strong>Adjacent side</strong> — lies next to the angle under consideration.<br>
+<strong>Sine, cosine, tangent</strong> — ratios of sides, not lengths. That is why they have no units.<br>
+<strong>Inverse trigonometric functions</strong> — the reverse, on a calculator sin⁻¹, cos⁻¹, tan⁻¹. The ratio is turned into the angle.</p>
 </div>
 
 <div class="diagram">
-<svg viewBox="0 0 360 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rechtwinkliges Dreieck mit Opposite, Adjacent und Hypotenuse">
+<svg viewBox="0 0 360 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Right triangle with opposite side, adjacent side and hypotenuse">
 <polygon points="40,220 40,60 300,220" fill="#fbeee1" stroke="#3a2a22" stroke-width="2"/>
 <line x1="40" y1="60" x2="40" y2="220" stroke="#3d8f7f" stroke-width="6"/>
 <line x1="40" y1="220" x2="300" y2="220" stroke="#2f8fce" stroke-width="6"/>
@@ -77,9 +82,37 @@ tan(&alpha;) = Opposite &divide; Adjacent
 </svg>
 </div>
 
+<h2>Why the ratios are fixed</h2>
+
+<p>Two right triangles with the same angle are similar to each other — one is just an
+enlarged version of the other. With an enlargement all sides grow by the same factor, so
+every <em>ratio</em> of sides stays unchanged. That is why the sine depends only on the
+angle and not on the size of the triangle.</p>
+
+<table class="datatable">
+<caption>Values you should know</caption>
+<thead><tr><th>Angle</th><th>sin</th><th>cos</th><th>tan</th></tr></thead>
+<tbody>
+<tr><td>0°</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>30°</td><td>0.5</td><td>0.866</td><td>0.577</td></tr>
+<tr><td>45°</td><td>0.707</td><td>0.707</td><td>1</td></tr>
+<tr><td>60°</td><td>0.866</td><td>0.5</td><td>1.732</td></tr>
+<tr><td>90°</td><td>1</td><td>0</td><td>undefined</td></tr>
+</tbody>
+</table>
+
+<p>At 45° sine and cosine are equal — the triangle is symmetrical. At 90° the tangent has
+no value, because the adjacent side shrinks to zero and you cannot divide by zero.</p>
+
+<div class="calc">
+A tree casts a shadow 12 m long, and the sun is 34° above the horizon.<br>
+<br>
+tan 34° = height &divide; 12<br>
+height = 12 &middot; tan 34° = 12 &middot; 0.6745 = <strong>8.09 m</strong>
+</div>
+
 <p class="dialog-intro">💬 Mia asks Grandpa Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -95,10 +128,9 @@ tan(&alpha;) = Opposite &divide; Adjacent
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>How do I remember which side is opposite and which is adjacent?</p>
+<p>How do I know whether I need sine or cosine?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -114,10 +146,9 @@ tan(&alpha;) = Opposite &divide; Adjacent
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>Look at the angle &alpha; you're focusing on: the green side directly across from it is the opposite. The blue side right next to it, that isn't the hypotenuse, is the adjacent. The red hypotenuse is always the longest side, across from the right angle.</p>
+<p>Look at which sides are involved. Opposite and hypotenuse means sine, adjacent and hypotenuse means cosine, and the two legs mean tangent.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -133,10 +164,9 @@ tan(&alpha;) = Opposite &divide; Adjacent
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>What's this actually used for in real life?</p>
+<p>And if I am looking for the angle?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -152,58 +182,75 @@ tan(&alpha;) = Opposite &divide; Adjacent
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>For example, to calculate heights you can't measure directly - like a tree's height, if you only know the angle to its top and your distance from it!</p>
+<p>Then you work out the ratio and press sin⁻¹ or tan⁻¹. Just make sure the calculator is set to DEG and not to RAD.</p>
 </div>
-</div>
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>Show me an example!</p>
 </div>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Grandpa Theo</div>
-<p>A tree casts a 20m shadow when the sun is at a 30&deg; angle. The height is then Adjacent &times; tan(30&deg;) = 20 &times; 0.577 &asymp; 11.5 meters.</p>
-</div>
+<div class="example-box warn">
+<div class="label">Common mistakes</div>
+<p><strong>Calculator in radian mode.</strong> If the display shows RAD instead of DEG, all results are wrong. Check: sin 30° must give 0.5.<br>
+<strong>Mixing up the legs.</strong> &ldquo;Opposite&rdquo; and &ldquo;adjacent&rdquo; always refer to the angle <em>under consideration</em>, not to the right angle.<br>
+<strong>Reading sin⁻¹ as 1/sin.</strong> It is the inverse function, not the reciprocal.<br>
+<strong>Applying it to oblique triangles.</strong> Without a right angle you need the law of sines or the law of cosines.</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Practice problem</div>
+<p>A ramp climbs a height of 0.75 m over a length of 9.00 m (measured along the ramp).
+Calculate the angle of slope. For wheelchairs a slope of at most 6% is permitted — is
+the ramp permitted?</p>
+<details class="solution">
+<summary>Show solution</summary>
+<p>The height is the opposite side, the ramp length is the hypotenuse &rarr; sine.<br>
+sin &alpha; = 0.75 &divide; 9.00 = 0.0833<br>
+&alpha; = sin⁻¹(0.0833) = <strong>4.78°</strong><br><br>
+The slope in percent is the tangent: horizontal distance =
+&radic;(9.00² &minus; 0.75²) = 8.969 m, so tan &alpha; = 0.75 &divide; 8.969 =
+0.0836 &rarr; <strong>8.4%</strong>.<br>
+So the ramp is <strong>above</strong> the limit of 6% and is not permitted. For 6% it
+could rise by at most 0.06 m per metre of horizontal distance — for a height of 0.75 m
+about 12.5 m of horizontal distance would be needed.</p>
+</details>
 </div>
+
+<h2>The unit circle</h2>
+
+<p>In a right triangle, sine and cosine are only defined for angles between 0 and 90
+degrees — larger ones simply do not fit inside. The <strong>unit circle</strong> solves
+this problem and is therefore the next step after the ratios of sides.</p>
+
+<p>You draw a circle with radius 1 around the origin of the coordinate system. Then you
+measure the angle from the positive x-axis, counter-clockwise, and see where the arm of
+the angle meets the circle. This point has the coordinates (cos &alpha; | sin &alpha;).
+That is not a new definition but the same as before: because the hypotenuse here is
+exactly 1 long, the opposite and adjacent sides are directly equal to the sine and
+cosine. Only now this view works for <em>every</em> angle — also for 150 degrees, for 270
+degrees or for negative values.</p>
 
 <div class="example-box">
-<div class="label">Try it yourself</div>
-<p>A ladder (hypotenuse) is 5m long and leans at 60&deg; to the ground. How high does it reach? <br><small>Answer: Opposite = 5 &times; sin(60&deg;) = 5 &times; 0.866 &asymp; 4.33m</small></p>
+<div class="label">What you can read off immediately</div>
+<p>The unit circle explains several things at a glance. First, the <strong>signs</strong>:
+in the second quadrant the x-coordinate is negative, so the cosine is negative there,
+while the sine stays positive. Second, the <strong>values on the axes</strong>: at 0
+degrees the point is at (1 | 0), at 90 degrees at (0 | 1), at 180 degrees at
+(&minus;1 | 0). From this it follows immediately that sin 0&deg; = 0, cos 90&deg; = 0, and
+why the tangent is not defined at 90 degrees — you would have to divide by zero. Third,
+the <strong>periodicity</strong>: after one full turn you are back at the starting point,
+so all values repeat every 360 degrees. And fourth, the best-known relationship in
+trigonometry simply drops out: the point lies on a circle of radius 1, so by the
+Pythagorean theorem sin²&alpha; + cos²&alpha; = 1. This equation is often learned by heart
+— yet it is nothing other than the circle itself.</p>
 </div>
 
+<p>If you let the point travel slowly once around the circle in your mind, and record only
+its height, you get exactly the sine curve. That completes the transition to oscillations —
+sound, light and alternating current are all described with the same function.</p>
 
-<p class="note">You'll find sin, cos and tan values on a calculator (SIN/COS/TAN keys) - you only need to memorize a few standard angles like 30&deg;, 45&deg; and 60&deg;.</p>
 
+<p class="note">The same functions also describe oscillations: sound, light and alternating
+current are represented as sine curves. The detour via the triangle is only the
+starting point.</p>
 <a class="back-link" href="../index.html">&larr; Back to overview</a>
 </article>
 </main>

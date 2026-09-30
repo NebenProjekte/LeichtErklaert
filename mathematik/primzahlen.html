@@ -155,6 +155,75 @@ kleineren wurden geprüft.</p>
 <p class="note">Primzahlen sind nicht nur Schulstoff. Die Verschlüsselung, mit der
 dein Browser Bankdaten überträgt, beruht darauf, dass sich zwei sehr große Primzahlen
 mühelos multiplizieren, das Produkt aber praktisch nicht wieder zerlegen lässt.</p>
+<h2>Primzahlzwillinge und Rekordprimzahlen</h2>
+
+<p>Je weiter man in der Zahlenreihe nach oben geht, desto seltener werden Primzahlen — aber sie verschwinden nie. Manchmal stehen zwei von ihnen dicht beieinander: 3 und 5, 11 und 13, 17 und 19, 29 und 31, 41 und 43. Solche Paare mit dem Abstand 2 heißen <strong>Primzahlzwillinge</strong>. Ein kleiner Trick zeigt, wo man sie suchen muss: Jede Primzahl über 3 liegt direkt neben einem Vielfachen von 6, denn alle anderen Reste ergeben gerade Zahlen oder Vielfache von 3. Bis auf das Paar 3 und 5 hat deshalb jeder Zwilling die Form 6k − 1 und 6k + 1, zum Beispiel 5 und 7 oder 17 und 19.</p>
+
+<p>Ob es unendlich viele Primzahlzwillinge gibt, ist bis heute unbewiesen. Immerhin gelang 2013 dem Mathematiker Yitang Zhang ein Durchbruch: Er zeigte, dass es unendlich viele Primzahlpaare gibt, deren Abstand höchstens 70 Millionen beträgt. Andere Forscher drückten diese Schranke danach auf 246. Bis zur 2 ist es also noch ein weiter Weg.</p>
+
+<div class="example-box">
+<div class="label">Mersenne-Primzahlen und die Jagd nach Rekorden</div>
+<p>Die größten bekannten Primzahlen haben fast immer die Form 2<sup>p</sup> &minus; 1, wobei der Exponent p selbst eine Primzahl ist. Man nennt sie <strong>Mersenne-Primzahlen</strong>. Die ersten sind 2² &minus; 1 = 3, 2³ &minus; 1 = 7, 2⁵ &minus; 1 = 31 und 2⁷ &minus; 1 = 127. Ein Automatismus ist das aber nicht: Schon 2¹¹ &minus; 1 = 2.047 ist keine Primzahl, denn 23 &middot; 89 = 2.047. Für Zahlen dieser Bauart gibt es einen besonders schnellen Test, den Lucas-Lehmer-Test. Deshalb lassen sich hier Rekorde viel weiter treiben als bei beliebigen Zahlen. Gesucht wird im Gemeinschaftsprojekt <strong>GIMPS</strong> (Great Internet Mersenne Prime Search), bei dem Freiwillige die Rechenzeit ihrer Computer zur Verfügung stellen. Die Rekordzahlen haben viele Millionen Dezimalstellen — ausgeschrieben würden sie viele tausend Buchseiten füllen.</p>
+</div>
+
+<div class="example-box task">
+<div class="label">Übungsaufgabe</div>
+<p>Finde alle Primzahlzwillinge unter 50 und prüfe, ob jedes Paar außer 3 und 5 die Form 6k &minus; 1 und 6k + 1 hat.</p>
+<details class="solution">
+<summary>Lösung anzeigen</summary>
+<p>Die Primzahlen bis 50 sind 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47. Mit Abstand 2 stehen nebeneinander: <strong>(3, 5), (5, 7), (11, 13), (17, 19), (29, 31) und (41, 43)</strong>.<br>
+Zur Probe: 5 und 7 liegen um die 6 (k = 1), 11 und 13 um die 12 (k = 2), 17 und 19 um die 18 (k = 3), 29 und 31 um die 30 (k = 5), 41 und 43 um die 42 (k = 7). Nur (3, 5) fällt aus der Reihe, weil die 3 selbst ein Teiler von 6 ist. Die 47 hat keinen Zwilling, denn 45 und 49 sind beide zusammengesetzt.</p>
+</details>
+</div>
+
+<h2>Wie die RSA-Verschlüsselung Primzahlen nutzt</h2>
+
+<p>Das Verfahren RSA, benannt nach seinen Erfindern Rivest, Shamir und Adleman, schützt seit den 1970er Jahren Daten im Internet. Die Grundidee: Man wählt zwei sehr große Primzahlen p und q und multipliziert sie zu n = p &middot; q. Das Produkt n wird veröffentlicht, die beiden Faktoren bleiben geheim. Wer eine Nachricht verschlüsseln will, braucht nur n und eine zweite öffentliche Zahl e. Wer sie lesen will, braucht zusätzlich einen geheimen Exponenten d, und den kann man nur ausrechnen, wenn man p und q kennt.</p>
+
+<div class="calc">
+Schlüsselerzeugung im Spielzeugformat<br>
+<br>
+p = 61 und q = 53, also n = 61 &middot; 53 = 3.233<br>
+(p &minus; 1) &middot; (q &minus; 1) = 60 &middot; 52 = 3.120<br>
+öffentlich: e = 17, geheim: d = 2.753<br>
+Probe: 17 &middot; 2.753 = 46.801 = 15 &middot; 3.120 + 1<br>
+<br>
+Nachricht 65 verschlüsseln: 65<sup>17</sup> ergibt bei Division durch 3.233 den Rest <strong>2.790</strong><br>
+Entschlüsseln: 2.790<sup>2753</sup> ergibt bei Division durch 3.233 wieder den Rest <strong>65</strong>
+</div>
+
+<p>Dass hier wirklich die Nachricht wiederkehrt, folgt aus einem Satz von Euler über Reste bei der Division. Entscheidend ist der Blick auf die Sicherheit: Die kleine Zahl 3.233 zerlegt jeder in Sekunden. Echte Schlüssel arbeiten mit einem n von 2.048 Bit, das sind über 600 Dezimalstellen. Die Probedivision müsste bis zur Wurzel von n laufen, also bis zu einer Zahl mit rund 300 Stellen, und das ist unmöglich. Auch die schnellsten bekannten Verfahren zum Zerlegen brauchen für solche Zahlen mit heutigen Rechnern unvorstellbar lange. Bewiesen ist allerdings nicht, dass es keinen schnellen Weg gibt. Quantencomputer könnten ihn nach heutigem Wissen theoretisch liefern, wenn sie einmal groß genug gebaut werden können. Die Sicherheit von RSA beruht also auf einer Erfahrung, nicht auf einem Beweis.</p>
+
+
+<h2>Zwillinge, Lücken und Rekorde</h2>
+
+<p>Primzahlen verteilen sich unregelmäßig, und genau das macht sie interessant. Mal
+liegen zwei dicht beieinander wie 11 und 13 oder 41 und 43 — solche Paare heißen
+<strong>Primzahlzwillinge</strong>. Mal klaffen große Lücken: Zwischen 113 und 127
+liegt keine einzige. Solche Lücken lassen sich sogar auf Bestellung erzeugen. Nimmt
+man 101! und addiert nacheinander 2, 3, 4 und so weiter bis 101, ist jede dieser
+hundert Zahlen durch den jeweils addierten Wert teilbar und damit keine Primzahl.
+Beliebig lange primzahlfreie Strecken gibt es also mit Sicherheit — und trotzdem hören
+die Primzahlen nie auf.</p>
+
+<p>Ob es unendlich viele Zwillinge gibt, weiß bis heute niemand. Die Frage ist eines
+der bekanntesten offenen Probleme der Mathematik. Bekannt ist dagegen, dass die
+Primzahlen mit wachsender Größe seltener werden: In der Nähe einer Zahl n liegt
+ungefähr jede ln(n)-te Zahl im Schnitt noch prim. Bei dreistelligen Zahlen ist das
+etwa jede siebte, bei Zahlen um eine Million nur noch jede vierzehnte.</p>
+
+<div class="example-box">
+<div class="label">Warum Banken Primzahlen brauchen</div>
+<p>Das RSA-Verfahren, mit dem Browser und Banken Daten verschlüsseln, benutzt zwei
+sehr große Primzahlen, jede mit mehreren hundert Stellen. Multipliziert werden sie in
+Sekundenbruchteilen. Der öffentliche Schlüssel enthält nur das Produkt — und daraus
+die beiden Faktoren zurückzugewinnen, ist mit allen bekannten Verfahren praktisch
+unmöglich. Genau dieses Ungleichgewicht zwischen leichtem Hinweg und schwerem Rückweg
+ist die gesamte Sicherheit des Systems. Würde morgen jemand ein schnelles Verfahren
+zum Faktorisieren finden, müsste die halbe Internetverschlüsselung ausgetauscht
+werden.</p>
+</div>
+
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>

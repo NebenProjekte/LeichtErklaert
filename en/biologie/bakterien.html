@@ -48,34 +48,52 @@
 <span class="subject-pill bio">Biology - Microbiology</span>
 <h1>Bacteria Explained Simply</h1>
 
-<p>Bacteria are tiny, single-celled organisms - unlike viruses, they're clearly alive: they have their own metabolism and can reproduce entirely on their own.</p>
+<p>Bacteria are <strong>single-celled organisms without a nucleus</strong>. Their genetic information floats freely inside the cell instead of sitting in its own envelope. This one difference separates them from all animals, plants and fungi, and it is the reason antibiotics can hit bacteria without destroying our own cells.</p>
 
 <div class="formula-box">
-1 cell &rarr; 2 cells &rarr; 4 cells &rarr; 8 cells ...
-<small>bacteria reproduce through simple cell division - under good conditions, their numbers can double every 20 minutes</small>
+Prokaryote = cell without a nucleus
+<small>Bacteria and archaea &middot; all other living things are eukaryotes</small>
 </div>
 
-<div class="diagram">
-<svg viewBox="0 0 260 140" width="240" height="129" xmlns="http://www.w3.org/2000/svg">
-<rect x="10" y="55" width="50" height="30" rx="15" fill="#6b7a5e"/>
-<rect x="90" y="55" width="35" height="30" rx="15" fill="#6b7a5e"/>
-<rect x="130" y="55" width="35" height="30" rx="15" fill="#8a9a7c"/>
-<rect x="195" y="55" width="25" height="30" rx="15" fill="#6b7a5e"/>
-<rect x="223" y="55" width="25" height="30" rx="15" fill="#8a9a7c"/>
-<path d="M65,70 L85,70" stroke="#8a7264" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
-<path d="M170,70 L190,70" stroke="#8a7264" stroke-width="2" stroke-dasharray="4 4"/>
-<defs>
-<marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-<path d="M0,0 L8,4 L0,8 Z" fill="#8a7264"/>
-</marker>
-</defs>
-</svg>
+<div class="example-box glossary">
+<div class="label">Key terms</div>
+<p><strong>Prokaryote</strong> — a cell with no true nucleus and no membrane-bound organelles.<br>
+<strong>Nucleoid</strong> — the region where the ring-shaped bacterial chromosome lies.<br>
+<strong>Plasmid</strong> — a small extra ring of DNA, often carrying resistance genes. Plasmids can be passed between bacteria.<br>
+<strong>Cell wall</strong> — a casing made of murein (peptidoglycan), the target of many antibiotics.<br>
+<strong>Binary fission</strong> — reproduction by dividing into two identical cells.<br>
+<strong>Gram stain</strong> — a staining test that sorts bacteria into Gram-positive and Gram-negative according to the structure of their cell wall.</p>
 </div>
-<p class="note">As simple as this splitting looks - it's exactly why bacteria can multiply so rapidly in a short time.</p>
+
+<h2>How fast they multiply</h2>
+
+<div class="calc">
+Under good conditions, Escherichia coli divides every 20 minutes.<br>
+<br>
+after 1 hour: 2³ = 8<br>
+after 5 hours: 2<sup>15</sup> = 32,768<br>
+after 10 hours: 2<sup>30</sup> &asymp; 1.07 billion
+</div>
+
+<p>These numbers explain why spoiled food seems to turn so suddenly and why a wound infection can become dangerous within hours. In reality, lack of space, lack of nutrients and the bacteria's own waste products slow the growth down. Otherwise the Earth would be covered by a layer of bacteria within a few days.</p>
+
+<p>Doubling is the key idea here. A quantity that doubles at regular intervals grows exponentially: the first doublings look harmless (1, 2, 4, 8), but each step adds as many new cells as all the previous steps combined. That is why an infection can seem insignificant in the morning and be serious by evening.</p>
+
+<table class="datatable">
+<caption>Bacterial cell and animal cell compared</caption>
+<thead><tr><th>Feature</th><th>Bacterium</th><th>Animal cell</th></tr></thead>
+<tbody>
+<tr><td>Nucleus</td><td>no</td><td>yes</td></tr>
+<tr><td>Size</td><td>1–5 µm</td><td>10–100 µm</td></tr>
+<tr><td>Genetic material</td><td>ring-shaped, free in the cell</td><td>linear chromosomes inside the nucleus</td></tr>
+<tr><td>Mitochondria</td><td>no</td><td>yes</td></tr>
+<tr><td>Cell wall</td><td>yes, made of murein</td><td>no</td></tr>
+<tr><td>Reproduction</td><td>binary fission</td><td>mitosis</td></tr>
+</tbody>
+</table>
 
 <p class="dialog-intro">💬 Mia asks Grandpa Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -91,10 +109,9 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Aren't bacteria just disease-causing germs?</p>
+<p>Aren't all bacteria dangerous?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -110,10 +127,9 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>Quite the opposite! Only a small fraction of bacteria make you sick. Most are harmless or even genuinely helpful - your gut alone hosts trillions of bacteria that help you digest food.</p>
+<p>Quite the opposite. Trillions of them live in your gut, where they help you digest food and produce vitamin K. The ones that cause disease are a minority.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -129,10 +145,9 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>What's actually different about them compared to our own cells?</p>
+<p>And why do antibiotics sometimes stop working?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -148,58 +163,53 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>Our cells have a nucleus that encloses the genetic material - bacterial cells don't. In them, the genetic material just floats freely inside the cell. That's why bacteria are called "prokaryotes", meaning "before the nucleus".</p>
+<p>Because a few individual bacteria happen to be resistant. They survive, they multiply, and they even hand their plasmids on to other species.</p>
 </div>
-</div>
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>And why do antibiotics eventually stop working properly?</p>
 </div>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Grandpa Theo</div>
-<p>Because bacteria multiply so fast, random mutations also pop up quickly. If one happens to protect against an antibiotic, that particular bacterium survives the treatment and keeps reproducing - a direct example of natural selection.</p>
-</div>
+<h2>Why antibiotics do not harm us</h2>
+
+<p>Many antibiotics attack the <strong>murein cell wall</strong> or the bacteria's own ribosomes, which differ from ours. Human cells have no murein wall, so the drug simply finds no target there. This is also why antibiotics do not work against viruses: viruses have neither a cell wall nor ribosomes of their own.</p>
+
+<p>The bacterial cell wall is worth a closer look, because it explains a lot. Inside a bacterium the pressure is higher than outside, and without a sturdy wall the cell would swell and burst. An antibiotic that blocks the building of the wall therefore does not just slow the bacterium down: each time the cell grows or divides, the wall has weak spots, the cell takes in water and bursts. Our own cells never depend on such a wall, so they are left alone.</p>
+
+<div class="example-box warn">
+<div class="label">Common mistakes</div>
+<p><strong>Confusing bacteria with viruses.</strong> Viruses are not cells and can only multiply inside other cells.<br>
+<strong>“Bacteria have no DNA.”</strong> They do have DNA, just no nucleus around it.<br>
+<strong>Taking antibiotics for a cold.</strong> Colds are mostly viral, so the drug does no good and encourages resistance.<br>
+<strong>Reading resistance as a person getting used to the drug.</strong> The person does not become resistant, the bacterium does.</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Practice task</div>
+<p>Explain why an antibiotic that blocks cell wall synthesis does not attack human cells. Also explain why stopping a course of antibiotics after three days instead of seven promotes resistance.</p>
+<details class="solution">
+<summary>Show solution</summary>
+<p>Human cells have no cell wall made of murein, only a cell membrane. The drug blocks an enzyme that does not exist in the human body, so the point of attack is simply missing.<br><br>
+If treatment stops too early, the most sensitive bacteria have already been killed, but the hardier ones are still there. They keep multiplying undisturbed, and the next generation descends entirely from the tougher cells. That is exactly the selection one wanted to avoid.</p>
+</details>
 </div>
+
+<h2>How bacteria adapt</h2>
+
+<p>Bacteria do not only multiply quickly, they also change quickly. They have two ways of doing this, and the second one is the truly worrying one.</p>
+
+<p>The first way is <strong>mutation</strong>. Every time a cell divides, rare mistakes creep in when the DNA is copied. Because a culture divides every 20 minutes under good conditions, billions of copying events add up in a single day, and with them plenty of random variants. Most of these are useless or harmful, but as soon as an antibiotic is added, exactly those few whose random variant happens to protect them survive. They keep multiplying, and after a short time the whole culture consists of their descendants. This is evolution in fast motion, observable within a single school lesson.</p>
 
 <div class="example-box">
-<div class="label">Not just in the body</div>
-<p>Bacteria are also in yogurt, cheese, and sauerkraut - there they deliberately turn milk sugar or cabbage into lactic acid, which changes taste and shelf life.</p>
+<div class="label">Bacteria swap genes directly</div>
+<p>The second way has no counterpart in humans or animals: bacteria pass genetic information on not only to their offspring, but also <strong>sideways to other bacteria</strong>, even ones of a completely different species. Many carry, besides their main ring of DNA, small additional rings called <strong>plasmids</strong>. Resistance genes are often located on exactly these plasmids. Two bacteria can form a bridge and push a plasmid across; this takes minutes. A gut bacterium that has acquired resistance can in this way hand it on to a disease-causing bacterium that happens to live in the same gut. That is why resistance spreads much faster than the plain reproduction rate would explain, and why it makes sense to use antibiotics only when they are really needed: every unnecessary use is one more round of selection in favour of the resistant ones.</p>
 </div>
 
+<p>Bacteria also survive hard times better than most cells. Some species form <strong>spores</strong> when nutrients run out: they dry out their interior, pack their genetic material into a tough shell and shut down all metabolism. In this state they survive boiling, drying out and decades of waiting. When water and food return, they germinate again. This is exactly why brief heating is not enough when food is preserved.</p>
 
-<p class="note">That's why it's important to always finish a full course of antibiotics: stopping too early leaves exactly the toughest, most resistant bacteria behind to survive.</p>
+<h2>Bacteria in everyday life</h2>
 
+<p>Most bacteria are harmless to us, and many are useful. Yoghurt, cheese and sauerkraut owe their taste and their shelf life to lactic acid bacteria, which turn sugar into lactic acid and so make the food too sour for its spoilers. Sewage treatment plants rely on bacteria to break down waste. In the soil, bacteria release nutrients from dead material, and some of them convert nitrogen from the air into a form that plants can use. Seen this way, the question is not how to get rid of bacteria, but how to live alongside the right ones and protect ourselves from the few harmful ones.</p>
+
+<p class="note">The human body contains roughly as many bacterial cells as body cells. Together they weigh about 200 grams, making them an organ of their own that you cannot see.</p>
 <a class="back-link" href="../index.html">&larr; Back to overview</a>
 </article>
 </main>

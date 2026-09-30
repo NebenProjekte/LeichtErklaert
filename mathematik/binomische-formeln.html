@@ -216,6 +216,89 @@ Rechts (6 &minus; 5)² = 1 ✓</p>
 <p class="note">Die dritte Formel ist der Schlüssel zum Rationalmachen von Nennern:
 Ein Bruch mit &radic;2 + 1 im Nenner wird mit &radic;2 &minus; 1 erweitert, und die
 Wurzel verschwindet.</p>
+<h2>Das Pascalsche Dreieck und die dritte Potenz</h2>
+
+<p>Was passiert, wenn statt (a + b)² ein höherer Exponent im Spiel ist? Multipliziert man (a + b)² noch einmal mit (a + b), entsteht das Ergebnis für die dritte Potenz. Die Rechnung ist kurz und lohnt sich, weil man das Muster danach nie wieder ausrechnen muss.</p>
+
+<div class="calc">
+(a + b)³ = (a + b) &middot; (a² + 2ab + b²)<br>
+= a³ + 2a²b + ab² + a²b + 2ab² + b³<br>
+= <strong>a³ + 3a²b + 3ab² + b³</strong><br>
+<br>
+Beispiel: 11³ = (10 + 1)³ = 1000 + 300 + 30 + 1 = <strong>1331</strong><br>
+Beispiel: (x &minus; 2)³ = x³ &minus; 6x² + 12x &minus; 8
+</div>
+
+<p>Die Vorfaktoren 1, 3, 3, 1 stehen im <strong>Pascalschen Dreieck</strong>. Es beginnt oben mit einer 1, jede weitere Zahl ist die Summe der beiden Zahlen schräg darüber, und außen stehen immer Einsen. Die Zeile mit den Zahlen 1, 2, 1 gehört zum Quadrat, die Zeile 1, 3, 3, 1 zur dritten Potenz, und die nächste Zeile liefert (a + b)⁴.</p>
+
+<table class="datatable">
+<caption>Potenzen von (a + b) und ihre Vorfaktoren</caption>
+<thead><tr><th>Exponent</th><th>Vorfaktoren im Dreieck</th><th>Ausmultipliziert</th></tr></thead>
+<tbody>
+<tr><td>2</td><td>1, 2, 1</td><td>a² + 2ab + b²</td></tr>
+<tr><td>3</td><td>1, 3, 3, 1</td><td>a³ + 3a²b + 3ab² + b³</td></tr>
+<tr><td>4</td><td>1, 4, 6, 4, 1</td><td>a⁴ + 4a³b + 6a²b² + 4ab³ + b⁴</td></tr>
+</tbody>
+</table>
+
+<p>Die Hochzahl von a sinkt dabei von Glied zu Glied um eins, die von b steigt um eins. Und wer in den ersten Zeilen die Ziffern hintereinanderschreibt, findet nebenbei die Potenzen von 11: 121, 1331 und 14641. Bei den späteren Zeilen klappt das nicht mehr, weil dort zweistellige Vorfaktoren auftauchen.</p>
+
+<h2>Wurzeln im Nenner loswerden</h2>
+
+<p>Die dritte binomische Formel hat einen besonderen Trick auf Lager: Multipliziert man eine Summe aus Wurzeln mit der passenden Differenz, verschwinden die Wurzeln, weil (a + b)(a &minus; b) = a² &minus; b² nur Quadrate übrig lässt. Das nutzt man, um Wurzeln aus dem Nenner zu entfernen. Man spricht vom <strong>Rationalmachen des Nenners</strong>. Dazu erweitert man den Bruch mit dem Term, bei dem nur das Vorzeichen in der Mitte wechselt.</p>
+
+<div class="calc">
+1 &divide; (&radic;2 + 1)<br>
+= (&radic;2 &minus; 1) &divide; [(&radic;2 + 1)(&radic;2 &minus; 1)]<br>
+= (&radic;2 &minus; 1) &divide; (2 &minus; 1)<br>
+= <strong>&radic;2 &minus; 1</strong> &asymp; 0,414
+</div>
+
+<div class="example-box task">
+<div class="label">Übungsaufgabe</div>
+<p>Mache den Nenner rational: 4 &divide; (&radic;7 &minus; &radic;3). Prüfe das Ergebnis mit dem Taschenrechner.</p>
+<details class="solution">
+<summary>Lösung anzeigen</summary>
+<p>Erweitern mit (&radic;7 + &radic;3), dem Gegenstück mit anderem Vorzeichen:<br>
+4 &middot; (&radic;7 + &radic;3) &divide; [(&radic;7 &minus; &radic;3)(&radic;7 + &radic;3)]<br>
+Im Nenner greift die dritte Formel: 7 &minus; 3 = 4. Die 4 im Zähler kürzt sich, übrig bleibt<br>
+<strong>&radic;7 + &radic;3</strong><br>
+Probe: &radic;7 &asymp; 2,646 und &radic;3 &asymp; 1,732, die Summe ist also etwa 4,378. Der Ausgangsbruch ist 4 &divide; 0,9137 &asymp; 4,378 — beide Werte stimmen überein.</p>
+</details>
+</div>
+
+
+<h2>Das Pascalsche Dreieck: höhere Potenzen</h2>
+
+<p>Die erste binomische Formel ist nur der Fall n = 2 einer ganzen Reihe. Für höhere
+Potenzen liefert das <strong>Pascalsche Dreieck</strong> die Zahlen vor den Gliedern.
+Jede Zahl darin ist die Summe der beiden über ihr.</p>
+
+<div class="calc">
+n = 0: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1<br>
+n = 1: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 &nbsp; 1<br>
+n = 2: &nbsp;&nbsp;&nbsp; 1 &nbsp; 2 &nbsp; 1<br>
+n = 3: &nbsp; 1 &nbsp; 3 &nbsp; 3 &nbsp; 1<br>
+n = 4: 1 &nbsp; 4 &nbsp; 6 &nbsp; 4 &nbsp; 1<br>
+<br>
+(a + b)³ = a³ + 3a²b + 3ab² + b³
+</div>
+
+<p>Die Exponenten laufen dabei immer gegenläufig: a beginnt bei der vollen Potenz und
+sinkt, b beginnt bei null und steigt. Die Zeile n = 2 enthält 1, 2, 1 — genau die
+Koeffizienten der ersten binomischen Formel. Sie ist also kein Sonderfall, sondern nur
+die zweite Zeile eines Musters, das beliebig weitergeht.</p>
+
+<div class="example-box">
+<div class="label">Nenner rational machen</div>
+<p>Die dritte Formel hat eine Anwendung, die in der Oberstufe ständig gebraucht wird.
+Ein Bruch soll keine Wurzel im Nenner haben. Bei 1 &divide; (&radic;5 &minus; 2)
+erweitert man mit (&radic;5 + 2). Im Nenner steht dann
+(&radic;5 &minus; 2)(&radic;5 + 2) = 5 &minus; 4 = 1, und die Wurzel ist verschwunden.
+Übrig bleibt schlicht &radic;5 + 2. Ohne die dritte binomische Formel müsste man hier
+raten; mit ihr ist es ein einziger Handgriff.</p>
+</div>
+
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>

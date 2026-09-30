@@ -45,106 +45,185 @@
 <div class="breadcrumbs"><a href="../index.html">Inicio</a> &rsaquo; <a href="../index.html#matematicas">Matemáticas</a> &rsaquo; Números Primos</div>
 
 <article class="topic">
-<span class="subject-pill math">Matemáticas - Teoría de Números</span>
-<h1>Los Números Primos explicados de forma sencilla</h1>
+<span class="subject-pill math">Matemáticas - Teoría de números</span>
+<h1>Los números primos explicados de forma sencilla</h1>
 
-<p>Un <strong>número primo</strong> es un número mayor que 1 que solo se puede dividir de forma exacta entre <strong>1</strong> y entre <strong>sí mismo</strong>.</p>
+<p>Un <strong>número primo</strong> es un número natural mayor que 1 con exactamente
+dos divisores: el 1 y él mismo. El 7 es primo porque solo el 1 y el 7 lo dividen sin
+resto. El 8 no lo es, porque también encajan el 2 y el 4. Los primos son las piezas
+con las que se construye cualquier otro número, y por eso reaparecen en casi todas
+las ramas de las matemáticas.</p>
 
 <div class="formula-box">
-2, 3, 5, 7, 11, 13, 17, 19, 23, ...
-<small>los primeros números primos</small>
+2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47 …
+<small>el 1 no es primo: tiene un solo divisor, no dos</small>
 </div>
 
-<p class="dialog-intro">💬 Mia le pregunta al Abuelo Theo</p>
-<div class="dialog">
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>¿Por qué el 1 no es un número primo? ¡También se puede dividir solo entre 1!</p>
-</div>
+<div class="example-box glossary">
+<div class="label">Términos clave</div>
+<p><strong>Divisor</strong> — un número que divide sin dejar resto.<br>
+<strong>Número primo</strong> — exactamente dos divisores.<br>
+<strong>Número compuesto</strong> — más de dos divisores, por ejemplo el 12.<br>
+<strong>Descomposición en factores primos</strong> — escribir un número como producto de primos.<br>
+<strong>Criba de Eratóstenes</strong> — método para hallar todos los primos hasta un límite.<br>
+<strong>Primos gemelos</strong> — dos primos separados por 2, como el 11 y el 13.</p>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Abuelo Theo</div>
-<p>¡Buena pregunta! Los matemáticos decidieron a propósito excluir el 1 - si no, muchas reglas de cálculo importantes dejarían de funcionar correctamente.</p>
-</div>
+<h2>Por qué el 1 no cuenta</h2>
+
+<p>Parece arbitrario, pero hay una razón sólida. El teorema fundamental de la
+aritmética dice que todo número mayor que 1 se descompone en factores primos de una
+<em>única</em> manera. Si el 1 fuera primo habría infinitas descomposiciones:
+12 = 2 · 2 · 3 = 1 · 2 · 2 · 3 = 1 · 1 · 2 · 2 · 3, y así sin fin. La unicidad
+desaparecería. Por eso se excluye el 1: para que el teorema más importante sobre los
+números siga siendo limpio.</p>
+
+<h2>Descomposición en factores primos</h2>
+
+<div class="calc">
+360 &divide; 2 = 180<br>
+180 &divide; 2 = 90<br>
+90 &divide; 2 = 45<br>
+45 &divide; 3 = 15<br>
+15 &divide; 3 = 5<br>
+5 &divide; 5 = 1<br>
+<br>
+360 = 2<sup>3</sup> &middot; 3<sup>2</sup> &middot; 5
 </div>
 
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>¿Y cómo averiguo si, por ejemplo, el 17 es un número primo?</p>
-</div>
+<p>El procedimiento es tosco y siempre funciona: dividir por el primo más pequeño que
+encaje y seguir con el resultado hasta que quede 1. De la descomposición se leen
+después cosas que de otro modo habría que adivinar, como el mínimo común múltiplo o
+el máximo común divisor de dos números.</p>
+
+<h2>La criba de Eratóstenes</h2>
+
+<table class="datatable">
+<caption>Hallar todos los primos hasta 30</caption>
+<thead><tr><th>Paso</th><th>Qué ocurre</th><th>Se tachan</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>el 2 se queda, se tachan sus múltiplos</td><td>4, 6, 8, 10 …</td></tr>
+<tr><td>2</td><td>el 3 se queda, se tachan sus múltiplos</td><td>9, 15, 21, 27</td></tr>
+<tr><td>3</td><td>el 5 se queda, se tachan sus múltiplos</td><td>25</td></tr>
+<tr><td>4</td><td>listo, porque 7 &middot; 7 = 49 &gt; 30</td><td>—</td></tr>
+</tbody>
+</table>
+
+<p>Quedan 2, 3, 5, 7, 11, 13, 17, 19, 23 y 29. El último paso es el más útil: solo
+hay que cribar hasta la <strong>raíz cuadrada del límite</strong>. Para comprobar si
+97 es primo se prueban los divisores 2, 3, 5 y 7, y nada más, porque 11 · 11 = 121 ya
+supera a 97.</p>
+
+<div class="example-box warn">
+<div class="label">Errores habituales</div>
+<p><strong>Contar el 1 como primo.</strong> No lo es.<br>
+<strong>Olvidar el 2.</strong> Es el único primo par y se salta con facilidad al
+enumerar deprisa.<br>
+<strong>Probar todos los números como divisores.</strong> Basta llegar a la raíz
+cuadrada; en números de tres cifras eso ahorra casi todo el trabajo.<br>
+<strong>«Todos los impares son primos.»</strong> El 9, el 15, el 21 y el 25 dicen lo
+contrario.</p>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Abuelo Theo</div>
-<p>Simplemente pruebas uno tras otro si 2, 3, 5, 7 ... encajan. Con el 17 ninguno funciona - ¡así que el 17 es un número primo!</p>
-</div>
+<h2>Hay infinitos</h2>
+
+<p>Euclides lo demostró hace más de dos mil años y la prueba cabe en cuatro líneas.
+Supongamos que solo hubiera un número finito de primos. Se multiplican todos y se
+suma 1. Al dividir ese número nuevo por cualquiera de los primos supuestos queda
+resto 1: ninguno encaja. Así que el número nuevo o bien es primo, o bien tiene un
+factor primo que no estaba en la lista. Las dos cosas contradicen la suposición. La
+lista, por tanto, nunca puede estar completa.</p>
+
+<div class="example-box task">
+<div class="label">Ejercicio</div>
+<p>Comprueba si 143 es un número primo. Explica qué divisores hay que probar y por
+qué puedes detenerte ahí.</p>
+<details class="solution">
+<summary>Ver solución</summary>
+<p>La raíz de 143 está entre 11 y 12, porque 11 · 11 = 121 y 12 · 12 = 144. Solo hay
+que probar los primos hasta 11: 2, 3, 5, 7 y 11.<br>
+El 2 queda descartado (143 es impar), el 3 también (suma de cifras 8), el 5 igual (la
+última cifra no es 0 ni 5) y el 7 no encaja (7 · 20 = 140, resto 3). Pero
+<strong>11 · 13 = 143</strong>.<br>
+Así que 143 <strong>no</strong> es primo. Si el 11 tampoco hubiera encajado, 143 sería
+primo: cualquier divisor mayor necesitaría un compañero más pequeño, y todos los
+pequeños ya se han comprobado.</p>
+</details>
 </div>
 
-</div>
+<p class="note">Los primos no son solo materia de clase. El cifrado con el que tu
+navegador envía los datos bancarios se apoya en que multiplicar dos primos muy
+grandes es trivial, mientras que volver a descomponer el producto resulta
+prácticamente imposible.</p>
+<h2>Primos gemelos y primos récord</h2>
+
+<p>Cuanto más arriba se llega en la serie de los números, más escasos son los primos, pero nunca desaparecen. A veces dos de ellos están muy juntos: 3 y 5, 11 y 13, 17 y 19, 29 y 31, 41 y 43. Los pares con una diferencia de 2 se llaman <strong>primos gemelos</strong>. Un pequeño truco muestra dónde buscarlos: todo primo mayor que 3 está justo al lado de un múltiplo de 6, porque los demás restos dan números pares o múltiplos de 3. Por eso, salvo el par 3 y 5, todo par de gemelos tiene la forma 6k &minus; 1 y 6k + 1, por ejemplo 5 y 7 o 17 y 19.</p>
+
+<p>Si existen infinitos primos gemelos, sigue sin demostrarse. Con todo, en 2013 el matemático Yitang Zhang logró un avance decisivo: demostró que existen infinitos pares de primos cuya diferencia es como mucho de 70 millones. Otros investigadores rebajaron después esa cota a 246. Así que todavía queda un largo camino hasta el 2.</p>
 
 <div class="example-box">
-<div class="label">Contraejemplo</div>
-<p>¿Es 15 un número primo? No: 15 = 3 &times; 5, así que también se puede dividir entre 3 y entre 5 - no solo entre 1 y sí mismo.</p>
+<div class="label">Primos de Mersenne y la caza de récords</div>
+<p>Los mayores primos conocidos tienen casi siempre la forma 2<sup>p</sup> &minus; 1, donde el exponente p es a su vez primo. Se llaman <strong>primos de Mersenne</strong>. Los primeros son 2² &minus; 1 = 3, 2³ &minus; 1 = 7, 2⁵ &minus; 1 = 31 y 2⁷ &minus; 1 = 127. No es automático, sin embargo: ya 2¹¹ &minus; 1 = 2.047 no es primo, porque 23 &middot; 89 = 2.047. Para números de esta forma existe una prueba especialmente rápida, la prueba de Lucas-Lehmer. Por eso aquí se pueden llevar los récords mucho más lejos que con números cualesquiera. La búsqueda se hace en el proyecto colaborativo <strong>GIMPS</strong> (Great Internet Mersenne Prime Search), en el que voluntarios ceden el tiempo de cálculo de sus ordenadores. Los números récord tienen muchos millones de cifras: escritos por completo, llenarían muchos miles de páginas de libro.</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Ejercicio</div>
+<p>Encuentra todos los primos gemelos menores que 50 y comprueba si cada par, salvo 3 y 5, tiene la forma 6k &minus; 1 y 6k + 1.</p>
+<details class="solution">
+<summary>Ver solución</summary>
+<p>Los primos hasta 50 son 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47. Con diferencia 2 están juntos: <strong>(3, 5), (5, 7), (11, 13), (17, 19), (29, 31) y (41, 43)</strong>.<br>
+Comprobación: 5 y 7 rodean al 6 (k = 1), 11 y 13 al 12 (k = 2), 17 y 19 al 18 (k = 3), 29 y 31 al 30 (k = 5), 41 y 43 al 42 (k = 7). Solo (3, 5) se sale de la regla, porque el 3 es a su vez un divisor de 6. El 47 no tiene gemelo, ya que 45 y 49 son ambos compuestos.</p>
+</details>
+</div>
 
-<p class="note">Los números primos son prácticamente los "ladrillos" de todos los números: todo número natural mayor que 1 se puede escribir de forma única como producto de números primos (p. ej. 12 = 2 &times; 2 &times; 3). Por eso son tan importantes en matemáticas - e incluso en la encriptación de datos en internet.</p>
+<h2>Cómo usa el cifrado RSA los números primos</h2>
 
-<a class="back-link" href="../index.html">&larr; Volver al resumen</a>
+<p>El método RSA, llamado así por sus inventores Rivest, Shamir y Adleman, protege datos en internet desde los años setenta. La idea básica: se eligen dos primos muy grandes p y q y se multiplican para obtener n = p &middot; q. El producto n se publica; los dos factores permanecen secretos. Quien quiere cifrar un mensaje solo necesita n y un segundo número público e. Quien quiere leerlo necesita además un exponente secreto d, y ese solo lo puede calcular quien conozca p y q.</p>
+
+<div class="calc">
+Generación de claves en formato de juguete<br>
+<br>
+p = 61 y q = 53, así que n = 61 &middot; 53 = 3.233<br>
+(p &minus; 1) &middot; (q &minus; 1) = 60 &middot; 52 = 3.120<br>
+público: e = 17, secreto: d = 2.753<br>
+Comprobación: 17 &middot; 2.753 = 46.801 = 15 &middot; 3.120 + 1<br>
+<br>
+Cifrar el mensaje 65: 65<sup>17</sup> dividido entre 3.233 deja de resto <strong>2.790</strong><br>
+Descifrar: 2.790<sup>2753</sup> dividido entre 3.233 deja de nuevo de resto <strong>65</strong>
+</div>
+
+<p>Que el mensaje vuelva de verdad se deduce de un teorema de Euler sobre restos en la división. Lo decisivo es la mirada a la seguridad: el pequeño número 3.233 lo descompone cualquiera en segundos. Las claves reales usan un n de 2.048 bits, es decir, más de 600 cifras decimales. La división de prueba tendría que llegar hasta la raíz de n, un número con unas 300 cifras, y eso es imposible. Incluso los métodos de factorización más rápidos que se conocen tardan un tiempo inimaginable con esos números en los ordenadores actuales. Lo que no está demostrado es que no exista un camino rápido. Según lo que sabemos hoy, los ordenadores cuánticos podrían ofrecerlo en teoría si algún día se construyen lo bastante grandes. La seguridad de RSA se apoya, pues, en la experiencia y no en una demostración.</p>
+
+
+<h2>Gemelos, huecos y récords</h2>
+
+<p>Los primos se reparten de forma irregular, y eso es justo lo que los hace
+interesantes. A veces hay dos muy juntos, como el 11 y el 13 o el 41 y el 43: esos
+pares se llaman <strong>primos gemelos</strong>. Otras veces aparecen huecos enormes:
+entre 113 y 127 no hay ni uno. Esos huecos se pueden incluso fabricar a medida. Toma
+101! y súmale 2, luego 3, luego 4 y así hasta 101: cada uno de esos cien números es
+divisible por el valor que has sumado, así que ninguno es primo. Existen, por tanto,
+tramos sin primos tan largos como se quiera, y aun así los primos no se acaban
+nunca.</p>
+
+<p>Si hay infinitos gemelos sigue siendo un misterio. La pregunta es uno de los
+problemas abiertos más famosos de las matemáticas. Lo que sí se sabe es que los primos
+escasean a medida que los números crecen: cerca de un número n, de media sigue siendo
+primo aproximadamente uno de cada ln(n). En números de tres cifras eso es más o menos
+uno de cada siete; alrededor del millón, solo uno de cada catorce.</p>
+
+<div class="example-box">
+<div class="label">Por qué los bancos necesitan primos</div>
+<p>El método RSA con el que los navegadores y los bancos cifran datos se apoya en dos
+primos muy grandes, cada uno de varios cientos de cifras. Multiplicarlos lleva una
+fracción de segundo. La clave pública contiene solo el producto, y recuperar de ahí
+los dos factores resulta, con todos los métodos conocidos, prácticamente imposible.
+Ese desequilibrio entre un camino de ida fácil y uno de vuelta desesperado es toda la
+seguridad del sistema. Si mañana alguien encontrara un método rápido de factorización,
+habría que sustituir la mitad del cifrado de internet.</p>
+</div>
+
+<a class="back-link" href="../index.html">&larr; Volver al índice</a>
 </article>
 </main>
 

@@ -45,34 +45,59 @@
 <div class="breadcrumbs"><a href="../index.html">Inicio</a> &rsaquo; <a href="../index.html#matematicas">Matemáticas</a> &rsaquo; Paradoja del Cumplea&ntilde;os</div>
 
 <article class="topic">
-<span class="subject-pill math">Matem&aacute;ticas &middot; Estad&iacute;stica</span>
-<h1>La Paradoja del Cumplea&ntilde;os explicada de forma sencilla</h1>
-<p>Un a&ntilde;o tiene 365 d&iacute;as - sin embargo, con solo <strong>23 personas</strong> en una sala, la probabilidad de que dos compartan cumplea&ntilde;os ya supera el <strong>50%</strong>. Suena imposible, pero es pura matem&aacute;tica.</p>
+<span class="subject-pill math">Matemáticas &middot; Probabilidad</span>
+<h1>La paradoja del cumpleaños explicada de forma sencilla</h1>
+
+<p>En una clase de 23 alumnos, la probabilidad de que dos cumplan años el mismo día
+supera el <strong>50 por ciento</strong>. Suena falso, porque el año tiene 365 días. El
+error de razonamiento está en la pregunta que uno se hace sin darse cuenta.</p>
 
 <div class="formula-box">
-Con 23 personas: mas del 50% de probabilidad
-<small>&iexcl;Con 50 personas ya es el 97%!</small>
+P(al menos un par) = 1 &minus; (365/365 &middot; 364/365 &middot; 363/365 &middot; … )
+<small>más cómodo por el suceso contrario: calcular primero «todos distintos» y restarlo de 1</small>
 </div>
 
-<div class="diagram">
-<svg viewBox="0 0 400 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Curva: la probabilidad de un cumpleanos compartido sube rapido con el tamano del grupo">
-<line x1="10" y1="200" x2="395" y2="200" stroke="#8a7264" stroke-width="1.5"/>
-<line x1="10" y1="10" x2="10" y2="200" stroke="#8a7264" stroke-width="1.5"/>
-<text x="0" y="205" font-size="11" fill="#8a7264">0%</text>
-<text x="380" y="205" font-size="11" fill="#8a7264">70</text>
-<text x="0" y="106" font-size="11" fill="#8a7264">50%</text>
-<line x1="10" y1="105" x2="395" y2="105" stroke="#ede0cd" stroke-width="1" stroke-dasharray="3 3"/>
-<polygon points="10,200 64,178 119,122 135,104 173,66 227,31 282,16 336,11 390,10 390,200" fill="#7a5fb0" opacity="0.18"/>
-<polyline points="10,200 64,178 119,122 135,104 173,66 227,31 282,16 336,11 390,10" fill="none" stroke="#7a5fb0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="135" cy="104" r="7" fill="#e2583f"/>
-<line x1="135" y1="104" x2="135" y2="200" stroke="#e2583f" stroke-width="2" stroke-dasharray="4 3"/>
-<text x="100" y="230" font-size="13" fill="#e2583f" font-weight="800">23 personas &rarr; mas del 50%</text>
-</svg>
+<div class="example-box glossary">
+<div class="label">Términos clave</div>
+<p><strong>Suceso contrario</strong> — lo opuesto al suceso buscado. P(A) = 1 &minus; P(no A).<br>
+<strong>Probabilidad de Laplace</strong> — casos favorables entre posibles, si todos son igual de probables.<br>
+<strong>Sucesos independientes</strong> — sus probabilidades se multiplican.<br>
+<strong>Formación de pares</strong> — con n personas hay n(n&minus;1)/2 pares posibles.</p>
 </div>
 
-<p class="dialog-intro">💬 Mia le pregunta al Abuelo Theo</p>
+<h2>La razón de fondo: se trata de pares</h2>
+
+<p>Casi todo el mundo piensa: «¿qué probabilidad hay de que alguien cumpla años el
+<em>mismo día que yo</em>?». Eso sí es raro. Pero lo que se pregunta es si coincide
+<strong>algún par cualquiera</strong>, y hay muchos más pares de los que uno
+supone.</p>
+
+<div class="calc">
+Número de pares posibles con n personas: n &middot; (n &minus; 1) &divide; 2<br>
+<br>
+con 10 personas: 45 pares<br>
+con 23 personas: <strong>253 pares</strong><br>
+con 40 personas: 780 pares
+</div>
+
+<p>253 oportunidades de acierto: visto así, el 50 por ciento deja de sorprender y
+resulta plausible.</p>
+
+<table class="datatable">
+<caption>Probabilidad de al menos un cumpleaños compartido</caption>
+<thead><tr><th>Personas</th><th>Probabilidad</th></tr></thead>
+<tbody>
+<tr><td>10</td><td>11,7 %</td></tr>
+<tr><td>20</td><td>41,1 %</td></tr>
+<tr><td>23</td><td><strong>50,7 %</strong></td></tr>
+<tr><td>30</td><td>70,6 %</td></tr>
+<tr><td>50</td><td>97,0 %</td></tr>
+<tr><td>70</td><td>99,9 %</td></tr>
+</tbody>
+</table>
+
+<p class="dialog-intro">💬 Mia le pregunta al abuelo Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -88,10 +113,9 @@ Con 23 personas: mas del 50% de probabilidad
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>En nuestra clase somos exactamente 23. &iquest;Dices que probablemente ya haya dos con el mismo cumplea&ntilde;os?</p>
+<p>¡Pero el año tiene 365 días! Harían falta al menos 183 personas.</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -107,10 +131,9 @@ Con 23 personas: mas del 50% de probabilidad
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Abuelo Theo</div>
-<p>&iexcl;Exacto! Con 23 personas la probabilidad ya supera el 50% - &iexcl;m&aacute;s alta que una moneda cayendo cara!</p>
+<p>Esa sería la respuesta a otra pregunta: si alguien cumple años el <strong>mismo día que tú</strong>. Para eso sí harían falta unas 253 personas para llegar al 50 por ciento.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -126,10 +149,9 @@ Con 23 personas: mas del 50% de probabilidad
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>&iexcl;Eso no puede ser, un a&ntilde;o tiene 365 d&iacute;as!</p>
+<p>¿Y aquí cuenta cada par?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -145,59 +167,102 @@ Con 23 personas: mas del 50% de probabilidad
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Abuelo Theo</div>
-<p>El truco: no te comparamos a TI con los dem&aacute;s, comparamos TODOS los pares posibles entre s&iacute;. Con 23 personas ya hay 253 pares distintos - y cada par tiene una peque&ntilde;a probabilidad de coincidir.</p>
+<p>Exacto. Con 23 personas son 253 pares, y cada uno es una posibilidad de acierto.</p>
 </div>
-</div>
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>&iquest;Y qu&eacute; tan r&aacute;pido sigue subiendo?</p>
 </div>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Abuelo Theo</div>
-<p>Mira la curva: con 30 personas la probabilidad ya supera el 70%, con 50 personas es del 97%. &iexcl;Sube mucho m&aacute;s r&aacute;pido de lo que la intuici&oacute;n sugiere!</p>
-</div>
+<h2>Cómo se calcula</h2>
+
+<div class="calc">
+Probabilidad de que <em>todos</em> sean distintos:<br>
+365/365 &middot; 364/365 &middot; 363/365 &middot; … &middot; 343/365 &asymp; 0,4927<br>
+<br>
+Buscamos lo contrario:<br>
+1 &minus; 0,4927 = <strong>0,5073</strong>, o sea 50,7 %
 </div>
 
+<p>Paso a paso: la primera persona puede elegir cualquier día, eso siempre encaja, 365
+de 365. A la segunda le quedan 364 días libres, a la tercera 363, y así sucesivamente.
+Para n personas sale el producto (365 &divide; 365) &middot; (364 &divide; 365)
+&middot; … &middot; ((366 &minus; n) &divide; 365). Con n = 23 da unos 0,4927. Con 22
+personas el valor todavía es del 47,6 por ciento, y por eso 23 es el número más
+pequeño que supera la mitad.</p>
+
+<div class="example-box warn">
+<div class="label">Errores habituales</div>
+<p><strong>Responder a la pregunta equivocada.</strong> «Alguien cumple años el mismo día que yo» es algo completamente distinto.<br>
+<strong>Sumar probabilidades.</strong> En sucesos independientes se multiplica.<br>
+<strong>Calcular directamente en vez de por el contrario.</strong> El camino directo obliga a sumar muchísimos casos y no es practicable.<br>
+<strong>Convertir el 29 de febrero en un problema.</strong> Desplaza el resultado menos de una décima de punto porcentual.</p>
+</div>
+
+<div class="example-box task">
+<div class="label">Ejercicio</div>
+<p>Calcula la probabilidad de al menos un cumpleaños compartido en un grupo de 5
+personas. Explica por qué el número es tanto menor que con 23.</p>
+<details class="solution">
+<summary>Ver solución</summary>
+<p>Todos distintos: 365/365 &middot; 364/365 &middot; 363/365 &middot; 362/365 &middot; 361/365 &asymp; 0,9729<br>
+Al menos un par: 1 &minus; 0,9729 = <strong>2,7 %</strong><br><br>
+Con 5 personas solo hay 5 &middot; 4 &divide; 2 = 10 pares posibles, mientras que con
+23 hay 253. El número de pares crece de forma cuadrática con el tamaño del grupo, no
+lineal, y por eso la probabilidad sube tan deprisa.</p>
+</details>
 </div>
 
 <div class="example-box">
-<div class="label">Pru&eacute;balo t&uacute; mismo</div>
-<p>Pregunta en tu pr&oacute;ximo grupo grande (clase, reuni&oacute;n familiar, equipo) por los cumplea&ntilde;os - &iexcl;es probable que encuentres una coincidencia!</p>
+<div class="label">Qué ocurre a partir de 23</div>
+<p>La curva sube después sorprendentemente rápido. Con 30 personas la probabilidad ya
+es del 70,6 por ciento, con 41 supera el 90, con 57 llega al 99 y con 70 personas al
+99,9 por ciento. Solo con 366 personas alcanza el 100 por cien seguro, porque entonces
+el principio del palomar obliga a que algún día esté ocupado dos veces. Entre «casi
+seguro» y «seguro de verdad» hay, por tanto, casi 300 personas, y esa larga cola plana
+es justo el motivo de que la intuición falle: pensamos en el 366 cuando lo interesante
+ocurrió hace mucho, en el 23. De paso, los cumpleaños reales no se reparten de forma
+uniforme por el año; a finales de verano nacen más niños que en invierno. Ese desajuste
+hace las coincidencias aún algo más probables, pero mueve el umbral solo en
+fracciones.</p>
 </div>
 
+<p>Para un examen lo que más importa es el método: <strong>primero el suceso
+contrario, luego restar</strong>. Contar directamente cuántos pares podrían coincidir
+lleva a una maraña de dobles conteos, porque también tres o más personas pueden
+compartir día. El rodeo por «todos distintos» lo evita por completo.</p>
 
-<p class="note">La &ldquo;paradoja&rdquo; se llama as&iacute; solo porque el resultado contradice nuestra intuici&oacute;n - matem&aacute;ticamente no hay nada contradictorio en ello.</p>
+<div class="video-callout">
+<p>🎥 Explicado en menos de dos minutos, como Short en nuestro canal de YouTube.</p>
+<a class="video-btn" href="https://youtube.com/shorts/XYMZSSrXJig" target="_blank" rel="noopener">Ver el Short</a>
+</div>
 
-<a class="back-link" href="../index.html">&larr; Volver al resumen</a>
+<p class="note">El mismo principio se llama ataque de cumpleaños en informática: es
+mucho más fácil encontrar <em>dos archivos cualesquiera</em> con el mismo valor hash
+que uno que coincida con un hash dado. Por eso las funciones hash necesitan el doble de
+bits de los que uno supondría ingenuamente.</p>
+
+<h2>Qué significa «50 por ciento» en la práctica</h2>
+
+<p>Una probabilidad del 50,7 por ciento no dice nada sobre una clase concreta.
+Describe lo que ocurre a la larga. Si revisaras mil clases de 23 niños cada una,
+encontrarías al menos un par de cumpleaños coincidentes en unas 507 y en unas 493
+ninguno. En qué grupo cae tu propia clase lo decide solo el azar.</p>
+
+<p>Por eso el experimento funciona tan bien como apuesta. Quien la propone en una
+clase de 30 alumnos gana siete de cada diez veces, y los que pierden siguen
+atribuyéndolo a la suerte, porque el número 365 parece enorme en la cabeza.</p>
+
+<div class="example-box">
+<div class="label">Compruébalo tú mismo</div>
+<p>No hace falta ningún ordenador. Reúne los cumpleaños de varias clases o grupos
+deportivos y anota cada vez solo si había un par coincidente. Después de veinte grupos
+la tendencia ya se ve con claridad: con grupos de unas 23 personas la proporción queda
+cerca de uno a uno, y a partir de 30 se inclina claramente hacia los aciertos. Este
+tipo de experimentos de frecuencia es la forma más gráfica de entender la
+probabilidad, porque enseñan que una cifra como el 50,7 por ciento habla de muchas
+repeticiones y no del caso siguiente.</p>
+</div>
+
+<a class="back-link" href="../index.html">&larr; Volver al índice</a>
 </article>
 </main>
 

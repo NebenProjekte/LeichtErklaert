@@ -48,28 +48,49 @@
 <span class="subject-pill math">Math - Algebra</span>
 <h1>Quadratic Equations Explained Simply</h1>
 
-<p>A quadratic equation is one in which the unknown appears
-<strong>squared</strong> and in no higher power. Its graph is always a parabola, and
-asking for the solutions is asking where that parabola crosses the x-axis. That can
-happen twice, once, or not at all.</p>
+<p>You recognise a quadratic equation by the fact that the unknown appears
+<strong>squared</strong> and in no higher power. Its graph is always a parabola, and the
+question about the solutions is the question of where this parabola crosses the x-axis.
+That can be two points, a single one or none at all — and exactly these three cases make
+up the topic.</p>
 
 <div class="formula-box">
 ax² + bx + c = 0 &nbsp;&rarr;&nbsp; x = ( &minus;b &plusmn; &radic;(b² &minus; 4ac) ) / (2a)
-<small>The quadratic formula. It always works as long as a is not zero</small>
+<small>The quadratic formula (in German schools nicknamed the &ldquo;Mitternachtsformel&rdquo;, the midnight formula). It always works as long as a is not zero</small>
 </div>
 
-<h2>Two formulas, one idea</h2>
+<div class="example-box glossary">
+<div class="label">Key terms</div>
+<p><strong>Normal form</strong> — x² + px + q = 0, that is, with a = 1 in front.<br>
+<strong>Discriminant D</strong> — the expression under the root, b² &minus; 4ac. It
+decides the number of solutions.<br>
+<strong>Root (zero)</strong> — an x-value at which the parabola meets the x-axis.<br>
+<strong>Vertex</strong> — the highest or lowest point of the parabola.<br>
+<strong>Vieta's formulas</strong> — for x² + px + q the following holds: x₁ + x₂ = &minus;p and
+x₁ &middot; x₂ = q.</p>
+</div>
 
-<p>Many students treat the quadratic formula and the reduced pq-formula as separate
-methods. They are not. The pq-formula is simply the quadratic formula for the special
-case a = 1. Divide 2x² + 6x &minus; 8 = 0 by 2 and you get x² + 3x &minus; 4 = 0, where
-the shorter version applies.</p>
+<h2>Two formulas, the same thing</h2>
 
-<p>The decisive part of both is the expression under the square root, called the
-discriminant. If it is positive there are two distinct solutions. If it is exactly
-zero both solutions coincide and the parabola touches the axis instead of crossing it.
-If it is negative there is no real solution, because no real number squares to a
-negative value.</p>
+<p>At school two formulas are in circulation, and many people take them for different
+methods. They are not. The <strong>p-q formula</strong> is just the quadratic formula for
+the special case a = 1. If you first divide an equation like 2x² + 6x &minus; 8 = 0 by 2,
+you end up with x² + 3x &minus; 4 = 0 and may use the shorter formula. If you want to avoid
+the dividing, you take the quadratic formula straight away. Both give the same
+result.</p>
+
+<div class="formula-box">
+x² + px + q = 0 &nbsp;&rarr;&nbsp; x = &minus;p/2 &plusmn; &radic;( (p/2)² &minus; q )
+<small>p-q formula — only valid if there is a 1 in front of the x²</small>
+</div>
+
+<p>The decisive part of both formulas is the expression under the root. It is called the
+discriminant because it discriminates — <em>discriminare</em> is Latin for to
+distinguish. If it is positive, there are two different roots and therefore two
+solutions. If it is exactly zero, the two solutions coincide: the parabola touches the
+x-axis instead of crossing it. If it is negative, there is no solution among the real
+numbers, because you cannot take the square root of a negative number. The parabola then
+floats completely above or below the axis.</p>
 
 <div class="diagram">
 <svg viewBox="0 0 340 276" width="300" height="244" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three parabolas with two, one and no roots">
@@ -92,51 +113,155 @@ negative value.</p>
 </div>
 
 <div class="calc">
-2x² &minus; 8x + 6 = 0<br>
-D = 64 &minus; 48 = 16<br>
-x = ( 8 &plusmn; 4 ) / 4 &rarr; x₁ = <strong>3</strong>, x₂ = <strong>1</strong><br>
+Example 1: 2x² &minus; 8x + 6 = 0<br>
+a = 2, b = &minus;8, c = 6<br>
+D = (&minus;8)² &minus; 4 &middot; 2 &middot; 6 = 64 &minus; 48 = 16<br>
+x = ( 8 &plusmn; &radic;16 ) / 4 = ( 8 &plusmn; 4 ) / 4<br>
+x₁ = <strong>3</strong>, x₂ = <strong>1</strong><br>
 <br>
-x² &minus; 6x + 9 = 0 &rarr; D = 0 &rarr; x = <strong>3</strong> (double root)<br>
-x² + 2x + 5 = 0 &rarr; D = &minus;16 &rarr; <strong>no real solution</strong>
+Example 2: x² &minus; 6x + 9 = 0<br>
+D = 36 &minus; 36 = 0<br>
+x = 6/2 = <strong>3</strong> (double solution)<br>
+<br>
+Example 3: x² + 2x + 5 = 0<br>
+D = 4 &minus; 20 = &minus;16 &rarr; <strong>no real solution</strong>
 </div>
 
 <table class="datatable">
 <caption>What the discriminant tells you</caption>
 <thead><tr><th>D = b² &minus; 4ac</th><th>Solutions</th><th>The parabola …</th></tr></thead>
 <tbody>
-<tr><td>D &gt; 0</td><td>two distinct</td><td>crosses the x-axis twice</td></tr>
-<tr><td>D = 0</td><td>one double root</td><td>touches the axis at its vertex</td></tr>
-<tr><td>D &lt; 0</td><td>none real</td><td>never reaches the axis</td></tr>
+<tr><td>D &gt; 0</td><td>two different</td><td>crosses the x-axis twice</td></tr>
+<tr><td>D = 0</td><td>one double</td><td>touches the x-axis at the vertex</td></tr>
+<tr><td>D &lt; 0</td><td>no real solution</td><td>does not meet the x-axis</td></tr>
 </tbody>
 </table>
 
-<h2>When no formula is needed</h2>
+<h2>When you do not need a formula at all</h2>
 
-<p>If the constant term is missing, factor out x: x(ax + b) = 0 gives x = 0 or
-x = &minus;b/a. If the linear term is missing, as in x² &minus; 49 = 0, take the square
-root directly and remember both signs: x = ±7. Vieta's formulas also help — for
-x² + px + q the roots add up to &minus;p and multiply to q, which cracks most
-integer problems in your head.</p>
+<p>Two types can be solved in your head, and it is worth checking for them first.
+If the <strong>constant term</strong> is missing, that is, in ax² + bx = 0, you factor out
+x: x(ax + b) = 0. A product is zero when one factor is zero — so x = 0 or
+x = &minus;b/a. If instead the <strong>linear term</strong> is missing, as in
+x² &minus; 49 = 0, you take the square root directly and get x = ±7. The plus-minus is
+especially often forgotten here.</p>
+
+<p>Vieta's formulas are also practical. For x² + px + q = 0 the sum of the solutions is
+&minus;p and their product is q. For x² &minus; 7x + 12 = 0 you are therefore looking for two
+numbers that add up to 7 and multiply to 12 — those are 3 and 4. Done, without a formula.
+For problems with whole-number solutions this is often the quickest way, and it also
+serves as a check for a result from the formula.</p>
+
+<p class="dialog-intro">💬 Mia asks Grandpa Theo</p>
+<div class="dialog">
+<div class="dialog-line">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
+<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
+<circle cx="24" cy="36" r="6" fill="#fff"/>
+<circle cx="40" cy="36" r="6" fill="#fff"/>
+<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Mia</div>
+<p>Why is it called the &ldquo;midnight formula&rdquo; in German, of all things?</p>
+</div>
+</div>
+<div class="dialog-line right">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
+<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
+<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
+<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
+<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
+<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Grandpa Theo</div>
+<p>Because you are supposed to know it so well that you could recite it at midnight if someone woke you up. A teacher's saying, not a mathematical term.</p>
+</div>
+</div>
+<div class="dialog-line">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
+<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
+<circle cx="24" cy="36" r="6" fill="#fff"/>
+<circle cx="40" cy="36" r="6" fill="#fff"/>
+<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Mia</div>
+<p>And if there is something negative under the root — is the problem broken then?</p>
+</div>
+</div>
+<div class="dialog-line right">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
+<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
+<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
+<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
+<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
+<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Grandpa Theo</div>
+<p>No, the answer is simply: no real solution. Later you will learn about complex numbers, where there are solutions after all. At school, though, you simply write down at that point that none exists.</p>
+</div>
+</div>
+</div>
 
 <div class="example-box warn">
 <div class="label">Common mistakes</div>
-<p><strong>Using the pq-formula when the leading coefficient is not 1.</strong><br>
-<strong>Losing the sign of b.</strong> If b = &minus;8, the formula contains +8.<br>
-<strong>Giving only the positive square root.</strong> x² = 49 has two solutions.<br>
-<strong>Not moving everything to one side first.</strong> Both formulas assume the
-equation equals zero.</p>
+<p><strong>Using the p-q formula although there is no 1 in front of the x².</strong> First
+divide by a, otherwise nonsense comes out.<br>
+<strong>Forgetting the sign of b.</strong> For b = &minus;8 the formula contains
+&minus;(&minus;8) = +8.<br>
+<strong>Giving only the positive solution when taking the square root.</strong> x² = 49 has two
+solutions, +7 and &minus;7.<br>
+<strong>Not bringing the equation to zero.</strong> Both formulas assume that there is a
+zero on the right of the equals sign.</p>
 </div>
 
 <div class="example-box task">
 <div class="label">Practice problem</div>
-<p>A rectangular bed is 3 m longer than it is wide and covers 40 m². How wide is it?</p>
+<p>A rectangular flower bed is 3 m longer than it is wide and has an area of 40 m².
+How wide is it?</p>
 <details class="solution">
 <summary>Show solution</summary>
-<p>x(x + 3) = 40 &rarr; x² + 3x &minus; 40 = 0 &rarr; x = &minus;1.5 ± 6.5 &rarr;
-x₁ = <strong>5</strong>, x₂ = &minus;8. A width cannot be negative, so the bed is
-<strong>5 m wide</strong> and 8 m long.</p>
+<p>Width x, length x + 3, area x(x + 3) = 40<br>
+x² + 3x &minus; 40 = 0<br>
+p-q formula with p = 3 and q = &minus;40:<br>
+x = &minus;1.5 ± &radic;(2.25 + 40) = &minus;1.5 ± &radic;42.25 = &minus;1.5 ± 6.5<br>
+x₁ = <strong>5</strong>, x₂ = &minus;8<br>
+There is no such thing as a negative width, so the bed is <strong>5 m wide</strong> and
+8 m long. Check: 5 &middot; 8 = 40 m². <br>
+Remember: with word problems you always have to check whether the solutions make sense —
+mathematics delivers both, reality only one.</p>
 </details>
 </div>
+
+<p class="note">Quadratic equations are the entry point to everything that comes after:
+vertex form, families of parabolas, later the roots of polynomial functions. If you can
+reliably tell the three cases of the discriminant apart, you have got the hardest part
+behind you.</p>
 
 <div class="example-box">
 <div class="label">Related topics</div>

@@ -47,15 +47,38 @@
 <article class="topic">
 <span class="subject-pill math">Math &middot; Functions</span>
 <h1>Exponential Growth Explained Simply</h1>
-<p>With <strong>linear</strong> growth, the same amount is added each time. With <strong>exponential</strong> growth, the amount is <strong>multiplied</strong> by the same factor each time - and that gets surprisingly huge, surprisingly fast.</p>
+
+<p>With <strong>linear</strong> growth, the same amount is added in every step. With
+<strong>exponential</strong> growth, the value is multiplied by the same factor in every
+step. The difference looks tiny at the start and is enormous after only a few steps.</p>
 
 <div class="formula-box">
-K(n) = K&#8320; &times; (1 + p&divide;100)&#8319;
-<small>K&#8320; = starting value, p = growth rate in %, n = number of steps</small>
+N(t) = N₀ &middot; q<sup>t</sup>
+<small>N₀ starting value &middot; q growth factor &middot; t number of steps</small>
 </div>
 
+<div class="example-box glossary">
+<div class="label">Key terms</div>
+<p><strong>Growth factor q</strong> — 1.05 for a 5% increase, 0.95 for a 5% decrease.<br>
+<strong>Doubling time</strong> — how long it takes to reach twice the value.<br>
+<strong>Half-life</strong> — the same for decay.<br>
+<strong>Linear growth</strong> — constant increase, the graph is a straight line.<br>
+<strong>Exponential growth</strong> — constant factor, the graph gets steeper and steeper.</p>
+</div>
+
+<table class="datatable">
+<caption>Ten steps compared</caption>
+<thead><tr><th>Step</th><th>linear (+5 per step)</th><th>exponential (&middot;2)</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>5</td><td>5</td></tr>
+<tr><td>3</td><td>20</td><td>40</td></tr>
+<tr><td>5</td><td>30</td><td>160</td></tr>
+<tr><td>10</td><td>55</td><td><strong>5,120</strong></td></tr>
+</tbody>
+</table>
+
 <div class="diagram">
-<svg viewBox="0 0 580 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Verdopplung von Bakterien alle 20 Minuten, von 1 auf 16">
+<svg viewBox="0 0 580 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bacteria doubling every 20 minutes, from 1 to 16">
 <text x="0" y="35" font-size="13" fill="#3a2a22" font-weight="700">Minute 0: 1</text>
 <circle cx="145" cy="31" r="9" fill="#3d8f7f"/>
 <text x="0" y="69" font-size="13" fill="#3a2a22" font-weight="700">Minute 20: 2</text>
@@ -95,9 +118,28 @@ K(n) = K&#8320; &times; (1 + p&divide;100)&#8319;
 </svg>
 </div>
 
+<h2>The rice grain problem</h2>
+
+<div class="calc">
+Square 1: 1 grain &middot; Square 2: 2 &middot; Square 3: 4 &middot; Square 4: 8 …<br>
+<br>
+Square 64 alone: 2<sup>63</sup> &asymp; 9.2 &middot; 10<sup>18</sup> grains<br>
+The whole chessboard: 2<sup>64</sup> &minus; 1 &asymp; 1.8 &middot; 10<sup>19</sup><br>
+<br>
+At 0.03 g per grain that is about <strong>550 billion tonnes</strong> —
+about a thousand times the world's annual rice harvest.
+</div>
+
+<h2>Estimating the doubling time</h2>
+
+<p>The rule of 70 gives a useful approximation in seconds: doubling time
+&asymp; 70 divided by the growth rate in percent. At 7% interest, capital doubles in
+about ten years; at 2% it takes about 35.</p>
+
+<p>The same idea works for decay. A substance with a half-life of 5 days has lost half of its amount after 5 days, three quarters after 10 days, and after 15 days only one eighth is left. Starting from 100 g, that is 100 &middot; 0.5<sup>3</sup> = 12.5 g. Here the growth factor is q = 0.5 per half-life.</p>
+
 <p class="dialog-intro">💬 Mia asks Grandpa Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -113,10 +155,9 @@ K(n) = K&#8320; &times; (1 + p&divide;100)&#8319;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>How fast is exponential growth, really?</p>
+<p>Two percent a year sounds like almost nothing.</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -132,10 +173,9 @@ K(n) = K&#8320; &times; (1 + p&divide;100)&#8319;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>Look at the bacteria above: they double every 20 minutes. Starting from 1, after just 4 doublings (80 minutes) you already have 16 - and after 24 hours it would be billions!</p>
+<p>For one year, yes. After 35 years it is double, after 70 years four times as much. Exponential growth is patient.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -151,10 +191,9 @@ K(n) = K&#8320; &times; (1 + p&divide;100)&#8319;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Wow. Does that apply to money too?</p>
+<p>And with decay?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -170,58 +209,80 @@ K(n) = K&#8320; &times; (1 + p&divide;100)&#8319;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>Exactly, that's called compound interest: if you invest $1000 at 5% interest, you get $50 in the first year. But in the second year you get 5% on $1050, so a bit more than the first year.</p>
+<p>The same thing backwards. The factor is then smaller than 1 — after every half-life half is left, never zero.</p>
 </div>
-</div>
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>Does that really add up that much?</p>
 </div>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Grandpa Theo</div>
-<p>Yes! After 10 years, your $1000 would have grown to around $1629 - just from interest continuously earning interest on itself.</p>
-</div>
+<div class="example-box warn">
+<div class="label">Common mistakes</div>
+<p><strong>Adding percentages instead of multiplying factors.</strong> Two increases of 10% make 21%, not 20%.<br>
+<strong>Getting the factor wrong.</strong> A 5% increase means q = 1.05, not 0.05.<br>
+<strong>Estimating linearly.</strong> &ldquo;Double after 10 years, triple after 20&rdquo; is wrong — it is four times as much.<br>
+<strong>Ignoring limits.</strong> In nature, exponential growth always ends, because space or food runs out.</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Practice problem</div>
+<p>A bacterial culture starts with 500 cells and doubles every 20 minutes.
+How many cells are there after 3 hours? After how long would there be a million?</p>
+<details class="solution">
+<summary>Show solution</summary>
+<p>3 hours are 180 minutes, so 180 &divide; 20 = 9 doublings.<br>
+N = 500 &middot; 2<sup>9</sup> = 500 &middot; 512 = <strong>256,000 cells</strong><br><br>
+For a million: 1,000,000 &divide; 500 = 2,000, and 2<sup>11</sup> = 2,048 is just
+above that. So 11 doublings &rarr; 11 &middot; 20 min =
+<strong>220 minutes</strong>, which is 3 hours 40 minutes.<br>
+Remarkable: the culture needed three hours for its first 256,000 cells, but only twenty
+minutes for the next 256,000.</p>
+</details>
 </div>
+
+<h2>Why exponential growth always ends</h2>
+
+<p>If you keep calculating exponential growth for long enough, absurd numbers come out.
+A bacterial culture that doubles every 20 minutes would have more mass than the Earth
+after two days. That obviously does not happen — and the reason belongs to this topic just
+as much as the formula itself.</p>
+
+<p>In reality, every kind of growth hits a limit sooner or later: the nutrient medium is
+used up, the space is full, the waste products poison the culture. The growth factor then
+does not stay constant but moves towards 1. The steep exponential curve turns into an
+<strong>S-curve</strong>, called logistic growth in mathematics. It starts out
+exponentially, is steepest in the middle and then levels off towards a maximum value, the
+so-called <strong>carrying capacity</strong>. Exactly the same shape describes how a
+disease spreads through a population, how a new product sells, or how a population grows
+in a limited habitat.</p>
 
 <div class="example-box">
-<div class="label">Try it yourself</div>
-<p>$1000 at 5% interest, after 10 years: K(10) = 1000 &times; 1.05&sup1;&#8304; &asymp; $1628.89 <br><small>Check it with your calculator!</small></p>
+<div class="label">The calculation for compound interest</div>
+<p>The best-known everyday example of exponential growth is compound interest, and it
+shows the formula in action. If you invest 2,000 euros at 4 percent per year, after n
+years you do not have 2,000 + n &middot; 80 euros, but 2,000 &middot; 1.04<sup>n</sup>.
+After 10 years that is 2,960 euros, after 20 years 4,382 euros and after 40 years 9,602
+euros. Calculated linearly, it would only have been 5,200 euros after 40 years — the
+difference of over 4,400 euros is pure compound-interest effect. The rule of 70 lets you
+estimate this in your head: 70 divided by 4 gives about 17.5 years of doubling time, and
+40 years is a little over two doublings, so roughly four to five times the starting
+amount. The exact calculation confirms it: 1.04<sup>40</sup> is about 4.8. This is
+precisely why the same formula is so powerful in both directions — in saving it works in
+the investor's favour, with debts and loans it works against them.</p>
+</div>
+
+<p>For exams it is worth keeping the two cases cleanly apart: as long as nothing slows
+the growth, N(t) = N<sub>0</sub> &middot; q<sup>t</sup> holds. As soon as a limit comes
+into play, the exponential function is only an approximation for the early phase — and
+anyone who uses it beyond that ends up with bacteria as heavy as the Earth.</p>
+
+<div class="video-callout">
+<p>🎥 Explained in under two minutes – as a Short on our YouTube channel: fold a sheet of paper 42 times and you are at the Moon.</p>
+<a class="video-btn" href="https://youtube.com/shorts/FMOXuKvI4MU" target="_blank" rel="noopener">Watch the Short</a>
 </div>
 
 
-<p class="note">The same principle - just reversed, as a decrease instead of an increase - also explains why radioactive substances decay more and more slowly (see <a href="../../chemie/radioaktivitaet.html">Radioactivity</a>).</p>
-
+<p class="note">The same mathematics lies behind compound interest, the spread of
+viruses, chain reactions and the storage density of computer chips. Once you understand
+it, you recognise it everywhere.</p>
 <a class="back-link" href="../index.html">&larr; Back to overview</a>
 </article>
 </main>

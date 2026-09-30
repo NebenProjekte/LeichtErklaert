@@ -45,27 +45,46 @@
 <div class="breadcrumbs"><a href="../index.html">Inicio</a> &rsaquo; <a href="../index.html#matematicas">Matemáticas</a> &rsaquo; F&oacute;rmulas de Binomios</div>
 
 <article class="topic">
-<span class="subject-pill math">Matem&aacute;ticas &middot; &Aacute;lgebra</span>
-<h1>Las F&oacute;rmulas de los Binomios explicadas de forma sencilla</h1>
-<p>La primera f&oacute;rmula del binomio muestra c&oacute;mo calcular <strong>(a + b)&sup2;</strong> sin multiplicar todo t&eacute;rmino por t&eacute;rmino. El cuadrado colorido de abajo te muestra exactamente por qu&eacute; es as&iacute;.</p>
+<span class="subject-pill math">Matemáticas &middot; Álgebra</span>
+<h1>Las fórmulas de los productos notables explicadas de forma sencilla</h1>
+
+<p>Los productos notables (también llamados identidades notables) no son reglas nuevas,
+sino el resultado ya desarrollado de tres expresiones con paréntesis que aparecen
+constantemente. Quien los conoce se ahorra tres pasos de cálculo cada vez en un
+examen.</p>
 
 <div class="formula-box">
-(a + b)&sup2; = a&sup2; + 2ab + b&sup2;
-<small>1&ordf; f&oacute;rmula del binomio</small>
+(a + b)² = a² + 2ab + b²<br>
+(a &minus; b)² = a² &minus; 2ab + b²<br>
+(a + b)(a &minus; b) = a² &minus; b²
 </div>
 
-<div class="formula-box">
-(a - b)&sup2; = a&sup2; - 2ab + b&sup2;
-<small>2&ordf; f&oacute;rmula del binomio</small>
+<div class="example-box glossary">
+<div class="label">Términos clave</div>
+<p><strong>Binomio</strong> — una expresión con exactamente dos términos, por ejemplo a + b.<br>
+<strong>Desarrollar</strong> — quitar los paréntesis: (a+b)² pasa a ser a²+2ab+b².<br>
+<strong>Factorizar</strong> — el camino de vuelta: x²&minus;9 pasa a ser (x+3)(x&minus;3).<br>
+<strong>Doble producto</strong> — el 2ab del medio, justo el que más se olvida.<br>
+<strong>Tercera fórmula</strong> — también llamada diferencia de cuadrados; el término del medio desaparece.</p>
 </div>
 
-<div class="formula-box">
-(a + b)(a - b) = a&sup2; - b&sup2;
-<small>3&ordf; f&oacute;rmula del binomio</small>
+<h2>Por qué está el término del medio</h2>
+
+<p>(a+b)² significa (a+b)·(a+b). Cada término del primer paréntesis se multiplica por
+cada término del segundo: salen cuatro productos, de los cuales dos son iguales.</p>
+
+<div class="calc">
+(a + b)(a + b)<br>
+= a&middot;a + a&middot;b + b&middot;a + b&middot;b<br>
+= a² + ab + ab + b²<br>
+= <strong>a² + 2ab + b²</strong>
 </div>
+
+<p>Geométricamente es un cuadrado de lado a+b. Se descompone en un cuadrado grande a²,
+uno pequeño b² y <em>dos</em> rectángulos iguales ab. De ahí viene el dos.</p>
 
 <div class="diagram">
-<svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Quadrat der Seitenl&auml;nge a+b, aufgeteilt in vier farbige Fl&auml;chen: a hoch 2, ab, ab und b hoch 2">
+<svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cuadrado de lado a+b dividido en cuatro áreas de colores: a al cuadrado, ab, ab y b al cuadrado">
 <line x1="55" y1="30" x2="205" y2="30" stroke="#3a2a22" stroke-width="2"/>
 <line x1="55" y1="24" x2="55" y2="36" stroke="#3a2a22" stroke-width="2"/>
 <line x1="205" y1="24" x2="205" y2="36" stroke="#3a2a22" stroke-width="2"/>
@@ -94,9 +113,37 @@
 </svg>
 </div>
 
-<p class="dialog-intro">💬 Mia le pregunta al Abuelo Theo</p>
+<p>Las otras dos fórmulas salen de la misma multiplicación. Para la segunda se cambia b
+por &minus;b: (a &minus; b)² = a² + 2a(&minus;b) + (&minus;b)² = a² &minus; 2ab + b².
+Para la tercera se desarrolla (a+b)(a&minus;b) = a² &minus; ab + ab &minus; b². Los dos
+términos del medio se anulan y solo queda a² &minus; b².</p>
+
+<table class="datatable">
+<caption>Uso de las fórmulas en ambos sentidos</caption>
+<thead><tr><th>Expresión de partida</th><th>Fórmula</th><th>Resultado</th></tr></thead>
+<tbody>
+<tr><td>(x + 5)²</td><td>1.ª</td><td>x² + 10x + 25</td></tr>
+<tr><td>(3y &minus; 4)²</td><td>2.ª</td><td>9y² &minus; 24y + 16</td></tr>
+<tr><td>(x + 7)(x &minus; 7)</td><td>3.ª</td><td>x² &minus; 49</td></tr>
+<tr><td>x² + 6x + 9</td><td>1.ª, al revés</td><td>(x + 3)²</td></tr>
+<tr><td>4a² &minus; 25</td><td>3.ª, al revés</td><td>(2a + 5)(2a &minus; 5)</td></tr>
+</tbody>
+</table>
+
+<h2>Cómo reconocer el patrón</h2>
+
+<p>Para decidir si una expresión es un producto notable disfrazado, hay que comprobar tres cosas. Primero: ¿son cuadrados perfectos los dos términos de los extremos? Segundo: ¿es el término del medio exactamente el doble del producto de las dos raíces? Tercero: ¿qué signo tiene el término del medio? El más indica la primera fórmula y el menos, la segunda. Tomemos x² + 10x + 25: x² es (x)², 25 es 5², y 2 &middot; x &middot; 5 = 10x, que coincide, así que es (x + 5)². Ahora tomemos x² + 10x + 16: x² es (x)² y 16 es 4², pero 2 &middot; x &middot; 4 = 8x, no 10x. El patrón no encaja, así que esto no es un producto notable. Aun así se puede factorizar como (x + 2)(x + 8), porque 2 + 8 = 10 y 2 &middot; 8 = 16. Si la comprobación falla, es una señal para probar otro método en lugar de forzar la fórmula.</p>
+
+<h2>El truco para el cálculo mental</h2>
+
+<div class="calc">
+99² = (100 &minus; 1)² = 10.000 &minus; 200 + 1 = <strong>9.801</strong><br>
+<br>
+102 &middot; 98 = (100+2)(100&minus;2) = 10.000 &minus; 4 = <strong>9.996</strong>
+</div>
+
+<p class="dialog-intro">💬 Mia le pregunta al abuelo Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -112,10 +159,9 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>&iquest;Por qu&eacute; (a+b)&sup2; no es simplemente a&sup2;+b&sup2;? &iexcl;Ser&iacute;a mucho m&aacute;s f&aacute;cil!</p>
+<p>¿Por qué (a+b)² no es simplemente a² + b²?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -131,10 +177,9 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Abuelo Theo</div>
-<p>&iexcl;Un error muy com&uacute;n! Mira el cuadrado colorido: junto al campo rojo a&sup2; y el campo verde azulado b&sup2;, hay dos rect&aacute;ngulos dorados ab - &iexcl;no los olvides!</p>
+<p>Pruébalo con números: (2+3)² es 25. a²+b² sería 4+9 = 13. Faltan exactamente 12, y esos son el 2ab.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -150,10 +195,9 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>&iquest;Y la segunda f&oacute;rmula, (a-b)&sup2;?</p>
+<p>¿Entonces siempre hay que comprobar primero con números?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -169,59 +213,83 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Abuelo Theo</div>
-<p>Casi id&eacute;ntica, solo con un menos delante del 2ab: (a-b)&sup2; = a&sup2; - 2ab + b&sup2;. Pero el b&sup2; siempre queda positivo, porque un cuadrado nunca puede ser negativo.</p>
+<p>Exacto. Una fórmula que falla con dos números sencillos nunca es correcta.</p>
 </div>
-</div>
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>&iquest;Y la tercera f&oacute;rmula?</p>
 </div>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Abuelo Theo</div>
-<p>La tercera es un caso especial: (a+b)(a-b) = a&sup2; - b&sup2;. Los t&eacute;rminos mixtos ab se cancelan entre s&iacute; - mira: +ab y -ab suman cero!</p>
-</div>
+<div class="example-box warn">
+<div class="label">Errores habituales</div>
+<p><strong>Olvidar el término del medio.</strong> Con diferencia, el error más frecuente.<br>
+<strong>El signo en la segunda fórmula.</strong> Solo el término del medio se vuelve negativo; b² sigue siendo positivo.<br>
+<strong>No elevar al cuadrado los factores.</strong> (3y)² es 9y², no 3y².<br>
+<strong>Aplicar la tercera fórmula con signos iguales.</strong> Solo vale para (a+b)(a&minus;b).</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Ejercicio</div>
+<p>Escribe 9x² &minus; 30x + 25 como producto y comprueba el resultado para x = 2.</p>
+<details class="solution">
+<summary>Ver solución</summary>
+<p>9x² es (3x)², 25 es 5², y 2 &middot; 3x &middot; 5 = 30x: el término del medio
+encaja con signo negativo. Por tanto, usamos la segunda fórmula:<br>
+9x² &minus; 30x + 25 = <strong>(3x &minus; 5)²</strong><br><br>
+Comprobación con x = 2: a la izquierda 9&middot;4 &minus; 60 + 25 = 36 &minus; 60 + 25 = 1.
+A la derecha (6 &minus; 5)² = 1 ✓</p>
+</details>
 </div>
+
+<div class="example-box task">
+<div class="label">Segundo ejercicio</div>
+<p>Desarrolla (2x &minus; 3y)² y comprueba el resultado con x = 1 e y = 1.</p>
+<details class="solution">
+<summary>Ver solución</summary>
+<p>Segunda fórmula con a = 2x y b = 3y:<br>
+(2x)² = 4x², 2 &middot; 2x &middot; 3y = 12xy, (3y)² = 9y²<br>
+Por tanto (2x &minus; 3y)² = <strong>4x² &minus; 12xy + 9y²</strong><br><br>
+Comprobación con x = 1 e y = 1: a la izquierda (2 &minus; 3)² = 1. A la derecha
+4 &minus; 12 + 9 = 1 ✓</p>
+</details>
+</div>
+
+<h2>Para qué sirven de verdad</h2>
+
+<p>En el colegio, los productos notables aparecen primero al desarrollar paréntesis.
+Pero su verdadero valor se ve en el sentido contrario: al <strong>factorizar</strong>.
+Quien reconoce en una expresión el patrón de una de estas fórmulas puede convertirla en
+un producto, y los productos se pueden simplificar, mientras que las sumas no.</p>
+
+<p>Un ejemplo: la fracción (x² &minus; 9) &divide; (x &minus; 3) parece a primera vista
+un trabajo pesado. Pero si se reconoce en el numerador la tercera fórmula, queda
+(x + 3)(x &minus; 3) &divide; (x &minus; 3), y el segundo factor se simplifica. Solo
+queda x + 3. Este atajo se necesita constantemente más adelante, por ejemplo al
+calcular límites o al simplificar fracciones algebraicas.</p>
 
 <div class="example-box">
-<div class="label">Practica t&uacute;</div>
-<p>Desarrolla: (x + 3)&sup2; <br><small>Soluci&oacute;n: x&sup2; + 6x + 9</small><br><br>Truco de c&aacute;lculo mental: 102&sup2; = (100+2)&sup2; = 10000 + 400 + 4 = 10404 - &iexcl;sin calculadora!</p>
+<div class="label">Completar cuadrados</div>
+<p>La segunda gran aplicación se llama <strong>completar cuadrados</strong> y está
+detrás de toda la teoría de las parábolas. Tomemos x² + 6x + 1. Todavía no es una
+identidad notable, pero casi: (x + 3)² = x² + 6x + 9, así que faltan exactamente 8. Por
+eso se escribe x² + 6x + 1 = (x + 3)² &minus; 8. El truco es siempre el mismo
+movimiento: se divide entre dos el número que acompaña a x, se eleva al cuadrado, se
+suma y se resta de inmediato. La ventaja es grande, porque en la nueva forma se lee
+directamente el vértice de la parábola: aquí está en (&minus;3 | &minus;8). Y si este
+camino se recorre en general para ax² + bx + c, se llega a la fórmula general. No es
+una regla caída del cielo, sino un cuadrado completado que se resolvió de una vez por
+todas.</p>
 </div>
 
+<p>Un tercer uso es puro cálculo mental. 49 &middot; 51 se puede leer como
+(50 &minus; 1)(50 + 1), es decir, 2.500 &minus; 1 = 2.499. Y 102² es
+(100 + 2)² = 10.000 + 400 + 4 = 10.404. Quien domina bien las tres fórmulas hace estos
+cálculos de cabeza más rápido de lo que otros los teclean en la calculadora.</p>
 
-<p class="note">Las f&oacute;rmulas de los binomios aparecen en casi todos los ejercicios de &aacute;lgebra desde 2&ordm; de la ESO en adelante - vale la pena memorizarlas de verdad.</p>
-
-<a class="back-link" href="../index.html">&larr; Volver al resumen</a>
+<p class="note">La tercera fórmula es la clave para racionalizar denominadores: una
+fracción con &radic;2 + 1 en el denominador se multiplica arriba y abajo por
+&radic;2 &minus; 1, y la raíz desaparece. Por ejemplo,
+1 &divide; (&radic;2 + 1) = (&radic;2 &minus; 1) &divide; ((&radic;2)² &minus; 1²) =
+(&radic;2 &minus; 1) &divide; 1 = &radic;2 &minus; 1.</p>
+<a class="back-link" href="../index.html">&larr; Volver al índice</a>
 </article>
 </main>
 

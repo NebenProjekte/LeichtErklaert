@@ -48,27 +48,49 @@
 <span class="subject-pill math">Math - Calculus</span>
 <h1>Derivatives Explained Simply</h1>
 
-<p>A derivative answers one question: <strong>how fast is something changing
-right now?</strong> Not on average over an hour, but at a single instant. On a graph
-that means: how steep is the curve at exactly this point?</p>
+<p>A derivative answers a single question: <strong>how fast is something changing
+right now?</strong> Not on average over an hour, not over a kilometre, but at exactly
+one instant. On a graph, that means: how steep is the curve at this very point? This is
+precisely what differential calculus was invented for, and today it sits inside every
+cruise control, every weather forecast and every curve-sketching exercise in upper
+secondary school.</p>
 
 <div class="formula-box">
 f&prime;(x) = lim<sub>h&rarr;0</sub> [ f(x+h) &minus; f(x) ] / h
-<small>The derivative at x is the slope of the tangent line — the limit of the secant slopes as the second point moves closer</small>
+<small>The derivative at x is the slope of the tangent — the limit of the secant slopes as the second point moves closer and closer</small>
+</div>
+
+<div class="example-box glossary">
+<div class="label">Key terms</div>
+<p><strong>Difference quotient</strong> — the average rate of change between two
+points, that is, the slope of the secant.<br>
+<strong>Derivative (differential quotient)</strong> — the limit of the difference
+quotient, the instantaneous rate of change.<br>
+<strong>Secant</strong> — a straight line that cuts the graph at two points.<br>
+<strong>Tangent</strong> — a straight line that touches the graph at one point and has
+the same slope as the graph there.<br>
+<strong>Extremum</strong> — a point with a horizontal tangent, that is,
+f&prime;(x) = 0. A maximum or a minimum.<br>
+<strong>Inflection point</strong> — the curvature changes there, which shows up as
+f&Prime;(x) = 0.</p>
 </div>
 
 <h2>From secant to tangent</h2>
 
-<p>Finding the slope of a straight line is easy: rise over run. A curve has a
-different slope at every point, so we start with an approximation. Take the point P
-you care about and a second point Q a little to the right. The straight line through
-both is called a secant, and its slope is easy to compute — but it only describes the
-<em>average</em> behaviour between P and Q.</p>
+<p>Finding the slope of a straight line is easy: the difference in height divided by the
+horizontal distance. With a curve this does not work directly, because the slope is
+different at every point. The trick is to be content with an approximation at first.
+You take the point P you want to examine and a second point Q a little further to the
+right. Through both you draw a straight line, the secant. Its slope is easy to compute,
+but it only describes the <em>average</em> behaviour between P and Q.</p>
 
-<p>Now slide Q towards P. The gap, usually called h, gets smaller and smaller, and the
-secant tips over into a particular position: the tangent at P. Its slope is the
-instantaneous rate of change we were looking for. We cannot simply set h to zero,
-because that would put a zero in the denominator — hence the detour through a limit.</p>
+<p>Now you slide Q closer and closer to P. The gap, usually called h, gets smaller and
+smaller. The secant tips over as it does so and approaches one particular position:
+the tangent at P. Its slope is the instantaneous rate of change of the curve that we
+were looking for. The limit as h goes to zero is the precise mathematical way of
+saying &ldquo;slide closer and closer&rdquo;. You cannot simply set h equal to zero,
+because that would leave a zero in the denominator — hence the detour through the
+limit.</p>
 
 <div class="diagram">
 <svg viewBox="0 0 340 240" width="300" height="212" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Parabola with secant and tangent">
@@ -89,6 +111,11 @@ because that would put a zero in the denominator — hence the detour through a 
 <p class="caption">As Q slides towards P, the secant tips into the tangent. Its slope is the derivative at P.</p>
 </div>
 
+<p>In practice nobody evaluates this limit every time. It was worked out once for the
+basic functions, and from that came rules that you can learn by heart. The most
+important one is the power rule: the exponent moves to the front as a factor and then
+goes down by one.</p>
+
 <div class="calc">
 Power rule: f(x) = x<sup>n</sup> &rarr; f&prime;(x) = n &middot; x<sup>n&minus;1</sup><br>
 <br>
@@ -96,55 +123,162 @@ f(x) = x&sup3; &rarr; f&prime;(x) = 3x&sup2;<br>
 f(x) = 5x&sup2; &rarr; f&prime;(x) = 10x<br>
 f(x) = 7 &rarr; f&prime;(x) = 0<br>
 <br>
-f(x) = x&sup3; &minus; 3x + 4 &rarr; f&prime;(x) = 3x&sup2; &minus; 3<br>
-Slope at x = 2: f&prime;(2) = 12 &minus; 3 = <strong>9</strong>
+Combined: f(x) = x&sup3; &minus; 3x + 4<br>
+f&prime;(x) = 3x&sup2; &minus; 3<br>
+<br>
+Slope at x = 2:<br>
+f&prime;(2) = 3 &middot; 4 &minus; 3 = <strong>9</strong><br>
+So the curve rises nine times as steeply there as the line y = x.
 </div>
 
+<p class="note">A constant has derivative zero — that is not a trick question, it is
+easy to picture: the graph of f(x) = 7 is a horizontal line, and a horizontal line does
+not rise anywhere.</p>
+
 <table class="datatable">
-<caption>The differentiation rules</caption>
+<caption>The differentiation rules at a glance</caption>
 <thead><tr><th>Rule</th><th>Formula</th><th>Example</th></tr></thead>
 <tbody>
 <tr><td>Power rule</td><td>x<sup>n</sup> &rarr; n&middot;x<sup>n&minus;1</sup></td><td>x&#8308; &rarr; 4x&sup3;</td></tr>
-<tr><td>Constant factor</td><td>c&middot;f &rarr; c&middot;f&prime;</td><td>6x&sup2; &rarr; 12x</td></tr>
+<tr><td>Constant multiple rule</td><td>c&middot;f(x) &rarr; c&middot;f&prime;(x)</td><td>6x&sup2; &rarr; 12x</td></tr>
 <tr><td>Sum rule</td><td>f + g &rarr; f&prime; + g&prime;</td><td>x&sup2; + x &rarr; 2x + 1</td></tr>
 <tr><td>Product rule</td><td>f&middot;g &rarr; f&prime;g + fg&prime;</td><td>x&middot;sin x &rarr; sin x + x&middot;cos x</td></tr>
 <tr><td>Chain rule</td><td>f(g(x)) &rarr; f&prime;(g(x))&middot;g&prime;(x)</td><td>(2x+1)&sup3; &rarr; 3(2x+1)&sup2;&middot;2</td></tr>
 </tbody>
 </table>
 
+<p>With these five rules you can differentiate almost everything that turns up at
+school. The chain rule is the only one that really needs practice: you differentiate
+the outer function, put the inner function in unchanged, and finally multiply by the
+derivative of the inner function. That last multiplication is the step people forget
+most often.</p>
+
 <h2>What it is used for</h2>
 
-<p>Where f&prime;(x) = 0 the tangent is horizontal, which marks a possible maximum or
-minimum. The second derivative tells you which: negative means the curve bends
-downwards, so it is a maximum; positive means a minimum. That is the core of every
-optimisation problem — the largest area for a given fence, the least material for a
-given volume.</p>
+<p>The most obvious use is curve sketching: where f&prime;(x) = 0 there is a
+horizontal tangent, so there may be a maximum or a minimum. Whether it really is one,
+and which kind, is revealed by the second derivative — if f&Prime; is negative there,
+the curve bends downwards and you have a maximum; if it is positive, you have a
+minimum. This is the core of every optimisation problem: the largest area for a given
+length of fence, the least material for a given volume.</p>
 
-<p>The physical reading matters just as much. Differentiate distance with respect to
-time and you get speed. Differentiate speed again and you get acceleration. A car's
-speedometer displays nothing but the first derivative of its distance function.</p>
+<p>The physical reading is just as important. If you differentiate the distance
+travelled with respect to time, you get the velocity. Differentiate the velocity once
+more and you get the acceleration. The speedometer in a car shows nothing other than
+the first derivative of the distance function, and the feeling of being pressed into
+your seat is the second.</p>
+
+<p class="dialog-intro">💬 Mia asks Grandpa Theo</p>
+<div class="dialog">
+<div class="dialog-line">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
+<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
+<circle cx="24" cy="36" r="6" fill="#fff"/>
+<circle cx="40" cy="36" r="6" fill="#fff"/>
+<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Mia</div>
+<p>Why can't we just set h equal to zero? The calculation would be so much shorter.</p>
+</div>
+</div>
+<div class="dialog-line right">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
+<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
+<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
+<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
+<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
+<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Grandpa Theo</div>
+<p>Because then you would have zero divided by zero, and that is not defined. The limit is the detour that avoids exactly this problem: you look at where the fraction is heading without ever arriving.</p>
+</div>
+</div>
+<div class="dialog-line">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
+<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
+<circle cx="24" cy="36" r="6" fill="#fff"/>
+<circle cx="40" cy="36" r="6" fill="#fff"/>
+<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Mia</div>
+<p>And the second derivative — is that the slope of the slope?</p>
+</div>
+</div>
+<div class="dialog-line right">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
+<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
+<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
+<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
+<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
+<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Grandpa Theo</div>
+<p>Exactly. The first one tells you how fast something changes. The second tells you how fast <strong>that change</strong> is changing. When you drive: speed and gas pedal.</p>
+</div>
+</div>
+</div>
 
 <div class="example-box warn">
 <div class="label">Common mistakes</div>
 <p><strong>Forgetting the inner derivative in the chain rule.</strong> (2x+1)&sup3;
-becomes 3(2x+1)&sup2; <em>times 2</em>.<br>
-<strong>Treating every f&prime;(x) = 0 as an extremum.</strong> For f(x) = x&sup3; the
-derivative vanishes at 0, but that point is a saddle.<br>
-<strong>Carrying the constant along.</strong> x&sup2; + 5 differentiates to 2x, not 2x + 5.</p>
+becomes 3(2x+1)&sup2; <em>times 2</em>, not just 3(2x+1)&sup2;.<br>
+<strong>Declaring every f&prime;(x) = 0 an extremum straight away.</strong> For
+f(x) = x&sup3; we have f&prime;(0) = 0, but the point at 0 is a saddle point, not an
+extremum.<br>
+<strong>Carrying the constant along.</strong> x&sup2; + 5 becomes 2x, not 2x + 5.<br>
+<strong>Confusing the derivative with the function value.</strong> f&prime;(2) is the
+<em>slope</em> at x = 2, not the height of the graph there.</p>
 </div>
 
 <div class="example-box task">
 <div class="label">Practice problem</div>
-<p>For f(x) = x&sup3; &minus; 6x&sup2; + 9x, find every extremum and state whether it
-is a maximum or a minimum.</p>
+<p>Let f(x) = x&sup3; &minus; 6x&sup2; + 9x. Find all extremum points and state whether
+each one is a maximum or a minimum.</p>
 <details class="solution">
 <summary>Show solution</summary>
-<p>f&prime;(x) = 3x&sup2; &minus; 12x + 9 = 0 &rarr; x&sup2; &minus; 4x + 3 = 0 &rarr;
-x = 1 and x = 3.<br>
-f&Prime;(x) = 6x &minus; 12. f&Prime;(1) = &minus;6 &rarr; <strong>maximum at x = 1</strong>,
-f(1) = 4. f&Prime;(3) = 6 &rarr; <strong>minimum at x = 3</strong>, f(3) = 0.</p>
+<p>First derivative: f&prime;(x) = 3x&sup2; &minus; 12x + 9<br>
+Set it to zero: 3x&sup2; &minus; 12x + 9 = 0, divided by 3 this gives x&sup2; &minus; 4x + 3 = 0<br>
+With the quadratic formula: x = (4 &plusmn; &radic;(16 &minus; 12)) / 2 = (4 &plusmn; 2) / 2<br>
+So <strong>x&#8321; = 1</strong> and <strong>x&#8322; = 3</strong>.<br>
+<br>
+Second derivative: f&Prime;(x) = 6x &minus; 12<br>
+f&Prime;(1) = &minus;6, which is negative &rarr; <strong>maximum at x = 1</strong>, function value f(1) = 4<br>
+f&Prime;(3) = 6, which is positive &rarr; <strong>minimum at x = 3</strong>, function value f(3) = 0<br>
+<br>
+So the curve rises up to x = 1, falls until x = 3 and then rises again.</p>
 </details>
 </div>
+
+<p class="note">Whoever has understood the derivative also understands its reverse: the
+integral gathers up again what the derivative has taken apart. Together they form the
+fundamental theorem of calculus — and the reason why you can work back from a velocity
+to the distance travelled.</p>
 
 <div class="example-box">
 <div class="label">Related topics</div>

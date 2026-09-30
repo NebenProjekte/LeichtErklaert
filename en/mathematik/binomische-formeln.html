@@ -47,25 +47,44 @@
 <article class="topic">
 <span class="subject-pill math">Math &middot; Algebra</span>
 <h1>Binomial Formulas Explained Simply</h1>
-<p>The first binomial formula shows how to work out <strong>(a + b)&sup2;</strong> without just multiplying it out term by term. The colorful square below shows you exactly why it looks the way it does.</p>
+
+<p>The binomial formulas are not new rules. They are simply the multiplied-out results
+of three bracket expressions that turn up all the time. If you know them, you save
+three steps of working every time in an exam.</p>
 
 <div class="formula-box">
-(a + b)&sup2; = a&sup2; + 2ab + b&sup2;
-<small>1st binomial formula</small>
+(a + b)² = a² + 2ab + b²<br>
+(a &minus; b)² = a² &minus; 2ab + b²<br>
+(a + b)(a &minus; b) = a² &minus; b²
 </div>
 
-<div class="formula-box">
-(a - b)&sup2; = a&sup2; - 2ab + b&sup2;
-<small>2nd binomial formula</small>
+<div class="example-box glossary">
+<div class="label">Key terms</div>
+<p><strong>Binomial</strong> — an expression with exactly two terms, such as a + b.<br>
+<strong>Expanding</strong> — removing the brackets: (a+b)² becomes a²+2ab+b².<br>
+<strong>Factorising</strong> — the way back: x²&minus;9 becomes (x+3)(x&minus;3).<br>
+<strong>Middle term</strong> — the 2ab in the middle, which is the one people forget most often.<br>
+<strong>Third formula</strong> — also called the difference of two squares; the middle term disappears.</p>
 </div>
 
-<div class="formula-box">
-(a + b)(a - b) = a&sup2; - b&sup2;
-<small>3rd binomial formula</small>
+<h2>Why the middle term is there</h2>
+
+<p>(a+b)² means (a+b)·(a+b). Every term in the first bracket is multiplied by every term
+in the second — that gives four products, two of which are equal.</p>
+
+<div class="calc">
+(a + b)(a + b)<br>
+= a&middot;a + a&middot;b + b&middot;a + b&middot;b<br>
+= a² + ab + ab + b²<br>
+= <strong>a² + 2ab + b²</strong>
 </div>
+
+<p>Geometrically it is a square with side length a+b. It splits into a large square a²,
+a small square b² and <em>two</em> equal rectangles ab. That is where the two comes
+from.</p>
 
 <div class="diagram">
-<svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Quadrat der Seitenl&auml;nge a+b, aufgeteilt in vier farbige Fl&auml;chen: a hoch 2, ab, ab und b hoch 2">
+<svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Square with side length a+b, split into four coloured areas: a squared, ab, ab and b squared">
 <line x1="55" y1="30" x2="205" y2="30" stroke="#3a2a22" stroke-width="2"/>
 <line x1="55" y1="24" x2="55" y2="36" stroke="#3a2a22" stroke-width="2"/>
 <line x1="205" y1="24" x2="205" y2="36" stroke="#3a2a22" stroke-width="2"/>
@@ -94,9 +113,37 @@
 </svg>
 </div>
 
+<p>The other two formulas follow from the same multiplication. For the second one you
+replace b by &minus;b: (a &minus; b)² = a² + 2a(&minus;b) + (&minus;b)² = a² &minus; 2ab + b².
+For the third one you multiply out (a+b)(a&minus;b) = a² &minus; ab + ab &minus; b². The two
+middle terms cancel each other, and only a² &minus; b² remains.</p>
+
+<table class="datatable">
+<caption>Using the formulas in both directions</caption>
+<thead><tr><th>Starting expression</th><th>Formula</th><th>Result</th></tr></thead>
+<tbody>
+<tr><td>(x + 5)²</td><td>1st</td><td>x² + 10x + 25</td></tr>
+<tr><td>(3y &minus; 4)²</td><td>2nd</td><td>9y² &minus; 24y + 16</td></tr>
+<tr><td>(x + 7)(x &minus; 7)</td><td>3rd</td><td>x² &minus; 49</td></tr>
+<tr><td>x² + 6x + 9</td><td>1st, backwards</td><td>(x + 3)²</td></tr>
+<tr><td>4a² &minus; 25</td><td>3rd, backwards</td><td>(2a + 5)(2a &minus; 5)</td></tr>
+</tbody>
+</table>
+
+<h2>How to recognise the pattern</h2>
+
+<p>To decide whether an expression is a binomial formula in disguise, check three things. First, are the outer terms both perfect squares? Second, is the middle term exactly twice the product of the two square roots? Third, what sign does the middle term have — plus points to the first formula, minus to the second. Take x² + 10x + 25: x² is (x)², 25 is 5², and 2 &middot; x &middot; 5 = 10x, which matches, so it is (x + 5)². Now take x² + 10x + 16: x² is (x)² and 16 is 4², but 2 &middot; x &middot; 4 = 8x, not 10x. The pattern does not fit, so this is not a binomial formula. It still factorises, though, as (x + 2)(x + 8), because 2 + 8 = 10 and 2 &middot; 8 = 16. If the check fails, it is a sign to try another method rather than to force the formula.</p>
+
+<h2>The mental arithmetic trick</h2>
+
+<div class="calc">
+99² = (100 &minus; 1)² = 10,000 &minus; 200 + 1 = <strong>9,801</strong><br>
+<br>
+102 &middot; 98 = (100+2)(100&minus;2) = 10,000 &minus; 4 = <strong>9,996</strong>
+</div>
+
 <p class="dialog-intro">💬 Mia asks Grandpa Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -112,10 +159,9 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Why isn't (a+b)&sup2; just a&sup2;+b&sup2;? That would be so much simpler!</p>
+<p>Why is (a+b)² not simply a² + b²?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -131,10 +177,9 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>A very common mistake! Look at the colorful square: next to the red a&sup2; field and the teal b&sup2; field, there are two golden ab rectangles - don't forget those!</p>
+<p>Try it with numbers: (2+3)² is 25. a²+b² would be 4+9 = 13. Exactly 12 is missing — and that is the 2ab.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -150,10 +195,9 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>And the second formula, (a-b)&sup2;?</p>
+<p>So I should always check with numbers first?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -169,58 +213,80 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>Almost identical, just with a minus in front of the 2ab: (a-b)&sup2; = a&sup2; - 2ab + b&sup2;. The b&sup2; stays positive though, since a square can never be negative.</p>
+<p>Exactly. A formula that fails with two simple numbers is never correct.</p>
 </div>
-</div>
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>And the third formula?</p>
 </div>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Grandpa Theo</div>
-<p>The third one is a special case: (a+b)(a-b) = a&sup2; - b&sup2;. The mixed ab terms cancel each other out - look: +ab and -ab add up to zero!</p>
-</div>
+<div class="example-box warn">
+<div class="label">Common mistakes</div>
+<p><strong>Forgetting the middle term.</strong> By far the most common mistake.<br>
+<strong>The sign in the second formula.</strong> Only the middle term becomes negative; b² stays positive.<br>
+<strong>Not squaring the factors.</strong> (3y)² is 9y², not 3y².<br>
+<strong>Using the third formula when both signs are the same.</strong> It only applies to (a+b)(a&minus;b).</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Practice problem</div>
+<p>Write 9x² &minus; 30x + 25 as a product and check your result for x = 2.</p>
+<details class="solution">
+<summary>Show solution</summary>
+<p>9x² is (3x)², 25 is 5², and 2 &middot; 3x &middot; 5 = 30x — the middle term fits
+with a negative sign. So we use the second formula:<br>
+9x² &minus; 30x + 25 = <strong>(3x &minus; 5)²</strong><br><br>
+Check with x = 2: on the left 9&middot;4 &minus; 60 + 25 = 36 &minus; 60 + 25 = 1.
+On the right (6 &minus; 5)² = 1 ✓</p>
+</details>
 </div>
+
+<div class="example-box task">
+<div class="label">Second practice problem</div>
+<p>Expand (2x &minus; 3y)² and check the result with x = 1 and y = 1.</p>
+<details class="solution">
+<summary>Show solution</summary>
+<p>Second formula with a = 2x and b = 3y:<br>
+(2x)² = 4x², 2 &middot; 2x &middot; 3y = 12xy, (3y)² = 9y²<br>
+So (2x &minus; 3y)² = <strong>4x² &minus; 12xy + 9y²</strong><br><br>
+Check with x = 1 and y = 1: on the left (2 &minus; 3)² = 1. On the right
+4 &minus; 12 + 9 = 1 ✓</p>
+</details>
+</div>
+
+<h2>What they are really needed for</h2>
+
+<p>At school the binomial formulas first appear when you expand brackets. Their real
+value, however, shows in the opposite direction: <strong>factorising</strong>. If you
+recognise the pattern of a binomial formula in an expression, you can turn it into a
+product — and products can be cancelled, while sums cannot.</p>
+
+<p>An example: the fraction (x² &minus; 9) &divide; (x &minus; 3) looks like work at
+first sight. But if you recognise the third binomial formula in the numerator, it
+becomes (x + 3)(x &minus; 3) &divide; (x &minus; 3), and the second factor cancels. What
+is left is simply x + 3. You will need exactly this shortcut all the time later on, for
+instance when finding limits or simplifying algebraic fractions.</p>
 
 <div class="example-box">
-<div class="label">Try it yourself</div>
-<p>Expand: (x + 3)&sup2; <br><small>Answer: x&sup2; + 6x + 9</small><br><br>Mental math trick: 102&sup2; = (100+2)&sup2; = 10000 + 400 + 4 = 10404 - no calculator needed!</p>
+<div class="label">Completing the square</div>
+<p>The second big application is called <strong>completing the square</strong>, and it
+lies behind the whole theory of parabolas. Take x² + 6x + 1. This is not yet a binomial
+formula, but almost: (x + 3)² = x² + 6x + 9, so exactly 8 is missing. So you write
+x² + 6x + 1 = (x + 3)² &minus; 8. The trick is always the same move: you halve the number
+in front of x, square it, add it and immediately subtract it again. The benefit is
+large, because in the new form you can read off the vertex of the parabola directly —
+here it is at (&minus;3 | &minus;8). And if you carry this route through in general for
+ax² + bx + c, you end up with the quadratic formula. It is not a rule that fell from the
+sky, but nothing other than a completed square worked through once and for all.</p>
 </div>
 
+<p>A third use is pure mental arithmetic. 49 &middot; 51 can be read as
+(50 &minus; 1)(50 + 1), so 2,500 &minus; 1 = 2,499. And 102² is (100 + 2)² = 10,000 + 400 + 4 =
+10,404. If you know the three formulas well, you can do such calculations in your head
+faster than others can type them into a calculator.</p>
 
-<p class="note">Binomial formulas show up in almost every algebra problem from grade 8 onward - they're really worth memorizing.</p>
-
+<p class="note">The third formula is the key to rationalising denominators: a fraction
+with &radic;2 + 1 in the denominator is multiplied top and bottom by &radic;2 &minus; 1, and
+the root disappears. For example, 1 &divide; (&radic;2 + 1) = (&radic;2 &minus; 1) &divide;
+((&radic;2)² &minus; 1²) = (&radic;2 &minus; 1) &divide; 1 = &radic;2 &minus; 1.</p>
 <a class="back-link" href="../index.html">&larr; Back to overview</a>
 </article>
 </main>

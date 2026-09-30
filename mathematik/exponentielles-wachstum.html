@@ -87,7 +87,7 @@ Feld 64 allein: 2<sup>63</sup> &asymp; 9,2 &middot; 10<sup>18</sup> Körner<br>
 Das gesamte Schachbrett: 2<sup>64</sup> &minus; 1 &asymp; 1,8 &middot; 10<sup>19</sup><br>
 <br>
 Bei 0,03 g je Korn sind das rund <strong>550 Milliarden Tonnen</strong> —
-etwa das Tausendfache der heutigen Weltjahresernte.
+etwa das Tausendfache der weltweiten Reisernte eines Jahres.
 </div>
 
 <h2>Verdopplungszeit abschätzen</h2>
@@ -218,6 +218,45 @@ die nächsten 256.000 nur zwanzig Minuten.</p>
 <p class="note">Dieselbe Mathematik steckt hinter Zinseszins, Virusausbreitung,
 Kettenreaktionen und der Speicherdichte von Computerchips. Wer sie einmal versteht,
 erkennt sie überall wieder.</p>
+
+<h2>Zerfall: derselbe Rechenweg rückwärts</h2>
+
+<p>Ist der Wachstumsfaktor kleiner als 1, wird aus Wachstum Zerfall. Die Formel bleibt
+dieselbe, nur q liegt jetzt zwischen 0 und 1. Statt der Verdopplungszeit spricht man
+von der <strong>Halbwertszeit</strong>: der Zeit, nach der noch die Hälfte übrig
+ist.</p>
+
+<div class="calc">
+100 g eines Stoffes, Halbwertszeit 8 Tage<br>
+<br>
+nach 8 Tagen: 50 g<br>
+nach 16 Tagen: 25 g<br>
+nach 24 Tagen: <strong>12,5 g</strong><br>
+<br>
+allgemein: N(t) = N₀ &middot; (1/2)<sup>t / T</sup>
+</div>
+
+<p>Wichtig ist, dass dabei nie null herauskommt. Nach jeder Halbwertszeit bleibt die
+Hälfte des Rests, und die Hälfte von etwas ist nie nichts. In der Praxis gilt ein
+Stoff nach etwa zehn Halbwertszeiten als abgeklungen, denn dann ist weniger als ein
+Tausendstel übrig.</p>
+
+<div class="example-box task">
+<div class="label">Übungsaufgabe</div>
+<p>Eine Bevölkerung wächst von 40.000 auf 48.400 Einwohner in zwei Jahren. Wie groß
+ist der jährliche Wachstumsfaktor, und wie viele Einwohner sind es nach fünf Jahren?</p>
+<details class="solution">
+<summary>Lösung anzeigen</summary>
+<p>48.400 &divide; 40.000 = 1,21 — das ist q². Also q = &radic;1,21 =
+<strong>1,10</strong>, ein Wachstum von 10 Prozent pro Jahr.<br><br>
+Nach fünf Jahren: 40.000 &middot; 1,10⁵ = 40.000 &middot; 1,61051 =
+<strong>64.420 Einwohner</strong>.<br><br>
+Der Rechenweg ist allgemein brauchbar: Aus zwei Messwerten und dem Zeitabstand
+bestimmt man q, indem man das Verhältnis der Werte zieht und die entsprechende Wurzel
+nimmt.</p>
+</details>
+</div>
+
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>

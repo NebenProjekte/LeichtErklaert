@@ -46,18 +46,61 @@
 
 <article class="topic cat-physics">
 <span class="subject-pill physics">Physics - Mechanics</span>
-<h1>Centripetal and Centrifugal Force Explained Simply</h1>
+<h1>Centripetal Force and Centrifugal Force Explained Simply</h1>
 
-<p>If you swing a ball on a string in a circle, two "forces" seem to be at play - but only one of them is actually real.</p>
+<p>In a curve you feel pushed outwards &mdash; at least that is how it feels. Physically
+the opposite is happening: a force acts <strong>inwards</strong>. Everything else is
+inertia.</p>
 
 <div class="formula-box">
-F = m &middot; v&sup2; / r
-<small>Centripetal force: mass times velocity squared, divided by the radius</small>
+F<sub>c</sub> = m &middot; v² / r
+<small>centripetal force &middot; mass times speed squared, divided by the radius</small>
 </div>
+
+<div class="example-box glossary">
+<div class="label">Key terms</div>
+<p><strong>Centripetal force</strong> — the real force acting towards the center of the circle. Without it there would be no curve.<br>
+<strong>Centrifugal force</strong> — the felt force outwards. A fictitious force that only appears in the co-moving frame of reference.<br>
+<strong>Inertia</strong> — every body stays at rest or in uniform straight-line motion as long as no force acts on it.<br>
+<strong>Frame of reference</strong> — the standpoint from which something is described: from outside or riding along.</p>
+</div>
+
+<h2>Why the force points inwards</h2>
+
+<p>A body moves straight ahead by itself. For it to follow a curve, something has to
+keep pulling it away from that straight line &mdash; for a car it is the friction of the
+tires, for the moon it is gravity, for the hammer throw it is the cable. If the cable
+snaps, the hammer does not fly off outwards but <strong>straight ahead along the
+tangent</strong>. That is exactly what proves that there was no force directed
+outwards.</p>
+
+<div class="calc">
+Car: m = 1200 kg, v = 20 m/s (72 km/h), r = 50 m<br>
+<br>
+F = 1200 &middot; 20² &divide; 50 = 1200 &middot; 400 &divide; 50 = <strong>9600 N</strong><br>
+<br>
+Double the speed, 40 m/s:<br>
+F = 1200 &middot; 1600 &divide; 50 = <strong>38,400 N</strong> — four times as much
+</div>
+
+<p>The square in the formula is the most important part: twice as fast means
+<strong>four times</strong> the force. That is why curve accidents at high speed are so
+much more severe, and why tight curves have low speed limits.</p>
+
+<table class="datatable">
+<caption>What provides the centripetal force?</caption>
+<thead><tr><th>Motion</th><th>Source of the force</th></tr></thead>
+<tbody>
+<tr><td>Car in a curve</td><td>static friction of the tires</td></tr>
+<tr><td>Moon around the Earth</td><td>gravity</td></tr>
+<tr><td>Hammer throw</td><td>tension in the cable</td></tr>
+<tr><td>Water in a swinging bucket</td><td>the bottom of the bucket pushes inwards</td></tr>
+<tr><td>Electron in a magnetic field</td><td>Lorentz force</td></tr>
+</tbody>
+</table>
 
 <p class="dialog-intro">💬 Mia asks Grandpa Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -73,10 +116,9 @@ F = m &middot; v&sup2; / r
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>When I swing a ball on a string in a circle, the ball pulls outward. Is that the centrifugal force?</p>
+<p>But I am clearly pushed outwards in a curve. I am not imagining that!</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -92,10 +134,9 @@ F = m &middot; v&sup2; / r
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>It feels that way, but it's actually the opposite: the string is constantly pulling the ball <strong>inward</strong>, toward the center - that's the real force, the <strong>centripetal force</strong>. Without it, the ball would simply fly off in a straight line.</p>
+<p>You <em>want</em> to keep going straight &mdash; that is inertia. The car door comes towards you and pushes you inwards. What you feel is the pressure of the door, not a force outwards.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -111,10 +152,9 @@ F = m &middot; v&sup2; / r
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>So what's the centrifugal force I think I feel then?</p>
+<p>Then why do people say centrifugal force?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -130,19 +170,64 @@ F = m &middot; v&sup2; / r
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>That's just a <strong>fictitious force</strong> - your body actually wants to keep flying straight (inertia), and because the ball keeps turning sideways, it feels to you like you're being pushed outward. Seen from the outside, this force doesn't really exist at all.</p>
+<p>Because in the co-moving frame you are allowed to calculate that way. As a calculation aid it is fine; as an explanation it is misleading.</p>
 </div>
 </div>
-
 </div>
 
-<div class="example-box">
-<div class="label">Everyday example</div>
-<p>In a car going around a curve, it seemingly "pushes" you outward against the door - that's the felt centrifugal force. In reality, the seat/seatbelt holds you on the curve's circular path with a real force (centripetal force).</p></div>
+<div class="example-box warn">
+<div class="label">Common mistakes</div>
+<p><strong>Taking centrifugal force to be real.</strong> It has no cause and no counterpart &mdash; both would require a real force.<br>
+<strong>Forgetting the radius.</strong> Half the radius means twice the force.<br>
+<strong>Not converting km/h.</strong> The formula needs m/s, otherwise the result is off by a factor of 13.<br>
+<strong>Not squaring the speed.</strong> The most common calculation error with this formula.</p>
+</div>
 
+<div class="example-box task">
+<div class="label">Practice question</div>
+<p>A cyclist (bike and rider together 85 kg) rides at 18 km/h through a curve with a
+radius of 12 m. Calculate the centripetal force required. Static friction provides at most
+0.7 &middot; weight &mdash; is that enough?</p>
+<details class="solution">
+<summary>Show solution</summary>
+<p>18 km/h = 18 &divide; 3.6 = 5 m/s<br>
+F = 85 &middot; 5² &divide; 12 = 85 &middot; 25 &divide; 12 = <strong>177 N</strong><br><br>
+Maximum friction: 0.7 &middot; 85 &middot; 9.81 = 584 N<br>
+177 N is well below that &mdash; the curve is no problem.<br>
+At 36 km/h it would be 708 N, which is more than the friction can provide: the bike
+would slide away. Here too the square shows up &mdash; double the speed, four times the
+force.</p>
+</details>
+</div>
 
-<p class="note">Physicists call the centrifugal force a "fictitious force" or "inertial force" for exactly this reason - it only shows up when you view the motion from the rotating object's perspective, not from the outside.</p>
+<h2>Why road curves are built with a slope</h2>
 
+<p>Static friction is an unreliable source of force, because on a wet or icy road it becomes weak. That is why curves are tilted inwards. At the right angle, part of the normal force from the road points to the center of the circle and supplies the centripetal force by itself. For the angle of tilt &alpha; the following applies: <strong>tan &alpha; = v² &divide; (g &middot; r)</strong>.</p>
+
+<div class="calc">
+Country road curve: r = 400 m, v = 72 km/h = 20 m/s<br>
+<br>
+tan &alpha; = 20² &divide; (9.81 &middot; 400) = 400 &divide; 3924 = 0.102<br>
+&alpha; = <strong>about 5.8°</strong> of tilt
+</div>
+
+<p>At exactly this speed the car would need no friction at all. If it is slower it slides inwards, if it is faster it slides outwards &mdash; then friction is needed again.</p>
+
+<h2>The spin cycle of a washing machine</h2>
+
+<p>The drum presses the laundry inwards, towards the center of the circle, with the centripetal force. The water, by contrast, can escape through the holes in the drum wall and keeps flying straight ahead &mdash; just like the hammer in the throw. It is not centrifugal force that "flings" it out, but inertia.</p>
+
+<div class="calc">
+Drum radius 0.25 m, 1200 revolutions per minute<br>
+<br>
+&omega; = 2 &middot; &pi; &middot; 1200 &divide; 60 = 125.7 rad/s<br>
+a = &omega;² &middot; r = 125.7² &middot; 0.25 = <strong>3948 m/s²</strong><br>
+That is 3948 &divide; 9.81 &asymp; <strong>402 g</strong> — about 400 times the gravitational acceleration.
+</div>
+
+<p class="note">In space travel, artificial gravity is meant to be created in exactly this way:
+a rotating ring pushes the crew inwards, which feels like weight. For 1 g at a comfortable
+two revolutions per minute, the ring would need a radius of about 220 meters.</p>
 <a class="back-link" href="../index.html">&larr; Back to overview</a>
 </article>
 </main>

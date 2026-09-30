@@ -46,32 +46,69 @@
 
 <article class="topic">
 <span class="subject-pill math">Math - Geometry</span>
-<h1>Pythagorean Theorem Explained Simply</h1>
-<p>The Pythagorean theorem describes a relationship between the three sides of a <strong>right triangle</strong> (a triangle with a 90° angle).</p>
+<h1>The Pythagorean Theorem Explained Simply</h1>
+
+<p>The Pythagorean theorem holds in <strong>every right-angled triangle</strong> — and
+only there. It ties the three side lengths together so tightly that any two of them
+fix the third. That is why it turns up everywhere distances are worked out: in
+construction, in navigation, in coordinate geometry.</p>
 
 <div class="formula-box">
-a&sup2; + b&sup2; = c&sup2;
-<small>a and b are the legs (the two shorter sides at the right angle), c is the hypotenuse (the longest side, opposite the right angle)</small>
+a² + b² = c²
+<small>a and b are the legs, c is the hypotenuse — the side opposite the right angle, and always the longest</small>
 </div>
 
-<div class="diagram">
-<svg viewBox="0 0 320 220" width="280" height="192" xmlns="http://www.w3.org/2000/svg">
-<polygon points="30,190 30,40 240,190" fill="#fbeee1" stroke="#c1613b" stroke-width="3"/>
-<rect x="30" y="170" width="20" height="20" fill="none" stroke="#c1613b" stroke-width="2"/>
-<text x="10" y="120" font-size="16" fill="#c1613b" font-weight="bold">a</text>
-<text x="130" y="210" font-size="16" fill="#c1613b" font-weight="bold">b</text>
-<text x="145" y="105" font-size="16" fill="#b8483a" font-weight="bold">c</text>
-</svg>
+<div class="example-box glossary">
+<div class="label">Key terms</div>
+<p><strong>Leg (cathetus)</strong> — one of the two sides that form the right angle.<br>
+<strong>Hypotenuse</strong> — the side opposite the right angle, always the longest.<br>
+<strong>Right-angled triangle</strong> — a triangle with a 90° angle.<br>
+<strong>Pythagorean triple</strong> — three whole numbers that satisfy the theorem, such as 3-4-5 or 5-12-13.<br>
+<strong>Converse</strong> — if a² + b² = c², the triangle is right-angled. That lets you <em>prove</em> a right angle.</p>
 </div>
 
-<p>If you know two of the three sides, you can calculate the third. Most often you want to find the hypotenuse <strong>c</strong>:</p>
-<div class="formula-box">
-c = &radic;(a&sup2; + b&sup2;)
+<h2>Why it is true</h2>
+
+<p>The theorem is not really about lengths, it is about <strong>areas</strong>. Draw a
+square on each side. The area of the big square on the hypotenuse is then exactly as
+large as the two small ones added together. For the 3-4-5 triangle that means: 9
+squares plus 16 squares make 25 squares. You can cut the small squares up and fit the
+pieces into the big one with no gaps — that is the classic dissection proof, and it
+needs no formula at all.</p>
+
+<div class="calc">
+Example: a = 3 cm, b = 4 cm<br>
+<br>
+c² = 3² + 4² = 9 + 16 = 25<br>
+c = &radic;25 = <strong>5 cm</strong><br>
+<br>
+Looking for a leg: c = 13 cm, a = 5 cm<br>
+b² = c² &minus; a² = 169 &minus; 25 = 144<br>
+b = &radic;144 = <strong>12 cm</strong>
 </div>
+
+<p class="note">That second line is where most people come unstuck: if a <em>leg</em>
+is wanted, you subtract, you do not add. Adding regardless gives a leg longer than the
+hypotenuse, which is geometrically impossible.</p>
+
+<table class="datatable">
+<caption>Common Pythagorean triples</caption>
+<thead><tr><th>a</th><th>b</th><th>c</th><th>Check</th></tr></thead>
+<tbody>
+<tr><td>3</td><td>4</td><td>5</td><td>9 + 16 = 25</td></tr>
+<tr><td>5</td><td>12</td><td>13</td><td>25 + 144 = 169</td></tr>
+<tr><td>8</td><td>15</td><td>17</td><td>64 + 225 = 289</td></tr>
+<tr><td>7</td><td>24</td><td>25</td><td>49 + 576 = 625</td></tr>
+</tbody>
+</table>
+
+<p>Multiples work just as well: 6-8-10 or 9-12-15 are only enlarged 3-4-5 triangles.
+Builders have used this since antiquity to set out a clean right angle without any
+measuring instrument — take a rope with twelve equal sections, lay out a triangle of
+3, 4 and 5 sections, and there it is.</p>
 
 <p class="dialog-intro">💬 Mia asks Grandpa Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -87,10 +124,9 @@ c = &radic;(a&sup2; + b&sup2;)
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>What do we actually need the Pythagorean theorem for in real life?</p>
+<p>How do I know which side is the hypotenuse?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -106,10 +142,9 @@ c = &radic;(a&sup2; + b&sup2;)
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>For example, if you want to know how long a ladder needs to be to reach a window at an angle! Tradespeople use it all the time.</p>
+<p>Find the right angle and see which side lies <strong>opposite</strong> it. That is the one — and it is always the longest side in the triangle.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -125,10 +160,9 @@ c = &radic;(a&sup2; + b&sup2;)
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Can you show me an example to work through?</p>
+<p>And if there is no right angle at all?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -144,55 +178,112 @@ c = &radic;(a&sup2; + b&sup2;)
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>Sure! Take a = 3 and b = 4. Then c&sup2; = 3&sup2; + 4&sup2; = 9 + 16 = 25, so c = 5. Almost every tradesperson knows the "3-4-5 triangle" by heart!</p>
+<p>Then the theorem does not apply. Later on you get the law of cosines for that — Pythagoras is just its special case for 90°.</p>
 </div>
-</div>
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>And does that work for every triangle?</p>
 </div>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Grandpa Theo</div>
-<p>No, only for a <strong>right</strong> triangle - one with a real 90° angle. Without that, the formula doesn't work!</p>
-</div>
+<div class="example-box warn">
+<div class="label">Common mistakes</div>
+<p><strong>Forgetting the square root at the end.</strong> c² = 25 means c = 5, not 25.<br>
+<strong>Adding when a leg is wanted.</strong> Subtract instead: b² = c² − a².<br>
+<strong>Applying it to a non-right triangle.</strong> Without a right angle the formula
+is simply wrong.<br>
+<strong>Mixing units.</strong> Convert everything to the same unit first, then square —
+otherwise the error gets squared too.</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Practice question</div>
+<p>A ladder is 5.00 m long and stands 1.40 m away from a house wall. At what height
+does it touch the wall? Round to the nearest centimetre and say briefly whether the
+ladder is standing safely.</p>
+<details class="solution">
+<summary>Show solution</summary>
+<p>The ladder is the hypotenuse, the distance from the wall is one leg and the height
+we want is the other.<br>
+h² = 5.00² − 1.40² = 25.00 − 1.96 = 23.04<br>
+h = &radic;23.04 = <strong>4.80 m</strong><br>
+On safety: the angle follows from cos&nbsp;α = 1.40 / 5.00 = 0.28, so α ≈ 73.7°.
+Leaning ladders are recommended at 65° to 75°, so this one is within the permitted
+range but at the steep end. A slightly larger distance from the wall would be more
+comfortable to climb.</p>
+</details>
 </div>
 
 <div class="video-callout">
-<p>🎥 Want it explained in even more detail? There's a full video on our YouTube channel.</p>
-<a class="video-btn" href="https://youtu.be/B2Aaca1L37g" target="_blank" rel="noopener">Watch video</a>
+<p>🎥 There is also a video on this topic on our YouTube channel.</p>
+<a class="video-btn" href="https://youtu.be/H-FUVYM6aPE" target="_blank" rel="noopener">Watch the video</a>
 </div>
 
+<p class="note">In coordinate geometry the theorem becomes the distance formula: the
+distance between two points is &radic;((x₂−x₁)² + (y₂−y₁)²). Every navigation device
+calculates with it, just in three dimensions.</p>
+<h2>Spatial Pythagoras: the space diagonal</h2>
+
+<p>The theorem holds not only on paper but in space as well. For a cuboid with edge lengths a, b and c one often asks for the <strong>space diagonal</strong>: the longest straight line inside the body, running from one corner diagonally through to the opposite corner. You get there in two steps. First, on the floor lies the face diagonal, which is the hypotenuse of a triangle with legs a and b. That face diagonal then forms a second right-angled triangle with the height c, and its hypotenuse is the space diagonal.</p>
+
+<div class="formula-box">
+d² = a² + b² + c²
+<small>space diagonal of a cuboid with edges a, b and c</small>
+</div>
+
+<div class="calc">
+Cuboid with edges of 3 cm, 4 cm and 12 cm<br>
+<br>
+Face diagonal: &radic;(3² + 4²) = &radic;25 = 5 cm<br>
+Space diagonal: d² = 5² + 12² = 25 + 144 = 169<br>
+d = &radic;169 = <strong>13 cm</strong><br>
+<br>
+Room measuring 5 m, 4 m and 2.5 m: d² = 25 + 16 + 6.25 = 47.25<br>
+d = &radic;47.25 &asymp; <strong>6.87 m</strong>
+</div>
+
+<p>For a cube with edge a all three lengths are equal and the formula shrinks to d = a &middot; &radic;3, about 1.73 times the edge length. For packaging, moving furniture and tent poles this is the deciding question: what still fits when placed diagonally, even though it would not fit in any straight position.</p>
+
+<div class="example-box task">
+<div class="label">Practice question</div>
+<p>A rod is 1.20 m long. Does it fit into a box with the inner dimensions 1.00 m &times; 0.60 m &times; 0.50 m?</p>
+<details class="solution">
+<summary>Show solution</summary>
+<p>Lying flat on the bottom it does not work: the diagonal of the base is &radic;(1.00² + 0.60²) = &radic;1.36 &asymp; 1.17 m, which is too short.<br>
+Diagonally through the whole space it does: d² = 1.00² + 0.60² + 0.50² = 1.00 + 0.36 + 0.25 = 1.61, so d = &radic;1.61 &asymp; <strong>1.27 m</strong>.<br>
+Because 1.27 m is more than 1.20 m, the rod fits if you lay it diagonally from a bottom corner to the opposite top corner.</p>
+</details>
+</div>
+
+
+<h2>Pythagoras in three dimensions</h2>
+
+<p>The theorem does not stop at the flat page. For the space diagonal of a cuboid,
+d² = a² + b² + c². That is not a new theorem but the same one applied twice: first you
+work out the diagonal of the base, then that diagonal and the height form another
+right-angled triangle.</p>
+
+<div class="calc">
+Box 60 cm &times; 40 cm &times; 30 cm<br>
+<br>
+Base diagonal: &radic;(60² + 40²) = &radic;5200 = 72.1 cm<br>
+Space diagonal: &radic;(72.1² + 30²) = &radic;(5200 + 900) = &radic;6100 = <strong>78.1 cm</strong>
+</div>
+
+<p>That answers a question which comes up more often than you would think: what is the
+longest object that still fits into a box? In this one it would be a good 78
+centimetres — provided the object is thin enough to actually lie diagonally.</p>
+
+<div class="example-box task">
+<div class="label">Practice question</div>
+<p>A lift is 1.20 m wide, 1.50 m deep and 2.20 m high. Will a 3.00 m pole fit
+inside?</p>
+<details class="solution">
+<summary>Show solution</summary>
+<p>Base diagonal: &radic;(1.20² + 1.50²) = &radic;(1.44 + 2.25) = &radic;3.69 = 1.92 m<br>
+Space diagonal: &radic;(1.92² + 2.20²) = &radic;(3.69 + 4.84) = &radic;8.53 = <strong>2.92 m</strong><br><br>
+The pole is 3.00 m long, so it does <strong>not</strong> fit — it is eight centimetres
+too long. Note how close it is: the height alone contributes more to the diagonal than
+width and depth together, because it is the largest of the three values.</p>
+</details>
+</div>
 
 <a class="back-link" href="../index.html">&larr; Back to overview</a>
 </article>

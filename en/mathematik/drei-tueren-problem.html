@@ -46,95 +46,44 @@
 
 <article class="topic">
 <span class="subject-pill math">Math - Probability</span>
-<h1>The Monty Hall Problem Explained Simply</h1>
+<h1>The Three Doors Problem (Monty Hall) Explained Simply</h1>
 
-<p>Behind three doors are a car and two goats. You pick one door. The host, who knows where the car is, then opens a <strong>different</strong> door revealing a goat. Now you may stay with your door - or switch to the last remaining door.</p>
+<p>Three doors: behind one is a car, behind each of the others a goat. You pick a door.
+The host — who knows where the car is — opens a <em>different</em> door with a goat
+behind it and asks whether you want to switch. Should you?
+<strong>Yes. Always.</strong></p>
 
 <div class="formula-box">
-Stay: 33% winning chance &nbsp;|&nbsp; Switch: 66% winning chance
-<small>Switching doubles your chance of winning the car!</small>
+stay: 1/3 &nbsp;&middot;&nbsp; switch: 2/3
+<small>Switching doubles your chance of winning</small>
 </div>
 
-<p class="dialog-intro">💬 Mia asks Grandpa Theo</p>
-<div class="dialog">
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>But there are only two doors left! Isn't it just 50-50 then, whether I switch or not?</p>
-</div>
+<div class="example-box glossary">
+<div class="label">Key terms</div>
+<p><strong>Conditional probability</strong> — the probability given some extra information.<br>
+<strong>Extra information</strong> — here: the host knows where the car is and acts accordingly.<br>
+<strong>Complementary event</strong> — &ldquo;picked wrongly&rdquo; has probability 2/3.<br>
+<strong>Monty Hall problem</strong> — the name the puzzle is known by in English, after the game-show host Monty Hall.</p>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Grandpa Theo</div>
-<p>That's what almost everyone thinks at first! But the host doesn't open the door randomly - he always knows where the car is, and is guaranteed to open a goat door. That changes the probabilities.</p>
-</div>
-</div>
+<h2>Why the chance is not 50:50</h2>
 
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>Explain that to me in detail!</p>
-</div>
-</div>
+<p>The crucial point: the host does not open a random door. He knows where the car is
+and <strong>always</strong> opens a door with a goat. So his action carries information
+— and that information is not shared equally between the two remaining doors.</p>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Grandpa Theo</div>
-<p>With your first pick, you have a 1/3 chance of standing on the car and a 2/3 chance of standing on a goat. That 2/3 chance of "standing on a goat" doesn't disappear - it moves entirely to the last remaining door, because the host has already removed the other goat door!</p>
-</div>
-</div>
+<table class="datatable">
+<caption>All three cases played through (car behind door 1)</caption>
+<thead><tr><th>You pick</th><th>Host opens</th><th>stay</th><th>switch</th></tr></thead>
+<tbody>
+<tr><td>Door 1 (car)</td><td>Door 2 or 3</td><td>wins</td><td>loses</td></tr>
+<tr><td>Door 2 (goat)</td><td>Door 3</td><td>loses</td><td><strong>wins</strong></td></tr>
+<tr><td>Door 3 (goat)</td><td>Door 2</td><td>loses</td><td><strong>wins</strong></td></tr>
+</tbody>
+</table>
 
-</div>
+<p>In two out of three cases, switching wins. No more proof is needed — you only have to
+write down all the cases completely.</p>
 
 <div class="diagram">
 <svg viewBox="0 0 340 160" width="320" height="150" xmlns="http://www.w3.org/2000/svg">
@@ -147,16 +96,157 @@ Stay: 33% winning chance &nbsp;|&nbsp; Switch: 66% winning chance
 <line x1="105" y1="70" x2="235" y2="70" stroke="#8a7264" stroke-width="2" stroke-dasharray="5 4"/>
 </svg>
 </div>
-<p class="note">The "vanished" goat-door probability lands entirely on the switch door - which is why it's 2/3 instead of 1/2.</p>
+
+<h2>The trick with a hundred doors</h2>
+
+<p>Imagine a hundred doors. You choose one — your chance is 1%. The host then opens 98
+goat doors and leaves exactly one other door closed. Would you stay with your first
+choice now? Hardly anyone would. With three doors it is exactly the same situation,
+just less obvious.</p>
+
+<p class="dialog-intro">💬 Mia asks Grandpa Theo</p>
+<div class="dialog">
+<div class="dialog-line">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
+<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
+<circle cx="24" cy="36" r="6" fill="#fff"/>
+<circle cx="40" cy="36" r="6" fill="#fff"/>
+<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Mia</div>
+<p>But in the end there are only two doors left. So it's 50:50!</p>
+</div>
+</div>
+<div class="dialog-line right">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
+<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
+<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
+<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
+<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
+<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Grandpa Theo</div>
+<p>Two possibilities does not mean equally likely. Your first pick was right with probability 1/3 — opening a door does not change that.</p>
+</div>
+</div>
+<div class="dialog-line">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
+<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
+<circle cx="24" cy="36" r="6" fill="#fff"/>
+<circle cx="40" cy="36" r="6" fill="#fff"/>
+<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
+<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
+<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Mia</div>
+<p>And the other 2/3?</p>
+</div>
+</div>
+<div class="dialog-line right">
+<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
+<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
+<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
+<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
+<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
+<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
+<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
+<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
+<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
+</svg>
+<div class="dialog-bubble">
+<div class="dialog-name">Grandpa Theo</div>
+<p>They now sit entirely on the one remaining door. The host has sorted out the bad possibility for you.</p>
+</div>
+</div>
+</div>
+
+<div class="example-box warn">
+<div class="label">Common mistakes</div>
+<p><strong>&ldquo;Two doors, so 50:50.&rdquo;</strong> The same number of options does not mean the same probability.<br>
+<strong>Overlooking what the host knows.</strong> If he opens a door at random and happens to hit a goat, it really is 50:50 — the rule he follows is decisive.<br>
+<strong>Looking at only one case.</strong> Only a complete case-by-case analysis shows the result.<br>
+<strong>Trusting intuition.</strong> Even mathematicians have been wrong about this in public.</p>
+</div>
+
+<div class="example-box task">
+<div class="label">Practice problem</div>
+<p>How does the result change if the host opens the second door purely at random and
+happens to hit a goat? Explain.</p>
+<details class="solution">
+<summary>Show solution</summary>
+<p>Then the chance of winning is <strong>50:50</strong>, and switching gains nothing.<br><br>
+The reason: in this case the host could also have revealed the car. That he shows a
+goat is now itself a random outcome and gives no additional information about the
+remaining doors. In the original problem, by contrast, he follows a fixed rule — and
+exactly this rule transfers the 2/3 to the one remaining door. It is not the number of
+doors that decides, but the behaviour of the host.</p>
+</details>
+</div>
+
+<h2>Why our gut feeling fails here</h2>
+
+<p>The three doors problem became famous because even maths professors at first
+considered the correct solution wrong. It is worth a closer look, because behind it lies
+a thinking error that reaches far beyond this puzzle.</p>
+
+<p>Our brain likes to treat <strong>number</strong> and <strong>probability</strong> as
+the same thing. Two remaining doors feel like two equally good possibilities. In fact,
+though, probability does not depend on how many possibilities are left, but on how the
+information came about. The host does not act randomly: he knows where the car is, and
+he is guaranteed to open a losing door. So in every round he gives away information — and
+that information lands entirely on the door he did not open.</p>
 
 <div class="example-box">
-<div class="label">Try it yourself</div>
-<p>If you don't believe it: play it 20 times with a friend and three cups (a candy under one). Stay ten times, switch ten times - switching wins noticeably more often!</p>
+<div class="label">All three cases played through once</div>
+<p>The surest way to be convinced is to write down every possible case. Suppose you
+always pick door 1.</p>
+<p><strong>Case 1:</strong> The car is behind door 1. The host opens door 2 or 3, both
+are losing doors. Switching loses.<br>
+<strong>Case 2:</strong> The car is behind door 2. The host must open door 3, because
+you picked door 1 and door 2 hides the car. Switching wins.<br>
+<strong>Case 3:</strong> The car is behind door 3. The host must open door 2. Switching
+wins.</p>
+<p>Three cases, all equally likely, and in two of them switching wins. That is exactly
+the two thirds. If you would rather try it out: with two people and three playing cards
+you can play it through thirty times in ten minutes, and the result visibly settles
+near two to one.</p>
+</div>
+
+<p>By the way, this error is not stupidity but a pattern. People regularly misjudge
+probabilities as soon as <strong>extra information</strong> comes into play — especially
+when it is not obvious whether that information arose by chance or on purpose. This
+distinction is exactly the core of conditional probability, and the three doors problem
+is its most memorable example.</p>
+
+<div class="video-callout">
+<p>🎥 Explained in under two minutes – as a Short on our YouTube channel.</p>
+<a class="video-btn" href="https://youtube.com/shorts/mrijBMLNlZs" target="_blank" rel="noopener">Watch the Short</a>
 </div>
 
 
-<p class="note">The problem is named after the US game show host Monty Hall, whose show "Let's Make a Deal" featured exactly this game. It is also widely known as the "goat problem."</p>
-
+<p class="note">In 1990 Marilyn vos Savant published the correct solution in a
+newspaper column. About 10,000 letters followed, many from universities, accusing her
+of a mistake in her calculation. She was right.</p>
 <a class="back-link" href="../index.html">&larr; Back to overview</a>
 </article>
 </main>

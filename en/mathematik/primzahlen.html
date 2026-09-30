@@ -48,101 +48,176 @@
 <span class="subject-pill math">Math - Number Theory</span>
 <h1>Prime Numbers Explained Simply</h1>
 
-<p>A <strong>prime number</strong> is a number greater than 1 that can only be divided evenly by <strong>1</strong> and by <strong>itself</strong>.</p>
+<p>A <strong>prime number</strong> is a natural number greater than 1 with exactly
+two divisors: 1 and itself. 7 is prime, because only 1 and 7 divide it evenly. 8 is
+not, because 2 and 4 fit as well. Primes are the building blocks every other number
+is made of — which is why they keep turning up in almost every area of
+mathematics.</p>
 
 <div class="formula-box">
-2, 3, 5, 7, 11, 13, 17, 19, 23, ...
-<small>the first prime numbers</small>
+2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47 …
+<small>1 is not a prime — it has only one divisor, not two</small>
 </div>
 
-<p class="dialog-intro">💬 Mia asks Grandpa Theo</p>
-<div class="dialog">
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>Why isn't 1 a prime number? It can also only be divided by 1!</p>
-</div>
+<div class="example-box glossary">
+<div class="label">Key terms</div>
+<p><strong>Divisor</strong> — a number that divides evenly, with no remainder.<br>
+<strong>Prime number</strong> — exactly two divisors.<br>
+<strong>Composite number</strong> — more than two divisors, for example 12.<br>
+<strong>Prime factorisation</strong> — writing a number as a product of primes.<br>
+<strong>Sieve of Eratosthenes</strong> — a method for finding all primes up to a limit.<br>
+<strong>Twin primes</strong> — two primes two apart, such as 11 and 13.</p>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Grandpa Theo</div>
-<p>Good question! Mathematicians deliberately decided to exclude 1 - otherwise many important calculation rules wouldn't work cleanly anymore.</p>
-</div>
+<h2>Why 1 does not count</h2>
+
+<p>This looks arbitrary but there is a solid reason. The fundamental theorem of
+arithmetic says every number above 1 can be split into prime factors in exactly
+<em>one</em> way. If 1 were prime there would be infinitely many splittings —
+12 = 2 · 2 · 3 = 1 · 2 · 2 · 3 = 1 · 1 · 2 · 2 · 3 and so on. Uniqueness would be
+gone. So 1 is excluded to keep the most important theorem about numbers clean.</p>
+
+<h2>Prime factorisation</h2>
+
+<div class="calc">
+360 &divide; 2 = 180<br>
+180 &divide; 2 = 90<br>
+90 &divide; 2 = 45<br>
+45 &divide; 3 = 15<br>
+15 &divide; 3 = 5<br>
+5 &divide; 5 = 1<br>
+<br>
+360 = 2<sup>3</sup> &middot; 3<sup>2</sup> &middot; 5
 </div>
 
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>And how do I find out if, say, 17 is a prime number?</p>
-</div>
+<p>The method is blunt and always works: divide by the smallest prime that fits, then
+carry on with the result until 1 is left. From the factorisation you can then read
+off things you would otherwise have to guess at — the lowest common multiple or the
+greatest common divisor of two numbers, for instance.</p>
+
+<h2>The sieve of Eratosthenes</h2>
+
+<table class="datatable">
+<caption>Finding every prime up to 30</caption>
+<thead><tr><th>Step</th><th>What happens</th><th>Crossed out</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>2 stays, cross out all its multiples</td><td>4, 6, 8, 10 …</td></tr>
+<tr><td>2</td><td>3 stays, cross out all its multiples</td><td>9, 15, 21, 27</td></tr>
+<tr><td>3</td><td>5 stays, cross out all its multiples</td><td>25</td></tr>
+<tr><td>4</td><td>done, because 7 &middot; 7 = 49 &gt; 30</td><td>—</td></tr>
+</tbody>
+</table>
+
+<p>What remains is 2, 3, 5, 7, 11, 13, 17, 19, 23, 29. The last step is the most
+useful one: you only have to sieve up to the <strong>square root of the limit</strong>.
+To check whether 97 is prime you test the divisors 2, 3, 5 and 7 — and no further,
+because 11 · 11 = 121 is already above 97.</p>
+
+<div class="example-box warn">
+<div class="label">Common mistakes</div>
+<p><strong>Counting 1 as a prime.</strong> It is not one.<br>
+<strong>Forgetting 2.</strong> It is the only even prime and often gets skipped when
+listing quickly.<br>
+<strong>Testing every number as a divisor.</strong> Checking up to the square root is
+enough — for three-digit numbers that saves almost all the work.<br>
+<strong>"All odd numbers are prime."</strong> 9, 15, 21 and 25 say otherwise.</p>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Grandpa Theo</div>
-<p>You simply try, one after another, whether 2, 3, 5, 7 ... divide it evenly. For 17, none of them work - so 17 is a prime number!</p>
-</div>
+<h2>There are infinitely many</h2>
+
+<p>Euclid proved this more than two thousand years ago, and the proof fits into four
+lines. Suppose there were only finitely many primes. Multiply them all together and
+add 1. Dividing the new number by any of the assumed primes leaves a remainder of 1 —
+none of them fits. So the new number is either prime itself or has a prime factor
+that was not on the list. Both contradict the assumption. The list can therefore never
+be complete.</p>
+
+<div class="example-box task">
+<div class="label">Practice question</div>
+<p>Check whether 143 is a prime number. Explain which divisors you have to test and
+why you can stop there.</p>
+<details class="solution">
+<summary>Show solution</summary>
+<p>The square root of 143 lies between 11 and 12, since 11 · 11 = 121 and
+12 · 12 = 144. So only the primes up to 11 need testing: 2, 3, 5, 7 and 11.<br>
+2 is out (143 is odd), 3 as well (digit sum 8), 5 too (the last digit is neither 0
+nor 5), and 7 does not fit (7 · 20 = 140, remainder 3). But
+<strong>11 · 13 = 143</strong>.<br>
+So 143 is <strong>not</strong> prime. Had 11 failed as well, 143 would have been
+prime — any larger divisor would need a smaller partner, and every smaller one has
+been checked.</p>
+</details>
 </div>
 
-</div>
+<p class="note">Primes are not only school material. The encryption your browser uses
+to send banking data relies on the fact that two very large primes are effortless to
+multiply while the product is practically impossible to take apart again.</p>
+<h2>Twin primes and record-breaking primes</h2>
+
+<p>The further up the number line you go, the rarer primes become — but they never disappear. Sometimes two of them stand close together: 3 and 5, 11 and 13, 17 and 19, 29 and 31, 41 and 43. Pairs with a gap of 2 are called <strong>twin primes</strong>. A small trick shows where to look: every prime above 3 sits right next to a multiple of 6, because all the other remainders give even numbers or multiples of 3. So apart from the pair 3 and 5, every twin pair has the form 6k &minus; 1 and 6k + 1, for example 5 and 7 or 17 and 19.</p>
+
+<p>Whether there are infinitely many twin primes is still unproven. In 2013, though, the mathematician Yitang Zhang achieved a breakthrough: he showed that there are infinitely many pairs of primes whose gap is at most 70 million. Other researchers then pushed that bound down to 246. So there is still a long way to go before reaching 2.</p>
 
 <div class="example-box">
-<div class="label">Counter-example</div>
-<p>Is 15 a prime number? No: 15 = 3 &times; 5, so it can also be divided by 3 and by 5 - not just by 1 and itself.</p>
+<div class="label">Mersenne primes and the hunt for records</div>
+<p>The largest known primes almost always have the form 2<sup>p</sup> &minus; 1, where the exponent p is itself a prime. They are called <strong>Mersenne primes</strong>. The first ones are 2² &minus; 1 = 3, 2³ &minus; 1 = 7, 2⁵ &minus; 1 = 31 and 2⁷ &minus; 1 = 127. It is not automatic, though: already 2¹¹ &minus; 1 = 2,047 is not prime, because 23 &middot; 89 = 2,047. For numbers of this shape there is a particularly fast test, the Lucas-Lehmer test. That is why records can be pushed much further here than for arbitrary numbers. The search is carried out in the community project <strong>GIMPS</strong> (Great Internet Mersenne Prime Search), where volunteers donate the computing time of their computers. The record numbers have many millions of digits — written out, they would fill many thousands of book pages.</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Practice question</div>
+<p>Find all twin primes below 50 and check whether every pair except 3 and 5 has the form 6k &minus; 1 and 6k + 1.</p>
+<details class="solution">
+<summary>Show solution</summary>
+<p>The primes up to 50 are 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47. Two apart are: <strong>(3, 5), (5, 7), (11, 13), (17, 19), (29, 31) and (41, 43)</strong>.<br>
+As a check: 5 and 7 lie around 6 (k = 1), 11 and 13 around 12 (k = 2), 17 and 19 around 18 (k = 3), 29 and 31 around 30 (k = 5), 41 and 43 around 42 (k = 7). Only (3, 5) is the odd one out, because 3 itself is a divisor of 6. The prime 47 has no twin, since 45 and 49 are both composite.</p>
+</details>
+</div>
 
-<p class="note">Prime numbers are essentially the "building blocks" of all numbers: every natural number greater than 1 can be uniquely written as a product of primes (e.g. 12 = 2 &times; 2 &times; 3). That's why they're so important in mathematics - and even in encrypting data on the internet.</p>
+<h2>How RSA encryption uses primes</h2>
+
+<p>The RSA method, named after its inventors Rivest, Shamir and Adleman, has protected data on the internet since the 1970s. The basic idea: you choose two very large primes p and q and multiply them to get n = p &middot; q. The product n is published, the two factors stay secret. Anyone who wants to encrypt a message needs only n and a second public number e. Anyone who wants to read it also needs a secret exponent d, and that can only be worked out by someone who knows p and q.</p>
+
+<div class="calc">
+Key generation in toy format<br>
+<br>
+p = 61 and q = 53, so n = 61 &middot; 53 = 3,233<br>
+(p &minus; 1) &middot; (q &minus; 1) = 60 &middot; 52 = 3,120<br>
+public: e = 17, secret: d = 2,753<br>
+Check: 17 &middot; 2,753 = 46,801 = 15 &middot; 3,120 + 1<br>
+<br>
+Encrypt the message 65: 65<sup>17</sup> divided by 3,233 leaves the remainder <strong>2,790</strong><br>
+Decrypt: 2,790<sup>2753</sup> divided by 3,233 leaves the remainder <strong>65</strong> again
+</div>
+
+<p>That the message really comes back follows from a theorem of Euler about remainders in division. What matters is the view on security: anyone can split the small number 3,233 in seconds. Real keys use an n of 2,048 bits, which is over 600 decimal digits. Trial division would have to run up to the square root of n, a number with about 300 digits, and that is impossible. Even the fastest known factoring methods take unimaginably long for such numbers on today's computers. It has not been proven, however, that no fast way exists. As far as we know today, quantum computers could in theory provide one if they can ever be built large enough. The security of RSA therefore rests on experience, not on a proof.</p>
+
+
+<h2>Twins, gaps and records</h2>
+
+<p>Primes are spread out unevenly, and that is exactly what makes them interesting.
+Sometimes two sit close together, like 11 and 13 or 41 and 43 — such pairs are called
+<strong>twin primes</strong>. Sometimes there are wide gaps: between 113 and 127 there
+is not a single one. Gaps like that can even be produced to order. Take 101! and add
+2, then 3, then 4 and so on up to 101: each of those hundred numbers is divisible by
+the value you added, so none of them is prime. Arbitrarily long prime-free stretches
+therefore certainly exist — and yet the primes never stop.</p>
+
+<p>Whether there are infinitely many twins is still unknown. The question is one of
+the most famous open problems in mathematics. What is known is that primes get rarer
+as the numbers grow: near a number n, roughly every ln(n)-th number is still prime on
+average. For three-digit numbers that is about every seventh; around a million, only
+about every fourteenth.</p>
+
+<div class="example-box">
+<div class="label">Why banks need prime numbers</div>
+<p>The RSA method that browsers and banks use to encrypt data relies on two very large
+primes, each several hundred digits long. Multiplying them takes a fraction of a
+second. The public key contains only the product — and recovering the two factors from
+it is, with every known method, practically impossible. That imbalance between an easy
+forward step and a hopeless reverse step is the entire security of the system. If
+someone found a fast factorisation method tomorrow, half the encryption on the
+internet would have to be replaced.</p>
+</div>
 
 <a class="back-link" href="../index.html">&larr; Back to overview</a>
 </article>

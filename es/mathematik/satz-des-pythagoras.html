@@ -46,32 +46,69 @@
 
 <article class="topic">
 <span class="subject-pill math">Matemáticas - Geometría</span>
-<h1>El Teorema de Pitágoras explicado de forma sencilla</h1>
-<p>El teorema de Pitágoras describe una relación entre los tres lados de un <strong>triángulo rectángulo</strong> (un triángulo con un ángulo de 90°).</p>
+<h1>El teorema de Pitágoras explicado de forma sencilla</h1>
+
+<p>El teorema de Pitágoras se cumple en <strong>todo triángulo rectángulo</strong>, y
+solo ahí. Relaciona las tres longitudes de forma tan estrecha que dos cualesquiera de
+ellas determinan la tercera. Por eso aparece en todas partes donde se calculan
+distancias: en la construcción, en la navegación y en la geometría analítica.</p>
 
 <div class="formula-box">
-a&sup2; + b&sup2; = c&sup2;
-<small>a y b son los catetos (los dos lados más cortos que forman el ángulo recto), c es la hipotenusa (el lado más largo, opuesto al ángulo recto)</small>
+a² + b² = c²
+<small>a y b son los catetos, c es la hipotenusa: el lado opuesto al ángulo recto y siempre el más largo</small>
 </div>
 
-<div class="diagram">
-<svg viewBox="0 0 320 220" width="280" height="192" xmlns="http://www.w3.org/2000/svg">
-<polygon points="30,190 30,40 240,190" fill="#fbeee1" stroke="#c1613b" stroke-width="3"/>
-<rect x="30" y="170" width="20" height="20" fill="none" stroke="#c1613b" stroke-width="2"/>
-<text x="10" y="120" font-size="16" fill="#c1613b" font-weight="bold">a</text>
-<text x="130" y="210" font-size="16" fill="#c1613b" font-weight="bold">b</text>
-<text x="145" y="105" font-size="16" fill="#b8483a" font-weight="bold">c</text>
-</svg>
+<div class="example-box glossary">
+<div class="label">Términos clave</div>
+<p><strong>Cateto</strong> — uno de los dos lados que forman el ángulo recto.<br>
+<strong>Hipotenusa</strong> — el lado opuesto al ángulo recto, siempre el más largo.<br>
+<strong>Triángulo rectángulo</strong> — un triángulo con un ángulo de 90°.<br>
+<strong>Terna pitagórica</strong> — tres números enteros que cumplen el teorema, como 3-4-5 o 5-12-13.<br>
+<strong>Recíproco</strong> — si a² + b² = c², el triángulo es rectángulo. Eso permite <em>demostrar</em> un ángulo recto.</p>
 </div>
 
-<p>Si conoces dos de los tres lados, puedes calcular el tercero. Lo más habitual es querer calcular la hipotenusa <strong>c</strong>:</p>
-<div class="formula-box">
-c = &radic;(a&sup2; + b&sup2;)
+<h2>Por qué es cierto</h2>
+
+<p>El teorema no habla en realidad de longitudes, sino de <strong>áreas</strong>.
+Dibuja un cuadrado sobre cada lado. El área del cuadrado grande sobre la hipotenusa es
+entonces exactamente igual a la suma de los dos pequeños. En el triángulo 3-4-5 eso
+significa: 9 cuadraditos más 16 cuadraditos dan 25 cuadraditos. Se pueden recortar los
+cuadrados pequeños y encajar las piezas en el grande sin dejar huecos: esa es la
+demostración clásica por disección, y no necesita ni una sola fórmula.</p>
+
+<div class="calc">
+Ejemplo: a = 3 cm, b = 4 cm<br>
+<br>
+c² = 3² + 4² = 9 + 16 = 25<br>
+c = &radic;25 = <strong>5 cm</strong><br>
+<br>
+Si se busca un cateto: c = 13 cm, a = 5 cm<br>
+b² = c² &minus; a² = 169 &minus; 25 = 144<br>
+b = &radic;144 = <strong>12 cm</strong>
 </div>
 
-<p class="dialog-intro">💬 Mia le pregunta al Abuelo Theo</p>
+<p class="note">Esa segunda línea es donde falla casi todo el mundo: si lo que se
+busca es un <em>cateto</em>, se resta, no se suma. Quien suma de todas formas obtiene
+un cateto más largo que la hipotenusa, algo geométricamente imposible.</p>
+
+<table class="datatable">
+<caption>Ternas pitagóricas frecuentes</caption>
+<thead><tr><th>a</th><th>b</th><th>c</th><th>Comprobación</th></tr></thead>
+<tbody>
+<tr><td>3</td><td>4</td><td>5</td><td>9 + 16 = 25</td></tr>
+<tr><td>5</td><td>12</td><td>13</td><td>25 + 144 = 169</td></tr>
+<tr><td>8</td><td>15</td><td>17</td><td>64 + 225 = 289</td></tr>
+<tr><td>7</td><td>24</td><td>25</td><td>49 + 576 = 625</td></tr>
+</tbody>
+</table>
+
+<p>Los múltiplos también funcionan: 6-8-10 o 9-12-15 no son más que triángulos 3-4-5
+ampliados. Los albañiles lo usan desde la Antigüedad para trazar un ángulo recto
+limpio sin ningún instrumento: una cuerda con doce tramos iguales, un triángulo de 3,
+4 y 5 tramos, y listo.</p>
+
+<p class="dialog-intro">💬 Mia le pregunta al abuelo Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -87,10 +124,9 @@ c = &radic;(a&sup2; + b&sup2;)
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>¿Para qué sirve realmente el teorema de Pitágoras en la vida real?</p>
+<p>¿Cómo sé cuál es la hipotenusa?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -106,10 +142,9 @@ c = &radic;(a&sup2; + b&sup2;)
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Abuelo Theo</div>
-<p>¡Por ejemplo, cuando quieres saber qué longitud debe tener una escalera para llegar en diagonal justo hasta una ventana! Los albañiles lo usan constantemente.</p>
+<p>Busca el ángulo recto y mira qué lado queda <strong>enfrente</strong>. Ese es, y siempre es el lado más largo del triángulo.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -125,10 +160,9 @@ c = &radic;(a&sup2; + b&sup2;)
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>¿Me enseñas un ejemplo para practicar?</p>
+<p>¿Y si no hay ningún ángulo recto?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -144,52 +178,114 @@ c = &radic;(a&sup2; + b&sup2;)
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Abuelo Theo</div>
-<p>¡Claro! Toma a = 3 y b = 4. Entonces c&sup2; = 3&sup2; + 4&sup2; = 9 + 16 = 25, así que c = 5. ¡Casi todos los albañiles se saben de memoria el "triángulo 3-4-5"!</p>
+<p>Entonces el teorema no vale. Más adelante aparece el teorema del coseno para eso; Pitágoras es solo su caso particular para 90°.</p>
 </div>
-</div>
-
-<div class="dialog-line">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#f6d9b8"/>
-<path d="M8,28 C8,10 56,10 56,28 C50,20 40,16 32,16 C24,16 14,20 8,28 Z" fill="#e8974a"/>
-<circle cx="24" cy="36" r="6" fill="#fff"/>
-<circle cx="40" cy="36" r="6" fill="#fff"/>
-<circle cx="24" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="40" cy="37" r="3" fill="#3a2a22"/>
-<circle cx="20" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<circle cx="44" cy="44" r="4" fill="#e8974a" opacity="0.35"/>
-<path d="M24,48 Q32,54 40,48" stroke="#3a2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Mia</div>
-<p>¿Y eso funciona con cualquier triángulo?</p>
 </div>
 </div>
 
-<div class="dialog-line right">
-<svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
-<circle cx="32" cy="34" r="24" fill="#e7bd93"/>
-<path d="M8,26 C6,14 14,10 20,14 C14,18 10,24 10,30 Z" fill="#d8d2c4"/>
-<path d="M56,26 C58,14 50,10 44,14 C50,18 54,24 54,30 Z" fill="#d8d2c4"/>
-<circle cx="24" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="40" cy="36" r="7" fill="none" stroke="#3a2a22" stroke-width="2"/>
-<line x1="31" y1="36" x2="33" y2="36" stroke="#3a2a22" stroke-width="2"/>
-<circle cx="24" cy="36" r="2.5" fill="#3a2a22"/>
-<circle cx="40" cy="36" r="2.5" fill="#3a2a22"/>
-<path d="M22,48 Q32,44 42,48 Q32,52 22,48 Z" fill="#d8d2c4"/>
-</svg>
-<div class="dialog-bubble">
-<div class="dialog-name">Abuelo Theo</div>
-<p>No, solo con un triángulo <strong>rectángulo</strong> - es decir, uno con un ángulo real de 90°. ¡Sin eso, la fórmula no funciona!</p>
-</div>
+<div class="example-box warn">
+<div class="label">Errores habituales</div>
+<p><strong>Olvidar la raíz al final.</strong> c² = 25 significa c = 5, no 25.<br>
+<strong>Sumar cuando se busca un cateto.</strong> Hay que restar: b² = c² − a².<br>
+<strong>Aplicarlo a un triángulo no rectángulo.</strong> Sin ángulo recto la fórmula
+es sencillamente falsa.<br>
+<strong>Mezclar unidades.</strong> Convierte todo a la misma unidad antes de elevar al
+cuadrado; si no, el error se eleva al cuadrado también.</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Ejercicio</div>
+<p>Una escalera mide 5,00 m y está apoyada a 1,40 m de la pared. ¿A qué altura toca
+la pared? Redondea a centímetros y valora brevemente si la escalera está segura.</p>
+<details class="solution">
+<summary>Ver solución</summary>
+<p>La escalera es la hipotenusa, la distancia a la pared es un cateto y la altura
+buscada es el otro.<br>
+h² = 5,00² − 1,40² = 25,00 − 1,96 = 23,04<br>
+h = &radic;23,04 = <strong>4,80 m</strong><br>
+Sobre la seguridad: el ángulo sale de cos&nbsp;α = 1,40 / 5,00 = 0,28, o sea
+α ≈ 73,7°. Para escaleras de apoyo se recomiendan entre 65° y 75°, así que está dentro
+del margen permitido, aunque en el extremo más vertical. Separarla un poco más de la
+pared resultaría más cómodo para subir.</p>
+</details>
+</div>
+
+<div class="video-callout">
+<p>🎥 También hay un vídeo sobre este tema en nuestro canal de YouTube.</p>
+<a class="video-btn" href="https://youtu.be/H-FUVYM6aPE" target="_blank" rel="noopener">Ver el vídeo</a>
+</div>
+
+<p class="note">En geometría analítica el teorema se convierte en la fórmula de la
+distancia: la distancia entre dos puntos es &radic;((x₂−x₁)² + (y₂−y₁)²). Cualquier
+navegador calcula con ella, solo que en tres dimensiones.</p>
+<h2>Pitágoras en el espacio: la diagonal del ortoedro</h2>
+
+<p>El teorema no vale solo sobre el papel, sino también en el espacio. En un ortoedro (una caja) con aristas de longitud a, b y c se pregunta a menudo por la <strong>diagonal espacial</strong>: el segmento recto más largo del interior, que va de una esquina en diagonal a través del cuerpo hasta la esquina opuesta. Se llega a ella en dos pasos. Primero, en el suelo está la diagonal de la base, que es la hipotenusa de un triángulo de catetos a y b. Esa diagonal forma después con la altura c un segundo triángulo rectángulo, cuya hipotenusa es la diagonal espacial.</p>
+
+<div class="formula-box">
+d² = a² + b² + c²
+<small>diagonal espacial de un ortoedro con aristas a, b y c</small>
+</div>
+
+<div class="calc">
+Ortoedro con aristas de 3 cm, 4 cm y 12 cm<br>
+<br>
+Diagonal de la base: &radic;(3² + 4²) = &radic;25 = 5 cm<br>
+Diagonal espacial: d² = 5² + 12² = 25 + 144 = 169<br>
+d = &radic;169 = <strong>13 cm</strong><br>
+<br>
+Habitación de 5 m, 4 m y 2,5 m: d² = 25 + 16 + 6,25 = 47,25<br>
+d = &radic;47,25 &asymp; <strong>6,87 m</strong>
+</div>
+
+<p>En un cubo de arista a las tres longitudes son iguales y la fórmula se reduce a d = a &middot; &radic;3, unas 1,73 veces la arista. Para embalajes, mudanzas y varillas de tiendas de campaña esta es la pregunta decisiva: qué cabe todavía puesto en diagonal, aunque no cupiera en ninguna posición recta.</p>
+
+<div class="example-box task">
+<div class="label">Ejercicio</div>
+<p>Una varilla mide 1,20 m. ¿Cabe en una caja con las medidas interiores 1,00 m &times; 0,60 m &times; 0,50 m?</p>
+<details class="solution">
+<summary>Ver solución</summary>
+<p>Tumbada sobre el fondo no funciona: la diagonal de la base es &radic;(1,00² + 0,60²) = &radic;1,36 &asymp; 1,17 m, demasiado corta.<br>
+En diagonal por todo el espacio sí: d² = 1,00² + 0,60² + 0,50² = 1,00 + 0,36 + 0,25 = 1,61, así que d = &radic;1,61 &asymp; <strong>1,27 m</strong>.<br>
+Como 1,27 m es más que 1,20 m, la varilla cabe si se coloca en diagonal desde una esquina de abajo hasta la esquina opuesta de arriba.</p>
+</details>
 </div>
 
 
-<a class="back-link" href="../index.html">&larr; Volver al resumen</a>
+<h2>Pitágoras en el espacio</h2>
+
+<p>El teorema no se acaba en el plano. Para la diagonal espacial de un ortoedro se
+cumple d² = a² + b² + c². No es un teorema nuevo, sino el mismo aplicado dos veces:
+primero se calcula la diagonal de la base, y luego esa diagonal forma con la altura
+otro triángulo rectángulo.</p>
+
+<div class="calc">
+Caja de 60 cm &times; 40 cm &times; 30 cm<br>
+<br>
+Diagonal de la base: &radic;(60² + 40²) = &radic;5200 = 72,1 cm<br>
+Diagonal espacial: &radic;(72,1² + 30²) = &radic;(5200 + 900) = &radic;6100 = <strong>78,1 cm</strong>
+</div>
+
+<p>Con eso se responde una pregunta que aparece más a menudo de lo que parece: ¿cuál
+es el objeto más largo que todavía cabe en una caja? En esta serían unos 78
+centímetros, siempre que el objeto sea lo bastante fino como para colocarse realmente
+en diagonal.</p>
+
+<div class="example-box task">
+<div class="label">Ejercicio</div>
+<p>Un ascensor mide 1,20 m de ancho, 1,50 m de fondo y 2,20 m de alto. ¿Cabe dentro una
+barra de 3,00 m?</p>
+<details class="solution">
+<summary>Ver solución</summary>
+<p>Diagonal de la base: &radic;(1,20² + 1,50²) = &radic;(1,44 + 2,25) = &radic;3,69 = 1,92 m<br>
+Diagonal espacial: &radic;(1,92² + 2,20²) = &radic;(3,69 + 4,84) = &radic;8,53 = <strong>2,92 m</strong><br><br>
+La barra mide 3,00 m, así que <strong>no</strong> cabe: le sobran ocho centímetros.
+Llama la atención lo justo que queda: la altura por sí sola aporta más a la diagonal
+que el ancho y el fondo juntos, porque es el mayor de los tres valores.</p>
+</details>
+</div>
+
+<a class="back-link" href="../index.html">&larr; Volver al índice</a>
 </article>
 </main>
 

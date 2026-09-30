@@ -211,6 +211,17 @@ bequemer zu besteigen.</p>
 </details>
 </div>
 
+<h2>Die Umkehrung ist im Alltag oft die nützlichere Richtung</h2>
+
+<p>Meist wird der Satz benutzt, um eine fehlende Seite zu berechnen. Er funktioniert
+aber auch rückwärts: Stimmt a² + b² = c², dann <em>muss</em> das Dreieck rechtwinklig
+sein. Damit lässt sich ein rechter Winkel nicht nur abstecken, sondern auch
+nachmessen. Wer prüfen will, ob eine Zimmerecke wirklich 90° hat, misst 60 cm an der
+einen Wand, 80 cm an der anderen und dann den Abstand zwischen den beiden Punkten.
+Kommen genau 100 cm heraus, ist die Ecke rechtwinklig; sind es 102 cm, ist sie zu
+stumpf. Dieselbe Probe steckt hinter jeder Rechtwinkligkeitskontrolle auf dem Bau,
+und sie braucht nichts außer einem Maßband.</p>
+
 <div class="video-callout">
 <p>🎥 Das Thema gibt es auch als Video auf unserem YouTube-Kanal.</p>
 <a class="video-btn" href="https://youtu.be/H-FUVYM6aPE" target="_blank" rel="noopener">Video ansehen</a>
@@ -220,6 +231,73 @@ bequemer zu besteigen.</p>
 <p class="note">Im Koordinatensystem ist der Satz die Abstandsformel: Der Abstand
 zweier Punkte ist &radic;((x₂−x₁)² + (y₂−y₁)²). Jedes Navigationsgerät rechnet damit,
 nur eben in drei Dimensionen.</p>
+<h2>Der räumliche Pythagoras: die Raumdiagonale</h2>
+
+<p>Der Satz gilt nicht nur auf dem Papier, sondern auch im Raum. Bei einem Quader mit den Kantenlängen a, b und c fragt man oft nach der <strong>Raumdiagonale</strong>: der längsten Strecke im Inneren, von einer Ecke schräg durch den Körper zur gegenüberliegenden Ecke. Man erreicht sie in zwei Schritten. Zuerst liegt auf dem Boden die Flächendiagonale, und die ist die Hypotenuse eines Dreiecks mit den Katheten a und b. Diese Flächendiagonale bildet dann mit der Höhe c ein zweites rechtwinkliges Dreieck, dessen Hypotenuse die Raumdiagonale ist.</p>
+
+<div class="formula-box">
+d² = a² + b² + c²
+<small>Raumdiagonale eines Quaders mit den Kanten a, b und c</small>
+</div>
+
+<div class="calc">
+Quader mit 3 cm, 4 cm und 12 cm Kantenlänge<br>
+<br>
+Flächendiagonale: &radic;(3² + 4²) = &radic;25 = 5 cm<br>
+Raumdiagonale: d² = 5² + 12² = 25 + 144 = 169<br>
+d = &radic;169 = <strong>13 cm</strong><br>
+<br>
+Zimmer mit 5 m, 4 m und 2,5 m: d² = 25 + 16 + 6,25 = 47,25<br>
+d = &radic;47,25 &asymp; <strong>6,87 m</strong>
+</div>
+
+<p>Bei einem Würfel mit der Kante a sind alle drei Längen gleich, und die Formel schrumpft zu d = a &middot; &radic;3, also rund 1,73 mal die Kantenlänge. Für Verpackungen, Möbeltransport und Zeltstangen ist das die entscheidende Frage: Was noch schräg hineinpasst, obwohl es in keiner geraden Lage Platz hätte.</p>
+
+<div class="example-box task">
+<div class="label">Übungsaufgabe</div>
+<p>Ein Stab ist 1,20 m lang. Passt er in eine Kiste mit den Innenmaßen 1,00 m &times; 0,60 m &times; 0,50 m?</p>
+<details class="solution">
+<summary>Lösung anzeigen</summary>
+<p>Flach auf dem Boden geht es nicht: Die Bodendiagonale ist &radic;(1,00² + 0,60²) = &radic;1,36 &asymp; 1,17 m und damit zu kurz.<br>
+Schräg durch den ganzen Raum klappt es aber: d² = 1,00² + 0,60² + 0,50² = 1,00 + 0,36 + 0,25 = 1,61, also d = &radic;1,61 &asymp; <strong>1,27 m</strong>.<br>
+Weil 1,27 m mehr als 1,20 m ist, passt der Stab, wenn man ihn diagonal von einer unteren Ecke zur gegenüberliegenden oberen Ecke legt.</p>
+</details>
+</div>
+
+
+<h2>Pythagoras im Raum</h2>
+
+<p>Der Satz hört nicht bei der Zeichenebene auf. Für die Raumdiagonale eines Quaders
+gilt d² = a² + b² + c². Das ist kein neuer Satz, sondern derselbe zweimal angewendet:
+Zuerst berechnet man die Diagonale der Grundfläche, dann bildet diese Diagonale mit
+der Höhe wieder ein rechtwinkliges Dreieck.</p>
+
+<div class="calc">
+Karton 60 cm &times; 40 cm &times; 30 cm<br>
+<br>
+Grundflächendiagonale: &radic;(60² + 40²) = &radic;5200 = 72,1 cm<br>
+Raumdiagonale: &radic;(72,1² + 30²) = &radic;(5200 + 900) = &radic;6100 = <strong>78,1 cm</strong>
+</div>
+
+<p>Damit lässt sich eine Frage beantworten, die im Alltag öfter vorkommt, als man
+denkt: Welcher längste Gegenstand passt noch in eine Kiste? In diesem Karton wären
+das gut 78 Zentimeter — vorausgesetzt, der Gegenstand ist dünn genug, um wirklich
+diagonal zu liegen.</p>
+
+<div class="example-box task">
+<div class="label">Übungsaufgabe</div>
+<p>Ein Aufzug ist 1,20 m breit, 1,50 m tief und 2,20 m hoch. Passt eine Stange von
+3,00 m Länge hinein?</p>
+<details class="solution">
+<summary>Lösung anzeigen</summary>
+<p>Grundflächendiagonale: &radic;(1,20² + 1,50²) = &radic;(1,44 + 2,25) = &radic;3,69 = 1,92 m<br>
+Raumdiagonale: &radic;(1,92² + 2,20²) = &radic;(3,69 + 4,84) = &radic;8,53 = <strong>2,92 m</strong><br><br>
+Die Stange ist 3,00 m lang und passt damit <strong>nicht</strong> — es fehlen acht
+Zentimeter. Bemerkenswert ist, wie knapp das ausgeht: Die Höhe allein trägt mehr zur
+Diagonale bei als Breite und Tiefe zusammen, weil sie der längste der drei Werte ist.</p>
+</details>
+</div>
+
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>
