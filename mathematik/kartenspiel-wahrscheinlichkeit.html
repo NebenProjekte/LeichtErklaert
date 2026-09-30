@@ -166,7 +166,7 @@
 <p>52! &asymp; 8,07 &times; 10⁶⁷ &mdash; das ist eine 8 mit 67 Nullen dahinter (genauer: 80.658.175.170.943.878.571.660.636.856.403.766.975.289.505.440.883.277.824.000.000.000.000).</p>
 </div>
 
-<div class="note">Zum Vergleich: Das Universum ist seit dem Urknall etwa 4,35 &times; 10¹⁷ Sekunden alt. Selbst wenn jeder der rund 8 Milliarden Menschen auf der Erde jede einzelne Sekunde seit dem Urknall ein neues Kartenspiel gemischt hätte, kämen dabei nur etwa 3,5 &times; 10²⁷ Reihenfolgen zusammen - immer noch 40 Zehnerpotenzen weniger als 52!</p>
+<p class="note">Zum Vergleich: Das Universum ist seit dem Urknall etwa 4,35 &times; 10¹⁷ Sekunden alt. Selbst wenn jeder der rund 8 Milliarden Menschen auf der Erde jede einzelne Sekunde seit dem Urknall ein neues Kartenspiel gemischt hätte, kämen dabei nur etwa 3,5 &times; 10²⁷ Reihenfolgen zusammen - immer noch 40 Zehnerpotenzen weniger als 52!</p>
 
 
 <p class="note">Deshalb gilt: Wenn du das nächste Mal ein Kartenspiel gut mischst, hält die entstehende Reihenfolge mit an Sicherheit grenzender Wahrscheinlichkeit den Rekord, noch nie zuvor in der Geschichte der Menschheit existiert zu haben - und wird wohl auch nie wieder auftauchen.</p>
@@ -231,6 +231,48 @@ Der Unterschied entsteht, weil die erste gezogene Karte die Ausgangslage für di
 zweite verändert. Genau das macht Kartenspiele mathematisch interessanter als
 Würfelspiele.</p>
 </details>
+</div>
+
+<h2>Wie oft muss man mischen, damit es wirklich zufällig ist?</h2>
+
+<p>Die riesige Zahl der Möglichkeiten nützt nichts, wenn schlecht gemischt wird. Genau
+das haben die Mathematiker Dave Bayer und Persi Diaconis 1992 untersucht. Ihr Ergebnis
+ist berühmt geworden: Beim <strong>Riffle Shuffle</strong>, dem Mischen durch Teilen
+und Ineinanderfallenlassen, sind rund <strong>sieben Durchgänge</strong> nötig, bis
+ein 52er-Blatt praktisch zufällig liegt. Nach drei oder vier Mischvorgängen lässt sich
+statistisch noch deutlich erkennen, wie die Karten vorher lagen — für ein faires Spiel
+ist das zu wenig.</p>
+
+<p>Bemerkenswert ist der Verlauf: Die Ordnung verschwindet nicht gleichmäßig, sondern
+fast schlagartig. Bis zum fünften Mischen bleibt viel Struktur erhalten, zwischen dem
+fünften und dem siebten bricht sie zusammen, und danach bringt weiteres Mischen kaum
+noch etwas. Fachleute nennen so ein Verhalten einen <em>Cut-off</em>. Wer im Casino
+zusieht, erkennt die Regel wieder: Dort wird nicht aus Gewohnheit mehrfach gemischt,
+sondern weil weniger nachweislich nicht reicht.</p>
+
+<div class="example-box">
+<div class="label">Warum die Zahl so schnell wächst</div>
+<p>Der Grund für die Explosion steckt in der Multiplikation. Kommt zu einem Blatt von
+n Karten eine einzige weitere dazu, wird die Gesamtzahl der Reihenfolgen nicht um
+etwas größer, sondern mit (n + 1) <strong>malgenommen</strong>. Von 51 auf 52 Karten
+verzweiundfünfzigfacht sich die Zahl der Möglichkeiten in einem einzigen Schritt.
+Diese Art von Wachstum übertrifft sogar das <a href="exponentielles-wachstum.html">exponentielle
+Wachstum</a>: Bei 2<sup>n</sup> kommt in jedem Schritt derselbe Faktor 2 dazu, bei n!
+wird der Faktor selbst immer größer. Deshalb ist 52! auch so viel größer als
+2<sup>52</sup>, obwohl beide Ausdrücke harmlos aussehen.</p>
+</div>
+
+<p>Praktisch heißt das: Schon ein Skatblatt mit 32 Karten hat rund
+2,6 &middot; 10<sup>35</sup> Reihenfolgen, ein Blatt mit 20 Karten immerhin noch
+2,4 Trillionen. Man braucht kein volles Kartenspiel, damit die Zahl jede
+Vorstellungskraft übersteigt — 20 Karten genügen bereits.</p>
+
+<div class="example-box">
+<div class="label">Passt dazu</div>
+<p><a href="geburtstagsparadoxon.html">Geburtstagsparadoxon</a> &middot;
+<a href="drei-tueren-problem.html">Ziegenproblem</a> &middot;
+<a href="exponentielles-wachstum.html">Exponentielles Wachstum</a> &middot;
+<a href="primzahlen.html">Primzahlen</a></p>
 </div>
 
 <div class="video-callout">

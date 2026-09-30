@@ -46,13 +46,14 @@
 
 <article class="topic">
 <span class="subject-pill math">Math - Probability</span>
-<h1>Why Is Every Shuffled Card Order Unique?</h1>
+<h1>Why Is Every Shuffled Deck Order Unique?</h1>
 
-<p>A standard deck has <strong>52 cards</strong>. Shuffle it well and you get a particular order. The question is: how many different orders are even possible?</p>
+<p>An ordinary deck has <strong>52 cards</strong>. Shuffle it properly and you get one
+particular order. The question is: how many different orders are possible at all?</p>
 
 <div class="formula-box">
 52! = 52 &times; 51 &times; 50 &times; ... &times; 2 &times; 1
-<small>Read as "52 factorial" &mdash; the exclamation mark means you multiply all numbers from 52 down to 1</small>
+<small>Spoken: "52 factorial" &mdash; the exclamation mark means you multiply every number from 52 down to 1</small>
 </div>
 
 <div class="diagram">
@@ -98,7 +99,7 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>52 times 51 times 50 and so on - that can't possibly give THAT many possibilities, can it?</p>
+<p>52 times 51 times 50 and so on — surely that can't give thaaat many possibilities?</p>
 </div>
 </div>
 
@@ -117,7 +118,7 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>Oh, it can - that's exactly the trick with factorials, they explode incredibly fast! For the first card you have 52 options, for the second only 51 left (one is already taken), for the third 50, and so on down to the last card.</p>
+<p>It does, and that is exactly the trick with factorials — they explode incredibly fast. For the first card you have 52 options, for the second only 51 (one is already taken), for the third 50, and so on down to the last card.</p>
 </div>
 </div>
 
@@ -136,7 +137,7 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Okay, show me with fewer cards so I can follow along.</p>
+<p>Okay, show me with fewer cards so I can follow it.</p>
 </div>
 </div>
 
@@ -155,7 +156,7 @@
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>Sure! With 3 cards there are 3! = 6 orders. With 4 cards already 4! = 24. With 5 cards, 5! = 120. See how it grows? Not slowly, but explosively - and with 52 cards you end up with a number that has 68 digits.</p>
+<p>Gladly. With 3 cards there are 3! = 6 orders. With 4 cards already 4! = 24. With 5 cards 5! = 120. You can see it does not grow slowly but explosively — and with 52 cards you end up with a number 68 digits long.</p>
 </div>
 </div>
 
@@ -163,13 +164,124 @@
 
 <div class="example-box">
 <div class="label">The number written out</div>
-<p>52! &asymp; 8.07 &times; 10⁶⁷ &mdash; that's an 8 followed by 67 zeros (more precisely: 80,658,175,170,943,878,571,660,636,856,403,766,975,289,505,440,883,277,824,000,000,000,000).</p>
+<p>52! &asymp; 8.07 &times; 10⁶⁷ &mdash; that is an 8 followed by 67 digits (more precisely: 80,658,175,170,943,878,571,660,636,856,403,766,975,289,505,440,883,277,824,000,000,000,000).</p>
 </div>
 
-<div class="note">For comparison: the universe has existed for about 4.35 &times; 10¹⁷ seconds since the Big Bang. Even if every one of the roughly 8 billion people on Earth had shuffled a new deck every single second since the Big Bang, that would only add up to about 3.5 &times; 10²⁷ orders - still 40 orders of magnitude short of 52!</p>
+<p class="note">For comparison: the universe is about 4.35 &times; 10¹⁷ seconds old. Even
+if every one of the roughly 8 billion people on Earth had shuffled a fresh deck every
+single second since the Big Bang, that would only add up to some
+3.5 &times; 10²⁷ orders — still 40 powers of ten short of 52!</p>
 
+<p class="note">So the next time you shuffle a deck properly, the order you create
+almost certainly holds the record of never having existed before in human history —
+and it will probably never turn up again.</p>
 
-<p class="note">So the next time you shuffle a deck well, the resulting order is, with near certainty, one that has never existed before in the history of humankind - and is unlikely to ever appear again.</p>
+<div class="example-box glossary">
+<div class="label">Key terms</div>
+<p><strong>Factorial (n!)</strong> — the product of all the numbers from 1 to n.<br>
+<strong>Permutation</strong> — one possible order.<br>
+<strong>Combination</strong> — a selection where the order does not matter.<br>
+<strong>Laplace probability</strong> — favourable cases divided by possible cases.</p>
+</div>
+
+<h2>How many orders there are</h2>
+
+<div class="calc">
+52 cards can be arranged in 52! ways.<br>
+<br>
+52! &asymp; 8.07 &middot; 10<sup>67</sup><br>
+<br>
+for comparison:<br>
+atoms on Earth &asymp; 10<sup>50</sup><br>
+seconds since the Big Bang &asymp; 4 &middot; 10<sup>17</sup>
+</div>
+
+<p>The number is so large that any well-shuffled order has, to all intents and
+purposes, never existed before — not in the entire history of card playing. That is
+not a figure of speech but a plain consequence of the scale.</p>
+
+<table class="datatable">
+<caption>How fast the factorial grows</caption>
+<thead><tr><th>n</th><th>n!</th></tr></thead>
+<tbody>
+<tr><td>5</td><td>120</td></tr>
+<tr><td>10</td><td>3,628,800</td></tr>
+<tr><td>20</td><td>2.4 &middot; 10<sup>18</sup></td></tr>
+<tr><td>52</td><td>8.07 &middot; 10<sup>67</sup></td></tr>
+</tbody>
+</table>
+
+<h2>How many shuffles does it actually take?</h2>
+
+<p>All those possibilities are worth nothing if the shuffling is poor. That is exactly
+what the mathematicians Dave Bayer and Persi Diaconis looked into in 1992, and their
+result became famous. For the <strong>riffle shuffle</strong> — splitting the deck and
+letting the halves fall into each other — about <strong>seven rounds</strong> are
+needed before a 52-card deck is effectively random. After three or four shuffles you
+can still detect statistically how the cards were arranged beforehand, which is too
+little for a fair game.</p>
+
+<p>The way it happens is remarkable. The order does not fade away evenly but almost
+all at once. Up to the fifth shuffle a great deal of structure survives; between the
+fifth and the seventh it collapses; and after that, further shuffling barely changes
+anything. Specialists call this behaviour a <em>cut-off</em>. Watch a casino dealer
+and you will see the rule in action: the repeated shuffling is not a habit, it is
+there because anything less has been shown not to be enough.</p>
+
+<div class="example-box">
+<div class="label">Why the number grows so fast</div>
+<p>The reason for the explosion lies in the multiplication. Add a single card to a
+deck of n and the total number of orders does not grow by a little — it is
+<strong>multiplied</strong> by (n + 1). Going from 51 to 52 cards multiplies the
+possibilities by fifty-two in one single step. This kind of growth even outpaces
+<a href="exponentielles-wachstum.html">exponential growth</a>: with 2<sup>n</sup> each
+step adds the same factor of 2, while with n! the factor itself keeps getting larger.
+That is why 52! is so much bigger than 2<sup>52</sup>, even though both expressions
+look equally harmless.</p>
+</div>
+
+<p>In practice this means even a 32-card deck has around
+2.6 &middot; 10<sup>35</sup> orders, and a 20-card deck still manages
+2.4 quintillion. You do not need a full deck for the number to defeat the imagination
+— twenty cards will do.</p>
+
+<div class="example-box warn">
+<div class="label">Common mistakes</div>
+<p><strong>Counting the order where it does not matter.</strong> When drawing a hand the order usually makes no difference — then divide by the factorial of the hand size.<br>
+<strong>Confusing drawing with and without replacement.</strong> Cards are not put back, so the denominator drops at every step.<br>
+<strong>Adding probabilities instead of multiplying.</strong> For consecutive conditions you multiply.<br>
+<strong>"Very unlikely means impossible."</strong> Some order always comes out.</p>
+</div>
+
+<div class="example-box task">
+<div class="label">Practice question</div>
+<p>How likely is it to draw two aces in a row from a 52-card deck without
+replacement?</p>
+<details class="solution">
+<summary>Show solution</summary>
+<p>First ace: 4 out of 52 = 1/13.<br>
+Second ace: only 3 aces left among 51 cards = 3/51 = 1/17.<br>
+<br>
+P = 1/13 &middot; 1/17 = <strong>1/221 &asymp; 0.45 %</strong><br><br>
+With replacement it would be 4/52 &middot; 4/52 = 1/169 &asymp; 0.59 % — noticeably
+more. The difference arises because the first card drawn changes the starting point
+for the second. That is exactly what makes card games mathematically more interesting
+than dice games.</p>
+</details>
+</div>
+
+<div class="example-box">
+<div class="label">Related topics</div>
+<p><a href="geburtstagsparadoxon.html">Birthday paradox</a> &middot;
+<a href="drei-tueren-problem.html">Monty Hall problem</a> &middot;
+<a href="exponentielles-wachstum.html">Exponential growth</a> &middot;
+<a href="primzahlen.html">Prime numbers</a></p>
+</div>
+
+<div class="video-callout">
+<p>🎥 Explained in under two minutes — as a Short on our YouTube channel.</p>
+<a class="video-btn" href="https://youtube.com/shorts/xh5ph8ccUyE" target="_blank" rel="noopener">Watch the Short</a>
+</div>
 
 <a class="back-link" href="../index.html">&larr; Back to overview</a>
 </article>
