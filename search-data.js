@@ -65,4 +65,6 @@ var LE_TOPICS = [
   { title: "Quadratische Gleichungen leicht erklaert", cat: "Mathematik", path: "mathematik/quadratische-gleichungen.html", keywords: "quadratische gleichung mitternachtsformel abc formel pq formel diskriminante nullstellen parabel scheitelpunkt vieta algebra loesungsformel" },
   { title: "Strahlensatz leicht erklaert", cat: "Mathematik", path: "mathematik/strahlensatz.html", keywords: "strahlensatz strahlensaetze verhaeltnis aehnlichkeit streckfaktor zentrische streckung thales schatten baumhoehe geometrie parallel" },
   { title: "Blutkreislauf leicht erklaert", cat: "Biologie", path: "biologie/blutkreislauf.html", keywords: "blutkreislauf herz kreislauf arterie vene kapillare lungenkreislauf koerperkreislauf herzminutenvolumen schlagvolumen puls venenklappen sauerstoff blut" },
+  { title: "Mitose und Meiose leicht erklaert", cat: "Biologie", path: "biologie/mitose-und-meiose.html", keywords: "mitose meiose zellteilung unterschied chromosomen chromatid diploid haploid crossing over prophase metaphase anaphase telophase reifeteilung keimzellen genetik" },
+  { title: "Mendelsche Regeln leicht erklaert", cat: "Biologie", path: "biologie/mendelsche-regeln.html", keywords: "mendel mendelsche regeln vererbung genetik dominant rezessiv allel genotyp phaenotyp punnett quadrat uniformitaetsregel spaltungsregel kreuzung erbsen" },
 ];

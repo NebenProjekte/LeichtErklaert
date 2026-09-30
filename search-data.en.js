@@ -65,4 +65,6 @@ var LE_TOPICS = [
   { title: "Quadratic Equations Explained Simply", cat: "Math", path: "mathematik/quadratische-gleichungen.html", keywords: "quadratic equation formula discriminant roots parabola vertex vieta algebra" },
   { title: "Intercept Theorem Explained Simply", cat: "Math", path: "mathematik/strahlensatz.html", keywords: "intercept theorem thales ratio similarity scale factor shadow tree height geometry parallel" },
   { title: "The Circulatory System Explained Simply", cat: "Biology", path: "biologie/blutkreislauf.html", keywords: "circulatory system heart artery vein capillary pulmonary systemic cardiac output stroke volume pulse blood oxygen" },
+  { title: "Mitosis and Meiosis Explained Simply", cat: "Biology", path: "biologie/mitose-und-meiose.html", keywords: "mitosis meiosis cell division difference chromosomes chromatid diploid haploid crossing over prophase metaphase anaphase telophase germ cells genetics" },
+  { title: "Mendel's Laws of Inheritance Explained Simply", cat: "Biology", path: "biologie/mendelsche-regeln.html", keywords: "mendel laws inheritance genetics dominant recessive allele genotype phenotype punnett square segregation uniformity cross peas" },
 ];

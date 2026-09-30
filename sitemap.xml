@@ -10,7 +10,9 @@
   <url><loc>https://leichterklaert.com/biologie/evolutionstheorie.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/biologie/fluss.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/biologie/fotosynthese.html</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/biologie/mendelsche-regeln.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/biologie/mitochondrien.html</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/biologie/mitose-und-meiose.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/biologie/nervenzelle.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/biologie/oekosystem.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/biologie/stammzellen.html</loc><priority>0.7</priority></url>
@@ -27,6 +29,7 @@
   <url><loc>https://leichterklaert.com/chemie/redoxreaktionen.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/chemie/saeuren-und-basen.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/chemie/salze-und-ionen.html</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/en/</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/biologie/bakterien.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/biologie/blutkreislauf.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/biologie/chloroplasten.html</loc><priority>0.7</priority></url>
@@ -35,7 +38,9 @@
   <url><loc>https://leichterklaert.com/en/biologie/evolutionstheorie.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/biologie/fluss.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/biologie/fotosynthese.html</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/en/biologie/mendelsche-regeln.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/biologie/mitochondrien.html</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/en/biologie/mitose-und-meiose.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/biologie/nervenzelle.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/biologie/oekosystem.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/biologie/stammzellen.html</loc><priority>0.7</priority></url>
@@ -60,7 +65,6 @@
   <url><loc>https://leichterklaert.com/en/geschichte/spanischer-kolonialismus.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/geschichte/steinzeit.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/geschichte/zweiter-weltkrieg.html</loc><priority>0.7</priority></url>
-  <url><loc>https://leichterklaert.com/en/</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/mathematik/ableitungen.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/mathematik/binomische-formeln.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/mathematik/brueche.html</loc><priority>0.7</priority></url>
@@ -92,6 +96,7 @@
   <url><loc>https://leichterklaert.com/en/sporttheorie/hypertrophie.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/sporttheorie/kraftausdauer.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/sporttheorie/maximalkraft.html</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/es/</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/biologie/bakterien.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/biologie/blutkreislauf.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/biologie/chloroplasten.html</loc><priority>0.7</priority></url>
@@ -100,7 +105,9 @@
   <url><loc>https://leichterklaert.com/es/biologie/evolutionstheorie.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/biologie/fluss.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/biologie/fotosynthese.html</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/es/biologie/mendelsche-regeln.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/biologie/mitochondrien.html</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/es/biologie/mitose-und-meiose.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/biologie/nervenzelle.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/biologie/oekosystem.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/biologie/stammzellen.html</loc><priority>0.7</priority></url>
@@ -125,7 +132,6 @@
   <url><loc>https://leichterklaert.com/es/geschichte/spanischer-kolonialismus.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/geschichte/steinzeit.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/geschichte/zweiter-weltkrieg.html</loc><priority>0.7</priority></url>
-  <url><loc>https://leichterklaert.com/es/</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/mathematik/ableitungen.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/mathematik/binomische-formeln.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/mathematik/brueche.html</loc><priority>0.7</priority></url>

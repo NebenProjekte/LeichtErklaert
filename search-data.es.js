@@ -65,4 +65,6 @@ var LE_TOPICS = [
   { title: "Ecuaciones de segundo grado explicadas de forma sencilla", cat: "Matematicas", path: "mathematik/quadratische-gleichungen.html", keywords: "ecuacion segundo grado formula general discriminante raices parabola vertice vieta algebra" },
   { title: "El teorema de Tales explicado de forma sencilla", cat: "Matematicas", path: "mathematik/strahlensatz.html", keywords: "teorema tales razon semejanza factor escala sombra altura arbol geometria paralelas" },
   { title: "El aparato circulatorio explicado de forma sencilla", cat: "Biologia", path: "biologie/blutkreislauf.html", keywords: "aparato circulatorio corazon arteria vena capilar circulacion pulmonar mayor gasto cardiaco volumen sistolico pulso sangre oxigeno" },
+  { title: "Mitosis y meiosis explicadas de forma sencilla", cat: "Biologia", path: "biologie/mitose-und-meiose.html", keywords: "mitosis meiosis division celular diferencia cromosomas cromatida diploide haploide entrecruzamiento profase metafase anafase telofase gametos genetica" },
+  { title: "Las leyes de Mendel explicadas de forma sencilla", cat: "Biologia", path: "biologie/mendelsche-regeln.html", keywords: "mendel leyes herencia genetica dominante recesivo alelo genotipo fenotipo cuadro punnett segregacion uniformidad cruce guisantes" },
 ];
