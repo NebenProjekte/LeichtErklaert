@@ -48,28 +48,58 @@
 <span class="subject-pill physics">Physics - Mechanics</span>
 <h1>Leverage (The Law of the Lever) Explained Simply</h1>
 
-<p>A lever is a bar that rotates around a fixed point (the <strong>pivot</strong>). With a lever, you can move a heavy load with little force - if you push on the right side, far enough from the pivot.</p>
+<p>A lever gives you nothing for free. All it does is redistribute — whatever force
+you save, you pay back in distance. That single sentence is the heart of the whole
+topic, and it has a name: the <strong>golden rule of mechanics</strong>.</p>
 
 <div class="formula-box">
-F&#8321; &middot; l&#8321; = F&#8322; &middot; l&#8322;
-<small>force times force-arm = load times load-arm</small>
+F₁ &middot; l₁ = F₂ &middot; l₂
+<small>force &times; effort arm = load &times; load arm &middot; the product is called torque</small>
 </div>
 
-<div class="diagram">
-<svg viewBox="0 0 320 160" width="300" height="150" xmlns="http://www.w3.org/2000/svg">
-<line x1="20" y1="90" x2="300" y2="90" stroke="#c1613b" stroke-width="6" stroke-linecap="round"/>
-<polygon points="160,90 145,120 175,120" fill="#7a3b22"/>
-<circle cx="40" cy="80" r="14" fill="#b8483a"/>
-<text x="40" y="60" font-size="12" text-anchor="middle" fill="#b8483a" font-weight="bold">Load</text>
-<circle cx="280" cy="80" r="8" fill="#c1613b"/>
-<text x="280" y="60" font-size="12" text-anchor="middle" fill="#c1613b" font-weight="bold">Force</text>
-<text x="160" y="140" font-size="12" text-anchor="middle" fill="#8a7264">Pivot</text>
-</svg></div>
-<p class="note">Short arm to the heavy load, long arm to the force - that's how a little force moves a lot of load.</p>
+<div class="example-box glossary">
+<div class="label">Key terms</div>
+<p><strong>Pivot</strong> — the fixed point the lever turns about.<br>
+<strong>Effort arm</strong> — the distance from the pivot to where you push.<br>
+<strong>Load arm</strong> — the distance from the pivot to the load.<br>
+<strong>Torque</strong> — force times lever arm, measured in newton metres (Nm).<br>
+<strong>Double-sided lever</strong> — pivot between effort and load, such as a seesaw.<br>
+<strong>Single-sided lever</strong> — effort and load on the same side, such as a wheelbarrow.</p>
+</div>
+
+<h2>Why length matters so much</h2>
+
+<div class="calc">
+A stone of 300 kg weighs about 2943 N.<br>
+Load arm 0.5 m, effort arm 2.5 m.<br>
+<br>
+F = (2943 N &middot; 0.5 m) &divide; 2.5 m = <strong>589 N</strong><br>
+<br>
+That is the equivalent of about 60 kg of body strength — a person can manage it.
+</div>
+
+<p>The price is written into the golden rule: to raise the stone by one centimetre,
+the long end has to travel five centimetres. The work done — force times distance —
+is exactly the same in both cases.</p>
+
+<table class="datatable">
+<caption>Levers in everyday life</caption>
+<thead><tr><th>Tool</th><th>Type</th><th>What for</th></tr></thead>
+<tbody>
+<tr><td>Crowbar</td><td>single-sided</td><td>large force multiplication</td></tr>
+<tr><td>Nutcracker</td><td>single-sided</td><td>force multiplication</td></tr>
+<tr><td>Wheelbarrow</td><td>single-sided</td><td>load near the wheel = little force</td></tr>
+<tr><td>Seesaw</td><td>double-sided</td><td>balance</td></tr>
+<tr><td>Scissors</td><td>double-sided</td><td>force at the handle, cut near the joint</td></tr>
+<tr><td>Tweezers</td><td>single-sided</td><td>deliberately <em>less</em> force, but fine movement</td></tr>
+</tbody>
+</table>
+
+<p>The tweezers are the most instructive case. Here the force is reduced on purpose,
+because delicacy matters more than strength. A lever can work in both directions.</p>
 
 <p class="dialog-intro">💬 Mia asks Grandpa Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -85,10 +115,9 @@ F&#8321; &middot; l&#8321; = F&#8322; &middot; l&#8322;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Why can I lift a much heavier dad on a seesaw if I sit far out at the end?</p>
+<p>Archimedes supposedly said he could move the Earth. Is that actually possible?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -104,10 +133,9 @@ F&#8321; &middot; l&#8321; = F&#8322; &middot; l&#8322;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>Because your distance to the pivot is greater! Your force gets multiplied by your long lever arm - the further out you sit, the more "punch" your weight has.</p>
+<p>On paper, yes. In practice you would need a lever whose long end measures about 100,000 light years — as wide as the Milky Way.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -123,10 +151,9 @@ F&#8321; &middot; l&#8321; = F&#8322; &middot; l&#8322;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Can you work through an example for me?</p>
+<p>And how long would I have to push?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -142,20 +169,76 @@ F&#8321; &middot; l&#8321; = F&#8322; &middot; l&#8322;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>Sure! A load of 600 newtons sits 1 meter from the pivot. You sit 3 meters away. How much force do you need? 600 &middot; 1 = F &middot; 3, so F = 200 newtons - a third of the load!</p>
+<p>To lift it by one centimetre, pushing at one metre per second: roughly 30 trillion years. The formula is right, the world just refuses to cooperate.</p>
+</div>
 </div>
 </div>
 
+<div class="example-box warn">
+<div class="label">Common mistakes</div>
+<p><strong>Measuring the lever arm from the load.</strong> Both arms are always measured from the <em>pivot</em>.<br>
+<strong>Using mass instead of force.</strong> Convert to newtons with 9.81 m/s² first, or the units will not match.<br>
+<strong>Treating an angled lever like a straight one.</strong> Only the perpendicular distance to the line of force counts.<br>
+<strong>Believing a lever saves work.</strong> It saves force, never work.</p>
 </div>
 
+<div class="example-box task">
+<div class="label">Practice question</div>
+<p>On a seesaw, a 30 kg child sits on the left, 2.0 m from the pivot. A 40 kg child
+sits on the right. How far from the pivot must they sit? And how far does the right
+child move if the left one drops by 40 cm?</p>
+<details class="solution">
+<summary>Show solution</summary>
+<p>Balance: 30 kg &middot; 2.0 m = 40 kg &middot; l₂<br>
+l₂ = 60 &divide; 40 = <strong>1.5 m</strong><br>
+(You can skip converting to newtons, because 9.81 appears on both sides and cancels
+out.)<br><br>
+The distances follow the ratio of the lever arms: 40 cm &middot; (1.5 &divide; 2.0) =
+<strong>30 cm</strong>. The heavier child moves less far — and that is the golden
+rule in action.</p>
+</details>
+</div>
 
-<p class="note">This principle is also behind nail clippers, scissors, nutcrackers, and crowbars - anywhere a small force needs to achieve a big effect.</p>
+<h2>Levers in tools and in the body</h2>
+
+<p>The law of the lever does not just explain seesaws and crowbars. Once you start
+looking for pivots you find it in almost every tool — and especially often in your
+own body.</p>
+
+<p>Tools usually go for the <strong>force advantage</strong>. In a nutcracker, a pipe
+wrench or a pair of side cutters the pivot sits close to the load and far from your
+hand. A bolt cutter with 80-centimetre handles and 4-centimetre jaws multiplies your
+hand force by a factor of 20. The price is the golden rule again: the handles travel
+20 centimetres while the jaws close by one.</p>
 
 <div class="example-box">
-<div class="label">Fun Fact</div>
-<p>The Greek scholar <strong>Archimedes</strong> is said to have declared about the lever: &ldquo;Give me a place to stand, and I shall move the Earth.&rdquo; That is exactly what he meant - with a long enough lever and a fixed pivot point, you could in theory move the entire planet.</p>
+<div class="label">The body builds bad levers on purpose</div>
+<p>In humans it is almost always the other way round. The biceps attaches only about
+4 centimetres behind the elbow, while the hand is roughly 32 centimetres away — a
+ratio of 1 to 8. Hold 5 kilograms in your hand and the biceps has to supply about
+eight times that, around 40 kilograms of pull. That sounds like poor engineering, but
+it is deliberate. The golden rule still applies, it is simply being used in reverse.
+The muscle shortens by one centimetre and the hand travels eight. The body trades
+force for <strong>speed and reach</strong> — exactly what matters for throwing,
+striking and running. An arm with a good force advantage could lift a lot, but it
+would move at an agonising crawl. The same pattern shows up in the jaw, the calf and
+the foot, where the Achilles tendon attaches just behind the ankle joint.</p>
 </div>
 
+<p>There are three classes of lever, depending on where the pivot sits. In a
+<strong>single-sided lever</strong> like a nutcracker, effort and load are on the same
+side. In a <strong>double-sided lever</strong> like a seesaw they are on opposite
+sides. And in tweezers the effort sits between pivot and load, so the force is
+reduced on purpose in exchange for a longer travel and finer control.</p>
+
+<div class="video-callout">
+<p>🎥 There is also a video on this topic on our YouTube channel: Archimedes wanted to lift the Earth — he would have had to push for 103,000 light years.</p>
+<a class="video-btn" href="https://youtu.be/a5XPCysR0N4" target="_blank" rel="noopener">Watch the video</a>
+</div>
+
+<p class="note">Your own body is full of levers. The biceps attaches very close to the
+elbow and therefore has to produce a multiple of the load you are holding — in return
+the hand moves a long way, and it moves fast.</p>
 <a class="back-link" href="../index.html">&larr; Back to overview</a>
 </article>
 </main>

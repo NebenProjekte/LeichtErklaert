@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Difference Between Volts, Amps, and Watts Explained Simply</title>
+<title>Volts vs Amps vs Watts: The Difference Explained Simply</title>
 <meta name="description" content="Voltage (volts), current (amps), and power (watts) explained simply with a water analogy and the formula P = U times I.">
 <link rel="canonical" href="https://leichterklaert.com/en/physik/volt-ampere-watt.html">
 <link rel="alternate" hreflang="de" href="https://leichterklaert.com/physik/volt-ampere-watt.html">
@@ -46,24 +46,71 @@
 
 <article class="topic cat-physics">
 <span class="subject-pill physics">Physics - Electricity</span>
-<h1>The Difference Between Volts, Amps, and Watts Explained Simply</h1>
+<h1>Volts vs Amps vs Watts Explained Simply</h1>
 
-<p>All three describe electricity, but each measures something different. The easiest way to picture it is as <strong>water in a hose</strong>.</p>
-
-<div class="example-box">
-<div class="label">The water analogy</div>
-<p><strong>Volts (voltage, U):</strong> the water pressure in the hose - how hard is the current "pushing"?</p>
-<p><strong>Amps (current, I):</strong> the amount of water actually flowing - how much current gets through?</p>
-<p><strong>Watts (power, P):</strong> how much "work" the water can do overall - pressure and amount combined.</p></div>
+<p>Volts, amps and watts describe three completely different things, yet they get
+mixed up constantly — on packaging, in shop descriptions and in everyday
+conversation. The quickest way to keep them apart is to picture a water pipe. Once
+that image sits, the formulas stop being something you memorise and start being
+something you can reconstruct.</p>
 
 <div class="formula-box">
 P = U &middot; I
-<small>Power (watts) = voltage (volts) &middot; current (amps)</small>
+<small>power (watts) = voltage (volts) &middot; current (amps)</small>
 </div>
+
+<div class="example-box glossary">
+<div class="label">Key terms</div>
+<p><strong>Voltage U</strong> in volts (V) — the pressure that pushes the charges along. In the water picture: the water pressure.<br>
+<strong>Current I</strong> in amps (A) — how many charges flow past per second. In the water picture: the flow rate.<br>
+<strong>Resistance R</strong> in ohms (&Omega;) — how strongly the conductor holds the flow back. In the water picture: how narrow the pipe is.<br>
+<strong>Power P</strong> in watts (W) — the energy converted per second.<br>
+<strong>Energy W</strong> in watt-hours (Wh) or kilowatt-hours (kWh) — power multiplied by time. This is what your electricity bill charges you for.</p>
+</div>
+
+<h2>The water picture</h2>
+
+<p>A narrow pipe at high pressure can deliver the same amount of water per minute as
+a wide pipe at low pressure. Electricity behaves the same way: 230 V at 0.5 A gives
+exactly the same power as 12 V at almost 10 A — roughly 115 watts in both cases.
+That is why the voltage on its own tells you nothing about how much a device
+actually does. A 12-volt car starter is far more powerful than a 230-volt reading
+lamp.</p>
+
+<table class="datatable">
+<caption>Typical household values</caption>
+<thead><tr><th>Device</th><th>Voltage</th><th>Power</th><th>Current</th></tr></thead>
+<tbody>
+<tr><td>LED bulb</td><td>230 V</td><td>9 W</td><td>0.04 A</td></tr>
+<tr><td>Laptop charger</td><td>230 V</td><td>65 W</td><td>0.28 A</td></tr>
+<tr><td>Fridge</td><td>230 V</td><td>100 W</td><td>0.43 A</td></tr>
+<tr><td>Electric kettle</td><td>230 V</td><td>2000 W</td><td>8.7 A</td></tr>
+<tr><td>Car battery while starting</td><td>12 V</td><td>2400 W</td><td>200 A</td></tr>
+</tbody>
+</table>
+
+<p>That last row explains why jumper cables are so thick. It is not the voltage that
+demands a fat copper cross-section — it is the <strong>current</strong>. Every amp
+that flows heats the wire, so the more amps, the more metal you need to carry them
+without the cable glowing.</p>
+
+<h2>Ohm's law ties the three together</h2>
+
+<div class="calc">
+U = R &middot; I &nbsp;|&nbsp; I = U &divide; R &nbsp;|&nbsp; R = U &divide; I<br>
+<br>
+Example: a 2000 W kettle running on 230 V<br>
+I = P &divide; U = 2000 &divide; 230 = <strong>8.7 A</strong><br>
+R = U &divide; I = 230 &divide; 8.7 = <strong>26.4 &Omega;</strong>
+</div>
+
+<p>Notice how you only ever need two of the values to find the third. In an exam,
+that is usually the whole task: you are handed the power rating printed on the
+device and the mains voltage of the country, and everything else follows from those
+two numbers.</p>
 
 <p class="dialog-intro">💬 Mia asks Grandpa Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -79,10 +126,9 @@ P = U &middot; I
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>Why is a 230-volt wall outlet more dangerous than a 9-volt battery, if both are "just" electricity?</p>
+<p>Why is a wall socket dangerous when a 12-volt car battery isn't?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -98,10 +144,9 @@ P = U &middot; I
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>Because higher voltage (volts) has more "pressure" to push current through your body. More pressure means more amps flow through you - and it's the amps that harm the body.</p>
+<p>Because what hurts you is the <strong>current through your body</strong>. Twelve volts cannot push enough current through dry skin. Two hundred and thirty volts can.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -117,10 +162,9 @@ P = U &middot; I
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>So what does "60 watts" mean for a lightbulb?</p>
+<p>But the battery can do 200 amps!</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -136,20 +180,46 @@ P = U &middot; I
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>That's the power - how much energy is used per second. At 230 volts, a bulb like that only needs about 0.26 amps: 230 &middot; 0.26 &asymp; 60 watts.</p>
+<p>It can <em>supply</em> that much. What actually flows is decided by the voltage and the resistance in the way. What is on offer is not the same as what gets used.</p>
 </div>
 </div>
-
 </div>
 
-<div class="example-box">
-<div class="label">Example</div>
-<p>A device runs on 230 volts and draws 2 amps. How many watts is that?</p>
-<p>P = 230 &middot; 2 = <strong>460 watts</strong></p></div>
+<h2>Watts and watt-hours are not the same thing</h2>
 
+<p>This is where most confusion on electricity bills comes from. Watts tell you how
+fast energy is being used <em>right now</em>. Watt-hours tell you how much has been
+used over a stretch of time. A 2000-watt kettle is a monster while it runs, but it
+only runs for three minutes. A 100-watt fridge is modest, but it never stops. Over a
+month the quiet fridge wins by a wide margin.</p>
 
-<p class="note">In Europe, mains voltage from the wall outlet is 230 volts. In the US it's only about 120 volts - which is why American devices need roughly twice as many amps for the same power.</p>
+<div class="example-box warn">
+<div class="label">Common mistakes</div>
+<p><strong>Treating volts as power.</strong> Volts are pressure, watts are power. A high voltage with almost no current delivers almost nothing.<br>
+<strong>Treating amps as a property of the device.</strong> The current follows from the voltage and the resistance. It is not a fixed label.<br>
+<strong>Confusing watts and watt-hours.</strong> Watts are the rate, watt-hours are the total. Bills are in kilowatt-hours.<br>
+<strong>Mixing units in a calculation.</strong> Convert milliamps to amps first, or your answer will be out by a factor of 1000.</p>
+</div>
 
+<div class="example-box task">
+<div class="label">Practice question</div>
+<p>A 2000 W fan heater runs for 3 hours a day. A kilowatt-hour costs 0.30 €.
+Work out the current at 230 V and the cost over 30 days.</p>
+<details class="solution">
+<summary>Show solution</summary>
+<p>Current: I = P &divide; U = 2000 &divide; 230 = <strong>8.7 A</strong><br>
+Energy per day: 2000 W &middot; 3 h = 6000 Wh = 6 kWh<br>
+Energy over 30 days: 6 &middot; 30 = 180 kWh<br>
+Cost: 180 &middot; 0.30 € = <strong>54 €</strong><br>
+For comparison: a 9 W LED lamp burning for the same three hours a day uses
+0.81 kWh a month, about 24 cents. Heating with electricity is expensive not because
+of the voltage but because of the sheer power involved.</p>
+</details>
+</div>
+
+<p class="note">Rule of thumb for fuses: a 16 A household fuse at 230 V tolerates
+roughly 3680 watts. Two kettles on the same circuit are already too much — which is
+why the breaker trips before the wiring gets hot.</p>
 <a class="back-link" href="../index.html">&larr; Back to overview</a>
 </article>
 </main>

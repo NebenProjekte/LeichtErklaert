@@ -48,14 +48,18 @@
 <span class="subject-pill physics">Physics - Mechanics</span>
 <h1>Falling Speed Explained Simply</h1>
 
-<p>If you simply let go of an object (without throwing it), gravity makes it go faster and faster as it falls. This is called <strong>free fall</strong>.</p>
+<p>If you simply let go of an object without throwing it, gravity makes it faster and
+faster as it falls. Physicists call this <strong>free fall</strong>. The useful part
+is that the increase follows a very simple rule, so you can predict the speed at any
+moment with a single multiplication.</p>
 
 <div class="formula-box">
 v = g &middot; t
-<small>v = speed after time t, g = gravitational acceleration &asymp; 9.81 m/s&sup2;</small>
+<small>v = speed after time t, g = acceleration due to gravity &asymp; 9.81 m/s&sup2;</small>
 </div>
 
-<p>So the falling speed increases steadily with time. Every additional second adds about 9.81 m/s of speed.</p>
+<p>The falling speed therefore rises evenly with time. Every extra second adds
+roughly another 9.81 m/s.</p>
 
 <div class="example-box">
 <div class="label">Example: speed</div>
@@ -64,17 +68,18 @@ v = g &middot; t
 <p>After t = 3 s: v = 9.81 &middot; 3 = <strong>29.43 m/s</strong> (about 106 km/h)</p>
 </div>
 
-<p>If you want to know <strong>how far</strong> something has fallen in that time (the fall distance), you need a second formula:</p>
+<p>If you want to know how <strong>far</strong> something has fallen in that time,
+you need a second formula:</p>
 
 <div class="formula-box">
 s = &frac12; &middot; g &middot; t&sup2;
-<small>s = fall distance in meters</small>
+<small>s = fall distance in metres</small>
 </div>
 
 <div class="example-box">
-<div class="label">Example: fall distance</div>
+<div class="label">Example: distance</div>
 <p>After t = 2 s: s = 0.5 &middot; 9.81 &middot; 2&sup2; = 0.5 &middot; 9.81 &middot; 4 = <strong>19.62 m</strong></p>
-<p>So after 2 seconds of free fall, an object has already fallen almost 20 meters - and keeps getting faster.</p>
+<p>So after two seconds of free fall an object has already dropped almost 20 metres — and it keeps speeding up.</p>
 </div>
 
 <p class="dialog-intro">💬 Mia asks Grandpa Theo</p>
@@ -95,7 +100,7 @@ s = &frac12; &middot; g &middot; t&sup2;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>So do you keep getting faster and faster forever, if you fall long enough?</p>
+<p>Do you just keep getting faster and faster forever if you fall long enough?</p>
 </div>
 </div>
 
@@ -114,7 +119,7 @@ s = &frac12; &middot; g &middot; t&sup2;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>Only in theory, without air! In reality, air resistance brakes you more and more over time, until the drag force and gravity balance out.</p>
+<p>Only in theory, with no air. In reality the air pushes back harder and harder until the braking force and gravity balance each other out.</p>
 </div>
 </div>
 
@@ -152,14 +157,78 @@ s = &frac12; &middot; g &middot; t&sup2;
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Grandpa Theo</div>
-<p>Exactly! That's called terminal velocity - pretty fast without a parachute, but thankfully much slower with one.</p>
+<p>Exactly. That balance point is called terminal velocity — pretty fast without a parachute, and thankfully far slower with one.</p>
 </div>
 </div>
 
 </div>
 
+<p class="note">The fact that the speed grows so evenly is directly connected to the
+<a href="energieerhaltungssatz.html">law of conservation of energy</a>: the potential
+energy from up high is converted step by step into kinetic energy.</p>
 
-<p class="note">The way falling speed increases so steadily is directly connected to the <a href="energieerhaltungssatz.html">law of conservation of energy</a>: the potential energy from up high gets converted into kinetic energy bit by bit.</p>
+<div class="example-box glossary">
+<div class="label">Key terms</div>
+<p><strong>Gravitational acceleration g</strong> — 9.81 m/s² in Central Europe. Every second adds another 9.81 m/s.<br>
+<strong>Free fall</strong> — falling without air resistance. Only exactly true in a vacuum.<br>
+<strong>Air resistance</strong> — the braking force; it grows with the square of the speed.<br>
+<strong>Terminal velocity</strong> — reached when air resistance and weight are equal. After that the body falls at a constant speed.</p>
+</div>
+
+<h2>The two formulas side by side</h2>
+
+<div class="calc">
+v = g &middot; t &nbsp;&nbsp;|&nbsp;&nbsp; s = &frac12; &middot; g &middot; t²<br>
+<br>
+after 1 s: v = 9.81 m/s, s = 4.9 m<br>
+after 2 s: v = 19.6 m/s, s = 19.6 m<br>
+after 3 s: v = 29.4 m/s, s = <strong>44.1 m</strong>
+</div>
+
+<p>The distance grows with the <em>square</em> of the time. During the third second a
+body covers 24.5 metres, during the first only 4.9 — five times as much. That is
+exactly why falls from greater heights are disproportionately dangerous rather than
+just a bit worse.</p>
+
+<table class="datatable">
+<caption>Terminal velocity in air</caption>
+<thead><tr><th>Body</th><th>Terminal velocity</th></tr></thead>
+<tbody>
+<tr><td>Raindrop (2 mm)</td><td>about 6 m/s</td></tr>
+<tr><td>Tennis ball</td><td>about 25 m/s</td></tr>
+<tr><td>Skydiver, belly to earth</td><td>about 55 m/s (200 km/h)</td></tr>
+<tr><td>Skydiver, parachute open</td><td>about 5 m/s</td></tr>
+</tbody>
+</table>
+
+<p>One more detail worth knowing: g is not quite the same everywhere on Earth. At
+the poles it is about 9.83 m/s², at the equator about 9.78, because the planet bulges
+outwards there and you sit slightly further from its centre. School exercises almost
+always use 9.81, and rough mental estimates often use 10, which makes the numbers
+easy and is accurate to within two per cent.</p>
+
+<div class="example-box warn">
+<div class="label">Common mistakes</div>
+<p><strong>"Heavy things fall faster."</strong> In a vacuum a hammer and a feather fall at the same rate — it was demonstrated on the Moon in 1971.<br>
+<strong>Mixing up distance and speed.</strong> v grows linearly, s grows quadratically.<br>
+<strong>Forgetting air resistance.</strong> Without it a skydiver would reach 2100 km/h after 60 seconds.<br>
+<strong>Reading g as a speed.</strong> It is an acceleration, with units of m/s².</p>
+</div>
+
+<div class="example-box task">
+<div class="label">Practice question</div>
+<p>A stone falls from a bridge and hits the water after 2.5 s. How high is the
+bridge, and how fast is the stone on impact? Ignore air resistance.</p>
+<details class="solution">
+<summary>Show solution</summary>
+<p>s = &frac12; &middot; 9.81 &middot; 2.5² = &frac12; &middot; 9.81 &middot; 6.25 =
+<strong>30.7 m</strong><br>
+v = 9.81 &middot; 2.5 = <strong>24.5 m/s</strong>, which is about 88 km/h.<br><br>
+For perspective: air resistance would reduce the real impact speed by only a few per
+cent. For compact, heavy objects and short fall times it is therefore fair to ignore
+it — for a sheet of paper it would be badly wrong.</p>
+</details>
+</div>
 
 <a class="back-link" href="../index.html">&larr; Back to overview</a>
 </article>

@@ -46,24 +46,70 @@
 
 <article class="topic cat-physics">
 <span class="subject-pill physics">Física - Electricidad</span>
-<h1>La Diferencia entre Voltios, Amperios y Vatios explicada de forma sencilla</h1>
+<h1>Voltios, amperios y vatios explicados de forma sencilla</h1>
 
-<p>Los tres describen la electricidad, pero cada uno mide algo distinto. La forma más fácil de imaginarlo es como <strong>agua en una manguera</strong>.</p>
-
-<div class="example-box">
-<div class="label">La comparación con el agua</div>
-<p><strong>Voltios (tensión, U):</strong> la presión del agua en la manguera - ¿con qué fuerza "empuja" la corriente?</p>
-<p><strong>Amperios (intensidad, I):</strong> la cantidad de agua que realmente fluye - ¿cuánta corriente llega?</p>
-<p><strong>Vatios (potencia, P):</strong> cuánto "trabajo" puede realizar el agua en total - presión y cantidad juntas.</p></div>
+<p>Voltios, amperios y vatios describen tres cosas completamente distintas, y aun
+así se confunden constantemente: en los embalajes, en las tiendas y en las
+conversaciones del día a día. La forma más rápida de distinguirlos es imaginar una
+tubería de agua. Cuando esa imagen encaja, las fórmulas dejan de ser algo que hay
+que memorizar y pasan a ser algo que puedes reconstruir tú mismo.</p>
 
 <div class="formula-box">
 P = U &middot; I
-<small>Potencia (vatios) = tensión (voltios) &middot; intensidad (amperios)</small>
+<small>potencia (vatios) = tensión (voltios) &middot; intensidad (amperios)</small>
 </div>
 
-<p class="dialog-intro">💬 Mia le pregunta al Abuelo Theo</p>
+<div class="example-box glossary">
+<div class="label">Términos clave</div>
+<p><strong>Tensión U</strong> en voltios (V) — la presión que empuja las cargas. En la imagen del agua: la presión del agua.<br>
+<strong>Intensidad I</strong> en amperios (A) — cuántas cargas pasan por segundo. En la imagen del agua: el caudal.<br>
+<strong>Resistencia R</strong> en ohmios (&Omega;) — cuánto frena el conductor. En la imagen del agua: lo estrecha que es la tubería.<br>
+<strong>Potencia P</strong> en vatios (W) — la energía transformada por segundo.<br>
+<strong>Energía W</strong> en vatios-hora (Wh) o kilovatios-hora (kWh) — potencia por tiempo. Es lo que te cobra la factura de la luz.</p>
+</div>
+
+<h2>La imagen del agua</h2>
+
+<p>Una tubería estrecha con mucha presión puede entregar la misma cantidad de agua
+por minuto que una tubería ancha con poca presión. Con la electricidad ocurre lo
+mismo: 230 V a 0,5 A dan exactamente la misma potencia que 12 V a casi 10 A, unos
+115 vatios en ambos casos. Por eso la tensión por sí sola no dice nada sobre lo que
+hace realmente un aparato. Un motor de arranque de 12 voltios es mucho más potente
+que una lámpara de lectura de 230 voltios.</p>
+
+<table class="datatable">
+<caption>Valores típicos en una vivienda</caption>
+<thead><tr><th>Aparato</th><th>Tensión</th><th>Potencia</th><th>Intensidad</th></tr></thead>
+<tbody>
+<tr><td>Bombilla LED</td><td>230 V</td><td>9 W</td><td>0,04 A</td></tr>
+<tr><td>Cargador de portátil</td><td>230 V</td><td>65 W</td><td>0,28 A</td></tr>
+<tr><td>Frigorífico</td><td>230 V</td><td>100 W</td><td>0,43 A</td></tr>
+<tr><td>Hervidor eléctrico</td><td>230 V</td><td>2000 W</td><td>8,7 A</td></tr>
+<tr><td>Batería de coche al arrancar</td><td>12 V</td><td>2400 W</td><td>200 A</td></tr>
+</tbody>
+</table>
+
+<p>Esa última fila explica por qué las pinzas de arranque son tan gruesas. No es la
+tensión la que exige tanto cobre, sino la <strong>intensidad</strong>. Cada amperio
+que circula calienta el cable, así que cuantos más amperios, más metal hace falta
+para transportarlos sin que el cable se ponga al rojo.</p>
+
+<h2>La ley de Ohm une las tres magnitudes</h2>
+
+<div class="calc">
+U = R &middot; I &nbsp;|&nbsp; I = U &divide; R &nbsp;|&nbsp; R = U &divide; I<br>
+<br>
+Ejemplo: un hervidor de 2000 W a 230 V<br>
+I = P &divide; U = 2000 &divide; 230 = <strong>8,7 A</strong><br>
+R = U &divide; I = 230 &divide; 8,7 = <strong>26,4 &Omega;</strong>
+</div>
+
+<p>Fíjate en que siempre bastan dos de los valores para obtener el tercero. En un
+examen eso suele ser todo el ejercicio: te dan la potencia impresa en el aparato y
+la tensión de la red, y el resto sale de esos dos números.</p>
+
+<p class="dialog-intro">💬 Mia le pregunta al abuelo Theo</p>
 <div class="dialog">
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -79,10 +125,9 @@ P = U &middot; I
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>¿Por qué un enchufe de 230 voltios es más peligroso que una pila de 9 voltios, si ambos "solo" son electricidad?</p>
+<p>¿Por qué un enchufe es peligroso y una batería de coche de 12 voltios no?</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -98,10 +143,9 @@ P = U &middot; I
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Abuelo Theo</div>
-<p>Porque una tensión más alta (voltios) tiene más "presión" para empujar la corriente a través de tu cuerpo. Más presión significa más amperios circulando por ti - y son los amperios los que dañan al cuerpo.</p>
+<p>Porque lo que hace daño es la <strong>corriente que atraviesa el cuerpo</strong>. Doce voltios no consiguen empujar suficiente corriente a través de la piel seca. Doscientos treinta sí.</p>
 </div>
 </div>
-
 <div class="dialog-line">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -117,10 +161,9 @@ P = U &middot; I
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Mia</div>
-<p>¿Y qué significa entonces "60 vatios" en una bombilla?</p>
+<p>¡Pero la batería puede dar 200 amperios!</p>
 </div>
 </div>
-
 <div class="dialog-line right">
 <svg class="dialog-avatar" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <circle cx="32" cy="32" r="28" fill="#fbf6ee"/>
@@ -136,21 +179,48 @@ P = U &middot; I
 </svg>
 <div class="dialog-bubble">
 <div class="dialog-name">Abuelo Theo</div>
-<p>Esa es la potencia - cuánta energía se consume por segundo. A 230 voltios, una bombilla así necesita solo unos 0,26 amperios: 230 &middot; 0,26 &asymp; 60 vatios.</p>
+<p>Puede <em>suministrarlos</em>. Lo que circula de verdad lo deciden la tensión y la resistencia que haya por medio. Lo que se ofrece no es lo mismo que lo que se consume.</p>
 </div>
 </div>
-
 </div>
 
-<div class="example-box">
-<div class="label">Ejemplo</div>
-<p>Un aparato funciona a 230 voltios y consume 2 amperios. ¿Cuántos vatios son?</p>
-<p>P = 230 &middot; 2 = <strong>460 vatios</strong></p></div>
+<h2>Vatios y vatios-hora no son lo mismo</h2>
 
+<p>Aquí nace casi toda la confusión con la factura de la luz. Los vatios dicen a qué
+velocidad se consume energía <em>en este momento</em>. Los vatios-hora dicen cuánta
+se ha consumido a lo largo del tiempo. Un hervidor de 2000 vatios es una bestia
+mientras funciona, pero solo funciona tres minutos. Un frigorífico de 100 vatios es
+modesto, pero no para nunca. Al cabo de un mes, el frigorífico silencioso gana por
+mucha diferencia.</p>
 
-<p class="note">En Europa, la tensión de red del enchufe es de 230 voltios. En EE. UU. son solo unos 120 voltios - por eso los aparatos americanos necesitan aproximadamente el doble de amperios para la misma potencia.</p>
+<div class="example-box warn">
+<div class="label">Errores habituales</div>
+<p><strong>Tomar los voltios por potencia.</strong> Los voltios son presión, los vatios potencia. Mucha tensión con casi nada de corriente entrega casi nada.<br>
+<strong>Creer que los amperios son una propiedad del aparato.</strong> La intensidad se deduce de la tensión y la resistencia; no es una etiqueta fija.<br>
+<strong>Confundir vatios y vatios-hora.</strong> El vatio es el ritmo, el vatio-hora el total. Se factura en kilovatios-hora.<br>
+<strong>Mezclar unidades al calcular.</strong> Convierte primero los miliamperios en amperios, o el resultado fallará por un factor de 1000.</p>
+</div>
 
-<a class="back-link" href="../index.html">&larr; Volver al resumen</a>
+<div class="example-box task">
+<div class="label">Ejercicio</div>
+<p>Un calefactor de 2000 W funciona 3 horas al día. El kilovatio-hora cuesta
+0,30 €. Calcula la intensidad a 230 V y el coste de 30 días.</p>
+<details class="solution">
+<summary>Ver solución</summary>
+<p>Intensidad: I = P &divide; U = 2000 &divide; 230 = <strong>8,7 A</strong><br>
+Energía por día: 2000 W &middot; 3 h = 6000 Wh = 6 kWh<br>
+Energía en 30 días: 6 &middot; 30 = 180 kWh<br>
+Coste: 180 &middot; 0,30 € = <strong>54 €</strong><br>
+Para comparar: una lámpara LED de 9 W encendida las mismas tres horas diarias gasta
+0,81 kWh al mes, unos 24 céntimos. Calentar con electricidad sale caro no por la
+tensión, sino por la potencia que hace falta.</p>
+</details>
+</div>
+
+<p class="note">Regla práctica para los fusibles: un magnetotérmico doméstico de
+16 A a 230 V aguanta unos 3680 vatios. Dos hervidores en el mismo circuito ya son
+demasiado, y por eso salta antes de que el cableado se caliente.</p>
+<a class="back-link" href="../index.html">&larr; Volver al índice</a>
 </article>
 </main>
 
