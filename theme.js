@@ -5,7 +5,8 @@
     biologie: "var(--bio)", biology: "var(--bio)", biologia: "var(--bio)",
     chemie: "var(--chem)", chemistry: "var(--chem)", quimica: "var(--chem)",
     geschichte: "var(--history)", history: "var(--history)", historia: "var(--history)",
-    sporttheorie: "var(--sport)", "sports-theory": "var(--sport)", "teoria-del-deporte": "var(--sport)"
+    sporttheorie: "var(--sport)", "sports-theory": "var(--sport)", "teoria-del-deporte": "var(--sport)",
+    erdkunde: "var(--geo)", geography: "var(--geo)", geografia: "var(--geo)"
   };
   var CATEGORY_CLASS = {
     mathematik: "math", math: "math", matematicas: "math",
@@ -13,7 +14,8 @@
     biologie: "bio", biology: "bio", biologia: "bio",
     chemie: "chem", chemistry: "chem", quimica: "chem",
     geschichte: "history", history: "history", historia: "history",
-    sporttheorie: "sport", "sports-theory": "sport", "teoria-del-deporte": "sport"
+    sporttheorie: "sport", "sports-theory": "sport", "teoria-del-deporte": "sport",
+    erdkunde: "geo", geography: "geo", geografia: "geo"
   };
 
   var currentFilter = null;

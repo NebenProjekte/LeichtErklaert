@@ -29,7 +29,7 @@
   <url><loc>https://leichterklaert.com/chemie/redoxreaktionen.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/chemie/saeuren-und-basen.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/chemie/salze-und-ionen.html</loc><priority>0.7</priority></url>
-  <url><loc>https://leichterklaert.com/en/</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/en/</loc><priority>0.9</priority></url>
   <url><loc>https://leichterklaert.com/en/biologie/bakterien.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/biologie/blutkreislauf.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/biologie/chloroplasten.html</loc><priority>0.7</priority></url>
@@ -57,6 +57,9 @@
   <url><loc>https://leichterklaert.com/en/chemie/redoxreaktionen.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/chemie/saeuren-und-basen.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/chemie/salze-und-ionen.html</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/en/erdkunde/erdbeben.html</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/en/erdkunde/plattentektonik.html</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/en/erdkunde/vulkane.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/geschichte/alexander-der-grosse.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/geschichte/erster-weltkrieg.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/geschichte/franzoesische-revolution.html</loc><priority>0.7</priority></url>
@@ -96,7 +99,10 @@
   <url><loc>https://leichterklaert.com/en/sporttheorie/hypertrophie.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/sporttheorie/kraftausdauer.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/en/sporttheorie/maximalkraft.html</loc><priority>0.7</priority></url>
-  <url><loc>https://leichterklaert.com/es/</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/erdkunde/erdbeben.html</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/erdkunde/plattentektonik.html</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/erdkunde/vulkane.html</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/es/</loc><priority>0.9</priority></url>
   <url><loc>https://leichterklaert.com/es/biologie/bakterien.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/biologie/blutkreislauf.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/biologie/chloroplasten.html</loc><priority>0.7</priority></url>
@@ -124,6 +130,9 @@
   <url><loc>https://leichterklaert.com/es/chemie/redoxreaktionen.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/chemie/saeuren-und-basen.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/chemie/salze-und-ionen.html</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/es/erdkunde/erdbeben.html</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/es/erdkunde/plattentektonik.html</loc><priority>0.7</priority></url>
+  <url><loc>https://leichterklaert.com/es/erdkunde/vulkane.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/geschichte/alexander-der-grosse.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/geschichte/erster-weltkrieg.html</loc><priority>0.7</priority></url>
   <url><loc>https://leichterklaert.com/es/geschichte/franzoesische-revolution.html</loc><priority>0.7</priority></url>
