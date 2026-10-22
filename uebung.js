@@ -9,14 +9,39 @@
     var beantwortet = 0;
     var richtig = 0;
 
+    var texte = {
+      de: {
+        marke: 'richtig',
+        lauf: function (b, g, r) { return b + ' von ' + g + ' beantwortet, ' + r + ' richtig.'; },
+        ende: function (g, r) {
+          return 'Fertig: ' + r + ' von ' + g + ' richtig.'
+            + (r === g ? ' Alles sitzt.' : ' Lies bei den rot markierten Antworten die Erklärung.');
+        }
+      },
+      en: {
+        marke: 'correct',
+        lauf: function (b, g, r) { return b + ' of ' + g + ' answered, ' + r + ' correct.'; },
+        ende: function (g, r) {
+          return 'Done: ' + r + ' of ' + g + ' correct.'
+            + (r === g ? ' All of them.' : ' Read the explanation under the answers marked in red.');
+        }
+      },
+      es: {
+        marke: 'correcta',
+        lauf: function (b, g, r) { return b + ' de ' + g + ' respondidas, ' + r + ' correctas.'; },
+        ende: function (g, r) {
+          return 'Listo: ' + r + ' de ' + g + ' correctas.'
+            + (r === g ? ' Todas bien.' : ' Lee la explicación en las respuestas marcadas en rojo.');
+        }
+      }
+    };
+    var t = texte[box.getAttribute('data-sprache') || document.documentElement.lang] || texte.de;
+
     function melde() {
       if (!stand) return;
-      if (beantwortet < gesamt) {
-        stand.textContent = beantwortet + ' von ' + gesamt + ' beantwortet, ' + richtig + ' richtig.';
-      } else {
-        stand.textContent = 'Fertig: ' + richtig + ' von ' + gesamt + ' richtig.'
-          + (richtig === gesamt ? ' Alles sitzt.' : ' Lies bei den rot markierten Antworten die Erklärung.');
-      }
+      stand.textContent = beantwortet < gesamt
+        ? t.lauf(beantwortet, gesamt, richtig)
+        : t.ende(gesamt, richtig);
     }
 
     Array.prototype.forEach.call(fragen, function (frage) {
@@ -33,7 +58,7 @@
             o.disabled = true;
             if (j === loesung) {
               o.classList.add('richtig');
-              o.insertAdjacentHTML('beforeend', '<span class="haken">richtig</span>');
+              o.insertAdjacentHTML('beforeend', '<span class="haken">' + t.marke + '</span>');
             } else if (j === i) {
               o.classList.add('falsch');
             }

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Volts vs Amps vs Watts: The Difference Explained Simply</title>
-<meta name="description" content="Voltage (volts), current (amps), and power (watts) explained simply with a water analogy and the formula P = U times I.">
+<meta name="description" content="Voltage, current and power kept apart with a water analogy — plus a calculator for volts, amps, ohms and watts, and exam-style questions with model answers.">
 <link rel="canonical" href="https://leichterklaert.com/en/physik/volt-ampere-watt.html">
 <link rel="alternate" hreflang="de" href="https://leichterklaert.com/physik/volt-ampere-watt.html">
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/physik/volt-ampere-watt.html">
@@ -14,6 +14,34 @@
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Volts vs Amps vs Watts Explained Simply",
+      "description": "Voltage, current, resistance and power with a water analogy, a calculator and exam-style questions.",
+      "inLanguage": "en",
+      "datePublished": "2026-07-26",
+      "dateModified": "2026-10-22",
+      "author": { "@type": "Person", "name": "Viktor Jonas" },
+      "publisher": { "@type": "Organization", "name": "LeichtErklaert", "url": "https://leichterklaert.com/" },
+      "mainEntityOfPage": "https://leichterklaert.com/en/physik/volt-ampere-watt.html",
+      "educationalLevel": "Secondary school",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://leichterklaert.com/en/" },
+        { "@type": "ListItem", "position": 2, "name": "Physics", "item": "https://leichterklaert.com/en/#physik" },
+        { "@type": "ListItem", "position": 3, "name": "Volts, Amps, Watts" }
+      ]
+    }
+  ]
+}
+</script>
 <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
@@ -48,6 +76,14 @@
 <span class="subject-pill physics">Physics - Electricity</span>
 <h1>Volts vs Amps vs Watts Explained Simply</h1>
 
+<p class="autorzeile">
+  <span>Written by <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Last checked on <strong>22 October 2026</strong></span>
+  <span>&middot;</span>
+  <span>Reading time about 8 minutes</span>
+</p>
+
 <p>Volts, amps and watts describe three completely different things, yet they get
 mixed up constantly — on packaging, in shop descriptions and in everyday
 conversation. The quickest way to keep them apart is to picture a water pipe. Once
@@ -68,7 +104,20 @@ P = U &middot; I
 <strong>Energy W</strong> in watt-hours (Wh) or kilowatt-hours (kWh) — power multiplied by time. This is what your electricity bill charges you for.</p>
 </div>
 
-<h2>The water picture</h2>
+
+<nav class="inhalt" aria-label="On this page">
+<p>On this page</p>
+<ul>
+  <li><a href="#the-water-picture">The water picture</a></li>
+  <li><a href="#ohm-s-law-ties-the-three-together">Ohm's law ties the three together</a></li>
+  <li><a href="#watts-and-watt-hours-are-not-the-same-thing">Watts and watt-hours are not the same thing</a></li>
+  <li><a href="#calculator-volts-amps-ohms-and-watts">Calculator: volts, amps, ohms and watts</a></li>
+  <li><a href="#practice-five-questions-instant-feedback">Practice: five questions, instant feedback</a></li>
+  <li><a href="#exam-style-questions-with-model-answers">Exam-style questions with model answers</a></li>
+  <li><a href="#sources-and-further-reading">Sources and further reading</a></li>
+</ul>
+</nav>
+<h2 id="the-water-picture">The water picture</h2>
 
 <p>A narrow pipe at high pressure can deliver the same amount of water per minute as
 a wide pipe at low pressure. Electricity behaves the same way: 230 V at 0.5 A gives
@@ -94,7 +143,7 @@ demands a fat copper cross-section — it is the <strong>current</strong>. Every
 that flows heats the wire, so the more amps, the more metal you need to carry them
 without the cable glowing.</p>
 
-<h2>Ohm's law ties the three together</h2>
+<h2 id="ohm-s-law-ties-the-three-together">Ohm's law ties the three together</h2>
 
 <div class="calc">
 U = R &middot; I &nbsp;|&nbsp; I = U &divide; R &nbsp;|&nbsp; R = U &divide; I<br>
@@ -185,7 +234,7 @@ two numbers.</p>
 </div>
 </div>
 
-<h2>Watts and watt-hours are not the same thing</h2>
+<h2 id="watts-and-watt-hours-are-not-the-same-thing">Watts and watt-hours are not the same thing</h2>
 
 <p>This is where most confusion on electricity bills comes from. Watts tell you how
 fast energy is being used <em>right now</em>. Watt-hours tell you how much has been
@@ -220,6 +269,122 @@ of the voltage but because of the sheer power involved.</p>
 <p class="note">Rule of thumb for fuses: a 16 A household fuse at 230 V tolerates
 roughly 3680 watts. Two kettles on the same circuit are already too much — which is
 why the breaker trips before the wiring gets hot.</p>
+
+<section class="rechner" id="calculator" data-rechner="ohm">
+<h2 id="calculator-volts-amps-ohms-and-watts">Calculator: volts, amps, ohms and watts</h2>
+<p>Fill in any two values — the third one and the power follow from Ohm's law. Leave a field empty to have it calculated.</p>
+
+<div class="rechner-felder">
+  <div class="rechner-feld">
+    <label for="spannung">Voltage U in volts</label>
+    <input id="spannung" name="spannung" type="text" inputmode="decimal" value="230">
+  </div>
+  <div class="rechner-feld">
+    <label for="strom">Current I in amps</label>
+    <input id="strom" name="strom" type="text" inputmode="decimal" value="8.7">
+  </div>
+  <div class="rechner-feld">
+    <label for="widerstand">Resistance R in ohms</label>
+    <input id="widerstand" name="widerstand" type="text" inputmode="decimal" value="">
+  </div>
+</div>
+
+<div class="rechner-ergebnis">
+  <p class="rechner-urteil"></p>
+  <dl class="rechner-werte"></dl>
+</div>
+</section>
+
+<section class="uebung" id="practice" data-sprache="en">
+<h2 id="practice-five-questions-instant-feedback">Practice: five questions, instant feedback</h2>
+<p>Click an answer. You see straight away whether it is right — and why.</p>
+
+<ol class="uebung-liste">
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Which quantity tells you how much a device actually does?</p>
+    <button class="uebung-option">The voltage in volts</button>
+    <button class="uebung-option">The power in watts</button>
+    <button class="uebung-option">The resistance in ohms</button>
+    <p class="uebung-erklaerung">Power. Voltage on its own says nothing: 230 V at 0.5 A and 12 V at almost 10 A deliver roughly the same 115 watts.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">A 2000 W kettle runs on 230 V. How much current flows?</p>
+    <button class="uebung-option">About 8.7 A</button>
+    <button class="uebung-option">About 0.12 A</button>
+    <button class="uebung-option">About 460 A</button>
+    <p class="uebung-erklaerung">I = P &divide; U = 2000 &divide; 230 &asymp; 8.7 A. That is why kettles sit close to the limit of a normal household circuit.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">Why is a wall socket dangerous while a 12 V car battery is not, even though the battery can supply 200 A?</p>
+    <button class="uebung-option">Because the socket supplies more amps in total</button>
+    <button class="uebung-option">Because alternating current is poisonous</button>
+    <button class="uebung-option">Because 12 V cannot push enough current through your body's resistance</button>
+    <p class="uebung-erklaerung">What matters is the current through you, and that depends on voltage and your body's resistance. A battery can supply 200 A, but 12 V across a body resistance of several thousand ohms drives only a few milliamps.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">What is the difference between a watt and a watt-hour?</p>
+    <button class="uebung-option">None, they are two names for the same thing</button>
+    <button class="uebung-option">A watt is the rate, a watt-hour is the amount of energy used</button>
+    <button class="uebung-option">A watt-hour is a watt measured over a minute</button>
+    <p class="uebung-erklaerung">Watts tell you how fast energy is used, watt-hours how much was used in total. Your bill charges for kilowatt-hours, not for watts.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">A lamp draws 0.5 A at 230 V. What is its resistance?</p>
+    <button class="uebung-option">460 ohms</button>
+    <button class="uebung-option">115 ohms</button>
+    <button class="uebung-option">0.002 ohms</button>
+    <p class="uebung-erklaerung">R = U &divide; I = 230 &divide; 0.5 = 460 ohms. The power is U &middot; I = 115 W.</p>
+  </li>
+</ol>
+
+<p class="uebung-stand" aria-live="polite"></p>
+</section>
+
+<section class="pruefung">
+<h2 id="exam-style-questions-with-model-answers">Exam-style questions with model answers</h2>
+<p>Try them yourself first, then open the answer.</p>
+
+<details>
+<summary>A hairdryer is rated 1800 W at 230 V. Calculate the current, the resistance and the cost of using it for 10 minutes a day over a month at 0.30 € per kWh.</summary>
+<div class="antwort">
+<p>Current: I = P &divide; U = 1800 &divide; 230 &asymp; 7.8 A.</p>
+<p>Resistance: R = U &divide; I = 230 &divide; 7.8 &asymp; 29.4 ohms.</p>
+<p>Energy: 1800 W is 1.8 kW. Ten minutes is one sixth of an hour, so 0.3 kWh per day, about 9 kWh in a 30-day month.</p>
+<p>Cost: 9 kWh &middot; 0.30 € &asymp; 2.70 € per month. The useful habit here is converting minutes into hours before multiplying — that is where most marks are lost.</p>
+</div>
+</details>
+
+<details>
+<summary>Explain why thick jumper cables are needed for a 12 V car battery, while a thin cable is enough for a 230 V lamp.</summary>
+<div class="antwort">
+<p>Cable thickness is set by current, not by voltage. A lamp at 230 V and 115 W draws about 0.5 A; starting an engine briefly pulls several hundred amps from the battery.</p>
+<p>A conductor heats up with the square of the current (P = I² &middot; R), so a hundredfold current means a ten-thousandfold heating in the same wire. The cable must therefore have a far larger cross-section to keep its own resistance and its heating small.</p>
+<p>Voltage matters for insulation instead: 230 V needs thicker insulation, 12 V barely any.</p>
+</div>
+</details>
+
+<details>
+<summary>Two devices are rated 12 V / 60 W and 230 V / 60 W. Compare current and resistance, and say what that means in practice.</summary>
+<div class="antwort">
+<p>At 12 V: I = 60 &divide; 12 = 5 A, R = 12 &divide; 5 = 2.4 ohms. At 230 V: I = 60 &divide; 230 &asymp; 0.26 A, R = 230 &divide; 0.26 &asymp; 882 ohms.</p>
+<p>Same power, but the low-voltage device pulls roughly twenty times the current and needs much thicker conductors and connectors. The high-voltage device needs better insulation instead.</p>
+<p>This trade-off is exactly why long-distance power lines run at hundreds of thousands of volts: the higher the voltage, the lower the current for the same power, and the smaller the losses in the line.</p>
+</div>
+</details>
+</section>
+
+<section class="quellen">
+<h2 id="sources-and-further-reading">Sources and further reading</h2>
+<p>Everything on this page can be checked here.</p>
+<ul>
+  <li><a href="https://www.physicsclassroom.com/class/circuits/Lesson-3/Ohm-s-Law" target="_blank" rel="noopener">The Physics Classroom: Ohm's Law</a> <span>— the V-I-R relationship with worked examples.</span></li>
+  <li><a href="https://www.physicsclassroom.com/class/circuits/u9l3d" target="_blank" rel="noopener">The Physics Classroom: Electric Power Revisited</a> <span>— how power, current and voltage fit together.</span></li>
+</ul>
+</section>
 <a class="back-link" href="../index.html">&larr; Back to overview</a>
 </article>
 </main>
@@ -229,6 +394,8 @@ why the breaker trips before the wiring gets hot.</p>
 </footer>
 <script src="../../search-data.en.js"></script>
 <script src="../../search.js"></script>
+<script src="../../uebung.js"></script>
+<script src="../../calc-ohm.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
