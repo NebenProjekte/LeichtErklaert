@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Water Displacement Explained Simply - LeichtErklärt</title>
-<meta name="description" content="Water displacement and Archimedes' principle explained simply: why heavy ships float and small stones sink - for grades 6 to 12.">
+<title>Water displacement and buoyancy explained simply</title>
+<meta name="description" content="Why a steel ship floats and a stone sinks: buoyancy, density and Archimedes’ principle — with a calculator, worked examples and exam-style questions.">
 <link rel="canonical" href="https://leichterklaert.com/en/physik/wasserverdraengung.html">
 <link rel="alternate" hreflang="de" href="https://leichterklaert.com/physik/wasserverdraengung.html">
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/physik/wasserverdraengung.html">
@@ -14,6 +14,34 @@
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Water displacement and buoyancy explained simply",
+      "description": "Buoyancy, density and Archimedes' principle, with a calculator and worked examples.",
+      "inLanguage": "en",
+      "datePublished": "2026-07-29",
+      "dateModified": "2026-10-22",
+      "author": { "@type": "Person", "name": "Viktor Jonas" },
+      "publisher": { "@type": "Organization", "name": "LeichtErklaert", "url": "https://leichterklaert.com/" },
+      "mainEntityOfPage": "https://leichterklaert.com/en/physik/wasserverdraengung.html",
+      "educationalLevel": "Secondary school",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://leichterklaert.com/en/" },
+        { "@type": "ListItem", "position": 2, "name": "Physics", "item": "https://leichterklaert.com/en/#physik" },
+        { "@type": "ListItem", "position": 3, "name": "Water displacement" }
+      ]
+    }
+  ]
+}
+</script>
 <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
@@ -47,6 +75,14 @@
 <article class="topic cat-physics">
 <span class="subject-pill physics">Physics - Buoyancy</span>
 <h1>Water Displacement Explained Simply</h1>
+
+<p class="autorzeile">
+  <span>Written by <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Last checked on <strong>22 October 2026</strong></span>
+  <span>&middot;</span>
+  <span>Reading time about 8 minutes</span>
+</p>
 
 <p>When you lower an object into water, it pushes the water aside — it
 <strong>displaces</strong> it. The displaced water needs room as well and has to go
@@ -183,7 +219,18 @@ is more on the link between weight and volume under
 <strong>Neutral buoyancy</strong> — both forces are equal while the body is fully submerged.</p>
 </div>
 
-<h2>The formula and what it tells you</h2>
+
+<nav class="inhalt" aria-label="On this page">
+<p>On this page</p>
+<ul>
+  <li><a href="#the-formula-and-what-it-tells-you">The formula and what it tells you</a></li>
+  <li><a href="#calculator-does-it-float-hover-or-sink">Calculator: does it float, hover or sink?</a></li>
+  <li><a href="#practice-five-questions-instant-feedback">Practice: five questions, instant feedback</a></li>
+  <li><a href="#exam-style-questions-with-model-answers">Exam-style questions with model answers</a></li>
+  <li><a href="#sources-and-further-reading">Sources and further reading</a></li>
+</ul>
+</nav>
+<h2 id="the-formula-and-what-it-tells-you">The formula and what it tells you</h2>
 
 <div class="calc">
 F<sub>B</sub> = &rho;<sub>fluid</sub> &middot; V<sub>displaced</sub> &middot; g<br>
@@ -248,6 +295,122 @@ different matter — that ice sits on land and displaces no water beforehand. On
 meltwater raises the level.</p>
 </div>
 
+
+<section class="rechner" id="calculator" data-rechner="auftrieb" data-sprache="en">
+<h2 id="calculator-does-it-float-hover-or-sink">Calculator: does it float, hover or sink?</h2>
+<p>Enter the density of the object and of the liquid — the result updates as you type. Water is 1.0 g/cm³, seawater about 1.025, oil roughly 0.9.</p>
+
+<div class="rechner-felder">
+  <div class="rechner-feld">
+    <label for="dichte-koerper">Density of the object in g/cm³</label>
+    <input id="dichte-koerper" name="dichte-koerper" type="text" inputmode="decimal" value="0.6">
+  </div>
+  <div class="rechner-feld">
+    <label for="dichte-fluid">Density of the liquid in g/cm³</label>
+    <input id="dichte-fluid" name="dichte-fluid" type="text" inputmode="decimal" value="1.0">
+  </div>
+  <div class="rechner-feld">
+    <label for="volumen">Volume of the object in cm³</label>
+    <input id="volumen" name="volumen" type="text" inputmode="decimal" value="1000">
+  </div>
+</div>
+
+<div class="rechner-ergebnis">
+  <p class="rechner-urteil"></p>
+  <dl class="rechner-werte"></dl>
+</div>
+</section>
+
+<section class="uebung" id="practice" data-sprache="en">
+<h2 id="practice-five-questions-instant-feedback">Practice: five questions, instant feedback</h2>
+<p>Click an answer. You see straight away whether it is right — and why.</p>
+
+<ol class="uebung-liste">
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">What does the buoyant force depend on?</p>
+    <button class="uebung-option">The mass of the object</button>
+    <button class="uebung-option">How deep the object is submerged</button>
+    <button class="uebung-option">The displaced volume and the density of the liquid</button>
+    <p class="uebung-erklaerung">F = &rho; &middot; V &middot; g. Neither the object's mass nor the depth appears in the formula — once fully submerged, the buoyancy at ten metres is the same as just below the surface.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">An object with a density of 0.8 g/cm³ floats in water. How much of it is below the surface?</p>
+    <button class="uebung-option">20 per cent</button>
+    <button class="uebung-option">80 per cent</button>
+    <button class="uebung-option">100 per cent</button>
+    <p class="uebung-erklaerung">80 per cent. The submerged fraction is the density of the object divided by the density of the liquid: 0.8 &divide; 1.0.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">Why does a steel ship float while a lump of steel does not?</p>
+    <button class="uebung-option">Because the hull is hollow and displaces far more water</button>
+    <button class="uebung-option">Because shipbuilding steel is lighter than ordinary steel</button>
+    <button class="uebung-option">Because the ship is moving</button>
+    <p class="uebung-erklaerung">What counts is average density. A hollow hull is mostly air, so the whole ship is less dense than water. The same steel as a solid lump has about 7.8 g/cm³ and sinks.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">An ice cube floats in a glass filled to the brim. What happens when it melts?</p>
+    <button class="uebung-option">The glass overflows</button>
+    <button class="uebung-option">The water level stays the same</button>
+    <button class="uebung-option">The level drops noticeably</button>
+    <p class="uebung-erklaerung">The level stays put. While floating, the ice displaces exactly the volume of water it turns into when it melts.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">A ship sails from the sea into a freshwater harbour. What happens?</p>
+    <button class="uebung-option">Nothing, water is water</button>
+    <button class="uebung-option">It rises slightly out of the water</button>
+    <button class="uebung-option">It sits slightly deeper</button>
+    <p class="uebung-erklaerung">Fresh water at 1.0 g/cm³ is less dense than seawater at about 1.025. To get the same buoyant force the ship must displace more volume, so it sits deeper. That is why the load line marking has separate lines for fresh and salt water.</p>
+  </li>
+</ol>
+
+<p class="uebung-stand" aria-live="polite"></p>
+</section>
+
+<section class="pruefung">
+<h2 id="exam-style-questions-with-model-answers">Exam-style questions with model answers</h2>
+<p>Work them out first, then open the answer.</p>
+
+<details>
+<summary>An aluminium cube (density 2.7 g/cm³) with 10 cm edges hangs fully submerged in water. Find its weight, the buoyant force and the force on the rope.</summary>
+<div class="antwort">
+<p>Volume: V = 10 cm &middot; 10 cm &middot; 10 cm = 1000 cm³ = 0.001 m³.</p>
+<p>Mass: m = 2700 kg/m³ &middot; 0.001 m³ = 2.7 kg. Weight: F<sub>G</sub> = 2.7 kg &middot; 9.81 m/s² &asymp; 26.5 N.</p>
+<p>Buoyancy: F<sub>A</sub> = 1000 kg/m³ &middot; 0.001 m³ &middot; 9.81 m/s² &asymp; 9.81 N.</p>
+<p>The rope carries the difference: 26.5 N &minus; 9.81 N &asymp; 16.7 N. Submerged, the cube appears lighter by exactly the weight of one litre of water.</p>
+</div>
+</details>
+
+<details>
+<summary>Explain why the mass of the object does not appear in the formula for buoyancy.</summary>
+<div class="antwort">
+<p>Buoyancy comes from the pressure difference between the bottom and the top of the submerged object. That difference depends only on how tall the column of liquid above each surface is and how dense the liquid is — that is, on the displaced volume, not on what fills it.</p>
+<p>Put differently: the liquid cannot tell what occupies the space the object keeps free. A polystyrene cube gets exactly the same buoyant force as an identical lead cube. Whether it floats is decided only by comparing that force with its own weight.</p>
+</div>
+</details>
+
+<details>
+<summary>A ship has a mass of 20,000 t. How much water does it displace, and how does fresh water differ from seawater?</summary>
+<div class="antwort">
+<p>A floating ship always displaces its own weight in water: 20,000 t, or 20,000,000 kg.</p>
+<p>In fresh water (1000 kg/m³): V = 20,000,000 &divide; 1000 = 20,000 m³. In seawater (about 1025 kg/m³): V = 20,000,000 &divide; 1025 &asymp; 19,512 m³.</p>
+<p>The difference of roughly 488 m³ has to go below the waterline in fresh water, so the ship sits measurably deeper. Hence the separate fresh-water marks on the load line.</p>
+</div>
+</details>
+</section>
+
+<section class="quellen">
+<h2 id="sources-and-further-reading">Sources and further reading</h2>
+<p>Everything on this page can be checked here.</p>
+<ul>
+  <li><a href="https://www.physicsclassroom.com/tutorial/fluids/pressure/buoyant-force-and-archimedes-principle" target="_blank" rel="noopener">The Physics Classroom: buoyant force and Archimedes’ principle</a> <span>— the derivation with worked examples.</span></li>
+  <li><a href="https://www.physicsclassroom.com/tutorial/fluids/pressure/sinking-and-floating" target="_blank" rel="noopener">The Physics Classroom: sinking and floating</a> <span>— why density decides.</span></li>
+  <li><a href="https://www.leifiphysik.de/mechanik/druck-und-auftrieb/grundwissen/auftriebskraft" target="_blank" rel="noopener">LEIFIphysik: buoyant force</a> <span>— formula and worked examples (in German).</span></li>
+</ul>
+</section>
 <a class="back-link" href="../index.html">&larr; Back to overview</a>
 </article>
 </main>
@@ -257,6 +420,8 @@ meltwater raises the level.</p>
 </footer>
 <script src="../../search-data.en.js"></script>
 <script src="../../search.js"></script>
+<script src="../../uebung.js"></script>
+<script src="../../rechner-auftrieb.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
