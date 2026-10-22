@@ -746,12 +746,12 @@ h2.section-title::after {
 }
 
 
-/* Oberstufen-Bausteine (Sporttheorie) */
+/* Zwischenüberschriften in Artikeln (Standard: Hausfarbe, Fächer überschreiben unten) */
 article.topic h2 {
   margin: 42px 0 12px;
   font-size: 1.35rem;
   letter-spacing: -0.02em;
-  color: var(--sport-dark);
+  color: var(--primary-dark);
 }
 article.topic h3 {
   margin: 26px 0 8px;
@@ -1024,3 +1024,40 @@ article.topic.cat-geo .pruefung summary::before { color: var(--geo); }
 .inhalt p { margin: 0 0 8px; font-weight: 700; }
 .inhalt ul { margin: 0; padding-left: 20px; }
 .inhalt li { margin-bottom: 4px; }
+
+/* Simulation zum Selberlaufenlassen (22.10.2026) */
+.simulation {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px 24px;
+  margin: 34px 0;
+}
+.simulation h2 { margin: 0 0 6px; font-size: 1.25rem; }
+.simulation > p { color: var(--text-muted); font-size: 0.92rem; margin: 0 0 16px; }
+.sim-knoepfe { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.sim-knoepfe button {
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  background: var(--theme);
+  border: none;
+  border-radius: 999px;
+  padding: 9px 18px;
+  cursor: pointer;
+}
+.sim-knoepfe button[data-reset] {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+.sim-knoepfe button:hover { filter: brightness(1.08); }
+.sim-zeile { margin-bottom: 14px; }
+.sim-kopf { display: flex; justify-content: space-between; font-size: 0.95rem; margin-bottom: 4px; }
+.sim-kopf strong { font-variant-numeric: tabular-nums; }
+.sim-balken { background: var(--bg); border: 1px solid var(--border); border-radius: 999px; height: 18px; overflow: hidden; }
+.sim-balken span { display: block; height: 100%; width: 0; background: var(--theme); transition: width 0.3s ease; }
+.sim-zeile.wechseln .sim-balken span { background: #4f7a4a; }
+.sim-stand { margin: 0; padding-top: 14px; border-top: 1px solid var(--border); font-size: 0.95rem; color: var(--text-muted); }
+
+article.topic.cat-math .sim-knoepfe button { background: var(--primary); }

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Das Drei-Türen-Problem (Monty Hall) leicht erklärt</title>
-<meta name="description" content="Das Ziegenproblem / Monty-Hall-Problem einfach erklärt: Warum Wechseln die Gewinnchance von 33% auf 66% erhöht.">
+<title>Ziegenproblem einfach erklärt: Wechseln verdoppelt die Chance</title>
+<meta name="description" content="Drei Türen, eine Ziege zu viel: warum Wechseln die Gewinnchance von 1/3 auf 2/3 hebt — mit Fallunterscheidung, Simulation zum Selberlaufenlassen und Prüfungsfragen.">
 <link rel="canonical" href="https://leichterklaert.com/mathematik/drei-tueren-problem.html">
 <link rel="alternate" hreflang="de" href="https://leichterklaert.com/mathematik/drei-tueren-problem.html">
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/mathematik/drei-tueren-problem.html">
@@ -14,6 +14,34 @@
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Ziegenproblem (Monty Hall) einfach erklärt",
+      "description": "Warum Wechseln beim Drei-Türen-Problem die Gewinnchance verdoppelt, mit vollständiger Fallunterscheidung und Simulation.",
+      "inLanguage": "de",
+      "datePublished": "2026-07-25",
+      "dateModified": "2026-10-22",
+      "author": { "@type": "Person", "name": "Viktor Jonas" },
+      "publisher": { "@type": "Organization", "name": "LeichtErklärt", "url": "https://leichterklaert.com/" },
+      "mainEntityOfPage": "https://leichterklaert.com/mathematik/drei-tueren-problem.html",
+      "educationalLevel": "Sekundarstufe",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://leichterklaert.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Mathematik", "item": "https://leichterklaert.com/#mathematik" },
+        { "@type": "ListItem", "position": 3, "name": "Drei-Türen-Problem" }
+      ]
+    }
+  ]
+}
+</script>
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -48,6 +76,14 @@
 <span class="subject-pill math">Mathematik - Stochastik</span>
 <h1>Das Drei-Türen-Problem (Monty Hall) leicht erklärt</h1>
 
+<p class="autorzeile">
+  <span>Verfasst von <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Zuletzt geprüft am <strong>22. Oktober 2026</strong></span>
+  <span>&middot;</span>
+  <span>Lesezeit etwa 7 Minuten</span>
+</p>
+
 <p>Drei Türen, hinter einer ein Auto, hinter den anderen je eine Ziege. Du wählst
 eine Tür. Der Moderator — der weiß, wo das Auto steht — öffnet eine <em>andere</em>
 Tür mit einer Ziege und fragt, ob du wechseln willst. Solltest du?
@@ -66,7 +102,20 @@ bleiben: 1/3 &nbsp;&middot;&nbsp; wechseln: 2/3
 <strong>Monty-Hall-Problem</strong> — der englische Name, nach dem Showmaster Monty Hall.</p>
 </div>
 
-<h2>Warum die Chance nicht 50:50 ist</h2>
+
+<nav class="inhalt" aria-label="Inhalt dieser Seite">
+<p>Auf dieser Seite</p>
+<ul>
+  <li><a href="#warum-die-chance-nicht-50-50-ist">Warum die Chance nicht 50:50 ist</a></li>
+  <li><a href="#der-trick-mit-den-hundert-tueren">Der Trick mit den hundert Türen</a></li>
+  <li><a href="#warum-unser-bauchgefuehl-hier-versagt">Warum unser Bauchgefühl hier versagt</a></li>
+  <li><a href="#nicht-glauben-nachrechnen-lassen">Nicht glauben, nachrechnen lassen</a></li>
+  <li><a href="#uebung-fuenf-fragen-sofortige-rueckmeldung">Übung: fünf Fragen, sofortige Rückmeldung</a></li>
+  <li><a href="#pruefungsfragen-mit-musterantwort">Prüfungsfragen mit Musterantwort</a></li>
+  <li><a href="#quellen-und-weiterlesen">Quellen und Weiterlesen</a></li>
+</ul>
+</nav>
+<h2 id="warum-die-chance-nicht-50-50-ist">Warum die Chance nicht 50:50 ist</h2>
 
 <p>Der entscheidende Punkt: Der Moderator öffnet keine zufällige Tür. Er weiß, wo das
 Auto steht, und öffnet <strong>immer</strong> eine Ziegentür. Damit steckt in seiner
@@ -86,7 +135,7 @@ verbleibenden Türen.</p>
 <p>In zwei von drei Fällen gewinnt das Wechseln. Mehr Beweis braucht es nicht — man
 muss nur alle Fälle vollständig aufschreiben.</p>
 
-<h2>Der Trick mit den hundert Türen</h2>
+<h2 id="der-trick-mit-den-hundert-tueren">Der Trick mit den hundert Türen</h2>
 
 <p>Stell dir hundert Türen vor. Du wählst eine — die Chance liegt bei 1 %. Der
 Moderator öffnet anschließend 98 Ziegentüren und lässt genau eine andere zu. Würdest
@@ -193,7 +242,7 @@ Moderators.</p>
 </details>
 </div>
 
-<h2>Warum unser Bauchgefühl hier versagt</h2>
+<h2 id="warum-unser-bauchgefuehl-hier-versagt">Warum unser Bauchgefühl hier versagt</h2>
 
 <p>Das Drei-Türen-Problem ist berühmt geworden, weil selbst Mathematikprofessoren die richtige Lösung zunächst für falsch hielten. Das lohnt einen genaueren Blick, denn dahinter steckt ein Denkfehler, der weit über dieses Rätsel hinausreicht.</p>
 
@@ -219,6 +268,121 @@ Moderators.</p>
 <p class="note">1990 veröffentlichte Marilyn vos Savant die richtige Lösung in einer
 Zeitungskolumne. Es folgten rund 10.000 Leserbriefe, viele von Universitäten, die
 ihr Rechenfehler vorwarfen. Sie hatte recht.</p>
+
+<section class="simulation" id="simulation" data-sim="drei-tueren">
+<h2 id="nicht-glauben-nachrechnen-lassen">Nicht glauben, nachrechnen lassen</h2>
+<p>Hier läuft das Spiel wirklich ab — Zufallstür, Moderator, Entscheidung. Je mehr Runden, desto näher liegt das Ergebnis an 1/3 und 2/3.</p>
+
+<div class="sim-knoepfe">
+  <button type="button" data-runden="100">100 Spiele</button>
+  <button type="button" data-runden="1000">1.000 Spiele</button>
+  <button type="button" data-runden="10000">10.000 Spiele</button>
+  <button type="button" data-reset>Zurücksetzen</button>
+</div>
+
+<div class="sim-zeile bleiben">
+  <div class="sim-kopf"><span>Bleiben gewinnt</span><strong class="sim-wert">0 von 0 (0,0 %)</strong></div>
+  <div class="sim-balken"><span></span></div>
+</div>
+
+<div class="sim-zeile wechseln">
+  <div class="sim-kopf"><span>Wechseln gewinnt</span><strong class="sim-wert">0 von 0 (0,0 %)</strong></div>
+  <div class="sim-balken"><span></span></div>
+</div>
+
+<p class="sim-stand">Noch keine Spiele gerechnet.</p>
+</section>
+
+<section class="uebung" id="uebung">
+<h2 id="uebung-fuenf-fragen-sofortige-rueckmeldung">Übung: fünf Fragen, sofortige Rückmeldung</h2>
+<p>Antwort anklicken. Du siehst gleich, ob sie stimmt — und warum.</p>
+
+<ol class="uebung-liste">
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Wie groß ist die Gewinnchance, wenn du bei deiner ersten Tür bleibst?</p>
+    <button class="uebung-option">1/2</button>
+    <button class="uebung-option">1/3</button>
+    <button class="uebung-option">2/3</button>
+    <p class="uebung-erklaerung">1/3. Deine erste Wahl war zu 1/3 richtig, und daran ändert das Öffnen einer Ziegentür nichts — der Moderator hätte sie in jedem Fall öffnen können.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">Warum ist die Situation am Ende nicht 50:50?</p>
+    <button class="uebung-option">Weil zwei Türen übrig sind, aber nur ein Auto</button>
+    <button class="uebung-option">Weil der Moderator raten muss</button>
+    <button class="uebung-option">Weil der Moderator weiß, wo das Auto steht, und nie das Auto öffnet</button>
+    <p class="uebung-erklaerung">Sein Wissen ist der Kern. Weil er nie das Auto aufdeckt, steckt in seiner Handlung Information — und die sammelt sich vollständig in der einen Tür, die er zulässt.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">Du wählst Tür 2, das Auto steht hinter Tür 1. Welche Tür öffnet der Moderator?</p>
+    <button class="uebung-option">Tür 3, er hat keine Wahl</button>
+    <button class="uebung-option">Tür 1 oder Tür 3</button>
+    <button class="uebung-option">Tür 2</button>
+    <p class="uebung-erklaerung">Tür 3. Deine Tür darf er nicht öffnen, das Auto darf er nicht zeigen — es bleibt nur eine Möglichkeit. Genau in diesem Fall gewinnt Wechseln.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Der Moderator öffnet jetzt rein zufällig eine der beiden anderen Türen und erwischt zufällig eine Ziege. Was gilt dann?</p>
+    <button class="uebung-option">Wechseln bringt weiterhin 2/3</button>
+    <button class="uebung-option">Es steht tatsächlich 50:50</button>
+    <button class="uebung-option">Bleiben bringt jetzt 2/3</button>
+    <p class="uebung-erklaerung">Dann ist es wirklich 50:50. Seine Handlung verrät nichts mehr, weil er auch das Auto hätte aufdecken können. Nicht die Zahl der Türen entscheidet, sondern die Regel, nach der geöffnet wird.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">Bei 100 Türen wählst du eine, der Moderator öffnet 98 Ziegentüren. Wie groß ist die Gewinnchance beim Wechseln?</p>
+    <button class="uebung-option">1 Prozent</button>
+    <button class="uebung-option">50 Prozent</button>
+    <button class="uebung-option">99 Prozent</button>
+    <p class="uebung-erklaerung">99 Prozent. Deine erste Wahl war zu 1 Prozent richtig, die restlichen 99 Prozent stecken danach in der einen Tür, die er stehen lässt. Bei drei Türen ist es dieselbe Rechnung, nur unauffälliger.</p>
+  </li>
+</ol>
+
+<p class="uebung-stand" aria-live="polite"></p>
+</section>
+
+<section class="pruefung">
+<h2 id="pruefungsfragen-mit-musterantwort">Prüfungsfragen mit Musterantwort</h2>
+<p>Erst selbst versuchen, dann aufklappen.</p>
+
+<details>
+<summary>Begründen Sie mit einer vollständigen Fallunterscheidung, warum Wechseln die Gewinnwahrscheinlichkeit 2/3 hat.</summary>
+<div class="antwort">
+<p>Man legt das Auto ohne Beschränkung der Allgemeinheit hinter Tür 1 und unterscheidet nach der ersten Wahl, die mit je 1/3 auf eine der drei Türen fällt.</p>
+<p>Wahl Tür 1: Der Moderator öffnet Tür 2 oder 3, Wechseln führt zu einer Ziege — verloren. Wahl Tür 2: Er muss Tür 3 öffnen, Wechseln führt auf Tür 1 — gewonnen. Wahl Tür 3: Er muss Tür 2 öffnen, Wechseln führt auf Tür 1 — gewonnen.</p>
+<p>Zwei der drei gleich wahrscheinlichen Fälle gewinnen beim Wechseln, also P = 2/3. Wichtig für die volle Punktzahl ist die Begründung, warum die drei Fälle gleich wahrscheinlich sind und warum der Moderator in zwei Fällen keine Wahl hat.</p>
+</div>
+</details>
+
+<details>
+<summary>Zeigen Sie dasselbe Ergebnis mit dem Satz von Bayes.</summary>
+<div class="antwort">
+<p>Gewählt sei Tür 1, geöffnet werde Tür 3. Ereignisse: A₁, A₂, A₃ steht für „Auto hinter Tür 1, 2 oder 3", jeweils mit P = 1/3. M₃ steht für „Moderator öffnet Tür 3".</p>
+<p>Die bedingten Wahrscheinlichkeiten: P(M₃ | A₁) = 1/2, denn er darf zwischen Tür 2 und 3 wählen. P(M₃ | A₂) = 1, denn Tür 1 ist gewählt und Tür 2 verbirgt das Auto. P(M₃ | A₃) = 0, er zeigt das Auto nicht.</p>
+<p>Damit ist P(M₃) = 1/3 · 1/2 + 1/3 · 1 + 0 = 1/2. Eingesetzt: P(A₁ | M₃) = (1/3 · 1/2) / (1/2) = 1/3 und P(A₂ | M₃) = (1/3 · 1) / (1/2) = 2/3. Bleiben gewinnt mit 1/3, Wechseln mit 2/3 — dasselbe Ergebnis wie in der Fallunterscheidung.</p>
+</div>
+</details>
+
+<details>
+<summary>Erklären Sie, warum viele Menschen hier 50:50 schätzen, und was an dieser Überlegung schiefgeht.</summary>
+<div class="antwort">
+<p>Die Intuition zählt Möglichkeiten statt Wahrscheinlichkeiten: Zwei Türen sind übrig, also scheinen beide gleich wahrscheinlich. Gleich wahrscheinlich sind Ergebnisse aber nur dann, wenn nichts sie unterscheidet.</p>
+<p>Hier unterscheidet sie etwas: Deine Tür wurde blind gewählt, die andere hat eine Auswahl überstanden, bei der ein Wissender gezielt eine Niete entfernt hat. Die 1/3 deiner Tür ist festgeschrieben, bevor irgendetwas geöffnet wurde, und kann sich nachträglich nicht ändern.</p>
+<p>Dass die Verwechslung hartnäckig ist, zeigt die Geschichte des Problems: Nach Marilyn vos Savants richtiger Lösung von 1990 widersprachen ihr zahlreiche Leser mit mathematischem Hintergrund öffentlich — und lagen falsch.</p>
+</div>
+</details>
+</section>
+
+<section class="quellen">
+<h2 id="quellen-und-weiterlesen">Quellen und Weiterlesen</h2>
+<p>Alle Angaben auf dieser Seite lassen sich hier nachprüfen.</p>
+<ul>
+  <li><a href="https://www.spektrum.de/kolumne/das-ziegenproblem-erhoeht-ein-wechsel-die-gewinnchance/2011108" target="_blank" rel="noopener">Spektrum der Wissenschaft: Das Ziegenproblem — erhöht ein Wechsel die Gewinnchance?</a> <span>— ausführliche Herleitung samt Rechnung.</span></li>
+  <li><a href="https://www.spektrum.de/raetsel/ziegenproblem/1336377" target="_blank" rel="noopener">Spektrum, Treitz-Rätsel: Ziegenproblem</a> <span>— dieselbe Aufgabe als Knobelaufgabe mit Lösungsweg.</span></li>
+</ul>
+</section>
+
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>
@@ -228,6 +392,8 @@ ihr Rechenfehler vorwarfen. Sie hatte recht.</p>
 </footer>
 <script src="../search-data.js"></script>
 <script src="../search.js"></script>
+<script src="../uebung.js"></script>
+<script src="../sim-drei-tueren.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
