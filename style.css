@@ -841,3 +841,186 @@ details.solution[open] summary { margin-bottom: 10px; }
 .site-intro{max-width:52rem;margin:3rem auto 1rem;padding:1.75rem 1.5rem;border-radius:14px;background:var(--card,#fff);box-shadow:0 1px 3px rgba(58,42,34,.08)}
 .site-intro h2{margin-top:0;font-size:1.25rem}
 .site-intro p{line-height:1.7;margin:.9rem 0}
+
+/* ===================================================================
+   Aufwertung der Themenseiten (22.10.2026)
+   Autorenzeile, Verwechslungen, Übung mit Rückmeldung,
+   Prüfungsfragen, Quellen. Wiederverwendbar auf allen Themenseiten.
+   =================================================================== */
+
+.autorzeile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 14px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0 0 26px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.autorzeile strong { color: var(--text); font-weight: 600; }
+
+.verwechslung {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--theme);
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin: 30px 0;
+}
+
+.verwechslung h2 { margin: 0 0 6px; font-size: 1.25rem; }
+.verwechslung > p { color: var(--text-muted); font-size: 0.92rem; margin: 0 0 16px; }
+.verwechslung dl { margin: 0; }
+.verwechslung dt { font-weight: 700; margin-top: 16px; }
+.verwechslung dl > dt:first-child { margin-top: 0; }
+.verwechslung dd { margin: 5px 0 0; }
+
+.uebung {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 26px;
+  margin: 34px 0;
+}
+
+.uebung h2 { margin: 0 0 6px; font-size: 1.25rem; }
+.uebung > p { color: var(--text-muted); font-size: 0.92rem; margin: 0 0 18px; }
+
+.uebung-liste { margin: 0; padding-left: 22px; }
+.uebung-frage { margin-bottom: 26px; }
+.uebung-frage:last-child { margin-bottom: 6px; }
+.uebung-text { font-weight: 600; margin: 0 0 12px; }
+
+.uebung-option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 11px 16px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.uebung-option:hover:not([disabled]) { border-color: var(--theme); background: #fff; }
+.uebung-option[disabled] { cursor: default; }
+
+.uebung-option.richtig {
+  border-color: #4f7a4a;
+  background: #eef5ec;
+  font-weight: 600;
+}
+
+.uebung-option.falsch {
+  border-color: #c1613b;
+  background: #fbeee8;
+  text-decoration: line-through;
+}
+
+.uebung-option .haken { float: right; font-weight: 700; }
+
+.uebung-erklaerung {
+  display: none;
+  margin: 10px 0 0;
+  padding: 12px 16px;
+  background: #fff9ec;
+  border: 1px solid #f1e0b8;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+.uebung-frage.beantwortet .uebung-erklaerung { display: block; }
+
+.uebung-stand {
+  margin: 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-weight: 600;
+  min-height: 1.6em;
+}
+
+.pruefung { margin: 34px 0; }
+.pruefung h2 { margin-bottom: 6px; }
+.pruefung > p { color: var(--text-muted); font-size: 0.92rem; margin: 0 0 16px; }
+
+.pruefung details {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.pruefung summary {
+  cursor: pointer;
+  padding: 14px 18px;
+  font-weight: 600;
+  list-style: none;
+}
+
+.pruefung summary::-webkit-details-marker { display: none; }
+.pruefung summary::before { content: "▸ "; color: var(--theme); font-weight: 700; }
+.pruefung details[open] summary::before { content: "▾ "; }
+.pruefung details[open] summary { border-bottom: 1px solid var(--border); }
+.pruefung .antwort { padding: 14px 18px; }
+.pruefung .antwort p:first-child { margin-top: 0; }
+.pruefung .antwort p:last-child { margin-bottom: 0; }
+
+.quellen {
+  margin: 34px 0 10px;
+  font-size: 0.95rem;
+}
+
+.quellen h2 { font-size: 1.15rem; margin-bottom: 6px; }
+.quellen > p { color: var(--text-muted); font-size: 0.92rem; margin: 0 0 12px; }
+.quellen ul { margin: 0; padding-left: 20px; }
+.quellen li { margin-bottom: 10px; }
+.quellen span { color: var(--text-muted); }
+
+@media (max-width: 600px) {
+  .uebung, .verwechslung { padding: 18px 16px; }
+  .uebung-liste { padding-left: 18px; }
+}
+
+/* Zwischenüberschriften in der Fachfarbe statt pauschal grün (22.10.2026) */
+article.topic.cat-bio h2 { color: var(--bio-dark); }
+article.topic.cat-physics h2 { color: var(--primary-dark); }
+article.topic.cat-chem h2 { color: var(--chem-dark); }
+article.topic.cat-history h2 { color: var(--history-dark); }
+article.topic.cat-sport h2 { color: var(--sport-dark); }
+article.topic.cat-geo h2 { color: var(--geo-dark); }
+
+article.topic.cat-bio .verwechslung { border-left-color: var(--bio); }
+article.topic.cat-physics .verwechslung { border-left-color: var(--accent-2); }
+article.topic.cat-chem .verwechslung { border-left-color: var(--chem); }
+article.topic.cat-history .verwechslung { border-left-color: var(--history); }
+article.topic.cat-sport .verwechslung { border-left-color: var(--sport); }
+article.topic.cat-geo .verwechslung { border-left-color: var(--geo); }
+
+article.topic.cat-bio .pruefung summary::before,
+article.topic.cat-bio details[open] summary::before { color: var(--bio); }
+article.topic.cat-chem .pruefung summary::before { color: var(--chem); }
+article.topic.cat-history .pruefung summary::before { color: var(--history); }
+article.topic.cat-sport .pruefung summary::before { color: var(--sport); }
+article.topic.cat-geo .pruefung summary::before { color: var(--geo); }
+
+/* Kurzes Inhaltsverzeichnis am Seitenanfang (22.10.2026) */
+.inhalt {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin: 26px 0;
+  font-size: 0.95rem;
+}
+.inhalt p { margin: 0 0 8px; font-weight: 700; }
+.inhalt ul { margin: 0; padding-left: 20px; }
+.inhalt li { margin-bottom: 4px; }
