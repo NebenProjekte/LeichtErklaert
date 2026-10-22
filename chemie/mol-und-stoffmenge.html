@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Das Mol und die Stoffmenge leicht erklärt</title>
-<meta name="description" content="Mol, Stoffmenge und molare Masse einfach erklärt - mit der Avogadro-Konstante, den Formeln n = m ÷ M und N = n · NA.">
+<title>Mol und Stoffmenge einfach erklärt — mit Rechner</title>
+<meta name="description" content="Stoffmenge, molare Masse und Avogadro-Konstante verständlich erklärt — mit Rechner für Masse, Mol und Teilchenzahl, Übung mit Korrektur und Prüfungsfragen.">
 <link rel="canonical" href="https://leichterklaert.com/chemie/mol-und-stoffmenge.html">
 <link rel="alternate" hreflang="de" href="https://leichterklaert.com/chemie/mol-und-stoffmenge.html">
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/chemie/mol-und-stoffmenge.html">
@@ -14,6 +14,34 @@
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Mol und Stoffmenge einfach erklärt",
+      "description": "Stoffmenge, molare Masse und Avogadro-Konstante mit Rechner und Prüfungsfragen.",
+      "inLanguage": "de",
+      "datePublished": "2026-08-28",
+      "dateModified": "2026-10-22",
+      "author": { "@type": "Person", "name": "Viktor Jonas" },
+      "publisher": { "@type": "Organization", "name": "LeichtErklärt", "url": "https://leichterklaert.com/" },
+      "mainEntityOfPage": "https://leichterklaert.com/chemie/mol-und-stoffmenge.html",
+      "educationalLevel": "Sekundarstufe",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://leichterklaert.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Chemie", "item": "https://leichterklaert.com/#chemie" },
+        { "@type": "ListItem", "position": 3, "name": "Mol und Stoffmenge" }
+      ]
+    }
+  ]
+}
+</script>
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -49,6 +77,14 @@
 <article class="topic cat-chem">
 <span class="subject-pill chem">Chemie - Grundlagen</span>
 <h1>Das Mol und die Stoffmenge leicht erklärt</h1>
+
+<p class="autorzeile">
+  <span>Verfasst von <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Zuletzt geprüft am <strong>22. Oktober 2026</strong></span>
+  <span>&middot;</span>
+  <span>Lesezeit etwa 9 Minuten</span>
+</p>
 
 <p>Wer im Baumarkt tausend Schrauben braucht, zählt sie nicht ab. Er stellt sie auf die Waage, denn der Verkäufer weiß, wie viel eine Schraube wiegt. Genau dieses Problem hat die Chemie, nur eine Milliarde mal schlimmer: Reaktionen laufen zwischen einzelnen <strong>Teilchen</strong> ab, aber niemand kann Atome abzählen. Man kann sie nur wiegen. Das <strong>Mol</strong> ist die Brücke zwischen beidem - es übersetzt eine Masse, die man auf der Waage sieht, in eine Teilchenzahl, die man in der Reaktionsgleichung braucht.</p>
 
@@ -229,6 +265,158 @@ n = m &divide; M &nbsp;&middot;&nbsp; N = n &#215; N<sub>A</sub>
 
 <p class="note">Merksatz für die Klassenarbeit: Das Mol zählt Teilchen, die Waage misst Gramm, und die molare Masse übersetzt zwischen beiden. Steht in einer Aufgabe eine Reaktionsgleichung, wird immer in Mol gerechnet - nie in Gramm.</p>
 
+
+<section class="rechner" id="rechner" data-rechner="mol">
+
+<nav class="inhalt" aria-label="Inhalt dieser Seite">
+<p>Auf dieser Seite</p>
+<ul>
+  <li><a href="#rechner-masse-stoffmenge-teilchenzahl">Rechner: Masse, Stoffmenge, Teilchenzahl</a></li>
+  <li><a href="#fehler">Vier Fehler, die Punkte kosten</a></li>
+  <li><a href="#uebung-fuenf-fragen-sofortige-rueckmeldung">Übung: fünf Fragen, sofortige Rückmeldung</a></li>
+  <li><a href="#pruefungsfragen-mit-musterantwort">Prüfungsfragen mit Musterantwort</a></li>
+  <li><a href="#quellen-und-weiterlesen">Quellen und Weiterlesen</a></li>
+</ul>
+</nav>
+<h2 id="rechner-masse-stoffmenge-teilchenzahl">Rechner: Masse, Stoffmenge, Teilchenzahl</h2>
+<p>Masse eintragen und einen Stoff wählen — oder die molare Masse direkt eingeben, wenn dein Stoff nicht dabei ist. Die molare Masse liest man im Periodensystem ab und addiert sie für Verbindungen zusammen.</p>
+
+<div class="rechner-felder">
+  <div class="rechner-feld">
+    <label for="masse">Masse in Gramm</label>
+    <input id="masse" name="masse" type="text" inputmode="decimal" value="18">
+  </div>
+  <div class="rechner-feld">
+    <label for="stoff">Stoff auswählen</label>
+    <select id="stoff" name="stoff">
+      <option value="18.02">Wasser H₂O — 18,02 g/mol</option>
+      <option value="44.01">Kohlenstoffdioxid CO₂ — 44,01 g/mol</option>
+      <option value="58.44">Kochsalz NaCl — 58,44 g/mol</option>
+      <option value="32.00">Sauerstoff O₂ — 32,00 g/mol</option>
+      <option value="180.16">Traubenzucker C₆H₁₂O₆ — 180,16 g/mol</option>
+      <option value="55.85">Eisen Fe — 55,85 g/mol</option>
+      <option value="12.01">Kohlenstoff C — 12,01 g/mol</option>
+    </select>
+  </div>
+  <div class="rechner-feld">
+    <label for="molmasse">Molare Masse in g/mol</label>
+    <input id="molmasse" name="molmasse" type="text" inputmode="decimal" value="18,02">
+  </div>
+</div>
+
+<div class="rechner-ergebnis">
+  <p class="rechner-urteil"></p>
+  <dl class="rechner-werte"></dl>
+</div>
+</section>
+
+<section class="verwechslung">
+<h2 id="fehler">Vier Fehler, die Punkte kosten</h2>
+<p>Diese vier tauchen in Klassenarbeiten immer wieder auf.</p>
+<dl>
+  <dt>Stoffmenge und Masse verwechseln</dt>
+  <dd>Die Stoffmenge n wird in mol angegeben, die Masse m in Gramm. Ein Mol Eisen wiegt 55,85 g, ein Mol Wasser nur 18,02 g — gleiche Stoffmenge, völlig unterschiedliche Masse. In der Reaktionsgleichung zählt immer die Stoffmenge.</dd>
+
+  <dt>Bei Molekülen nur ein Atom rechnen</dt>
+  <dd>Sauerstoffgas ist O₂, nicht O. Die molare Masse ist also 2 &middot; 16,00 = 32,00 g/mol. Derselbe Fehler passiert bei H₂, N₂ und Cl₂ — alle kommen als zweiatomige Moleküle vor.</dd>
+
+  <dt>Die Indizes beim Addieren übersehen</dt>
+  <dd>Für H₂O sind es zwei Wasserstoffatome: 2 &middot; 1,008 + 16,00 = 18,02 g/mol. Wer die 2 vergisst, landet bei 17,01 und rechnet mit jedem Folgeschritt falsch weiter.</dd>
+
+  <dt>Die Avogadro-Konstante als Masse behandeln</dt>
+  <dd>6,022 &middot; 10²³ ist eine reine Anzahl ohne Gewicht, vergleichbar mit „Dutzend". Sie sagt, wie viele Teilchen in einem Mol stecken, nicht wie schwer sie sind.</dd>
+</dl>
+</section>
+
+<section class="uebung" id="uebung">
+<h2 id="uebung-fuenf-fragen-sofortige-rueckmeldung">Übung: fünf Fragen, sofortige Rückmeldung</h2>
+<p>Antwort anklicken. Du siehst gleich, ob sie stimmt — und warum.</p>
+
+<ol class="uebung-liste">
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Was gibt die Avogadro-Konstante an?</p>
+    <button class="uebung-option">Die Masse eines Atoms in Gramm</button>
+    <button class="uebung-option">Die Anzahl der Teilchen in einem Mol</button>
+    <button class="uebung-option">Das Volumen eines Mols Gas</button>
+    <p class="uebung-erklaerung">Sie ist eine reine Anzahl: 6,022 &middot; 10²³ Teilchen pro Mol, ein Zählwort wie Dutzend. Das Volumen eines Mols Gas ist eine andere Größe, das molare Volumen.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">Wie viel Mol sind 36 g Wasser (M = 18,02 g/mol)?</p>
+    <button class="uebung-option">Etwa 2 mol</button>
+    <button class="uebung-option">Etwa 0,5 mol</button>
+    <button class="uebung-option">Etwa 18 mol</button>
+    <p class="uebung-erklaerung">n = m &divide; M = 36 &divide; 18,02 &asymp; 2,0 mol. Ein Mol Wasser sind rund 18 g, also etwa ein großer Schluck.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">Wie groß ist die molare Masse von Sauerstoffgas?</p>
+    <button class="uebung-option">8,00 g/mol</button>
+    <button class="uebung-option">16,00 g/mol</button>
+    <button class="uebung-option">32,00 g/mol</button>
+    <p class="uebung-erklaerung">Sauerstoff kommt als O₂ vor, also 2 &middot; 16,00 g/mol. Die 16,00 im Periodensystem gelten für ein einzelnes Atom.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Wo findet man die molare Masse eines Elements?</p>
+    <button class="uebung-option">Man muss sie auswendig lernen</button>
+    <button class="uebung-option">Im Periodensystem, es ist die Atommasse in Gramm pro Mol</button>
+    <button class="uebung-option">Man misst sie mit der Waage</button>
+    <p class="uebung-erklaerung">Die Zahl im Periodensystem ist die Atommasse in atomaren Masseneinheiten — dieselbe Zahl gilt in g/mol. Genau deshalb muss man nichts auswendig lernen.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">Zwei Proben: 1 mol Eisen und 1 mol Wasser. Was stimmt?</p>
+    <button class="uebung-option">Beide wiegen gleich viel</button>
+    <button class="uebung-option">Eisen enthält mehr Teilchen</button>
+    <button class="uebung-option">Beide enthalten gleich viele Teilchen, Eisen wiegt mehr</button>
+    <p class="uebung-erklaerung">Ein Mol ist immer dieselbe Teilchenzahl. Die Masse unterscheidet sich, weil ein Eisenatom schwerer ist als ein Wassermolekül: 55,85 g gegenüber 18,02 g.</p>
+  </li>
+</ol>
+
+<p class="uebung-stand" aria-live="polite"></p>
+</section>
+
+<section class="pruefung">
+<h2 id="pruefungsfragen-mit-musterantwort">Prüfungsfragen mit Musterantwort</h2>
+<p>Erst selbst rechnen, dann aufklappen.</p>
+
+<details>
+<summary>Berechnen Sie die Stoffmenge und die Teilchenzahl von 10 g Kochsalz (NaCl, M = 58,44 g/mol).</summary>
+<div class="antwort">
+<p>Stoffmenge: n = m &divide; M = 10 g &divide; 58,44 g/mol &asymp; 0,171 mol.</p>
+<p>Teilchenzahl: N = n &middot; N<sub>A</sub> = 0,171 mol &middot; 6,022 &middot; 10²³ 1/mol &asymp; 1,03 &middot; 10²³ Formeleinheiten.</p>
+<p>Wichtig für die volle Punktzahl: Bei einem Salz spricht man von Formeleinheiten, nicht von Molekülen, weil NaCl im Kristall ein Ionengitter bildet und keine abgegrenzten Moleküle enthält.</p>
+</div>
+</details>
+
+<details>
+<summary>Wie viel Gramm Traubenzucker (C₆H₁₂O₆) braucht man für 0,25 mol? Leiten Sie die molare Masse her.</summary>
+<div class="antwort">
+<p>Molare Masse aus dem Periodensystem: 6 &middot; 12,01 + 12 &middot; 1,008 + 6 &middot; 16,00 = 72,06 + 12,10 + 96,00 = 180,16 g/mol.</p>
+<p>Masse: m = n &middot; M = 0,25 mol &middot; 180,16 g/mol &asymp; 45,0 g.</p>
+<p>Der typische Fehler steckt in den Indizes: Wer 6 &middot; 12,01 + 1,008 + 16,00 rechnet, übersieht die zwölf Wasserstoff- und die sechs Sauerstoffatome.</p>
+</div>
+</details>
+
+<details>
+<summary>Erklären Sie, warum die Chemie überhaupt mit der Stoffmenge rechnet und nicht einfach mit Gramm.</summary>
+<div class="antwort">
+<p>Reaktionen laufen zwischen einzelnen Teilchen ab, und Reaktionsgleichungen geben Teilchenverhältnisse an. In 2 H₂ + O₂ &rarr; 2 H₂O reagieren zwei Wasserstoffmoleküle mit einem Sauerstoffmolekül — nicht zwei Gramm mit einem Gramm.</p>
+<p>Teilchen lassen sich aber nicht abzählen, nur wiegen. Das Mol schlägt die Brücke: Über die molare Masse wird eine wiegbare Masse in eine Teilchenzahl übersetzt.</p>
+<p>Praktisch heißt das: Für 2 mol Wasserstoff braucht man rund 4 g, für 1 mol Sauerstoff 32 g. Die Massen sind sehr verschieden, das Teilchenverhältnis stimmt trotzdem genau.</p>
+</div>
+</details>
+</section>
+
+<section class="quellen">
+<h2 id="quellen-und-weiterlesen">Quellen und Weiterlesen</h2>
+<p>Alle Angaben auf dieser Seite lassen sich hier nachprüfen.</p>
+<ul>
+  <li><a href="https://www.ptb.de/cms/en/research-development/research-on-the-new-si/countdown-zum-neuen-si/das-mol.html" target="_blank" rel="noopener">Physikalisch-Technische Bundesanstalt: Das Mol</a> <span>— warum die Avogadro-Konstante seit 2019 exakt festgelegt ist.</span></li>
+  <li><a href="https://www.ptb.de/cms/forschung-entwicklung/forschung-zum-neuen-si.html" target="_blank" rel="noopener">PTB: Forschung zum neuen SI</a> <span>— Hintergrund zur Revision des Einheitensystems.</span></li>
+</ul>
+</section>
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>
@@ -238,6 +426,8 @@ n = m &divide; M &nbsp;&middot;&nbsp; N = n &#215; N<sub>A</sub>
 </footer>
 <script src="../search-data.js"></script>
 <script src="../search.js"></script>
+<script src="../uebung.js"></script>
+<script src="../rechner-mol.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

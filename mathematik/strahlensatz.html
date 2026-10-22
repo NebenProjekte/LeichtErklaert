@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Strahlensatz leicht erklärt - LeichtErklärt</title>
-<meta name="description" content="Die Strahlensätze einfach erklärt: Verhältnisse, Streckfaktor und Höhenmessung mit dem Schatten - mit Zeichnung und Übungsaufgabe.">
+<title>Strahlensatz einfach erklärt — mit Rechner und Übung</title>
+<meta name="description" content="Beide Strahlensätze verständlich erklärt, dazu die Schattenmethode für Baumhöhen — mit Rechner für die fehlende Strecke, Übung und Prüfungsfragen mit Lösungsweg.">
 <link rel="canonical" href="https://leichterklaert.com/mathematik/strahlensatz.html">
 <link rel="alternate" hreflang="de" href="https://leichterklaert.com/mathematik/strahlensatz.html">
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/mathematik/strahlensatz.html">
@@ -14,6 +14,34 @@
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Strahlensatz einfach erklärt",
+      "description": "Beide Strahlensätze mit Begründung, Schattenmethode, Rechner und Prüfungsfragen.",
+      "inLanguage": "de",
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-10-22",
+      "author": { "@type": "Person", "name": "Viktor Jonas" },
+      "publisher": { "@type": "Organization", "name": "LeichtErklärt", "url": "https://leichterklaert.com/" },
+      "mainEntityOfPage": "https://leichterklaert.com/mathematik/strahlensatz.html",
+      "educationalLevel": "Sekundarstufe",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://leichterklaert.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Mathematik", "item": "https://leichterklaert.com/#mathematik" },
+        { "@type": "ListItem", "position": 3, "name": "Strahlensatz" }
+      ]
+    }
+  ]
+}
+</script>
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -48,6 +76,14 @@
 <span class="subject-pill math">Mathematik - Geometrie</span>
 <h1>Strahlensatz leicht erklärt</h1>
 
+<p class="autorzeile">
+  <span>Verfasst von <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Zuletzt geprüft am <strong>22. Oktober 2026</strong></span>
+  <span>&middot;</span>
+  <span>Lesezeit etwa 8 Minuten</span>
+</p>
+
 <p>Die Strahlensätze beschreiben, was passiert, wenn zwei Geraden von
 einem gemeinsamen Punkt ausgehen und von zwei <strong>parallelen</strong> Linien
 geschnitten werden. Dann entstehen zwei Dreiecke, die dieselbe Form haben, aber
@@ -72,7 +108,20 @@ zu den Abschnitten auf den Strahlen.<br>
 alle Seiten sind um denselben Faktor gestreckt.</p>
 </div>
 
-<h2>Warum das funktioniert</h2>
+
+<nav class="inhalt" aria-label="Inhalt dieser Seite">
+<p>Auf dieser Seite</p>
+<ul>
+  <li><a href="#warum-das-funktioniert">Warum das funktioniert</a></li>
+  <li><a href="#der-baum-am-nachmittag">Der Baum am Nachmittag</a></li>
+  <li><a href="#rechner-die-fehlende-strecke">Rechner: die fehlende Strecke</a></li>
+  <li><a href="#fehler">Vier Fehler, die Punkte kosten</a></li>
+  <li><a href="#uebung-fuenf-fragen-sofortige-rueckmeldung">Übung: fünf Fragen, sofortige Rückmeldung</a></li>
+  <li><a href="#pruefungsfragen-mit-musterantwort">Prüfungsfragen mit Musterantwort</a></li>
+  <li><a href="#quellen-und-weiterlesen">Quellen und Weiterlesen</a></li>
+</ul>
+</nav>
+<h2 id="warum-das-funktioniert">Warum das funktioniert</h2>
 
 <p>Der Grund ist einfacher, als die Formeln aussehen lassen. Sind zwei Linien
 parallel, treffen sie beide Strahlen unter genau demselben Winkel — das sind
@@ -131,7 +180,7 @@ Abstand vom Scheitelpunkt, also 4 + 8 = 12 cm.</p>
 </tbody>
 </table>
 
-<h2>Der Baum am Nachmittag</h2>
+<h2 id="der-baum-am-nachmittag">Der Baum am Nachmittag</h2>
 
 <p>Die klassische Anwendung ist die Höhenmessung mit dem Schatten. Ein Stock von 1,50 m
 Höhe wirft einen Schatten von 2,00 m. Zur gleichen Zeit wirft ein Baum einen Schatten
@@ -260,6 +309,142 @@ anderes als eine zentrische Streckung.</p>
 <a href="flaechen-und-volumenformeln.html">Flächen- und Volumenformeln</a></p>
 </div>
 
+
+<section class="rechner" id="rechner" data-rechner="strahlensatz">
+<h2 id="rechner-die-fehlende-strecke">Rechner: die fehlende Strecke</h2>
+<p>Drei Strecken eintragen, das vierte Feld leer lassen — es wird ergänzt. Die Bezeichnungen passen zur Zeichnung oben: Z ist der Scheitelpunkt, A und B liegen auf dem einen Strahl, C und D auf dem anderen.</p>
+
+<div class="rechner-felder">
+  <div class="rechner-feld">
+    <label for="za">ZA</label>
+    <input id="za" name="za" type="text" inputmode="decimal" value="3">
+  </div>
+  <div class="rechner-feld">
+    <label for="zb">ZB</label>
+    <input id="zb" name="zb" type="text" inputmode="decimal" value="12">
+  </div>
+  <div class="rechner-feld">
+    <label for="zc">ZC</label>
+    <input id="zc" name="zc" type="text" inputmode="decimal" value="4">
+  </div>
+  <div class="rechner-feld">
+    <label for="zd">ZD (leer lassen)</label>
+    <input id="zd" name="zd" type="text" inputmode="decimal" value="">
+  </div>
+</div>
+
+<div class="rechner-ergebnis">
+  <p class="rechner-urteil"></p>
+  <dl class="rechner-werte"></dl>
+</div>
+</section>
+
+<section class="verwechslung">
+<h2 id="fehler">Vier Fehler, die Punkte kosten</h2>
+<p>Diese vier tauchen in Korrekturen am häufigsten auf.</p>
+<dl>
+  <dt>Abschnitte mit Gesamtstrecken verwechseln</dt>
+  <dd>ZB ist die ganze Strecke vom Scheitelpunkt bis B, nicht das Stück zwischen A und B. Wer AB statt ZB einsetzt, bekommt ein falsches Verhältnis. Im Zweifel die Strecke in der Zeichnung mit dem Finger vom Z aus nachfahren.</dd>
+
+  <dt>Die Parallelität nicht prüfen</dt>
+  <dd>Ohne parallele Schnittlinien gilt der Strahlensatz nicht. In Textaufgaben steht das oft versteckt, etwa dass zwei Masten senkrecht stehen oder zwei Seile gleich gespannt sind. Diese Begründung gehört in die Antwort.</dd>
+
+  <dt>Ersten und zweiten Strahlensatz vertauschen</dt>
+  <dd>Der erste vergleicht Abschnitte auf den Strahlen miteinander. Der zweite setzt die parallelen Strecken ins Verhältnis zu den Abschnitten auf den Strahlen. Wer die parallelen Strecken in die Gleichung des ersten einsetzt, rechnet falsch.</dd>
+
+  <dt>Die Einheiten mischen</dt>
+  <dd>Schattenlänge in Metern, Stablänge in Zentimetern — das geht nur gut, wenn beide Seiten des Verhältnisses dieselbe Einheit haben. Erst umrechnen, dann einsetzen.</dd>
+</dl>
+</section>
+
+<section class="uebung" id="uebung">
+<h2 id="uebung-fuenf-fragen-sofortige-rueckmeldung">Übung: fünf Fragen, sofortige Rückmeldung</h2>
+<p>Antwort anklicken. Du siehst gleich, ob sie stimmt — und warum.</p>
+
+<ol class="uebung-liste">
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Welche Voraussetzung muss erfüllt sein, damit der Strahlensatz gilt?</p>
+    <button class="uebung-option">Die beiden Dreiecke müssen gleich groß sein</button>
+    <button class="uebung-option">Die beiden Schnittlinien müssen parallel sein</button>
+    <button class="uebung-option">Der Winkel am Scheitelpunkt muss 90 Grad betragen</button>
+    <p class="uebung-erklaerung">Nur bei parallelen Schnittlinien stimmen alle Winkel überein und die Dreiecke sind ähnlich. Gleich groß dürfen sie gerade nicht sein, und der Winkel in Z ist beliebig.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">ZA = 3 cm, ZB = 12 cm, ZC = 4 cm. Wie lang ist ZD?</p>
+    <button class="uebung-option">9 cm</button>
+    <button class="uebung-option">13 cm</button>
+    <button class="uebung-option">16 cm</button>
+    <p class="uebung-erklaerung">ZB ist das Vierfache von ZA, also ist ZD auch das Vierfache von ZC: 4 &middot; 4 cm = 16 cm. Die 9 entsteht, wenn man fälschlich 12 &minus; 3 rechnet.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">Ein 1,80 m großer Mensch wirft einen 1,20 m langen Schatten. Ein Baum daneben wirft 8 m Schatten. Wie hoch ist der Baum?</p>
+    <button class="uebung-option">12 m</button>
+    <button class="uebung-option">9,6 m</button>
+    <button class="uebung-option">5,3 m</button>
+    <p class="uebung-erklaerung">Höhe durch Schatten ist bei beiden gleich: 1,80 &divide; 1,20 = 1,5. Also 8 m &middot; 1,5 = 12 m. Dass es funktioniert, liegt daran, dass die Sonnenstrahlen praktisch parallel einfallen.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Was vergleicht der zweite Strahlensatz?</p>
+    <button class="uebung-option">Nur die Abschnitte auf einem einzigen Strahl</button>
+    <button class="uebung-option">Die parallelen Strecken mit den Abschnitten auf den Strahlen</button>
+    <button class="uebung-option">Die Winkel der beiden Dreiecke</button>
+    <p class="uebung-erklaerung">Der zweite Strahlensatz stellt die Länge der parallelen Strecken ins Verhältnis zu den Abschnitten vom Scheitelpunkt aus. Der erste bleibt auf den Strahlen selbst.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">Warum lässt sich mit der Schattenmethode die Höhe eines Baums bestimmen?</p>
+    <button class="uebung-option">Weil Bäume und Menschen ähnlich gebaut sind</button>
+    <button class="uebung-option">Weil der Schatten immer genauso lang ist wie das Objekt</button>
+    <button class="uebung-option">Weil die Sonnenstrahlen praktisch parallel einfallen</button>
+    <p class="uebung-erklaerung">Die Sonne ist so weit entfernt, dass ihre Strahlen auf der Erde als parallel gelten. Damit entstehen zwei ähnliche Dreiecke, und das Verhältnis Höhe zu Schatten ist für alle Objekte am selben Ort zur selben Zeit gleich.</p>
+  </li>
+</ol>
+
+<p class="uebung-stand" aria-live="polite"></p>
+</section>
+
+<section class="pruefung">
+<h2 id="pruefungsfragen-mit-musterantwort">Prüfungsfragen mit Musterantwort</h2>
+<p>Erst selbst rechnen, dann aufklappen.</p>
+
+<details>
+<summary>Begründen Sie, warum aus parallelen Schnittlinien folgt, dass die Dreiecke ähnlich sind.</summary>
+<div class="antwort">
+<p>Der Winkel am Scheitelpunkt Z gehört zu beiden Dreiecken, ist also in beiden derselbe.</p>
+<p>Sind die Schnittlinien parallel, schneiden sie jeden Strahl unter demselben Winkel: Es entstehen Stufenwinkel, und die sind gleich groß. Das liefert einen zweiten übereinstimmenden Winkel, und da die Winkelsumme im Dreieck 180 Grad beträgt, stimmt auch der dritte überein.</p>
+<p>Dreiecke mit drei gleichen Winkeln sind ähnlich, das heißt alle Seiten sind um denselben Faktor gestreckt. Genau diese Aussage schreiben die Strahlensätze als Verhältnisgleichung auf.</p>
+</div>
+</details>
+
+<details>
+<summary>Ein Turm wirft einen 24 m langen Schatten, ein senkrecht gehaltener Stab von 1,50 m wirft gleichzeitig 2 m Schatten. Berechnen Sie die Höhe des Turms und nennen Sie die Voraussetzung.</summary>
+<div class="antwort">
+<p>Verhältnisgleichung: Turmhöhe &divide; 24 m = 1,50 m &divide; 2 m.</p>
+<p>Umgestellt: Turmhöhe = 24 m &middot; 1,50 &divide; 2 = 18 m.</p>
+<p>Die Voraussetzung gehört zur vollständigen Antwort: Beide Messungen müssen zur gleichen Zeit am gleichen Ort erfolgen, damit die Sonnenstrahlen gleich einfallen, und der Stab muss senkrecht stehen. Sonst sind die beiden Dreiecke nicht ähnlich.</p>
+</div>
+</details>
+
+<details>
+<summary>Gegeben ZA = 4 cm, AB = 6 cm und ZC = 5 cm. Berechnen Sie ZD und CD.</summary>
+<div class="antwort">
+<p>Vorsicht bei AB: Das ist der Abschnitt zwischen A und B, nicht die Strecke ab Z. Also ist ZB = ZA + AB = 4 cm + 6 cm = 10 cm.</p>
+<p>Erster Strahlensatz: ZA : ZB = ZC : ZD, also 4 : 10 = 5 : ZD. Daraus folgt ZD = 10 &middot; 5 &divide; 4 = 12,5 cm.</p>
+<p>CD ist wieder nur der Abschnitt: CD = ZD &minus; ZC = 12,5 cm &minus; 5 cm = 7,5 cm. Die Probe: 4 : 10 = 5 : 12,5 ergibt beide Male 0,4.</p>
+</div>
+</details>
+</section>
+
+<section class="quellen">
+<h2 id="quellen-und-weiterlesen">Quellen und Weiterlesen</h2>
+<p>Alle Angaben auf dieser Seite lassen sich hier nachprüfen.</p>
+<ul>
+  <li><a href="https://www.mathebibel.de/strahlensatz" target="_blank" rel="noopener">Mathebibel: Strahlensätze</a> <span>— beide Sätze mit Herleitung und Beispielaufgaben.</span></li>
+</ul>
+</section>
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>
@@ -269,6 +454,8 @@ anderes als eine zentrische Streckung.</p>
 </footer>
 <script src="../search-data.js"></script>
 <script src="../search.js"></script>
+<script src="../uebung.js"></script>
+<script src="../rechner-strahlensatz.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
