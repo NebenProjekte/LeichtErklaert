@@ -10,6 +10,35 @@
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/physik/hebelwirkung.html">
 <link rel="alternate" hreflang="es" href="https://leichterklaert.com/es/physik/hebelwirkung.html">
 <link rel="alternate" hreflang="x-default" href="https://leichterklaert.com/physik/hebelwirkung.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "La palanca (ley de la palanca) explicada de forma sencilla",
+      "description": "La ley de la palanca F₁·l₁ = F₂·l₂ explicada con ejemplos, la regla de oro de la mecánica y las palancas del cuerpo humano.",
+      "inLanguage": "es",
+      "datePublished": "2026-07-26",
+      "dateModified": "2026-10-24",
+      "author": { "@type": "Person", "name": "Viktor Jonas" },
+      "publisher": { "@type": "Organization", "name": "LeichtErklärt", "url": "https://leichterklaert.com/" },
+      "mainEntityOfPage": "https://leichterklaert.com/es/physik/hebelwirkung.html",
+      "about": { "@type": "Thing", "name": "Ley de la palanca" },
+      "educationalLevel": "Secundaria",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://leichterklaert.com/es/" },
+        { "@type": "ListItem", "position": 2, "name": "Física", "item": "https://leichterklaert.com/es/#physik" },
+        { "@type": "ListItem", "position": 3, "name": "La palanca" }
+      ]
+    }
+  ]
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -48,6 +77,14 @@
 <span class="subject-pill physics">Física - Mecánica</span>
 <h1>La palanca (ley de la palanca) explicada de forma sencilla</h1>
 
+<p class="autorzeile">
+  <span>Escrito por <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Revisado el <strong>24 de octubre de 2026</strong></span>
+  <span>&middot;</span>
+  <span>Tiempo de lectura: unos 9 minutos</span>
+</p>
+
 <p>Una palanca no regala nada. Solo reparte: lo que ahorras en fuerza lo pagas en
 recorrido. Esa única frase es el núcleo de todo el tema y tiene nombre propio, la
 <strong>regla de oro de la mecánica</strong>.</p>
@@ -67,7 +104,18 @@ F₁ &middot; l₁ = F₂ &middot; l₂
 <strong>Palanca de un brazo</strong> — fuerza y carga al mismo lado, como una carretilla.</p>
 </div>
 
-<h2>Por qué la longitud importa tanto</h2>
+<nav class="inhalt" aria-label="Contenido de esta página">
+<p>En esta página</p>
+<ul>
+  <li><a href="#por-que-la-longitud-importa">Por qué la longitud importa tanto</a></li>
+  <li><a href="#calculadora-de-la-palanca">Calculadora: ¿cuánta fuerza necesitas?</a></li>
+  <li><a href="#palancas-en-la-tecnica-y-en-el-cuerpo">Palancas en la técnica y en el cuerpo</a></li>
+  <li><a href="#practica-cinco-preguntas">Práctica: cinco preguntas con respuesta inmediata</a></li>
+  <li><a href="#preguntas-de-examen">Preguntas de examen con respuesta modelo</a></li>
+  <li><a href="#fuentes-y-mas-informacion">Fuentes y más información</a></li>
+</ul>
+</nav>
+<h2 id="por-que-la-longitud-importa">Por qué la longitud importa tanto</h2>
 
 <div class="calc">
 Una piedra de 300 kg pesa unos 2943 N.<br>
@@ -81,6 +129,33 @@ Equivale a unos 60 kg de fuerza corporal: una persona puede con ello.
 <p>El precio está en la regla de oro: para levantar la piedra un centímetro, el
 extremo largo tiene que recorrer cinco. El trabajo realizado —fuerza por distancia—
 es exactamente el mismo en ambos casos.</p>
+
+<section class="rechner" id="calculadora" data-rechner="hebel" data-sprache="es">
+<h2 id="calculadora-de-la-palanca">Calculadora: ¿cuánta fuerza necesitas?</h2>
+<p>Introduce la masa de la carga y las dos distancias medidas desde el punto de apoyo. La calculadora te da la fuerza necesaria, la ventaja mecánica y el precio que pagas en recorrido.</p>
+
+<div class="rechner-felder">
+  <div class="rechner-feld">
+    <label for="masse">Masa de la carga en kg</label>
+    <input id="masse" name="masse" type="text" inputmode="decimal" value="300">
+  </div>
+  <div class="rechner-feld">
+    <label for="lastarm">Brazo de resistencia en m</label>
+    <input id="lastarm" name="lastarm" type="text" inputmode="decimal" value="0,5">
+  </div>
+  <div class="rechner-feld">
+    <label for="kraftarm">Brazo de potencia en m</label>
+    <input id="kraftarm" name="kraftarm" type="text" inputmode="decimal" value="2,5">
+  </div>
+</div>
+
+<div class="rechner-ergebnis">
+  <p class="rechner-urteil"></p>
+  <dl class="rechner-werte"></dl>
+</div>
+
+<p class="note">Prueba a poner el brazo de potencia más corto que el de resistencia, como en unas pinzas: la fuerza necesaria sube por encima del peso de la carga. Eso no es un fallo de la palanca, es su otro uso — ganar precisión y velocidad en lugar de fuerza.</p>
+</section>
 
 <table class="datatable">
 <caption>Palancas en la vida diaria</caption>
@@ -200,7 +275,7 @@ es exactamente la regla de oro.</p>
 </details>
 </div>
 
-<h2>Palancas en la técnica y en el cuerpo</h2>
+<h2 id="palancas-en-la-tecnica-y-en-el-cuerpo">Palancas en la técnica y en el cuerpo</h2>
 
 <p>La ley de la palanca no explica solo balancines y palanquetas. En cuanto empiezas
 a fijarte en los puntos de apoyo, la encuentras en casi cualquier herramienta, y
@@ -242,6 +317,98 @@ reduce la fuerza a propósito para ganar recorrido y poder dosificar con finura.
 <p class="note">Tu propio cuerpo está lleno de palancas. El bíceps se inserta muy
 cerca del codo y por eso tiene que aportar un múltiplo de la carga que sostienes; a
 cambio, la mano recorre una gran distancia, y lo hace deprisa.</p>
+<section class="uebung" id="practica" data-sprache="es">
+<h2 id="practica-cinco-preguntas">Práctica: cinco preguntas con respuesta inmediata</h2>
+<p>Haz clic en una respuesta. Verás enseguida si es correcta — y por qué.</p>
+
+<ol class="uebung-liste">
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">¿Desde dónde se miden siempre los dos brazos de una palanca?</p>
+    <button class="uebung-option">Desde la carga</button>
+    <button class="uebung-option">Desde el punto de apoyo</button>
+    <button class="uebung-option">Desde el extremo de la barra</button>
+    <p class="uebung-erklaerung">Los dos brazos salen del punto de apoyo: uno hacia la carga, otro hacia donde empujas. Medir desde la carga es el error más frecuente y da siempre un resultado equivocado.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">Una palanca te permite levantar una piedra con la quinta parte de la fuerza. ¿Qué pasa con el trabajo?</p>
+    <button class="uebung-option">También se reduce a la quinta parte</button>
+    <button class="uebung-option">Se multiplica por cinco</button>
+    <button class="uebung-option">Es el mismo, porque el recorrido se multiplica por cinco</button>
+    <p class="uebung-erklaerung">Esa es la regla de oro de la mecánica: lo que ahorras en fuerza lo pagas en recorrido. Trabajo es fuerza por distancia, y el producto no cambia. Una palanca reparte, no regala.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">En un balancín, un niño de 30 kg se sienta a 2,0 m del apoyo. ¿A qué distancia debe sentarse uno de 40 kg para que haya equilibrio?</p>
+    <button class="uebung-option">A 1,5 m</button>
+    <button class="uebung-option">A 2,0 m</button>
+    <button class="uebung-option">A 2,7 m</button>
+    <p class="uebung-erklaerung">30 &middot; 2,0 = 40 &middot; l, de donde l = 60 &divide; 40 = 1,5 m. Aquí puedes trabajar directamente con los kilos, porque el 9,81 aparece en los dos lados y se cancela.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">¿Por qué el bíceps tiene que hacer una fuerza mucho mayor que el peso que sostiene la mano?</p>
+    <button class="uebung-option">Porque el músculo trabaja de forma ineficiente</button>
+    <button class="uebung-option">Porque el hueso del antebrazo pesa demasiado</button>
+    <button class="uebung-option">Porque se inserta muy cerca del codo, así que su brazo de potencia es muy corto</button>
+    <p class="uebung-erklaerung">Son unos 4 cm frente a unos 35 cm hasta la mano. El cuerpo acepta a propósito esa desventaja de fuerza: a cambio, un acortamiento pequeño del músculo mueve la mano mucho y muy rápido, que es lo que cuenta al lanzar o golpear.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">¿Qué unidad tiene el momento de una fuerza?</p>
+    <button class="uebung-option">Newton por segundo (N/s)</button>
+    <button class="uebung-option">Newton metro (Nm)</button>
+    <button class="uebung-option">Julio por metro (J/m)</button>
+    <p class="uebung-erklaerung">Momento es fuerza por brazo, así que newton por metro: Nm. Cuidado, no es lo mismo que el julio, aunque las unidades se parezcan — el julio mide trabajo, con la distancia en la dirección del movimiento.</p>
+  </li>
+</ol>
+
+<p class="uebung-stand" aria-live="polite"></p>
+</section>
+
+<section class="pruefung">
+<h2 id="preguntas-de-examen">Preguntas de examen con respuesta modelo</h2>
+<p>Resuélvelas primero tú y después despliega la respuesta.</p>
+
+<details>
+<summary>Con una palanqueta quieres levantar una piedra de 200 kg. El brazo de resistencia mide 0,4 m y el de potencia 1,6 m. Calcula la fuerza necesaria y el recorrido que hace tu mano para subir la piedra 5 cm.</summary>
+<div class="antwort">
+<p>Peso de la carga: F<sub>2</sub> = 200 kg &middot; 9,81 m/s² = 1962 N.</p>
+<p>Fuerza necesaria: F<sub>1</sub> = 1962 N &middot; 0,4 m &divide; 1,6 m = <strong>490,5 N</strong>, es decir el peso de unos 50 kg.</p>
+<p>La ventaja mecánica es 1,6 &divide; 0,4 = 4. Por tanto tu mano recorre cuatro veces más: 5 cm &middot; 4 = <strong>20 cm</strong>.</p>
+<p>Comprobación con el trabajo: 1962 N &middot; 0,05 m = 98,1 J, y 490,5 N &middot; 0,20 m = 98,1 J. Idéntico, como exige la regla de oro.</p>
+</div>
+</details>
+
+<details>
+<summary>Explica por qué unas pinzas son una palanca que reduce la fuerza, y por qué eso tiene sentido.</summary>
+<div class="antwort">
+<p>En unas pinzas el punto de apoyo está en un extremo, la mano aprieta en el medio y la punta sujeta el objeto al final. El brazo de potencia es por tanto más corto que el brazo de resistencia.</p>
+<p>De F<sub>1</sub> &middot; l<sub>1</sub> = F<sub>2</sub> &middot; l<sub>2</sub> se deduce que la fuerza en la punta es menor que la que aplica la mano. La palanca funciona aquí "al revés".</p>
+<p>Y es justo lo que se busca: al coger un sello o una astilla, un movimiento amplio de la mano se convierte en uno pequeño y controlado en la punta. Se cambia fuerza por precisión, igual que el bíceps cambia fuerza por velocidad.</p>
+</div>
+</details>
+
+<details>
+<summary>Arquímedes dijo que con una palanca podría mover la Tierra. Explica por qué la frase es correcta en física y aun así imposible en la práctica.</summary>
+<div class="antwort">
+<p>En la fórmula no hay ningún límite: por grande que sea F<sub>2</sub>, siempre existe un brazo l<sub>1</sub> lo bastante largo para que F<sub>1</sub> quede por debajo de lo que una persona puede empujar. En ese sentido la afirmación es exacta.</p>
+<p>Lo imposible está en las magnitudes. La ventaja mecánica necesaria daría un brazo de potencia de un orden de cien mil años luz, y no existe material que no se doblase ni se rompiese bajo su propio peso.</p>
+<p>Además está la regla de oro: para subir la Tierra un solo centímetro habría que recorrer con el extremo largo una distancia proporcionalmente enorme, lo que a velocidad humana llevaría tiempos astronómicos. La palanca ahorra fuerza, nunca trabajo — y ese trabajo sigue ahí.</p>
+</div>
+</details>
+</section>
+
+<section class="quellen">
+<h2 id="fuentes-y-mas-informacion">Fuentes y más información</h2>
+<p>Todo lo que aparece en esta página se puede comprobar aquí.</p>
+<ul>
+  <li><a href="https://espanol.libretexts.org/Bookshelves/Fisica/Mecanica_Clasica/Mec%C3%A1nica_Cl%C3%A1sica_(Dourmashkin)/18%3A_Equilibrio_est%C3%A1tico/18.02%3A_Ley_de_Palanca" target="_blank" rel="noopener">LibreTexts Español: Ley de Palanca</a> <span>— deducción formal de la ley de la palanca a partir del equilibrio de momentos.</span></li>
+  <li><a href="https://www.edu.xunta.gal/centros/iesmarcocamballon/system/files/apuntes-equilibrio-rotacion-solidos-4eso_0.pdf" target="_blank" rel="noopener">Xunta de Galicia: equilibrio y rotación de sólidos, 4.º ESO (PDF)</a> <span>— momento de una fuerza, los tres géneros de palanca y máquinas simples.</span></li>
+  <li><a href="https://www.leifiphysik.de/mechanik/einfache-maschinen/downloads/hebelgesetz-simulation-von-walter-fendt" target="_blank" rel="noopener">Simulación de la ley de la palanca (Walter Fendt)</a> <span>— simulación interactiva para probar los dos brazos; la página está en alemán, la simulación se entiende sin texto.</span></li>
+</ul>
+</section>
+
 <a class="back-link" href="../index.html">&larr; Volver al índice</a>
 </article>
 </main>
@@ -251,6 +418,8 @@ cambio, la mano recorre una gran distancia, y lo hace deprisa.</p>
 </footer>
 <script src="../../search-data.es.js"></script>
 <script src="../../search.js"></script>
+<script src="../../uebung.js"></script>
+<script src="../../rechner-hebel.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

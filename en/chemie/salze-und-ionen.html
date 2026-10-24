@@ -10,6 +10,35 @@
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/chemie/salze-und-ionen.html">
 <link rel="alternate" hreflang="es" href="https://leichterklaert.com/es/chemie/salze-und-ionen.html">
 <link rel="alternate" hreflang="x-default" href="https://leichterklaert.com/chemie/salze-und-ionen.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Salts and Ions Explained Simply",
+      "description": "How ions form, how the formula of a salt follows from the charges, why salts only conduct electricity when dissolved or molten, and why road salt melts ice.",
+      "inLanguage": "en",
+      "datePublished": "2026-08-20",
+      "dateModified": "2026-10-24",
+      "author": { "@type": "Person", "name": "Viktor Jonas" },
+      "publisher": { "@type": "Organization", "name": "LeichtErklärt", "url": "https://leichterklaert.com/" },
+      "mainEntityOfPage": "https://leichterklaert.com/en/chemie/salze-und-ionen.html",
+      "about": { "@type": "Thing", "name": "Ionic compounds" },
+      "educationalLevel": "Secondary",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://leichterklaert.com/en/" },
+        { "@type": "ListItem", "position": 2, "name": "Chemistry", "item": "https://leichterklaert.com/en/#chemie" },
+        { "@type": "ListItem", "position": 3, "name": "Salts and Ions" }
+      ]
+    }
+  ]
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -47,6 +76,14 @@
 <article class="topic cat-chem">
 <span class="subject-pill chem">Chemistry - Basics</span>
 <h1>Salts and Ions Explained Simply</h1>
+
+<p class="autorzeile">
+  <span>Written by <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Last checked on <strong>24 October 2026</strong></span>
+  <span>&middot;</span>
+  <span>Reading time about 10 minutes</span>
+</p>
 
 <p>When chemistry lessons talk about <strong>salt</strong>, they almost never mean the stuff on your chips. Table salt is just one of many thousands of salts. Limescale, plaster, fertiliser, baking powder, road grit, the minerals in your drinking water - all of them are salts. What they have in common is not the taste but the structure: a salt is made of <strong>ions</strong>, electrically charged particles that stack into a regular lattice.</p>
 
@@ -165,9 +202,73 @@ positive ion (cation) + negative ion (anion) &rarr; ionic lattice
 </div>
 <p class="note">Every sodium ion has six chloride ions as neighbours and the other way round - drawn flat here, but in reality the pattern continues in all three directions. The chloride ions are bigger because they have taken on an electron.</p>
 
+<nav class="inhalt" aria-label="On this page">
+<p>On this page</p>
+<ul>
+  <li><a href="#how-an-ion-forms">How an ion forms, and what decides its charge</a></li>
+  <li><a href="#working-out-the-formula">Working out the formula from the charges</a></li>
+  <li><a href="#calculator-build-a-salt-formula">Calculator: build a salt formula</a></li>
+  <li><a href="#names-and-polyatomic-ions">Names and ions made of several atoms</a></li>
+  <li><a href="#dissolving-and-conducting">Dissolving, hydration shells and conducting</a></li>
+  <li><a href="#practice-five-questions-instant-feedback">Practice: five questions, instant feedback</a></li>
+  <li><a href="#exam-style-questions-with-model-answers">Exam-style questions with model answers</a></li>
+  <li><a href="#sources-and-further-reading">Sources and further reading</a></li>
+</ul>
+</nav>
+<h2 id="how-an-ion-forms">How an ion forms, and what decides its charge</h2>
+
 <p>An <strong>ion</strong> forms when an atom gives electrons away or takes them on. Give some away and it is left with more protons than electrons, so it carries a positive charge - such a particle is called a <strong>cation</strong>. Take some on and it is negatively charged, which is called an <strong>anion</strong>. How many electrons move is written in the periodic table: elements in group 1 give one away and become singly positive, group 2 gives two away, group 13 three. Read from the other side, group 17 takes one on and becomes singly negative, group 16 takes two, group 15 three. So the number of outer electrons decides the charge directly, and both sides are heading for the same full outer shell.</p>
 
+<h2 id="working-out-the-formula">Working out the formula from the charges</h2>
+
 <p>That lets you work out the <strong>formula</strong> of any salt from a single rule: the whole thing has to be neutral on the outside, so positive and negative charges must cancel exactly. For sodium and chlorine one positive charge meets one negative charge, so it is one to one - <strong>NaCl</strong>. For calcium and chlorine, the calcium ion brings two positive charges while each chloride ion only carries one negative, so you need two of them: <strong>CaCl<sub>2</sub></strong>. For aluminium and oxygen, three positive charges face two negative ones; the lowest common multiple is six, which lands you at two aluminium ions and three oxide ions: <strong>Al<sub>2</sub>O<sub>3</sub></strong>. The other way round, sodium oxide needs two sodium ions for one oxide ion, so <strong>Na<sub>2</sub>O</strong>.</p>
+
+<section class="rechner" id="calculator" data-rechner="salzformel" data-sprache="en">
+<h2 id="calculator-build-a-salt-formula">Calculator: build a salt formula</h2>
+<p>Pick a positive and a negative ion. The calculator balances the charges and shows the resulting formula — including the brackets that polyatomic ions need.</p>
+
+<div class="rechner-felder">
+  <div class="rechner-feld">
+    <label for="kation">Positive ion (cation)</label>
+    <select id="kation" name="kation">
+      <option value="Na|1|0|sodium">Sodium Na&#8314;</option>
+      <option value="K|1|0|potassium">Potassium K&#8314;</option>
+      <option value="Ag|1|0|silver">Silver Ag&#8314;</option>
+      <option value="NH<sub>4</sub>|1|1|ammonium">Ammonium NH&#8324;&#8314;</option>
+      <option value="Mg|2|0|magnesium">Magnesium Mg&sup2;&#8314;</option>
+      <option value="Ca|2|0|calcium">Calcium Ca&sup2;&#8314;</option>
+      <option value="Fe|2|0|iron(II)">Iron(II) Fe&sup2;&#8314;</option>
+      <option value="Zn|2|0|zinc">Zinc Zn&sup2;&#8314;</option>
+      <option value="Al|3|0|aluminium">Aluminium Al&sup3;&#8314;</option>
+      <option value="Fe|3|0|iron(III)">Iron(III) Fe&sup3;&#8314;</option>
+    </select>
+  </div>
+  <div class="rechner-feld">
+    <label for="anion">Negative ion (anion)</label>
+    <select id="anion" name="anion">
+      <option value="Cl|1|0|chloride">Chloride Cl&#8315;</option>
+      <option value="F|1|0|fluoride">Fluoride F&#8315;</option>
+      <option value="Br|1|0|bromide">Bromide Br&#8315;</option>
+      <option value="OH|1|1|hydroxide">Hydroxide OH&#8315;</option>
+      <option value="NO<sub>3</sub>|1|1|nitrate">Nitrate NO&#8323;&#8315;</option>
+      <option value="O|2|0|oxide">Oxide O&sup2;&#8315;</option>
+      <option value="S|2|0|sulfide">Sulfide S&sup2;&#8315;</option>
+      <option value="SO<sub>4</sub>|2|1|sulfate">Sulfate SO&#8324;&sup2;&#8315;</option>
+      <option value="CO<sub>3</sub>|2|1|carbonate">Carbonate CO&#8323;&sup2;&#8315;</option>
+      <option value="PO<sub>4</sub>|3|1|phosphate">Phosphate PO&#8324;&sup3;&#8315;</option>
+    </select>
+  </div>
+</div>
+
+<div class="rechner-ergebnis">
+  <p class="rechner-urteil"></p>
+  <dl class="rechner-werte"></dl>
+</div>
+
+<p class="note">Try aluminium with sulfate. Three positive charges against two negative ones give a lowest common multiple of six, so the answer is Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub> — the classic case where both numbers and the brackets matter.</p>
+</section>
+
+<h2 id="names-and-polyatomic-ions">Names and ions made of several atoms</h2>
 
 <p>The <strong>names</strong> follow a fixed pattern. The metal comes first, the non-metal second with the ending <em>-ide</em>: sodium chloride, calcium oxide, iron sulfide. Alongside these there are ions made of several atoms that still travel as one unit. The most important are sulfate (SO<sub>4</sub><sup>2&minus;</sup>), nitrate (NO<sub>3</sub><sup>&minus;</sup>), carbonate (CO<sub>3</sub><sup>2&minus;</sup>), hydroxide (OH<sup>&minus;</sup>) and, as the only positive one, ammonium (NH<sub>4</sub><sup>+</sup>). They end in <em>-ate</em> or <em>-ide</em> rather than an element name, and you treat them as a single particle when balancing charges - which is why calcium nitrate needs brackets: Ca(NO<sub>3</sub>)<sub>2</sub>.</p>
 
@@ -244,6 +345,8 @@ positive ion (cation) + negative ion (anion) &rarr; ionic lattice
 </svg>
 </div>
 <p class="note">The water molecules turn so that their negative end faces the positive ion. This wrapping is called a hydration shell, and it is the reason salts dissolve in water at all.</p>
+
+<h2 id="dissolving-and-conducting">Dissolving, hydration shells and conducting</h2>
 
 <p>That is exactly what <strong>dissolving</strong> is. Water is a dipole, so it has a slightly negative and a slightly positive end. The negative end pulls on the cations, the positive end on the anions. Together these forces are strong enough to prise individual ions out of the lattice. Every freed ion is immediately surrounded by water molecules - the <strong>hydration shell</strong> - and then floats through the solution on its own. This is why salt water tastes equally salty everywhere: the ions spread out evenly, there are no grains of salt left.</p>
 
@@ -381,6 +484,97 @@ positive ion (cation) + negative ion (anion) &rarr; ionic lattice
 
 <p class="note">The sentence to remember: a salt is not a molecule but a lattice. That is why the formula only gives a ratio - and that ratio always comes from the charges having to cancel exactly.</p>
 
+<section class="uebung" id="practice" data-sprache="en">
+<h2 id="practice-five-questions-instant-feedback">Practice: five questions, instant feedback</h2>
+<p>Click an answer. You see straight away whether it is right — and why.</p>
+
+<ol class="uebung-liste">
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">What does the formula NaCl actually tell you?</p>
+    <button class="uebung-option">That one molecule contains one sodium and one chlorine atom</button>
+    <button class="uebung-option">That the lattice contains sodium and chloride ions in a 1:1 ratio</button>
+    <button class="uebung-option">That sodium and chlorine share a pair of electrons</button>
+    <p class="uebung-erklaerung">A salt is not made of molecules. Each sodium ion has six chloride neighbours and the other way round, so the formula only states the ratio inside the lattice — never a particle you could pick up on its own.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">Calcium sits in group 2, chlorine in group 17. What is the formula of calcium chloride?</p>
+    <button class="uebung-option">CaCl</button>
+    <button class="uebung-option">Ca<sub>2</sub>Cl</button>
+    <button class="uebung-option">CaCl<sub>2</sub></button>
+    <p class="uebung-erklaerung">Calcium gives away two electrons and becomes Ca<sup>2+</sup>; each chlorine takes on one and becomes Cl<sup>&minus;</sup>. Two negative charges are needed to cancel the two positive ones, so two chloride ions per calcium ion.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">Why does a dry salt crystal not conduct electricity?</p>
+    <button class="uebung-option">Because its charged particles are locked in place in the lattice</button>
+    <button class="uebung-option">Because it contains no charged particles at all</button>
+    <button class="uebung-option">Because the positive and negative charges cancel out</button>
+    <p class="uebung-erklaerung">The crystal is full of ions, but a current needs charges that can move. Dissolve the salt or melt it and the ions are free — then it conducts very well. The charges cancelling is true, but that is just as true of the solution, which does conduct.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">Why is calcium nitrate written Ca(NO<sub>3</sub>)<sub>2</sub> and not CaNO<sub>32</sub>?</p>
+    <button class="uebung-option">Because the brackets show the nitrate is negatively charged</button>
+    <button class="uebung-option">Because it is simply the conventional way of writing it</button>
+    <button class="uebung-option">Because the 2 has to apply to the whole nitrate group, not just the oxygen</button>
+    <p class="uebung-erklaerung">Nitrate NO<sub>3</sub><sup>&minus;</sup> travels as a single unit and two of them are needed. Without brackets the subscript would attach to the oxygen alone and claim thirty-two oxygen atoms.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">How does road salt stop ice forming?</p>
+    <button class="uebung-option">It warms the road surface as it dissolves</button>
+    <button class="uebung-option">It lowers the freezing point of the water</button>
+    <button class="uebung-option">It makes the water evaporate faster</button>
+    <p class="uebung-erklaerung">Dissolved ions get in the way of the molecules settling into an ordered lattice, so the water stays liquid below 0&deg;C. With sodium chloride the limit is about &minus;21&deg;C; below that, crews switch to calcium chloride.</p>
+  </li>
+</ol>
+
+<p class="uebung-stand" aria-live="polite"></p>
+</section>
+
+<section class="pruefung">
+<h2 id="exam-style-questions-with-model-answers">Exam-style questions with model answers</h2>
+<p>Work them out first, then open the answer.</p>
+
+<details>
+<summary>Derive the formula of aluminium oxide from the positions of the two elements in the periodic table.</summary>
+<div class="antwort">
+<p>Aluminium is in group 13, so it gives three electrons away and forms Al<sup>3+</sup>. Oxygen is in group 16, so it takes two on and forms O<sup>2&minus;</sup>.</p>
+<p>The compound has to be neutral overall. Three and two have a lowest common multiple of six, so six positive charges must meet six negative ones: two aluminium ions give 2 &middot; 3 = 6, three oxide ions give 3 &middot; 2 = 6.</p>
+<p>The formula is <strong>Al<sub>2</sub>O<sub>3</sub></strong>. Note the swap: the charge of one ion becomes the subscript of the other, which works whenever the two numbers share no common factor.</p>
+</div>
+</details>
+
+<details>
+<summary>Explain why sodium chloride conducts electricity in solution but not as a dry crystal, and what that tells you about the bonding.</summary>
+<div class="antwort">
+<p>A current is a flow of charge, so it needs charged particles that are free to move. In the crystal the ions are held in fixed positions by the electrostatic attraction between opposite charges — the charges are present but immobile.</p>
+<p>Water is a dipole: its negative end pulls on the cations, its positive end on the anions. These forces prise individual ions out of the lattice, each one picking up a hydration shell. Now the charges can move, and the solution conducts.</p>
+<p>The same happens on melting, which for sodium chloride needs 801&deg;C. That high temperature is itself evidence of how strong the ionic attraction is — far stronger than the forces between molecules in, say, sugar, which melts at around 186&deg;C.</p>
+</div>
+</details>
+
+<details>
+<summary>Sugar and salt both dissolve in water. Explain why only one of the two solutions conducts electricity.</summary>
+<div class="antwort">
+<p>Salt is built from ions. Dissolving separates the lattice into free cations and anions, which can carry charge through the liquid — the solution is an electrolyte.</p>
+<p>Sugar is built from molecules held together by covalent bonds. When it dissolves, whole sugar molecules are surrounded by water and float away intact. Nothing splits into charged particles, so there is nothing to carry a current.</p>
+<p>The lesson: dissolving and conducting are two different questions. Whether a substance dissolves depends on how well water can surround its particles; whether the solution conducts depends on whether those particles carry charge.</p>
+</div>
+</details>
+</section>
+
+<section class="quellen">
+<h2 id="sources-and-further-reading">Sources and further reading</h2>
+<p>Everything on this page can be checked here.</p>
+<ul>
+  <li><a href="https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/05:_Molecules_and_Compounds/5.05:_Writing_Formulas_for_Ionic_Compounds" target="_blank" rel="noopener">LibreTexts: writing formulas for ionic compounds</a> <span>— the charge-balancing rule step by step, with worked examples.</span></li>
+  <li><a href="https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/05:_Molecules_and_Compounds/5.07:_Naming_Ionic_Compounds" target="_blank" rel="noopener">LibreTexts: naming ionic compounds</a> <span>— the naming rules including polyatomic ions and transition metals.</span></li>
+  <li><a href="https://www.rsc.org/periodic-table" target="_blank" rel="noopener">Royal Society of Chemistry: periodic table</a> <span>— group numbers and typical ion charges for every element.</span></li>
+</ul>
+</section>
+
 <a class="back-link" href="../index.html">&larr; Back to overview</a>
 </article>
 </main>
@@ -390,6 +584,8 @@ positive ion (cation) + negative ion (anion) &rarr; ionic lattice
 </footer>
 <script src="../../search-data.en.js"></script>
 <script src="../../search.js"></script>
+<script src="../../uebung.js"></script>
+<script src="../../rechner-salzformel.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

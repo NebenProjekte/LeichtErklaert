@@ -10,6 +10,35 @@
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/biologie/fotosynthese.html">
 <link rel="alternate" hreflang="es" href="https://leichterklaert.com/es/biologie/fotosynthese.html">
 <link rel="alternate" hreflang="x-default" href="https://leichterklaert.com/biologie/fotosynthese.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "La Fotosíntesis explicada de forma sencilla",
+      "description": "Fase luminosa y ciclo de Calvin, de dónde sale el oxígeno, los factores limitantes y las adaptaciones C4 y CAM al calor y la sequía.",
+      "inLanguage": "es",
+      "datePublished": "2026-07-29",
+      "dateModified": "2026-10-24",
+      "author": { "@type": "Person", "name": "Viktor Jonas" },
+      "publisher": { "@type": "Organization", "name": "LeichtErklärt", "url": "https://leichterklaert.com/" },
+      "mainEntityOfPage": "https://leichterklaert.com/es/biologie/fotosynthese.html",
+      "about": { "@type": "Thing", "name": "Fotosíntesis" },
+      "educationalLevel": "Secundaria",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://leichterklaert.com/es/" },
+        { "@type": "ListItem", "position": 2, "name": "Biología", "item": "https://leichterklaert.com/es/#biologie" },
+        { "@type": "ListItem", "position": 3, "name": "La fotosíntesis" }
+      ]
+    }
+  ]
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -47,6 +76,14 @@
 <article class="topic cat-bio">
 <span class="subject-pill bio">Biología - Biología Vegetal</span>
 <h1>La Fotosíntesis explicada de forma sencilla</h1>
+
+<p class="autorzeile">
+  <span>Escrito por <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Revisado el <strong>24 de octubre de 2026</strong></span>
+  <span>&middot;</span>
+  <span>Tiempo de lectura: unos 10 minutos</span>
+</p>
 
 <p>La fotosíntesis es el proceso con el que las plantas fabrican su propia energía a partir de luz, agua y dióxido de carbono. No ocurre en un solo paso, sino en <strong>dos fases que se apoyan una en otra</strong>: la fase luminosa y el ciclo de Calvin.</p>
 
@@ -213,7 +250,18 @@ Fase luminosa &rarr; ATP + NADPH &rarr; ciclo de Calvin &rarr; glucosa
 <strong>Punto de compensación</strong> — intensidad de luz a la que la fotosíntesis y la respiración celular se equilibran exactamente.</p>
 </div>
 
-<h2>Los factores limitantes</h2>
+<nav class="inhalt" aria-label="Contenido de esta página">
+<p>En esta página</p>
+<ul>
+  <li><a href="#los-factores-limitantes">Los factores limitantes</a></li>
+  <li><a href="#calculadora-factor-limitante">Calculadora: ¿qué está frenando a la planta?</a></li>
+  <li><a href="#adaptaciones-al-calor-y-a-la-sequia">Adaptaciones al calor y a la sequía</a></li>
+  <li><a href="#practica-cinco-preguntas">Práctica: cinco preguntas con respuesta inmediata</a></li>
+  <li><a href="#preguntas-de-examen">Preguntas de examen con respuesta modelo</a></li>
+  <li><a href="#fuentes-y-mas-informacion">Fuentes y más información</a></li>
+</ul>
+</nav>
+<h2 id="los-factores-limitantes">Los factores limitantes</h2>
 
 <table class="datatable">
 <caption>Qué frena la fotosíntesis</caption>
@@ -230,7 +278,34 @@ Fase luminosa &rarr; ATP + NADPH &rarr; ciclo de Calvin &rarr; glucosa
 Quien en un invernadero solo aumenta la luz mientras falta CO₂ no cosecha nada
 adicional.</p>
 
-<h2>Adaptaciones al calor y a la sequía</h2>
+<section class="rechner" id="calculadora" data-rechner="fotosynthese" data-sprache="es">
+<h2 id="calculadora-factor-limitante">Calculadora: ¿qué está frenando a la planta?</h2>
+<p>Cambia los tres valores y observa cuál de ellos decide la tasa. Es el mejor modo de entender la ley del mínimo: solo mejora algo cuando subes <em>el factor más escaso</em>.</p>
+
+<div class="rechner-felder">
+  <div class="rechner-feld">
+    <label for="licht">Intensidad de la luz en % del pleno sol</label>
+    <input id="licht" name="licht" type="text" inputmode="decimal" value="80">
+  </div>
+  <div class="rechner-feld">
+    <label for="co2">CO₂ en el aire en %</label>
+    <input id="co2" name="co2" type="text" inputmode="decimal" value="0,04">
+  </div>
+  <div class="rechner-feld">
+    <label for="temperatur">Temperatura en °C</label>
+    <input id="temperatur" name="temperatur" type="text" inputmode="decimal" value="25">
+  </div>
+</div>
+
+<div class="rechner-ergebnis">
+  <p class="rechner-urteil"></p>
+  <dl class="rechner-werte"></dl>
+</div>
+
+<p class="note">Con los valores de partida —aire normal, 0,04 % de CO₂— el factor limitante es el CO₂, y subir la luz al 100 % no cambia nada. Eso es exactamente lo que ocurre en un invernadero: por eso se enriquece el aire con CO₂ en lugar de poner más lámparas. El modelo está simplificado a propósito (saturación de luz al 60 %, de CO₂ al 0,10 %, óptimo térmico a 30 °C); sirve para entender la idea, no para predecir una cosecha.</p>
+</section>
+
+<h2 id="adaptaciones-al-calor-y-a-la-sequia">Adaptaciones al calor y a la sequía</h2>
 
 <p>Los estomas son un dilema para las plantas: dejan entrar CO₂, pero también dejan salir vapor de agua. Algunas plantas han desarrollado trucos para resolverlo. El <strong>maíz y la caña de azúcar</strong> fijan primero el CO₂ en un producto intermedio de cuatro átomos de carbono y lo concentran en células especiales. Así pueden mantener los estomas cerrados más tiempo y crecen bien incluso con calor. Se las llama plantas C4. Los <strong>cactus y otras suculentas</strong> abren los estomas solo de noche, cuando hace fresco, almacenan el CO₂ en forma de un ácido y lo procesan durante el día en el ciclo de Calvin con los estomas cerrados. De este modo pierden muy poca agua. Las reacciones básicas son las mismas en todos los casos; solo cambia la forma de organizar la obtención del CO₂.</p>
 
@@ -259,6 +334,98 @@ incrementa la actividad de las enzimas; por encima de eso, perjudica.</p>
 </details>
 </div>
 
+<section class="uebung" id="practica" data-sprache="es">
+<h2 id="practica-cinco-preguntas">Práctica: cinco preguntas con respuesta inmediata</h2>
+<p>Haz clic en una respuesta. Verás enseguida si es correcta — y por qué.</p>
+
+<ol class="uebung-liste">
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">¿De dónde procede el oxígeno que libera una planta?</p>
+    <button class="uebung-option">Del CO₂</button>
+    <button class="uebung-option">Del agua</button>
+    <button class="uebung-option">De la glucosa</button>
+    <p class="uebung-erklaerung">En la fase luminosa se rompe la molécula de agua para obtener electrones, y el oxígeno queda libre como residuo. El carbono y el oxígeno del CO₂ acaban en el azúcar. Es el error más repetido en los exámenes.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">¿Dónde ocurre el ciclo de Calvin?</p>
+    <button class="uebung-option">En la membrana de los tilacoides</button>
+    <button class="uebung-option">En la mitocondria</button>
+    <button class="uebung-option">En el estroma del cloroplasto</button>
+    <p class="uebung-erklaerung">La fase luminosa ocurre en la membrana de los tilacoides, donde está la clorofila. El ciclo de Calvin ocurre fuera, en el líquido que rodea a los tilacoides: el estroma.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">Una planta recibe luz de sobra, pero la tasa de fotosíntesis no sube más. ¿Qué conviene hacer?</p>
+    <button class="uebung-option">Aumentar el CO₂, porque es el factor más escaso</button>
+    <button class="uebung-option">Poner todavía más luz</button>
+    <button class="uebung-option">Nada, la planta ha llegado a su límite absoluto</button>
+    <p class="uebung-erklaerung">Ley del mínimo: manda el factor más escaso. Con luz saturada, el cuello de botella suele ser el CO₂, que en el aire solo supone un 0,04 %. Por eso en los invernaderos se enriquece el aire con CO₂.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">¿Por qué el ciclo de Calvin no es una «reacción de oscuridad» en sentido estricto?</p>
+    <button class="uebung-option">Porque también necesita luz directa</button>
+    <button class="uebung-option">Porque solo funciona de noche</button>
+    <button class="uebung-option">Porque funciona también de día; solo que no usa la luz directamente</button>
+    <p class="uebung-erklaerung">El nombre antiguo induce a error. El ciclo no necesita luz, pero sí el ATP y el NADPH que la fase luminosa acaba de producir. De noche esas reservas se agotan enseguida, así que en la práctica funciona sobre todo con luz.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">¿Qué ventaja tienen las plantas CAM, como los cactus?</p>
+    <button class="uebung-option">Producen azúcar sin necesidad de CO₂</button>
+    <button class="uebung-option">Abren los estomas solo de noche y pierden mucha menos agua</button>
+    <button class="uebung-option">No necesitan clorofila</button>
+    <p class="uebung-erklaerung">De noche hace más fresco y el aire está más húmedo, así que se evapora menos agua por los estomas abiertos. El CO₂ captado se guarda en forma de un ácido y se procesa durante el día con los estomas ya cerrados.</p>
+  </li>
+</ol>
+
+<p class="uebung-stand" aria-live="polite"></p>
+</section>
+
+<section class="pruefung">
+<h2 id="preguntas-de-examen">Preguntas de examen con respuesta modelo</h2>
+<p>Resuélvelas primero tú y después despliega la respuesta.</p>
+
+<details>
+<summary>Explica la relación entre la fase luminosa y el ciclo de Calvin y por qué la planta separa el proceso en dos etapas.</summary>
+<div class="antwort">
+<p>La fase luminosa ocurre en la membrana de los tilacoides. Allí la clorofila capta la energía de la luz, se rompe el agua —y se libera oxígeno— y se forman dos transportadores de energía: ATP y NADPH.</p>
+<p>El ciclo de Calvin ocurre en el estroma y gasta ese ATP y ese NADPH para fijar CO₂ y construir glucosa.</p>
+<p>La separación tiene sentido porque son tareas químicamente distintas: captar energía luminosa exige pigmentos y membranas; construir azúcar exige enzimas que trabajan en disolución. Además desacopla el proceso de la luz: mientras queden ATP y NADPH, el ciclo puede seguir un rato aunque la luz baje.</p>
+</div>
+</details>
+
+<details>
+<summary>En un experimento con elodea, el número de burbujas deja de aumentar al subir la intensidad de la luz. Interpreta el resultado y propón una medida eficaz.</summary>
+<div class="antwort">
+<p>Al principio la luz es el factor limitante: más luz significa más ATP y NADPH, y por tanto más azúcar y más oxígeno. La curva sube.</p>
+<p>A partir de cierta intensidad la luz deja de ser lo escaso y otro factor toma el relevo, normalmente el CO₂ disuelto en el agua. La curva se aplana: es el punto de saturación lumínica.</p>
+<p>Medida eficaz: añadir bicarbonato sódico al agua, que libera CO₂ y eleva ese factor. Subir algo la temperatura también ayuda, pero solo hasta unos 40 °C, porque por encima las enzimas se desnaturalizan. Poner más lámparas no cambiaría nada.</p>
+</div>
+</details>
+
+<details>
+<summary>Compara las adaptaciones C4 y CAM y explica a qué climas responde cada una.</summary>
+<div class="antwort">
+<p>Las dos resuelven el mismo dilema: los estomas tienen que abrirse para dejar entrar CO₂, pero por ahí se pierde agua.</p>
+<p>Las plantas <strong>C4</strong>, como el maíz o la caña de azúcar, fijan primero el CO₂ en un compuesto de cuatro carbonos y lo concentran en células especiales. Así el ciclo de Calvin trabaja con mucho CO₂ aunque los estomas estén poco abiertos. Es la solución de climas cálidos y luminosos con agua suficiente.</p>
+<p>Las plantas <strong>CAM</strong>, como los cactus, separan el proceso en el tiempo: abren los estomas únicamente de noche, almacenan el CO₂ en forma de ácido y lo procesan de día con los estomas cerrados. Ahorran muchísima agua, pero crecen despacio. Es la solución de los desiertos.</p>
+<p>En resumen: C4 separa en el espacio, CAM separa en el tiempo.</p>
+</div>
+</details>
+</section>
+
+<section class="quellen">
+<h2 id="fuentes-y-mas-informacion">Fuentes y más información</h2>
+<p>Todo lo que aparece en esta página se puede comprobar aquí.</p>
+<ul>
+  <li><a href="https://espanol.libretexts.org/Bookshelves/Biologia/Biologia_introductoria_y_general/Libro:_Conceptos_en_Biolog%C3%ADa_(OpenStax)/05:_Fotos%C3%ADntesis/5.03:_El_Ciclo_Calvino" target="_blank" rel="noopener">LibreTexts Español: el ciclo de Calvin</a> <span>— las tres fases del ciclo con el detalle bioquímico (OpenStax).</span></li>
+  <li><a href="https://espanol.libretexts.org/Bookshelves/Biologia/Biologia_introductoria_y_general/Libro%3A_Principios_de_Biolog%C3%ADa/01%3A_Biolog%C3%ADa_Celular/10%3A_Fotos%C3%ADntesis/10.01%3A_Poner_la_fotos%C3%ADntesis_en_contexto" target="_blank" rel="noopener">LibreTexts Español: poner la fotosíntesis en contexto</a> <span>— por qué casi todas las cadenas alimentarias empiezan aquí.</span></li>
+  <li><a href="https://espanol.libretexts.org/Bookshelves/Biologia/Botanica/Bot%C3%A1nica_(Ha,_Morrow_y_Argel)/Unit_3:_Fisiolog%C3%ADa_y_Regulaci%C3%B3n_Vegetal/13:_Fotos%C3%ADntesis_y_Respiraci%C3%B3n/13.03:_Resumen_y_Ecuaci%C3%B3n_de_la_Fotos%C3%ADntesis" target="_blank" rel="noopener">LibreTexts Español: resumen y ecuación de la fotosíntesis</a> <span>— la ecuación global y su relación con la respiración celular.</span></li>
+</ul>
+</section>
+
 <a class="back-link" href="../index.html">&larr; Volver al índice</a>
 </article>
 </main>
@@ -268,6 +435,8 @@ incrementa la actividad de las enzimas; por encima de eso, perjudica.</p>
 </footer>
 <script src="../../search-data.es.js"></script>
 <script src="../../search.js"></script>
+<script src="../../uebung.js"></script>
+<script src="../../rechner-fotosynthese.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
