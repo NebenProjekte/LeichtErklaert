@@ -10,6 +10,35 @@
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/physik/fallgeschwindigkeit.html">
 <link rel="alternate" hreflang="es" href="https://leichterklaert.com/es/physik/fallgeschwindigkeit.html">
 <link rel="alternate" hreflang="x-default" href="https://leichterklaert.com/physik/fallgeschwindigkeit.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Fallgeschwindigkeit leicht erklärt",
+      "description": "Freier Fall mit den Formeln h = ½gt² und v = √(2gh), Fallzeiten auf anderen Himmelskörpern, Endgeschwindigkeit und der Bezug zum Bremsweg.",
+      "inLanguage": "de",
+      "datePublished": "2026-07-25",
+      "dateModified": "2026-10-24",
+      "author": { "@type": "Person", "name": "Viktor Jonas" },
+      "publisher": { "@type": "Organization", "name": "LeichtErklärt", "url": "https://leichterklaert.com/" },
+      "mainEntityOfPage": "https://leichterklaert.com/physik/fallgeschwindigkeit.html",
+      "about": { "@type": "Thing", "name": "Freier Fall" },
+      "educationalLevel": "Sekundarstufe",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://leichterklaert.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Physik", "item": "https://leichterklaert.com/#physik" },
+        { "@type": "ListItem", "position": 3, "name": "Fallgeschwindigkeit" }
+      ]
+    }
+  ]
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -47,6 +76,14 @@
 <article class="topic cat-physics">
 <span class="subject-pill physics">Physik - Mechanik</span>
 <h1>Fallgeschwindigkeit leicht erklärt</h1>
+
+<p class="autorzeile">
+  <span>Verfasst von <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Zuletzt geprüft am <strong>24. Oktober 2026</strong></span>
+  <span>&middot;</span>
+  <span>Lesezeit etwa 9 Minuten</span>
+</p>
 
 <p>Lässt du einen Gegenstand einfach los (ohne ihn zu werfen), wird er durch die Erdanziehungskraft immer schneller, während er fällt. Man nennt das den <strong>freien Fall</strong>.</p>
 
@@ -170,7 +207,22 @@ s = &frac12; &middot; g &middot; t&sup2;
 <strong>Endgeschwindigkeit</strong> — erreicht, wenn Luftwiderstand und Gewichtskraft gleich groß sind. Danach fällt der Körper gleichförmig.</p>
 </div>
 
-<h2>Die zwei Formeln</h2>
+<nav class="inhalt" aria-label="Inhalt dieser Seite">
+<p>Auf dieser Seite</p>
+<ul>
+  <li><a href="#die-zwei-formeln">Die zwei Formeln</a></li>
+  <li><a href="#rechner-wie-schnell-nach-wie-weit">Rechner: wie schnell nach wie weit?</a></li>
+  <li><a href="#wurf-nach-oben">Wurf nach oben: Steigen und Fallen</a></li>
+  <li><a href="#fallzeit-auf-anderen-himmelskoerpern">Fallzeit auf anderen Himmelskörpern</a></li>
+  <li><a href="#anhalteweg">Dasselbe Quadrat im Straßenverkehr: der Anhalteweg</a></li>
+  <li><a href="#kleine-tiere">Warum kleine Tiere Stürze eher überleben</a></li>
+  <li><a href="#bremsweg">Dieselbe Mathematik steckt im Bremsweg</a></li>
+  <li><a href="#uebung-fuenf-fragen-sofortige-rueckmeldung">Übung: fünf Fragen, sofortige Rückmeldung</a></li>
+  <li><a href="#pruefungsfragen-mit-musterantwort">Prüfungsfragen mit Musterantwort</a></li>
+  <li><a href="#quellen-und-weiterlesen">Quellen und Weiterlesen</a></li>
+</ul>
+</nav>
+<h2 id="die-zwei-formeln">Die zwei Formeln</h2>
 
 <div class="calc">
 v = g &middot; t &nbsp;&nbsp;|&nbsp;&nbsp; s = &frac12; &middot; g &middot; t²<br>
@@ -219,7 +271,26 @@ Vernachlässigung deshalb zulässig — bei einem Blatt Papier wäre sie grob fa
 </div>
 
 
-<h2>Wurf nach oben: Steigen und Fallen</h2>
+<section class="rechner" id="rechner" data-rechner="freefall" data-sprache="de">
+<h2 id="rechner-wie-schnell-nach-wie-weit">Rechner: wie schnell nach wie weit?</h2>
+<p>Fallhöhe eintragen, Fallzeit und Aufprallgeschwindigkeit ablesen. Der Luftwiderstand bleibt außen vor, die Werte sind also eine Obergrenze — ein Mensch, der aus mehr als etwa 50 Metern fällt, bleibt in Wirklichkeit nahe seiner Endgeschwindigkeit.</p>
+
+<div class="rechner-felder">
+  <div class="rechner-feld">
+    <label for="hoehe">Fallhöhe in Metern</label>
+    <input id="hoehe" name="hoehe" type="text" inputmode="decimal" value="10">
+  </div>
+</div>
+
+<div class="rechner-ergebnis">
+  <p class="rechner-urteil"></p>
+  <dl class="rechner-werte"></dl>
+</div>
+
+<p class="note">Achte auf die letzte Zeile: Aus 10 Metern legt der Körper in der letzten Sekunde 9,1 Meter zurück — fast die ganze Strecke. Genau das macht Stürze aus geringer Höhe so unterschätzt.</p>
+</section>
+
+<h2 id="wurf-nach-oben">Wurf nach oben: Steigen und Fallen</h2>
 
 <p>Wirft man einen Stein senkrecht nach oben, wirkt dieselbe Erdbeschleunigung auf ihn — nur bremst sie ihn zuerst ab, bis er am höchsten Punkt kurz stillsteht, und beschleunigt ihn dann nach unten. Steigzeit und Fallzeit sind gleich lang, und der Stein kommt unten mit derselben Geschwindigkeit an, mit der er gestartet ist.</p>
 
@@ -231,7 +302,7 @@ Steighöhe: h = v² &divide; (2 &middot; g) = 400 &divide; 19,62 = <strong>20,4 
 Gesamtflugzeit: 2 &middot; 2,04 s = <strong>4,08 s</strong>
 </div>
 
-<h2>Fallzeit auf anderen Himmelskörpern</h2>
+<h2 id="fallzeit-auf-anderen-himmelskoerpern">Fallzeit auf anderen Himmelskörpern</h2>
 
 <p>Die Erdbeschleunigung ist ein Wert, der vom Himmelskörper abhängt. Wie lange ein Gegenstand fällt, folgt aus s = ½ · g · t², umgestellt zu t = √(2 · s &divide; g).</p>
 
@@ -248,7 +319,7 @@ Gesamtflugzeit: 2 &middot; 2,04 s = <strong>4,08 s</strong>
 
 <p>Auf dem Mond fällt derselbe Gegenstand also deutlich langsamer — deshalb wirken die Bewegungen der Astronauten auf den Aufnahmen so „schwebend".</p>
 
-<h2>Dasselbe Quadrat im Straßenverkehr: der Anhalteweg</h2>
+<h2 id="anhalteweg">Dasselbe Quadrat im Straßenverkehr: der Anhalteweg</h2>
 
 <p>Das Prinzip „doppelte Zeit, vierfache Strecke" begegnet dir auch beim Auto. Der <strong>Anhalteweg</strong> besteht aus zwei Teilen: dem <em>Reaktionsweg</em>, den das Auto ungebremst zurücklegt, während der Fahrer noch reagiert, und dem <em>Bremsweg</em>. Der Reaktionsweg wächst gleichmäßig mit der Geschwindigkeit, der Bremsweg dagegen mit ihrem Quadrat: s = v² &divide; (2 &middot; a). Das ist dieselbe Struktur wie beim freien Fall, nur dass statt g die Bremsverzögerung a steht.</p>
 
@@ -261,14 +332,14 @@ Annahmen: Reaktionszeit 1 s, Bremsverzögerung a = 8 m/s² (trockene Straße, gu
 
 <p>Bei doppeltem Tempo wird der Bremsweg also viermal so lang, der gesamte Anhalteweg knapp dreimal so lang. Auf nasser Fahrbahn ist a deutlich kleiner, und der Weg wird entsprechend länger.</p>
 
-<h2>Warum kleine Tiere Stürze eher überleben</h2>
+<h2 id="kleine-tiere">Warum kleine Tiere Stürze eher überleben</h2>
 
 <p>Eine Maus kann aus Höhen fallen, bei denen ein Mensch sich schwer verletzen würde. Der Grund ist wieder der Luftwiderstand. Wird ein Tier in allen Richtungen gleichmäßig kleiner, sinkt seine Querschnittsfläche mit dem Quadrat der Länge, seine Masse aber mit der dritten Potenz. Halbierst du die Körperlänge, hat das Tier nur noch ein Viertel der Fläche, aber ein Achtel der Masse: Pro Kilogramm greift die Luft doppelt so stark an.</p>
 
 <p>Die Endgeschwindigkeit ist deshalb bei kleinen Körpern niedriger. Sie wächst ungefähr mit der Wurzel aus der Körperlänge; ein zehnmal kleineres Tier erreicht nur etwa ein Drittel der Endgeschwindigkeit. Da die Aufprallenergie mit dem Quadrat der Geschwindigkeit steigt, ist der Unterschied beim Aufprall groß. Die Tabelle oben zeigt dasselbe Muster: Der kleine Regentropfen bleibt bei rund 6 m/s, der viel größere Fallschirmspringer erreicht rund 55 m/s.</p>
 
 
-<h2>Dieselbe Mathematik steckt im Bremsweg</h2>
+<h2 id="bremsweg">Dieselbe Mathematik steckt im Bremsweg</h2>
 
 <p>Dass der Weg mit dem Quadrat der Zeit wächst, ist kein Sonderfall des Fallens. Beim
 Bremsen eines Autos gilt dasselbe Muster, nur mit umgekehrtem Vorzeichen. Deshalb
@@ -298,6 +369,97 @@ Eine Maus kommt auf etwa 13 m/s, ein Mensch auf rund 55 m/s. Bei gleicher Fallh�
 schlägt die Maus also mit einem Bruchteil der Energie je Kilogramm auf.</p>
 </div>
 
+<section class="uebung" id="uebung">
+<h2 id="uebung-fuenf-fragen-sofortige-rueckmeldung">Übung: fünf Fragen, sofortige Rückmeldung</h2>
+<p>Antwort anklicken. Du siehst gleich, ob sie stimmt — und warum.</p>
+
+<ol class="uebung-liste">
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Zwei unterschiedlich schwere Kugeln fallen im Vakuum aus derselben Höhe. Welche kommt zuerst unten an?</p>
+    <button class="uebung-option">Die schwerere</button>
+    <button class="uebung-option">Beide gleichzeitig</button>
+    <button class="uebung-option">Die leichtere</button>
+    <p class="uebung-erklaerung">Beide gleichzeitig. Der schwerere Körper wird stärker angezogen, lässt sich aber im selben Verhältnis schwerer beschleunigen — die beiden Effekte heben sich exakt auf. In Luft entscheidet nur noch der Luftwiderstand.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">Du verdoppelst die Fallhöhe. Was passiert mit der Aufprallgeschwindigkeit?</p>
+    <button class="uebung-option">Sie verdoppelt sich</button>
+    <button class="uebung-option">Sie bleibt gleich</button>
+    <button class="uebung-option">Sie steigt um etwa das 1,4-Fache</button>
+    <p class="uebung-erklaerung">v = &radic;(2gh) — die Geschwindigkeit wächst mit der Wurzel der Höhe. Doppelte Höhe bedeutet &radic;2 &asymp; 1,41-fache Geschwindigkeit. Für die doppelte Geschwindigkeit bräuchtest du die vierfache Höhe.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">Wie weit fällt ein Körper in der ersten Sekunde?</p>
+    <button class="uebung-option">Etwa 5 Meter</button>
+    <button class="uebung-option">Etwa 10 Meter</button>
+    <button class="uebung-option">Etwa 20 Meter</button>
+    <p class="uebung-erklaerung">h = ½ &middot; g &middot; t² = 0,5 &middot; 9,81 &middot; 1 &asymp; 4,9 m. Nach einer Sekunde beträgt die Geschwindigkeit zwar schon 9,8 m/s, im Mittel war sie über diese Sekunde aber nur halb so groß.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Was ist die Endgeschwindigkeit beim Fall in Luft?</p>
+    <button class="uebung-option">Die Geschwindigkeit, bei der ein Körper zerbricht</button>
+    <button class="uebung-option">Die Geschwindigkeit, bei der Luftwiderstand und Gewichtskraft gleich groß sind</button>
+    <button class="uebung-option">Die höchste physikalisch mögliche Geschwindigkeit</button>
+    <p class="uebung-erklaerung">Sobald sich beide Kräfte aufheben, ist die Gesamtkraft null und der Fall geht mit gleichbleibender Geschwindigkeit weiter. Für einen Fallschirmspringer in Bauchlage sind das rund 200 km/h.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">Warum überleben kleine Tiere Stürze, die ein großes Tier töten würden?</p>
+    <button class="uebung-option">Weil ihre Knochen biegsamer sind</button>
+    <button class="uebung-option">Weil sie von Anfang an langsamer fallen</button>
+    <button class="uebung-option">Weil sie im Verhältnis zur Masse sehr viel mehr Oberfläche haben</button>
+    <p class="uebung-erklaerung">Der Luftwiderstand wächst mit der Fläche, das Gewicht mit dem Volumen. Ein kleines Tier hat pro Gramm viel mehr Oberfläche, seine Endgeschwindigkeit liegt deshalb deutlich niedriger — eine Maus erreicht ein Tempo, aus dem sie einfach weiterlaufen kann.</p>
+  </li>
+</ol>
+
+<p class="uebung-stand" aria-live="polite"></p>
+</section>
+
+<section class="pruefung">
+<h2 id="pruefungsfragen-mit-musterantwort">Prüfungsfragen mit Musterantwort</h2>
+<p>Erst selbst rechnen, dann aufklappen.</p>
+
+<details>
+<summary>Ein Stein fällt von einer Brücke und trifft nach 2,5 s auf das Wasser. Berechnen Sie die Höhe der Brücke und die Aufprallgeschwindigkeit, ohne Luftwiderstand.</summary>
+<div class="antwort">
+<p>Höhe: h = ½ &middot; g &middot; t² = 0,5 &middot; 9,81 m/s² &middot; (2,5 s)² = 0,5 &middot; 9,81 &middot; 6,25 &asymp; <strong>30,7 m</strong>.</p>
+<p>Aufprallgeschwindigkeit: v = g &middot; t = 9,81 m/s² &middot; 2,5 s &asymp; <strong>24,5 m/s</strong>, also rund 88 km/h.</p>
+<p>Ein sinnvoller Schlusssatz: Mit Luftwiderstand fallen beide Werte etwas kleiner aus, das Ergebnis ist also eine Obergrenze. Bei einem kompakten Stein über 30 Meter ist der Unterschied gering.</p>
+</div>
+</details>
+
+<details>
+<summary>Erklären Sie, warum sich der Bremsweg eines Autos bei doppelter Geschwindigkeit vervierfacht — und was das mit dem freien Fall zu tun hat.</summary>
+<div class="antwort">
+<p>Beim Bremsen muss die Bewegungsenergie ½mv² durch Reibung über den Bremsweg abgebaut werden: ½mv² = F &middot; s. Bei etwa gleichbleibender Bremskraft ist s proportional zu v². Doppelte Geschwindigkeit bedeutet damit vierfachen Weg.</p>
+<p>Der freie Fall ist dieselbe Beziehung von der anderen Seite gelesen: Aus v = &radic;(2gh) folgt, dass h proportional zu v² ist. Ein Aufprall mit 50 km/h entspricht einem Sturz aus etwa 10 Metern, einer mit 100 km/h aus rund 39 Metern — nicht aus 20.</p>
+<p>Der typische Fehler ist die Annahme eines linearen Zusammenhangs. Immer wenn in einer Aufgabe „doppelt so schnell" steht, ist in Wahrheit das Quadrat gefragt.</p>
+</div>
+</details>
+
+<details>
+<summary>Auf dem Mond werden eine Feder und ein Hammer gleichzeitig losgelassen. Beschreiben Sie, was passiert, und begründen Sie es.</summary>
+<div class="antwort">
+<p>Beide kommen gleichzeitig auf. Der Mond hat keine Atmosphäre, es wirkt also kein Luftwiderstand, und im freien Fall ist die Beschleunigung unabhängig von der Masse. Der Astronaut David Scott hat genau das 1971 bei Apollo 15 vorgeführt.</p>
+<p>Die Fallbeschleunigung auf dem Mond beträgt rund 1,62 m/s², etwa ein Sechstel des Erdwerts. Der Fall dauert deshalb einfach länger: aus einem Meter etwa 1,1 s statt 0,45 s auf der Erde.</p>
+<p>Auf der Erde gelingt derselbe Versuch nur in einer luftleer gepumpten Röhre — die große Oberfläche der Feder macht den Luftwiderstand in Luft zum entscheidenden Faktor.</p>
+</div>
+</details>
+</section>
+
+<section class="quellen">
+<h2 id="quellen-und-weiterlesen">Quellen und Weiterlesen</h2>
+<p>Alle Angaben auf dieser Seite lassen sich hier nachprüfen.</p>
+<ul>
+  <li><a href="https://www.leifiphysik.de/mechanik/freier-fall-senkrechter-wurf/grundwissen/freier-fall" target="_blank" rel="noopener">LEIFIphysik: Freier Fall</a> <span>— Grundwissen mit beiden Formeln und Herleitung.</span></li>
+  <li><a href="https://www.leifiphysik.de/mechanik/freier-fall-senkrechter-wurf/grundwissen/wurf-nach-oben-ohne-anfangshoehe" target="_blank" rel="noopener">LEIFIphysik: Wurf nach oben</a> <span>— Steigzeit, Steighöhe und warum Hin- und Rückweg gleich lang dauern.</span></li>
+  <li><a href="https://www.leifiphysik.de/mechanik/freier-fall-senkrechter-wurf/aufgaben" target="_blank" rel="noopener">LEIFIphysik: Aufgaben zum freien Fall</a> <span>— Übungsaufgaben mit ausführlichen Musterlösungen.</span></li>
+</ul>
+</section>
+
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>
@@ -307,6 +469,8 @@ schlägt die Maus also mit einem Bruchteil der Energie je Kilogramm auf.</p>
 </footer>
 <script src="../search-data.js"></script>
 <script src="../search.js"></script>
+<script src="../uebung.js"></script>
+<script src="../calc-freefall.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

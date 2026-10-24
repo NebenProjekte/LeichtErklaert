@@ -10,6 +10,35 @@
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/mathematik/kartenspiel-wahrscheinlichkeit.html">
 <link rel="alternate" hreflang="es" href="https://leichterklaert.com/es/mathematik/kartenspiel-wahrscheinlichkeit.html">
 <link rel="alternate" hreflang="x-default" href="https://leichterklaert.com/mathematik/kartenspiel-wahrscheinlichkeit.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Warum ist jede gemischte Kartenreihenfolge einzigartig?",
+      "description": "52 Fakultät einfach erklärt: wie viele Reihenfolgen ein Kartenspiel hat, warum die Zahl so explodiert und wie oft man wirklich mischen muss.",
+      "inLanguage": "de",
+      "datePublished": "2026-07-26",
+      "dateModified": "2026-10-24",
+      "author": { "@type": "Person", "name": "Viktor Jonas" },
+      "publisher": { "@type": "Organization", "name": "LeichtErklärt", "url": "https://leichterklaert.com/" },
+      "mainEntityOfPage": "https://leichterklaert.com/mathematik/kartenspiel-wahrscheinlichkeit.html",
+      "about": { "@type": "Thing", "name": "Fakultät und Permutationen" },
+      "educationalLevel": "Sekundarstufe",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://leichterklaert.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Mathematik", "item": "https://leichterklaert.com/#mathematik" },
+        { "@type": "ListItem", "position": 3, "name": "Kartenspiel-Wahrscheinlichkeit" }
+      ]
+    }
+  ]
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -47,6 +76,14 @@
 <article class="topic">
 <span class="subject-pill math">Mathematik - Stochastik</span>
 <h1>Warum ist jede gemischte Kartenreihenfolge einzigartig?</h1>
+
+<p class="autorzeile">
+  <span>Verfasst von <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Zuletzt geprüft am <strong>24. Oktober 2026</strong></span>
+  <span>&middot;</span>
+  <span>Lesezeit etwa 8 Minuten</span>
+</p>
 
 <p>Ein normales Kartenspiel hat <strong>52 Karten</strong>. Mischst du es gut durch, entsteht eine bestimmte Reihenfolge. Die Frage ist: Wie viele verschiedene Reihenfolgen sind überhaupt möglich?</p>
 
@@ -180,7 +217,18 @@
 <strong>Laplace-Wahrscheinlichkeit</strong> — günstige durch mögliche Fälle.</p>
 </div>
 
-<h2>Wie viele Reihenfolgen es gibt</h2>
+<nav class="inhalt" aria-label="Inhalt dieser Seite">
+<p>Auf dieser Seite</p>
+<ul>
+  <li><a href="#wie-viele-reihenfolgen-es-gibt">Wie viele Reihenfolgen es gibt</a></li>
+  <li><a href="#rechner-wie-gross-ist-dein-blatt">Rechner: wie groß ist dein Blatt wirklich?</a></li>
+  <li><a href="#wie-oft-muss-man-mischen">Wie oft muss man mischen, damit es wirklich zufällig ist?</a></li>
+  <li><a href="#uebung-fuenf-fragen-sofortige-rueckmeldung">Übung: fünf Fragen, sofortige Rückmeldung</a></li>
+  <li><a href="#pruefungsfragen-mit-musterantwort">Prüfungsfragen mit Musterantwort</a></li>
+  <li><a href="#quellen-und-weiterlesen">Quellen und Weiterlesen</a></li>
+</ul>
+</nav>
+<h2 id="wie-viele-reihenfolgen-es-gibt">Wie viele Reihenfolgen es gibt</h2>
 
 <div class="calc">
 52 Karten lassen sich auf 52! Arten anordnen.<br>
@@ -233,7 +281,30 @@ Würfelspiele.</p>
 </details>
 </div>
 
-<h2>Wie oft muss man mischen, damit es wirklich zufällig ist?</h2>
+<section class="rechner" id="rechner" data-rechner="karten">
+<h2 id="rechner-wie-gross-ist-dein-blatt">Rechner: wie groß ist dein Blatt wirklich?</h2>
+<p>Trag ein, wie viele Karten im Stapel liegen und wie viele du ziehst. Der Rechner zeigt dir drei Zahlen, die in Prüfungen gern verwechselt werden: alle Reihenfolgen des Stapels, die geordneten Ziehungen und die Blätter, bei denen die Reihenfolge egal ist.</p>
+
+<div class="rechner-felder">
+  <div class="rechner-feld">
+    <label for="karten">Karten im Stapel</label>
+    <input id="karten" name="karten" type="text" inputmode="numeric" value="52">
+  </div>
+  <div class="rechner-feld">
+    <label for="gezogen">Davon gezogen</label>
+    <input id="gezogen" name="gezogen" type="text" inputmode="numeric" value="5">
+  </div>
+</div>
+
+<div class="rechner-ergebnis">
+  <p class="rechner-urteil"></p>
+  <dl class="rechner-werte"></dl>
+</div>
+
+<p class="note">Probier 32 für ein Skatblatt oder 36 für ein Rommé-Blatt aus. Bei 5 gezogenen Karten aus 52 kommen 2.598.960 mögliche Pokerblätter heraus — das ist die Zahl, auf der alle Pokerwahrscheinlichkeiten aufbauen.</p>
+</section>
+
+<h2 id="wie-oft-muss-man-mischen">Wie oft muss man mischen, damit es wirklich zufällig ist?</h2>
 
 <p>Die riesige Zahl der Möglichkeiten nützt nichts, wenn schlecht gemischt wird. Genau
 das haben die Mathematiker Dave Bayer und Persi Diaconis 1992 untersucht. Ihr Ergebnis
@@ -281,6 +352,97 @@ Vorstellungskraft übersteigt — 20 Karten genügen bereits.</p>
 </div>
 
 
+<section class="uebung" id="uebung">
+<h2 id="uebung-fuenf-fragen-sofortige-rueckmeldung">Übung: fünf Fragen, sofortige Rückmeldung</h2>
+<p>Antwort anklicken. Du siehst gleich, ob sie stimmt — und warum.</p>
+
+<ol class="uebung-liste">
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Was bedeutet 5!?</p>
+    <button class="uebung-option">5 + 4 + 3 + 2 + 1 = 15</button>
+    <button class="uebung-option">5 &middot; 4 &middot; 3 &middot; 2 &middot; 1 = 120</button>
+    <button class="uebung-option">5 &middot; 5 &middot; 5 &middot; 5 &middot; 5 = 3125</button>
+    <p class="uebung-erklaerung">Die Fakultät ist ein Produkt, keine Summe. Und es wird nicht fünfmal dieselbe Zahl multipliziert, sondern jede Zahl von 5 abwärts bis 1 genau einmal.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">Warum stehen für die zweite Karte nur noch 51 Möglichkeiten zur Verfügung?</p>
+    <button class="uebung-option">Weil eine Karte immer verdeckt bleibt</button>
+    <button class="uebung-option">Weil Asse doppelt gezählt werden</button>
+    <button class="uebung-option">Weil die erste Karte schon vergeben ist und nicht zurückgelegt wird</button>
+    <p class="uebung-erklaerung">Genau das ist der Unterschied zwischen Ziehen mit und ohne Zurücklegen. Ohne Zurücklegen schrumpft der Vorrat in jedem Schritt um eins — daraus wird 52 &middot; 51 &middot; 50 &middot; ... und damit die Fakultät.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">Bei einer Pokerhand aus fünf Karten: spielt die Reihenfolge eine Rolle?</p>
+    <button class="uebung-option">Nein, deshalb teilt man am Ende durch 5!</button>
+    <button class="uebung-option">Ja, jede Reihenfolge zählt als eigenes Blatt</button>
+    <button class="uebung-option">Nur bei der ersten gezogenen Karte</button>
+    <p class="uebung-erklaerung">Dieselben fünf Karten bleiben dasselbe Blatt, egal in welcher Folge sie ankommen. Die 5! verschiedenen Anordnungen zählt man deshalb nur einmal — aus 311.875.200 geordneten Ziehungen werden so 2.598.960 Blätter.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">Wie viele Reihenfolgen hat ein Skatblatt mit 32 Karten?</p>
+    <button class="uebung-option">Rund 1000</button>
+    <button class="uebung-option">Genau 32 &middot; 31 = 992</button>
+    <button class="uebung-option">Rund 2,6 &middot; 10<sup>35</sup></button>
+    <p class="uebung-erklaerung">32! hat 36 Stellen. Auch ein kleineres Blatt sprengt die Vorstellungskraft längst — man braucht keine 52 Karten dafür.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Wie wahrscheinlich ist es, zwei Asse hintereinander zu ziehen, ohne zurückzulegen?</p>
+    <button class="uebung-option">1 zu 169</button>
+    <button class="uebung-option">1 zu 221</button>
+    <button class="uebung-option">1 zu 13</button>
+    <p class="uebung-erklaerung">4/52 &middot; 3/51 = 1/13 &middot; 1/17 = 1/221, also etwa 0,45 Prozent. Die 1 zu 169 wäre die Antwort <em>mit</em> Zurücklegen — ein beliebter Fehler.</p>
+  </li>
+</ol>
+
+<p class="uebung-stand" aria-live="polite"></p>
+</section>
+
+<section class="pruefung">
+<h2 id="pruefungsfragen-mit-musterantwort">Prüfungsfragen mit Musterantwort</h2>
+<p>Erst selbst rechnen, dann aufklappen.</p>
+
+<details>
+<summary>Auf wie viele Arten lassen sich sechs Karten anordnen? Erklären Sie den Rechenweg.</summary>
+<div class="antwort">
+<p>Für den ersten Platz stehen 6 Karten zur Auswahl, für den zweiten nur noch 5, dann 4, 3, 2 und zuletzt 1.</p>
+<p>6! = 6 &middot; 5 &middot; 4 &middot; 3 &middot; 2 &middot; 1 = <strong>720</strong>.</p>
+<p>Entscheidend ist die Begründung für das Multiplizieren: Zu jeder Wahl der ersten Karte gehören sämtliche Möglichkeiten der übrigen fünf. Die Teilergebnisse werden deshalb malgenommen und nicht addiert.</p>
+</div>
+</details>
+
+<details>
+<summary>Wie viele verschiedene Pokerblätter aus fünf Karten gibt es in einem 52er-Blatt, wenn die Reihenfolge keine Rolle spielt?</summary>
+<div class="antwort">
+<p>Geordnet gezogen: 52 &middot; 51 &middot; 50 &middot; 49 &middot; 48 = 311.875.200 Möglichkeiten.</p>
+<p>Jedes Blatt taucht darin in 5! = 120 verschiedenen Reihenfolgen auf, zählt aber nur einmal.</p>
+<p>311.875.200 &divide; 120 = <strong>2.598.960</strong> Blätter. In Formelschreibweise ist das der Binomialkoeffizient 52 über 5.</p>
+</div>
+</details>
+
+<details>
+<summary>Begründen Sie, warum 52! sehr viel größer ist als 2<sup>52</sup>, obwohl beide Ausdrücke ähnlich harmlos aussehen.</summary>
+<div class="antwort">
+<p>Bei 2<sup>52</sup> kommt in jedem Schritt derselbe Faktor 2 hinzu. Das Ergebnis ist etwa 4,5 &middot; 10<sup>15</sup>, eine Zahl mit 16 Stellen.</p>
+<p>Bei 52! wird der Faktor selbst in jedem Schritt größer: erst 2, dann 3, dann 4 und schließlich 52. Ab dem dritten Schritt wächst die Fakultät also schneller, und der Vorsprung summiert sich über 50 Schritte auf.</p>
+<p>Ergebnis: 52! &asymp; 8,07 &middot; 10<sup>67</sup>, eine Zahl mit 68 Stellen — rund 52 Zehnerpotenzen mehr als 2<sup>52</sup>. Fakultätswachstum übertrifft jedes exponentielle Wachstum, sobald n groß genug ist.</p>
+</div>
+</details>
+</section>
+
+<section class="quellen">
+<h2 id="quellen-und-weiterlesen">Quellen und Weiterlesen</h2>
+<p>Alle Angaben auf dieser Seite lassen sich hier nachprüfen.</p>
+<ul>
+  <li><a href="https://de.serlo.org/mathe/1765/fakultaet" target="_blank" rel="noopener">Serlo: Fakultät</a> <span>— Definition und Rechenregeln, kostenlos und werbefrei.</span></li>
+  <li><a href="https://de.serlo.org/mathe/1751/kombinatorik" target="_blank" rel="noopener">Serlo: Kombinatorik</a> <span>— Permutationen, Variationen und Kombinationen im Überblick.</span></li>
+  <li><a href="https://math.hmc.edu/funfacts/seven-shuffles/" target="_blank" rel="noopener">Harvey Mudd College: Seven Shuffles</a> <span>— die Arbeit von Dave Bayer und Persi Diaconis (1992) zu den sieben nötigen Mischvorgängen, kurz zusammengefasst.</span></li>
+</ul>
+</section>
+
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>
@@ -290,6 +452,8 @@ Vorstellungskraft übersteigt — 20 Karten genügen bereits.</p>
 </footer>
 <script src="../search-data.js"></script>
 <script src="../search.js"></script>
+<script src="../uebung.js"></script>
+<script src="../rechner-karten.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
