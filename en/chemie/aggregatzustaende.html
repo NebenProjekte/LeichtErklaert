@@ -10,6 +10,35 @@
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/chemie/aggregatzustaende.html">
 <link rel="alternate" hreflang="es" href="https://leichterklaert.com/es/chemie/aggregatzustaende.html">
 <link rel="alternate" hreflang="x-default" href="https://leichterklaert.com/chemie/aggregatzustaende.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "The Three States of Matter (Solid, Liquid, Gas) Explained Simply",
+      "description": "Solid, liquid and gas at particle level, melting and boiling points, why boiling water stays at 100 °C, and why glass is a special case.",
+      "inLanguage": "en",
+      "datePublished": "2026-08-20",
+      "dateModified": "2026-10-24",
+      "author": { "@type": "Person", "name": "Viktor Jonas" },
+      "publisher": { "@type": "Organization", "name": "LeichtErklärt", "url": "https://leichterklaert.com/" },
+      "mainEntityOfPage": "https://leichterklaert.com/en/chemie/aggregatzustaende.html",
+      "about": { "@type": "Thing", "name": "States of matter" },
+      "educationalLevel": "Secondary",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://leichterklaert.com/en/" },
+        { "@type": "ListItem", "position": 2, "name": "Chemistry", "item": "https://leichterklaert.com/en/#chemie" },
+        { "@type": "ListItem", "position": 3, "name": "States of Matter" }
+      ]
+    }
+  ]
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -47,6 +76,14 @@
 <article class="topic cat-chem">
 <span class="subject-pill chem">Chemistry - Basics</span>
 <h1>The Three States of Matter (Solid, Liquid, Gas) Explained Simply</h1>
+
+<p class="autorzeile">
+  <span>Written by <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Last checked on <strong>24 October 2026</strong></span>
+  <span>&middot;</span>
+  <span>Reading time about 10 minutes</span>
+</p>
 
 <p>Almost every substance can exist in three different forms: <strong>solid</strong>, <strong>liquid</strong>, or <strong>gas</strong>. Which form it takes depends mostly on temperature - and the exact temperature where it switches is completely different from substance to substance. Water already turns solid at 0&deg;C, while iron doesn't turn solid until you drop below over 1500&deg;C. Let's take a close look at why.</p>
 
@@ -135,11 +172,26 @@ solid &#8646; liquid &#8646; gas
 </div>
 <p class="note">The more energy (heat) the particles get, the more strongly they move - from the ordered lattice, through the mobile liquid, to the freely flying gas.</p>
 
+<nav class="inhalt" aria-label="On this page">
+<p>On this page</p>
+<ul>
+  <li><a href="#the-three-states">The three states at particle level</a></li>
+  <li><a href="#melting-and-boiling-points">Melting and boiling points</a></li>
+  <li><a href="#calculator-which-state">Calculator: which state is it in?</a></li>
+  <li><a href="#practice-five-questions-instant-feedback">Practice: five questions, instant feedback</a></li>
+  <li><a href="#exam-style-questions-with-model-answers">Exam-style questions with model answers</a></li>
+  <li><a href="#sources-and-further-reading">Sources and further reading</a></li>
+</ul>
+</nav>
+<h2 id="the-three-states">The three states at particle level</h2>
+
 <p>In the <strong>solid</strong> state, particles (atoms, ions, or molecules) sit fixed in place in an ordered lattice. They can't travel through the substance, only vibrate on the spot - which is why a solid object keeps its shape and volume on its own.</p>
 
 <p>In the <strong>liquid</strong> state, particles are packed almost as tightly as in the solid state, but they can slide past one another. That's why a liquid takes the shape of its container while keeping its volume - you can't noticeably compress water.</p>
 
 <p>In the <strong>gas</strong> state, particles barely touch each other at all. They fly through space quickly and randomly, spreading out evenly until they hit a wall. That's why a gas always fills the entire available space and can easily be compressed.</p>
+
+<h2 id="melting-and-boiling-points">Melting and boiling points</h2>
 
 <p>The switch between states doesn't happen at just any temperature - it happens at a point that's exactly fixed for each substance: the <strong>melting point</strong> (solid &rarr; liquid) and the <strong>boiling point</strong> (liquid &rarr; gas), both measured at standard pressure (1013 hPa, roughly the air pressure at sea level). And these points differ dramatically from substance to substance:</p>
 
@@ -374,6 +426,130 @@ evaporates from the skin takes about 2.4 kilojoules with it, which is why a bree
 damp skin feels so much colder than the air temperature alone would suggest.</p>
 </div>
 
+<section class="rechner" id="calculator" data-rechner="zustand" data-sprache="en">
+<h2 id="calculator-which-state">Calculator: which state is it in?</h2>
+<p>Pick a substance and a temperature. The calculator compares the temperature with the melting and boiling points and tells you which state the substance is in — the same reasoning an exam question expects.</p>
+
+<div class="rechner-felder">
+  <div class="rechner-feld">
+    <label for="stoff">Substance</label>
+    <select id="stoff" name="stoff">
+      <option value="water|0|100" selected>Water</option>
+      <option value="ethanol|-114|78">Ethanol</option>
+      <option value="mercury|-39|357">Mercury</option>
+      <option value="iron|1538|2862">Iron</option>
+      <option value="gold|1064|2856">Gold</option>
+      <option value="silver|962|2162">Silver</option>
+      <option value="nitrogen|-210|-196">Nitrogen</option>
+      <option value="oxygen|-219|-183">Oxygen</option>
+    </select>
+  </div>
+  <div class="rechner-feld">
+    <label for="temperatur">Temperature in °C</label>
+    <input id="temperatur" name="temperatur" type="text" inputmode="decimal" value="20">
+  </div>
+</div>
+
+<div class="rechner-ergebnis">
+  <p class="rechner-urteil"></p>
+  <dl class="rechner-werte"></dl>
+</div>
+
+<p class="note">Try nitrogen at &minus;200 &deg;C: liquid. That is exactly how liquid nitrogen is stored, and it shows that "gas" is not a property of a substance but a state it happens to be in. Every substance here would be solid, liquid and gaseous at the right temperature.</p>
+</section>
+
+<section class="uebung" id="practice" data-sprache="en">
+<h2 id="practice-five-questions-instant-feedback">Practice: five questions, instant feedback</h2>
+<p>Click an answer. You see straight away whether it is right — and why.</p>
+
+<ol class="uebung-liste">
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">What is different about the particles in a solid compared with a liquid?</p>
+    <button class="uebung-option">There are more of them</button>
+    <button class="uebung-option">They are larger</button>
+    <button class="uebung-option">They sit in fixed positions instead of sliding past each other</button>
+    <p class="uebung-erklaerung">The particles themselves do not change at all — only how they move. In a solid they vibrate about fixed positions; in a liquid they are just as close together but can slide past one another, which is why a liquid takes the shape of its container.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Why does iron melt at a much higher temperature than water?</p>
+    <button class="uebung-option">Because iron is heavier</button>
+    <button class="uebung-option">Because the forces holding its particles together are much stronger</button>
+    <button class="uebung-option">Because iron contains no particles</button>
+    <p class="uebung-erklaerung">Melting means overcoming the forces that hold particles in place. In a metal the electron sea binds the cores very strongly, so it takes 1538 &deg;C. Water molecules are held by much weaker hydrogen bonds and let go at 0 &deg;C.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">Water is boiling in a pot. What happens to the temperature while it boils?</p>
+    <button class="uebung-option">It stays at 100 °C until all the water has evaporated</button>
+    <button class="uebung-option">It keeps rising steadily</button>
+    <button class="uebung-option">It falls back down</button>
+    <p class="uebung-erklaerung">All the added energy goes into separating the molecules rather than into speeding them up. This is the heat of vaporisation. The temperature only starts climbing again once there is no liquid left.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">Does water always boil at exactly 100 °C?</p>
+    <button class="uebung-option">Yes, everywhere on Earth</button>
+    <button class="uebung-option">Only in pure water</button>
+    <button class="uebung-option">No — only at standard pressure at sea level</button>
+    <p class="uebung-erklaerung">The lower the air pressure, the more easily molecules escape the liquid. On a high mountain water can boil at around 70 &deg;C, which is why food takes longer to cook up there.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Why is glass a special case?</p>
+    <button class="uebung-option">Because it has no melting point at all</button>
+    <button class="uebung-option">Because it is amorphous and softens gradually instead of melting at one temperature</button>
+    <button class="uebung-option">Because it is always liquid</button>
+    <p class="uebung-erklaerung">Crystalline substances have an ordered lattice that breaks down at one sharp temperature. Glass keeps its disordered arrangement even when solid, so it has a softening range rather than a melting point. The old story that old window panes flow downwards over centuries is, however, a myth.</p>
+  </li>
+</ol>
+
+<p class="uebung-stand" aria-live="polite"></p>
+</section>
+
+<section class="pruefung">
+<h2 id="exam-style-questions-with-model-answers">Exam-style questions with model answers</h2>
+<p>Work it out yourself first, then open the answer.</p>
+
+<details>
+<summary>Describe the three states at particle level and explain how shape and volume follow from them.</summary>
+<div class="antwort">
+<p><strong>Solid:</strong> particles sit close together in fixed positions and only vibrate. The substance therefore keeps both its shape and its volume.</p>
+<p><strong>Liquid:</strong> particles are almost as close together but can slide past one another. The volume stays fixed, the shape adapts to the container.</p>
+<p><strong>Gas:</strong> particles are far apart and move freely at high speed. Neither shape nor volume is fixed; a gas fills whatever space it is given.</p>
+<p>The decisive point: the particles themselves are identical in all three states. What changes is only how strongly they are held and how freely they move.</p>
+</div>
+</details>
+
+<details>
+<summary>Explain why the temperature of boiling water stays constant even though heat is still being supplied.</summary>
+<div class="antwort">
+<p>Temperature is a measure of the average kinetic energy of the particles. While the water heats up, the supplied energy does indeed increase that energy and the temperature rises.</p>
+<p>At the boiling point the situation changes. The energy now goes into separating molecules from one another against their mutual attraction — the <strong>heat of vaporisation</strong>. It is stored as potential energy, not as faster motion, so the thermometer does not move.</p>
+<p>Only when the last of the liquid has evaporated does further energy raise the temperature of the steam again. The same applies at the melting point with the heat of fusion, which is why an ice-water mixture stays at 0 &deg;C until the last piece of ice is gone.</p>
+</div>
+</details>
+
+<details>
+<summary>Nitrogen melts at &minus;210 °C and boils at &minus;196 °C. What state is it in at room temperature, and what does that tell you about the forces between its particles?</summary>
+<div class="antwort">
+<p>Room temperature of about 20 &deg;C lies far above the boiling point of &minus;196 &deg;C, so nitrogen is a <strong>gas</strong>.</p>
+<p>That means the forces between nitrogen molecules are extremely weak: even at 77 kelvin above absolute zero they can no longer hold the molecules together.</p>
+<p>The comparison is instructive. Water, with its strong hydrogen bonds, is still liquid at 20 &deg;C; iron, with its metallic bonding, is solid up to 1538 &deg;C. The state at room temperature is therefore a direct read-out of bond strength — which is why the same question is often asked the other way round in exams.</p>
+</div>
+</details>
+</section>
+
+<section class="quellen">
+<h2 id="sources-and-further-reading">Sources and further reading</h2>
+<p>Everything on this page can be checked here.</p>
+<ul>
+  <li><a href="https://periodic-table.rsc.org/" target="_blank" rel="noopener">Royal Society of Chemistry: periodic table</a> <span>— melting and boiling points for every element, the source of the figures used above.</span></li>
+  <li><a href="https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/03:_Matter_and_Energy" target="_blank" rel="noopener">LibreTexts: matter and energy</a> <span>— states of matter, changes of state and latent heat.</span></li>
+  <li><a href="https://www.leifiphysik.de/waermelehre/innere-energie-waermekapazitaet/grundwissen/phasenuebergaenge" target="_blank" rel="noopener">LEIFIphysik: phase transitions</a> <span>— why temperature stays constant during melting and boiling (in German).</span></li>
+</ul>
+</section>
+
 <a class="back-link" href="../index.html">&larr; Back to overview</a>
 </article>
 </main>
@@ -383,6 +559,8 @@ damp skin feels so much colder than the air temperature alone would suggest.</p>
 </footer>
 <script src="../../search-data.en.js"></script>
 <script src="../../search.js"></script>
+<script src="../../uebung.js"></script>
+<script src="../../rechner-zustand.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
