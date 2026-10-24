@@ -10,6 +10,35 @@
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/mathematik/ableitungen.html">
 <link rel="alternate" hreflang="es" href="https://leichterklaert.com/es/mathematik/ableitungen.html">
 <link rel="alternate" hreflang="x-default" href="https://leichterklaert.com/mathematik/ableitungen.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Ableitungen leicht erklärt",
+      "description": "Von der Sekante zur Tangente: Differenzenquotient, Ableitungsregeln, Extremstellen und was die zweite Ableitung aussagt.",
+      "inLanguage": "de",
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-10-24",
+      "author": { "@type": "Person", "name": "Viktor Jonas" },
+      "publisher": { "@type": "Organization", "name": "LeichtErklärt", "url": "https://leichterklaert.com/" },
+      "mainEntityOfPage": "https://leichterklaert.com/mathematik/ableitungen.html",
+      "about": { "@type": "Thing", "name": "Ableitung" },
+      "educationalLevel": "Sekundarstufe II",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://leichterklaert.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Mathematik", "item": "https://leichterklaert.com/#mathematik" },
+        { "@type": "ListItem", "position": 3, "name": "Ableitungen" }
+      ]
+    }
+  ]
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -48,6 +77,14 @@
 <span class="subject-pill math">Mathematik - Analysis</span>
 <h1>Ableitungen leicht erklärt</h1>
 
+<p class="autorzeile">
+  <span>Verfasst von <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Zuletzt geprüft am <strong>24. Oktober 2026</strong></span>
+  <span>&middot;</span>
+  <span>Lesezeit etwa 10 Minuten</span>
+</p>
+
 <p>Eine Ableitung beantwortet eine einzige Frage: <strong>Wie schnell ändert
 sich etwas gerade jetzt?</strong> Nicht im Durchschnitt über eine Stunde, nicht über
 einen Kilometer, sondern in genau einem Augenblick. Bei einem Graphen heißt das: Wie
@@ -75,7 +112,18 @@ f&prime;(x) = 0. Hochpunkt oder Tiefpunkt.<br>
 f&Prime;(x) = 0.</p>
 </div>
 
-<h2>Von der Sekante zur Tangente</h2>
+<nav class="inhalt" aria-label="Inhalt dieser Seite">
+<p>Auf dieser Seite</p>
+<ul>
+  <li><a href="#von-der-sekante-zur-tangente">Von der Sekante zur Tangente</a></li>
+  <li><a href="#rechner-ableitung-und-tangente">Rechner: Ableitung, Steigung und Tangente</a></li>
+  <li><a href="#wofuer-man-das-braucht">Wofür man das braucht</a></li>
+  <li><a href="#uebung-fuenf-fragen-sofortige-rueckmeldung">Übung: fünf Fragen, sofortige Rückmeldung</a></li>
+  <li><a href="#pruefungsfragen-mit-musterantwort">Prüfungsfragen mit Musterantwort</a></li>
+  <li><a href="#quellen-und-weiterlesen">Quellen und Weiterlesen</a></li>
+</ul>
+</nav>
+<h2 id="von-der-sekante-zur-tangente">Von der Sekante zur Tangente</h2>
 
 <p>Die Steigung einer Geraden auszurechnen ist leicht: Höhenunterschied geteilt durch
 waagerechten Abstand. Bei einer Kurve funktioniert das nicht, weil die Steigung an
@@ -153,7 +201,30 @@ Die Kettenregel ist die einzige, die wirklich geübt werden muss: Man leitet die
 der Ableitung der inneren Funktion. Dieses letzte Multiplizieren wird am häufigsten
 vergessen.</p>
 
-<h2>Wofür man das braucht</h2>
+<section class="rechner" id="rechner" data-rechner="ableitung">
+<h2 id="rechner-ableitung-und-tangente">Rechner: Ableitung, Steigung und Tangente</h2>
+<p>Trag ein Polynom ein und eine Stelle. Du bekommst die erste und zweite Ableitung, den Punkt auf dem Graphen, die Steigung dort und die Gleichung der Tangente. Schreibweise: <code>x^3</code> oder <code>x³</code>, Komma oder Punkt als Dezimaltrennzeichen.</p>
+
+<div class="rechner-felder">
+  <div class="rechner-feld">
+    <label for="funktion">Funktion f(x)</label>
+    <input id="funktion" name="funktion" type="text" value="x^3 - 6x^2 + 9x">
+  </div>
+  <div class="rechner-feld">
+    <label for="stelle">Stelle x</label>
+    <input id="stelle" name="stelle" type="text" inputmode="decimal" value="1">
+  </div>
+</div>
+
+<div class="rechner-ergebnis">
+  <p class="rechner-urteil"></p>
+  <dl class="rechner-werte"></dl>
+</div>
+
+<p class="note">Die voreingestellte Funktion ist genau die aus der Übungsaufgabe weiter unten. Setz die Stelle einmal auf 1 und einmal auf 3: Beide Male ist die Steigung null, und die zweite Ableitung verrät dir, ob dort ein Hochpunkt oder ein Tiefpunkt liegt. Der Rechner beherrscht Polynome; Sinus, Wurzeln und Brüche kann er nicht.</p>
+</section>
+
+<h2 id="wofuer-man-das-braucht">Wofür man das braucht</h2>
 
 <p>Der offensichtlichste Nutzen ist die Kurvendiskussion: Wo f&prime;(x) = 0 ist,
 liegt eine waagerechte Tangente, also ein möglicher Hoch- oder Tiefpunkt. Ob es
@@ -286,6 +357,101 @@ Geschwindigkeit den Weg zurückrechnen kann.</p>
 <a href="../physik/fallgeschwindigkeit.html">Fallgeschwindigkeit</a></p>
 </div>
 
+<section class="uebung" id="uebung">
+<h2 id="uebung-fuenf-fragen-sofortige-rueckmeldung">Übung: fünf Fragen, sofortige Rückmeldung</h2>
+<p>Antwort anklicken. Du siehst gleich, ob sie stimmt — und warum.</p>
+
+<ol class="uebung-liste">
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">Was ist die Ableitung von f(x) = 5x&sup2;?</p>
+    <button class="uebung-option">5x</button>
+    <button class="uebung-option">5x&sup3; &divide; 3</button>
+    <button class="uebung-option">10x</button>
+    <p class="uebung-erklaerung">Potenzregel: Der Exponent wandert nach vorn und wird dann um eins kleiner. 5 &middot; 2 = 10, aus x&sup2; wird x. Die mittlere Antwort wäre eine Stammfunktion, also die Umkehrung.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">Wie lautet die Ableitung von f(x) = x&sup2; + 5?</p>
+    <button class="uebung-option">2x</button>
+    <button class="uebung-option">2x + 5</button>
+    <button class="uebung-option">2x + 1</button>
+    <p class="uebung-erklaerung">Die 5 verschiebt den Graphen nur nach oben, sie verändert die Steigung an keiner Stelle. Eine Konstante hat deshalb die Ableitung null und fällt weg.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Was bedeutet f&prime;(2) = 9?</p>
+    <button class="uebung-option">Der Graph liegt an der Stelle 2 auf der Höhe 9</button>
+    <button class="uebung-option">Der Graph steigt an der Stelle 2 mit der Steigung 9</button>
+    <button class="uebung-option">Die Funktion hat bei 9 eine Nullstelle</button>
+    <p class="uebung-erklaerung">Die Ableitung gibt eine Steigung an, keine Höhe. Die Höhe wäre f(2). Diese Verwechslung kostet in Klausuren regelmäßig Punkte.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">Bei f(x) = x&sup3; ist f&prime;(0) = 0. Liegt dort ein Hoch- oder Tiefpunkt?</p>
+    <button class="uebung-option">Ein Hochpunkt</button>
+    <button class="uebung-option">Ein Tiefpunkt</button>
+    <button class="uebung-option">Weder noch, es ist ein Sattelpunkt</button>
+    <p class="uebung-erklaerung">Eine waagerechte Tangente ist nur ein Verdacht, kein Beweis. Hier ist auch f&Prime;(0) = 0, und die Kurve steigt davor wie danach — sie legt nur eine Pause ein. Deshalb reicht f&prime;(x) = 0 als Begründung nie aus.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Was ist die Ableitung von (2x + 1)&sup3;?</p>
+    <button class="uebung-option">3(2x + 1)&sup2;</button>
+    <button class="uebung-option">3(2x + 1)&sup2; &middot; 2</button>
+    <button class="uebung-option">6x&sup2; + 1</button>
+    <p class="uebung-erklaerung">Kettenregel: äußere Ableitung mal innere. Die innere Funktion 2x + 1 hat die Ableitung 2, dieser Faktor darf nicht fehlen. Das Vergessen der inneren Ableitung ist der häufigste Kettenregel-Fehler überhaupt.</p>
+  </li>
+</ol>
+
+<p class="uebung-stand" aria-live="polite"></p>
+</section>
+
+<section class="pruefung">
+<h2 id="pruefungsfragen-mit-musterantwort">Prüfungsfragen mit Musterantwort</h2>
+<p>Erst selbst rechnen, dann aufklappen.</p>
+
+<details>
+<summary>Bestimmen Sie die Gleichung der Tangente an f(x) = x&sup2; &minus; 4x + 3 an der Stelle x = 3.</summary>
+<div class="antwort">
+<p>Funktionswert: f(3) = 9 &minus; 12 + 3 = <strong>0</strong>. Der Berührpunkt ist also P(3 | 0).</p>
+<p>Ableitung: f&prime;(x) = 2x &minus; 4, also f&prime;(3) = 6 &minus; 4 = <strong>2</strong>. Das ist die Steigung der Tangente.</p>
+<p>Ansatz y = mx + b mit m = 2: 0 = 2 &middot; 3 + b, also b = &minus;6.</p>
+<p>Die Tangente lautet <strong>y = 2x &minus; 6</strong>. Probe: Für x = 3 ergibt sich 0, der Punkt liegt also auf beiden Kurven.</p>
+</div>
+</details>
+
+<details>
+<summary>Erklären Sie, warum man beim Differenzenquotienten den Grenzwert braucht und h nicht einfach null setzen darf.</summary>
+<div class="antwort">
+<p>Der Differenzenquotient [f(x+h) &minus; f(x)] &divide; h beschreibt die Steigung der Sekante durch zwei Punkte. Setzt man h = 0, fallen die beiden Punkte zusammen: Im Zähler steht dann 0 und im Nenner ebenfalls 0, und 0 &divide; 0 ist nicht definiert.</p>
+<p>Der Grenzwert umgeht genau das. Man setzt h nie gleich null, sondern lässt es beliebig klein werden und fragt, welchem Wert sich der Quotient dabei nähert. Meist lässt sich das h vorher im Zähler ausklammern und kürzen, sodass der Nenner verschwindet, bevor man h = 0 einsetzt.</p>
+<p>Anschaulich: Die Sekante kippt in die Tangente. Die Tangente berührt den Graphen in einem Punkt — eine Steigung durch nur einen Punkt lässt sich aber nicht direkt berechnen, sondern nur als Grenzfall zweier Punkte.</p>
+</div>
+</details>
+
+<details>
+<summary>Gegeben ist f(x) = x&sup3; &minus; 3x&sup2;. Untersuchen Sie die Funktion auf Extremstellen und Wendepunkt.</summary>
+<div class="antwort">
+<p>f&prime;(x) = 3x&sup2; &minus; 6x = 3x(x &minus; 2), also f&prime;(x) = 0 für <strong>x = 0</strong> und <strong>x = 2</strong>.</p>
+<p>f&Prime;(x) = 6x &minus; 6.</p>
+<p>f&Prime;(0) = &minus;6, negativ &rarr; <strong>Hochpunkt</strong> bei x = 0 mit f(0) = 0.</p>
+<p>f&Prime;(2) = 6, positiv &rarr; <strong>Tiefpunkt</strong> bei x = 2 mit f(2) = 8 &minus; 12 = &minus;4.</p>
+<p>Wendepunkt: f&Prime;(x) = 0 für x = 1. Die dritte Ableitung ist konstant 6 und damit ungleich null, also liegt dort wirklich ein Wendepunkt, mit f(1) = 1 &minus; 3 = &minus;2.</p>
+<p>Verlauf: Die Kurve steigt bis x = 0, fällt bis x = 2 und steigt danach wieder; bei x = 1 wechselt sie von einer Rechts- in eine Linkskrümmung.</p>
+</div>
+</details>
+</section>
+
+<section class="quellen">
+<h2 id="quellen-und-weiterlesen">Quellen und Weiterlesen</h2>
+<p>Alle Angaben auf dieser Seite lassen sich hier nachprüfen.</p>
+<ul>
+  <li><a href="https://de.serlo.org/mathe/1795/ableitung" target="_blank" rel="noopener">Serlo: Ableitung</a> <span>— Definition über den Differentialquotienten, kostenlos und werbefrei.</span></li>
+  <li><a href="https://de.serlo.org/mathe/2215/ableitung-berechnen" target="_blank" rel="noopener">Serlo: Ableitung berechnen</a> <span>— Potenz-, Faktor-, Summen-, Produkt- und Kettenregel mit Beispielen.</span></li>
+  <li><a href="https://de.serlo.org/mathe/26414/aufgaben-zur-kurvendiskussion" target="_blank" rel="noopener">Serlo: Aufgaben zur Kurvendiskussion</a> <span>— Extremstellen und Wendepunkte zum Üben, mit Lösungen.</span></li>
+</ul>
+</section>
+
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>
@@ -295,6 +461,8 @@ Geschwindigkeit den Weg zurückrechnen kann.</p>
 </footer>
 <script src="../search-data.js"></script>
 <script src="../search.js"></script>
+<script src="../uebung.js"></script>
+<script src="../rechner-ableitung.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
