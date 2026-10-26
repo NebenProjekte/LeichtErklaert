@@ -112,7 +112,6 @@ der Klausur jedes Mal drei Rechenschritte.</p>
   <li><a href="#wozu-man-sie-wirklich-braucht">Wozu man sie wirklich braucht</a></li>
   <li><a href="#das-pascalsche-dreieck-und-die-dritte-potenz">Das Pascalsche Dreieck und die dritte Potenz</a></li>
   <li><a href="#wurzeln-im-nenner-loswerden">Wurzeln im Nenner loswerden</a></li>
-  <li><a href="#das-pascalsche-dreieck-hoehere-potenzen">Das Pascalsche Dreieck: höhere Potenzen</a></li>
   <li><a href="#rechner-alle-drei-formeln-mit-deinen-zahlen">Rechner: alle drei Formeln mit deinen Zahlen</a></li>
   <li><a href="#fehler">Vier Fehler, die jede Klassenarbeit kosten</a></li>
   <li><a href="#uebung-fuenf-fragen-sofortige-rueckmeldung">Übung: fünf Fragen, sofortige Rückmeldung</a></li>
@@ -231,13 +230,6 @@ Quadrat a², ein kleines b² und <em>zwei</em> gleiche Rechtecke ab. Deshalb die
 </div>
 </div>
 
-<div class="example-box warn">
-<div class="label">Typische Fehler</div>
-<p><strong>Mittleres Glied vergessen.</strong> Der mit Abstand häufigste Fehler.<br>
-<strong>Vorzeichen bei der zweiten Formel.</strong> Nur das mittlere Glied wird negativ, b² bleibt positiv.<br>
-<strong>Faktoren nicht mitquadriert.</strong> (3y)² ist 9y², nicht 3y².<br>
-<strong>Dritte Formel bei gleichem Vorzeichen angewendet.</strong> Sie gilt nur für (a+b)(a&minus;b).</p>
-</div>
 
 <div class="example-box task">
 <div class="label">Übungsaufgabe</div>
@@ -284,6 +276,14 @@ Beispiel: (x &minus; 2)³ = x³ &minus; 6x² + 12x &minus; 8
 
 <p>Die Vorfaktoren 1, 3, 3, 1 stehen im <strong>Pascalschen Dreieck</strong>. Es beginnt oben mit einer 1, jede weitere Zahl ist die Summe der beiden Zahlen schräg darüber, und außen stehen immer Einsen. Die Zeile mit den Zahlen 1, 2, 1 gehört zum Quadrat, die Zeile 1, 3, 3, 1 zur dritten Potenz, und die nächste Zeile liefert (a + b)⁴.</p>
 
+<div class="calc">
+n = 0: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1<br>
+n = 1: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 &nbsp; 1<br>
+n = 2: &nbsp;&nbsp;&nbsp; 1 &nbsp; 2 &nbsp; 1<br>
+n = 3: &nbsp; 1 &nbsp; 3 &nbsp; 3 &nbsp; 1<br>
+n = 4: 1 &nbsp; 4 &nbsp; 6 &nbsp; 4 &nbsp; 1
+</div>
+
 <table class="datatable">
 <caption>Potenzen von (a + b) und ihre Vorfaktoren</caption>
 <thead><tr><th>Exponent</th><th>Vorfaktoren im Dreieck</th><th>Ausmultipliziert</th></tr></thead>
@@ -318,38 +318,6 @@ Im Nenner greift die dritte Formel: 7 &minus; 3 = 4. Die 4 im Zähler kürzt sic
 <strong>&radic;7 + &radic;3</strong><br>
 Probe: &radic;7 &asymp; 2,646 und &radic;3 &asymp; 1,732, die Summe ist also etwa 4,378. Der Ausgangsbruch ist 4 &divide; 0,9137 &asymp; 4,378 — beide Werte stimmen überein.</p>
 </details>
-</div>
-
-
-<h2 id="das-pascalsche-dreieck-hoehere-potenzen">Das Pascalsche Dreieck: höhere Potenzen</h2>
-
-<p>Die erste binomische Formel ist nur der Fall n = 2 einer ganzen Reihe. Für höhere
-Potenzen liefert das <strong>Pascalsche Dreieck</strong> die Zahlen vor den Gliedern.
-Jede Zahl darin ist die Summe der beiden über ihr.</p>
-
-<div class="calc">
-n = 0: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1<br>
-n = 1: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 &nbsp; 1<br>
-n = 2: &nbsp;&nbsp;&nbsp; 1 &nbsp; 2 &nbsp; 1<br>
-n = 3: &nbsp; 1 &nbsp; 3 &nbsp; 3 &nbsp; 1<br>
-n = 4: 1 &nbsp; 4 &nbsp; 6 &nbsp; 4 &nbsp; 1<br>
-<br>
-(a + b)³ = a³ + 3a²b + 3ab² + b³
-</div>
-
-<p>Die Exponenten laufen dabei immer gegenläufig: a beginnt bei der vollen Potenz und
-sinkt, b beginnt bei null und steigt. Die Zeile n = 2 enthält 1, 2, 1 — genau die
-Koeffizienten der ersten binomischen Formel. Sie ist also kein Sonderfall, sondern nur
-die zweite Zeile eines Musters, das beliebig weitergeht.</p>
-
-<div class="example-box">
-<div class="label">Nenner rational machen</div>
-<p>Die dritte Formel hat eine Anwendung, die in der Oberstufe ständig gebraucht wird.
-Ein Bruch soll keine Wurzel im Nenner haben. Bei 1 &divide; (&radic;5 &minus; 2)
-erweitert man mit (&radic;5 + 2). Im Nenner steht dann
-(&radic;5 &minus; 2)(&radic;5 + 2) = 5 &minus; 4 = 1, und die Wurzel ist verschwunden.
-Übrig bleibt schlicht &radic;5 + 2. Ohne die dritte binomische Formel müsste man hier
-raten; mit ihr ist es ein einziger Handgriff.</p>
 </div>
 
 
@@ -389,6 +357,9 @@ raten; mit ihr ist es ein einziger Handgriff.</p>
 
   <dt>Beim Faktorisieren nur die halbe Arbeit</dt>
   <dd>x² &minus; 16 ist (x + 4)(x &minus; 4). Viele erkennen x² &minus; 16 nicht als Differenz zweier Quadrate, weil 16 nicht als 4² dasteht. Es lohnt, bei jeder Differenz kurz zu prüfen, ob beide Teile Quadratzahlen sind.</dd>
+
+  <dt>Den Faktor nicht mitquadriert</dt>
+  <dd>(3y)² ist 9y², nicht 3y². Beim Quadrieren wird die ganze Klammer quadriert, also auch die Zahl davor. Derselbe Fehler steckt oft im mittleren Glied: bei (3x &minus; 5)² lautet es 2 &middot; 3x &middot; 5 = 30x.</dd>
 </dl>
 </section>
 
