@@ -10,6 +10,58 @@
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/mathematik/ableitungen.html">
 <link rel="alternate" hreflang="es" href="https://leichterklaert.com/es/mathematik/ableitungen.html">
 <link rel="alternate" hreflang="x-default" href="https://leichterklaert.com/mathematik/ableitungen.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Las derivadas explicadas de forma sencilla",
+      "description": "Las derivadas explicadas de forma sencilla: pendiente, límite, regla de la potencia y regla de la cadena con ejemplos resueltos.",
+      "inLanguage": "es",
+      "dateModified": "2026-10-26",
+      "author": {
+        "@type": "Person",
+        "name": "Viktor Jonas"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LeichtErklärt",
+        "url": "https://leichterklaert.com/"
+      },
+      "mainEntityOfPage": "https://leichterklaert.com/es/mathematik/ableitungen.html",
+      "about": {
+        "@type": "Thing",
+        "name": "Las derivadas explicadas de forma sencilla"
+      },
+      "educationalLevel": "Educación secundaria",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://leichterklaert.com/es/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Matemáticas",
+          "item": "https://leichterklaert.com/es/#matematicas"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Las derivadas explicadas de forma sencilla"
+        }
+      ]
+    }
+  ]
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -48,6 +100,12 @@
 <span class="subject-pill math">Matemáticas - Análisis</span>
 <h1>Las derivadas explicadas de forma sencilla</h1>
 
+<p class="autorzeile">
+  <span>Escrito por <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Tiempo de lectura: unos 7 minutos</span>
+</p>
+
 <p>Una derivada responde a una sola pregunta: <strong>¿con qué rapidez cambia algo
 ahora mismo?</strong> No en promedio durante una hora, ni a lo largo de un kilómetro,
 sino en un único instante. En una gráfica significa: ¿qué pendiente tiene la curva
@@ -74,7 +132,16 @@ f&prime;(x) = 0. Máximo o mínimo.<br>
 f&Prime;(x) = 0.</p>
 </div>
 
-<h2>De la secante a la tangente</h2>
+<nav class="inhalt" aria-label="Contenido de esta página">
+<p>En esta página</p>
+<ul>
+  <li><a href="#de-la-secante-a-la-tangente">De la secante a la tangente</a></li>
+  <li><a href="#para-que-sirve">Para qué sirve</a></li>
+  <li><a href="#errores-habituales">Errores habituales</a></li>
+</ul>
+</nav>
+
+<h2 id="de-la-secante-a-la-tangente">De la secante a la tangente</h2>
 
 <p>Calcular la pendiente de una recta es fácil: la diferencia de altura dividida entre
 la distancia horizontal. Con una curva no funciona directamente, porque la pendiente es
@@ -151,7 +218,7 @@ deriva la función exterior, se deja la función interior sin cambiar y al final
 multiplica por la derivada de la función interior. Esa última multiplicación es lo que
 más se olvida.</p>
 
-<h2>Para qué sirve</h2>
+<h2 id="para-que-sirve">Para qué sirve</h2>
 
 <p>El uso más evidente es el estudio de funciones: donde f&prime;(x) = 0 hay una
 tangente horizontal, y por tanto un posible máximo o mínimo. Si realmente lo es, y de
@@ -242,18 +309,27 @@ segunda.</p>
 </div>
 </div>
 
-<div class="example-box warn">
-<div class="label">Errores habituales</div>
-<p><strong>Olvidar la derivada interior en la regla de la cadena.</strong> (2x+1)&sup3;
-pasa a ser 3(2x+1)&sup2; <em>por 2</em>, no solo 3(2x+1)&sup2;.<br>
-<strong>Declarar extremo cualquier punto con f&prime;(x) = 0.</strong> En
+<section class="verwechslung">
+<h2 id="errores-habituales">Errores habituales</h2>
+<dl>
+  <dt>Olvidar la derivada interior en la regla de la cadena</dt>
+  <dd>(2x+1)&sup3;
+pasa a ser 3(2x+1)&sup2; <em>por 2</em>, no solo 3(2x+1)&sup2;.</dd>
+
+  <dt>Declarar extremo cualquier punto con f&prime;(x) = 0</dt>
+  <dd>En
 f(x) = x&sup3; se cumple f&prime;(0) = 0, pero en 0 hay un punto de silla y no un
-extremo.<br>
-<strong>Arrastrar la constante.</strong> x&sup2; + 5 se deriva como 2x, no como
-2x + 5.<br>
-<strong>Confundir la derivada con el valor de la función.</strong> f&prime;(2) es la
-<em>pendiente</em> en x = 2, no la altura de la gráfica en ese punto.</p>
-</div>
+extremo.</dd>
+
+  <dt>Arrastrar la constante</dt>
+  <dd>x&sup2; + 5 se deriva como 2x, no como
+2x + 5.</dd>
+
+  <dt>Confundir la derivada con el valor de la función</dt>
+  <dd>f&prime;(2) es la
+<em>pendiente</em> en x = 2, no la altura de la gráfica en ese punto.</dd>
+</dl>
+</section>
 
 <div class="example-box task">
 <div class="label">Ejercicio</div>

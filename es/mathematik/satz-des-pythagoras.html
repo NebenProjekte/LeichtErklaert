@@ -10,6 +10,58 @@
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/mathematik/satz-des-pythagoras.html">
 <link rel="alternate" hreflang="es" href="https://leichterklaert.com/es/mathematik/satz-des-pythagoras.html">
 <link rel="alternate" hreflang="x-default" href="https://leichterklaert.com/mathematik/satz-des-pythagoras.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "El teorema de Pitágoras explicado de forma sencilla",
+      "description": "El teorema de Pitágoras (a² + b² = c²) explicado de forma sencilla con un ejemplo y un diagrama - para la ESO y el bachillerato.",
+      "inLanguage": "es",
+      "dateModified": "2026-10-26",
+      "author": {
+        "@type": "Person",
+        "name": "Viktor Jonas"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LeichtErklärt",
+        "url": "https://leichterklaert.com/"
+      },
+      "mainEntityOfPage": "https://leichterklaert.com/es/mathematik/satz-des-pythagoras.html",
+      "about": {
+        "@type": "Thing",
+        "name": "El Teorema de Pitágoras explicado de forma sencilla"
+      },
+      "educationalLevel": "Educación secundaria",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://leichterklaert.com/es/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Matemáticas",
+          "item": "https://leichterklaert.com/es/#matematicas"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "El Teorema de Pitágoras explicado de forma sencilla"
+        }
+      ]
+    }
+  ]
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -48,6 +100,12 @@
 <span class="subject-pill math">Matemáticas - Geometría</span>
 <h1>El teorema de Pitágoras explicado de forma sencilla</h1>
 
+<p class="autorzeile">
+  <span>Escrito por <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Tiempo de lectura: unos 7 minutos</span>
+</p>
+
 <p>El teorema de Pitágoras se cumple en <strong>todo triángulo rectángulo</strong>, y
 solo ahí. Relaciona las tres longitudes de forma tan estrecha que dos cualesquiera de
 ellas determinan la tercera. Por eso aparece en todas partes donde se calculan
@@ -67,7 +125,17 @@ a² + b² = c²
 <strong>Recíproco</strong> — si a² + b² = c², el triángulo es rectángulo. Eso permite <em>demostrar</em> un ángulo recto.</p>
 </div>
 
-<h2>Por qué es cierto</h2>
+<nav class="inhalt" aria-label="Contenido de esta página">
+<p>En esta página</p>
+<ul>
+  <li><a href="#por-que-es-cierto">Por qué es cierto</a></li>
+  <li><a href="#errores-habituales">Errores habituales</a></li>
+  <li><a href="#pitagoras-en-el-espacio-la-diagonal-del-ortoedro">Pitágoras en el espacio: la diagonal del ortoedro</a></li>
+  <li><a href="#pitagoras-en-el-espacio">Pitágoras en el espacio</a></li>
+</ul>
+</nav>
+
+<h2 id="por-que-es-cierto">Por qué es cierto</h2>
 
 <p>El teorema no habla en realidad de longitudes, sino de <strong>áreas</strong>.
 Dibuja un cuadrado sobre cada lado. El área del cuadrado grande sobre la hipotenusa es
@@ -183,15 +251,24 @@ limpio sin ningún instrumento: una cuerda con doce tramos iguales, un triángul
 </div>
 </div>
 
-<div class="example-box warn">
-<div class="label">Errores habituales</div>
-<p><strong>Olvidar la raíz al final.</strong> c² = 25 significa c = 5, no 25.<br>
-<strong>Sumar cuando se busca un cateto.</strong> Hay que restar: b² = c² − a².<br>
-<strong>Aplicarlo a un triángulo no rectángulo.</strong> Sin ángulo recto la fórmula
-es sencillamente falsa.<br>
-<strong>Mezclar unidades.</strong> Convierte todo a la misma unidad antes de elevar al
-cuadrado; si no, el error se eleva al cuadrado también.</p>
-</div>
+<section class="verwechslung">
+<h2 id="errores-habituales">Errores habituales</h2>
+<dl>
+  <dt>Olvidar la raíz al final</dt>
+  <dd>c² = 25 significa c = 5, no 25.</dd>
+
+  <dt>Sumar cuando se busca un cateto</dt>
+  <dd>Hay que restar: b² = c² − a².</dd>
+
+  <dt>Aplicarlo a un triángulo no rectángulo</dt>
+  <dd>Sin ángulo recto la fórmula
+es sencillamente falsa.</dd>
+
+  <dt>Mezclar unidades</dt>
+  <dd>Convierte todo a la misma unidad antes de elevar al
+cuadrado; si no, el error se eleva al cuadrado también.</dd>
+</dl>
+</section>
 
 <div class="example-box task">
 <div class="label">Ejercicio</div>
@@ -218,7 +295,7 @@ pared resultaría más cómodo para subir.</p>
 <p class="note">En geometría analítica el teorema se convierte en la fórmula de la
 distancia: la distancia entre dos puntos es &radic;((x₂−x₁)² + (y₂−y₁)²). Cualquier
 navegador calcula con ella, solo que en tres dimensiones.</p>
-<h2>Pitágoras en el espacio: la diagonal del ortoedro</h2>
+<h2 id="pitagoras-en-el-espacio-la-diagonal-del-ortoedro">Pitágoras en el espacio: la diagonal del ortoedro</h2>
 
 <p>El teorema no vale solo sobre el papel, sino también en el espacio. En un ortoedro (una caja) con aristas de longitud a, b y c se pregunta a menudo por la <strong>diagonal espacial</strong>: el segmento recto más largo del interior, que va de una esquina en diagonal a través del cuerpo hasta la esquina opuesta. Se llega a ella en dos pasos. Primero, en el suelo está la diagonal de la base, que es la hipotenusa de un triángulo de catetos a y b. Esa diagonal forma después con la altura c un segundo triángulo rectángulo, cuya hipotenusa es la diagonal espacial.</p>
 
@@ -252,7 +329,7 @@ Como 1,27 m es más que 1,20 m, la varilla cabe si se coloca en diagonal desde u
 </div>
 
 
-<h2>Pitágoras en el espacio</h2>
+<h2 id="pitagoras-en-el-espacio">Pitágoras en el espacio</h2>
 
 <p>El teorema no se acaba en el plano. Para la diagonal espacial de un ortoedro se
 cumple d² = a² + b² + c². No es un teorema nuevo, sino el mismo aplicado dos veces:

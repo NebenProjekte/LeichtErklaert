@@ -10,6 +10,58 @@
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/mathematik/primzahlen.html">
 <link rel="alternate" hreflang="es" href="https://leichterklaert.com/es/mathematik/primzahlen.html">
 <link rel="alternate" hreflang="x-default" href="https://leichterklaert.com/mathematik/primzahlen.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Prime Numbers Explained Simply",
+      "description": "What is a prime number? Definition, examples, and how to check if a number is prime - explained simply for grades 6 to 12.",
+      "inLanguage": "en",
+      "dateModified": "2026-10-26",
+      "author": {
+        "@type": "Person",
+        "name": "Viktor Jonas"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LeichtErklärt",
+        "url": "https://leichterklaert.com/"
+      },
+      "mainEntityOfPage": "https://leichterklaert.com/en/mathematik/primzahlen.html",
+      "about": {
+        "@type": "Thing",
+        "name": "Prime Numbers Explained Simply"
+      },
+      "educationalLevel": "Secondary education",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://leichterklaert.com/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Mathematics",
+          "item": "https://leichterklaert.com/en/#math"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Prime Numbers Explained Simply"
+        }
+      ]
+    }
+  ]
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -48,6 +100,12 @@
 <span class="subject-pill math">Math - Number Theory</span>
 <h1>Prime Numbers Explained Simply</h1>
 
+<p class="autorzeile">
+  <span>Written by <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Reading time about 10 minutes</span>
+</p>
+
 <p>A <strong>prime number</strong> is a natural number greater than 1 with exactly
 two divisors: 1 and itself. 7 is prime, because only 1 and 7 divide it evenly. 8 is
 not, because 2 and 4 fit as well. Primes are the building blocks every other number
@@ -69,7 +127,21 @@ mathematics.</p>
 <strong>Twin primes</strong> — two primes two apart, such as 11 and 13.</p>
 </div>
 
-<h2>Why 1 does not count</h2>
+<nav class="inhalt" aria-label="On this page">
+<p>On this page</p>
+<ul>
+  <li><a href="#why-1-does-not-count">Why 1 does not count</a></li>
+  <li><a href="#prime-factorisation">Prime factorisation</a></li>
+  <li><a href="#the-sieve-of-eratosthenes">The sieve of Eratosthenes</a></li>
+  <li><a href="#common-mistakes">Common mistakes</a></li>
+  <li><a href="#there-are-infinitely-many">There are infinitely many</a></li>
+  <li><a href="#twin-primes-and-record-breaking-primes">Twin primes and record-breaking primes</a></li>
+  <li><a href="#how-rsa-encryption-uses-primes">How RSA encryption uses primes</a></li>
+  <li><a href="#twins-gaps-and-records">Twins, gaps and records</a></li>
+</ul>
+</nav>
+
+<h2 id="why-1-does-not-count">Why 1 does not count</h2>
 
 <p>This looks arbitrary but there is a solid reason. The fundamental theorem of
 arithmetic says every number above 1 can be split into prime factors in exactly
@@ -77,7 +149,7 @@ arithmetic says every number above 1 can be split into prime factors in exactly
 12 = 2 · 2 · 3 = 1 · 2 · 2 · 3 = 1 · 1 · 2 · 2 · 3 and so on. Uniqueness would be
 gone. So 1 is excluded to keep the most important theorem about numbers clean.</p>
 
-<h2>Prime factorisation</h2>
+<h2 id="prime-factorisation">Prime factorisation</h2>
 
 <div class="calc">
 360 &divide; 2 = 180<br>
@@ -95,7 +167,7 @@ carry on with the result until 1 is left. From the factorisation you can then re
 off things you would otherwise have to guess at — the lowest common multiple or the
 greatest common divisor of two numbers, for instance.</p>
 
-<h2>The sieve of Eratosthenes</h2>
+<h2 id="the-sieve-of-eratosthenes">The sieve of Eratosthenes</h2>
 
 <table class="datatable">
 <caption>Finding every prime up to 30</caption>
@@ -113,17 +185,26 @@ useful one: you only have to sieve up to the <strong>square root of the limit</s
 To check whether 97 is prime you test the divisors 2, 3, 5 and 7 — and no further,
 because 11 · 11 = 121 is already above 97.</p>
 
-<div class="example-box warn">
-<div class="label">Common mistakes</div>
-<p><strong>Counting 1 as a prime.</strong> It is not one.<br>
-<strong>Forgetting 2.</strong> It is the only even prime and often gets skipped when
-listing quickly.<br>
-<strong>Testing every number as a divisor.</strong> Checking up to the square root is
-enough — for three-digit numbers that saves almost all the work.<br>
-<strong>"All odd numbers are prime."</strong> 9, 15, 21 and 25 say otherwise.</p>
-</div>
+<section class="verwechslung">
+<h2 id="common-mistakes">Common mistakes</h2>
+<dl>
+  <dt>Counting 1 as a prime</dt>
+  <dd>It is not one.</dd>
 
-<h2>There are infinitely many</h2>
+  <dt>Forgetting 2</dt>
+  <dd>It is the only even prime and often gets skipped when
+listing quickly.</dd>
+
+  <dt>Testing every number as a divisor</dt>
+  <dd>Checking up to the square root is
+enough — for three-digit numbers that saves almost all the work.</dd>
+
+  <dt>"All odd numbers are prime."</dt>
+  <dd>9, 15, 21 and 25 say otherwise.</dd>
+</dl>
+</section>
+
+<h2 id="there-are-infinitely-many">There are infinitely many</h2>
 
 <p>Euclid proved this more than two thousand years ago, and the proof fits into four
 lines. Suppose there were only finitely many primes. Multiply them all together and
@@ -152,7 +233,7 @@ been checked.</p>
 <p class="note">Primes are not only school material. The encryption your browser uses
 to send banking data relies on the fact that two very large primes are effortless to
 multiply while the product is practically impossible to take apart again.</p>
-<h2>Twin primes and record-breaking primes</h2>
+<h2 id="twin-primes-and-record-breaking-primes">Twin primes and record-breaking primes</h2>
 
 <p>The further up the number line you go, the rarer primes become — but they never disappear. Sometimes two of them stand close together: 3 and 5, 11 and 13, 17 and 19, 29 and 31, 41 and 43. Pairs with a gap of 2 are called <strong>twin primes</strong>. A small trick shows where to look: every prime above 3 sits right next to a multiple of 6, because all the other remainders give even numbers or multiples of 3. So apart from the pair 3 and 5, every twin pair has the form 6k &minus; 1 and 6k + 1, for example 5 and 7 or 17 and 19.</p>
 
@@ -173,7 +254,7 @@ As a check: 5 and 7 lie around 6 (k = 1), 11 and 13 around 12 (k = 2), 17 and 19
 </details>
 </div>
 
-<h2>How RSA encryption uses primes</h2>
+<h2 id="how-rsa-encryption-uses-primes">How RSA encryption uses primes</h2>
 
 <p>The RSA method, named after its inventors Rivest, Shamir and Adleman, has protected data on the internet since the 1970s. The basic idea: you choose two very large primes p and q and multiply them to get n = p &middot; q. The product n is published, the two factors stay secret. Anyone who wants to encrypt a message needs only n and a second public number e. Anyone who wants to read it also needs a secret exponent d, and that can only be worked out by someone who knows p and q.</p>
 
@@ -192,7 +273,7 @@ Decrypt: 2,790<sup>2753</sup> divided by 3,233 leaves the remainder <strong>65</
 <p>That the message really comes back follows from a theorem of Euler about remainders in division. What matters is the view on security: anyone can split the small number 3,233 in seconds. Real keys use an n of 2,048 bits, which is over 600 decimal digits. Trial division would have to run up to the square root of n, a number with about 300 digits, and that is impossible. Even the fastest known factoring methods take unimaginably long for such numbers on today's computers. It has not been proven, however, that no fast way exists. As far as we know today, quantum computers could in theory provide one if they can ever be built large enough. The security of RSA therefore rests on experience, not on a proof.</p>
 
 
-<h2>Twins, gaps and records</h2>
+<h2 id="twins-gaps-and-records">Twins, gaps and records</h2>
 
 <p>Primes are spread out unevenly, and that is exactly what makes them interesting.
 Sometimes two sit close together, like 11 and 13 or 41 and 43 — such pairs are called

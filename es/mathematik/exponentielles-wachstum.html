@@ -10,6 +10,58 @@
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/mathematik/exponentielles-wachstum.html">
 <link rel="alternate" hreflang="es" href="https://leichterklaert.com/es/mathematik/exponentielles-wachstum.html">
 <link rel="alternate" hreflang="x-default" href="https://leichterklaert.com/mathematik/exponentielles-wachstum.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "El crecimiento exponencial explicado de forma sencilla",
+      "description": "El crecimiento exponencial explicado de forma sencilla: interes compuesto y crecimiento bacteriano con formula y un diagrama de duplicacion colorido.",
+      "inLanguage": "es",
+      "dateModified": "2026-10-26",
+      "author": {
+        "@type": "Person",
+        "name": "Viktor Jonas"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LeichtErklärt",
+        "url": "https://leichterklaert.com/"
+      },
+      "mainEntityOfPage": "https://leichterklaert.com/es/mathematik/exponentielles-wachstum.html",
+      "about": {
+        "@type": "Thing",
+        "name": "El Crecimiento Exponencial explicado de forma sencilla"
+      },
+      "educationalLevel": "Educación secundaria",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://leichterklaert.com/es/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Matemáticas",
+          "item": "https://leichterklaert.com/es/#matematicas"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "El Crecimiento Exponencial explicado de forma sencilla"
+        }
+      ]
+    }
+  ]
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -47,6 +99,12 @@
 <article class="topic">
 <span class="subject-pill math">Matemáticas &middot; Funciones</span>
 <h1>El crecimiento exponencial explicado de forma sencilla</h1>
+
+<p class="autorzeile">
+  <span>Escrito por <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Tiempo de lectura: unos 6 minutos</span>
+</p>
 
 <p>En el crecimiento <strong>lineal</strong>, en cada paso se suma la misma cantidad. En
 el crecimiento <strong>exponencial</strong>, en cada paso se multiplica por el mismo
@@ -118,7 +176,17 @@ N(t) = N₀ &middot; q<sup>t</sup>
 </svg>
 </div>
 
-<h2>El problema de los granos de arroz</h2>
+<nav class="inhalt" aria-label="Contenido de esta página">
+<p>En esta página</p>
+<ul>
+  <li><a href="#el-problema-de-los-granos-de-arroz">El problema de los granos de arroz</a></li>
+  <li><a href="#estimar-el-tiempo-de-duplicacion">Estimar el tiempo de duplicación</a></li>
+  <li><a href="#errores-habituales">Errores habituales</a></li>
+  <li><a href="#por-que-el-crecimiento-exponencial-siempre-termina">Por qué el crecimiento exponencial siempre termina</a></li>
+</ul>
+</nav>
+
+<h2 id="el-problema-de-los-granos-de-arroz">El problema de los granos de arroz</h2>
 
 <div class="calc">
 Casilla 1: 1 grano &middot; Casilla 2: 2 &middot; Casilla 3: 4 &middot; Casilla 4: 8 …<br>
@@ -130,7 +198,7 @@ A 0,03 g por grano son unos <strong>550.000 millones de toneladas</strong> —
 unas mil veces la cosecha mundial de arroz de un año.
 </div>
 
-<h2>Estimar el tiempo de duplicación</h2>
+<h2 id="estimar-el-tiempo-de-duplicacion">Estimar el tiempo de duplicación</h2>
 
 <p>La regla del 70 da una aproximación útil en segundos: tiempo de duplicación
 &asymp; 70 dividido entre la tasa de crecimiento en porcentaje. Con un interés del 7 %,
@@ -214,13 +282,22 @@ el capital se duplica en unos diez años; con un 2 %, en unos 35.</p>
 </div>
 </div>
 
-<div class="example-box warn">
-<div class="label">Errores habituales</div>
-<p><strong>Sumar porcentajes en lugar de multiplicar factores.</strong> Dos aumentos del 10 % hacen un 21 %, no un 20 %.<br>
-<strong>Formar mal el factor.</strong> Un aumento del 5 % significa q = 1,05, no 0,05.<br>
-<strong>Estimar de forma lineal.</strong> &laquo;Doble a los 10 años, triple a los 20&raquo; es falso: es cuatro veces más.<br>
-<strong>Ignorar los límites.</strong> En la naturaleza el crecimiento exponencial siempre termina, porque se acaba el espacio o el alimento.</p>
-</div>
+<section class="verwechslung">
+<h2 id="errores-habituales">Errores habituales</h2>
+<dl>
+  <dt>Sumar porcentajes en lugar de multiplicar factores</dt>
+  <dd>Dos aumentos del 10 % hacen un 21 %, no un 20 %.</dd>
+
+  <dt>Formar mal el factor</dt>
+  <dd>Un aumento del 5 % significa q = 1,05, no 0,05.</dd>
+
+  <dt>Estimar de forma lineal</dt>
+  <dd>&laquo;Doble a los 10 años, triple a los 20&raquo; es falso: es cuatro veces más.</dd>
+
+  <dt>Ignorar los límites</dt>
+  <dd>En la naturaleza el crecimiento exponencial siempre termina, porque se acaba el espacio o el alimento.</dd>
+</dl>
+</section>
 
 <div class="example-box task">
 <div class="label">Ejercicio</div>
@@ -239,7 +316,7 @@ veinte minutos para las 256.000 siguientes.</p>
 </details>
 </div>
 
-<h2>Por qué el crecimiento exponencial siempre termina</h2>
+<h2 id="por-que-el-crecimiento-exponencial-siempre-termina">Por qué el crecimiento exponencial siempre termina</h2>
 
 <p>Si se sigue calculando el crecimiento exponencial durante bastante tiempo, salen cifras
 absurdas. Un cultivo de bacterias que se duplica cada 20 minutos tendría a los dos días

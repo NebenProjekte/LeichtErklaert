@@ -10,6 +10,58 @@
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/mathematik/geburtstagsparadoxon.html">
 <link rel="alternate" hreflang="es" href="https://leichterklaert.com/es/mathematik/geburtstagsparadoxon.html">
 <link rel="alternate" hreflang="x-default" href="https://leichterklaert.com/mathematik/geburtstagsparadoxon.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "The Birthday Paradox Explained Simply",
+      "description": "The birthday paradox explained simply: why a group of just 23 people usually already has two people sharing a birthday.",
+      "inLanguage": "en",
+      "dateModified": "2026-10-26",
+      "author": {
+        "@type": "Person",
+        "name": "Viktor Jonas"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LeichtErklärt",
+        "url": "https://leichterklaert.com/"
+      },
+      "mainEntityOfPage": "https://leichterklaert.com/en/mathematik/geburtstagsparadoxon.html",
+      "about": {
+        "@type": "Thing",
+        "name": "The Birthday Paradox Explained Simply"
+      },
+      "educationalLevel": "Secondary education",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://leichterklaert.com/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Mathematics",
+          "item": "https://leichterklaert.com/en/#math"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "The Birthday Paradox Explained Simply"
+        }
+      ]
+    }
+  ]
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -48,6 +100,12 @@
 <span class="subject-pill math">Math &middot; Probability</span>
 <h1>The Birthday Paradox Explained Simply</h1>
 
+<p class="autorzeile">
+  <span>Written by <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Reading time about 6 minutes</span>
+</p>
+
 <p>In a class of 23 pupils the probability that two of them share a birthday is over
 <strong>50 per cent</strong>. That sounds wrong — a year has 365 days. The error of
 reasoning lies in the question people ask themselves without noticing.</p>
@@ -65,7 +123,17 @@ P(at least one pair) = 1 &minus; (365/365 &middot; 364/365 &middot; 363/365 &mid
 <strong>Pairing</strong> — with n people there are n(n&minus;1)/2 possible pairs.</p>
 </div>
 
-<h2>The real reason: it is about pairs</h2>
+<nav class="inhalt" aria-label="On this page">
+<p>On this page</p>
+<ul>
+  <li><a href="#the-real-reason-it-is-about-pairs">The real reason: it is about pairs</a></li>
+  <li><a href="#how-the-calculation-works">How the calculation works</a></li>
+  <li><a href="#common-mistakes">Common mistakes</a></li>
+  <li><a href="#what-50-per-cent-means-in-practice">What "50 per cent" means in practice</a></li>
+</ul>
+</nav>
+
+<h2 id="the-real-reason-it-is-about-pairs">The real reason: it is about pairs</h2>
 
 <p>Most people think: "How likely is it that someone shares <em>my</em> birthday?"
 That really is rare. But the question asked is whether <strong>any pair at all</strong>
@@ -171,7 +239,7 @@ but plausible.</p>
 </div>
 </div>
 
-<h2>How the calculation works</h2>
+<h2 id="how-the-calculation-works">How the calculation works</h2>
 
 <div class="calc">
 Probability that <em>all</em> are different:<br>
@@ -188,13 +256,22 @@ people this gives the product (365 &divide; 365) &middot; (364 &divide; 365) &mi
 22 people the result is still 47.6 per cent — which is why 23 is the smallest number
 that passes one half.</p>
 
-<div class="example-box warn">
-<div class="label">Common mistakes</div>
-<p><strong>Answering the wrong question.</strong> "Someone shares my birthday" is something else entirely.<br>
-<strong>Adding probabilities.</strong> For independent events you multiply.<br>
-<strong>Calculating directly instead of via the complement.</strong> The direct route means summing a huge number of cases and is not practical.<br>
-<strong>Treating 29 February as a problem.</strong> It shifts the result by less than a tenth of a percentage point.</p>
-</div>
+<section class="verwechslung">
+<h2 id="common-mistakes">Common mistakes</h2>
+<dl>
+  <dt>Answering the wrong question</dt>
+  <dd>"Someone shares my birthday" is something else entirely.</dd>
+
+  <dt>Adding probabilities</dt>
+  <dd>For independent events you multiply.</dd>
+
+  <dt>Calculating directly instead of via the complement</dt>
+  <dd>The direct route means summing a huge number of cases and is not practical.</dd>
+
+  <dt>Treating 29 February as a problem</dt>
+  <dd>It shifts the result by less than a tenth of a percentage point.</dd>
+</dl>
+</section>
 
 <div class="example-box task">
 <div class="label">Practice question</div>
@@ -238,7 +315,7 @@ is far easier to find <em>any two</em> files with the same hash value than one m
 a given hash. That is why hash functions need twice as many bits as you would naively
 assume.</p>
 
-<h2>What "50 per cent" means in practice</h2>
+<h2 id="what-50-per-cent-means-in-practice">What "50 per cent" means in practice</h2>
 
 <p>A probability of 50.7 per cent says nothing about one particular class. It
 describes what happens in the long run. Check a thousand school classes of 23 children

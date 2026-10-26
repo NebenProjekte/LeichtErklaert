@@ -10,6 +10,58 @@
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/mathematik/primzahlen.html">
 <link rel="alternate" hreflang="es" href="https://leichterklaert.com/es/mathematik/primzahlen.html">
 <link rel="alternate" hreflang="x-default" href="https://leichterklaert.com/mathematik/primzahlen.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Los números primos explicados de forma sencilla",
+      "description": "¿Qué es un número primo? Definición, ejemplos y cómo comprobar si un número es primo - explicado de forma sencilla para la ESO y el bachillerato.",
+      "inLanguage": "es",
+      "dateModified": "2026-10-26",
+      "author": {
+        "@type": "Person",
+        "name": "Viktor Jonas"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LeichtErklärt",
+        "url": "https://leichterklaert.com/"
+      },
+      "mainEntityOfPage": "https://leichterklaert.com/es/mathematik/primzahlen.html",
+      "about": {
+        "@type": "Thing",
+        "name": "Los Números Primos explicados de forma sencilla"
+      },
+      "educationalLevel": "Educación secundaria",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://leichterklaert.com/es/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Matemáticas",
+          "item": "https://leichterklaert.com/es/#matematicas"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Los Números Primos explicados de forma sencilla"
+        }
+      ]
+    }
+  ]
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -48,6 +100,12 @@
 <span class="subject-pill math">Matemáticas - Teoría de números</span>
 <h1>Los números primos explicados de forma sencilla</h1>
 
+<p class="autorzeile">
+  <span>Escrito por <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Tiempo de lectura: unos 10 minutos</span>
+</p>
+
 <p>Un <strong>número primo</strong> es un número natural mayor que 1 con exactamente
 dos divisores: el 1 y él mismo. El 7 es primo porque solo el 1 y el 7 lo dividen sin
 resto. El 8 no lo es, porque también encajan el 2 y el 4. Los primos son las piezas
@@ -69,7 +127,21 @@ las ramas de las matemáticas.</p>
 <strong>Primos gemelos</strong> — dos primos separados por 2, como el 11 y el 13.</p>
 </div>
 
-<h2>Por qué el 1 no cuenta</h2>
+<nav class="inhalt" aria-label="Contenido de esta página">
+<p>En esta página</p>
+<ul>
+  <li><a href="#por-que-el-1-no-cuenta">Por qué el 1 no cuenta</a></li>
+  <li><a href="#descomposicion-en-factores-primos">Descomposición en factores primos</a></li>
+  <li><a href="#la-criba-de-eratostenes">La criba de Eratóstenes</a></li>
+  <li><a href="#errores-habituales">Errores habituales</a></li>
+  <li><a href="#hay-infinitos">Hay infinitos</a></li>
+  <li><a href="#primos-gemelos-y-primos-record">Primos gemelos y primos récord</a></li>
+  <li><a href="#como-usa-el-cifrado-rsa-los-numeros-primos">Cómo usa el cifrado RSA los números primos</a></li>
+  <li><a href="#gemelos-huecos-y-records">Gemelos, huecos y récords</a></li>
+</ul>
+</nav>
+
+<h2 id="por-que-el-1-no-cuenta">Por qué el 1 no cuenta</h2>
 
 <p>Parece arbitrario, pero hay una razón sólida. El teorema fundamental de la
 aritmética dice que todo número mayor que 1 se descompone en factores primos de una
@@ -78,7 +150,7 @@ aritmética dice que todo número mayor que 1 se descompone en factores primos d
 desaparecería. Por eso se excluye el 1: para que el teorema más importante sobre los
 números siga siendo limpio.</p>
 
-<h2>Descomposición en factores primos</h2>
+<h2 id="descomposicion-en-factores-primos">Descomposición en factores primos</h2>
 
 <div class="calc">
 360 &divide; 2 = 180<br>
@@ -96,7 +168,7 @@ encaje y seguir con el resultado hasta que quede 1. De la descomposición se lee
 después cosas que de otro modo habría que adivinar, como el mínimo común múltiplo o
 el máximo común divisor de dos números.</p>
 
-<h2>La criba de Eratóstenes</h2>
+<h2 id="la-criba-de-eratostenes">La criba de Eratóstenes</h2>
 
 <table class="datatable">
 <caption>Hallar todos los primos hasta 30</caption>
@@ -114,18 +186,27 @@ hay que cribar hasta la <strong>raíz cuadrada del límite</strong>. Para compro
 97 es primo se prueban los divisores 2, 3, 5 y 7, y nada más, porque 11 · 11 = 121 ya
 supera a 97.</p>
 
-<div class="example-box warn">
-<div class="label">Errores habituales</div>
-<p><strong>Contar el 1 como primo.</strong> No lo es.<br>
-<strong>Olvidar el 2.</strong> Es el único primo par y se salta con facilidad al
-enumerar deprisa.<br>
-<strong>Probar todos los números como divisores.</strong> Basta llegar a la raíz
-cuadrada; en números de tres cifras eso ahorra casi todo el trabajo.<br>
-<strong>«Todos los impares son primos.»</strong> El 9, el 15, el 21 y el 25 dicen lo
-contrario.</p>
-</div>
+<section class="verwechslung">
+<h2 id="errores-habituales">Errores habituales</h2>
+<dl>
+  <dt>Contar el 1 como primo</dt>
+  <dd>No lo es.</dd>
 
-<h2>Hay infinitos</h2>
+  <dt>Olvidar el 2</dt>
+  <dd>Es el único primo par y se salta con facilidad al
+enumerar deprisa.</dd>
+
+  <dt>Probar todos los números como divisores</dt>
+  <dd>Basta llegar a la raíz
+cuadrada; en números de tres cifras eso ahorra casi todo el trabajo.</dd>
+
+  <dt>«Todos los impares son primos.»</dt>
+  <dd>El 9, el 15, el 21 y el 25 dicen lo
+contrario.</dd>
+</dl>
+</section>
+
+<h2 id="hay-infinitos">Hay infinitos</h2>
 
 <p>Euclides lo demostró hace más de dos mil años y la prueba cabe en cuatro líneas.
 Supongamos que solo hubiera un número finito de primos. Se multiplican todos y se
@@ -155,7 +236,7 @@ pequeños ya se han comprobado.</p>
 navegador envía los datos bancarios se apoya en que multiplicar dos primos muy
 grandes es trivial, mientras que volver a descomponer el producto resulta
 prácticamente imposible.</p>
-<h2>Primos gemelos y primos récord</h2>
+<h2 id="primos-gemelos-y-primos-record">Primos gemelos y primos récord</h2>
 
 <p>Cuanto más arriba se llega en la serie de los números, más escasos son los primos, pero nunca desaparecen. A veces dos de ellos están muy juntos: 3 y 5, 11 y 13, 17 y 19, 29 y 31, 41 y 43. Los pares con una diferencia de 2 se llaman <strong>primos gemelos</strong>. Un pequeño truco muestra dónde buscarlos: todo primo mayor que 3 está justo al lado de un múltiplo de 6, porque los demás restos dan números pares o múltiplos de 3. Por eso, salvo el par 3 y 5, todo par de gemelos tiene la forma 6k &minus; 1 y 6k + 1, por ejemplo 5 y 7 o 17 y 19.</p>
 
@@ -176,7 +257,7 @@ Comprobación: 5 y 7 rodean al 6 (k = 1), 11 y 13 al 12 (k = 2), 17 y 19 al 18 (
 </details>
 </div>
 
-<h2>Cómo usa el cifrado RSA los números primos</h2>
+<h2 id="como-usa-el-cifrado-rsa-los-numeros-primos">Cómo usa el cifrado RSA los números primos</h2>
 
 <p>El método RSA, llamado así por sus inventores Rivest, Shamir y Adleman, protege datos en internet desde los años setenta. La idea básica: se eligen dos primos muy grandes p y q y se multiplican para obtener n = p &middot; q. El producto n se publica; los dos factores permanecen secretos. Quien quiere cifrar un mensaje solo necesita n y un segundo número público e. Quien quiere leerlo necesita además un exponente secreto d, y ese solo lo puede calcular quien conozca p y q.</p>
 
@@ -195,7 +276,7 @@ Descifrar: 2.790<sup>2753</sup> dividido entre 3.233 deja de nuevo de resto <str
 <p>Que el mensaje vuelva de verdad se deduce de un teorema de Euler sobre restos en la división. Lo decisivo es la mirada a la seguridad: el pequeño número 3.233 lo descompone cualquiera en segundos. Las claves reales usan un n de 2.048 bits, es decir, más de 600 cifras decimales. La división de prueba tendría que llegar hasta la raíz de n, un número con unas 300 cifras, y eso es imposible. Incluso los métodos de factorización más rápidos que se conocen tardan un tiempo inimaginable con esos números en los ordenadores actuales. Lo que no está demostrado es que no exista un camino rápido. Según lo que sabemos hoy, los ordenadores cuánticos podrían ofrecerlo en teoría si algún día se construyen lo bastante grandes. La seguridad de RSA se apoya, pues, en la experiencia y no en una demostración.</p>
 
 
-<h2>Gemelos, huecos y récords</h2>
+<h2 id="gemelos-huecos-y-records">Gemelos, huecos y récords</h2>
 
 <p>Los primos se reparten de forma irregular, y eso es justo lo que los hace
 interesantes. A veces hay dos muy juntos, como el 11 y el 13 o el 41 y el 43: esos

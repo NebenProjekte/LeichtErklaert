@@ -10,6 +10,58 @@
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/mathematik/ableitungen.html">
 <link rel="alternate" hreflang="es" href="https://leichterklaert.com/es/mathematik/ableitungen.html">
 <link rel="alternate" hreflang="x-default" href="https://leichterklaert.com/mathematik/ableitungen.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Derivatives Explained Simply",
+      "description": "Derivatives explained simply: slope, limits, the power rule and the chain rule with worked examples - for grades 10 to 13.",
+      "inLanguage": "en",
+      "dateModified": "2026-10-26",
+      "author": {
+        "@type": "Person",
+        "name": "Viktor Jonas"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LeichtErklärt",
+        "url": "https://leichterklaert.com/"
+      },
+      "mainEntityOfPage": "https://leichterklaert.com/en/mathematik/ableitungen.html",
+      "about": {
+        "@type": "Thing",
+        "name": "Derivatives Explained Simply"
+      },
+      "educationalLevel": "Secondary education",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://leichterklaert.com/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Mathematics",
+          "item": "https://leichterklaert.com/en/#math"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Derivatives Explained Simply"
+        }
+      ]
+    }
+  ]
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -48,6 +100,12 @@
 <span class="subject-pill math">Math - Calculus</span>
 <h1>Derivatives Explained Simply</h1>
 
+<p class="autorzeile">
+  <span>Written by <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Reading time about 7 minutes</span>
+</p>
+
 <p>A derivative answers a single question: <strong>how fast is something changing
 right now?</strong> Not on average over an hour, not over a kilometre, but at exactly
 one instant. On a graph, that means: how steep is the curve at this very point? This is
@@ -75,7 +133,16 @@ f&prime;(x) = 0. A maximum or a minimum.<br>
 f&Prime;(x) = 0.</p>
 </div>
 
-<h2>From secant to tangent</h2>
+<nav class="inhalt" aria-label="On this page">
+<p>On this page</p>
+<ul>
+  <li><a href="#from-secant-to-tangent">From secant to tangent</a></li>
+  <li><a href="#what-it-is-used-for">What it is used for</a></li>
+  <li><a href="#common-mistakes">Common mistakes</a></li>
+</ul>
+</nav>
+
+<h2 id="from-secant-to-tangent">From secant to tangent</h2>
 
 <p>Finding the slope of a straight line is easy: the difference in height divided by the
 horizontal distance. With a curve this does not work directly, because the slope is
@@ -153,7 +220,7 @@ the outer function, put the inner function in unchanged, and finally multiply by
 derivative of the inner function. That last multiplication is the step people forget
 most often.</p>
 
-<h2>What it is used for</h2>
+<h2 id="what-it-is-used-for">What it is used for</h2>
 
 <p>The most obvious use is curve sketching: where f&prime;(x) = 0 there is a
 horizontal tangent, so there may be a maximum or a minimum. Whether it really is one,
@@ -244,17 +311,26 @@ your seat is the second.</p>
 </div>
 </div>
 
-<div class="example-box warn">
-<div class="label">Common mistakes</div>
-<p><strong>Forgetting the inner derivative in the chain rule.</strong> (2x+1)&sup3;
-becomes 3(2x+1)&sup2; <em>times 2</em>, not just 3(2x+1)&sup2;.<br>
-<strong>Declaring every f&prime;(x) = 0 an extremum straight away.</strong> For
+<section class="verwechslung">
+<h2 id="common-mistakes">Common mistakes</h2>
+<dl>
+  <dt>Forgetting the inner derivative in the chain rule</dt>
+  <dd>(2x+1)&sup3;
+becomes 3(2x+1)&sup2; <em>times 2</em>, not just 3(2x+1)&sup2;.</dd>
+
+  <dt>Declaring every f&prime;(x) = 0 an extremum straight away</dt>
+  <dd>For
 f(x) = x&sup3; we have f&prime;(0) = 0, but the point at 0 is a saddle point, not an
-extremum.<br>
-<strong>Carrying the constant along.</strong> x&sup2; + 5 becomes 2x, not 2x + 5.<br>
-<strong>Confusing the derivative with the function value.</strong> f&prime;(2) is the
-<em>slope</em> at x = 2, not the height of the graph there.</p>
-</div>
+extremum.</dd>
+
+  <dt>Carrying the constant along</dt>
+  <dd>x&sup2; + 5 becomes 2x, not 2x + 5.</dd>
+
+  <dt>Confusing the derivative with the function value</dt>
+  <dd>f&prime;(2) is the
+<em>slope</em> at x = 2, not the height of the graph there.</dd>
+</dl>
+</section>
 
 <div class="example-box task">
 <div class="label">Practice problem</div>

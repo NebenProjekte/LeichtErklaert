@@ -10,6 +10,58 @@
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/mathematik/exponentielles-wachstum.html">
 <link rel="alternate" hreflang="es" href="https://leichterklaert.com/es/mathematik/exponentielles-wachstum.html">
 <link rel="alternate" hreflang="x-default" href="https://leichterklaert.com/mathematik/exponentielles-wachstum.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Exponentielles Wachstum leicht erklärt",
+      "description": "Exponentielles Wachstum einfach erklärt: Zinseszins und Bakterienwachstum mit Formel und bunter Verdopplungs-Grafik.",
+      "inLanguage": "de",
+      "dateModified": "2026-10-26",
+      "author": {
+        "@type": "Person",
+        "name": "Viktor Jonas"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LeichtErklärt",
+        "url": "https://leichterklaert.com/"
+      },
+      "mainEntityOfPage": "https://leichterklaert.com/mathematik/exponentielles-wachstum.html",
+      "about": {
+        "@type": "Thing",
+        "name": "Exponentielles Wachstum leicht erklärt"
+      },
+      "educationalLevel": "Sekundarstufe",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Start",
+          "item": "https://leichterklaert.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Mathematik",
+          "item": "https://leichterklaert.com/#mathematik"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Exponentielles Wachstum leicht erklärt"
+        }
+      ]
+    }
+  ]
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -48,6 +100,12 @@
 <span class="subject-pill math">Mathematik &middot; Funktionen</span>
 <h1>Exponentielles Wachstum leicht erklärt</h1>
 
+<p class="autorzeile">
+  <span>Verfasst von <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Lesezeit etwa 6 Minuten</span>
+</p>
+
 <p>Beim <strong>linearen</strong> Wachstum kommt in jedem Schritt derselbe Betrag
 dazu. Beim <strong>exponentiellen</strong> Wachstum wird in jedem Schritt mit
 demselben Faktor multipliziert. Der Unterschied wirkt am Anfang winzig und ist nach
@@ -78,7 +136,18 @@ N(t) = N₀ &middot; q<sup>t</sup>
 </tbody>
 </table>
 
-<h2>Das Reiskorn-Problem</h2>
+<nav class="inhalt" aria-label="Inhalt dieser Seite">
+<p>Auf dieser Seite</p>
+<ul>
+  <li><a href="#das-reiskorn-problem">Das Reiskorn-Problem</a></li>
+  <li><a href="#verdopplungszeit-abschaetzen">Verdopplungszeit abschätzen</a></li>
+  <li><a href="#typische-fehler">Typische Fehler</a></li>
+  <li><a href="#warum-exponentielles-wachstum-immer-endet">Warum exponentielles Wachstum immer endet</a></li>
+  <li><a href="#zerfall-derselbe-rechenweg-rueckwaerts">Zerfall: derselbe Rechenweg rückwärts</a></li>
+</ul>
+</nav>
+
+<h2 id="das-reiskorn-problem">Das Reiskorn-Problem</h2>
 
 <div class="calc">
 Feld 1: 1 Korn &middot; Feld 2: 2 &middot; Feld 3: 4 &middot; Feld 4: 8 …<br>
@@ -90,7 +159,7 @@ Bei 0,03 g je Korn sind das rund <strong>550 Milliarden Tonnen</strong> —
 etwa das Tausendfache der weltweiten Reisernte eines Jahres.
 </div>
 
-<h2>Verdopplungszeit abschätzen</h2>
+<h2 id="verdopplungszeit-abschaetzen">Verdopplungszeit abschätzen</h2>
 
 <p>Die Siebzigerregel liefert in Sekunden eine brauchbare Näherung: Verdopplungszeit
 &asymp; 70 geteilt durch die Wachstumsrate in Prozent. Bei 7 % Zinsen verdoppelt sich
@@ -172,13 +241,22 @@ das Kapital also in rund zehn Jahren, bei 2 % in etwa 35.</p>
 </div>
 </div>
 
-<div class="example-box warn">
-<div class="label">Typische Fehler</div>
-<p><strong>Prozente addiert statt Faktoren multipliziert.</strong> Zweimal 10 % Zuwachs sind 21 %, nicht 20 %.<br>
-<strong>Faktor falsch gebildet.</strong> 5 % Zunahme heißt q = 1,05, nicht 0,05.<br>
-<strong>Linear geschätzt.</strong> „Nach 10 Jahren doppelt, nach 20 dreifach" ist falsch — es ist vierfach.<br>
-<strong>Grenzen ignoriert.</strong> In der Natur endet exponentielles Wachstum immer, weil Platz oder Nahrung ausgehen.</p>
-</div>
+<section class="verwechslung">
+<h2 id="typische-fehler">Typische Fehler</h2>
+<dl>
+  <dt>Prozente addiert statt Faktoren multipliziert</dt>
+  <dd>Zweimal 10 % Zuwachs sind 21 %, nicht 20 %.</dd>
+
+  <dt>Faktor falsch gebildet</dt>
+  <dd>5 % Zunahme heißt q = 1,05, nicht 0,05.</dd>
+
+  <dt>Linear geschätzt</dt>
+  <dd>„Nach 10 Jahren doppelt, nach 20 dreifach" ist falsch — es ist vierfach.</dd>
+
+  <dt>Grenzen ignoriert</dt>
+  <dd>In der Natur endet exponentielles Wachstum immer, weil Platz oder Nahrung ausgehen.</dd>
+</dl>
+</section>
 
 <div class="example-box task">
 <div class="label">Übungsaufgabe</div>
@@ -196,7 +274,7 @@ die nächsten 256.000 nur zwanzig Minuten.</p>
 </details>
 </div>
 
-<h2>Warum exponentielles Wachstum immer endet</h2>
+<h2 id="warum-exponentielles-wachstum-immer-endet">Warum exponentielles Wachstum immer endet</h2>
 
 <p>Rechnet man exponentielles Wachstum lange genug weiter, kommen absurde Zahlen heraus. Eine Bakterienkultur, die sich alle 20 Minuten verdoppelt, hätte nach zwei Tagen mehr Masse als die Erde. Das passiert offensichtlich nicht - und der Grund dafür gehört genauso zum Thema wie die Formel selbst.</p>
 
@@ -219,7 +297,7 @@ die nächsten 256.000 nur zwanzig Minuten.</p>
 Kettenreaktionen und der Speicherdichte von Computerchips. Wer sie einmal versteht,
 erkennt sie überall wieder.</p>
 
-<h2>Zerfall: derselbe Rechenweg rückwärts</h2>
+<h2 id="zerfall-derselbe-rechenweg-rueckwaerts">Zerfall: derselbe Rechenweg rückwärts</h2>
 
 <p>Ist der Wachstumsfaktor kleiner als 1, wird aus Wachstum Zerfall. Die Formel bleibt
 dieselbe, nur q liegt jetzt zwischen 0 und 1. Statt der Verdopplungszeit spricht man

@@ -10,6 +10,58 @@
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/mathematik/geburtstagsparadoxon.html">
 <link rel="alternate" hreflang="es" href="https://leichterklaert.com/es/mathematik/geburtstagsparadoxon.html">
 <link rel="alternate" hreflang="x-default" href="https://leichterklaert.com/mathematik/geburtstagsparadoxon.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Das Geburtstagsparadoxon leicht erklärt",
+      "description": "Das Geburtstagsparadoxon einfach erklärt: warum schon in einer Gruppe von 23 Personen meist zwei am gleichen Tag Geburtstag haben.",
+      "inLanguage": "de",
+      "dateModified": "2026-10-26",
+      "author": {
+        "@type": "Person",
+        "name": "Viktor Jonas"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LeichtErklärt",
+        "url": "https://leichterklaert.com/"
+      },
+      "mainEntityOfPage": "https://leichterklaert.com/mathematik/geburtstagsparadoxon.html",
+      "about": {
+        "@type": "Thing",
+        "name": "Das Geburtstagsparadoxon leicht erklärt"
+      },
+      "educationalLevel": "Sekundarstufe",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Start",
+          "item": "https://leichterklaert.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Mathematik",
+          "item": "https://leichterklaert.com/#mathematik"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Das Geburtstagsparadoxon leicht erklärt"
+        }
+      ]
+    }
+  ]
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -48,6 +100,12 @@
 <span class="subject-pill math">Mathematik &middot; Stochastik</span>
 <h1>Das Geburtstagsparadoxon leicht erklärt</h1>
 
+<p class="autorzeile">
+  <span>Verfasst von <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Lesezeit etwa 6 Minuten</span>
+</p>
+
 <p>In einer Klasse mit 23 Schülern liegt die Wahrscheinlichkeit, dass zwei am selben
 Tag Geburtstag haben, bei über <strong>50 Prozent</strong>. Das klingt falsch — bei
 365 Tagen im Jahr. Der Denkfehler steckt in der Frage, die man sich unbewusst stellt.</p>
@@ -65,7 +123,18 @@ P(mindestens ein Paar) = 1 &minus; (365/365 &middot; 364/365 &middot; 363/365 &m
 <strong>Paarbildung</strong> — bei n Personen gibt es n(n&minus;1)/2 mögliche Paare.</p>
 </div>
 
-<h2>Der eigentliche Grund: es geht um Paare</h2>
+<nav class="inhalt" aria-label="Inhalt dieser Seite">
+<p>Auf dieser Seite</p>
+<ul>
+  <li><a href="#der-eigentliche-grund-es-geht-um-paare">Der eigentliche Grund: es geht um Paare</a></li>
+  <li><a href="#so-wird-gerechnet">So wird gerechnet</a></li>
+  <li><a href="#typische-fehler">Typische Fehler</a></li>
+  <li><a href="#die-rechnung-schritt-fuer-schritt">Die Rechnung Schritt für Schritt</a></li>
+  <li><a href="#was-50-prozent-praktisch-bedeutet">Was „50 Prozent" praktisch bedeutet</a></li>
+</ul>
+</nav>
+
+<h2 id="der-eigentliche-grund-es-geht-um-paare">Der eigentliche Grund: es geht um Paare</h2>
 
 <p>Die meisten denken: „Wie wahrscheinlich ist es, dass jemand an <em>meinem</em>
 Geburtstag Geburtstag hat?" Das ist tatsächlich selten. Gefragt ist aber, ob
@@ -172,7 +241,7 @@ bei 40 Personen: 780 Paare
 </div>
 </div>
 
-<h2>So wird gerechnet</h2>
+<h2 id="so-wird-gerechnet">So wird gerechnet</h2>
 
 <div class="calc">
 Wahrscheinlichkeit, dass <em>alle</em> verschieden sind:<br>
@@ -182,13 +251,22 @@ Gesucht ist das Gegenteil:<br>
 1 &minus; 0,4927 = <strong>0,5073</strong>, also 50,7 %
 </div>
 
-<div class="example-box warn">
-<div class="label">Typische Fehler</div>
-<p><strong>Die falsche Frage beantwortet.</strong> „Jemand hat an meinem Geburtstag Geburtstag" ist etwas völlig anderes.<br>
-<strong>Wahrscheinlichkeiten addiert.</strong> Bei unabhängigen Ereignissen wird multipliziert.<br>
-<strong>Direkt statt über das Gegenereignis gerechnet.</strong> Der direkte Weg erfordert das Aufsummieren sehr vieler Fälle und ist praktisch nicht machbar.<br>
-<strong>Den 29. Februar zum Problem erklärt.</strong> Er verschiebt das Ergebnis um weniger als ein Zehntel Prozentpunkt.</p>
-</div>
+<section class="verwechslung">
+<h2 id="typische-fehler">Typische Fehler</h2>
+<dl>
+  <dt>Die falsche Frage beantwortet</dt>
+  <dd>„Jemand hat an meinem Geburtstag Geburtstag" ist etwas völlig anderes.</dd>
+
+  <dt>Wahrscheinlichkeiten addiert</dt>
+  <dd>Bei unabhängigen Ereignissen wird multipliziert.</dd>
+
+  <dt>Direkt statt über das Gegenereignis gerechnet</dt>
+  <dd>Der direkte Weg erfordert das Aufsummieren sehr vieler Fälle und ist praktisch nicht machbar.</dd>
+
+  <dt>Den 29. Februar zum Problem erklärt</dt>
+  <dd>Er verschiebt das Ergebnis um weniger als ein Zehntel Prozentpunkt.</dd>
+</dl>
+</section>
 
 <div class="example-box task">
 <div class="label">Übungsaufgabe</div>
@@ -204,7 +282,7 @@ nicht linear — deshalb steigt die Wahrscheinlichkeit so schnell an.</p>
 </details>
 </div>
 
-<h2>Die Rechnung Schritt für Schritt</h2>
+<h2 id="die-rechnung-schritt-fuer-schritt">Die Rechnung Schritt für Schritt</h2>
 
 <p>Warum genau 23 Personen reichen, lässt sich in wenigen Zeilen nachrechnen - vorausgesetzt, man rechnet über das Gegenereignis. Die Frage lautet also nicht "Wie wahrscheinlich ist ein Treffer?", sondern "Wie wahrscheinlich ist es, dass alle verschiedene Geburtstage haben?"</p>
 
@@ -228,7 +306,7 @@ viel leichter, <em>irgendzwei</em> Dateien mit gleichem Hashwert zu finden als e
 zu einem vorgegebenen. Deshalb müssen Hashfunktionen doppelt so viele Bits haben,
 wie man naiv annehmen würde.</p>
 
-<h2>Was „50 Prozent" praktisch bedeutet</h2>
+<h2 id="was-50-prozent-praktisch-bedeutet">Was „50 Prozent" praktisch bedeutet</h2>
 
 <p>Eine Wahrscheinlichkeit von 50,7 Prozent sagt nichts über eine einzelne Klasse aus.
 Sie beschreibt, was auf lange Sicht passiert. Prüfte man tausend Schulklassen mit je

@@ -10,6 +10,58 @@
 <link rel="alternate" hreflang="en" href="https://leichterklaert.com/en/mathematik/kartenspiel-wahrscheinlichkeit.html">
 <link rel="alternate" hreflang="es" href="https://leichterklaert.com/es/mathematik/kartenspiel-wahrscheinlichkeit.html">
 <link rel="alternate" hreflang="x-default" href="https://leichterklaert.com/mathematik/kartenspiel-wahrscheinlichkeit.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Why Is Every Shuffled Deck Order Unique?",
+      "description": "Why every well-shuffled card order is unique: 52 factorial (52!) explained simply with an example and comparison.",
+      "inLanguage": "en",
+      "dateModified": "2026-10-26",
+      "author": {
+        "@type": "Person",
+        "name": "Viktor Jonas"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LeichtErklärt",
+        "url": "https://leichterklaert.com/"
+      },
+      "mainEntityOfPage": "https://leichterklaert.com/en/mathematik/kartenspiel-wahrscheinlichkeit.html",
+      "about": {
+        "@type": "Thing",
+        "name": "Card-Shuffle Probability Explained Simply"
+      },
+      "educationalLevel": "Secondary education",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://leichterklaert.com/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Mathematics",
+          "item": "https://leichterklaert.com/en/#math"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Card-Shuffle Probability Explained Simply"
+        }
+      ]
+    }
+  ]
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1079255057051806" crossorigin="anonymous"></script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -47,6 +99,12 @@
 <article class="topic">
 <span class="subject-pill math">Math - Probability</span>
 <h1>Why Is Every Shuffled Deck Order Unique?</h1>
+
+<p class="autorzeile">
+  <span>Written by <strong>Viktor Jonas</strong></span>
+  <span>&middot;</span>
+  <span>Reading time about 5 minutes</span>
+</p>
 
 <p>An ordinary deck has <strong>52 cards</strong>. Shuffle it properly and you get one
 particular order. The question is: how many different orders are possible at all?</p>
@@ -184,7 +242,16 @@ and it will probably never turn up again.</p>
 <strong>Laplace probability</strong> — favourable cases divided by possible cases.</p>
 </div>
 
-<h2>How many orders there are</h2>
+<nav class="inhalt" aria-label="On this page">
+<p>On this page</p>
+<ul>
+  <li><a href="#how-many-orders-there-are">How many orders there are</a></li>
+  <li><a href="#how-many-shuffles-does-it-actually-take">How many shuffles does it actually take?</a></li>
+  <li><a href="#common-mistakes">Common mistakes</a></li>
+</ul>
+</nav>
+
+<h2 id="how-many-orders-there-are">How many orders there are</h2>
 
 <div class="calc">
 52 cards can be arranged in 52! ways.<br>
@@ -211,7 +278,7 @@ not a figure of speech but a plain consequence of the scale.</p>
 </tbody>
 </table>
 
-<h2>How many shuffles does it actually take?</h2>
+<h2 id="how-many-shuffles-does-it-actually-take">How many shuffles does it actually take?</h2>
 
 <p>All those possibilities are worth nothing if the shuffling is poor. That is exactly
 what the mathematicians Dave Bayer and Persi Diaconis looked into in 1992, and their
@@ -245,13 +312,22 @@ look equally harmless.</p>
 2.4 quintillion. You do not need a full deck for the number to defeat the imagination
 — twenty cards will do.</p>
 
-<div class="example-box warn">
-<div class="label">Common mistakes</div>
-<p><strong>Counting the order where it does not matter.</strong> When drawing a hand the order usually makes no difference — then divide by the factorial of the hand size.<br>
-<strong>Confusing drawing with and without replacement.</strong> Cards are not put back, so the denominator drops at every step.<br>
-<strong>Adding probabilities instead of multiplying.</strong> For consecutive conditions you multiply.<br>
-<strong>"Very unlikely means impossible."</strong> Some order always comes out.</p>
-</div>
+<section class="verwechslung">
+<h2 id="common-mistakes">Common mistakes</h2>
+<dl>
+  <dt>Counting the order where it does not matter</dt>
+  <dd>When drawing a hand the order usually makes no difference — then divide by the factorial of the hand size.</dd>
+
+  <dt>Confusing drawing with and without replacement</dt>
+  <dd>Cards are not put back, so the denominator drops at every step.</dd>
+
+  <dt>Adding probabilities instead of multiplying</dt>
+  <dd>For consecutive conditions you multiply.</dd>
+
+  <dt>"Very unlikely means impossible."</dt>
+  <dd>Some order always comes out.</dd>
+</dl>
+</section>
 
 <div class="example-box task">
 <div class="label">Practice question</div>
