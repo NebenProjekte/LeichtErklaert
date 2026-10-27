@@ -131,6 +131,9 @@ quedarse: 1/3 &nbsp;&middot;&nbsp; cambiar: 2/3
   <li><a href="#el-truco-de-las-cien-puertas">El truco de las cien puertas</a></li>
   <li><a href="#errores-habituales">Errores habituales</a></li>
   <li><a href="#por-que-aqui-falla-nuestra-intuicion">Por qué aquí falla nuestra intuición</a></li>
+  <li><a href="#practica-cinco-preguntas-respuesta-inmediata">Práctica: cinco preguntas</a></li>
+  <li><a href="#preguntas-de-examen-con-respuesta-modelo">Preguntas de examen con respuesta modelo</a></li>
+  <li><a href="#fuentes-y-lecturas">Fuentes y lecturas</a></li>
 </ul>
 </nav>
 
@@ -327,6 +330,95 @@ recordar.</p>
 <p class="note">En 1990 Marilyn vos Savant publicó la solución correcta en una columna
 de periódico. Le siguieron unas 10.000 cartas de lectores, muchas de universidades, que
 le reprochaban un error de cálculo. Tenía razón.</p>
+<section class="uebung" id="uebung">
+<h2 id="practica-cinco-preguntas-respuesta-inmediata">Práctica: cinco preguntas con respuesta inmediata</h2>
+<p>Pulsa una respuesta. Verás enseguida si es correcta y por qué.</p>
+
+<ol class="uebung-liste">
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">¿Qué probabilidad de ganar tienes si te quedas con tu primera puerta?</p>
+    <button class="uebung-option">1/2</button>
+    <button class="uebung-option">1/3</button>
+    <button class="uebung-option">2/3</button>
+    <p class="uebung-erklaerung">1/3. Tu primera elección acertaba una de cada tres veces, y abrir una puerta con cabra no cambia eso: el presentador podía abrir una así en cualquier caso.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">¿Por qué al final la situación no es 50:50?</p>
+    <button class="uebung-option">Porque quedan dos puertas y solo un coche</button>
+    <button class="uebung-option">Porque el presentador tiene que adivinar</button>
+    <button class="uebung-option">Porque el presentador sabe dónde está el coche y nunca lo abre</button>
+    <p class="uebung-erklaerung">Su conocimiento es la clave. Como nunca descubre el coche, su acción contiene información, y toda esa información se acumula en la única puerta que deja cerrada.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">Eliges la puerta 2 y el coche está detrás de la puerta 1. ¿Qué puerta abre el presentador?</p>
+    <button class="uebung-option">La puerta 3, no tiene otra opción</button>
+    <button class="uebung-option">La puerta 1 o la 3</button>
+    <button class="uebung-option">La puerta 2</button>
+    <p class="uebung-erklaerung">La puerta 3. No puede abrir la tuya ni enseñar el coche, así que solo queda una posibilidad. Justo en este caso, cambiar gana.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Ahora el presentador abre al azar una de las otras dos puertas y da la casualidad de que sale una cabra. ¿Qué ocurre entonces?</p>
+    <button class="uebung-option">Cambiar sigue dando 2/3</button>
+    <button class="uebung-option">Entonces sí es 50:50</button>
+    <button class="uebung-option">Quedarse da ahora 2/3</button>
+    <p class="uebung-erklaerung">Entonces sí es 50:50. Su acción ya no revela nada, porque también podría haber descubierto el coche. Lo que decide no es el número de puertas, sino la regla con la que se abre.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">Con 100 puertas eliges una y el presentador abre 98 con cabra. ¿Qué tal es cambiar?</p>
+    <button class="uebung-option">1/2</button>
+    <button class="uebung-option">1/100</button>
+    <button class="uebung-option">99/100</button>
+    <p class="uebung-erklaerung">99/100. Tu primera elección conserva 1/100. El 99/100 restante no se reparte: se concentra en la única puerta que el presentador dejó cerrada a propósito.</p>
+  </li>
+</ol>
+
+<p class="uebung-stand" aria-live="polite">0 de 5 respondidas.</p>
+</section>
+
+<section class="pruefung">
+<h2 id="preguntas-de-examen-con-respuesta-modelo">Preguntas de examen con respuesta modelo</h2>
+<p>Inténtalo primero y luego despliega la respuesta.</p>
+
+<details>
+<summary>Demuestra con un análisis completo de casos por qué cambiar gana con probabilidad 2/3.</summary>
+<div class="antwort">
+<p>Se coloca el coche detrás de la puerta 1 sin pérdida de generalidad y se distingue según la primera elección, que recae en cada una de las tres puertas con probabilidad 1/3.</p>
+<p>Elección puerta 1: el presentador abre la 2 o la 3 y cambiar lleva a una cabra — perdido. Elección puerta 2: tiene que abrir la 3 y cambiar lleva a la puerta 1 — ganado. Elección puerta 3: tiene que abrir la 2 y cambiar lleva a la puerta 1 — ganado.</p>
+<p>Dos de los tres casos igualmente probables ganan al cambiar, así que P = 2/3. Para la puntuación completa hay que justificar también por qué los tres casos son igual de probables y por qué el presentador no tiene elección en dos de ellos.</p>
+</div>
+</details>
+
+<details>
+<summary>Obtén el mismo resultado con el teorema de Bayes.</summary>
+<div class="antwort">
+<p>Supongamos que eliges la puerta 1 y se abre la 3. Sucesos: A&#8321;, A&#8322;, A&#8323; significan &laquo;coche detrás de la puerta 1, 2 o 3&raquo;, cada uno con P = 1/3. M&#8323; significa &laquo;el presentador abre la puerta 3&raquo;.</p>
+<p>Las probabilidades condicionadas: P(M&#8323; | A&#8321;) = 1/2, porque puede elegir entre la 2 y la 3. P(M&#8323; | A&#8322;) = 1, porque la 1 está elegida y la 2 esconde el coche. P(M&#8323; | A&#8323;) = 0, no enseña el coche.</p>
+<p>Entonces P(M&#8323;) = 1/3 &middot; 1/2 + 1/3 &middot; 1 + 0 = 1/2. Sustituyendo: P(A&#8321; | M&#8323;) = (1/3 &middot; 1/2) / (1/2) = 1/3 y P(A&#8322; | M&#8323;) = (1/3 &middot; 1) / (1/2) = 2/3. Quedarse gana con 1/3 y cambiar con 2/3, el mismo resultado que el análisis de casos.</p>
+</div>
+</details>
+
+<details>
+<summary>Explica por qué tanta gente responde 50:50 e indica la condición que sí lo convertiría en 50:50.</summary>
+<div class="antwort">
+<p>El error habitual es contar puertas en lugar de leer la regla. Quedan dos puertas, así que la intuición dice una de cada dos. Eso pasa por alto que el presentador actuó bajo una restricción: conoce la colocación y nunca abre el coche.</p>
+<p>Solo es 50:50 de verdad si el presentador abre al azar y acierta una cabra por casualidad. Entonces su acción no aporta información y ambas puertas valen 1/2. El número de puertas es el mismo en los dos escenarios; lo único que cambia es la regla, y es la regla la que decide.</p>
+</div>
+</details>
+</section>
+
+<section class="quellen">
+<h2 id="fuentes-y-lecturas">Fuentes y lecturas</h2>
+<p>Todo lo que aparece en esta página se puede comprobar aquí.</p>
+<ul>
+  <li><a href="https://espanol.libretexts.org/Bookshelves/Estadisticas/Teoria_de_Probabilidad/Probabilidad%2C_estad%C3%ADstica_matem%C3%A1tica_y_procesos_estoc%C3%A1sticos_(Siegrist)/13%3A_Juegos_de_azar/13.06%3A_El_problema_de_Monty_Hall" target="_blank" rel="noopener">LibreTexts Español: 13.6 El problema de Monty Hall</a> <span>&mdash; tratamiento formal con las probabilidades 1/3 y 2/3.</span></li>
+  <li><a href="https://www.uv.es/fisicademos/demos/demo193.pdf" target="_blank" rel="noopener">Demostraciones de Física, Universitat de València: Problema Monty Hall (PDF)</a> <span>&mdash; ficha breve con el razonamiento paso a paso.</span></li>
+</ul>
+</section>
+
 <a class="back-link" href="../index.html">&larr; Volver al índice</a>
 </article>
 </main>
@@ -336,6 +428,7 @@ le reprochaban un error de cálculo. Tenía razón.</p>
 </footer>
 <script src="../../search-data.es.js"></script>
 <script src="../../search.js"></script>
+<script src="../../uebung.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
