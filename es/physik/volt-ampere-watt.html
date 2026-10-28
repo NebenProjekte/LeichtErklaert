@@ -133,6 +133,13 @@ P = U &middot; I
   <li><a href="#la-ley-de-ohm-une-las-tres-magnitudes">La ley de Ohm une las tres magnitudes</a></li>
   <li><a href="#vatios-y-vatios-hora-no-son-lo-mismo">Vatios y vatios-hora no son lo mismo</a></li>
   <li><a href="#errores-habituales">Errores habituales</a></li>
+  <li><a href="#por-que-las-lineas-de-alta-tension-usan-miles-de-voltios">Por qué las líneas de alta tensión usan miles de voltios</a></li>
+  <li><a href="#leer-bien-los-datos-de-una-bateria">Leer bien los datos de una batería</a></li>
+  <li><a href="#en-serie-y-en-paralelo-que-se-reparte">En serie y en paralelo: qué se reparte</a></li>
+  <li><a href="#calculadora-voltios-amperios-ohmios-y-vatios">Calculadora</a></li>
+  <li><a href="#practica-cinco-preguntas-con-correccion-inmediata">Práctica</a></li>
+  <li><a href="#preguntas-de-examen-con-respuestas-modelo">Preguntas de examen</a></li>
+  <li><a href="#fuentes-y-para-seguir-leyendo">Fuentes</a></li>
 </ul>
 </nav>
 
@@ -297,6 +304,186 @@ tensión, sino por la potencia que hace falta.</p>
 <p class="note">Regla práctica para los fusibles: un magnetotérmico doméstico de
 16 A a 230 V aguanta unos 3680 vatios. Dos hervidores en el mismo circuito ya son
 demasiado, y por eso salta antes de que el cableado se caliente.</p>
+<h2 id="por-que-las-lineas-de-alta-tension-usan-miles-de-voltios">Por qué las líneas de alta tensión usan miles de voltios</h2>
+
+<p>Una línea eléctrica también tiene resistencia, y el calor que se pierde en ella
+depende del <em>cuadrado</em> de la intensidad: P<sub>pérdida</sub> = I² &middot; R.
+La potencia transportada, en cambio, es P = U &middot; I. Si se multiplica la tensión
+por mil, basta con la milésima parte de intensidad para llevar la misma potencia, y
+las pérdidas caen a la millonésima parte.</p>
+
+<div class="calc">
+10 MW por una línea de 5 &Omega;:<br>
+a 10 kV &rarr; I = 1000 A &rarr; pérdida = 1000² &middot; 5 = <strong>5 MW</strong> (la mitad)<br>
+a 400 kV &rarr; I = 25 A &rarr; pérdida = 25² &middot; 5 = <strong>3,1 kW</strong>
+</div>
+
+<p>Por eso la corriente sale de la central a cientos de miles de voltios y solo baja a
+230 V en el transformador del barrio. La alta tensión no es peligrosidad gratuita:
+es la única forma de que la electricidad llegue lejos sin convertirse en calor por el
+camino.</p>
+
+<h2 id="leer-bien-los-datos-de-una-bateria">Leer bien los datos de una batería</h2>
+
+<p>En una batería externa suele poner algo como «5000 mAh». Ese número solo no dice
+cuánta energía guarda, porque faltan los voltios. La energía es el producto de los dos:</p>
+
+<div class="calc">
+3,7 V &middot; 5 Ah = <strong>18,5 Wh</strong><br>
+Un móvil con batería de 12 Wh se carga con ella algo más de una vez.
+</div>
+
+<p>Comparar dos baterías por sus miliamperios-hora solo tiene sentido si ambas trabajan
+a la misma tensión. La cifra honesta es la de vatios-hora, y por eso es la que exigen
+las compañías aéreas para el equipaje de mano.</p>
+
+<h2 id="en-serie-y-en-paralelo-que-se-reparte">En serie y en paralelo: qué se reparte</h2>
+
+<p>En cuanto hay más de un componente en el circuito, el tipo de conexión decide qué se
+reparte. En <strong>serie</strong> circula la misma intensidad por todos y se reparte la
+tensión. En <strong>paralelo</strong> todos tienen la misma tensión y se reparte la
+intensidad.</p>
+
+<div class="calc">
+Serie: R<sub>total</sub> = R₁ + R₂<br>
+Paralelo: 1 &divide; R<sub>total</sub> = 1 &divide; R₁ + 1 &divide; R₂<br>
+<br>
+Dos resistencias de 10 &Omega; a 12 V:<br>
+en serie &rarr; 20 &Omega;, I = 0,6 A<br>
+en paralelo &rarr; 5 &Omega;, I = <strong>2,4 A</strong>
+</div>
+
+<p>Los enchufes de una vivienda están en paralelo. Por eso hay 230 V en todos ellos y por
+eso las intensidades de todos los aparatos encendidos se suman en el cable de entrada,
+hasta que salta el magnetotérmico.</p>
+
+<div class="example-box">
+<div class="label">Leer la placa de características</div>
+<p>En cada aparato está la información necesaria; solo hay que saber ordenarla.
+«220–240 V ~, 50 Hz, 2000 W» significa: el aparato admite entre 220 y 240 voltios,
+necesita corriente alterna de 50 hercios y consume 2000 vatios. De ahí sale la
+intensidad de 8,7 amperios, así que un circuito de 16 amperios admite justo un aparato
+así y poco más. En los cargadores aparecen dos líneas: <em>input</em> para el lado del
+enchufe y <em>output</em> para lo que llega al aparato. Si el output indica 5 V y 2 A,
+el cargador entrega como máximo 5 &middot; 2 = <strong>10 W</strong>.</p>
+</div>
+
+<section class="rechner" id="calculadora" data-rechner="ohm" data-sprache="es">
+<h2 id="calculadora-voltios-amperios-ohmios-y-vatios">Calculadora: voltios, amperios, ohmios y vatios</h2>
+<p>Introduce dos valores cualesquiera; el tercero y la potencia salen de la ley de Ohm. Deja un campo vacío para que se calcule.</p>
+
+<div class="rechner-felder">
+  <div class="rechner-feld">
+    <label for="spannung">Tensión U en voltios</label>
+    <input id="spannung" name="spannung" type="text" inputmode="decimal" value="230">
+  </div>
+  <div class="rechner-feld">
+    <label for="strom">Intensidad I en amperios</label>
+    <input id="strom" name="strom" type="text" inputmode="decimal" value="8,7">
+  </div>
+  <div class="rechner-feld">
+    <label for="widerstand">Resistencia R en ohmios</label>
+    <input id="widerstand" name="widerstand" type="text" inputmode="decimal" value="">
+  </div>
+</div>
+
+<div class="rechner-ergebnis">
+  <p class="rechner-urteil"></p>
+  <dl class="rechner-werte"></dl>
+</div>
+</section>
+
+<section class="uebung" id="practica" data-sprache="es">
+<h2 id="practica-cinco-preguntas-con-correccion-inmediata">Práctica: cinco preguntas con corrección inmediata</h2>
+<p>Pulsa una respuesta. Verás enseguida si es correcta y por qué.</p>
+
+<ol class="uebung-liste">
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">¿Qué magnitud indica cuánto trabajo hace realmente un aparato?</p>
+    <button class="uebung-option">La tensión en voltios</button>
+    <button class="uebung-option">La potencia en vatios</button>
+    <button class="uebung-option">La resistencia en ohmios</button>
+    <p class="uebung-erklaerung">La potencia. La tensión sola no dice nada: 230 V con 0,5 A y 12 V con casi 10 A dan los mismos 115 vatios aproximadamente.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">Un hervidor de 2000 W funciona a 230 V. ¿Qué intensidad circula?</p>
+    <button class="uebung-option">Unos 8,7 A</button>
+    <button class="uebung-option">Unos 0,12 A</button>
+    <button class="uebung-option">Unos 460 A</button>
+    <p class="uebung-erklaerung">I = P &divide; U = 2000 &divide; 230 &asymp; 8,7 A. Por eso un hervidor queda muy cerca del límite de un circuito doméstico de 16 amperios.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">¿Por qué un enchufe es peligroso y una batería de coche de 12 V no, aunque pueda dar 200 A?</p>
+    <button class="uebung-option">Porque el enchufe da más amperios en total</button>
+    <button class="uebung-option">Porque la corriente alterna es tóxica</button>
+    <button class="uebung-option">Porque 12 V apenas mueven corriente a través del cuerpo</button>
+    <p class="uebung-erklaerung">Lo que importa es la corriente que pasa <em>por ti</em>, y depende de la tensión y de tu resistencia corporal. La batería <em>puede</em> dar 200 A, pero 12 V a través de varios miles de ohmios mueven solo unos pocos miliamperios.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">¿Qué diferencia hay entre un vatio y un vatio-hora?</p>
+    <button class="uebung-option">Ninguna, son dos nombres de lo mismo</button>
+    <button class="uebung-option">El vatio es el ritmo; el vatio-hora, la energía consumida</button>
+    <button class="uebung-option">Un vatio-hora es un vatio medido durante un minuto</button>
+    <p class="uebung-erklaerung">Los vatios dicen a qué velocidad se usa la energía; los vatios-hora, cuánta se ha usado en total. La factura cobra kilovatios-hora, no vatios.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">Una lámpara consume 0,5 A a 230 V. ¿Cuál es su resistencia?</p>
+    <button class="uebung-option">460 ohmios</button>
+    <button class="uebung-option">115 ohmios</button>
+    <button class="uebung-option">0,002 ohmios</button>
+    <p class="uebung-erklaerung">R = U &divide; I = 230 &divide; 0,5 = 460 ohmios. La potencia es U &middot; I = 115 W.</p>
+  </li>
+</ol>
+
+<p class="uebung-stand" aria-live="polite"></p>
+</section>
+
+<section class="pruefung">
+<h2 id="preguntas-de-examen-con-respuestas-modelo">Preguntas de examen con respuestas modelo</h2>
+<p>Inténtalo primero y después abre la respuesta.</p>
+
+<details>
+<summary>Un secador indica 1800 W a 230 V. Calcula la intensidad, la resistencia y el coste de usarlo 10 minutos al día durante un mes, a 0,30 € el kWh.</summary>
+<div class="antwort">
+<p>Intensidad: I = P &divide; U = 1800 &divide; 230 &asymp; 7,8 A.</p>
+<p>Resistencia: R = U &divide; I = 230 &divide; 7,8 &asymp; 29,4 ohmios.</p>
+<p>Energía: 1800 W son 1,8 kW. Diez minutos son un sexto de hora, o sea 0,3 kWh al día y unos 9 kWh en un mes de 30 días.</p>
+<p>Coste: 9 kWh &middot; 0,30 € = <strong>2,70 € al mes</strong>. La clave del ejercicio es pasar los minutos a horas antes de multiplicar; ahí es donde se pierden casi todos los puntos.</p>
+</div>
+</details>
+
+<details>
+<summary>Explica por qué unas pinzas de arranque de 12 V necesitan cable grueso, mientras que para una lámpara de 230 V basta un cable fino.</summary>
+<div class="antwort">
+<p>El grosor del cable lo marca la intensidad, no la tensión. Una lámpara de 115 W a 230 V consume unos 0,5 A; arrancar un motor exige durante unos segundos varios cientos de amperios.</p>
+<p>Un conductor se calienta con el cuadrado de la intensidad (P = I² &middot; R), así que cien veces más corriente significa diez mil veces más calor en el mismo hilo. De ahí la sección mucho mayor.</p>
+<p>Con la tensión ocurre lo contrario: 230 V exigen buen aislamiento; 12 V, casi ninguno.</p>
+</div>
+</details>
+
+<details>
+<summary>Dos aparatos indican 12 V / 60 W y 230 V / 60 W. Compara intensidad y resistencia y di qué significa en la práctica.</summary>
+<div class="antwort">
+<p>A 12 V: I = 60 &divide; 12 = 5 A, R = 12 &divide; 5 = 2,4 ohmios. A 230 V: I = 60 &divide; 230 &asymp; 0,26 A, R = 230 &divide; 0,26 &asymp; 882 ohmios.</p>
+<p>Misma potencia, pero el aparato de baja tensión consume unas veinte veces más intensidad y necesita cables y conectores mucho más gruesos. El de 230 V necesita, en cambio, mejor aislamiento.</p>
+<p>Ese mismo compromiso explica las líneas de alta tensión: a más tensión, menos intensidad para la misma potencia y menos pérdidas en el cable.</p>
+</div>
+</details>
+</section>
+
+<section class="quellen">
+<h2 id="fuentes-y-para-seguir-leyendo">Fuentes y para seguir leyendo</h2>
+<p>Todo lo de esta página se puede comprobar aquí.</p>
+<ul>
+  <li><a href="https://www.fisicalab.com/apartado/ley-de-ohm" target="_blank" rel="noopener">FisicaLab: Ley de Ohm</a> <span>— la relación entre tensión, intensidad y resistencia.</span></li>
+  <li><a href="https://www.fisicalab.com/apartado/trabajo-y-potencia-corriente-electrica" target="_blank" rel="noopener">FisicaLab: Trabajo y potencia de la corriente eléctrica</a> <span>— de dónde salen los vatios y los vatios-hora.</span></li>
+</ul>
+</section>
+
 <a class="back-link" href="../index.html">&larr; Volver al índice</a>
 </article>
 </main>
@@ -306,6 +493,8 @@ demasiado, y por eso salta antes de que el cableado se caliente.</p>
 </footer>
 <script src="../../search-data.es.js"></script>
 <script src="../../search.js"></script>
+<script src="../../uebung.js"></script>
+<script src="../../calc-ohm.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

@@ -242,6 +242,12 @@ energía potencial de arriba se convierte poco a poco en energía cinética.</p>
   <li><a href="#el-mismo-cuadrado-en-el-trafico-la-distancia-de-detencion">El mismo cuadrado en el tráfico: la distancia de detención</a></li>
   <li><a href="#por-que-los-animales-pequenos-sobreviven-mejor-a-las-caidas">Por qué los animales pequeños sobreviven mejor a las caídas</a></li>
   <li><a href="#la-misma-matematica-esta-en-la-distancia-de-frenado">La misma matemática está en la distancia de frenado</a></li>
+  <li><a href="#calculadora-a-que-velocidad-tras-cuanta-altura">Calculadora</a></li>
+  <li><a href="#lanzamiento-hacia-arriba-subir-y-bajar">Lanzamiento hacia arriba</a></li>
+  <li><a href="#caer-en-otros-cuerpos-celestes">Caer en otros cuerpos celestes</a></li>
+  <li><a href="#practica-cinco-preguntas-con-correccion-inmediata">Práctica</a></li>
+  <li><a href="#preguntas-de-examen-con-respuestas-modelo">Preguntas de examen</a></li>
+  <li><a href="#fuentes-y-para-seguir-leyendo">Fuentes</a></li>
 </ul>
 </nav>
 
@@ -359,6 +365,153 @@ velocidad límite mucho menor: un ratón ronda los 13 m/s y una persona los 55 m
 la misma altura, el ratón impacta con una fracción de la energía por kilogramo.</p>
 </div>
 
+<section class="rechner" id="calculadora" data-rechner="freefall" data-sprache="es">
+<h2 id="calculadora-a-que-velocidad-tras-cuanta-altura">Calculadora: ¿a qué velocidad tras cuánta altura?</h2>
+<p>Introduce la altura de caída y lee el tiempo y la velocidad de impacto. No se tiene en cuenta la resistencia del aire, así que los valores son un máximo: una persona que cae desde más de unos 50 metros se mantiene en realidad cerca de su velocidad límite.</p>
+
+<div class="rechner-felder">
+  <div class="rechner-feld">
+    <label for="hoehe">Altura de caída en metros</label>
+    <input id="hoehe" name="hoehe" type="text" inputmode="decimal" value="10">
+  </div>
+</div>
+
+<div class="rechner-ergebnis">
+  <p class="rechner-urteil"></p>
+  <dl class="rechner-werte"></dl>
+</div>
+
+<p class="note">Fíjate en la última línea: desde 10 metros el cuerpo recorre 9,1 metros en el último segundo, casi todo el trayecto. Justo eso es lo que hace que se subestimen las caídas desde poca altura.</p>
+</section>
+
+<h2 id="lanzamiento-hacia-arriba-subir-y-bajar">Lanzamiento hacia arriba: subir y bajar</h2>
+
+<p>Lanzar una pelota hacia arriba es el mismo movimiento visto del revés. La gravedad
+frena la subida exactamente igual que acelera la bajada, así que el tiempo de subida y
+el de bajada son iguales y la pelota vuelve a la mano con la misma rapidez con la que
+salió.</p>
+
+<div class="calc">
+Velocidad inicial v₀ = 10 m/s<br>
+Tiempo de subida: t = v₀ &divide; g = 10 &divide; 9,81 &asymp; <strong>1,02 s</strong><br>
+Altura máxima: h = v₀² &divide; (2 &middot; g) = 100 &divide; 19,62 &asymp; <strong>5,1 m</strong><br>
+Tiempo total hasta la mano: <strong>2,04 s</strong>
+</div>
+
+<p>En el punto más alto la velocidad es cero, pero la aceleración no: sigue valiendo
+9,81 m/s². Ese es el detalle que más se falla en los exámenes.</p>
+
+<h2 id="caer-en-otros-cuerpos-celestes">Caer en otros cuerpos celestes</h2>
+
+<p>La fórmula no cambia; lo único que cambia es g. Por eso los mismos 10 metros se
+recorren en tiempos muy distintos.</p>
+
+<table class="datatable">
+<caption>Caída desde 10 metros sin resistencia del aire</caption>
+<thead><tr><th>Lugar</th><th>g en m/s²</th><th>Tiempo</th><th>Velocidad de impacto</th></tr></thead>
+<tbody>
+<tr><td>Tierra</td><td>9,81</td><td>1,43 s</td><td>50,4 km/h</td></tr>
+<tr><td>Luna</td><td>1,62</td><td>3,51 s</td><td>20,5 km/h</td></tr>
+<tr><td>Marte</td><td>3,72</td><td>2,32 s</td><td>31,1 km/h</td></tr>
+<tr><td>Júpiter</td><td>24,8</td><td>0,90 s</td><td>80,2 km/h</td></tr>
+</tbody>
+</table>
+
+<p>En la Luna una caída dura casi dos veces y media más y termina a menos de la mitad
+de velocidad. Por eso los astronautas podían tropezar sin consecuencias, aunque el
+traje pesara más de 80 kilos en la Tierra.</p>
+
+<section class="uebung" id="practica" data-sprache="es">
+<h2 id="practica-cinco-preguntas-con-correccion-inmediata">Práctica: cinco preguntas con corrección inmediata</h2>
+<p>Pulsa una respuesta. Verás enseguida si es correcta y por qué.</p>
+
+<ol class="uebung-liste">
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Dos bolas, una de 1 kg y otra de 10 kg, se sueltan a la vez en el vacío. ¿Cuál llega antes?</p>
+    <button class="uebung-option">La de 10 kg</button>
+    <button class="uebung-option">Llegan a la vez</button>
+    <button class="uebung-option">La de 1 kg</button>
+    <p class="uebung-erklaerung">La masa no aparece en la fórmula. Una masa mayor es atraída con más fuerza, pero también cuesta más acelerarla; las dos cosas se compensan exactamente.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">La altura se multiplica por cuatro. ¿Qué pasa con la velocidad de impacto?</p>
+    <button class="uebung-option">Se duplica</button>
+    <button class="uebung-option">Se multiplica por cuatro</button>
+    <button class="uebung-option">Se mantiene igual</button>
+    <p class="uebung-erklaerung">v = &radic;(2 &middot; g &middot; h). Bajo la raíz, cuatro veces más altura son el doble de velocidad.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">¿Cuánto vale la aceleración en el punto más alto de un lanzamiento vertical?</p>
+    <button class="uebung-option">Cero, porque la velocidad es cero</button>
+    <button class="uebung-option">La mitad de g</button>
+    <button class="uebung-option">9,81 m/s², igual que durante todo el recorrido</button>
+    <p class="uebung-erklaerung">La velocidad pasa por cero, la aceleración no. La gravedad actúa sin interrupción; por eso la pelota no se queda arriba.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">¿Por qué un ratón sobrevive a una caída que mata a un caballo?</p>
+    <button class="uebung-option">Porque cae más despacio al ser más ligero</button>
+    <button class="uebung-option">Porque su superficie es grande en relación con su masa, así que el aire lo frena antes</button>
+    <button class="uebung-option">Porque sus huesos son más elásticos</button>
+    <p class="uebung-erklaerung">En el vacío los dos caerían igual. En el aire decide la relación entre superficie y masa: el ratón alcanza una velocidad límite baja, el caballo una altísima.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">Un coche duplica su velocidad. ¿Qué pasa con la distancia de frenado?</p>
+    <button class="uebung-option">Se multiplica por cuatro</button>
+    <button class="uebung-option">Se duplica</button>
+    <button class="uebung-option">Depende del peso del coche</button>
+    <p class="uebung-erklaerung">La energía cinética crece con el cuadrado de la velocidad, y la distancia de frenado con ella. Es el mismo cuadrado que en la caída libre.</p>
+  </li>
+</ol>
+
+<p class="uebung-stand" aria-live="polite"></p>
+</section>
+
+<section class="pruefung">
+<h2 id="preguntas-de-examen-con-respuestas-modelo">Preguntas de examen con respuestas modelo</h2>
+<p>Inténtalo primero y después abre la respuesta.</p>
+
+<details>
+<summary>Una piedra cae desde un puente y tarda 2,5 s en llegar al agua. Calcula la altura del puente y la velocidad de impacto, y di por qué el resultado real sería algo menor.</summary>
+<div class="antwort">
+<p>Altura: h = ½ &middot; g &middot; t² = 0,5 &middot; 9,81 &middot; 2,5² = 0,5 &middot; 9,81 &middot; 6,25 &asymp; <strong>30,7 m</strong>.</p>
+<p>Velocidad: v = g &middot; t = 9,81 &middot; 2,5 &asymp; 24,5 m/s, es decir unos <strong>88 km/h</strong>.</p>
+<p>El valor real sería algo menor porque la fórmula no tiene en cuenta la resistencia del aire. En una piedra compacta el efecto es pequeño en 2,5 s, pero existe; con una hoja o una pelota de pimpón la diferencia sería enorme.</p>
+</div>
+</details>
+
+<details>
+<summary>Se lanza una pelota verticalmente hacia arriba a 15 m/s. Calcula la altura máxima, el tiempo total de vuelo y la velocidad con la que vuelve a la mano.</summary>
+<div class="antwort">
+<p>Tiempo de subida: t = v₀ &divide; g = 15 &divide; 9,81 &asymp; 1,53 s.</p>
+<p>Altura máxima: h = v₀² &divide; (2 &middot; g) = 225 &divide; 19,62 &asymp; <strong>11,5 m</strong>.</p>
+<p>Tiempo total: subida y bajada duran lo mismo, así que 2 &middot; 1,53 &asymp; <strong>3,06 s</strong>.</p>
+<p>Velocidad de vuelta: los mismos 15 m/s, unos 54 km/h. Sin resistencia del aire el movimiento es simétrico: lo que la gravedad quita al subir se lo devuelve al bajar.</p>
+</div>
+</details>
+
+<details>
+<summary>Explica, con la fórmula, por qué una caída desde 2 metros ya es peligrosa aunque dure poco más de medio segundo.</summary>
+<div class="antwort">
+<p>Tiempo: t = &radic;(2h &divide; g) = &radic;(4 &divide; 9,81) &asymp; 0,64 s. Velocidad: v = &radic;(2 &middot; 9,81 &middot; 2) &asymp; 6,3 m/s, o sea unos 23 km/h.</p>
+<p>Ese es el orden de magnitud de un choque en bicicleta a velocidad media, y llega en menos de un segundo: no da tiempo a reaccionar ni a apoyarse bien.</p>
+<p>Lo decisivo no es la altura, sino la energía que hay que disipar al final. Como v crece con la raíz de la altura pero la energía con v², duplicar la altura significa el doble de energía de impacto. Por eso las barandillas se exigen ya a partir de alturas que parecen inofensivas.</p>
+</div>
+</details>
+</section>
+
+<section class="quellen">
+<h2 id="fuentes-y-para-seguir-leyendo">Fuentes y para seguir leyendo</h2>
+<p>Todo lo de esta página se puede comprobar aquí.</p>
+<ul>
+  <li><a href="https://www.fisicalab.com/apartado/caida-libre" target="_blank" rel="noopener">FisicaLab: Caída libre</a> <span>— las ecuaciones, una simulación y un ejemplo resuelto.</span></li>
+  <li><a href="https://www.fisicalab.com/apartado/lanzamiento-vertical" target="_blank" rel="noopener">FisicaLab: Lanzamiento vertical</a> <span>— subida, altura máxima y simetría del movimiento.</span></li>
+</ul>
+</section>
+
 <a class="back-link" href="../index.html">&larr; Volver al índice</a>
 </article>
 </main>
@@ -368,6 +521,8 @@ la misma altura, el ratón impacta con una fracción de la energía por kilogram
 </footer>
 <script src="../../search-data.es.js"></script>
 <script src="../../search.js"></script>
+<script src="../../uebung.js"></script>
+<script src="../../calc-freefall.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

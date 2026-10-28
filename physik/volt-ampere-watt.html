@@ -135,6 +135,10 @@ P = U &middot; I
   <li><a href="#reihen-und-parallelschaltung">Reihen- und Parallelschaltung</a></li>
   <li><a href="#das-typenschild-lesen">Das Typenschild lesen</a></li>
   <li><a href="#reihe-und-parallel-wo-sich-was-aufteilt">Reihe und Parallel: wo sich was aufteilt</a></li>
+  <li><a href="#rechner-volt-ampere-ohm-und-watt">Rechner: Volt, Ampere, Ohm und Watt</a></li>
+  <li><a href="#uebung-fuenf-fragen-mit-sofortiger-rueckmeldung">Übung</a></li>
+  <li><a href="#pruefungsfragen-mit-musterloesungen">Prüfungsfragen</a></li>
+  <li><a href="#quellen-und-weiterlesen">Quellen</a></li>
 </ul>
 </nav>
 
@@ -371,6 +375,122 @@ Vergleicht man zwei Powerbanks, ist deshalb nur diese Wattstundenzahl aussagekr�
 nicht die Milliamperestunden allein.</p>
 </div>
 
+<section class="rechner" id="rechner" data-rechner="ohm" data-sprache="de">
+<h2 id="rechner-volt-ampere-ohm-und-watt">Rechner: Volt, Ampere, Ohm und Watt</h2>
+<p>Zwei beliebige Werte eintragen — der dritte und die Leistung ergeben sich aus dem ohmschen Gesetz. Ein Feld leer lassen, dann wird es berechnet.</p>
+
+<div class="rechner-felder">
+  <div class="rechner-feld">
+    <label for="spannung">Spannung U in Volt</label>
+    <input id="spannung" name="spannung" type="text" inputmode="decimal" value="230">
+  </div>
+  <div class="rechner-feld">
+    <label for="strom">Stromstärke I in Ampere</label>
+    <input id="strom" name="strom" type="text" inputmode="decimal" value="8,7">
+  </div>
+  <div class="rechner-feld">
+    <label for="widerstand">Widerstand R in Ohm</label>
+    <input id="widerstand" name="widerstand" type="text" inputmode="decimal" value="">
+  </div>
+</div>
+
+<div class="rechner-ergebnis">
+  <p class="rechner-urteil"></p>
+  <dl class="rechner-werte"></dl>
+</div>
+</section>
+
+<section class="uebung" id="uebung" data-sprache="de">
+<h2 id="uebung-fuenf-fragen-mit-sofortiger-rueckmeldung">Übung: fünf Fragen mit sofortiger Rückmeldung</h2>
+<p>Antwort anklicken. Du siehst sofort, ob sie stimmt — und warum.</p>
+
+<ol class="uebung-liste">
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Welche Größe sagt, wie viel ein Gerät tatsächlich leistet?</p>
+    <button class="uebung-option">Die Spannung in Volt</button>
+    <button class="uebung-option">Die Leistung in Watt</button>
+    <button class="uebung-option">Der Widerstand in Ohm</button>
+    <p class="uebung-erklaerung">Die Leistung. Die Spannung allein sagt nichts: 230 V bei 0,5 A und 12 V bei knapp 10 A ergeben beide rund 115 Watt.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">Ein Wasserkocher mit 2000 W hängt an 230 V. Wie viel Strom fließt?</p>
+    <button class="uebung-option">Etwa 8,7 A</button>
+    <button class="uebung-option">Etwa 0,12 A</button>
+    <button class="uebung-option">Etwa 460 A</button>
+    <p class="uebung-erklaerung">I = P &divide; U = 2000 &divide; 230 &asymp; 8,7 A. Deshalb liegt ein Wasserkocher dicht an der Grenze eines normalen 16-Ampere-Stromkreises.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="2">
+    <p class="uebung-text">Warum ist die Steckdose gefährlich, eine 12-Volt-Autobatterie aber nicht, obwohl sie 200 A liefern kann?</p>
+    <button class="uebung-option">Weil die Steckdose insgesamt mehr Ampere liefert</button>
+    <button class="uebung-option">Weil Wechselstrom giftig ist</button>
+    <button class="uebung-option">Weil 12 V durch den Körperwiderstand kaum Strom treiben</button>
+    <p class="uebung-erklaerung">Entscheidend ist der Strom <em>durch dich</em>, und der hängt von Spannung und Körperwiderstand ab. Die Batterie <em>kann</em> 200 A liefern, aber 12 V treiben durch mehrere tausend Ohm Körperwiderstand nur wenige Milliampere.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="1">
+    <p class="uebung-text">Was ist der Unterschied zwischen Watt und Wattstunde?</p>
+    <button class="uebung-option">Keiner, zwei Namen für dasselbe</button>
+    <button class="uebung-option">Watt ist das Tempo, die Wattstunde die verbrauchte Menge</button>
+    <button class="uebung-option">Eine Wattstunde ist ein Watt, gemessen über eine Minute</button>
+    <p class="uebung-erklaerung">Watt sagt, wie schnell Energie umgesetzt wird, die Wattstunde, wie viel insgesamt zusammenkam. Die Stromrechnung zählt Kilowattstunden, nicht Watt.</p>
+  </li>
+
+  <li class="uebung-frage" data-loesung="0">
+    <p class="uebung-text">Eine Lampe zieht 0,5 A bei 230 V. Wie groß ist ihr Widerstand?</p>
+    <button class="uebung-option">460 Ohm</button>
+    <button class="uebung-option">115 Ohm</button>
+    <button class="uebung-option">0,002 Ohm</button>
+    <p class="uebung-erklaerung">R = U &divide; I = 230 &divide; 0,5 = 460 Ohm. Die Leistung ist U &middot; I = 115 W.</p>
+  </li>
+</ol>
+
+<p class="uebung-stand" aria-live="polite"></p>
+</section>
+
+<section class="pruefung">
+<h2 id="pruefungsfragen-mit-musterloesungen">Prüfungsfragen mit Musterlösungen</h2>
+<p>Erst selbst versuchen, dann die Lösung aufklappen.</p>
+
+<details>
+<summary>Ein Föhn ist mit 1800 W bei 230 V angegeben. Berechne Stromstärke, Widerstand und die Kosten, wenn er einen Monat lang täglich 10 Minuten läuft, bei 0,30 € je kWh.</summary>
+<div class="antwort">
+<p>Stromstärke: I = P &divide; U = 1800 &divide; 230 &asymp; 7,8 A.</p>
+<p>Widerstand: R = U &divide; I = 230 &divide; 7,8 &asymp; 29,4 Ohm.</p>
+<p>Energie: 1800 W sind 1,8 kW. Zehn Minuten sind ein Sechstel einer Stunde, also 0,3 kWh am Tag und rund 9 kWh in einem Monat mit 30 Tagen.</p>
+<p>Kosten: 9 kWh &middot; 0,30 € = <strong>2,70 € im Monat</strong>. Der Trick, auf den es in der Klausur ankommt: Minuten vor dem Multiplizieren in Stunden umrechnen — genau dort gehen die meisten Punkte verloren.</p>
+</div>
+</details>
+
+<details>
+<summary>Erkläre, warum ein 12-Volt-Starthilfekabel dick sein muss, während für eine 230-Volt-Lampe ein dünnes Kabel reicht.</summary>
+<div class="antwort">
+<p>Die Kabeldicke richtet sich nach der Stromstärke, nicht nach der Spannung. Eine Lampe mit 115 W an 230 V zieht etwa 0,5 A; beim Anlassen eines Motors fließen kurzzeitig mehrere hundert Ampere.</p>
+<p>Ein Leiter erwärmt sich mit dem Quadrat der Stromstärke (P = I² &middot; R). Der hundertfache Strom bedeutet im selben Draht also die zehntausendfache Wärme. Deshalb braucht das Starthilfekabel einen viel größeren Querschnitt.</p>
+<p>Für die Spannung gilt das Gegenteil: 230 V brauchen eine dicke Isolierung, 12 V fast keine.</p>
+</div>
+</details>
+
+<details>
+<summary>Zwei Geräte sind mit 12 V / 60 W und 230 V / 60 W angegeben. Vergleiche Stromstärke und Widerstand und sage, was das praktisch bedeutet.</summary>
+<div class="antwort">
+<p>Bei 12 V: I = 60 &divide; 12 = 5 A, R = 12 &divide; 5 = 2,4 Ohm. Bei 230 V: I = 60 &divide; 230 &asymp; 0,26 A, R = 230 &divide; 0,26 &asymp; 882 Ohm.</p>
+<p>Gleiche Leistung, aber das Niedervoltgerät zieht rund zwanzigmal so viel Strom und braucht deutlich dickere Leitungen und Stecker. Das Gerät an 230 V braucht dafür die bessere Isolierung.</p>
+<p>Genau dieser Zusammenhang ist der Grund für Hochspannung auf Überlandleitungen: je höher die Spannung, desto kleiner der Strom bei gleicher Leistung — und desto kleiner die Verluste in der Leitung.</p>
+</div>
+</details>
+</section>
+
+<section class="quellen">
+<h2 id="quellen-und-weiterlesen">Quellen und Weiterlesen</h2>
+<p>Alles auf dieser Seite lässt sich hier nachschlagen.</p>
+<ul>
+  <li><a href="https://www.leifiphysik.de/elektrizitaetslehre/ohmsches-gesetz-kennlinien/grundwissen/ohmsches-gesetz" target="_blank" rel="noopener">LEIFIphysik: OHMsches Gesetz</a> <span>— der Zusammenhang von U, I und R mit Kennlinien.</span></li>
+  <li><a href="https://www.leifiphysik.de/elektrizitaetslehre/ohmsches-gesetz-kennlinien/grundwissen/gefahr-durch-strom-und-koerperwiderstand" target="_blank" rel="noopener">LEIFIphysik: Gefahr durch Strom und Körperwiderstand</a> <span>— warum die Stromstärke zählt und nicht die Spannung allein.</span></li>
+</ul>
+</section>
+
 <a class="back-link" href="../index.html">&larr; Zurück zur Übersicht</a>
 </article>
 </main>
@@ -380,6 +500,8 @@ nicht die Milliamperestunden allein.</p>
 </footer>
 <script src="../search-data.js"></script>
 <script src="../search.js"></script>
+<script src="../uebung.js"></script>
+<script src="../calc-ohm.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "da99a06581af448c98e549d4eb3b7648"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
